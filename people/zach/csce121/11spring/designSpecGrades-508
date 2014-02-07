@@ -1,0 +1,19 @@
+Goode / Fry / Gray / Yen
+
+Good game description, but watch grammar; team member assignments could use more thought, unclear on what a main menu vs. game window are [-1]; good program description; headers are fine
+
+McClendon /  Poteet /  Rogers / Bell
+
+Good game description; good team assignments; program description clear; headers mostly good, but should not need a player_1/2, etc. Each of these can just be instantiated; review object-oriented principles / classes / instances [-3]
+
+8 Franco / Goodson / Chaulagain
+
+Clear game description with citation; team assignments should be for project, not the team design document [-3]; good program description and header files
+
+10 Piatt / Regmi / Clay
+
+Clear game rules; unclear on what "algorithm implementation" means in team roles, seems vague [-1]; good description of program; piece_info is a two-dimensional array, not a 2x2 array (it is a 6x7 array), otherwise, good headers
+
+7 
+
+Clear game rules, but missing citation [-1]; team breakdown is hard to follow, should be more abstract [-2]; good program description; headers ok 

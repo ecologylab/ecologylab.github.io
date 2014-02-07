@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>launch::re:generate :: combinFormation</title>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "generate";
+thisParent	= "launch";
+thisAlt	= "re:generate";
+strongBrowser	= 0;
+
+collectionName = "news";
+
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/xml.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/dialog.js"></script> 
+
+<script>
+var argStr	= self.location.search + "";
+var title;
+var collageHref, collectionName;
+var playOnStart	= false;
+
+if (argStr && (argStr.length > 1))
+{
+   argStr	= argStr.substring(1);
+   var args	= doubleSplit(argStr, "&", true);
+
+   if (args.composition)
+      infoSpaceHref	= args.composition;
+   if (args.info_space)
+      infoSpaceHref	= args.info_space;
+   else if (args.infospace)
+      infoSpaceHref	= args.infospace;
+   else if (args.infoSpace)
+      infoSpaceHref	= args.infoSpace;
+   else if (args.collection)
+      infoSpaceHref	= args.collection;
+   else if (args.collage_url)
+      infoSpaceHref	= args.collage_url;
+   else if (args.metadocument)
+      infoSpaceHref	= args.metadocument;
+   if (args.title)
+      title		= args.title;
+   else
+      title		= infoSpaceHref;
+
+   title		= unescape(title);
+   
+   var referrer		= document.referrer;
+//alert(infoSpaceHref);
+
+   if ((infoSpaceHref.indexOf("http://") != 0) &&
+       (infoSpaceHref.indexOf("/") != 0) &&
+       (infoSpaceHref.indexOf("file://") != 0))
+      infoSpaceHref =  
+	 referrer.substring(0, referrer.lastIndexOf("/"))+"/" + infoSpaceHref;
+//alert(infoSpaceHref);
+
+   if (args.play_on_start)
+      playOnStart	= args.play_on_start;
+   
+//   else
+//      alert("collection byName.html was not passe a collection");
+}
+//var seed	= getSeed("composition",infoSpaceHref);
+//var seeds	= [seed];
+autoPrefs.play_on_start	= playOnStart;
+
+</script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body onload="preloadNav(); checkBrowser();">
+
+<form name="launchForm" action="http://localhost:10010" method="post" target="ping" enctype="text/plain">
+	<input type="hidden" name="requestXML" value=""></input>
+</form>
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><nobr><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1)" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif" style="width: 88px;"></a></div></nobr>
+    </td>
+  </tr>
+</table>
+
+
+<form>
+<div class="launch_img"><img src="images/generate.png"></div>
+
+<div class="content">
+<h2 style="margin-bottom: 0px; padding-bottom: 0px;"><b>Seeding: Open the saved composition space:
+</b></h2>
+
+<script>
+      document.write('<h3 style="padding-top:0px; margin-top:10px;">&nbsp;&nbsp;' + title + '</h3>');
+</script>
+<div class="blue_line"></div>
+
+<h5 id="oollage_size_h5">Select&nbsp;size:&nbsp;on&nbsp;screen.
+<script>
+      collageSize();
+</script>
+</h5>
+<br/><br/>
+<div id="launch_controls" class="buttons_area">
+
+<script>
+
+function launchDoc()
+{
+  launchComposition(infoSpaceHref);
+  $("#cancel_button").show();
+  setTimeout('$("#cancel_button").hide()', 5000);
+  //setTimeout('alert("waiting so long...")', 5000);
+}
+
+if (autoPrefs['pdf_parsing'] != "multivalent_and_pdfbox")
+{
+	document.write('<h5 style="display:none;">2)&nbsp;Select PDF&nbsp;parser&nbsp;<br>');
+	document.write(pdfRadios()/* +"</h5" + ">"*/);
+	document.write('</h5>');
+}
+
+document.write("<table><tr><td><a onClick='launchDoc();' name='launch_button' href='#'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img onmouseover=\"this.src='../images/buttons/arrow.png'\" onmouseout=\"this.src='../images/buttons/arrowdark.png'\"  src='../images/buttons/arrowdark.png'/></a></td><td><a id='cancel_button' onClick='javascript:cancelLaunch()'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <h3>Cancel</h3></a></td></tr></table>");
+
+$(document).ready(function() {
+  $('#cancel_button').hide();
+});
+
+
+</script>
+
+<!--
+<input  class="launch_button" type="button" value="Launch combinFormation"
+ onClick="launchDocument(infoSpaceHref);" name="launch_button">
+-->
+
+</div>
+</form>
+
+
+<div class="blue_line"></div>
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ class="jnlp"
+ src="nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+
+</div>
+
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+</div>
+
+
+<div class="nav" style="top: 220px;">
+  <a class="support_link" href="mix.html">re:mix</a>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <a class="support_link" href="buzz.html">re:buzz</a>
+  <a class="support_link" href="open.html">re:open</a>
+</div>
+
+</body>
+</html>

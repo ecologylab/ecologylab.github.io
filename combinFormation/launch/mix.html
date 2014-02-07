@@ -1,0 +1,1233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<title>launch::re:mix :: combinFormation</title>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "mi ";
+thisParent	= "launch";
+thisAlt	= "re:mix"; 
+strongBrowser	= 0;
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/xml.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/dialog.js"></script> 
+
+<script language="JavaScript">
+var collageArgs;
+
+/**
+ * Create a table cell, within the specified table row.
+ */
+function td(row, child, className)
+{
+   var result = document.createElement("td");
+   result.appendChild(child);
+
+
+   if (className)
+      result.className	= className;
+
+   if (row)
+      row.appendChild(result);
+   ///result.setAttribute("id","meh");
+   return result;
+}
+
+/**
+ * !!!! would like to add as a method directly to String
+ */
+function isSeperator(s)
+{
+   return s.indexOf(">") != -1;
+}
+
+var query = location.search.substring(1);
+var expertMode = 0;
+
+if (query && query.length > 0)
+{
+   var modeIndex= query.indexOf("mode=");
+   if (modeIndex > -1)
+   {
+	  var mode = query.substring(modeIndex + 5);
+	  if ((mode == "expert") || (mode == "advanced"))
+		  expertMode	= 1;
+   }
+}
+
+var DOCUMENT	= "document";
+var GOOGLE		= "google";
+var BING		= "bing";
+var FEED		= "feed";
+var YAHOO		= "yahoo";
+var YAHOO_IMAGE= "yahoo_image";
+var YAHOO_NEWS	= "yahoo_news";
+var WIKIPEDIA	= "wikipedia";
+var FLICKR		= "flickr";
+var FLICKR_TAG	= "flickr_tag";
+var FLICKR_GROUPS	= "flickr_groups";
+var FLICKR_NEARBY	= "flickr_nearby";
+var DELICIOUS_TAG	= "delicious";
+var DELICIOUS_PERSON	= "delicious_person";
+var PATENT		= "google_patents";
+
+var TRAVERSABLE = "traversable";
+var UNTRAVERSABLE = "untraversable";
+var REJECT		= "reject";
+
+/*
+var JUST_CRAWL	= "crawl links from";
+var JUST_MEDIA	= "collect media from";
+*/
+var seedSpecRegistry	= new Array();
+
+var searchTypeNames =
+[
+ BING, GOOGLE, FEED, YAHOO, YAHOO_IMAGE, YAHOO_NEWS, FLICKR, WIKIPEDIA, PATENT, DELICIOUS_TAG, DELICIOUS_PERSON
+];
+
+function SeedSpec(typeName, selectMsg, textFieldLabel, constructor, favicon)
+{
+   this.typeName		= typeName;
+   this.selectMsg		= selectMsg;
+   this.textFieldLabel	= textFieldLabel;
+   this.constructor		= constructor;
+   this.isSearch		= searchTypeNames[typeName];
+   this.favicon = favicon;
+   seedSpecRegistry[typeName]	= this;
+}
+SeedSpec.prototype.toString = 
+   function() { return "SeedSpec[" + this.typeName+", "+this.textFieldLabel + "]"; }
+SeedSpec.prototype.label = 
+   function() { return this.textFieldLabel; }
+SeedSpec.prototype.equals = 
+   function(other) { return this.typeName == other.typeName; }
+
+GOOGLE_SPEC = 
+		 new SeedSpec(GOOGLE, "google", "query", createSearchSeed, "http://google.com/favicon.ico");
+
+BING_SPEC = new SeedSpec(BING, "bing", "query", createSearchSeed,  "http://www.bing.com/favicon.ico");
+
+
+/**
+ * the types of seeding parameters, which also function as type labels
+ * in the pull-down select at the start of the mixer
+ */
+var noviceTypes = 
+[
+ BING_SPEC,
+ new SeedSpec(YAHOO, "yahoo", "query", createSearchSeed,"http://www.yahoo.com/favicon.ico"),
+ GOOGLE_SPEC,
+  // new SeedSpec(YAHOO_NEWS, "search yahoo news", "query", createSearchSeed),
+ new SeedSpec(FLICKR, "flickr", "query", createSearchSeed,"http://www.flickr.com/favicon.ico"),
+ new SeedSpec(FLICKR_TAG, "flickr tag", "tag", createSearchSeed,"http://www.flickr.com/favicon.ico"),
+ new SeedSpec(FLICKR_GROUPS, "flickr group", "group", createSearchSeed,"http://www.flickr.com/favicon.ico"),
+ //new SeedSpec(FLICKR_NEARBY, "flickr nearby", "flickr photo", createSearchSeed,"http://www.flickr.com/favicon.ico"),
+ new SeedSpec(YAHOO_IMAGE, "yahoo images", "query", createSearchSeed,"http://www.yahoo.com/favicon.ico"),
+ new SeedSpec(WIKIPEDIA, "wikipedia", "topic", createSearchSeed,"http://en.wikipedia.org/favicon.ico"),
+ //new SeedSpec(PATENT, "patents", "topic", createSearchSeed,"http://google.com/favicon.ico"),
+ new SeedSpec(FEED, "RSS Feed","location", createFeedSeed,"http://www.rss.com/favicon.ico"),
+ new SeedSpec(DOCUMENT, "web page, or file", "location", createDocumentSeed,"https://docs.google.com/favicon.ico"),
+// new SeedSpec(DELICIOUS_TAG, "del.icio.us ideas", "tags", createSearchSeed),
+// new SeedSpec(DELICIOUS_PERSON, "del.icio.us person", "creator", createDeliciousCreatorSeed),
+
+// new SeedSpec(TRAVERSABLE, "allow crawling", "location", createTraversableSeed,"https://docs.google.com/favicon.ico"),
+ ];
+
+ //these are not used now
+var expertTypes = [];/*
+[
+ new SeedSpec(DOCUMENT, "web page or file", "address", createDocumentSeed),
+ BING_SPEC,
+ GOOGLE_SPEC,
+ new SeedSpec(FEED, "RSS Feed","location", createFeedSeed),
+ new SeedSpec(YAHOO, "yahoo", "query", createSearchSeed),
+ new SeedSpec(YAHOO_IMAGE, "yahoo images", "query", createSearchSeed),
+// new SeedSpec(YAHOO_NEWS, "search yahoo news", "query", createSearchSeed),
+ new SeedSpec(FLICKR, "flickr photos", "query", createSearchSeed),
+ new SeedSpec(WIKIPEDIA, "wikipedia", "topic", createSearchSeed),
+ new SeedSpec(PATENT, "patents", "topic", createSearchSeed),
+// new SeedSpec(DELICIOUS_TAG, "del.icio.us ideas", "tags", createSearchSeed),
+// new SeedSpec(DELICIOUS_PERSON, "del.icio.us person", "creator", createDeliciousCreatorSeed),
+
+ new SeedSpec(TRAVERSABLE, "allow crawling into", "location", createTraversableSeed),
+ new SeedSpec(UNTRAVERSABLE, "prevent crawling into", "location", createUntraversableSeed),
+ new SeedSpec(REJECT, "reject entirely", "domain", createRejectSeed),
+ ];*/
+
+var types = expertMode ? expertTypes : noviceTypes;
+//var types = noviceTypes;
+
+function lookupSeedSpec(typeName)
+{
+   return seedSpecRegistry[typeName];
+}
+
+function textField(seedSpec)
+{
+   var field	= document.createElement("input");
+   field.setAttribute("type", seedSpec);
+   field.size	= 40;
+   field.style.margin	= "0px 0px 0px 0px;";
+   field.onblur = function() { checkField(field); };
+   return field;
+}
+
+function checkField(field)
+{
+//   alert(getTrackNum(field));
+//   alert("hi");
+   if (field.value && (field.value != "") && 
+       (getTrackNum(field) == currentTrack()))
+	   var blah = 0;
+      ////setTimeout("nextTrack()", 0);
+}
+
+function clearCheckBox(trackNum)
+{
+  /* var checkBox	= document.createElement("input");
+   checkBox.setAttribute("type", "checkbox");
+   checkBox.setAttribute("name", "clear");
+   checkBox.setAttribute("style", "margin: 0px 0px 0px 0px;");
+   checkBox.onclick = function() { clearTrack(this); };
+   return checkBox;
+   */
+   
+   var checkBox	= document.createElement("p");
+   checkBox.innerHTML = "<a class='del' href='javascript:void(0);'><p>x</p></a>";
+   //checkBox.setAttribute("style", "margin: 0px 0px 0px 0px;");
+   //checkBox.setAttribute("style", ": 0px 0px 0px 0px;");
+   checkBox.setAttribute("class", "del");
+   checkBox.onclick = function() { clearTrack(this); };
+   return checkBox;
+}
+
+function clearTrack(that)
+{
+   var trackNum	= getTrackNum(that);
+   
+   var clearingLast = (trackNum + 1) == numTracks;
+   
+   var table = document.getElementById("mix_entries_body");
+   var track = document.getElementById(trackId(trackNum));
+//   alert("clearTrack("+trackNum+" "+clearingLast);
+   table.removeChild(track);
+   // !!! need to renumber all the tracks here !!!
+
+   var i=0;
+   for (thatTrack = table.firstChild; thatTrack != null; 
+	thatTrack = thatTrack.nextSibling)
+   {
+      var thatId	= thatTrack.id;
+      if (thatId && (thatId.indexOf("track") == 0))
+      {
+//	 alert("renumber: " + thatTrack.id +" -> " + i);
+	 thatTrack.id	= "track" + i++;
+      }
+   }
+   --numTracks;
+   //if (clearingLast)
+      //nextTrack();
+    //  setTimeout("show_init_popdown_if_no_tracks();",200);
+    show_init_popdown_if_no_tracks();
+}
+
+function seedFieldId(num)
+{
+//   return "field" + num + "td";
+   return "seed" + num;
+}
+function fieldCellId(num)
+{
+//   return "field" + num + "td";
+   return "fieldcell" + num;
+}
+function trackId(num)
+{
+   return "track" + num;
+}
+function selectId(num)
+{
+   return "select" + num;
+}
+/**
+ * @return the number of the track that entity is part of.
+ * 
+ * @param el -- a visible or table level HTML element
+ */
+function getTrackNum(element)
+{
+//   var elementId	= element.getAttribute("id");
+   var elementId	= element.id;
+//   alert("elementId="+elementId);
+   if (elementId.indexOf("track") == 0)
+   {
+      return extractInt(elementId);
+   }
+   else
+      return getTrackNum(element.parentNode);
+}
+/**
+ * Find a named node, within a dom subtree.
+ */
+function getNodeByName(element, nameToMatch)
+{
+//   alert(element.name);
+
+   if (isNamed(element, nameToMatch))
+      return element;
+   else
+   {
+      // recursive depth first search
+      for (var child=element.firstChild; child=child.nextSibling; child!=null)
+      {
+
+	 var subtreeResult	= getNodeByName(child);
+	 if (subtreeResult)
+	    return subtreeResult;
+      }
+      return null;
+   }
+}
+function isNamed(element, nameToMatch)
+{
+   var elementName	= element.name;
+   return (elementName == nameToMatch);
+}
+
+function argumentFieldCell(seedSpec, num)
+{
+//   alert("argumentFieldCell("+seedSpec+") " +", "+seedSpec.label());
+   var field = textField(seedSpec);
+   
+   var result = document.createElement("td");
+   //      result.id	 = fieldCellId(num);
+
+   var label = document.createElement("span");
+   label.innerHTML = /*"&nbsp;&nbsp;" + */
+	  seedSpec.label() + "&nbsp;&nbsp;";
+   //      label.setAttribute("class", "label");
+   label.setAttribute("style", trackStyle);
+   label.setAttribute("style", "visibility:hidden");
+
+   result.setAttribute("align", "right");
+   
+   result.appendChild(label);
+
+   var seedId = seedFieldId(num);
+   //      field.setAttribute("name", seedId);
+   field.name	= "value_field";
+   //      field.id		= seedId;
+   result.appendChild(field);
+
+   return result;
+}
+
+
+function selectedOption(select)
+{
+   return select.options[select.selectedIndex];
+}
+//var trackStyle= "text-align: right; color: #FF9966; background-color: #222222;";
+var trackStyle= "visibility:hidden;";//"text-align: right; color: #FF9966; background-color: #000000;";
+
+/**
+ * Generate the select pull down menu object through which the user
+ * chooses the type of the mixer entry.
+ */
+function typeSelect(num, selectedType)
+{
+//   alert("typeSelect( " + selectedType);
+  
+   var select = document.createElement("select");
+   select.setAttribute("style", trackStyle);
+//   select.setAttribute("id", selectId(num));
+   select.setAttribute("name", "type_select");
+
+   
+//   select.setAttribute("class", "mix_type");
+   select.setAttribute('id','select'+(currentTrack()+1));
+   var endType = false;
+   for (var i=0; i<types.length; i++)
+   {
+	  var thatType	= types[i];
+	  if (!thatType)
+		 continue;
+	  //alert(thatType.selectMsg);
+      var option	= document.createElement("option");
+      var thatMsg	= thatType.selectMsg;
+      option.setAttribute("text", thatMsg);
+	  //alert("set("+thatType+" "+thatType.typeName);
+      option.setAttribute("value", thatType.typeName);
+//      option.setAttribute("style", "text-align: right;");
+//      option.setAttribute("class", "mix_type");
+      if (isSeperator(thatMsg))
+		 option.setAttribute("style", "text-align: left; margin: 0px 0px 0px 0px;");
+      else
+		 option.setAttribute("style", "padding-right: 4px;");
+//	  if (selectedType)
+//		 alert("building option: " + thatType +" "+selectedType);
+      if (selectedType && (thatType.equals(selectedType)))
+	  {
+		 /////////////alert("setting selected " + thatType);
+		 //////<img src='"+types[i].favicon+"'> "+types[i].selectMsg+"</a>//change to thatType
+		 option.setAttribute("selected", "true");
+		 endType = thatType;
+	  }
+      option.innerHTML	= replaceString(thatMsg, "_", " ");
+      select.appendChild(option);
+	  // make search be initially selected
+   }
+   select.onchange	= function() {recastTrack(this); };
+   var sdiv = document.createElement("div");
+      
+   sdiv.innerHTML = "<center id='leftpart"+(currentTrack()+1)+"'><a href='#' onClick='popup_track("+(currentTrack()+1)+")';return false><img src='"+endType.favicon+"'> "+endType.selectMsg+"&nbsp</a></center>";//gbgbgb
+   sdiv.appendChild(select);
+   
+   return sdiv;
+}
+
+function extractInt(str)
+{
+   var result;
+   for (var i=(str.length - 1); i > 0; i--)
+   {
+      var asInt	= parseInt(str.substring(i));
+      if (isNaN(asInt))
+	 break;
+      else
+	 result	= asInt;
+   }
+   return result;
+}
+/**
+ * Change the type of the track, including the structure of its arguments.
+ * 
+ * @param select-the actual select object (pull down menu) the user interacts w
+ */
+function recastTrack(select)//gbgbgb
+{
+   var trackNum	= getTrackNum(select);
+// alert("recasting track > " +trackNum);
+   
+   var typeName = selectedOption(select).value;
+   var seedSpec	= lookupSeedSpec(typeName);
+//   alert("recasting track to " +typeName+" "+seedSpec);
+/*
+   if (isSeperator(seedSpec.textFieldLabel))
+   {
+      select.selectedIndex++;
+      type	= selectedOption(select).value;
+   }
+ */
+   var track	= document.getElementById(trackId(trackNum));
+   var fieldCell= getValueTd(track);
+   var label	= fieldCell.getElementsByTagName("span")[0];
+   var field	= fieldCell.getElementsByTagName("input")[0];
+   var value	= "";
+   if (field)
+   {
+      value	= field.value;	   // save old value
+   }
+   var newFieldCell	= argumentFieldCell(seedSpec, trackNum);
+   track.replaceChild(newFieldCell, fieldCell);
+   // restore old value
+   var newField	= newFieldCell.getElementsByTagName("input")[0];
+   if (newField)
+      newField.value	= value;
+      
+    var nhtml =  "<center><a href='javascript:void(0);' onClick='popup_track("+trackNum+")';return false><img src='"+seedSpec.favicon+"'> "+seedSpec.selectMsg+"&nbsp+</a></center>";
+
+   $('#leftpart'+trackNum).html(nhtml);
+}
+
+function appendClearCell(track, trackNum)
+{
+   var clearCell	= td(track, clearCheckBox(trackNum));
+   clearCell.setAttribute("align", "center");
+}
+
+function currentTrack()
+{
+   return numTracks - 1;
+}
+   
+
+var numTracks	= 0;
+
+
+function nextTrack(seedSpec)
+{
+   if (!seedSpec)
+      seedSpec	= BING_SPEC;
+   
+   //alert("nextTrack( "+numTracks+" "+seedSpec);
+   
+   var track = document.createElement("tr");
+   track.id	= trackId(numTracks);
+   track.name	= "track";
+  // track.style = "display:void(0);";
+   var seed_id = "input"+trackId(numTracks);
+   seedSpec.id = "input"+trackId(numTracks);
+  
+   td(track, typeSelect(numTracks, seedSpec));
+   
+
+
+   track.appendChild(argumentFieldCell(seedSpec, numTracks));
+   appendClearCell(track, numTracks);
+//   track.appendChild(clearCell);
+
+   var table = document.getElementById("mix_entries_body");
+   table.appendChild(track);
+   numTracks++;
+   //track.focus();
+   //$('#'+seed_id).focus();
+   //$("//input[@name='value_field']")[0].focus()
+   $("input[name=value_field]").focus();
+   return track;
+}
+
+function mixerInit()
+{
+   if (checkBrowser())
+   {
+	  restoreSeeding();
+	  //nextTrack(BING_SPEC)
+   }
+}
+function restoreSeeding()
+{
+//   alert("cookie=" + document.cookie);
+   
+   var cookies	= doubleSplit(document.cookie,";");
+
+   if (!cookies.seed_set)
+      return;
+   
+   var dom		= buildDOM(cookies.seed_set);
+   
+   var root		= dom.documentElement;
+
+   for (var thatNode=root.firstChild; thatNode != null;
+	thatNode=thatNode.nextSibling)
+   {
+	  var tag	= thatNode.tagName;
+	  var seedSpec;
+	  var value;
+	  //alert("restoreSeed("+xmlToString(thatNode)+"\ntag="+tag);
+	  if (tag == "document")
+	  {
+		 seedSpec	= lookupSeedSpec(DOCUMENT);
+		 value		= thatNode.getAttribute("url");
+	  }
+	  else if (tag == "search")
+	  {
+		 value		= thatNode.getAttribute("query");
+		 // put quotes back
+		 while (value.indexOf("&quot;") > -1)
+	        value = value.replace("&quot;","\"");
+		 var engine = thatNode.getAttribute("engine");
+		 seedSpec	= lookupSeedSpec(engine);
+	  }
+	  else if (tag == "crawler")
+	  {
+		 value		= thatNode.getAttribute("url");
+		 if (!value)
+			value	= thatNode.getAttribute("domain");
+		 var action	= thatNode.getAttribute("action");
+		 seedSpec	= lookupSeedSpec(action);		   
+	  }
+	  else if (tag == "delicious")
+	  {
+		 value		= thatNode.getAttribute("creator");
+		 seedSpec	= lookupSeedSpec(DELICIOUS_PERSON);
+	  }
+//	  alert(seedSpec+" "+value);
+	  restoreTrack(nextTrack(seedSpec), value);
+   }
+}
+function restoreTrack(thatTrack, value)
+{
+   var cell	= getValueTd(thatTrack);
+   cell.getElementsByTagName("input")[0].value	= value;
+}
+function clearMixer()
+{
+   alert("called clear");
+   var lastToClear = numTracks - 2;
+   clearCookie('seeds');
+   if (lastToClear < 0)
+      return;
+   
+   for (var i=lastToClear; i>=0; i--)
+   {
+      var thatTrack	= document.getElementById("track"+i);
+      clearTrack(thatTrack);
+   }   
+//   nextTrack('search');
+}
+
+function emitSeeding(theForm, doSubmit)
+{
+//   alert("numTracks="+numTracks);
+   give_aggregates_values();
+   var seedSet	= xmlDoc.createElement("seed_set");
+
+//   for (thatTrack = table.firstChild; thatTrack != null; 
+//	thatTrack = thatTrack.nextSibling)
+
+   for (var i=0; i<numTracks; i++)
+   {
+      var thatTrack	= document.getElementById("track"+i);///gbgbgb
+//      alert("track: " + thatTrack + " " + thatTrack.id);
+      var thatSelect = thatTrack.getElementsByTagName("select")[0];
+      var thatTypeName	= selectedOption(thatSelect).value;
+	  // alert("emitting " + thatTypeName);
+	  var thatType		= lookupSeedSpec(thatTypeName);
+
+	  var cell1	= getValueTd(thatTrack);
+	  var thatValue	= cell1.getElementsByTagName("input")[0].value;
+	  while (thatValue.indexOf("\"") > -1)
+	     thatValue = thatValue.replace("\"","&quot;");
+	  // alert("emitting " + thatValue);
+      if (thatValue != '')
+      {
+		 // (note: thatTypeName is passed for the benefit of searches)
+		 var seed = thatType.constructor(thatValue, thatTypeName);
+		 seedSet.appendChild(seed);
+      }
+   }
+
+   saveSeedSet(seedSet);
+   if (doSubmit && ((seedSet.childNodes.length > 0) || 
+	   confirm("No seeds to mix.\nLaunching empty information space.")))
+   {
+	  launchSeedSet(seedSet);
+   }
+}
+
+/**
+ * the value cell is typically #1.
+ * the type cell is always #0.
+ * the clear cell is typically #3.
+ */
+function getValueTd(thatTrack)
+{
+   return thatTrack.getElementsByTagName("td")[1];
+}
+
+
+function fixString(str)
+{
+   var start	= 0;
+   var end	= 0;
+   var result = "";
+   var delim  = "";
+   while (end < str.length)
+   {
+      if ((str.charAt(end) == " ")  || (str.charAt(end) == "\t") ||
+	  (str.charAt(end) == "\n") || (str.charAt(end) == "\r"))
+      {
+	 if (start != end) 
+ 	    result = result + delim + str.substring(start, end);
+	 delim  = "+";
+	 start  = end + 1;
+      }
+      end++;
+   }
+   result = result + delim + str.substring(start, end);
+   
+   return result;
+}
+</script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body onLoad="preloadNav(); mixerInit();">
+
+<form name="launchForm" action="http://localhost:10010" method="post" target="ping" enctype="text/plain">
+	<input type="hidden" name="requestXML" value="">
+</form>
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1);" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1);" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1);" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif" style="margin-right: 7px;"></a></div></td>
+  </tr>
+</table>
+
+<form>
+<div class="launch_img"><img src="images/mix.png" alt="re:mix"></div>
+
+<div class="content">
+<h2><b>Seeding: Tell the Agent what you want to Collect and Compose.
+</b></h2>
+
+<div class="blue_line"></div>
+<!--
+<h5 style="margin-bottom: 0px;">1) 
+Build your mix of information sources.
+<a href="javascript:openSupport('seedingLanguage')"><img
+ src='../images/glossaryButton.gif' height='15' width='15'
+ alt='about the seeding language' border="0"
+ style='margin: 0px; padding: 0px; vertical-align: top;'></a>
+</h5>
+
+-->
+
+<div class="add_seed_div" id="seed_popup">
+
+
+<div class="seed_options">
+<h2 id="popup_text"></h2>
+<table width="400">
+<tbody id="dneeee">
+
+<script>
+
+function writeAType(i)
+{
+  document.write("<td><a href='javascript:void(0);' onClick='nextOrReplaceTrack(types["+i+"])'> <img src='"+types[i].favicon+"'> "+types[i].selectMsg+"</a></td>");
+}
+   
+	//0 1 2 3 4 5 6->x 7->6 8->7 9->x 10->8 11->9
+	document.write("<tr>");//0
+	writeAType(0);writeAType(3);writeAType(7);
+	document.write("</tr>");
+	document.write("<tr>");//1
+	writeAType(1);writeAType(4);writeAType(8);
+	document.write("</tr>");
+	document.write("<tr>");//2
+	writeAType(2);writeAType(5);writeAType(9);
+	document.write("</tr>");
+	document.write("<tr>");//3
+	document.write("<td></td>");writeAType(6);document.write("<td></td>");
+	document.write("</tr>");
+</script>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div class="seed_div">
+<!--<h1>Seeds  
+<h1/>--> 
+
+<table class="preferences" id="mix_entries_table" cellspacing="7">
+<tbody id="mix_entries_body">
+<!--<tr name="mixer_spacing">
+<td>&nbsp;</td><td>&nbsp;</td>
+<td align="center">&nbsp;&nbsp;&nbsp;&nbsp;clear</td>-->
+</tbody>
+</table>
+<h1><center><a href="javascript:void(0);" id="add_seed_id">+</a></center></h1>
+
+
+<center>
+<div class="" id="init_seed_things">
+
+
+<div class="">
+<h2 id="">Click a source to add it as a seed.</h2>
+<table width="400">
+<tbody id="jj">
+
+<script>
+
+function writeAType(i)
+{
+  document.write("<td><a href='javascript:void(0);' onClick='nextOrReplaceTrack(types["+i+"])'> <img src='"+types[i].favicon+"'> "+types[i].selectMsg+"</a></td>");
+}
+   
+	//0 1 2 3 4 5 6->x 7->6 8->7 9->x 10->8 11->9
+	document.write("<tr>");//0
+	writeAType(0);writeAType(3);writeAType(7);
+	document.write("</tr>");
+	document.write("<tr>");//1
+	writeAType(1);writeAType(4);writeAType(8);
+	document.write("</tr>");
+	document.write("<tr>");//2
+	writeAType(2);writeAType(5);writeAType(9);
+	document.write("</tr>");
+	document.write("<tr>");//3
+	document.write("<td></td>");writeAType(6);document.write("<td></td>");
+	document.write("</tr>");
+</script>
+</tbody>
+</table>
+</div>
+</div>
+</center>
+
+
+</div>
+
+
+
+<div class="buttons_area">
+
+<div id="launch_controls">
+
+
+<table>
+<tbody>
+<tr><td>
+<h5 id="oollage_size_h5">&nbsp;Select size on screen:&nbsp;
+<script>
+      collageSize();
+</script>
+</h5>
+<script>
+if (autoPrefs['pdf_parsing'] != "multivalent_and_pdfbox")
+{
+//	document.write('<h5 style="display:void(0);">3)&nbsp;Select PDF&nbsp;parser&nbsp;<br>');
+//	document.write(pdfRadios());
+//	document.write('</h5></td>');
+}
+document.write("<td><a onClick='emitSeeding(this.form, true);' name='launch_button' href='#'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img onmouseover=\"this.src='../images/buttons/arrow.png'\" onmouseout=\"this.src='../images/buttons/arrowdark.png'\"  src='../images/buttons/arrowdark.png'/></a></td><td><a id='cancel_button' onClick='javascript:cancelLaunch()'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cancel</a></td>");
+</script>
+</tr>
+</tbody>
+</table>
+</div>
+<!--
+<div style="padding-top: 24px; text-align: center;">
+
+<table style="margin-left: auto; margin-right: auto;">
+<tr valign="top">
+<td>
+<input type="button" value="Restore Mix"
+ onclick="restoreSeeding()" name="button1"> 
+</td>
+
+<td>
+<input type="button" value="   Clear   " style="margin-bottom: 20px"
+ onclick="clearMixer();" name="button3"> 
+</td>
+
+<td>
+<input type="button" value="Save Mix"
+ onClick="emitSeeding(this.form, false);" name="button1"> 
+</td>
+
+</tr>
+</table>
+
+</div>
+-->
+</div>
+</div>
+
+<script language="JavaScript">
+var linkTo = expertMode ? '<a class="instance" href="mix.html">switch to regular mode</a'+'>' :
+'<a class="instance" href="mix.html?mode=expert">switch to expert mode</a'+'>';
+linkTo = "<h6>" + linkTo + "</h6>";
+    $('#cancel_button').hide();
+//	alert('hide');
+////////document.write(linkTo);
+</script>
+
+<script>
+
+function popup_show(x,y)
+{
+   if(x!=null && y!=null)
+   {
+     $('#seed_popup').css("left",x);
+     $('#seed_popup').css("top",y);
+   }
+   $('#seed_popup').show();
+}
+
+
+var editing_track = -1;//-1 for not editing a track
+
+function nextOrReplaceTrack(seedSpec)
+{
+  
+  if(editing_track == -1)
+  {
+      nextTrack(seedSpec);
+      popup_hide();
+  }
+  else
+  {
+      /////check to see if this kind of seed already exists in the edited track..
+   var all_in_track = [];
+   var k = $($('#track'+editing_track+' a')).html().split("> ");
+   for(var i=1;i<k.length;i++)
+   {
+      all_in_track.push(k[i].split("&")[0]);
+   }
+
+   if(!ahas(seedSpec.selectMsg,all_in_track))
+   {
+        nextTrack(seedSpec);
+      $('#track'+currentTrack());
+      $('#track'+currentTrack()).attr('owner', editing_track);
+      handle_aggregate_tracks();
+      popup_track(editing_track);
+      //need to hide all tracks with owners.
+   }
+   else
+   {
+     //itterate through everything
+     //only look at tracks that have an owner that is the currently edited track.... may also need to add self..
+     //remove the one that has the same msg as seed spec.
+           
+  var number_of_children = 0;
+  var has_cleared_track = false;
+  var allTracks = $("#mix_entries_table tr");
+  var first_child = 0;
+  for(var i=0; i< allTracks.length; i++)
+  {
+     var track = $(allTracks[i]);
+     if(track.attr('owner') != null)
+     {
+        if(track.attr('owner') == editing_track)
+        {
+           if(first_child == 0)
+           {
+              first_child = track;
+           }
+           else
+           {
+              if(parseFloat(first_child[0].id.split("track")[1]) > parseFloat(track[0].id.split("track")[1]))
+              {
+                 first_child = track;
+              }
+             //console.debug("~~^~^^~^^~~~");
+             //console.debug(first_child[0].id);
+             //console.debug(track[0].id);
+           }
+           number_of_children+=1;
+           var my_text = $(track.find("a")[0]).html().split('> ')[1].split('&')[0];
+           if(my_text == seedSpec.selectMsg)
+           {
+             clearTrack(document.getElementById(track.attr('id')));
+             handle_aggregate_tracks();
+             popup_track(editing_track);
+             has_cleared_track = true;
+           }
+        }
+     }
+  }
+  
+   if(!has_cleared_track)
+    {
+       //make something that exists now the new parent
+       if(number_of_children > 0)
+       {
+          ///swap names
+          var old_track = 'track'+editing_track;
+          $('#'+old_track).attr('id','track404');
+          first_child.removeAttr('owner');
+          first_child.attr('id',old_track);
+          $($($("#track"+editing_track+" a")[0])[0]).attr('onCLick','popup_track('+editing_track+')')
+          
+          $('#track'+editing_track+' input').val($('#track404 input').val());
+          
+                       handle_aggregate_tracks();
+             popup_track(editing_track);
+             clearTrack(document.getElementById('track404'));
+       }
+    }
+
+   }
+   
+  } 
+
+  
+  show_init_popdown_if_no_tracks();
+  hide_those_that_have_owners();
+}
+
+function ahas(v,ar)
+{
+  for(var i=0; i<ar.length; i++)
+     if(v == ar[i])
+       return true;
+  return false;
+}
+
+function popup_track(t)
+{
+   popup_show();
+   editing_track=t;
+   var t_id = '#track'+t;
+   //alert(t_id);
+   $('#popup_text').html("Click on a source to change the source for this seed.");
+   
+   var width = parseFloat($('#seed_popup').css("width").split("px")[0]);
+   var height = parseFloat($('#seed_popup').css("height").split("px")[0]);
+   var y = $(t_id).offset().top - .5*height;
+   var x = 15;
+   popup_show(x,y);
+   
+   //Perform correct opacity stuff
+   var all_in_track = [];
+   //store all exsting types in that track
+   var k = $($('#track'+t+' a')).html().split("> ");
+   for(var i=0;i<k.length;i++)
+   {
+      all_in_track.push(k[i].split("&")[0]);
+   }
+   var all = $("#seed_popup").find("td");
+
+   for(var i=0; i<all.length; i++)
+   {
+      var el = $(all[i]);
+      var ex = el.find("a").html();
+      if(ex != null)
+      {
+        ex = ex.split("> ");
+        var exm = ex[1];
+        if(ahas(exm,all_in_track))
+        {
+          el.css('opacity',1);
+        }
+        else
+        {
+          el.css('opacity',.4);
+        }
+      }
+      
+   }
+}
+
+function give_aggregates_values()
+{
+  var allTracks = $("#mix_entries_table tr");
+  for(var i=0; i< allTracks.length; i++)
+  {
+    var track = $(allTracks[i]);
+    if(track.attr('owner') != null)
+    {
+         $('#'+track.attr('id') + ' input').val(  $('#track'+ track.attr('owner') + ' input').val()  );
+    }    
+  }    
+}
+
+
+function hide_those_that_have_owners()
+{
+  var allTracks = $("#mix_entries_table tr");
+  for(var i=0; i< allTracks.length; i++)
+  {
+     var track = $(allTracks[i]);
+     if(track.attr('owner') != null)
+     {
+        track.hide();
+     }
+     else
+     {
+        track.show();
+     }
+  }
+}
+
+function handle_aggregate_tracks()
+{
+
+  var a = $($('#track'+editing_track+' a')).html();
+  var b = a.split(";")[0]+';';
+   var a = $($('#track'+editing_track+' a')[0]).html(b);
+
+   var all_in_track = [];
+   var k = $($('#track'+editing_track+' a')).html().split("> ");
+   for(var i=1;i<k.length;i++)
+   {
+      all_in_track.push(k[i].split("&")[0]);
+   }
+
+  var allTracks = $("#mix_entries_table tr");
+  for(var i=0; i< allTracks.length; i++)
+  {
+     var track = $(allTracks[i]);
+     if(track.attr('owner') != null)
+     {
+        if(track.attr('owner') == editing_track)
+        {  
+        var my_text = $(track.find("a")[0]).html().split('> ')[1].split('&')[0];
+        if(!ahas(my_text,all_in_track))
+        {
+           $($('#track'+editing_track).find("a")[0]).append((track.find("a").html()));
+        }
+        }
+        
+     }
+    // $($('#track0').find("a")[0]).append((track.find("a").html()));
+  }
+}
+
+function popup_add_seed()
+{
+  editing_track=-1;
+  popup_show();
+  $('#popup_text').html("Click a source to add it to a seed.");
+  var width = parseFloat($('#seed_popup').css("width").split("px")[0]);
+  var height = parseFloat($('#seed_popup').css("height").split("px")[0]);
+  var y = $('#add_seed_id').offset().top - .5*height;
+  var x = $('#add_seed_id').offset().left - .5*width;
+  popup_show(x,y);
+  var all = $("#seed_popup").find("td").css('opacity',1);
+}
+
+function popup_hide()
+{
+   $('#seed_popup').hide();
+   editing_track=-1;
+}
+
+function show_init_popdown_if_no_tracks()
+{
+ 
+ if(numTracks>0)
+  {
+    $('#add_seed_id').show();
+    $('#init_seed_things').hide();
+  }
+  else
+  {
+    $('#add_seed_id').hide();
+    $('#init_seed_things').show();
+  }
+}
+
+
+
+function reaggregate_tracks_based_on_search_value()
+{
+  //itterate though all tracks, when a track h
+    var allTracks = $("#mix_entries_table tr");
+  for(var i=0; i< allTracks.length; i++)
+  {
+    var track = $(allTracks[i]);
+    var tval = $('#'+track.attr('id') + ' input').val();
+    if(track.attr('owner') == null)
+    {
+       for(var k=i+1; k< allTracks.length; k++)
+       {
+         var subtrack = $(allTracks[k]);
+         var subtval = $('#'+subtrack.attr('id') + ' input').val();
+         if(tval == subtval)
+         {
+           //$('#'+subtrack.attr('id') + ' input').val(tval);
+           subtrack.attr('owner',i);
+         }
+       }
+       editing_track = i;
+       handle_aggregate_tracks();
+    }    
+  }   
+  editing_track = -1;
+  hide_those_that_have_owners();
+}
+
+
+$(document).ready(function() {
+   //alert("ready");
+   $('#add_seed_id').hide();
+   $('#init_seed_things').hide();
+   $('#seed_popup').hide();
+   $('#add_seed_id').mouseover(popup_add_seed);
+   $('#seed_popup').mouseleave(popup_hide);
+   setTimeout("show_init_popdown_if_no_tracks();",300);
+   setTimeout("reaggregate_tracks_based_on_search_value();",1000);
+   
+   //show_init_popdown_if_no_tracks();
+});
+
+</script>
+
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+<div style="display:void(0);">
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ class="jnlp"
+ src="nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+<div class="tight_line"></div>
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+<div class="nav">
+  <div class="support_link_selected">re:mix</div>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <a class="support_link" href="buzz.html">re:buzz</a>
+  <a class="support_link" href="open.html">re:open</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="1.1">
+  <site_set>
+    <site domain="lycos.com" strokeHue="0.8666667" fontIndex="1"/>
+    <site domain="wordcircuits.com" strokeHue="0.33333334" fontIndex="2"/>
+    <site domain="tamu.edu" strokeHue="0.0" fontIndex="2"/>
+    <site domain="moonstar.com" strokeHue="0.083333336" fontIndex="2"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/"/>
+    <traversable urlString="http://www.wordcircuits.com/gallery/sandsoot"/>
+    <traversable urlString="http://www.moonstar.com/~nedmay/chromat"/>
+    <traversable urlString="http://hotwired.lycos.com/webmonkey/authoring/html_basics/"/>
+    <traversable urlString="http://stateless.freehosting.net"/>
+    <traversable urlString="http://diversity.uoregon.edu"/>
+    <traversable urlString="http://www.wtc.tas.gov.au/html"/>
+    <traversable urlString="http://www.avitale.com"/>
+    <traversable urlString="http://www.fortunecity.com/greenfield/dreams/383"/>
+    <traversable urlString="http://www.uiowa.edu/~iareview/tirweb/feature/strickland"/>
+    <traversable urlString="http://hine-digital-art.com/weblog"/>
+    <traversable urlString="http://www.bostonreview.net/BR24.5"/>
+    <traversable urlString="http://www.astronomytower.org/authors/amelia"/>
+    <traversable urlString="http://xml.coverpages.org"/>
+    <traversable urlString="http://papers.nber.org/jel"/>
+    <traversable urlString="http://www.arnes.si/news/archive/si.comp.ai"/>
+    <traversable urlString="http://alfve.sourceforge.net"/>
+    <traversable urlString="http://www.w3.org/MarkUp/"/>
+    <traversable urlString="http://www.w3.org/TR/2001/REC-SVG-20010904/"/>
+    <traversable urlString="http://www.blooberry.com/indexdot/history"/>
+    <traversable urlString="http://www.free-scripts.net/html_tutorial/history"/>
+    <traversable urlString="http://www.cacr.caltech.edu/~slombey/asci/html/history"/>
+    <traversable urlString="http://www.scientologie.tm.fr/world/worldeng/global/regions/zoom3"/>
+    <traversable urlString="http://www.auburn.edu/its/ducapps/aumap"/>
+    <traversable urlString="http://www.visitcrestedbutte.com"/>
+    <traversable urlString="http://www.milford.co.uk"/>
+    <traversable urlString="http://www.filmup.com/forum"/>
+    <traversable urlString="http://www.booksfactory.com/writers"/>
+    <traversable urlString="http://dmoz.org/Arts/Literature/Authors/B/Borges,_Jorge_Luis/"/>
+    <traversable urlString="http://www.theatlantic.com/issues/2003/06"/>
+  </traversable_set>
+  <term_set>
+    <term stemmed="interpret" intensity="4"/>
+    <term stemmed="love" intensity="8"/>
+    <term stemmed="hypermedia" intensity="4"/>
+    <term stemmed="borg" intensity="4"/>
+    <term stemmed="navig" intensity="4"/>
+    <term stemmed="student" intensity="4"/>
+    <term stemmed="fanat" intensity="4"/>
+    <term stemmed="se" intensity="4"/>
+    <term stemmed="dynam" intensity="4"/>
+    <term stemmed="address" intensity="4"/>
+    <term stemmed="sendero" intensity="4"/>
+    <term stemmed="gourd" intensity="4"/>
+    <term stemmed="lui" intensity="4"/>
+    <term stemmed="grail" intensity="4"/>
+    <term stemmed="el" intensity="4"/>
+    <term stemmed="de" intensity="4"/>
+    <term stemmed="harri" intensity="8"/>
+    <term stemmed="listen" intensity="8"/>
+    <term stemmed="stori" intensity="4"/>
+    <term stemmed="project" intensity="4"/>
+    <term stemmed="creat" intensity="4"/>
+    <term stemmed="collect" intensity="4"/>
+    <term stemmed="spec" intensity="8"/>
+    <term stemmed="releas" intensity="8"/>
+    <term stemmed="bifurcan" intensity="4"/>
+    <term stemmed="zoom" intensity="2"/>
+    <term stemmed="jard" intensity="4"/>
+    <term stemmed="sand" intensity="4"/>
+    <term stemmed="recommend" intensity="8"/>
+    <term stemmed="propos" intensity="8"/>
+    <term stemmed="holi" intensity="4"/>
+    <term stemmed="titl" intensity="4"/>
+    <term stemmed="que" intensity="4"/>
+    <term stemmed="express" intensity="4"/>
+    <term stemmed="soot" intensity="8"/>
+    <term stemmed="jorg" intensity="4"/>
+  </term_set>
+  <container_set>
+    <container url="http://www.moonstar.com/~nedmay/chromat/forks.htm" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://hotwired.lycos.com/webmonkey/authoring/html_basics/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html" generation="3">
+      <content_element>
+        <participant intensity="4"/>
+      </content_element>
+    </container>
+    <container url="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.wordcircuits.com/gallery/sandsoot/menupage.html" generation="2">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8888889">
+            <text_token string="Visual"/>
+            <text_token string="design,"/>
+            <text_token string="including"/>
+            <text_token string="color"/>
+            <text_token string="theory,"/>
+            <text_token string="space,"/>
+            <text_token string="and"/>
+            <text_token string="foreground/background"/>
+            <text_token string="relationships."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="126" y="55" width="232" height="92"/>
+      </visual> historyNum = "1" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://a1112.g.akamai.net/7/1112/492/02012000/static.wired.com/webmonkey/images/monkey_white2.gif" href="http://hotwired.lycos.com/webmonkey/index.html"/>
+      </media_element>
+      <visual>
+        <extent x="210" y="165" width="130" height="139"/>
+      </visual> historyNum = "4" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.125">
+          <text_chunk doUnderline="true" sameHref="true" commonHref="http://hotwired.lycos.com/webmonkey/97/19/index2a.html?tw=authoring" nonStopIndex="0.85714287">
+            <text_token string="The" bold="true"/>
+            <text_token string="Wonderful" bold="true"/>
+            <text_token string="div" bold="true"/>
+            <text_token string="Tag" bold="true"/>
+            <text_token string="Makes" bold="true"/>
+            <text_token string="Markup" bold="true"/>
+            <text_token string="Easier" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="84" y="220" width="140" height="84"/>
+      </visual> historyNum = "3" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/forks1.gif"/>
+      </media_element>
+      <visual>
+        <extent x="126" y="165" width="42" height="43"/>
+      </visual> historyNum = "7" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/tforks2.gif" href="http://www.moonstar.com/~nedmay/images/forks2.gif"/>
+      </media_element>
+      <visual>
+        <extent x="252" y="330" width="127" height="100"/>
+      </visual> historyNum = "2" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.6">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6666667">
+            <text_token string="Ontologies,"/>
+            <text_token string="maps,"/>
+            <text_token string="and"/>
+            <text_token string="navigation"/>
+            <text_token string="as"/>
+            <text_token string="means"/>
+            <text_token string="of"/>
+            <text_token string="structuring"/>
+            <text_token string="information."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="42" y="275" width="181" height="92"/>
+      </visual> historyNum = "5" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/forks2.gif"/>
+      </media_element>
+      <visual>
+        <extent x="42" y="55" width="84" height="112"/>
+      </visual> historyNum = "9" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.9">
+          <text_chunk doUnderline="true" sameHref="true" commonHref="http://hotwired.lycos.com/webmonkey/97/36/index3a.html?tw=authoring" nonStopIndex="0.8">
+            <text_token string="Symbols," bold="true"/>
+            <text_token string="Accents," bold="true"/>
+            <text_token string="and" bold="true"/>
+            <text_token string="Funky" bold="true"/>
+            <text_token string="Characters" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="294" y="55" width="153" height="118"/>
+      </visual> historyNum = "8" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.625">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.64285713">
+            <text_token string="Wendy"/>
+            <text_token string="makes"/>
+            <text_token string="a"/>
+            <text_token string="fancy"/>
+            <text_token string="mailto"/>
+            <text_token string="that"/>
+            <text_token string="pops"/>
+            <text_token string="a"/>
+            <text_token string="topic"/>
+            <text_token string="into"/>
+            <text_token string="the"/>
+            <text_token string="user's"/>
+            <text_token string="subject"/>
+            <text_token string="line."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="168" y="110" width="125" height="54"/>
+      </visual> historyNum = "15" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element positiveClicks="1">
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/tforks1.jpg" href="http://www.moonstar.com/~nedmay/images/forks1.gif"/>
+      </media_element>
+      <visual>
+        <extent x="294" y="495" width="84" height="69"/>
+      </visual> historyNum = "6" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/menupage.html">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <image_element url="http://www.wordcircuits.com/gallery/sandsoot/images/menupage4.JPG" href="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html"/>
+      </media_element>
+      <visual>
+        <extent x="309" y="226" width="147" height="117"/>
+      </visual> historyNum = "11" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html">
+      <media_element>
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <image_element url="http://www.wordcircuits.com/gallery/sandsoot/images/3rocks_sm.JPG" href="http://www.wordcircuits.com/gallery/sandsoot/rainsound.html"/>
+      </media_element>
+      <visual>
+        <extent x="84" y="385" width="126" height="188"/>
+      </visual> historyNum = "14" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.16666667">
+            <text_token string="This"/>
+            <text_token string="site"/>
+            <text_token string="has"/>
+            <text_token string="all"/>
+            <text_token string="the"/>
+            <text_token string="answers."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="336" y="385" width="90" height="55"/>
+      </visual> historyNum = "16" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6363636">
+            <text_token string="Dynamic"/>
+            <text_token string="navigation"/>
+            <text_token string="as"/>
+            <text_token string="a"/>
+            <text_token string="holy"/>
+            <text_token string="grail"/>
+            <text_token string="for"/>
+            <text_token string="addressing"/>
+            <text_token string="the"/>
+            <text_token string="collections"/>
+            <text_token string="problem."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="28" y="361" width="158" height="82"/>
+      </visual> historyNum = "17" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.75">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="The" bold="true"/>
+            <text_token string="Garden" bold="true"/>
+            <text_token string="of" bold="true"/>
+            <text_token string="Forking" bold="true"/>
+            <text_token string="Paths" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="210" y="330" width="90" height="57"/>
+      </visual> historyNum = "18" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+            <text_token string="We"/>
+            <text_token string="will"/>
+            <text_token string="explore"/>
+            <text_token string="the"/>
+            <text_token string="programming,"/>
+            <text_token string="design,"/>
+            <text_token string="authoring,"/>
+            <text_token string="and"/>
+            <text_token string="theory"/>
+            <text_token string="of"/>
+            <text_token string="hypermedia."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="42" y="165" width="173" height="86"/>
+      </visual> historyNum = "19" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="Has"/>
+            <text_token string="the"/>
+            <text_token string="Web"/>
+            <text_token string="community"/>
+            <text_token string="finally"/>
+            <text_token string="found"/>
+            <text_token string="what"/>
+            <text_token string="it's"/>
+            <text_token string="looking"/>
+            <text_token string="for?"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="294" y="110" width="129" height="74"/>
+      </visual> historyNum = "20" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element positiveClicks="4">
+        <content_element>
+          <participant intensity="8"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.41666666">
+            <text_token string="The"/>
+            <text_token string="W3C"/>
+            <text_token string="has"/>
+            <text_token string="released"/>
+            <text_token string="its"/>
+            <text_token string="proposed"/>
+            <text_token string="recommendation"/>
+            <text_token string="for"/>
+            <text_token string="the"/>
+            <text_token string="next"/>
+            <text_token string="HTML"/>
+            <text_token string="spec."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="163" y="548" width="164" height="82"/>
+      </visual> historyNum = "21" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" nonStopIndex="0.5714286">
+            <text_token string="The"/>
+            <text_token string="title"/>
+            <text_token string="is"/>
+            <text_token string="taken"/>
+            <text_token string="from"/>
+            <text_token string="a"/>
+            <text_token string="story"/>
+            <text_token string="by"/>
+            <text_token string="Jorge"/>
+            <text_token string="Luis"/>
+            <text_token string="Borges"/>
+            <text_token string=","/>
+            <text_token string="El" italic="true"/>
+            <text_token string="Jard" italic="true"/>
+            <text_token string=";n" italic="true"/>
+            <text_token string="De" italic="true"/>
+            <text_token string="Senderos" italic="true"/>
+            <text_token string="Que" italic="true"/>
+            <text_token string="Se" italic="true"/>
+            <text_token string="Bifurcan" italic="true"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="298" y="416" width="185" height="86"/>
+      </visual> historyNum = "22" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5">
+            <text_token string="CSS"/>
+            <text_token string="and"/>
+            <text_token string="the"/>
+            <text_token string="design"/>
+            <text_token string="of"/>
+            <text_token string="text."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="252" y="550" width="80" height="49"/>
+      </visual> historyNum = "23" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5555556">
+            <text_token string="The"/>
+            <text_token string="underlying"/>
+            <text_token string="fractal"/>
+            <text_token string="uses"/>
+            <text_token string="a"/>
+            <text_token string="standard"/>
+            <text_token string="&quot;branching"/>
+            <text_token string="tree&quot;"/>
+            <text_token string="algorithm."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="126" y="55" width="137" height="90"/>
+      </visual> historyNum = "24" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="Students"/>
+            <text_token string="will"/>
+            <text_token string="create"/>
+            <text_token string="hypermedia"/>
+            <text_token string="projects"/>
+            <text_token string="that"/>
+            <text_token string="are"/>
+            <text_token string="expressive"/>
+            <text_token string="and"/>
+            <text_token string="interpretive."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="186" y="452" width="144" height="72"/>
+      </visual> historyNum = "10" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="8"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" nonStopIndex="0.6">
+            <text_token string="Sand"/>
+            <text_token string="was"/>
+            <text_token string="a"/>
+            <text_token string="gourd"/>
+            <text_token string="fanatic"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="340" y="498" width="145" height="114"/>
+      </visual> historyNum = "13" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html">
+      <media_element positiveClicks="4">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.9230769">
+          <text_chunk doUnderline="true" nonStopIndex="0.6666667">
+            <text_token string="Harry"/>
+            <text_token string="Soot"/>
+            <text_token string="loved"/>
+            <text_token string="to"/>
+            <text_token string="listen"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="45" y="478" width="147" height="110"/>
+      </visual> historyNum = "12" </collage_element>
+  </collage_element_set> DEFAULT_UNDO_LEVELS = "32" </collage>

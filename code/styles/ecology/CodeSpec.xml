@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="ecology.css"/>
+<code file="ecologyie3.css"/>
+<code file="ecologyMacIe.css"/>
+<code file="ecology.js"/>
+
+</code_spec>

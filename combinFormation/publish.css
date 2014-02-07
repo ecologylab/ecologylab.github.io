@@ -1,0 +1,18 @@
+.metadata
+{
+background-color: #dfdfdf;
+border: 2px solid #5f5f5f;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+position: absolute;
+visibility: hidden;
+ 
+}
+table
+{
+margin: 3px;
+}
+td
+{
+font-size: 11px;
+background-color: #ffffff;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>information visualization | structures of interactive information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/courses.css" rel="stylesheet">
+<script language="JavaScript" src="../../../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../../../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../../../../code/javascript/ecologylab/ecologylab.js"></script>
+
+<link rel="shortcut icon" href="../../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="banner">
+  <span class="banner3">information</span>
+  <span class="banner2">interactive</span>
+  <span class="banner1">structures of</span>
+</div>
+
+<div class="navigation">
+
+<div class="block">
+  <a class="navlink" href="../../index.html">welcome</a>
+  <a class="subnavtitle" href="../index.html">modules</a>
+  <a class="subnavlink" href="../visual/index.html">visual&nbsp;&lsaquo;</a>
+  <a class="navselected" href="index.html">dynamic&nbsp;&nbsp;</a>
+  <a class="subnavlink"
+   href="../theReference/index.html">the&nbsp;reference&nbsp;&lsaquo;</a>
+  <a class="subnavlink" href="../meaning/index.html">meaning &lsaquo;</a>
+</div>
+
+<div class="block">
+  <a class="subnavtitle" href="index.html">dynamic</a>
+  <a class="subnavlink" href="fundamentals.html">code fundamentals</a>
+  <a class="subnavlink" href="design.html">interaction<br>design</a>
+  <a class="navselected" href="visualization.html">info visualization</a>
+  <a class="subnavlink" href="focus.html">focus + context</a>
+  <a class="subnavlink" href="../meaning/dynamicNav.html">dynamic nav</a>
+</div>
+
+<div class="block">
+  <a class="navlink" href="../../mustsee/index.html">must see!</a>
+  <a class="navlink" href="../../assignments/index.html">assignments</a>
+  <a class="navlink" href="../../references.html">references</a>
+  <a class="navlink" href="../../texts.html">texts</a>
+</div>
+
+<div class="block">
+  <a class="navlink" href="../../../">other courses</a>
+</div>
+
+</div>
+
+<div class="content_title">information visualization</div>
+
+<div class="content">
+
+<img src="images/dynamics.jpg" class="illustrate">
+
+<h6 >Presentations of information can respond dynamically to human
+interaction. To work in these terms requires:</h6>
+
+<ul style="padding-bottom: 0px; padding-top: 0px; margin-top: 2px;">
+<li>visual design and programming;</li>
+<li>conceptualizing the form of the information and transformations;</li>
+<li>sensing how human gestures will trigger visualization dynamics;</li>
+<li>understanding who the human is, and what s/he is doing.</li>
+</ul>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://doi.acm.org/10.1145/191666.191775;">
+<img
+ src="./images/starfield2.jpg"
+ class="illustrate_left">
+</a>
+reading: <a class="destination" target="_blank"
+ href="http://doi.acm.org/10.1145/191666.191775">visual information seeking - tight coupling of dynamic query filters with starfield displays</a>
+<br>[<span class="source">Christopher Ahlberg and Ben Shneiderman</span>]
+<br>
+<i>Proc ACM CHI 1994</i>, 313-317.</h4>
+<div>
+This paper offers new principles for visual information
+seeking (VIS). A key concept is to support browsing, which
+is distinguished from familiar query composition and
+information retrieval because of its emphasis on rapid
+filtering to reduce result sets, progressive refinement of
+search parameters, continuous reformulation of goals, and
+visual scanning to identify results. VIS principles
+developed include: dynamic query filters (query parameters
+are rapidly adjusted with sliders, buttons, maps, etc.),
+starfield displays (two-dimensional scatterplots to structure
+tesult sets and zooming to reduce clutter), and tight coupling
+(interrelating query components to preserve display
+invariants and support progressive refinement combined
+with an emphasis on using search output to foster search
+input). A FilmFinder prototype using a movie database
+demonstrates these principles in a VIS environment.
+</div>
+</div>
+
+<div class="element">
+<h4>reading: <a class="destination" target="_blank"
+ href="http://doi.acm.org/10.1145/192426.192472">data visualization sliders</a> [<span class="source">Stephen G. Eick</span>]<br>
+<i>Proc ACM UIST 1994</i>, 119-120.</h4>
+Comuter sliders are a generic user input mechanism for specifying a numeric value from a range. For data visualization, the effectiveness of sliders may be increased by using the space inside the slider as an interactive color scale, a barplot for discrete data, and a density plot for continuous data.The idea is to show the selected values in relation to the data and its distribution. Furthermore, the selection mechanism may be generalized using a painting metaphor to specify arbitrary, disconnected intervals while maintaining an intuitive user-interface.
+</div>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://www2.parc.com/istl/projects/MagicLenses/DynamicQueries.html;">
+<img
+ src="./images/movable_filters.jpg"
+ class="illustrate">
+</a>
+reading: <a class="destination"
+target="_blank"
+ href="http://www2.parc.com/istl/projects/MagicLenses/DynamicQueries.html">Enhanced
+dynamic queries via movable filters</a><br>[<span class="source">Ken
+Fishkin and Maureen C. Stone</span>]<br/>
+<i>Proc ACM CHI 1995</i>, 415-420.</h4>
+
+</h4>
+<div>
+Traditional database query systems allow users to construct complicated database queries from specialized database language 
+primitives. While powerful and expressive, such systems are not easy to use, especially for browsing or exploring the data. 
+Information visualization systems address this problem by providing graphical presentations of the data and direct 
+manipulation tools for exploring the data. Recent work has reported the value of dynamic queries coupled with 
+two-dimensional data representations for progressive refinement of user queries. However, the queries generated by these 
+systems are limited to conjunctions of global ranges of parameter values. In this paper, we extend dynamic queries by 
+encoding each operand of the query as a Magic Lens filter. Compound queries can be constructed by overlapping the lenses. 
+Each lens includes a slider and a set of buttons to control the value of the filter function and to define the composition 
+operation generated by overlapping the lenses. We demonstrate a system that supports multiple, simultaneous, general, 
+real-valued queries on databases with incomplete data, while maintaining the simple visual interface of dynamic query 
+systems. 
+</div>
+</div>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://www.marumushi.com/apps/newsmap/;">
+<img
+ src="./images/newsMap.jpg"
+ class="illustrate_left">
+</a>
+example : <a class="destination"
+target="_blank"
+ href="http://www.marumushi.com/apps/newsmap/">news
+map</a><br>[<span class="source">Marcos Weskamp</span>]
+</h4>
+<div style="margin-left: 217px;">
+Newsmap depicts the permanently changing map of Google news. 
+The treemaps visualization algorithm of Shneiderman and Wattenberg
+is employed.
+The visualization gives users a quick overview of breaking
+international news, in which the area of a topic dennotes the number
+of stories devoted to it. Stories can be filtered by country or origin,
+news category, and recency.
+</div>
+</div>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://www.smartmoney.com/marketmap;">
+<img
+ src="./images/mapofmarket.jpg"
+ class="illustrate_left">
+</a>
+example : <a class="destination"
+target="_blank"
+ href="http://www.smartmoney.com/marketmap">map
+of the market</a><br>[<span class="source">Martin Wattenberg</span>]
+</h4>
+<div style="margin-left: 217px;">
+A 2-dimensional visualization method, capable of
+presenting detailed information on hundreds of items while emphasizing
+overall patterns in the data. This display method, which builds on
+Shneiderman's treemap technique, makes use of both hierarchy and
+similarity information. We have implemented this display in the
+SmartMoney Map of the Market, a web page that reports current data on
+</div>
+</div>
+
+<div class="element">
+<h4>
+reading: 
+Ben Shneiderman, <a class="destination"
+target="_blank"
+ href="http://www.cs.umd.edu/hcil/treemap-history/index.shtml">A History of Treemap Research</a>,<br>
+</h4>
+<div>
+An account of versions of the treemap algorithm, including what they
+were applied to, who developed them, and when. With links to relevant
+technical articles that detail how the algorithms work.
+</div>
+</div>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://www.turbulence.org/Works/apartment;">
+<img
+ src="./images/apartment.jpg"
+ class="illustrate">
+</a>
+example : <a class="destination"
+target="_blank"
+ href="http://www.turbulence.org/Works/apartment">Apartment</a><br>[<span class="source">Marek Walczak and Martin Wattenberg</span>]
+</h4>
+A project where people build virtual spaces to live in;
+where your words build worlds, and sentence structure lays the
+foundation of the Apartment. The apartments people have built are
+available as a collection, which functions as a social space.
+</div>
+
+<div class="element">
+<h4>example: <a class="destination"
+ target="_blank"
+ href="http://textarc.org/">TextArc</a>
+[<span class="source">Brad Paley</span>]</a>
+</h4>
+Uses a self-organizing map algorithm to create
+visualizations of large texts, such as Hamlet. The visualization gives
+insight's into the text's structure, based on the frequency of words,
+and their locations within it.
+</div>
+
+</div>
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+<br>
+an <a href="../../../../">interface ecology lab</a> production
+</div>
+
+</div>
+</body>
+</html>

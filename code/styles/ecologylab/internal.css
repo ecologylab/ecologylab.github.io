@@ -1,0 +1,91 @@
+div.nav_hack
+{
+  background-color: #00ff00;
+	width: 20px;
+margin-right: -50px;
+margin-left:40px;
+padding-right: 50px;
+  	position: static;
+	float: right;
+}
+div.main_nav_box
+{
+	height: 400px;
+	width: 120px;
+  top: -40px;	
+  right: 0px;
+  	position: relative;
+
+	text-align: right;
+	float: right;
+	margin-left: 10px;
+
+	padding-right: 0px;
+	clear: right;
+}
+
+div.right_nav_box
+{
+	/*background-color: #ff0000;*/
+	position:relative;
+      top: 40px;
+
+	border-left: 5px solid #527198;
+	border-top: 5px solid #527198;
+	border-bottom: 5px solid #527198;
+	padding-bottom: 10px;
+}
+
+div.hot_link_box
+{
+  position:relative;
+	float: left;
+  	clear: both;
+
+  left: 10px;
+  border-right: 5px solid #527198;
+  border-top: 5px solid #527198;
+  border-bottom: 5px solid #527198;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  width: 150px;
+  font-size: 13px;
+
+}
+.main_content
+{
+  padding-left: 20px;
+}
+
+.header
+{
+	margin-bottom: 7px;
+	
+}
+.rootcontainer
+{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+ul.subbox
+{
+  	background-color: #dddd88; 
+}
+.subbox
+{
+  	background-color: #e9e988; 
+	margin-bottom: 20px;
+	margin-right: 300px;
+	padding: 7px;
+}
+.rootcontainer div
+{
+	line-height: 135%
+}
+.smaller
+{
+	font-size: 10px;
+}

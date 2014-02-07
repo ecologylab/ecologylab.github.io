@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>style sheets | structures of interactive information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/courses.css" rel="stylesheet">
+<script language="JavaScript" src="../../../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../../../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../../../../code/javascript/ecologylab/ecologylab.js"></script>
+<link rel="shortcut icon" href="../../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+</head>
+<script language="JavaScript">
+function fixIFrame()
+{
+   var if1 = document.getElementById("if1");
+//   alert(if1);
+   if (!gecko)
+   {
+      if1.style.width	= "600px";
+      if1.style.height	= "300px";
+      if1.style.zoom	= "30%"; 
+   }
+   
+}
+</script>
+<body onload="fixIFrame()">
+<div class="rootcontainer">
+
+<div class="banner">
+  <span class="banner3">information</span>
+  <span class="banner2">interactive</span>
+  <span class="banner1">structures of</span>
+</div>
+
+<div class="navigation">
+
+<div class="block">
+  <a class="navlink" href="../../index.html">welcome</a>
+  <a class="subnavtitle" href="../index.html">modules</a>
+  <a class="navselected" href="index.html">visual&nbsp;&nbsp;</a>
+  <a class="subnavlink" href="../dynamic/index.html">dynamic &lsaquo;</a>
+  <a class="subnavlink"
+   href="../theReference/index.html">the&nbsp;reference&nbsp;&lsaquo;</a>
+  <a class="subnavlink" href="../meaning/index.html">meaning &lsaquo;</a>
+</div>
+
+<div class="block">
+  <a class="subnavtitle" href="index.html">visual</a>
+  <a class="subnavlink" href="html.html">html</a>
+  <a class="subnavlink" href="spatial.html">spatial layout</a>
+  <a class="navselected" href="css.html">style sheets</a>
+  <a class="subnavlink" href="text.html">visual text</a>
+  <a class="subnavlink" href="color.html">color theory</a>
+</div>
+
+<div class="block">
+  <a class="navlink" href="../../mustsee/index.html">must see!</a>
+  <a class="navlink" href="../../assignments/index.html">assignments</a>
+  <a class="navlink" href="../../references.html">references</a>
+  <a class="navlink" href="../../texts.html">texts</a>
+</div>
+
+<div class="block">
+  <a class="navlink" href="../../../">other courses</a>
+</div>
+
+</div>
+
+<div class="content_title">cascading style sheets</div>
+
+<div class="content">
+Cascading Style Sheets are
+<ul>
+  <li>a mechanism for separating formatting from content. This enables
+  great modularity in the implementation structures of information.</li>
+  <li>a means for acheiving great control over the style, positioning and
+      flow of layout elements (text, images, ...)</li>
+</ul>
+
+<div class="element">
+<h4>
+<iframe id="if1" class="illustrate"
+ frameborder="1" border="0" src="http://bluerobot.com/web/layouts/layout3.html"
+ marginheight="0" marginwidth="0" scrolling="no" 
+ style="width: 180px; height: 90px;"
+></iframe>
+
+reading: 
+<a class="destination"
+ target="_blank"
+ href="http://www.bluerobot.com/web/layouts/">2 &amp;
+3 columm layouts</a>
+<br/>
+
+reading: <a class="destination"
+ target="_blank"
+ href="http://bluerobot.com/web/css/center1.html">centering
+1</a>
+<br/>
+
+reading: <a class="destination"
+ target="_blank"
+ href="http://bluerobot.com/web/css/center2.html">centering
+2</a>
+</h4>
+
+These tutorial demonstrations at bluerobot.com address the vertical layout of 
+text. They are clear and quite useful.
+</div>
+
+<div class="element">
+<h4>
+reading: <a class="destination"
+ target="_blank"
+ href="http://www.alistapart.com/articles/fauxcolumns/">extending columns</a>
+</h4>
+
+A nice app note about how to extend a column to stretch vertically
+with other content. Part of the generally useful
+<a
+ target="_blank"
+ href="http://www.alistapart.com/">a list apart</a>.
+</div>
+
+<div class="element">
+<h4>
+reading: <a class="destination"
+ target="_blank"
+ href="http://glish.com/css/">CSS Layout Techniques:
+More Annotated Examples and Links</a>
+</h4>
+These tutorial demonstrations at glish.com address similar issues,
+with a slightly different take. Also a bunch of links to useful resources.
+</div>
+
+<div class="element">
+<h4>
+<a  class="destination"
+target="_blank"
+ href="http://www.zvon.org/xxl/xhtmlReference/Output/comparison.html;">
+<img
+ src="./images/zvon_org.jpg"
+ class="illustrate_left"  width="180">
+</a>
+short reading: 
+<a  class="destination"
+target="_blank"
+ href="http://www.zvon.org/xxl/xhtmlReference/Output/comparison.html;">
+Comparison of Strict and Transitional XHTML</a>
+</h4>
+A quick, clear guide to the subtle differences.
+</div>
+
+<div class="element">
+<h4>
+reference: 
+<a  class="destination"
+target="_blank"
+ href="http://www.w3.org/TR/1999/REC-html401-19991224/;">HTML
+4.01 Specification</a>
+</h4>
+This specification is produced and maintained by the World Wide Web
+consortium, an international standards body. It defines the language
+for much of today's web practice. Unfortunately, dealing with
+deviations from the spec are a normal part of a developer's life.
+This is the current active specification.
+</div>
+
+<div class="element">
+<h4>
+reference: 
+<a  class="destination"
+target="_blank"
+ href="http://www.w3.org/TR/REC-CSS2/;">
+Cascading Style Sheets, level 2 Specification</a>
+</h4>
+Another W3C standards document. Again, what browsers do is not exactly
+the standard. The Flanagan JavaScript book, and the sites linked to on
+this page, can give you *some* information about deviations.
+</div>
+<br />
+
+<div class="element">
+<h4>
+reference:
+<a class="destination"
+ target="_blank"
+ href="http://msdn.microsoft.com/library/default.asp?url=/workshop/author/dhtml/reference/dhtml_reference_entry.asp">Microsoft DHTML Reference</a>
+</h4>
+This page is a good starting point for a cross reference of
+information concerning dynamic HTML. the obvious downside is this
+reference pertains only to the IE browser.
+</div>
+
+<div class="element">
+<h4>
+example: <a class="destination"
+ target="_blank"
+ href="http://msdn.microsoft.com/workshop/samples/author/dhtml/refs/zIndex.htm">CSS Z-Index Usage</a>
+</h4>
+this is a simple example of using the z-index value interactively.
+</div>
+
+<div class="element">
+<h4>
+example: <a class="destination"
+ target="_blank"
+ href="http://msdn.microsoft.com/workshop/samples/author/dhtml/refs/overflow.htm">CSS Overflow Attribute</a>
+</h4>
+this shows how the different settings for overflow behave. note that
+images are subject to the same results. The <code>overflow attribute</code>
+enables any block level element to have scroll bars when its size is
+constrained to be smaller than its content.
+</div>
+
+<div class="element">
+<h4>
+<a class="destination"
+ target="_blank"
+ href="http://www.styleboost.com">
+<img
+ src="./images/styleboost.jpg"
+ class="illustrate"  width="180">
+</a>
+example:
+<a class="destination"
+ target="_blank"
+ href="http://www.styleboost.com">styleboost
+</a>
+</h4>
+Here, the links are the thing. 
+As far as design goes, the use of space is clear.
+However, this site suffers from the collection problem.
+</div>
+
+<div class="element">
+<h4>
+example: <a class="destination"
+ target="_blank"
+ href="http://hotwired.lycos.com/webmonkey/authoring/stylesheets/tutorials/tutorial1.html">Webmonkey Stylesheets Tutorial</a>
+</h4>
+Fundamentals of what stylesheets are, how to use them, what they're good for.
+</div>
+<br />
+
+<div class="element">
+<h4>
+<a class="destination"
+ target="_blank"
+ href="http://www.meyerweb.com/eric/css/edge/">
+<img
+ src="./images/css_edge.jpg"
+ class="illustrate_left"  width="180">
+</a>
+example: <a class="destination"
+ target="_blank"
+ href="http://www.meyerweb.com/eric/css/edge/">css/edge</a>
+</h4>
+This page contains turorials on arranging CSS, including slanted text.
+</div>
+
+<div class="element">
+<h4>
+example: <a class="destination"
+ target="_blank"
+ href="http://css.maxdesign.com.au/">css.maxdesign.com.au</a>
+</h4>
+Another site of tutorials on how to arrange web spaces using divs.
+</div>
+
+<div class="element">
+<h4>
+<a class="destination"
+ target="_blank"
+ href="http://csszengarden.com/?cssfile=/084/084.css&page=0">
+<img
+ src="./images/cssZen.jpg"
+ class="illustrate"  width="180">
+</a>
+example: <a class="destination"
+ target="_blank"
+ href="http://csszengarden.com/?cssfile=/084/084.css&page=0">css Zen Garden</a>
+</h4>
+Use the menu to select various styles that will completely remake the look of the page.  Those brave enough can even make a submisison to the page of their own design.
+</div>
+
+</div>
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br>
+an <a href="../../../../">interface ecology lab</a> production
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 10pt;
+   font-weight: 500;
+}
+td
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 10pt;
+   font-weight: 500;
+}
+.collage
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 9pt;
+   font-weight: 700;
+}
+.intro
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 9pt;
+   font-weight: 700;
+}
+
+select.feedback
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 8pt;
+   font-weight: 500;
+}
+select
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 8pt;
+   font-weight: 500;
+}
+
+input
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 9pt;
+   font-weight: 500;
+}
+input.feedback
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 9pt;
+   font-weight: 500;
+}
+
+.subhead
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 10pt;
+   color: "cc6600";
+   font-weight: bolder;
+}
+
+.head
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 11pt;
+}
+.tiny
+{
+   font-size: 6pt
+}
+.small
+{
+   font-size: 8pt;
+}
+.caption
+{
+   font-size: 8pt;
+   color: "#996600";
+}
+.ibm
+{
+   font-size: 9pt;
+   font-weight: 700;
+   color: "330099";
+}
+.mitsui
+{
+   font-size: 9pt;
+   font-weight: 700;
+   color: "black";
+}
+.slogan
+{
+   font-style: italic;
+   font-size: 7pt;
+   font-weight: 700;
+   color: "336699";
+}
+.tm
+{
+   vertical-align: super;
+   font-size: 4pt;
+}

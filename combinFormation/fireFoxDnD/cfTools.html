@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<META name="GENERATOR" content="IBM WebSphere Studio">
+<TITLE>cfTools.html</TITLE>
+</HEAD>
+<BODY>
+
+<script language="JavaScript">
+
+function install (aEvent)
+{
+   //alert(aEvent);
+   var params = {
+    "cfTools": { URL: aEvent.target.href,
+             IconURL: "http://ecologylab.cs.tamu.edu/images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png",
+             toString: function () { return this.URL; }
+    }
+  };
+  //alert('calling install');
+  InstallTrigger.install(params);
+  //InstallTrigger.install("cftools.xpi");
+  return false;
+}
+
+</script>
+
+
+<a href="cfTools.xpi" onclick=" return install(this);">Install cfTools now</a>
+
+</BODY>
+</HTML>

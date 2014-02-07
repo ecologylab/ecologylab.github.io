@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">meta-language tutorial [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4a">tutorials</div>
+</div>
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="index.html">meta-metadata</a>
+  <a class="navlink" href="prereqs.html">prereqs</a>
+  <a class="navlink" href="generalPrincipals.html">principles</a>
+  <a class="navlink" href="environmentSetup.html">development<br/>environment</a>
+  <a class="navlink" href="ice.html">in-context expander</a>
+  <a class="navselected" href="libtutorials.html">tutorials</a>
+  <a class="subnavlink2" href="dataDefinition.html">- data definition</a>
+  <a class="subnavlink2" href="informationExtraction.html">- information<br/>extraction</a>
+  <a class="subnavlink2" href="semanticAction.html">- semantic&nbsp;actions</a>
+  <a class="subnavlink2" href="advancedTopics.html">- advanced&nbsp;topics</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+  <a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+<p class="main">
+People use meta-metadata for different purposes. Librarians and information curators may author
+their own <i>meta-metadata wrappers</i>. Application developers may write their own programs in
+addition to authoring wrappers.
+</p>
+
+<p class="main">
+This tutorial is organized in 2 parts: <a class="destination" href="#wrapperAuthoring">wrapper
+authoring and compiling</a>, and <a class="destination" href="#appDev">application development</a>.
+The first part explains what you need to prepare for authoring new wrappers, the meta-metadata
+language, and how you integrate new wrappers with the system by compiling. The second part includes
+code examples for application developers to show how to use meta-metadata in your own programs.
+</p>
+
+<br/><br/>
+<div class="content_title"><a name="wrapperAuthoring">wrapper authoring and compiling</a></div>
+<div class="content">
+
+<p class="main">
+Prior to authoring your own wrappers, you need to <a class="destination" href="environmentSetup.html">
+setup the environment</a> using Java and Eclipse. You will author your own wrappers in Eclipse, in
+the form of XML files, and compile them into code in a target language (e.g. Java or C#) for use.
+</p>
+
+<p class="main">
+The core of the meta-metadata language is a cross-language type system that represents semantics in different
+systems and programming languages, with the support of <a class="destination" href="index">S.IM.PL</a>.
+With meta-metadata language, application developers, information curators, librarians, and power
+users author <i>meta-metadata wrappers</i> to specify data structure, extraction rules, semantic
+actions, presentation rules, and other aspects of semantics.
+</p>
+
+<p class="main">
+Follow the following pages through examples to learn how to write your own wrappers in
+meta-metadata language:
+</p>
+
+<ul>
+	<li><a class="destination" href="dataDefinition.html">data definition</a></li>
+	<li><a class="destination" href="informationExtraction.html">information extraction</a></li>
+	<li><a class="destination" href="semanticAction.html">semantic actions</a></li>
+	<li><a class="destination" href="advancedTopics.html">advanced topics (nested type definition, generics, etc.)</a></li>
+</ul>
+
+<p class="main">
+After authoring your own wrappers, you need to compile them into a target programming language,
+such as Java or C#, so that the meta-metadata and/or your application can use them. Remember that
+you need to <a class="destination" href="environmentSetup.html">setup the environment</a> using Java
+and Eclipse to use the compiler.
+</p>
+
+<p class="main">
+MetaMetadata compiler compiles meta-metadata repository into metadata class declarations in a target
+programming language, with the same type hierarchy. The compilers themselves are written in
+Java, in the Java project <span style="font-family: monospace;"><a class="destination"
+href="https://svn.ecologylab.net/simplTranslators/trunk/"
+target="_blank">simplTranslators</a></span>, in the
+package <span style="font-family: monospace;">ecologylab.semantics.compiler</span>.
+</p>
+
+<p class="main">
+Currently, the entry class for the meta-metadata-to-Java compiler is<br/>
+<span style="font-family: monospace;">MetaMetadataJavaTranslator</span>. For C#, the entry class is
+<span style="font-family: monospace;">MetaMetadataDotNetTranslator</span>.
+</p>
+
+<p class="main">
+For your convenience, two launch files have been added to the project:
+<ul>
+<li>Run <span style="font-family: monospace;">CompileMmdToJava.launch</span> to compile to Java.
+<li>Run <span style="font-family: monospace;">CompileMmdToCSharp.launch</span> to compile to C#.
+</ul>
+</p>
+
+<p class="main">
+You can launch these shortcuts from Eclipse by right clicking it and select Run, as shown below:
+</p>
+
+<p style="text-align: center;">
+<img src="images/runCompiler.png" width="90%"/>
+</p>
+
+<p class="main">
+The compiler generates metadata class declarations in default locations:
+<ul>
+<li>For Java, it is the <b>ecologylabGeneratedSemantics</b> project.</li>
+<li>For C#/.NET, it assumes that your workspace is in the same level with your Eclipse workspace,
+and with the name <b>ecologylabSemantics.NET</b> for the solution folder. (See <a
+class="destination" href="environmentSetup.html#csharp">environment setup</a> for the recommended layout)</li>
+</ul>
+</p>
+
+</div>
+
+<br/>
+<br/>
+<div class="content_title"><a name="appDev">code samples for application developers</a></div>
+<div class="content">
+<p class="main">
+Code samples for application development in different target programming language are available to illustrate how to use
+meta-metadata with your own application.
+</p>
+
+<p class="main">
+For <b>Java</b> application developers, the following code samples are available in the
+<span style="font-family: monospace;"><a class="destination" href="http://nemesis.csdl.tamu.edu/projects/ecologylab/repository/show/ecologylabSemanticsExample/trunk" target="_blank">ecologylabSemanticsExample</a></span> project
+(listed with the entry class):
+	<ul>
+		<li><span style="font-family: monospace;">NewMmTest.java</span>:
+			A program that accepts a set of document URLs, and returns the
+			extracted semantics in the form of serialized XML. This is a good
+			starting point of how the meta-metadata system works, and makes a
+			test case for testing your new wrapper.</li>
+		<li><span style="font-family: monospace;">NewWeatherDataCollector.java</span>:
+			A program that shows processing search results, collecting data
+			from a weather forecast website, and storing results in a CSV
+			format.</li>
+		<li><span style="font-family: monospace;">MetaSearch.java</span>:
+			A program that shows integrating semantics extracted from different
+			sources and use them polymorphicly.</li>
+	</ul>
+</p>
+
+<p class="main">
+For <b>C#</b> application developers, the following code samples are available in the solution
+<span style="font-family: monospace;"><a class="destination" href="http://nemesis.csdl.tamu.edu/projects/ecologylab/repository/show/ecologylabSemantics.NET/trunk" target="_blank">ecologylabSemantics.NET</a></span> (listed with
+project name):
+  <ul>
+    <li><span style="font-family: monospace;">MmTest</span>:
+			A program that accepts a set of document URLs, and returns the
+			extracted semantics in the form of serialized XML. This is a good
+			starting point of how the meta-metadata system works, and makes a
+			test case for testing your new wrapper.</li>
+		<li><span style="font-family: monospace;">MetaSearch</span>:
+			A program that shows integrating semantics extracted from different
+			sources and use them polymorphicly.</li>
+  </ul>
+</p>
+
+<p class="main">
+The Objective-C code samples will come soon.
+</p>
+
+</div>
+
+</div>
+</body></html>

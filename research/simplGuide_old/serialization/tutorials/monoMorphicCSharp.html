@@ -1,0 +1,441 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">c sharp .net mono-morphic</div>
+</div>
+
+<br clear="all" />
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="navselected" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+
+</div>
+
+ 
+
+<a name="intro"></a>
+<h5> Introduction</h5>
+<p>
+This tutorial shows one how to create C Sharp Dot NET code from generated from S.IM.PL annotated classes.  We assume that you have been through the <a href="monoMorphicJava.html" class="checkthis">java tutorial</a> already.
+</p>
+
+<h5>Setting Up Environments</h5>
+<p>
+Two environments are required to generate C# code from Java. We will start by setting up our Java environment, where we generate C# classes, then we will de/serialize C# classes.
+<p/>
+
+<h4>Java Environment in Eclipse</h4>
+<p>Use an SVN client like <a href="http://subclipse.tigris.org/" class="checkthis">subclipse</a> to checkout the following project over our svn.  Use the user <i>anonymous</i> and the password <i>anonymous</i>.</p>
+<ul>
+<li><a href="https://svn.ecologylab.net/ecologlabFundamental/trunk" class="checkthis">ecologlabFundamental</a></li>
+<li><a href="https://svn.ecologylab.net/eecologlabGeneratedSemantics/trunk" class="checkthis">eecologlabGeneratedSemantics</a></li>
+<li><a href="https://svn.ecologylab.net/eecologlabSemantics/trunk" class="checkthis">eecologlabSemantics</a></li>
+<li><a href="https://svn.ecologylab.net/cyberneko/trunk" class="checkthis">cyberneko</a></li>
+<li><a href="https://svn.ecologylab.net/ecologylabSemanticsCyberneko/trunk" class="checkthis">ecologylabSemanticsCyberneko</a></li>
+<li><a href="https://svn.ecologylab.net/simplTranslators/trunk" class="checkthis">simplTranslators</a></li>
+</ul>
+
+<h4>C# Environment in Visual Studio</h4>
+<p>You can either use the VisualStudio plug-in we use called <a href="http://ankhsvn.open.collab.net/" class="checkit">AnkhSVN</a> to checkout these projects directly or use <a href="http://tortoisesvn.net/" class="checkthis"> TortoiseSVN and import the projects by hand.</a>  </p>
+
+<ul>
+<li><a href="https://svn.ecologylab.net/ecologylabFundamental.NET/trunk" class="checkthis">ecologylabFundamental.NET</a></li>
+<li><a href="https://svn.ecologylab.net/ecologylabSemantics.NET/trunk" class="checkthis">ecologylabSemantics.NET</a></li>
+</ul>
+
+<p>This contains the projects: ecologylanFundamental.NET, ecologylanFundamentalTestCases, and ecologylabXML.NETTesterApp.</p>
+<p>Now that we have our environments set up, let's use our Java environment to create C# files!</p>
+
+<a name="fromjava"></a>
+<h5>From Java to C Sharp</h5>
+<p>Here we have two S.IM.PL annotated classes in Java that we want translated into C#.</p>
+
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    
+	<font color="#3f7f5f">//NormalObject.java</font><br/><code>
+<font color="#7f0055">package&nbsp;</font><font color="#000000">testtranslation;</font><br/>
+<font color="#7f0055">import</font><font color="#000000">&nbsp;ecologylab.serialization.ElementState;</font><br/>
+<font color="#7f0055">public&nbsp;class</font><font color="#000000">&nbsp;NormalObject&nbsp;<font color="#7f0055">extends&nbsp;</font><font color="#000000">ElementState</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#646464">&nbsp;@simpl_scalar</font><font color="#000000">&nbsp;String&nbsp;part1;</font><br/>
+<font color="#646464">&nbsp;@simpl_scalar</font><font color="#000000">&nbsp;String&nbsp;part2;</font><br/>
+<font color="#7f0055">&nbsp;public</font><font color="#000000">&nbsp;NormalObject()</font><br/>
+<font color="#000000">&nbsp;{</font><br/>
+<font color="#000000">&nbsp;}</font><br/>
+<font color="#000000">}</font><br/>
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+	<font color="#3f7f5f">//ComplexObject.java</font><br/>
+	<font color="#7f0055">package</font><font color="#000000">&nbsp;testtranslation;</font><br/>
+	<font color="#7f0055">import</font><font color="#000000">&nbsp;ecologylab.serialization.ElementState;</font><br/>
+
+	<font color="#7f0055">public&nbsp;class&nbsp;</font><font color="#000000">ComplexObject&nbsp;<font color="#7f0055">extends<font color="#000000">&nbsp;ElementState</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#646464">&nbsp;@simpl_scalar</font><font color="#000000">&nbsp;<font color="#7f0055">int</font><font color="#000000">&nbsp;anInt;</font><br/>
+<font color="#646464">&nbsp;@simpl_scalar</font><font color="#000000">&nbsp;<font color="#7f0055">float</font><font color="#000000">&nbsp;anFloat;</font><br/>
+<font color="#646464">&nbsp;@simpl_scalar</font><font color="#000000">&nbsp;String&nbsp;anString;</font><br/>
+<font color="#646464">&nbsp;@simpl_composite</font><font color="#000000">&nbsp;NormalObject&nbsp;otherThing;</font><br/>
+<font color="#7f0055">&nbsp;public</font><font color="#000000">&nbsp;ComplexObject()</font><br/>
+<font color="#000000">&nbsp;{</font><br/>
+<font color="#000000">&nbsp;}</font><br/>
+}
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<p>
+To translate this code we have created a small program that has simplTranslators as a dependency.  This is very similar to the way the translator works in other languages as well.  We use a TranslationScope, a collection of annotated classes as input and the C# translator creates two folders: ts, and <i>package-name-of-your-generate-code-program</i>.  <i>ts</i> contains the translation scope of all of your classes and the other folder contains the new .cs files that are your de/serializable classes.
+</p>
+
+<h4>Translator Program Example</h4>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//TestCSharp.java</font><br/>
+<font color="#7f0055">package&nbsp;</font><font color="#000000">testtranslation;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">java.io.File;</font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">java.io.IOException;</font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">ecologylab.serialization.SIMPLTranslationException;</font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">ecologylab.serialization.TranslationScope;</font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">ecologylab.translators.net.DotNetTranslationException;</font><br/>
+<font color="#7f0055">import&nbsp;</font><font color="#000000">ecologylab.translators.net.DotNetTranslator;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#7f0055">public&nbsp;class&nbsp;</font><font color="#000000">TestCSharp</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#7f0055">&nbsp;&nbsp;public&nbsp;static&nbsp;void&nbsp;</font><font color="#000000">main(<font color="#7f0055">String</font><font color="#000000">&nbsp;args[])</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;TranslationScope&nbsp;ts&nbsp;=&nbsp;<font color="#7f0055">new</font><font color="#000000">&nbsp;TranslationScope();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;ts&nbsp;=&nbsp;TranslationScope.get(<font color="#2a00ff">"somegame"</font><font color="#000000">,ComplexObject.<font color="#7f0055">class</font><font color="#000000">,NormalObject.<font color="#7f0055">class</font><font color="#000000">);</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;DotNetTranslator&nbsp;c&nbsp;=&nbsp;<font color="#7f0055">new</font><font color="#000000">&nbsp;DotNetTranslator();</font><br/>
+<font color="#7f0055">&nbsp;&nbsp;&nbsp;try</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;c.translateToCSharp(new&nbsp;File(<font color="#2a00ff">"C:/temp/generated"</font><font color="#000000">),ts);</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#7f0055">&nbsp;&nbsp;&nbsp;catch</font><font color="#000000">&nbsp;(IOException&nbsp;e)</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#7f0055">&nbsp;&nbsp;&nbsp;catch</font><font color="#000000">&nbsp;(SIMPLTranslationException&nbsp;e)</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#7f0055">&nbsp;&nbsp;&nbsp;catch</font><font color="#000000">&nbsp;(DotNetTranslationException&nbsp;e)</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000">}</font><br/>
+	
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<p>Running the above program produces your C# files.</p>
+<p><img src="images/generatedfiles.png"/></p>
+
+<h4>Generated Code</h4>
+<p>Now that we have our C# files generated, we can go back to our VisualStudio environment and copy the folders into a new project that we have created.  I created a project called TestCSharpCode, but the name isn't very important.  Create a project, then import the project exologylabFundamental.NET. Make the project you created depenent on it by right clicking on your project, selecting "add refference", and then finding ecologylabFundamental.NET under the projects tab.  Once you have done this, copy the two folders generated from Java (testtranslation,tscope) into your project.</p>
+
+<p>With the exception of the constructor, all of the following is generated C# code.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#000000">//&nbsp;&nbsp;NormalObject.cs</font><br/>
+<font color="#000000">//&nbsp;&nbsp;s.im.pl&nbsp;serialization</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Collections.Generic;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.attributes;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.serialization;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">namespace</font>&nbsp;testtranslation&nbsp;</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#000000">&nbsp;<font color="#2a00ff">public&nbsp;class</font>&nbsp;<font color="#2B91AF"> NormalObject</font>&nbsp;:&nbsp;<font color="#2B91AF">ElementState</font></font><br/>
+<font color="#000000">&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;[<font color="#2B91AF">simpl_scalar</font>]</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private&nbsp;String&nbsp;part1;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;[<font color="#2B91AF">simpl_scalar</font>]</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private&nbsp;<font color="#2B91AF">String</font>&nbsp;part2;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">public&nbsp;NormalObject()</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;NormalObject(String&nbsp;part1,&nbsp;String&nbsp;part2)</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.part1&nbsp;=&nbsp;part1;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.part2&nbsp;=&nbsp;part2;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;<font color="#2B91AF">String</font>&nbsp;Part1</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;part1;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{part1&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;<font color="#2B91AF">String</font>&nbsp;Part2</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;part2;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{part2&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000">&nbsp;}</font><br/>
+<font color="#000000">}</font><br/><br/><br/>
+
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+<font color="#000000">	&nbsp;&nbsp;&nbsp;</font><br/>
+    <code>
+
+<font color="#000000">//&nbsp;&nbsp;ComplexObject.cs</font><br/>
+<font color="#000000">//&nbsp;&nbsp;s.im.pl&nbsp;serialization</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Collections.Generic;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.attributes;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.serialization;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">namespace</font>&nbsp;testtranslation&nbsp;</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#000000"><font color="#2a00ff">&nbsp;public&nbsp;class</font>&nbsp;<font color="#2B91AF">ComplexObject</font>&nbsp;:&nbsp;<font color="#2B91AF">ElementState</font></font><br/>
+<font color="#000000">&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private</font>&nbsp;Int32&nbsp;anInt;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;[<font color="#2B91AF">simpl_scalar</font>]</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private</font>&nbsp;Single&nbsp;anFloat;</font><br/>
+<font color="#000000">&nbsp;&nbsp;[<font color="#2B91AF">simpl_scalar</font>]</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private</font>&nbsp;String&nbsp;anString;</font><br/>
+<font color="#000000">&nbsp;&nbsp;[<font color="#2B91AF">simpl_composite</font>]</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">private</font>&nbsp;NormalObject&nbsp;otherThing;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;ComplexObject()</font><br/>
+<font color="#000000">&nbsp;&nbsp;{&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;ComplexObject(<font color="#2a00ff">int</font>&nbsp;anInt,&nbsp;<font color="#2a00ff">float</font>&nbsp;anFloat,&nbsp;<font color="#2a00ff">String</font>&nbsp;anString,&nbsp;<font color="#2B91AF">NormalObject</font>&nbsp;otherThing)</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">this</font>.anInt&nbsp;=&nbsp;anInt;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">this</font>.anFloat&nbsp;=&nbsp;anFloat;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">this</font>.anString&nbsp;=&nbsp;anString;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">this</font>.otherThing&nbsp;=&nbsp;otherThing;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff"><font color="#2a00ff">public</font></font>&nbsp;<font color="#2B91AF">Int32</font>&nbsp;AnInt</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;anInt;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{anInt&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;public&nbsp;Single&nbsp;AnFloat</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;anFloat;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{anFloat&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;<font color="#2B91AF">String</font>&nbsp;AnString</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;anString;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{anString&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;<font color="#2B91AF">NormalObject</font>&nbsp;OtherThing</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">get</font>{<font color="#2a00ff">return</font>&nbsp;otherThing;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">set</font>{otherThing&nbsp;=&nbsp;<font color="#2a00ff">value</font>;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000">&nbsp;}</font><br/>
+<font color="#000000">}</font><br/>
+
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+	<font color="#000000">&nbsp;&nbsp;&nbsp;</font><br/>
+<font color="#000000">///Somegame.cs</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Collections.Generic;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.attributes;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;testtranslation;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.serialization;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">namespace</font>&nbsp;ecologylab.serialization&nbsp;</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#000000">&nbsp;<font color="#2a00ff">public&nbsp;class</font>&nbsp;<font color="#2B91AF">Somegame</font></font><br/>
+<font color="#000000">&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public</font>&nbsp;Somegame()</font><br/>
+<font color="#000000">&nbsp;&nbsp;{&nbsp;}</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000">&nbsp;&nbsp;<font color="#2a00ff">public&nbsp;static</font>&nbsp;<font color="#2B91AF">TranslationScope</font>&nbsp;Get()</font><br/>
+<font color="#000000">&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;<font color="#2a00ff">return</font>&nbsp;<font color="#2B91AF">TranslationScope</font>.Get("somegame",</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">typeof</font>(<font color="#2B91AF">ComplexObject</font>),</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">typeof</font>(<font color="#2B91AF">NormalObject</font>));</font><br/>
+<font color="#000000">&nbsp;&nbsp;}</font><br/>
+<font color="#000000">&nbsp;}</font><br/>
+<font color="#000000">}</font><br/>
+
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<h4>De/Serializing</h4>
+<p>We use the code above to de/serialize code.  Just make sure that your project depends on ecologyLabFundamental.NET, and use the functions in ElementState, which is a super class of the generated classes that you made.  <i>instanceOfSomeObject.serializeToJSON()</i> and <i>instanceOfSomeObject.serializeToXML()</i> serialize instantiated classes, returning a string.  The following code serializes, then deserializes an instance of an object.</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+	<font color="#000000">&nbsp;&nbsp;&nbsp;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Collections.Generic;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Linq;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;System.Text;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;testtranslation;</font><br/>
+<font color="#000000"><font color="#2a00ff">using</font>&nbsp;ecologylab.serialization;</font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"></font><br/>
+<font color="#000000"><font color="#2a00ff">namespace</font>&nbsp;TestTranslation</font><br/>
+<font color="#000000">{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">class</font>&nbsp;<font color="#2B91AF">MainTester</font></font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">public&nbsp;static&nbsp;void</font>&nbsp;Main()</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//instantiate</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">ComplexObject</font>&nbsp;co&nbsp;=&nbsp;<font color="#2a00ff">new</font>&nbsp;<font color="#2B91AF">ComplexObject</font>(2,&nbsp;(<font color="#2a00ff">float</font>)2.3,&nbsp;"Wheeeeee");</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//serialize</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">StringBuilder</font>&nbsp;sb&nbsp;=&nbsp;<font color="#2a00ff">new</font>&nbsp;<font color="#2B91AF">StringBuilder</font>();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;co.serializeToJSON(sb,&nbsp;<font color="#2a00ff">null</font>);</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2a00ff">string&nbsp;s&nbsp;=&nbsp;sb.ToString();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">Console</font>.WriteLine("Serialization:");</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">Console</font>.WriteLine(s);</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//deserialization</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">ComplexObject</font>&nbsp;p&nbsp;=&nbsp;(<font color="#2B91AF">ComplexObject</font>)<font color="#2B91AF">Somegame</font>.Get().deserializeString(s,<font color="#000000">&nbsp;<font color="#2a00ff">null</font>,&nbsp;Format.JSON);</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#2B91AF">Console</font>.ReadLine();</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;}</font><br/>
+<font color="#000000">}</font><br/>
+	</code>
+   </td>
+   </tr>
+</table>
+</div>
+<br></br>
+
+<p>The serialized strings produced by this code can also be used to be translated to other programming languages that use S.IM.PL.</p>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

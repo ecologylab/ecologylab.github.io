@@ -1,0 +1,103 @@
+<!- -*-Java-*- ->
+<html>
+<style type="text/css">
+<!--
+body
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 13pt;
+   font-weight: 500;
+}
+h2
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 14pt;
+   font-weight: 800;
+}
+
+select.feedback
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 8pt;
+   font-weight: 500;
+}
+select
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 8pt;
+   font-weight: 500;
+}
+
+input
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 8pt;
+   font-weight: 00;
+}
+input.feedback
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 9pt;
+   font-weight: 500;
+}
+
+td
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif"; 
+   font-size: 13pt;
+   font-weight: 500;
+}
+.normal
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 13pt;
+   font-weight: 500;
+}
+H2.SPECIAL {
+  border-style:outset; 
+  border-width:2pt;
+  border-color:green; 
+  background-color:green;
+  padding:5%;
+}
+div
+{
+   font-family: "Verdana";
+   font-size: 13pt;
+   font-weight: 800;
+   margin: 20pt;
+   background-color:#ff6600;
+}
+.addr
+{
+   background-color:#ff6600;
+}
+.small
+{
+   font-size: 8pt
+}
+.stem
+{
+   font-size: 9pt;
+   font-weight: 500;
+   color: "ccff66";
+}
+.link
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif"; 
+   font-size: 13pt;
+   font-weight: 800;
+   color: "ccff66";
+}
+.history
+{
+   background: cccc99
+   font-size: 8pt
+}
+.tiny
+{
+   font-size: 5pt
+}
+-->
+</style>
+</html>

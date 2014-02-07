@@ -1,0 +1,36 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	99.03.13.03.18.38;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Version ecology-0.7.0: 1st major ecology release
+@
+text
+@<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="ecology.css"/>
+<code file="ecologyie3.css"/>
+<code file="ecologyMacIe.css"/>
+<code file="ecology.js"/>
+
+</code_spec>
+@

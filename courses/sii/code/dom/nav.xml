@@ -1,0 +1,18 @@
+<node_set>
+
+<node name="affordance" author="don norman"
+ title="Design of Everyday Things"/>
+<node name= "map" author="Douglas Turnbull" 
+ title="Maps Are Terriroties, Science is an Atlas"/>
+<node name= "ontology" author="Tom Gruber"
+ title="What is an Ontology?"/>
+<node name= "interface ecosystem" author="Andruid Kerne"
+ title="The Fundamental Unit of Information Age Ecology"
+/>
+<node name= "layering" author="Edward Tufte"
+ title="Envisioning Information"/>
+
+<node name="subway" author="Ayman Mognieh"
+ title="Da Bag"/>
+
+</node_set>

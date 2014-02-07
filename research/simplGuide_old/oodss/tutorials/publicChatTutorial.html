@@ -1,0 +1,569 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>public chat tutorial [oodss]</title>
+<style type="text/css">
+    code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl oodss:<br/></div>
+<div class="title4a">public chat tutorial [java]</div>
+</div>
+
+<br clear="all" />
+
+<div class="nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../../serialization/index.html">serialization</a>
+	<a class="navlink" href="../index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">oodss</a>
+ 	<a class="navlink" href="../tutorial.html">tutorials</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+</div>
+	
+<div class="block">
+  <a class="navlink" target="_blank" href="../../index.html">research</a>
+  <a class="navlink" target="_blank" href="../../../../index.html">interface ecology lab</a>
+</div>
+
+</div>
+
+<h5>Contents:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#request" >Chat Request</li>
+<li><a href="#update" >Update Message</li>
+<li><a href="#server" >ServerInstantiation</li>
+<li><a href="#client" >Client Instantiation</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>This example demonstrates how to use the OODSS library
+to send asynchronous requests to clients. The functionality allows the server
+to notify clients of changes at any point, without an initiating request from the
+client. The Public Chat Service operates by updating clients with new content upon reception of
+new messages from other clients. If you haven't read through the simpler
+<a class="checkthis" href="./historyEchoTutorial.html">History Echo Tutorial </a> 
+we encourage you to read through it before reading this tutorial.
+</p>
+
+<p>Access to the entire ecologylab fundamental project source is available 
+through <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">
+anonymous SVN access</a> (user: anonymous, password: anonymous).<br/>The source for this tutorial is in a project
+located under <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk/">
+/simplTutorials/trunk/</a></p>
+
+<a name="request"> </a>
+<h5>Chat Request</h5>
+<hr/>
+<p> 
+We will first show the implementation of the single request message in
+the public chat service. <code>ChatRequest</code> is the message that is initially sent
+from the client to indicate the posting of a new message to the chat service.
+The ChatRequest message only contains the message being posted, stored as a String instance variable,
+and passed in XML as an attribute.
+</p>
+
+<p>
+After receiving the request message, the OODSS server automatically calls the <code>performService</code> method callback of
+<code>ChatRequest</code>. In this callback the server accesses a map of all of the current
+sessions running on the server as well as it's own session. This map and session
+are automatically stored in the Application Scope by the OODSS framework. The server
+then forms an update message with information about the originating client and the 
+received message. The server then loops through all of the currently connected clients
+and sends an update with the message to every client except the originating one. The
+server then responds with an <code>OkMessage</code> (a standard message defined within the OODSS library)
+to indicate that the message was received.
+</p> 
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">ChatRequest&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">RequestMessage</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;The&nbsp;message&nbsp;being&nbsp;posted.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Constructor&nbsp;used&nbsp;on&nbsp;server.&nbsp;Fields&nbsp;populated&nbsp;automatically&nbsp;by</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;s.im.pl serialization</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ChatRequest</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Constructor&nbsp;used&nbsp;on&nbsp;client.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">newEcho</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;String&nbsp;that&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;server&nbsp;to&nbsp;broadcast</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ChatRequest</font><font color="#000000">(</font><font color="#000000">String&nbsp;message</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.message&nbsp;=&nbsp;message;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Called&nbsp;automatically&nbsp;by&nbsp;LSDCS&nbsp;on&nbsp;server</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@Override</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ResponseMessage&nbsp;performService</font><font color="#000000">(</font><font color="#000000">Scope&nbsp;cSScope</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Get&nbsp;all&nbsp;of&nbsp;the&nbsp;handles&nbsp;for&nbsp;the&nbsp;sessions&nbsp;currently&nbsp;connected&nbsp;to&nbsp;the</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;server</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">HashMap&lt;Object,&nbsp;SessionHandle&gt;&nbsp;sessionHandleMap&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">HashMap&lt;Object,&nbsp;SessionHandle&gt;</font><font color="#000000">)&nbsp;</font><font color="#000000">cSScope</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.get</font><font color="#000000">(</font><font color="#000000">SessionObjects.SESSIONS_MAP</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Get&nbsp;this&nbsp;client's&nbsp;SessionHandle</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">SessionHandle&nbsp;mySessionHandle&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">SessionHandle</font><font color="#000000">)&nbsp;</font><font color="#000000">cSScope</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.get</font><font color="#000000">(</font><font color="#000000">SessionObjects.SESSION_HANDLE</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Form&nbsp;a&nbsp;update&nbsp;message&nbsp;to&nbsp;send&nbsp;out&nbsp;to&nbsp;all&nbsp;of&nbsp;the</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;other&nbsp;clients.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ChatUpdate&nbsp;messageUpdate&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ChatUpdate</font><font color="#000000">(</font><font color="#000000">message,&nbsp;mySessionHandle</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Loop&nbsp;through&nbsp;the&nbsp;other&nbsp;sessions.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#000000">SessionHandle&nbsp;otherClientHandle&nbsp;:&nbsp;sessionHandleMap.values</font><font color="#000000">())</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;If&nbsp;this&nbsp;isn't&nbsp;me&nbsp;then&nbsp;send&nbsp;them&nbsp;an&nbsp;update.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">!mySessionHandle.equals</font><font color="#000000">(</font><font color="#000000">otherClientHandle</font><font color="#000000">))</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">otherClientHandle.sendUpdate</font><font color="#000000">(</font><font color="#000000">messageUpdate</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Send&nbsp;back&nbsp;a&nbsp;response&nbsp;confirming&nbsp;that&nbsp;we&nbsp;got&nbsp;the&nbsp;request&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">OkResponse.reusableInstance;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">isDisposable</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;true</b></font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="update"> </a>
+<h5>Update Message</h5>
+<hr/>
+<p>We now define the update message that is sent to clients to
+indicate that another client has posted a message to the chat service.
+Update messages are messages that are sent from the server to client
+without being specifically requested. Updates do not require that the
+client respond, if further action is necessary on the part of the client, then
+it may initiate a new request. Updates must extend the <code>UpdateMessage</code>
+class. 
+</p>
+<p>Our update contains the string representing the message being
+posted, a string representing the poster's ip address, and the poster's
+port number. Upon reception, the client calls the <code>processUpdate</code>
+callback that <code>ChatUpdate</code> overrides from the abstract <code>UpdateMessage</code>
+class. In this example, the client accesses the application scope to
+access a listener for chat updates, and then informs that listener that
+it has been recieved. The listener is simply a class that implements the
+<code>ChatUpdateListener</code> interface
+that has registered itself with the application scope to recieve updates
+when ChatUpdates are recieved. You'll notice in the <a href="#client">Client Instatiation</a> section that
+our client registers itself in the application scope as the <code>CHAT_UPDATE_LISTENER</code>.</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;interface&nbsp;</b></font><font color="#000000">ChatUpdateListener</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;final&nbsp;static&nbsp;</b></font><font color="#000000">String&nbsp;CHAT_UPDATE_LISTENER&nbsp;=&nbsp;</font><font color="#2a00ff">&#34;CHAT_UPDATE_LISTENER&#34;</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">recievedUpdate</font><font color="#000000">(</font><font color="#000000">ChatUpdate&nbsp;response</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">ChatUpdate&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">UpdateMessage</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">String&nbsp;&nbsp;message;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">String&nbsp;&nbsp;host;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">port;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Constructor&nbsp;used&nbsp;on&nbsp;client.&nbsp;Fields&nbsp;populated&nbsp;automatically&nbsp;by</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;s.im.pl serialization</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ChatUpdate</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Constructor&nbsp;used&nbsp;on&nbsp;server</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">message</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;chat&nbsp;message</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">handle</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;handle&nbsp;of&nbsp;originating&nbsp;client</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ChatUpdate</font><font color="#000000">(</font><font color="#000000">String&nbsp;message,&nbsp;SessionHandle&nbsp;handle</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.message&nbsp;=&nbsp;message;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.host&nbsp;=&nbsp;handle.getInetAddress</font><font color="#000000">()</font><font color="#000000">.toString</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.port&nbsp;=&nbsp;handle.getPortNumber</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Called&nbsp;automatically&nbsp;by&nbsp;OODSS&nbsp;on&nbsp;client</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@Override</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">processUpdate</font><font color="#000000">(</font><font color="#000000">Scope&nbsp;appObjScope</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*&nbsp;get&nbsp;the&nbsp;chat&nbsp;listener&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ChatUpdateListener&nbsp;listener&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">ChatUpdateListener</font><font color="#000000">)&nbsp;</font><font color="#000000">appObjScope</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.get</font><font color="#000000">(</font><font color="#000000">ChatUpdateListener.CHAT_UPDATE_LISTENER</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*&nbsp;report&nbsp;incoming&nbsp;update&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">listener.recievedUpdate</font><font color="#000000">(</font><font color="#7f0055"><b>this</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">String&nbsp;getMessage</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">message;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">String&nbsp;getHost</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">host;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">getPort</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">port;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="server"> </a>
+<h5>Server Instantiation</h5>
+<hr/>
+<p>
+We now present the initialization of an instance of <code>DoubleThreadedNIOServer</code> to run
+our service. This is done in the same way as in the
+<a class="checkthis" href="./historyEchoTutorial.html#serverclient">History Echo Tutorial </a>. 
+The implementation for the utility class: <code>ChatTranslations</code> is also given.
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">ChatTranslations</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;final&nbsp;static&nbsp;</b></font><font color="#000000">String&nbsp;&nbsp;TRANSLATION_SPACE_NAME&nbsp;&nbsp;=&nbsp;</font><font color="#2a00ff">&#34;ChatTranslations&#34;</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#000000">TranslationScope&nbsp;get</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">TranslationScope.get</font><font color="#000000">(</font><font color="#000000">TRANSLATION_SPACE_NAME,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DefaultServicesTranslations.get</font><font color="#000000">()</font><font color="#000000">,&nbsp;ChatRequest.class,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ChatUpdate.</font><font color="#7f0055"><b>class</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">PublicChatServer</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;static&nbsp;final&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;&nbsp;</b></font><font color="#000000">idleTimeout&nbsp;&nbsp;=&nbsp;-</font><font color="#990000">1</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;static&nbsp;final&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;&nbsp;</b></font><font color="#000000">MTU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#990000">40000</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">IOException</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;get&nbsp;base&nbsp;translations&nbsp;with&nbsp;static&nbsp;accessor</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;publicChatTranslations&nbsp;=&nbsp;ChatTranslations.get</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Creates&nbsp;a&nbsp;scope&nbsp;for&nbsp;the&nbsp;server&nbsp;to&nbsp;use&nbsp;as&nbsp;an&nbsp;application&nbsp;scope&nbsp;as&nbsp;well</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;as&nbsp;individual&nbsp;client&nbsp;session&nbsp;scopes.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Scope&nbsp;applicationScope&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Scope</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*&nbsp;Acquire&nbsp;an&nbsp;array&nbsp;of&nbsp;all&nbsp;local&nbsp;ip-addresses&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">InetAddress</font><font color="#000000">[]&nbsp;</font><font color="#000000">locals&nbsp;=&nbsp;NetTools.getAllInetAddressesForLocalhost</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Create&nbsp;the&nbsp;server&nbsp;and&nbsp;start&nbsp;the&nbsp;server&nbsp;so&nbsp;that&nbsp;it&nbsp;can&nbsp;accept&nbsp;incoming</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;connections.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">DoubleThreadedNIOServer&nbsp;historyServer&nbsp;=&nbsp;DoubleThreadedNIOServer</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.getInstance</font><font color="#000000">(</font><font color="#990000">2108</font><font color="#000000">,&nbsp;locals,&nbsp;publicChatTranslations,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">applicationScope,&nbsp;idleTimeout,&nbsp;MTU</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">historyServer.start</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<a name="client"> </a>
+<h5>Client Instantiation</h5>
+<hr/>
+
+<table>
+<tr>
+		<td>
+		<p>We now give the implementation for the client (shown to the
+		right), which implements the <code>ChatUpdateListener</code> interface
+		so it is able to recieve notifications of incoming chat updates. Note
+		that in the constructor the class registers itself as the <code>CHAT_UPDATE_LISTENER</code>
+		with the application scope. The client is implemented as a simple
+		swing window that allows the user to read their previous messages
+		along with new messages being posted to the service.</p>
+		<p>When the user presses the Send Message button the <code>actionPerformed</code>
+		method is invoked. Here we instantiate a new ChatRequest message and
+		send it to the server to post the message. When an update is recieved
+		the <code>recievedUpdate</code> callback is invoked. The client then
+		simply updates the text area to reflect the new message.</p>
+		<p>
+		<code>ChatClientWindow</code>'s main method sets up a regular NIOClient with
+		the <code>ChatTranslations</code> translation scope, and initializes an in
+		instance of the window.
+		</p>
+		</td>
+		<td><img  src="../../../images/chat_client.png" ALIGN=BASELINE />
+</td>
+
+</table>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">ChatClientWindow&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">JFrame&nbsp;</font><font color="#7f0055"><b>implements&nbsp;</b></font><font color="#000000">ChatUpdateListener,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ActionListener,&nbsp;WindowListener</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#000000">String&nbsp;&nbsp;serverAddress&nbsp;&nbsp;=&nbsp;</font><font color="#2a00ff">&#34;localhost&#34;</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">portNumber&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#990000">2108</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">JTextArea&nbsp;&nbsp;&nbsp;&nbsp;echoArea;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">JTextField&nbsp;&nbsp;entryField;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#000000">NIOClient&nbsp;&nbsp;&nbsp;&nbsp;client;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ChatClientWindow</font><font color="#000000">(</font><font color="#000000">NIOClient&nbsp;client,&nbsp;Scope&nbsp;scope</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Set&nbsp;the&nbsp;window&nbsp;as&nbsp;the&nbsp;listener&nbsp;for&nbsp;chat&nbsp;updates&nbsp;in&nbsp;the&nbsp;application</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;scope.&nbsp;This&nbsp;ensures&nbsp;that&nbsp;recievedUpdate&nbsp;will&nbsp;be&nbsp;called&nbsp;when&nbsp;incoming</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;updates&nbsp;are&nbsp;recieved.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">scope.put</font><font color="#000000">(</font><font color="#000000">ChatUpdateListener.CHAT_UPDATE_LISTENER,&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Store&nbsp;the&nbsp;client&nbsp;instance&nbsp;so&nbsp;that&nbsp;we&nbsp;can&nbsp;send&nbsp;messages&nbsp;later.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>this</b></font><font color="#000000">.client&nbsp;=&nbsp;client;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Set's&nbsp;up&nbsp;the&nbsp;swing&nbsp;interface&nbsp;and&nbsp;add's&nbsp;this&nbsp;as&nbsp;an&nbsp;ActionListener&nbsp;to</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;the&nbsp;Send&nbsp;Message&nbsp;button.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">setupSwingComponents</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@Override</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">recievedUpdate</font><font color="#000000">(</font><font color="#000000">ChatUpdate&nbsp;response</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;We&nbsp;received&nbsp;an&nbsp;chat&nbsp;update&nbsp;message&nbsp;so&nbsp;we&nbsp;post&nbsp;the&nbsp;message&nbsp;in&nbsp;the&nbsp;text</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;area.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">echoArea.insert</font><font color="#000000">(</font><font color="#000000">response.getHost</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;:&#34;&nbsp;</font><font color="#000000">+&nbsp;response.getPort</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;-&gt;&#34;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">+&nbsp;response.getMessage</font><font color="#000000">()&nbsp;</font><font color="#000000">+&nbsp;</font><font color="#2a00ff">&#34;\n\n&#34;</font><font color="#000000">,&nbsp;</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@Override</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">actionPerformed</font><font color="#000000">(</font><font color="#000000">ActionEvent&nbsp;e</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*&nbsp;send&nbsp;message&nbsp;button&nbsp;pushed&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;message&nbsp;=&nbsp;entryField.getText</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ChatRequest&nbsp;request&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ChatRequest</font><font color="#000000">(</font><font color="#000000">message</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try</b></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Send&nbsp;request&nbsp;to&nbsp;post&nbsp;message&nbsp;to&nbsp;chat&nbsp;server.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">client.sendMessage</font><font color="#000000">(</font><font color="#000000">request</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Update&nbsp;personal&nbsp;text&nbsp;area&nbsp;to&nbsp;reflect&nbsp;sent&nbsp;message.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">echoArea.insert</font><font color="#000000">(</font><font color="#2a00ff">&#34;---------me-------&gt;&#34;&nbsp;</font><font color="#000000">+&nbsp;message&nbsp;+&nbsp;</font><font color="#2a00ff">&#34;\n\n&#34;</font><font color="#000000">,&nbsp;</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">MessageTooLargeException&nbsp;e1</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.err.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;Failed&nbsp;to&nbsp;send&nbsp;message&nbsp;because&nbsp;it&nbsp;was&nbsp;too&nbsp;large:&nbsp;&#34;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">+&nbsp;entryField.getText</font><font color="#000000">())</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e1.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">IOException</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Get&nbsp;chat&nbsp;translations&nbsp;with&nbsp;static&nbsp;accessor</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;publicChatTranslations&nbsp;=&nbsp;ChatTranslations.get</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Scope&nbsp;clientScope&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Scope</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">NIOClient&nbsp;client&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">NIOClient</font><font color="#000000">(</font><font color="#000000">serverAddress,&nbsp;portNumber,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">publicChatTranslations,&nbsp;clientScope</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Enable&nbsp;compression&nbsp;and&nbsp;connect&nbsp;the&nbsp;client&nbsp;to&nbsp;the&nbsp;server.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">client.allowCompression</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">client.useRequestCompression</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">client.connect</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;If&nbsp;the&nbsp;client&nbsp;connects,&nbsp;start&nbsp;chat&nbsp;window&nbsp;to&nbsp;run&nbsp;the&nbsp;application.&nbsp;Pass</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;in&nbsp;client&nbsp;and&nbsp;clientScope&nbsp;instance.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">client.connected</font><font color="#000000">())</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ChatClientWindow&nbsp;window&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ChatClientWindow</font><font color="#000000">(</font><font color="#000000">client,&nbsp;clientScope</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@Override</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">windowClosing</font><font color="#000000">(</font><font color="#000000">WindowEvent&nbsp;e</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;disconnect&nbsp;and&nbsp;close</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">client.disconnect</font><font color="#000000">(</font><font color="#7f0055"><b>true</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.exit</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">......</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

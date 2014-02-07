@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">environment setup [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="res/guide.css" rel="stylesheet">
+<link rel="icon" href="http://ecologylab.net/images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="http://ecologylab.net/images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="http://ecologylab.net/images/ecologylab-16.png" type="image/png">
+
+<script src="res/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">In browser Meta Metadata Authoring Tool:</div>
+<div class="title4a">tutorial [using tool]</div>
+</div>
+
+<div class="nav">
+<div class="block">
+ 	<a class="navselected_bold_red" href="http://ecologylab.net/research/simplGuide/index.html">s.im.pl</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/serialization/index.html">serialization</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/oodss/index.html">oodss</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+	<a class="navselected_bold" href="http://ecologylab.net/research/simplGuide/metaMetadata/index.html">meta-metadata</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/prereqs.html">prereqs</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/generalPrincipals.html">principles</a>
+	<a class="navselected" href="http://ecologylab.net/research/simplGuide/metaMetadata/environmentSetup.html">development<br>environment</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/libtutorials.html">tutorials</a>
+</div>
+
+<div class="block">
+	<a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&amp;hl=en&amp;single=true&amp;gid=3&amp;output=html">reference</a>
+	<a class="navlink" target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/repository.html">repository</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/community.html">community</a>
+</div>
+	
+<div class="block">
+  <a class="navlink" target="_blank" href="http://ecologylab.net/research/index.html">research</a>
+  <a class="navlink" target="_blank" href="http://ecologylab.net/index.html">interface ecology lab</a>
+</div>
+
+</div>
+<div class="content">
+  <h2>Starting </h2>
+<ol>
+  <li>Start Eclipse and run MMDRepositoryServer.java in MetaMetadataRespositoryService project.</li>
+  <li>Visit any page in Chrome or FireFox (In which you have already installed Tool).</li>
+  <li>You will have an &quot;Activate&quot; button in bottom right corner, click that to start Tool.<br><img src="res/activate.png"  width="70%">
+  </li>
+  <li>MMD Creator, A movable and resiable Box will open.<br>
+    <img src="res/start.png"  width="70%">
+  </li>
+</ol>
+<h2>UI interface</h2>
+<ol>
+  <li> name : The name of current MMD being authored.</li>
+  <li>Selector : For url selector. Tool will automatically initialize it with page url (removing all get params).</li>
+  <li>Xpath : Xpath of currently selected dom element or MMD Field Tag.</li>
+  <li>Reset button : It restore Tool to its initial condition.</li>
+  <li>Cancel button : Cancel and unselector current dom element.</li>
+  <li>Load button : To load already authored MMD from repository. You can choose between extending and reusing.</li>
+  <li>Test Xpath button : To test Xpath present in Xpath textbox. It will open up a box with all possible results.</li>
+  <li>MMD Table : A ui implementation of authored MMD.</li>
+  </ol>
+<h2>Testing Xpath</h2>
+<ol>
+  <li>Enter a Xapth in Xpath textbox.</li>
+  <li>Click Test Xpath button. Preview section will show only first 5 results and Extracted Value Box will show all possible results.<br><img src="res/testXpath.png" alt=""  width="70%"></li>
+</ol>
+<h2>Adding a Field Tag</h2>
+<ol>
+  <li>Right click on required dom element. An inspector section will assist you to navigate up, down, next, Prev and Add.</li>
+  <li>Just click Add in inspector section or + button in MMD table. Xpath will be automatically generated and added.<br>
+    <img src="res/addFieldTag.png" alt=""  width="70%"></li>
+</ol>
+<h2>Editing attributes of a Field Tag</h2>
+<ol>
+  <li>Left click on any attribute to make it editable in MMD Table e.g.<br>
+    <img src="res/edit.jpg" alt=""  width="70%"><br>
+    <img src="res/edit2.jpg" alt=""  width="70%"></li>
+  <li>Please note that composite/collection types will be available only when Field type is Composite or Collection else Scalar types will be avilable as String, int and ParsedURL.</li>
+  <li>Please note presence of a green + button to add child/member when Field Tag type is Composite or Collection.</li>
+</ol>
+<h2>Adding Custom Attribute Field Tag</h2>
+<ol>
+  <li>click on + button in last column of MMD Field Tag.<br>
+    <img src="res/addcustom.png" alt=""  width="70%"></li>
+  <li>Click on + button to add custom attribute. Click on attribute name and value to edit. An auto suggest will help.</li>
+  <li>Click ok to save.</li>
+  <li>Please note change in color of + button in  last column of MMD Field Tag to indicate presence of custom attributes.</li>
+</ol>
+<h2>Editing Custom Attribute Field Tag</h2>
+<ol>
+  <li>click on + button in last column of MMD Field Tag to open custom attributes box.<br>
+    <img src="res/acustomedit.jpg" alt=""  width="70%"></li>
+  <li>Click on + button to add custom attribute. </li>
+</ol>
+<h2>Generate or Save MMD</h2>
+<ol>
+  <li> Click on genetare button to generate MMD in JSON format.<img src="res/generate.png" alt=""  width="70%"></li>
+  <li>Click save button (Currently this feature is not supported by Respository Service) to save MMS in repository.</li>
+</ol>
+<h2>Load or Extend already authored MMD</h2>
+<ol>
+  <li> Click on Load button. A box will open up.</li>
+  <li>Enter url of authored MMD e.g. <a j1d503bf85cb="true" href="http://idle.slashdot.org/story/11/08/09/1356222/15-Billion-Star-Trek-Theme-Park-Coming-To-Jordan" target="_blank">http://idle.slashdot.org/story/11/08/09/1356222/15-Billion-Star-Trek-Theme-Park-Coming-To-Jordan</a>.</li>
+  <li>Check Extend checkbox if you want to extend from authored MMD.<br>
+    <img src="res/generate.png" alt=""  width="70%"></li>
+  <li>Click Ok to load into Tool.<br><img src="res/loaded.png" alt=""  width="70%"></li>
+</ol>
+</div>
+
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+an <a href="http://ecologylab.net/">interface ecology lab</a> production
+</div>
+
+
+</div>
+</body></html>

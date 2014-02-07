@@ -1,0 +1,45 @@
+<html> <head>
+<title></title>
+<script language="JavaScript">
+function raiseMe(thatElement)
+{
+// now passing in element object, instead of tag name
+//   var thatElement	= document.getElementById(id);
+   var currentZ		= thatElement.style.zIndex;
+   alert(thatElement.id + " " +currentZ);
+   thatElement.style.zIndex	= currentZ + 2;
+}
+</script>
+</head>
+<BODY bgcolor="#E6E8FA" text="#000000" link="0025C5" topmargin=0
+      vlink="F70010">
+<div id="foo" style="position: absolute; top: 20px; left:20px;background-color:yellow;z-index: 2" onmouseover="raiseMe(this);">
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+this is the first bunch of text, it is long and quite very wide.<br>
+</div>
+<div id="bar" style="position: absolute; top: 20px; left:20px;background-color:cyan;padding: 10;z-index: 1" onmouseover="raiseMe(this)">
+you cant always get what you want<br>
+you cant always get what you want<br>
+but if you try some time you just might find<br>
+you get what you need<p>
+you cant always get what you want<br>
+you cant always get what you want<br>
+but if you try some time you just might find<br>
+you get what you need<p>
+you cant always get what you want<br>
+you cant always get what you want<br>
+but if you try some time you just might find<br>
+you get what you need<p>
+you cant always get what you want<br>
+you cant always get what you want<br>
+but if you try some time you just might find<br>
+you get what you need<p>
+</div>
+
+</body> </html>

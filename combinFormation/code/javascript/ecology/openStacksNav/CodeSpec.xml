@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="browseTitle.js"/>
+<code file="browseComment.js"/>
+<code file="browseCitation.js"/>
+
+<code file="editTitle.js"/>
+<code file="editCitation.js"/>
+
+<code file="search.js"/>
+
+</code_spec>

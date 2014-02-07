@@ -1,0 +1,159 @@
+Format				/2
+Spelling / Grammar	/1
+Style				/2
+Intro / Prob.		/4
+Approach			/4
+Screenshots			/2
+Extra Features		/(2?)
+Problems			/4
+Conclusions			/5
+
+subtotal			/24 (+2?)
+
+Dear -
+
+Your final grade is now up-to-date in the online spreadsheet. My comments on your final project report are below. Note that the final 6 points for this assignment come from the individual project reports and are factored into your grade in the online spreadsheet.
+
+It has been a pleasure having you in my course this semester. Have a great summer!
+
+All best,
+
+Team 1 - Sosa / Slayter / Michie
+
+Format				1/2 Format is somewhat off (line spacing, indents, section identifiers)
+Spelling / Grammar	1/1
+Style				1/2 Remember to be gender-inclusive when writing. Either alternate male / female or use the (typically more messy) s/he and her/him. First-person is correct, but do not be conversational. Reports should be objective; phrases like "but like I said" should absolutely never appear in them.
+Intro / Prob.		3/4 This section gets fairly deep into what should appear in the approach section. I would generally expect this section to be shorter and describe the game at a very high level. Remember, an intro should grab the reader's attention. The concept of board traits is good and useful in your project, but it is also clearly part of your approach to solving the problem.
+Approach			4/4 Good!
+Screenshots			2/2 Images are good, but should have captions that describe the image and why it is important to the message of the report.
+Extra Features		2/(2?) Fantastic!
+Problems			4/4 Glad to see you recognizing the issues and discovering how to overcome them. Good job!
+Conclusions			5/5 Good!
+
+subtotal			23/24 (+2?)
+
+Team 2 - Maredia / Roma / Tung
+
+Format				2/2 Format looks a little off, but OK
+Spelling / Grammar	1/1
+Style				2/2 Beware of being wordy just to take up space. Sentences like "...was one of our most complex sections of coding" and "...encountered a few limitations or bumps in the road" are not really adding to your message.
+Intro / Prob.		4/4 Good.
+Approach			3.25/4 OK. A little long and gets a little deeper than is necessary. The depth of discussion about the code was confusing and did not feel grounded. Remember to always begin with why things are the way they are, and not the nitty gritty details. Glad that you recognize the modularity of using an image that can be updated easily as you progress. This model will serve you well in future designs!
+Screenshots			1/2 The figures are not very informative about how the game looks in action; the figure with the matrix is blurry and nearly impossible to read. All figures should have an informative caption that tells you what the figure is contributing to the story.
+Extra Features		0/(2?)
+Problems			3.75/4 One paragraph ends in the middle of a sentence. A few grammar issues in here as well. Otherwise, not bad.
+Conclusions			5/5 Glad to hear the project was interesting and useful to you. As far as building an AI goes, you might investigate how Connect 4 is solved; the paper on this should give you an algorithm for an unbeatable AI!
+
+subtotal			22/24 (+2?)
+
+Team 3 - Chen / Elliott / Scott
+
+Format				2/2
+Spelling / Grammar	1/1
+Style				1/2 Remember to use sections, subsections, and, especially, PARAGRAPHS to break up ideas! Just as you use whitespace in coding, you should use it in writing. Page 2 is essentially a giant block of text! This makes it hard to read and understand.
+Intro / Prob.		4/4 Good.
+Approach			4/4 The transition from having Checker be a class and having it be a part of the board state makes a lot of sense, kudos for recognizing this! If you think about it, there is little behavior for a checker itself, especially outside the context of the board. The concept of limiting user choices to only acceptable inputs is paramount in design, also well done for recognizing this! Look up the concepts of affordance and constraints if you are interested. Also recognizing the disconnect for users when clicking anywhere is also good. Gets a little deep into individual functions, more abstractions would be better. 
+Screenshots			1.5/2 Figures are OK, but would like one showing the game in play. Also, figures should always have a caption that describes to the reader how the figure connects with the story of the report and what it is illustrating.
+Extra Features		2/(2?)
+Problems			4/4 OK.
+Conclusions			5/5 Sounds like you did some critical thinking about the interface design. Glad that you had a good experience working in a group; it will be the kind of experience you will have over and over throughout life.
+
+subtotal			23.5/24 (+2?)
+
+Team 4 - Bass / Aben / Cheung
+
+Format				2/2
+Spelling / Grammar	1/1
+Style				2/2 Nice work highlighting code in blue. In papers, typically a fixed-width font is used instead, since you cannot rely on the reader to print the paper in color. Also, a footnote makes more sense for indicating this, keywords are supposed to be for organizing the paper in a library.
+Intro / Prob.		4/4 Good!
+Approach			4/4 Well done. The algorithm of searching from each played checker should be quite efficient, although you have to be careful to make sure that you successfully search both opposite directions (in case the user drops the checker into the middle of a nearly complete line). Good thinking on removing the save button when the game ends. This is an example of constraints that prevent the user from doing the wrong thing. 
+Screenshots			2/2 Figure captions could do a better job of connecting the image to the story of the report. 
+Extra Features		2/(2?)
+Problems			4/4 Seems you learned some helpful debugging techniques. 
+Conclusions			5/5 Managing large projects is quite common throughout life, glad you gained experience with it!
+
+subtotal			26/24 (+2?)
+
+Team 6 - Bernstein-Balunda / Draughon / Flores
+
+Format				2/2
+Spelling / Grammar	1/1
+Style				2/2
+Intro / Prob.		3.5/4 OK, but gets a little deep into implementation.
+Approach			3.5/4 OK, but also gets deep into implementation. In general, a report will not include details about individual files.
+Screenshots			1.5/2 Remember captions are very important and should communicate what the figure is adding to the story. Flow diagram messed up.
+Extra Features		0/(2?)
+Problems			4/4 Very nice!
+Conclusions			5/5 To learn about programming simulated gravity, look up (or take the VIZA/CSCE course on) Physically Based Modeling. Much detail is available online. Also, never diminish your work in your writing!
+
+subtotal			22.5/24 (+2?)
+
+Team 7 - Mollenkopf / Woods / Koulidati
+
+Format				2/2 
+Spelling / Grammar	.5/1 Take care when using "which" and "that."
+Style				2/2 OK
+Intro / Prob.		4/4 OK intro; tips for playing felt out of place. Perhaps in a more detailed discussion or in the conclusion they would fit better. 
+Approach			3/4 It seems to me it should be very easy to determine if a user completed the puzzle without storing the whole solution to the puzzle: just check that all the conditions are correct. You should generally abstract a bit more. Very little focus on actual method calls, etc. should be used here. Good to hear that you needed to coordinate. Part of the reason that defintions and declarations are separate is to enable you to work individually: the group builds the declarations, then individuals build definitions that comply with the specification (with appropriate coordination when problems arise). 
+Screenshots			2/2 Nice work on the figures. Captions should be clear and stand on their own. For example, in Figures 7 and 8, you should clearly call out why one is hard and the other easy. What is the difference?
+Extra Features		2/(2?) OK
+Problems			4/4 Simply adding team members does not necessarily decrease development time. For more information, read The Mythical Man-Month (a Man-Month measuring work done by a person in some amount of time). In general, investigate software engineering practice to learn more about how to overcome problems with the team and be careful about using time wisely.
+Conclusions			5/5 Good. Glad you are understanding what software development is really like. The iterative process is quite common.
+
+subtotal			24.5/24 (+2?)
+
+Team 8 - Franco / Chaulagain / Goodson
+
+Format				2/2
+Spelling / Grammar	.5/1 First-person is correct, but beware of being too colloquial. Some misspelled words and incorrect grammar ("bord"->"board", "maxes"->"makes"). 
+Style				2/2 Never diminish your own work. Be confident in what you did (never say you think you did the right thing)!
+Intro / Prob.		4/4 Rules are relatively clear, but should consider ordering (end game is described before opening moves!). 
+Approach			2/4 Approach hits many low-level details, this is not what you present in a report. The report should not describe individual files, but needs to connect the high level ideas. Why do you have functions called "first/second/third/fourthmove"? This doesn't make sense at all.
+Screenshots			2/2 Perhaps too many and could be more cleanly integrated (look into concept of "small multiples" by Tufte).
+Extra Features		1/(2?) The AI is not really explained well, the algorithm is the important part. More data (10 games) would allow you to make stronger claims, especially if you knew the level of proficiency of the player. 
+Problems			4/4 More discussion would have been good, but OK.
+Conclusions			5/5 Nice! Good luck on your next game!
+
+subtotal			22.5/24 (+2?)
+
+Team 9 - Bell / Poteet / McClendon / Rogers
+
+Format				2/2
+Spelling / Grammar	1/1
+Style				1/2 A little too conversational. First-person is correct, but should sound a bit more objective and less train-of-thought.
+Intro / Prob.		4/4 Clear.
+Approach			3.5/4 Good to hear that your ideas changed, but this section gets a little too detailed; it should be on a slightly higher level of abstraction. Interesting take on handling the hidden information in the game!
+Screenshots			2/2 Nice work on screenshots. Do not underestimate the value of captions, though. Captions should be clear on how the images contribute to the story of the report! Very good diagram; note that there are a number of programs you can use to make it easier on yourself (OmniGraffle and Visio being the main ones). 
+Extra Features		2/(2?) Good.
+Problems			4/4 Nice! Stack Overflow is a good online resource for help with programming, by the way. Yelling at code in the lab at 1:00AM is a rite of passage. ;)
+Conclusions			5/5 Good.
+
+subtotal			24.5/24 (+2?)
+
+Team 10 - Clay / Piatt / Regmi
+
+Format				1.5/2 Font is wrong. 
+Spelling / Grammar	1/1 A few minor grammar errors. 
+Style				2/2 Very nice.
+Intro / Prob.		4/4 Good!
+Approach			4/4 Good!
+Screenshots			1.5/2 Screenshots look good, but lack captions. The caption should describe the image, its relevance to the story of the report, and how it connects with other images. Also, some issues with linewrap around figure labels. 
+Extra Features		2/(2?) Outstanding!
+Problems			4/4
+Conclusions			5/5 Good!
+
+subtotal			25/24 (+2?)
+
+Team 11 - Gray / Fry / Yen / Goode
+
+Format				1.75/2 References should have more detail.
+Spelling / Grammar	1/1
+Style				2/2
+Intro / Prob.		4/4 Nice! 
+Approach			4/4 Very nice work.
+Screenshots			2/2 Good use of screenshots and figures! Captions should get a little more attention; they should always stand on their own.
+Extra Features		2/(2?) Never diminish your own work; better to say nothing than to explain how it fails to do something. 
+Problems			4/4 Note that "CPU" specifically refers to the processor, not the computer as a whole, filesystem, file types, etc. 
+Conclusions			5/5 Nice conclusion.
+
+subtotal			25.25/24 (+2?)

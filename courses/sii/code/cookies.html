@@ -1,0 +1,127 @@
+<html>
+
+<head>
+<title>[sii] cookies experiment</title>
+
+<style type="text/css">
+<!--
+
+  body
+{
+   font-family: Verdana, Century Gothic, Geneva, Arial,Helvetica, Sans-Serif;
+   font-size: 12px;
+}
+
+ -->
+</style>
+
+<script language="JavaScript">
+function doubleSplit(str, delim1, delim2)	// String[] (String, char)
+{
+   if (!delim2)
+      delim2	= "=";
+   var result	= new Array();	// build associative array of all
+   if (!str || (str.length == 0))
+      return result;
+   // alert("doubleSplit:'" + str+"'");
+   var set		= str.split(delim1);
+//   alert("doubleSplit: set.length=" + set.length)
+   for (i in set)
+   {
+//      alert("split property=" + i);
+      anArg		= set[i].split(delim2);
+      prop		= unescape(anArg[0]);
+      result[prop]	= unescape(anArg[1]);
+//      alert(prop + " = " + result[prop]);
+  }
+  // alert ("result.length="+qq.length + " " + qq.type);
+  return result;
+}
+var expires	= "";
+var path	= "";
+var domain	= "";
+
+/*
+var nextYear	= new Date();
+nextYear.setFullYear(nextYear.getFullYear() - 1);
+expires		= "; expires=" + nextYear.toGMTString();
+alert(expires);
+
+path		= "; path="+ "/courses/sii/";
+
+//domain		= "; domain="+ ".cs.tamu.edu";
+*/
+
+function setCookie(name, val)
+{
+//   alert(name + " " + val);
+   if (name && val && (name.length > 0) && (val.length > 0))
+   {
+      var context	= expires + path + domain;
+      document.cookie	= escape(name) + "=" + escape(val) + context;
+   }
+}
+
+alert("full cookie = " + document.cookie);
+var cookieJar;
+
+function showCookies(thatId)
+{
+   cookieJar	= doubleSplit(document.cookie, ";");
+   var cookiesTable	= '<table cellpadding="9">\n';
+   for (thatName in cookieJar)
+   {
+      cookiesTable     += "<tr><td>" + thatName + "</td><td>" + 
+	 cookieJar[thatName] +"</td></tr>\n";
+   }
+   cookiesTable	       += "\n</table>"
+   var thatElement	= document.getElementById(thatId);
+   thatElement.innerHTML= cookiesTable;
+}
+</script>
+
+</head>
+
+<body bgcolor="#ffffff" text="#000000"
+ topmargin="30" leftmargin="30" rightmargin="40"
+ link="2c3377" vlink="2c3377"
+ onLoad="showCookies('cookieZone');">
+<p style="font-size: 17pt;">
+cookies experiment
+</p>
+
+<form>
+<table cellspacing="15">
+<tr>
+<td>name</td>
+<td><input type="text" name="name" size="15"></td>
+</tr>
+<tr>
+<td>value</td>
+<td><input type="text" name="value" size="15"></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input onClick="setCookie(this.form.name.value, this.form.value.value);showCookies('cookieZone');"
+ type="Button" name="Submit" value="Submit">
+</td>
+</tr>
+</table>
+
+<p id="cookieZone" style="font-size: 12pt;background-color:ffff88">
+</p>
+
+</form>
+
+
+<p align="right">
+<a href="imageRollover.html">image rollover</a>
+</p>
+<p align="right">
+<a href="imageAndCaption.html">image and caption</a>
+</p>
+
+</body> </html>
+

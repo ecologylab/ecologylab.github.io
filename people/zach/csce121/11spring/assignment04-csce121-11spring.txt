@@ -1,0 +1,155 @@
+(Print this page as a cover sheet for your printouts)
+
+LAB 4 (CORRECTED 2011-03-04 - 11:30AM)
+Section: CPSC 121-______________
+Due: 11:59 P.M. Tuesday, March 22, 2011
+
+"On my honor, as an Aggie, I have neither given nor received any unauthorized
+aid on any portion of the academic work included in this assignment."
+
+
+________________________________	________________________________
+Typed or printed name of student	Signature of student 
+
+NOTE:  Please follow your lab instructor's directions for submitting your
+assignment through CSNET.  ONLY ASSIGNMENTS SUBMITTED TO CSNET WILL BE
+GRADED!  Make a printout of each source file and staple it behind this cover
+sheet, unless your lab instructor directs otherwise.  Sign it and give it to
+your TA in lab or put it in your TA's mailbox in the corner of the 3rd floor
+of HRBB, near room 312.  IF YOU DO NOT TURN IN A SIGNED COVER SHEET YOUR WORK
+WILL NOT BE GRADED!
+
+NOTE:  Homework will be graded on unix.cse.tamu.edu using g++.  You are free to
+develop your programs on Visual C++ or any other platform, but it is your
+responsibility to make sure your programs also compile and execute correctly on
+unix.cse.tamu.edu using g++.
+
+The grade for this lab will be based on style (formatting, variable names,
+comments, etc.), syntax (no compilation or link errors), and correctness
+(passes all test cases).  Your grade for this lab is:
+
+Problem #       1       2       3       4       
+Style            /4      /4      /4      /2
+Syntax           /6      /6      /6      /3
+Correctness      /10     /10     /10     /5
+-------------------------------------------------------------------
+Total            /20     /20     /20     /10
+
+Grand total _____/60
+
+1. (20 points) Write a main function that performs the following
+operations:
+
+a.) Prompts the user to input the names of 3 files: two input files and
+an output file.
+
+b.) Reads in the two input files line by line and compares the two
+lines.
+
+c.) For each line in the inputs, the output should have the line number,
+a colon (':'), and either "OK" if the lines match or "DIFF" if the lines
+are different.
+
+The input files may be of different lengths. 
+
+Note that: 
+
+  - You will NEED to use the facilities presented in Chapter 10
+(specifically, getline(...)) to complete this assignment. If you use the
+>> operator, it will ignore whitespace (so your program will likely
+report "a a" and "aa" as being the same.
+
+  - Your program should be case-sensitive, so you do NOT need to worry
+about converting text to lowercase or uppercase.
+
+
+For example:
+
+input1:
+abc
+def
+g h  i
+
+input2:
+abc
+DEf
+ghi
+uub
+
+output:
+1:OK
+2:DIFF
+3:DIFF
+4:DIFF
+
+Name your program hw4pr1.cpp.
+
+2. (20 points) Re-write the program you developed in Problem 1 and build
+it as two separate functions (2a and 2b). Your main function should
+handle communicating with the user and getting his/her input, then
+invoke 2b (which will invoke 2a).
+
+a.) The first function should take references to the input streams for
+the two input files and a reference to the output stream for the output
+file. It then performs the operations described in 1b and 1c. It should
+return the number of lines that are different between the two files.
+Use the function declaration below:
+
+int diff_streams_to_output(istream&, istream&, ostream&);
+
+b.) The second function should take the names of the input files by
+value and the output file by value, use diff_streams_to_output, and
+return the number of lines that are different. Use the function
+declaration below:
+
+int diff_files_by_name(const string, const string, const string);
+
+Name your program hw4pr2.cpp.
+
+3.  (20 points)  Start with Chrono.h and Chrono.cpp in section 9.8; for
+now put a dummy "return d;" in the last 3 functions on page 332.  Add a
+prefix ++ operator to the Date class by putting the declaration in the
+Date class in Chrono.h and the definition in Chrono.cpp. The prefix ++
+operator should change a date to "tomorrow" using the following
+pseudocode:
+
+  Date& operator++(){
+		//add 1 to d  //tomorrow, unless we were at the end of the month
+		//if is_date is false
+		//            //need to change to first of next month
+		//  set d to 1
+		//  if m is December
+		//            //need to change to next year too      
+		//    set m to January
+		//    increment y
+		//  else
+		//    increment m
+		return *this;
+  }
+	
+Write a main in hw4pr3.cpp which repeatedly reads a Date with
+cin >>, increments the Date with your ++, and prints "Tomorrow is" and the
+new value of the Date using cout <<.  Turn in all 3 files in one zip file 
+according to your TA's instructions.
+
+OPTIONAL EXTRA CREDIT
+=====================
+4. (10 points)  Add a postfix ++ operator to problem 3, and modify the
+main to show that it works, by putting
+
+   cin >> d1;
+   d2 = d1;   //d2 == old value of d1
+   d3 = d1++;   //d3 == old value of d1, d1 == new value of d1   
+   if(d2 != d3)error("error in postfix ++");
+   if(d2 == d1)error("error in postfix ++");
+   if(d1 != ++d2)error("error in postfix ++");
+   cout << "Tomorrow is " << d1 << '\n';
+
+in a loop.  Put the main in hw4pr4.cpp and turn in all 3 files in one zip file 
+according to your TA's instructions.  Note: To declare a postfix ++ member
+function, use
+
+  Date operator++(int);
+
+The "int" is not used, it just tells the C++ compiler this is postfix ++.
+

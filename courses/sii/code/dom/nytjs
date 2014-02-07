@@ -1,0 +1,35 @@
+<script src="/js/csssniff.js"></script>
+<script language="JavaScript">
+<!--
+ 
+	function nameIt() {
+    	window.name = 'nytimesmain';
+	    if (navigator.appName == "Microsoft Internet Explorer") {
+			document.all.globalsearchform.style.visibility = "visible";
+        }
+    }
+     
+	function pop_me_up(pURL,features){ 
+		new_window = window.open(pURL, "popup_window", features);
+		new_window.focus();
+	}
+
+	function pop_me_up2(pURL,name,features){
+		new_window = window.open(pURL,name,features);
+		new_window.focus();
+	}
+
+	function changeImage(image_name,image_src) {
+   		document.images[image_name].src = image_src;
+	}
+
+	function goToURL(obj){
+		var f = (obj.section) ? obj : obj.form;
+		var selected = f.section.selectedIndex;
+		var URL = f.section.options[selected].value;
+		if (URL != "") document.location = URL;
+		return false;
+	}
+
+//-->
+</script>

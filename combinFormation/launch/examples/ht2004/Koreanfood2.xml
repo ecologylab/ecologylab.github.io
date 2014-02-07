@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="974" width="640" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="marimari.com" strokeHue="0.41666666" fontIndex="1"/>
+    <site domain="ufl.edu" strokeHue="0.8666667" fontIndex="1"/>
+    <site domain="asiarecipe.com" strokeHue="0.125"/>
+    <site domain="tour2korea.com" strokeHue="0.16666667"/>
+    <site domain="htmlplanet.com" strokeHue="0.0"/>
+    <site domain="lifeinkorea.com" strokeHue="0.25" fontIndex="4"/>
+    <site domain="sigmainstitute.com" strokeHue="0.75" fontIndex="2"/>
+    <site domain="asiafood.org" strokeHue="0.5555556" fontIndex="4"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang"/>
+    <traversable urlString="http://pasture.ecn.purdue.edu/~agenhtml/agenmc/korea"/>
+    <traversable urlString="http://www.lifeinkorea.com/Food"/>
+    <traversable urlString="http://www.lifeinkorea.com/culture/kimchi"/>
+    <traversable urlString="http://www.koreainfogate.com/taste/food"/>
+    <traversable urlString="http://www.sigmainstitute.com/koreanonline"/>
+    <traversable urlString="http://www.asiafood.org"/>
+    <traversable urlString="http://asiarecipe.com"/>
+    <traversable urlString="http://www.marimari.com/content/korea/food/type"/>
+    <traversable urlString="http://english.tour2korea.com/food/about/basic/type"/>
+    <traversable urlString="http://english.tour2korea.com/05food"/>
+    <traversable urlString="http://efl.htmlplanet.com"/>
+    <traversable urlString="http://www.sogang.ac.kr/~burns/cult96"/>
+    <traversable urlString="http://www.manhattanusersguide.com"/>
+    <traversable urlString="http://www.sigmainstitute.com"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="korean" intensity="3"/>
+    <term stemmed="food" intensity="3"/>
+  </term_set>
+  <container_set>
+    <container purl="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/character1.htm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://english.tour2korea.com/05food/Introduction/ddt_kimchi01.asp?kosm=m5_1&amp;konum=subm2_1" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.asiafood.org/koreafood.cfm" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.lifeinkorea.com/culture/kimchi/kimchi.cfm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.asiafood.org/types.cfm" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://english.tour2korea.com/05food/Introduction/lifestyle_food.asp?konum=1&amp;kosm=m5_1" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.lifeinkorea.com/Food/index.cfm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.sigmainstitute.com/koreanonline/food.shtml" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.sigmainstitute.com/koreanonline/korean_blog/2004/06/purpose-of-this-blog_15.shtml" generation="6">
+      <participant/>
+    </container>
+    <container purl="http://asiarecipe.com/korea.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://efl.htmlplanet.com/kor_food.htm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/home.htm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://english.tour2korea.com/05food/WhatToEat/quintessential_snacks.asp?konum=1&amp;kosm=m5_2" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.marimari.com/content/korea/food/type/type.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.sigmainstitute.com/koreanonline/food2.shtml" generation="3">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/home.htm" historyNum="29">
+      <text_element faceIndex="1" alpha="214" r="216" g="164" b="206">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.45454547">
+          <text_token string="Korean"/>
+          <text_token string="food"/>
+          <text_token string="is"/>
+          <text_token string="more"/>
+          <text_token string="and"/>
+          <text_token string="more"/>
+          <text_token string="famous"/>
+          <text_token string="in"/>
+          <text_token string="the"/>
+          <text_token string="whole"/>
+          <text_token string="world."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="352" width="178" height="63"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://efl.htmlplanet.com/kor_food.htm" historyNum="28">
+      <text_element alpha="220" r="191" g="107" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+          <text_token string="I"/>
+          <text_token string="thought"/>
+          <text_token string="so,"/>
+          <text_token string="because"/>
+          <text_token string="in"/>
+          <text_token string="the"/>
+          <text_token string="Korean"/>
+          <text_token string="language"/>
+          <text_token string="jja" italic="true"/>
+          <text_token string="means"/>
+          <text_token string="salty."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="264" width="247" height="78"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/types.cfm" historyNum="15">
+      <text_element faceIndex="4" alpha="156" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.asiafood.org/types.cfm">
+          <text_token string="Types"/>
+          <text_token string="of"/>
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="480" y="132" width="83" height="65"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/types.cfm" historyNum="16">
+      <text_element faceIndex="4" alpha="164" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Types" bold="true"/>
+          <text_token string="of" bold="true"/>
+          <text_token string="Korean" bold="true"/>
+          <text_token string="Food" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="132" width="97" height="67"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/types.cfm" historyNum="14">
+      <text_element faceIndex="4" alpha="156" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Recipes" bold="true"/>
+          <text_token string="for" bold="true"/>
+          <text_token string="Korean" bold="true"/>
+          <text_token string="Foods" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="88" width="212" height="26"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://english.tour2korea.com/05food/Introduction/lifestyle_food.asp?konum=1&amp;kosm=m5_1" historyNum="22">
+      <text_element alpha="187" r="178" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Kinds" bold="true"/>
+          <text_token string="of" bold="true"/>
+          <text_token string="Traditional" bold="true"/>
+          <text_token string="Korean" bold="true"/>
+          <text_token string="Food" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="360" y="88" width="143" height="72"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="25">
+      <text_element faceIndex="4" alpha="189" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.7777778">
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+          <text_token string="is"/>
+          <text_token string="casually"/>
+          <text_token string="represented"/>
+          <text_token string="by"/>
+          <text_token string="bulgogi" italic="true"/>
+          <text_token string="and"/>
+          <text_token string="kimchi."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="308" width="412" height="22"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://english.tour2korea.com/05food/Introduction/ddt_kimchi01.asp?kosm=m5_1&amp;konum=subm2_1" historyNum="18">
+      <image_element hasTransparency="true" minAlpha="2228224" alphaRadius="55" purl="http://english.tour2korea.com/05food/images/ddt_kimchi01.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="120" y="88" width="204" height="120"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/food.shtml" historyNum="17">
+      <image_element hasTransparency="true" minAlpha="3407872" alphaRadius="16" purl="http://www.sigmainstitute.com/koreanonline/kologo_100x71.gif" href="http://www.sigmainstitute.com/koreanonline/">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="330" y="132" width="100" height="71"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="24">
+      <text_element faceIndex="4" alpha="180" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.asiafood.org/types.cfm">
+          <text_token string="Types"/>
+          <text_token string="of"/>
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="361" y="187" width="94" height="74"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="23">
+      <text_element faceIndex="4" alpha="180" r="112" g="156" b="178">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Recipes" bold="true"/>
+          <text_token string="for" bold="true"/>
+          <text_token string="Korean" bold="true"/>
+          <text_token string="Foods" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="88" width="255" height="31"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/korean_blog/2004/06/purpose-of-this-blog_15.shtml" historyNum="30">
+      <text_element faceIndex="2" alpha="207" r="169" g="160" b="178">
+        <text_chunk doUnderline="true" nonStopIndex="0.875">
+          <text_token string="The"/>
+          <text_token string="Sigma"/>
+          <text_token string="Institute"/>
+          <text_token string="&gt;"/>
+          <text_token string="Korean"/>
+          <text_token string="Online"/>
+          <text_token string="&gt;"/>
+          <text_token string="Blog"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="220" width="95" height="37"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/food.shtml" historyNum="31">
+      <text_element faceIndex="2" alpha="216" r="190" g="164" b="216">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6666667">
+          <text_token string="The"/>
+          <text_token string="staple"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="Korean"/>
+          <text_token string="diet"/>
+          <text_token string="is"/>
+          <text_token string="kimchi"/>
+          <text_token string="(±èÄ¡)."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="88" width="142" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://english.tour2korea.com/05food/WhatToEat/quintessential_snacks.asp?konum=1&amp;kosm=m5_2" historyNum="32">
+      <text_element alpha="206" r="178" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8">
+          <text_token string="ê¹€ì¹˜ì°Œê°œ" bold="true"/>
+          <text_token string="Kimchi" bold="true"/>
+          <text_token string="jjigae" bold="true"/>
+          <text_token string="(Kimchi" bold="true"/>
+          <text_token string="stew)" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="528" width="314" height="52"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="33">
+      <text_element faceIndex="1" alpha="228" r="107" g="191" b="149">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Types"/>
+          <text_token string="of"/>
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="450" y="132" width="84" height="68"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="27">
+      <image_element hasTransparency="true" minAlpha="5242880" alphaRadius="41" purl="http://www.marimari.com/content/korea/food/type/images/ty_soup.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="229" y="48" width="110" height="110"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/culture/kimchi/kimchi.cfm" historyNum="26">
+      <image_element hasTransparency="true" minAlpha="6225920" alphaRadius="21" purl="http://www.lifeinkorea.com/Images/Kimchi/Kimch024s.jpg" href="http://www.lifeinkorea.com/Images/Kimchi/Kimch024.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="106" y="720" width="243" height="188"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/culture/kimchi/kimchi.cfm" historyNum="21">
+      <image_element hasTransparency="true" minAlpha="5832704" alphaRadius="18" purl="http://www.lifeinkorea.com/Images/Kimchi/pusan538s.jpg" href="http://www.lifeinkorea.com/Images/Kimchi/pusan538.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="458" y="478" width="168" height="126"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/Food/index.cfm" historyNum="20">
+      <image_element purl="http://www.lifeinkorea.com/Images/Seoul/Kang006s.jpg" href="http://www.lifeinkorea.com/Images/Seoul/Kang006.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="426" y="541" width="183" height="151"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="19">
+      <image_element hasTransparency="true" minAlpha="1114112" alphaRadius="32" purl="http://www.asiafood.org/graphics/table_02.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="426" y="148" width="194" height="156"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/Food/index.cfm" historyNum="13">
+      <image_element hasTransparency="true" minAlpha="5898240" alphaRadius="49" purl="http://www.lifeinkorea.com/Images/Food/pusan289s.jpg" href="http://www.lifeinkorea.com/Images/Food/pusan289.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="22" y="165" width="124" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://asiarecipe.com/korea.html" historyNum="8">
+      <image_element hasTransparency="true" minAlpha="1900544" alphaRadius="49" purl="http://asiarecipe.com/images/korea.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="243" y="60" width="191" height="124"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="6553600" alphaRadius="36" purl="http://www.marimari.com/content/korea/food/type/images/ty_soysauced.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="503" y="691" width="110" height="110"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="9">
+      <image_element hasTransparency="true" minAlpha="262144" alphaRadius="38" purl="http://www.marimari.com/content/korea/food/type/images/ty_saltedfish.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="282" y="15" width="110" height="110"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="7">
+      <image_element purl="http://www.asiafood.org/graphics/asia_home.gif" href="http://www.asiafood.org/index.cfm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="423" y="771" width="195" height="102"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/food.shtml" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="524288" alphaRadius="102" purl="http://www.sigmainstitute.com/koreanonline/food.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="363" y="25" width="250" height="206"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="4">
+      <image_element hasTransparency="true" minAlpha="6291456" alphaRadius="36" purl="http://www.marimari.com/content/korea/food/type/images/ty_fried.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="695" width="127" height="127"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/Food/index.cfm" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="5636096" alphaRadius="47" purl="http://www.lifeinkorea.com/Images/Food/sunc187s.jpg" href="http://www.lifeinkorea.com/Images/Food/sunc187.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="297" width="239" height="139"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.lifeinkorea.com/Food/index.cfm" historyNum="2">
+      <image_element hasTransparency="true" minAlpha="2228224" alphaRadius="46" purl="http://www.lifeinkorea.com/Images/Food/dpy128s.jpg" href="http://www.lifeinkorea.com/Images/Food/dpy128.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="18" width="259" height="176"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/home.htm" historyNum="1">
+      <text_element faceIndex="1" alpha="151" r="216" g="164" b="206">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/character1.htm" nonStopIndex="0.8">
+          <text_token string="The"/>
+          <text_token string="characteristices"/>
+          <text_token string="of"/>
+          <text_token string="Korean"/>
+          <text_token string="food"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="383" y="51" width="132" height="72"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/character1.htm" historyNum="12" latched="true">
+      <image_element hasTransparency="true" minAlpha="262144" alphaRadius="38" purl="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/bosam.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="245" y="630" width="361" height="234"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.marimari.com/content/korea/food/type/type.html" historyNum="11" latched="true">
+      <image_element hasTransparency="true" minAlpha="5308416" alphaRadius="54" purl="http://www.marimari.com/content/korea/food/type/images/ty_cass.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="422" y="273" width="200" height="200"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/home.htm" historyNum="5" latched="true">
+      <image_element hasTransparency="true" minAlpha="6422528" alphaRadius="97" purl="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/BAPSANG.JPG">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="17" y="408" width="351" height="284"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/food2.shtml" historyNum="34">
+      <text_element faceIndex="2" alpha="244" r="186" g="169" b="204">
+        <text_chunk doUnderline="true" nonStopIndex="0.6">
+          <text_token string="The"/>
+          <text_token string="Sigma"/>
+          <text_token string="Institute"/>
+          <text_token string="&gt;"/>
+          <text_token string="Korean"/>
+          <text_token string="Online"/>
+          <text_token string="&gt;"/>
+          <text_token string="About"/>
+          <text_token string="Korea"/>
+          <text_token string="&gt;"/>
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+          <text_token string="&gt;"/>
+          <text_token string="Part"/>
+          <text_token string="II"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="300" y="220" width="196" height="53"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://english.tour2korea.com/05food/WhatToEat/quintessential_snacks.asp?konum=1&amp;kosm=m5_2" historyNum="35">
+      <text_element alpha="216" r="178" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+          <text_token string="It"/>
+          <text_token string="is"/>
+          <text_token string="a"/>
+          <text_token string="health"/>
+          <text_token string="food"/>
+          <text_token string="filled"/>
+          <text_token string="with"/>
+          <text_token string="vitamins,"/>
+          <text_token string="minerals,"/>
+          <text_token string="and"/>
+          <text_token string="more."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="220" width="207" height="68"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asiafood.org/koreafood.cfm" historyNum="36">
+      <text_element faceIndex="4" alpha="237" r="107" g="163" b="191">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.7777778">
+          <text_token string="Korean"/>
+          <text_token string="Food"/>
+          <text_token string="is"/>
+          <text_token string="casually"/>
+          <text_token string="represented"/>
+          <text_token string="by"/>
+          <text_token string="bulgogi" italic="true"/>
+          <text_token string="and"/>
+          <text_token string="kimchi."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="352" width="393" height="25"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sigmainstitute.com/koreanonline/korean_blog/2004/06/purpose-of-this-blog_15.shtml" historyNum="37">
+      <text_element faceIndex="2" alpha="225" r="169" g="160" b="178">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5833333">
+          <text_token string="To"/>
+          <text_token string="share"/>
+          <text_token string="personal"/>
+          <text_token string="news"/>
+          <text_token string="with"/>
+          <text_token string="our"/>
+          <text_token string="friends"/>
+          <text_token string="and"/>
+          <text_token string="friends"/>
+          <text_token string="of"/>
+          <text_token string="Korean"/>
+          <text_token string="Online"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="176" width="297" height="22"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://iml.jou.ufl.edu/projects/STUDENTS/Hwang/character1.htm" historyNum="38">
+      <text_element faceIndex="1" alpha="248" r="216" g="164" b="206">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8333333">
+          <text_token string="&quot;pulgoki&quot;" italic="true"/>
+          <text_token string="is"/>
+          <text_token string="generally"/>
+          <text_token string="called"/>
+          <text_token string="&quot;Korean"/>
+          <text_token string="barbecue&quot;."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="132" width="289" height="22"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

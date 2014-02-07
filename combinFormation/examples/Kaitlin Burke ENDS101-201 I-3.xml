@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composition version="3.0">
+  <preferences>
+    <screen height="701" size="3" width="1274"/>
+  </preferences>
+  <seed_set/>
+  <site_set>
+    <site domain="innovatingwithdiversity.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="aquasanastore.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="1stamericanleisure.com" font_index="4"/>
+    <site domain="innovatingwithdiversity.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="csa.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="worldvision.com.au" font_index="4"/>
+    <site domain="continentaldrift.net" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="purwaterfilter.com" stroke_hue="0.16666667"/>
+    <site domain="glc.org" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="worldvisionresources.com" stroke_hue="0.25"/>
+    <site domain="innovatingwithdiversity.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="needmagazine.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="csa.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="worldvision.com.au" font_index="4"/>
+    <site domain="worldvision.com.au" font_index="4"/>
+    <site domain="needmagazine.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="1stamericanleisure.com" font_index="4"/>
+    <site domain="aquasanastore.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="needmagazine.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="bbc.co.uk" font_index="4"/>
+    <site domain="csa.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="freshwatersystems.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="worldvision.org" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="gothotwater.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="waterdoc.org" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="purwater.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="needmagazine.com" font_index="1" stroke_hue="0.041666668"/>
+  </site_set>
+  <traversable_set>
+    <traversable url_string="file:///F:"/>
+    <traversable url_string="http://www.youtube.com/"/>
+    <traversable url_string="http://www.allamericanhomes.com/"/>
+    <traversable url_string="http://www.gdrc.org/uem/water"/>
+    <traversable url_string="http://www1.eere.energy.gov/femp/pdfs"/>
+    <traversable url_string="http://www.watersavertech.com/"/>
+    <traversable url_string="http://www.gothotwater.com/"/>
+    <traversable url_string="http://www.csa.com/discoveryguides/water"/>
+    <traversable url_string="http://www.ahsyr.com/"/>
+    <traversable url_string="http://www.advancedwaterfilters.com/"/>
+    <traversable url_string="http://www.fao.org/docrep/W7314E"/>
+    <traversable url_string="http://www.waterfilters.net/"/>
+    <traversable url_string="http://www.american-homes.net/"/>
+    <traversable url_string="http://www.purwaterfilter.com/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Water_conservation"/>
+    <traversable url_string="http://www.aquasanastore.com/"/>
+    <traversable url_string="http://www.waterproducts.com/"/>
+    <traversable url_string="http://www.richmondamerican.com/"/>
+    <traversable url_string="http://www.richmondamerican.com/About+Us"/>
+    <traversable url_string="http://www.filterwater.com/"/>
+    <traversable url_string="http://heartspring.net"/>
+    <traversable url_string="http://www.greenbuilder.com/sourcebook"/>
+    <traversable url_string="http://www.waterfiltersonline.com/"/>
+    <traversable url_string="http://www.native-languages.org"/>
+    <traversable url_string="http://www.bestfilters.com/"/>
+    <traversable url_string="http://www.glc.org/wateruse/conservation/pdf"/>
+    <traversable url_string="http://www.rmi.org/sitepages"/>
+    <traversable url_string="http://www.filtersfast.com/"/>
+    <traversable url_string="http://www.americanlegacyhome.com/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Filter_(water)"/>
+    <traversable url_string="http://www.water-cti.com/"/>
+    <traversable url_string="http://www.freshwatersystems.com/"/>
+    <traversable url_string="http://www.barrattamerican.com/"/>
+    <traversable url_string="http://bie.berkeley.edu/node/1490"/>
+    <traversable url_string="http://www.nrdc.org/water/drinking"/>
+    <traversable url_string="http://www.aquasana.com/"/>
+    <traversable url_string="http://www.seattle.gov/util/Services/Water/For_Commercial_Customers"/>
+    <traversable url_string="http://spxcooling.com/en/profiles/air2air-water-conservation-technology/"/>
+    <traversable url_string="http://www.altenergystocks.com/archives/2005/03"/>
+    <traversable url_string="http://www.expertvillage.com/video"/>
+    <traversable url_string="http://www.orion77.com/"/>
+    <traversable url_string="http://www.americanhomesrealty.com/"/>
+    <traversable url_string="http://www.cababstractsplus.org/google"/>
+    <traversable url_string="http://apps.rgp.ufl.edu/otl/pdf/marketing"/>
+    <traversable url_string="http://www.cuwcc.org"/>
+    <traversable url_string="http://www.purwater.com/"/>
+    <traversable url_string="http://wrri.nmsu.edu/wrdis/nmwca"/>
+    <traversable url_string="http://www.americanhomes.net/"/>
+    <traversable url_string="http://www.purewaterexpress.com/"/>
+    <traversable url_string="http://www.mrwaterfilter.com/"/>
+    <traversable url_string="http://www.belkraft.com/"/>
+    <traversable url_string="http://www.bigbrandwater.com/"/>
+    <traversable url_string="http://www.americanhomesavh.com/"/>
+    <traversable url_string="http://www.freedrinkingwater.com/"/>
+    <traversable url_string="http://www.swankpad.org/rooms"/>
+    <traversable url_string="http://www.classicamerican.com/"/>
+    <traversable url_string="http://montanacustombuilders.com/"/>
+    <traversable url_string="http://www.nativeamericans.com"/>
+    <traversable url_string="http://www.c21amhomes.com/"/>
+    <traversable url_string="http://www.americanhomesappraisal.com/"/>
+    <traversable url_string="http://www.americanhomeswi.com/"/>
+    <traversable url_string="http://www.americanhomes-rsvl.com/"/>
+    <traversable url_string="http://www.ob.org/programs/living_water/news/2006"/>
+    <traversable url_string="http://www.worldpress.org/Americas"/>
+    <traversable url_string="http://www.youngmuslims.ca/articles"/>
+    <traversable url_string="http://news.bbc.co.uk/1/hi/world/africa"/>
+    <traversable url_string="http://ipsnews.net"/>
+    <traversable url_string="http://www.worldvision.org/"/>
+    <traversable url_string="http://www.kalamu.com/bol/2007/05/20/marisa-lindsay-%E2%80%9Cmuddy-water%E2%80%9D/"/>
+    <traversable url_string="http://www.wvi.org/"/>
+    <traversable url_string="http://www.goldlyrics.com/song_lyrics/roger_miller/roger_miller_mca_1986/muddy_water/"/>
+    <traversable url_string="http://donate.wvus.org/OA_HTML"/>
+    <traversable url_string="http://www.cduniverse.com/search/xx/music/pid/1888251/a"/>
+    <traversable url_string="http://www.foxbusiness.com/article"/>
+    <traversable url_string="http://www.innovatingwithdiversity.com/14566/Roelie%20Bottema"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/World_Vision"/>
+    <traversable url_string="http://meero.worldvision.org/"/>
+    <traversable url_string="http://www.innovatingwithdiversity.com/uploads/14577"/>
+    <traversable url_string="http://www.travelpod.com/travel-blog-entries/rebn/bigtrip/1096740060"/>
+    <traversable url_string="http://www.charitynavigator.org/index.cfm/bay/search.summary/orgid/4768"/>
+    <traversable url_string="http://www.needmagazine.com/Issue03"/>
+    <traversable url_string="http://www.30hourfamine.org/"/>
+    <traversable url_string="http://www.worldvisionexperience.org/"/>
+    <traversable url_string="http://waterdoc.org/data/content/view/29/58/"/>
+    <traversable url_string="http://seattletimes.nwsource.com/html/localnews"/>
+    <traversable url_string="http://charityreports.bbb.org/Public"/>
+    <traversable url_string="http://www.mnnonline.org/groups/WVI"/>
+    <traversable url_string="http://www.continentaldrift.net/category/cd-technology/appropriate-technology/"/>
+    <traversable url_string="http://www.youtube.com/watch"/>
+    <traversable url_string="http://www.newscientist.com/article"/>
+    <traversable url_string="http://www.worldvisionresources.com/"/>
+    <traversable url_string="http://www.liebertonline.com/doi/pdf/10.1089/107555301750463242"/>
+    <traversable url_string="http://donation.worldvision.org/site"/>
+    <traversable url_string="http://www.worldvision.com.au/"/>
+    <traversable url_string="http://www.dailyherald.com/special/philippines"/>
+    <traversable url_string="http://www.christianpost.com/article/20080204"/>
+    <traversable url_string="http://www.ciao.co.uk/Tap_Water__Review_5319031"/>
+    <traversable url_string="http://www.newworldvision.org/"/>
+    <traversable url_string="http://www.alertnet.org/thepeople/members"/>
+    <traversable url_string="http://www.baylor.edu/content/services"/>
+    <traversable url_string="http://worldvisionbc.com/"/>
+    <traversable url_string="http://domino-201.worldvision.org/get_involved.nsf/child/globalissues_stp"/>
+    <traversable url_string="http://www.wvi.org/wvi"/>
+    <traversable url_string="http://www.richmondamerican.com"/>
+    <traversable url_string="http://www.youtube.com/signup"/>
+    <traversable url_string="http://www.goatfood.com/"/>
+    <traversable url_string="http://foodgoat.blogspot.com/"/>
+    <traversable url_string="http://www.allgoats.com"/>
+    <traversable url_string="http://goat.purinamills.com/"/>
+    <traversable url_string="http://thefoodofgoats.blogspot.com/"/>
+    <traversable url_string="http://www.amazon.com/tag/goat%20food"/>
+    <traversable url_string="http://food.oregonstate.edu/f"/>
+    <traversable url_string="http://www.mnfoodassociation.org"/>
+    <traversable url_string="http://www.dmoz.org/Shopping/Food/Cheese/Goat/"/>
+    <traversable url_string="http://shelbinator.com/2007/03/29/goat-food-goat-food/"/>
+    <traversable url_string="http://thephoenix.com"/>
+    <traversable url_string="http://gourmetfood.about.com/od/fishandseafood/r"/>
+    <traversable url_string="http://animalsnackables.com/treatrecipes"/>
+    <traversable url_string="http://www.foodnetwork.com/food/recipes/recipe"/>
+    <traversable url_string="http://ttsmag.com/2007/04/24/goat-food/"/>
+    <traversable url_string="http://www.neeps.com"/>
+    <traversable url_string="http://www.slashfood.com/2007/05/20/f/"/>
+    <traversable url_string="http://www.foodreference.com/html"/>
+    <traversable url_string="http://www.gourmetfoodstore.com/buttersandcreams"/>
+    <traversable url_string="http://www.worldvisionresources.com"/>
+    <traversable url_string="http://www.filtersfast.com"/>
+    <traversable url_string="http://yaleglobal.yale.edu"/>
+    <traversable url_string="http://mondediplo.com/2004/12/15fao"/>
+    <traversable url_string="http://www.worldpress.org/Africa"/>
+    <traversable url_string="http://www.guardian.co.uk/comment/story"/>
+    <traversable url_string="http://www.guardian.co.uk/environment/2006/nov/06"/>
+    <traversable url_string="http://www.greenleft.org.au/2005/631/34431"/>
+    <traversable url_string="http://www.whitehouse.gov/news/releases/2005/06"/>
+    <traversable url_string="http://www.nytimes.com/2007/06/17/business/yourmoney"/>
+    <traversable url_string="http://www.fin24.com/articles/default"/>
+    <traversable url_string="http://allafrica.com/stories"/>
+    <traversable url_string="http://www.bdafrica.com"/>
+    <traversable url_string="http://www.scidev.net/News"/>
+    <traversable url_string="http://www.truthdig.com/report/item/20061128_the_africa_you_need_to_know/"/>
+    <traversable url_string="http://www.cirad.fr/en/actualite"/>
+    <traversable url_string="http://egrover.blogactiv.eu/2008/02/06/africa-needs-tough-love-not-more-aid-poured-down-a-rat-hole/"/>
+    <traversable url_string="http://ifcblog.ifc.org/emergingmarketsifc/2007/05"/>
+    <traversable url_string="http://www.alphagalileo.org"/>
+    <traversable url_string="http://belfercenter.ksg.harvard.edu/publication/17405"/>
+    <traversable url_string="http://www.dissidentvoice.org/2007/07/africa-needs-less-not-more-world-bank-intervention/"/>
+    <traversable url_string="http://www.asiahotels.com/hotelinfo/Kirikayan_Luxury_Pool_villas_Spa_Samui/"/>
+    <traversable url_string="http://losangeles.craigslist.org/wst/hsh"/>
+    <traversable url_string="http://www.matchtable.com/"/>
+    <traversable url_string="http://luxuryhotel.lifetips.com/cat/65498/south-american-luxury-hotels/"/>
+    <traversable url_string="http://www.snookerbilliardspool.co.uk"/>
+    <traversable url_string="http://flickr.com/groups/42189041@N00/pool/tags/american"/>
+    <traversable url_string="http://flickr.com/groups/42189041@N00/pool/tags/blue"/>
+    <traversable url_string="http://www.vrbo.com/38551"/>
+    <traversable url_string="http://www.vrbo.com/56207"/>
+    <traversable url_string="http://www.luxurypoolandleisure.com/pool_tables"/>
+    <traversable url_string="http://www.1stamericanleisure.com/"/>
+    <traversable url_string="http://www.homeawayconnect.com"/>
+    <traversable url_string="http://www.infomat.net/infomat/rd741/rd1/database/luxury_pool_leisure"/>
+    <traversable url_string="http://www.vacationrentals.com/vacation-rentals"/>
+    <traversable url_string="http://home.search.ebay.com/Luxury_Pools-Spas_W0QQsacatZ20727"/>
+    <traversable url_string="http://www.hotelthailand.com/samui/kirikayan/"/>
+    <traversable url_string="http://usa.themovechannel.com/property/superior/"/>
+    <traversable url_string="http://www.libertygames.co.uk/store/pool_tables/slate_bed_pool_tables_luxury/"/>
+    <traversable url_string="http://www.bluediamondconservatories.com/"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term intensity="10" stemmed="organ"/>
+    <term intensity="10" stemmed="copi"/>
+    <term intensity="10" stemmed="culvert"/>
+    <term intensity="10" stemmed="american"/>
+    <term intensity="10" stemmed="bfood"/>
+    <term intensity="10" stemmed="lettuc"/>
+    <term intensity="10" stemmed="commun"/>
+    <term intensity="10" stemmed="mount"/>
+    <term intensity="10" stemmed="ligaya"/>
+    <term intensity="10" stemmed="pur"/>
+    <term intensity="10" stemmed="recent"/>
+    <term intensity="10" stemmed="philippin"/>
+    <term intensity="10" stemmed="faucet"/>
+    <term intensity="10" stemmed="greywat"/>
+    <term intensity="10" stemmed="filter"/>
+    <term intensity="10" stemmed="richmond"/>
+    <term intensity="10" stemmed="farm"/>
+    <term intensity="10" stemmed="tomato"/>
+    <term intensity="10" stemmed="detail"/>
+    <term intensity="10" stemmed="harvest"/>
+  </term_set>
+  <container_set>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.worldvisionresources.com/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.csa.com/discoveryguides/water/overview.php">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.1stamericanleisure.com/info.asp?cid=5&amp;dir=gr598">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Home Details"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.purwater.com/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.needmagazine.com/Issue03/future01.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.worldvision.com.au/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="1" purl="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.purwaterfilter.com/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="1" purl="http://www.glc.org/wateruse/conservation/pdf/BestTechnologiesReport.pdf">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.gothotwater.com/D%27MAND/Benefits/rebates.asp">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.aquasanastore.com/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.continentaldrift.net/category/cd-technology/appropriate-technology/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.1stamericanleisure.com/info.asp?cid=51&amp;dir=1080">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Home Details"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://donation.worldvision.org/site/pp.asp?c=fvKVLbMVIwG&amp;b=277370">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.worldvision.com.au/wvconnect/content.asp?topicID=143">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://waterdoc.org/data/content/view/29/58/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://news.bbc.co.uk/1/hi/world/africa/5387512.stm">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.freshwatersystems.com/s-180-bestwater-by-shaklee.aspx">
+      <participant/>
+      <metadata/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <surrogate containerURL="http://www.gothotwater.com/D%27MAND/Benefits/rebates.asp" history_num="13" latched="true">
+      <image_element bias="1.0" href="http://www.gothotwater.com/News/saws.asp" purl="http://www.gothotwater.com/D%27MAND/images/saws.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="San Antonio Water System"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="86" width="155" x="8" y="11"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.continentaldrift.net/category/cd-technology/appropriate-technology/" history_num="14" latched="true">
+      <image_element alpha_radius="31" bias="1.0" has_transparency="true" min_alpha="6291456" purl="http://www.continentaldrift.net/wordpress/wp-content/uploads/2006/06/P6010024.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="115" width="135" x="751" y="151"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.worldvision.com.au/" history_num="9" latched="true">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" href="http://www.worldvision.com.au/waterhealthlife/?isource=3" min_alpha="1310720" purl="http://www.worldvision.com.au/waterhealthlife/images/promo_whl.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Water health Life - Stop children dying from drinking dirty water"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="52" width="135" x="636" y="364"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.csa.com/discoveryguides/water/overview.php" history_num="11" latched="true">
+      <image_element bias="1.0" purl="http://www.csa.com/discoveryguides/water/images/culvert.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="greywater culvert detail"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="223" width="245" x="7" y="103"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.worldvisionresources.com/" history_num="7" latched="true">
+      <image_element alpha_radius="31" bias="1.0" href="http://www.worldvisionresources.com/product_info.php?cPath=3&amp;products_id=341" min_alpha="1048576" purl="http://www.worldvisionresources.com/images/h-010fp.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="African Awakening"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="236" width="166" x="860" y="139"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.freshwatersystems.com/s-180-bestwater-by-shaklee.aspx" history_num="2" latched="true">
+      <image_element bias="1.0" href="http://www.freshwatersystems.com/m-49-everpure.aspx" purl="http://www.freshwatersystems.com/images/MANUFACTURER/icon/everpure.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="EverpureÂ®"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="76" width="134" x="181" y="55"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf" latched="true">
+      <image_element bias="1.0" has_transparency="true" pdf_index="52" purl="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="125" width="149" x="614" y="243"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.aquasanastore.com/" latched="true">
+      <image_element bias="1.0" href="http://www.aquasanastore.com/aq-combo-pack.html" purl="http://www.aquasanastore.com/images/AQ-4200_1.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="water and shower filter"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="195" width="159" x="226" y="124"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.glc.org/wateruse/conservation/pdf/BestTechnologiesReport.pdf" latched="true">
+      <image_element bias="1.0" has_transparency="true" pdf_index="69" purl="http://www.glc.org/wateruse/conservation/pdf/BestTechnologiesReport.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="130" width="94" x="451" y="395"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf" latched="true">
+      <image_element bias="1.0" has_transparency="true" pdf_index="4" purl="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="209" width="247" x="10" y="295"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf" latched="true">
+      <image_element bias="1.0" pdf_index="50" purl="http://www.innovatingwithdiversity.com/uploads/14577/Summary_Bottema_Lifestraw.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="152" width="115" x="521" y="309"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.purwaterfilter.com/" latched="true">
+      <image_element bias="1.0" href="http://www.purwaterfilter.com/faucetmounted.html" purl="http://us.st11.yimg.com/us.st.yimg.com/I/purstore_1980_497863/">
+        <participant intensity="3"/>
+        <metadata>
+          <metadata_field name="Caption" value="PUR Faucet Mounted Filters"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="175" width="183" x="200" y="320"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://donation.worldvision.org/site/pp.asp?c=fvKVLbMVIwG&amp;b=277370" history_num="12" latched="true">
+      <image_element alpha_radius="46" bias="1.0" has_transparency="true" min_alpha="4521984" purl="http://donation.worldvision.org/atf/cf/{BAC3E0C2-25A1-4ED2-9A84-06DA1AFAFD25}/wv_donation_photo.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="139" width="124" x="1148" y="347"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.worldvision.com.au/" history_num="10" latched="true">
+      <image_element alpha_radius="13" bias="1.0" has_transparency="true" href="http://www.worldvision.com.au/green/?isource=30" min_alpha="3866624" purl="http://www.worldvision.com.au/green/images/promo_green.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Twice as Green - An easy way to help the environment and the world's poorest children."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="47" width="124" x="632" y="200"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.aquasanastore.com/" history_num="1" latched="true">
+      <image_element alpha_radius="10" bias="1.0" has_transparency="true" href="http://www.aquasanastore.com/" min_alpha="196608" purl="http://www.aquasanastore.com/images/home_aquasana.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="aquasana water filter"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="55" width="194" x="151" y="4"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.worldvision.com.au/wvconnect/content.asp?topicID=143" history_num="15" latched="true">
+      <image_element alpha_radius="37" bias="1.0" has_transparency="true" href="http://www.worldvision.com.au/wvconnect/default.asp" min_alpha="2490368" purl="http://www.worldvision.com.au/wvconnect/images/connect_logo.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Connect Logo"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="63" width="128" x="508" y="464"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://waterdoc.org/data/content/view/29/58/" history_num="16" latched="true">
+      <image_element alpha_radius="36" bias="1.0" has_transparency="true" href="http://waterdoc.org/data/content/view/18/64/" min_alpha="655360" purl="http://www.waterdoc.org/data/templates/aduaya/images/bucket_button_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="85" width="94" x="363" y="500"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.needmagazine.com/Issue03/future01.html" history_num="3" latched="true">
+      <image_element alpha_radius="17" bias="1.0" has_transparency="true" min_alpha="327680" purl="http://www.needmagazine.com/Issue03/images/NEED_Future02B.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="&amp;copy; 2007 NEED Communications"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="168" width="256" x="1017" y="196"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.needmagazine.com/Issue03/future01.html" history_num="5" latched="true">
+      <image_element bias="1.0" purl="http://www.needmagazine.com/Issue03/images/NEED03_Future01.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="&amp;copy; 2007 NEED Communications"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="175" width="117" x="908" y="5"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://news.bbc.co.uk/1/hi/world/africa/5387512.stm" history_num="17" latched="true">
+      <image_element alpha_radius="21" bias="1.0" has_transparency="true" min_alpha="3014656" purl="http://newsimg.bbc.co.uk/media/images/42138000/jpg/_42138534_dirtywater_unicef203.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Two women fetch water from a river in Mozambique"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="196" width="257" x="1018" y="2"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.needmagazine.com/Issue03/future01.html" history_num="6" latched="true">
+      <image_element alpha_radius="39" bias="1.0" has_transparency="true" min_alpha="1966080" purl="http://www.needmagazine.com/Issue03/images/NEED_Future03.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="&amp;copy; 2007 NEED Communications"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="133" width="208" x="947" y="343"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.needmagazine.com/Issue03/future01.html" history_num="4" latched="true">
+      <image_element alpha_radius="35" bias="1.0" has_transparency="true" min_alpha="6291456" purl="http://www.needmagazine.com/Issue03/images/NEED03_Future03.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="&amp;copy; 2007 NEED Communications"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="207" width="321" x="949" y="469"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.csa.com/discoveryguides/water/overview.php" history_num="18" latched="true">
+      <text_element bias="1.0" face_index="1" font_color="a7ffffff" stroke_color="99ff99">
+        <text_chunk font_size="13" font_style="1" non_stop_index="0.6">
+          <cf_text_token delims_before="" string="Greywater,"/>
+          <cf_text_token delims_before=" " string="Rainwater"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="Other"/>
+          <cf_text_token delims_before=" " string="Innovations"/>
+        </text_chunk>
+        <participant intensity="5"/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="68" width="103" x="542" y="248"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.1stamericanleisure.com/info.asp?cid=5&amp;dir=gr598" history_num="19" latched="true">
+      <image_element alpha_radius="35" bias="1.0" has_transparency="true" min_alpha="2949120" purl="http://www.1stamericanleisure.com/tours/gr598/11.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="171" width="208" x="4" y="506"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.1stamericanleisure.com/info.asp?cid=51&amp;dir=1080" history_num="19" latched="true">
+      <image_element alpha_radius="30" bias="1.0" has_transparency="true" min_alpha="327680" purl="http://www.1stamericanleisure.com/tours/1080/1008GrandRes_15_s.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="179" width="243" x="143" y="495"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="21">
+      <text_element bias="2.7182817" font_color="ffffff" participant_created="true" stroke_color="339900">
+        <text_chunk font_size="36">
+          <cf_text_token delims_before="" string="What"/>
+          <cf_text_token delims_before=" " string="we"/>
+          <cf_text_token delims_before=" " string="have..."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="45" width="313" x="4" y="293"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="22">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="13363">
+          <cf_text_token delims_before="" string="..."/>
+          <cf_text_token delims_before=" " string="is"/>
+          <cf_text_token delims_before=" " string="what"/>
+          <cf_text_token delims_before=" " string="they"/>
+          <cf_text_token delims_before=" " string="need."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="2422" width="172" x="573" y="544"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="23">
+      <text_element bias="2.7182817" font_color="ffffff" participant_created="true" stroke_color="339900">
+        <text_chunk font_size="34">
+          <cf_text_token delims_before="" string="is"/>
+          <cf_text_token delims_before=" " string="what"/>
+          <cf_text_token delims_before=" " string="they"/>
+          <cf_text_token delims_before=" " string="need."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="43" width="316" x="913" y="447"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.purwater.com/" latched="true">
+      <text_element bias="1.0" face_index="2" font_color="9f000000" stroke_color="f7c792fc">
+        <text_chunk font_size="26" non_stop_index="0.5">
+          <cf_text_token delims_before="" string="PUR" style_plus_one="3"/>
+          <cf_text_token delims_before=" " string="Water:" style_plus_one="3"/>
+          <cf_text_token delims_before=" " string="Healthy" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="Water,"/>
+          <cf_text_token delims_before=" " string="Healthy" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="You"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="99" width="209" x="74" y="466"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.csa.com/discoveryguides/water/overview.php" history_num="19" latched="true">
+      <text_element bias="1.0" face_index="1" font_color="a70066ff" stroke_color="fc8a64">
+        <text_chunk font_size="15" non_stop_index="0.3">
+          <cf_text_token delims_before="" string="It"/>
+          <cf_text_token delims_before=" " string="is"/>
+          <cf_text_token delims_before=" " string="imperative"/>
+          <cf_text_token delims_before=" " string="for"/>
+          <cf_text_token delims_before=" " string="greywater"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="be"/>
+          <cf_text_token delims_before=" " string="separated"/>
+          <cf_text_token delims_before=" " string="from"/>
+          <cf_text_token delims_before=" " string="blackwater;"/>
+          <cf_text_token delims_before=" " string="even" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="then," style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="pathogenic" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="microorganisms" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="can" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="still" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="be" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="found" style_plus_one="2"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="greywater."/>
+        </text_chunk>
+        <participant intensity="5"/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="120" width="224" x="1003" y="113"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="29">
+      <text_element bias="2.7182817" font_color="ccffff" participant_created="true" stroke_color="3300cc">
+        <text_chunk font_size="38" non_stop_index="0.6666667">
+          <cf_text_token delims_before="" string="BRIDGING"/>
+          <cf_text_token delims_before=" " string="THE"/>
+          <cf_text_token delims_before=" " string="GAP"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="47" width="384" x="447" y="66"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="31">
+      <text_element bias="2.7182817" font_color="cc" participant_created="true" stroke_color="ffffff">
+        <text_chunk font_size="13" non_stop_index="0.42105263">
+          <cf_text_token delims_before="" string="We"/>
+          <cf_text_token delims_before=" " string="can"/>
+          <cf_text_token delims_before=" " string="use"/>
+          <cf_text_token delims_before=" " string="our"/>
+          <cf_text_token delims_before=" " string="most"/>
+          <cf_text_token delims_before=" " string="advanced"/>
+          <cf_text_token delims_before=" " string="water"/>
+          <cf_text_token delims_before=" " string="purification"/>
+          <cf_text_token delims_before=" " string="technology"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="help"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="fight"/>
+          <cf_text_token delims_before=" " string="against"/>
+          <cf_text_token delims_before=" " string="thirst"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="water-born"/>
+          <cf_text_token delims_before=" " string="illnesses."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="51" width="331" x="481" y="602"/>
+      </visual>
+    </surrogate>
+    <surrogate>
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="12" non_stop_index="NaN"/>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="20" width="-1" x="851" y="529"/>
+      </visual>
+    </surrogate>
+  </collage_element_set>
+</composition>

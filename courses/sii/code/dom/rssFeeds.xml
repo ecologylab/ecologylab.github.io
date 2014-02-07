@@ -1,0 +1,147 @@
+<source_set>
+
+<source name="NY Times">
+
+<feed title="Front Page"
+ url="http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+ category="breaking news"/>
+
+<feed title="Circuits"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Circuits.xml"
+ category="technology"/>
+
+<feed title="Technology"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Technology.xml"
+ category="technology"/>
+
+<feed title="Health"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Health.xml"
+ category="health"/>
+
+<feed title="International"
+ url="http://www.nytimes.com/services/xml/rss/nyt/International.xml"
+ category="international"/>
+
+<feed title="National"
+ url="http://www.nytimes.com/services/xml/rss/nyt/National.xml"
+ category="u.s."/>
+
+<feed title="Science"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Science.xml"
+ category="science"/>
+
+<feed title="Sports"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Sports.xml"
+ category="sports"/>
+
+<feed title="Education"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Education.xml"
+ category="education"/>
+
+<feed title="Media and Advertising"
+ url="http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml"
+ category="business"/>
+
+<feed title="Business"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Business.xml"
+ category="business"/>
+
+<feed title="Arts"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Arts.xml"
+ category="arts"/>
+
+<feed title="Books"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Books.xml"
+ category="books"/>
+
+<feed title="Dining and Wine"
+ url="http://www.nytimes.com/services/xml/rss/nyt/DiningandWine.xml"
+ category="leisure"/>
+
+<feed title="Movies"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Movies.xml"
+ category="entertainment"/>
+
+<feed title="Theater"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Theater.xml"
+ category="entertainment"/>
+
+<feed title="Travel"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Travel.xml"
+ category="travel"/>
+
+<feed title="FashionandStyle"
+ url="http://www.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml"
+ category="fashion"/>
+
+<feed title="Magazine"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Magazine.xml"
+ category="colorful&amp;nbsp;features"/>
+
+<feed title="HomeandGarden"
+ url="http://www.nytimes.com/services/xml/rss/nyt/HomeandGarden.xml"
+ category="colorful&amp;nbsp;features"/>
+
+<feed title="Automobiles"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Automobiles.xml"
+ category="cars"/>
+
+<feed title="Multimedia"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Multimedia.xml"
+ category="colorful&amp;nbsp;features"/>
+
+
+</source>
+
+
+
+<source name="Reuters">
+
+<feed title="Top News"
+ url="http://www.microsite.reuters.com/rss/topNews"
+ category="breaking news"/>
+
+<feed title="Top News"
+ url="http://www.microsite.reuters.com/rss/topNews"
+ category=""/>
+
+<feed title="Business"
+ url="http://www.microsite.reuters.com/rss/businessNews"
+ category=""/>
+
+<feed title="US News"
+ url="http://www.microsite.reuters.com/rss/domesticNews"
+ category="u.s."/>
+
+<feed title="World News"
+ url="http://www.microsite.reuters.com/rss/worldNews"
+ category="international"/>
+
+<feed title="Entertainment News"
+ url="http://www.microsite.reuters.com/rss/Entertainment"
+ category="entertainment"/>
+
+<feed title="Technology"
+ url="http://www.microsite.reuters.com/rss/technologyNews"
+ category="technology"/>
+
+<feed title="Science"
+ url="http://www.microsite.reuters.com/rss/scienceNews"
+ category="science"/>
+
+<feed title="Sports"
+ url="http://www.microsite.reuters.com/rss/sportsNews"
+ category="sports"/>
+
+<feed title="Health"
+ url="http://www.microsite.reuters.com/rss/healthNews"
+ category="health"/>
+
+<feed title="Life and Leisure"
+ url="http://www.microsite.reuters.com/rss/lifeAndLeisureNews"
+ category="leisure"/>
+
+</source>
+
+
+</source_set>

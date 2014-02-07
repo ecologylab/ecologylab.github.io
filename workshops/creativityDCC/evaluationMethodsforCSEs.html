@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0069)http://mason.gmu.edu/~jgero/conferences/dcc12/workshop-stylesheet.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Evaluation Methods for Creativity Support Environments </title>
+
+<link type="text/css" rel="stylesheet" href="data:text/css,">
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Arial, Helvetica, sans-serif;
+	background: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font:Arial, Helvetica, sans-serif;
+}
+
+h1{
+	font-size: 14px;
+	text-transform:uppercase;
+	margin-top: 1.25em;
+}
+
+h2{
+	font-size: 14px;
+	margin-top: 1.5em;
+	margin-bottom: 0em;
+}
+
+h3{
+	font-size: 12px;
+	margin-bottom: 0em;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+	min-width: 780px;/* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-image:url(http://mason.gmu.edu/~jgero/conferences/dcc12/images/top_bk.jpg);
+ 	background-repeat:repeat-x;
+	height: 180px;
+	margin-top: 0px;
+}
+
+.sidebar1 {
+	float: left;
+	width: 150px;
+	background: #FFF;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.content {
+	float: left;
+	width: 80%;
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background: #FFF;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.content p {
+	font-size: 12px;
+}
+
+.content h1 {
+	font-size: 14px;
+}
+
+.content ul {
+	font: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.content li {
+	padding-left: 10px;
+}
+
+.content ol {
+	font: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.twitter_title {
+	font: Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+#twitter_div ul li {
+	font-size:12px;
+	list-style-type: none;
+	padding-bottom: 1em;
+	
+}
+
+-->
+</style>
+
+</head>
+
+
+<body bgcolor="#FFF" text="#000000" link="#000000" vlink="#000000" alink="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="container">
+<div class="header"><img src="http://mason.gmu.edu/~jgero/conferences/dcc12/images/top.jpg" width="766" height="180" alt="dcc12"> </div>
+<table width="100%" border="0">
+  <tbody><tr>
+      <td width="60%" valign="middle" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Evaluation Methods for Creativity Support Environments </b></font></td>
+      <td width="40%"><table width="100%" border="0">
+      <tbody><tr bgcolor="#666600">
+        <td colspan="2" align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Important Dates</b></font></td>
+        </tr>
+      <tr>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">11 May</font></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Submissions due</font></td>
+      </tr>
+      <tr>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">15 May</font></td> 
+        <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Notification
+            of acceptance</font></td>
+      </tr>
+      <tr>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">6 June 9:00am-12:30pm </font></td>
+              <td><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Workshop</font></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+      <td><p><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i>Workshop aim:</i> </font></p>
+ 
+				<p>
+Creativity refers to human cognitive processes that underpin sublime forms of expression and fuel design and innovation. 
+While a <a href="http://www.cs.umd.edu/hcil/CST/report.html" target="_blank">2005 NSF workshop</a> saw development and evaluation of creativity support tools as a new field, we take the 
+position that researchers are developing sophisticated methods, which have progressed well beyond infancy. We expand the scope with 'environments', a superset of 'tools'.		</p>
+		
+		<p>
+Creativity support environments (CSEs) span and integrate diverse domains and types of systems, including software, hardware, instrumented spaces, networked topologies, and mobile devices. 
+CSEs may involve temporal-spatial dimensions of collaborative work, requiring evaluation methods that address synchronous, asynchronous, co-located, and distributed interaction. 		</p>
+		
+		<p>
+We seek to gather the community of researchers designing, developing, and evaluating CSEs, to share approaches, engage in dialogue, and develop best practices. We seek papers and presentations that develop in-depth methods for CSE evaluation. Methods must be explained with sufficient clarity and detail that others can apply them. They should be grounded by showing how they have been applied in the study of particular CSEs. 
+Authors should motivate the types of CSEs for which a particular evaluation method is well-suited. 		</p>
+		<p>
+The workshop will coalesce the community involved in developing these methods, and set the table, inspiring discussion and debate about the value of particular methods in types of situated contexts.  
+The expected outcome is not a single prescription, but a landscape of routes, an ontology of methodologies with consideration to how they map to creative activities, and an emerging consensus on the range of expectations for rigorous evaluation of CSE research.		</p>
+		<p>
+	  </td><td valign="top">
+	<table width="100%" border="0">
+      <tbody><tr bgcolor="#666600">
+        <td align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Workshop Chair</b></font></td>
+        </tr>
+            <tr> 
+              <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+              	Andruid Kerne (andruid<img src="http://www.ecologylab.net/people/images/at.png"/>ecologylab.net)<br/>
+              	Celine Latulipe (clatulip<img src="http://www.ecologylab.net/people/images/at.png"/>uncc.edu)<br/>
+              	Andrew M. Webb (andrew<img src="http://www.ecologylab.net/people/images/at.png"/>ecologylab.net)<br/>
+              	Erin Carroll (e.carroll<img src="http://www.ecologylab.net/people/images/at.png"/>uncc.edu)<br/>
+              </font></td>
+        </tr>
+      <tr bgcolor="#666600">
+        <td align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Program Committee</b></font></td>
+        </tr>
+            <tr> 
+              <td valign="bottom" align="left"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+				<ul style="padding-left: 15px;">
+					<li>Andruid Kerne, Texas A&amp;M University</li>
+					<li>Celine Latulipe, University of North Carolina</li>
+					<li>Steven M. Smith, Texas A&amp;M University</li>
+					<li>Mary Czerwinski, Microsoft Research</li>
+					<li>Mary Lou Maher, University of Maryland HCIL</li>
+					<li>Jill Fantauzzacoffin, Georgia Tech</li>
+					<li>David A. Shamma, Yahoo! Research</li>
+					<li>Brian Bailey, UIUC</li>
+					<li>Andrew M. Webb, Texas A&amp;M University</li>
+					<li>Erin Carroll, University of North Carolina</li>
+				</ul>
+			  </font></td>
+        </tr>
+		<tr bgcolor="#666600">
+        <td align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>Workshop Notes</b></font></td>
+        </tr>
+
+		<tr> 
+              <td align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="index.html" target="_blank">Workshop website</a></font></td>
+        </tr>
+    </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+<hr>
+<p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i>Submission information:<br></i></font></p>
+	<p align="justify">Papers should be 2-4 pages long, formatted in <a href="http://mason.gmu.edu/~jgero/conferences/dcc12/uploads/DCC12_Style.doc">DCC Format</a> and anonymized.
+			The best papers will be invited for presentation in 10 minute slots, with 5 minutes discussion for each.
+			Other papers may be invited for presentation as posters.</p>
+	<p align="justify">The submission site is open. Submit your paper <a href="https://www.easychair.org/account/signin.cgi?conf=wemcse2012" target="_blank">here</a>.</p>
+	<br/>
+
+<p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><i>Workshop format:</i></font></p>
+			<p>
+				9:00 - 9:45<br/>
+				Survey of the CSE Evaluation Landscape
+			</p>
+			<p>	9:45 - 10:30<br/>
+				3 Paper Presentations (10+5 each)
+			</p>
+			<p>	10:30 - 10:45<br/>
+				Coffee Break and Posters
+			</p>
+			<p>	10:45 - 11:30<br/>
+				3 Paper Presentations
+			</p>
+			<p>	11:30 - 11:50<br/>
+				Small Group Discussions
+			</p>
+			<p>	11:50 - 12:30</br>
+				Full Workshop Discussion
+			</p>
+			<p> 12:45 - 14:00</br>
+				Optional Lunch
+		  </p>
+		  <br/>
+		  
+		  <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Attendees at the workshop need to register either as an addition to the DCC'12 conference registration at a cost of $25, or if not registered for the conference at a cost of $50. Please go the Registration page to register. </font></p>
+	<p align="justify"><a href="http://mason.gmu.edu/~jgero/conferences/dcc12/"><font size="-1" face="Arial, Helvetica, sans-serif">Return to DCC12 homepage.</font></a></p>
+</div>
+</body><style type="text/css">embed[type*="application/x-shockwave-flash"],embed[src*=".swf"],object[type*="application/x-shockwave-flash"],object[codetype*="application/x-shockwave-flash"],object[src*=".swf"],object[codebase*="swflash.cab"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"],object[classid*="d27cdb6e-ae6d-11cf-96b8-444553540000"],object[classid*="D27CDB6E-AE6D-11cf-96B8-444553540000"]{	display: none !important;}</style></html>

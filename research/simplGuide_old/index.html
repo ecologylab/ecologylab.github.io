@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>guide [s.im.pl]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../code/styles/ecologylab/ecologylab.css"
+	rel="stylesheet">
+<link href="../../code/styles/ecologylab/guide.css"
+	rel="stylesheet">
+<style type="text/css">
+a.subnavlink
+{
+  font-size: 11px;
+}
+ </style>
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+
+<script language="JavaScript"
+	src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/ecologylab/ecologylab.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl:<br/></div>
+<div class="title4a">guide</div>
+</div>
+
+<div class="nav">
+
+<div class="block">
+  	<a class="navselected_bold" href="index.html">s.im.pl</a>
+	<a class="navlink" href="./serialization/index.html">serialization</a>
+	<a class="navlink" href="./oodss/index.html">oodss</a>
+	
+	<a class="navlink" href="./metaMetadata/index.html">meta-metadata</a>	
+</div>
+	
+<div class="block">
+  <a class="navlink"  href="repository.html">repository</a>
+  <a class="navlink" href="community.html">community</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../research/index.html"><img class="navicon" src="../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+	
+
+</div>
+
+<div class="intro">
+S.IM.PL  (Support for Information Mapping in Programming Languages) is the best-in-class open source software architecture for developing distributed programs that share and store complex data structures. 
+</div>
+	
+<div class="intro">
+<ul>
+	<li>The programmer says which fields in a data structure should be shared and/or persisted by sprinkling our <a class="destination" href="serialization/DBALSpecs.html">Data Binding Annotation Language</a> (DBAL) directly into class and field declarations in 
+	<a class="destination" href="serialization/tutorials/monoMorphicJava.html">Java</a> or <a class="destination" href="serialization/tutorials/monoMorphicCSharp.html">C#</a>, 
+	or by using <a class="destination" href="metaMetadata/index.html">meta-metadata</a> to declare types. 
+	</li>
+	
+	<li>S.IM.PL's 
+	<a class="destination" href="serialization/shahzadThesisCrossPlatformMultiFormat.pdf" target="_blank">cross-language type system</a> (built with ClassDescriptor, FieldDescriptor, ScalarType, and SIMPLTypeScope) encapsulates all type information to optimize <a class="destination" href="serialization/index.html">de/serialization</a> of objects, and to ferry type information from one language to another. 
+	The same structures S.IM.PLify <a class="destination" href="oodss/index.html">Object-Oriented Distributed Semantic Services (OODSS)</a>.</li>
+	
+	<li>The cross-language code generators enable generating equivalent object declarations in Java, C#, Objective C, and JavaScript from a SIMPLTypeScope. We hope to add Python and C++ to the mix through GSoC 2012.</li>
+	
+	<li>S.IM.PL de/serialization enables persisting complex data structures by storing them as XML, JSON, or binary files, or as tables in a relational database. In addition to cross-language type information, SIMPLTypeScopes also optimally capture all data binding details. 
+	<a class="destination" href="serialization/DBALSpecs.html">DBAL</a> gives the developer fine-grained control of exactly how de/serialization will work, e.g., of how the XML will look. Serialized data can be concise and readable. Graph data structures are optimally captured and represented.</li>
+</ul>
+</div>
+	
+<div class="intro">
+Developers will find that for just persisting complex data structures, the popular solution of using hibernate and SQLite is a real pain compared to our S.IM.PLicity.
+There is no need to declare special getters and setters. Our type system will do the lifting for you!
+</div>
+	
+<div class="intro">
+Developers will also find using S.IM.PL <a class="destination" href="oodss/index.html">Object-Oriented Distributed Semantic Services</a> is a breeze for passing complex data structures around between programs. It is more powerful and expressive than typical web services, XML-RPC, protocol buffers, and other similar solutions. 
+</div>
+	
+<div class="intro">
+The same DBAL annotations power de/serialization and OODSS message passing. So distributed application developers don’t need to deal with multiple libraries.
+</div>
+
+<div class="intro">
+<a class="destination" href="serialization/index.html">S.IM.PL Serialization</a> is a cross-platform framework for multi-format object de/serialization and binding.
+A major research contribution is the <i>translation scope</i>, a platform-independent encapsulation of a set of types (classes and fields), and their bindings to tags during serialization.
+Programmers use an annotation language to make fine-grained declarations, embedded in their own object source code, of which fields are serialized, and how.
+An extensible scalar type system controls de/serialization of scalar fields.
+De/serialization of collections and maps, regular and polymorphic fields, and object graphs are all gracefully supported.
+ provides fine-grained control for annotating object declarations to define the semantics of serialization through meta-language embedded directly in source code.	
+Objects can be de/serialized as XML, JSON, BibTex (limited structure), and binary TLV.
+Hints enable defining the representation of format-specific details, such as whether scalars are serialized as attributes or leaf elements.
+Java and C# are supported as object definition languages, with Objective C supported as a target language.
+Objects annotated in an object definition language can be cross-compiled, with de/serialization capabilities, to any of the other languages.
+Support is planned for C++ and Python. 
+</div>
+
+<div class="intro">
+<a class="destination" href="oodss/index.html">Object-Oriented
+Distributed Semantic Services</a> (OODSS) builds on S.IM.PL
+serialization to develop an object-oriented semantic communications
+framework for message passing and remote method invocation. The goal is
+to simplify practical distributed computing for software developers.
+Again, semantics are represented with metalanguage and translation
+scopes, with Java supported for servers and clients, and Objective-C for
+clients. In comparison with approaches such as SOAP, consistent strong
+typing of data structures and fields reduces the burden on programmers.
+</div>
+
+<div class="intro">
+<a class="destination" href="metaMetadata/index.html">Meta-Metadata</a> is a platform-independent
+language for specifying  strongly typed metadata data structures, extraction and instantiation of metadata types from particular information sources,
+operations on metadata types, and presentation rules.
+Meta-metadata builds on S.IM.PL serialization, using its descriptions of the structures of classes and fields to connect data structures with meta-meta-information, 
+enabling development of reusable code for processing of information from templated web site sources by curators writing scripting language.
+</div>
+
+<h5>publications</h5>
+
+<div class="feature">
+<a href="serialization/shahzadThesisCrossPlatformMultiFormat.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/shahzadThesisIcon.png"/>
+</a>
+Shahzad, N.,
+<a href="serialization/shahzadThesisCrossPlatformMultiFormat.pdf" target="_blank">
+<i>S.IM.PL Serialization: Type System Scopes Encapsulate Cross-Language, Multi-Format Information Binding</i></a>, 
+Texas A&M University Masters Thesis, 2011.
+</div>
+
+<div class="feature">
+<a href="../publications/doceng77-qu.pdf" target="_blank">
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/integratingSearches.png" />
+</a>
+Qu, Y., Kerne, A., Webb, A.M., Herstein, A.
+<a href="../publications/doceng77-qu.pdf" target="_blank">
+	Interoperable Metadata Semantics with Meta-Metadata: A Use Case Integrating Search Engines</a>. <i>Proc ACM DocEng 2011</i>, Mountain View, CA, USA, Sept. 20-22, 2011, 171-174 [<a href="http://doi.acm.org/10.1145/2034691.2034729" target="_blank">DOI=10.1145/2034691.2034729</a>].
+</div>
+
+<div class="feature">
+<a href="../publications/metaMetadataCIKM.pdf" target="_blank"> 
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/metaMetadataCIKM.jpg" />
+</a>
+Kerne, A., Qu, Y., Webb, A.M., Damaraju, S., Lupfer, N., Mathur, A.
+<a href="../publications/metaMetadataCIKM.pdf" target="_blank">
+Meta-Metadata: A Metadata Semantics Language for Collection Representation Applications</a>, 
+<i>Proc ACM Conference on Information and Knowledge Management</i>, 
+Toronto, Ontario, Canada, October 26-30 2010. 
+</div>
+
+
+<a target="_blank" href="../../technicalReports/oodss_TR_10_01.pdf">
+<div class="feature">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/oodssTRIcon.png"/>
+</a>
+Toups, Z.O., Kerne, A., Webb, A.,
+<a target="_blank" href="../../technicalReports/oodss_TR_10_01.pdf">A Lightweight Object-Oriented Distributed Services Framework for Engineering Interactive Applications</a>,
+<i> Interface Ecology Lab Technical Report 10-01</i> </div>
+
+<div class="feature">
+<a href="../publications/sp44245-kerne.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/doceng08Icon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, M.
+<a href="../publications/sp44245-kerne.pdf" target="_blank">
+A Concise XML Binding Framework Facilitates Practical Object-Oriented Document Engineering
+</a>, 
+<i>Proceedings of ACM Symposium on Document Engineering</i>, 
+Sao Paulo, Brazil, 16-19 September 2008.
+</div>
+
+<div class="feature">
+<a href="../publications/metadata_samt08Short2-1.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/metaMetadataSAMT2008.png"/>
+</a>
+Kerne, A., Damaraju, S., Kumar, B., and Webb, A. 
+<a href="../publications/metadata_samt08Short2-1.pdf" target="_blank">
+Meta-Metadata: A Semantic Architecture for Multimedia Metadata Definition, Extraction, and Presentation</a>,  
+<i>Poster and Demo Proceedings of the 3rd International Conference on Semantic and Digital Media Technologies</i>, 
+Koblenz, Germany, 3-5 December 2008.
+</div>
+
+<div class="feature">
+<a target="_blank" href="../../technicalReports/ecolabXML_TR_08_06.pdf">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/xmlTRIcon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, K.,
+<a target="_blank" href="../../technicalReports/ecolabXML_TR_08_06.pdf">Expressive, Efficient, Embedded, and Component-based 
+XML-Java Data Binding Framework</a>,
+<i> Interface Ecology Lab Technical Report 08-06</i> </div>
+
+</div>
+</body>
+</html>

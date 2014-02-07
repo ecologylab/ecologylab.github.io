@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<title>[sii] image rollover example</title>
+
+<script language="JavaScript">
+/**
+ * experiments in structure and scoping
+ */
+
+var a = new Array();
+a[1] = 22;
+a.b = "dd";
+a["c"] = "Ee";
+//alert(a)
+//for (name in a)
+// alert(name + ": " + a[name]);
+//alert(a.length);
+
+// alert(navigator.appVersion);
+
+
+/**
+ * Rollover
+ */
+var button1 = new Array();
+button1.orig = 'http://graphics7.nytimes.com/images/promos/homepage/20030207forumspromo.jpg';
+button1.roll = 'http://graphics7.nytimes.com/images/promos/homepage/20030207hairpromo.jpg';
+ 
+function flip(imageName, button, which)
+{
+  document[imageName].src = button[which];
+}
+</script>
+
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="0025C5" topmargin=0
+      vlink="F70010">
+<a href="#"
+   onmouseover="flip('rollImage', button1, 'roll');"
+   onmouseout="flip('rollImage', button1, 'orig');"><img border="0"
+   name="rollImage" width="100" height="77"
+   src="http://graphics7.nytimes.com/images/promos/homepage/20030207forumspromo.jpg"></a>
+<script language="JavaScript">
+document.write("<br><br>whatever");
+</script>
+
+
+<p align="right">
+<a href="imageAndCaption.html">image and caption</a>
+</p>
+<p align="right">
+<a href="cookies.html">cookies experiment</a>
+</p>
+</body> </html>

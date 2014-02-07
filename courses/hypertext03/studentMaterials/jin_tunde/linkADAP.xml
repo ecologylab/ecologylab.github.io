@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="1.1">
+  <preferences>
+    <screen height="1024.0" width="1280.0" size="1"/>
+  </preferences>
+  <site_set>
+    <site domain="toronto.edu" strokeHue="0.083333336" fontIndex="2"/>
+    <site domain="acm.org" strokeHue="0.8666667" fontIndex="1"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t"/>
+    <traversable urlString="http://www.dgp.toronto.edu/papers"/>
+    <traversable urlString="http://www.dgp.toronto.edu/"/>
+    <traversable urlString="http://portal.acm.org"/>
+    <traversable urlString="http://interconnected.org/notes/2003/08/ht03"/>
+    <traversable urlString="http://www.ht03.org"/>
+    <traversable urlString="http://charybdis.mit.csu.edu.au/~mantolov/CD/ICITA2002/papers"/>
+    <traversable urlString="http://www.comlab.hut.fi/opetus/333/slides2003"/>
+    <traversable urlString="http://systems.stanford.edu/Publications/THolliday"/>
+    <traversable urlString="http://www.ht03.org.uk"/>
+    <traversable urlString="http://www.s3.kth.se/radio/Publication/Pub1999"/>
+    <traversable urlString="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/s"/>
+    <traversable urlString="http://www.dgp.toronto.edu/~mc"/>
+    <traversable urlString="http://shaka.dgp.toronto.edu/mc"/>
+    <traversable urlString="http://www.cs.toronto.edu/~miller/renee.miller.r/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah2003/proceedings/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah2003"/>
+    <traversable urlString="http://www.dgp.toronto.edu/~mc/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah2001/papers"/>
+    <traversable urlString="http://hpsearch.uni-trier.de/hp/a-tree/s"/>
+    <traversable urlString="http://www.dcs.warwick.ac.uk/people/academic/Meurig.Beynon/CS319/slides"/>
+    <traversable urlString="http://www.informatik.uni-trier.de/~ley/db/conf/dexa"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="deliv" intensity="10"/>
+    <term stemmed="push" intensity="2"/>
+    <term stemmed="ieee" intensity="2"/>
+    <term stemmed="control" intensity="3"/>
+    <term stemmed="link" intensity="3"/>
+    <term stemmed="paulo" intensity="2"/>
+    <term stemmed="version" intensity="10"/>
+    <term stemmed="interact" intensity="10"/>
+    <term stemmed="program" intensity="10"/>
+    <term stemmed="languag" intensity="10"/>
+    <term stemmed="space" intensity="2"/>
+    <term stemmed="design" intensity="10"/>
+    <term stemmed="simultan" intensity="2"/>
+    <term stemmed="proceed" intensity="4"/>
+    <term stemmed="phd" intensity="4"/>
+    <term stemmed="inform" intensity="2"/>
+    <term stemmed="user" intensity="10"/>
+    <term stemmed="requir" intensity="2"/>
+    <term stemmed="system" intensity="4"/>
+    <term stemmed="comput" intensity="2"/>
+    <term stemmed="symposium" intensity="2"/>
+    <term stemmed="evalu" intensity="2"/>
+    <term stemmed="hypertext" intensity="10"/>
+    <term stemmed="issu" intensity="2"/>
+    <term stemmed="specif" intensity="2"/>
+    <term stemmed="page" intensity="10"/>
+    <term stemmed="hypermedia" intensity="6"/>
+    <term stemmed="real" intensity="10"/>
+    <term stemmed="adapt" intensity="7"/>
+    <term stemmed="intern" intensity="4"/>
+    <term stemmed="mc" intensity="3"/>
+    <term stemmed="support" intensity="10"/>
+    <term stemmed="ramo" intensity="2"/>
+    <term stemmed="candid" intensity="6"/>
+    <term stemmed="engin" intensity="2"/>
+    <term stemmed="navig" intensity="2"/>
+    <term stemmed="confer" intensity="2"/>
+  </term_set>
+  <container_set>
+    <container url="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:overview&gt;" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:teaching+mr29:on&gt;" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:teaching+mr29:on&gt;" historyNum="5">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Hypermedia"/>
+            <text_token string="also"/>
+            <text_token string="almost"/>
+            <text_token string="always"/>
+            <text_token string="simultaneously"/>
+            <text_token string="pushes"/>
+            <text_token string="on"/>
+            <text_token string="interaction"/>
+            <text_token string="issues,"/>
+            <text_token string="since"/>
+            <text_token string="hypermedia"/>
+            <text_token string="systems"/>
+            <text_token string="are"/>
+            <text_token string="specifically"/>
+            <text_token string="designed"/>
+            <text_token string="to"/>
+            <text_token string="support"/>
+            <text_token string="user-driven"/>
+            <text_token string="navigation"/>
+            <text_token string="of"/>
+            <text_token string="information"/>
+            <text_token string="spaces."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="56" y="67" width="452" height="96"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" historyNum="9">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Bell"/>
+            <text_token string="University"/>
+            <text_token string="Labs"/>
+            <text_token string="Collaborative"/>
+            <text_token string="Effectiveness"/>
+            <text_token string="Lab"/>
+            <text_token string="University"/>
+            <text_token string="of"/>
+            <text_token string="Toronto"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="57" y="410" width="139" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:teaching+mr29:on&gt;" historyNum="7">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="o"/>
+            <text_token string="Winter"/>
+            <text_token string="2002:"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="CS2537"/>
+            <text_token string="[-]"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="219" y="523" width="121" height="61"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="8">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Schraefel,"/>
+            <text_token string="Michalis"/>
+            <text_token string="Vaitis,"/>
+            <text_token string="Dimitris"/>
+            <text_token string="Christodoulakis"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="72" y="500" width="117" height="76"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:overview&gt;" historyNum="6">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="o"/>
+            <text_token string="Interaction"/>
+            <text_token string="Design"/>
+            <text_token string="and"/>
+            <text_token string="Evaluation"/>
+            <text_token string="(Human"/>
+            <text_token string="Computer"/>
+            <text_token string="Interaction)"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="69" y="184" width="266" height="136"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:overview&gt;" historyNum="4">
+      <media_element negativeClicks="5">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Research"/>
+            <text_token string="and"/>
+            <text_token string="Teaching"/>
+            <text_token string="Overview"/>
+            <text_token string="("/>
+            <text_token string="CompSci"/>
+            <text_token string="Version(default)"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="351" y="533" width="214" height="167"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="10">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" commonHref="http://portal.acm.org/citation.cfm?id=746563&amp;coll=guide&amp;dl=GUIDE&amp;CFID=13887300&amp;CFTOKEN=71964603" nonStopIndex="0.0">
+            <text_token string="A"/>
+            <text_token string="Complementary"/>
+            <text_token string="Approach"/>
+            <text_token string="for"/>
+            <text_token string="Adaptive"/>
+            <text_token string="and"/>
+            <text_token string="Adaptable"/>
+            <text_token string="Hypermedia:"/>
+            <text_token string="Intensional"/>
+            <text_token string="Hypertext"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="62" y="325" width="207" height="76"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" historyNum="11">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="The"/>
+            <text_token string="second"/>
+            <text_token string="thing"/>
+            <text_token string="a"/>
+            <text_token string="user"/>
+            <text_token string="can"/>
+            <text_token string="do"/>
+            <text_token string="is"/>
+            <text_token string="set"/>
+            <text_token string="which"/>
+            <text_token string="of"/>
+            <text_token string="these"/>
+            <text_token string="changes"/>
+            <text_token string="they"/>
+            <text_token string="wish"/>
+            <text_token string="to"/>
+            <text_token string="have"/>
+            <text_token string="range"/>
+            <text_token string="over"/>
+            <text_token string="an"/>
+            <text_token string="entire"/>
+            <text_token string="site,"/>
+            <text_token string="and"/>
+            <text_token string="which"/>
+            <text_token string="they"/>
+            <text_token string="wish"/>
+            <text_token string="to"/>
+            <text_token string="maintain"/>
+            <text_token string="over"/>
+            <text_token string="just"/>
+            <text_token string="a"/>
+            <text_token string="page,"/>
+            <text_token string="or"/>
+            <text_token string="just"/>
+            <text_token string="a"/>
+            <text_token string="component"/>
+            <text_token string="in"/>
+            <text_token string="a"/>
+            <text_token string="page."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="253" y="377" width="321" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" historyNum="12">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" commonHref="http://www.kmdi.org" nonStopIndex="0.0">
+            <text_token string="The"/>
+            <text_token string="Knowledge"/>
+            <text_token string="Media"/>
+            <text_token string="Design"/>
+            <text_token string="Institute"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="478" y="736" width="119" height="55"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:teaching+mr29:on&gt;" historyNum="1">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Paulo"/>
+            <text_token string="Pacheco,"/>
+            <text_token string="MSc"/>
+            <text_token string="candidate"/>
+            <text_token string="Gonzalo"/>
+            <text_token string="Ramos"/>
+            <text_token string=","/>
+            <text_token string="PhD"/>
+            <text_token string="candidate"/>
+            <text_token string="Theophanis"/>
+            <text_token string="Tsandilas,"/>
+            <text_token string="PhD"/>
+            <text_token string="Candidate"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="303" y="258" width="272" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="13">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Proceedings"/>
+            <text_token string="of"/>
+            <text_token string="the"/>
+            <text_token string="International"/>
+            <text_token string="Conference"/>
+            <text_token string="on"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="and"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Web-Based"/>
+            <text_token string="Systems"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="326" y="175" width="262" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:teaching+mr29:on&gt;" historyNum="14">
+      <media_element positiveClicks="5" negativeClicks="10">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Yuxiang"/>
+            <text_token string="Zhu,"/>
+            <text_token string="MSc,"/>
+            <text_token string="Collection"/>
+            <text_token string="of"/>
+            <text_token string="Within-Web-Page"/>
+            <text_token string="components"/>
+            <text_token string="with"/>
+            <text_token string="Hunter"/>
+            <text_token string="Gatherer,"/>
+            <text_token string="Dept."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="89" y="578" width="242" height="94"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" historyNum="15">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Some"/>
+            <text_token string="things"/>
+            <text_token string="i've"/>
+            <text_token string="done"/>
+            <text_token string="in"/>
+            <text_token string="the"/>
+            <text_token string="CELab"/>
+            <text_token string="[+]"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="416" y="76" width="110" height="53"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="16">
+      <media_element negativeClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Proceedings"/>
+            <text_token string="of"/>
+            <text_token string="the"/>
+            <text_token string="5th"/>
+            <text_token string="IEEE"/>
+            <text_token string="International"/>
+            <text_token string="Symposium"/>
+            <text_token string="on"/>
+            <text_token string="Requirements"/>
+            <text_token string="Engineering"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="343" y="460" width="205" height="58"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:projects+mr10:on&gt;" historyNum="17">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Some"/>
+            <text_token string="of"/>
+            <text_token string="the"/>
+            <text_token string="versioning"/>
+            <text_token string="effects"/>
+            <text_token string="on"/>
+            <text_token string="this"/>
+            <text_token string="site"/>
+            <text_token string="are"/>
+            <text_token string="described"/>
+            <text_token string="on"/>
+            <text_token string="the"/>
+            <text_token string="About"/>
+            <text_token string="This"/>
+            <text_token string="Site"/>
+            <text_token string="page"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="190" y="451" width="155" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="18">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Search:"/>
+            <text_token string="The"/>
+            <text_token string="ACM"/>
+            <text_token string="Digital"/>
+            <text_token string="Library"/>
+            <text_token string="The"/>
+            <text_token string="Guide"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="156" y="304" width="118" height="78"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://shaka.dgp.toronto.edu/mc/index.ise&lt;link:overview&gt;" historyNum="2">
+      <media_element positiveClicks="24" negativeClicks="4">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="o"/>
+            <text_token string="Intensional"/>
+            <text_token string="Hypertext"/>
+            <text_token string=":"/>
+            <text_token string="programming"/>
+            <text_token string="language"/>
+            <text_token string="support"/>
+            <text_token string="and"/>
+            <text_token string="interaction"/>
+            <text_token string="design"/>
+            <text_token string="to"/>
+            <text_token string="deliver"/>
+            <text_token string="user-driven,"/>
+            <text_token string="real-time"/>
+            <text_token string="versioning"/>
+            <text_token string="for"/>
+            <text_token string="web"/>
+            <text_token string="pages"/>
+            <text_token string="(like"/>
+            <text_token string="this"/>
+            <text_token string="one)"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="49" y="687" width="427" height="116"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://portal.acm.org/results.cfm?coll=guide&amp;dl=GUIDE&amp;query=Monica+M.+C.+Schraefel&amp;short=1" historyNum="3">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://portal.acm.org/graphics/cnt1.gif"/>
+      </media_element>
+      <visual>
+        <extent x="416" y="152" width="20" height="21"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

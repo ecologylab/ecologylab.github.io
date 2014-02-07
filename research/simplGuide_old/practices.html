@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>programming practices [s.im.pl]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../code/styles/ecologylab/guide.css"
+	rel="stylesheet">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+
+<script language="JavaScript"
+	src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/ecologylab/ecologylab.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl guide:<br/></div>
+<div class="title4a">programming practices</div>
+</div>
+
+<div class="nav">
+
+<div class="block">
+  <a class="navselected_bold_red" href="index.html">s.im.pl</a>
+	<a class="subnavlink" href="serialization/index.html">serialization</a>
+	<a class="subnavlink" href="oodss/index.html">oodss</a>
+	<a class="subnavlink" href="metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+  <a class="navlink"  href="repository.html">repository</a>
+  <a class="navlink" href="community.html">community</a>
+  <a class="navselected"  href="practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../research/index.html">research</a>
+</div>
+	
+
+</div>
+	
+<div class="main_content">
+<p> 
+We are working together to develop a large code base.
+We plan that this code base will live for a long time.  
+Software development techniques and group process, including good programming style and other formal communication, are
+all that is between us and complete chaos.
+ 
+<p> 
+The structure of code has an enormous impact on
+readability, maintainability, and efficiency. 
+When you work on the code base, you are not just creating
+functionality. You are contributing to an API. Make your code as
+nicely structured, clear, and well documented as you <i>want</i> to
+see when you deal with code that you didn't write!
+</p>
+<p> 
+People will depend on your code! Even if you move on. Clarity is essential. It's not so hard to write
+code that works initially. Writing maintainable code is a greater challenge.
+</p>
+<p>
+To increase each developer's ability to easily read someone else's
+code -- both as it's being written, and later, when it's being maintained --
+it is valuable for all of us to use a common style, and a coherent process.
+This guide has evolved through years of practice. 
+All involved in the lab and/or in S.IM.PL are expected to either follow these conventions, or work to develop a consensus to amend them.
+</p> 
+
+<ol>
+<li>
+Before you commit code to the repository, <i>find or develop meaningful test cases</i>. Make sure it passes them.
+Ask others for input on this.
+</li>
+<li>
+When you do commit code, <i>talk to those who depend</i> on it to see if it is working for them.
+Generally make yourself available, in case you've broken something that they need.
+</li>
+<li>Use <i>meaningful names</i> for variables, not short unreadable ones. These are a principal form of documentation for your code.
+   Exception: use of i, j, k for index variables.
+</li> 
+ 
+<li> 
+Write clear <i>Doc comments</i> for all packages, classes, methods, and
+ instance variables. For methods, the Doc comment should explain the purpose
+of the method, the arguments, and the return value. 
+</li> 
+ 
+<li>Inject comments into the midst of your code to explain anything tricky or
+    subtle. 
+</li> 
+
+
+<li style="line-height: 170%;">Use <i>temporaries</i>, also known as 
+      <i>local variables</i> whenever a computed or dereferenced value is used
+      more than once. 
+
+      Primary Benefit:
+      The computations of method calls, and pointer dereferencing have
+      an associated computational overhead. Temporary variables
+      usually go into CPU registers, where they can be accessed
+      extremely rapidly.
+
+      Side benefit:
+      You get to author a name for the temporary variable, which can
+      help make the function/meaning of it clear to the next programmer.
+</li>
+<li>Class names in Java, C#, and similar languages.
+					<ul>
+						<li>Capitalized. First letter in upper case, then lower case,
+							until
+						<li>word breaks, which are delimited by upper case.
+					</ul> Examples: <code>MetaMetadata, HttpServlet</code>
+</li> 
+<li>Variables in Java, C#, Objective C, and JavaScript.  
+	<ul> 
+      <li>All letters are in lower case, except for 
+      <li>word breaks which are delimited by upper case.
+	</ul> 
+   Example:   <code>geoCoordinate, semanticsSessionScope</code> 
+</li> 
+ 
+<li>Package names in Java, C#, and similar languages.
+   <ul> 
+	<li> lower case. No word breaks.
+   </ul> 
+   Example: <code>ecologylab.serialization</code> 
+</li> 
+<li>Constants in Java, C#, Objective C, and JavaScript.   (static final variables).
+   <ul> 
+	<li> All letters are UPPER CASE.
+   <li> Word breaks are separated by underscore.
+   </ul> 
+   Example: <code>COLLECTION_SCALAR, REPOSITORY_METADATA_TRANSLATIONS</code>
+</li> 
+ 
+  <li>Method names in Java and function names in JavaScript.
+   <ul> 
+	<li> All letters are in lower case, except for 
+   <li> word breaks which are delimited by upper case.
+   </ul> 
+   Example:  <code>performAction(), handleIoError(...)</code> 
+</li> 
+ 
+ <li>Variables in SQL and HTML forms. 
+	<ul> 
+		<li>All letters are lower case.
+   		<li>Word breaks are delmited by underscore.
+    </ul> 
+   Example:  <code>last_name, name_id.</code> 
+</li> 
+ 
+<li> 
+Variables and subvariables in Cookies.
+   <ul> 
+      <li>All letters are UPPER CASE.
+   (This is an exception, because Microsoft IIS forces them to be named
+   this way, in most cases.)
+      <li>Word breaks are separated by underscore.
+   </ul> 
+   Example:  <code>USER, FIRST_NAME</code> 
+</li> 
+ 
+<li>HTML.
+   <ul> 
+	<li> Tags and attributes: All letters are lower case.</li> 
+ 
+    <li>URL String arguments:
+<br/>
+	All letters are in lower case, except for word breaks which are delimited by upper case.
+   
+   </ul>
+  Example:  <code>relId, relType</code></li>
+</li> 
+<li>Judiciously use   <i>whitespace</i> to enhance the readability of code.
+This includes horizontal whitespace, such as (tabs to line up columns), 
+and vertical whitespace (such as a blank line between important
+    functional sections). Some specifics:
+    <ul> 
+      <li>Open and close brace on a line by themselves.
+      <li>Spaces after all reserved words.
+      <li>1 space after the equals sign; at least 1 before it (lining
+	  up the = in assigments is nice), except on rare occassions
+	  to get vertical matching with a bunch of other declarations.
+      <li>1 space before and after arithmetic and logical operators.
+      <li>Space before open paren in expressions (but not in method
+	  declarations), and after close paren.
+	  But NO SPACE after open paren or before close paren.
+ 
+      <li>Line up declarations and assignements with horizontal tab.
+ 
+    </ul> 
+   Dont be excessive: having lots of extra, meaningless blank vertical
+    lines just makes it harder to see a block on the display while
+    programming. Likewise, too much horizontal space causes wraps in
+    smaller windows and with maller monitors. Please strive to make it
+    readable by all developers.
+   Example:
+    <blockquote> 
+<code> 
+<pre> 
+public class Foo
+extends Debug
+{
+   int			sumOfAngles;
+   public static final	RIGHT_ANGLE	= 90;
+   public static final	BAD_FILE	= -37;
+   public static final	GOOD_FILE	= 0;
+   
+   public int contributeAngle(int newAngle)
+   {
+      if (a == b)
+      {
+	 int x		= 33;
+	 sumOfAngles   += x + newAngle;
+      }
+      try
+      {
+	 InputStream inStream	= new FileInputStream(inFile);
+	 inStream.open();
+      } catch (Exception e)
+      {
+	 println("Couldnt open file " + inFile);
+	 return BAD_FILE;
+      }
+      return GOOD_FILE;
+   }
+}
+</pre></code></blockquote> 
+ 
+Note, for example:
+     <code> if(a==b) </code> 
+is just plain anti-social.
+</li>
+
+</ol>
+
+</div>
+
+	
+</div>
+</body>
+</html>

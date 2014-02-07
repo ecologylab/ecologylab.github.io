@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title>dynamic text from xml</title>
+<link href="dynamicText.css" rel="stylesheet">
+
+<script language="JavaScript" src="xml.js">
+</script>
+
+<script language="JavaScript" src="zoomableXML.js">
+</script>
+
+<script language="JavaScript">
+var attributeNames = ["title", "author"];
+
+function buildNav()
+{
+   var xml = loadXML("nav.xml");
+//   alert(xml);
+   
+   var nodes = xml.getElementsByTagName("node");
+//   alert("nodes.length = " + nodes.length);
+   
+   var body = document.body;
+
+   for (var i=0; i<nodes.length; i++)
+   {
+      var thatSpan	= document.createElement("span");
+
+      thatSpan.className = "entry";
+      thatSpan.origColor = thatSpan.style.color;
+      thatSpan.onmouseover = function() {animate(this, emphasize, true, displayMetadata, attributeNames);};
+      thatSpan.onmouseout = function() {animate(this, deemphasize, false);};
+
+      var thatNode	= nodes[i];
+//      alert(thatNode + " " + thatNode.getAttribute("name"));
+      thatSpan.node	 = thatNode; // create referentiality!!!
+      thatSpan.innerHTML = thatNode.getAttribute("name");
+//      thatSpan.innerHTML = thatNode;
+
+      body.appendChild(thatSpan);
+   }
+}
+
+</script>
+</head>
+
+<body  bgcolor="#000000" text="#ffffff" 
+ topmargin="50px" leftmargin="50px" onload="buildNav();">
+
+</body> </html>

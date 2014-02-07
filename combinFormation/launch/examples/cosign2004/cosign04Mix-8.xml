@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen width="640" height="974" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="jahsonic.com" strokeHue="0.33333334" fontIndex="4"/>
+    <site domain="washington.edu" strokeHue="0.16666667" fontIndex="5"/>
+    <site domain="sleepbot.com" strokeHue="0.41666666" fontIndex="4"/>
+    <site domain="fusionanomaly.net" strokeHue="0.25"/>
+    <site domain="diacenter.org" strokeHue="0.0" fontIndex="4"/>
+    <site domain="egs.edu" strokeHue="0.6888889" fontIndex="5"/>
+    <site domain="djspooky.com" strokeHue="0.75" fontIndex="2"/>
+    <site domain="filesystem.local" strokeHue="0.125" fontIndex="1"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.ebay.com"/>
+    <traversable urlString="http://www.drizzle.com/~tmercer/consumption/"/>
+    <traversable urlString="http://www.djspooky.com/"/>
+    <traversable urlString="http://www.diacenter.org/exhibs/darboven/project/"/>
+    <traversable urlString="http://www.djspooky.com"/>
+    <traversable urlString="http://www.diacenter.org/exhibs_b/darboven/"/>
+    <traversable urlString="http://www.egs.edu/faculty"/>
+    <traversable urlString="http://www.the-artists.org"/>
+    <traversable urlString="http://www.bostonphoenix.com/alt1/archive/music/reviews/11-28-96"/>
+    <traversable urlString="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/"/>
+    <traversable urlString="http://www.sleepbot.com/ambience/page"/>
+    <traversable urlString="http://www.ifa.de/kunst/darboven"/>
+    <traversable urlString="http://fusionanomaly.net"/>
+    <traversable urlString="http://saulwilliams.com/"/>
+    <traversable urlString="http://www.ubu.com/sound"/>
+    <traversable urlString="http://www.caipirinha.com/Music"/>
+    <traversable urlString="http://www.goethe.de/in/d/frames/pub/kc/e"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/B00008BL8Y"/>
+    <traversable urlString="http://www.artincontext.org/artist/d/hanne_darboven/"/>
+    <traversable urlString="http://www.asphodel.com/bio"/>
+    <traversable urlString="http://www.speronewestwater.com/cgi-bin/iowa/artists"/>
+    <traversable urlString="http://www.bbc.co.uk/music/experimental/reviews"/>
+    <traversable urlString="http://www.3sat.de/ard/31887/"/>
+    <traversable urlString="http://www.mp3lit.com/nonfiction"/>
+    <traversable urlString="http://www.absolutearts.com/artsnews/1999/09/13"/>
+    <traversable urlString="http://imusic.artistdirect.com/showcase/club"/>
+    <traversable urlString="http://www.artnet.com/artist/4796"/>
+    <traversable urlString="http://www.heise.de/tp/english/inhalt/musik/3244"/>
+    <traversable urlString="http://www.thegalleriesatmoore.org/publications"/>
+    <traversable urlString="http://www.africana.com/articles/qa"/>
+    <traversable urlString="http://www.artfacts.net/index.php/pageType/exhibitionInfo/exhibition/13415"/>
+    <traversable urlString="http://courses.washington.edu/englhtml/engl569/berger"/>
+    <traversable urlString="http://www.arthist.lu.se/kultsem/encyclo"/>
+    <traversable urlString="http://www.aber.ac.uk/media/Documents/gaze"/>
+    <traversable urlString="http://www.academic.marist.edu/pennings"/>
+    <traversable urlString="http://jan.ucc.nau.edu/~jsa3/hum355/readings"/>
+    <traversable urlString="http://www.cudenver.edu/~mryder/itc_data"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0140135154"/>
+    <traversable urlString="http://www.newcastle.edu.au/discipline/fine-art/theory/analysis"/>
+    <traversable urlString="http://writingprogram.hfa.umass.edu/otwb/readings"/>
+    <traversable urlString="http://www.erraticimpact.com/~20thcentury/html"/>
+    <traversable urlString="http://www.jahsonic.com"/>
+    <traversable urlString="http://www.sla.purdue.edu/people/engl/dblakesley/visual/"/>
+    <traversable urlString="http://www.uidaho.edu/visualculture/courses"/>
+    <traversable urlString="http://www.tasc.ac.uk/depart/media/staff/ls/WSeeing"/>
+    <traversable urlString="http://www.folger.edu/institute/visual"/>
+    <traversable urlString="http://www.upenn.edu/pennpress/book"/>
+    <traversable urlString="http://alan_sundberg.tripod.com"/>
+    <traversable urlString="http://www.designobserver.com/archives"/>
+    <traversable urlString="http://search.looksmart.com/p/browse/us1/us317836/us317911/us53829/us10085557/us546893/"/>
+    <traversable urlString="http://www.aber.ac.uk/media/Modules/MC10220"/>
+    <traversable urlString="http://www.123pricecheck.com/cgi-bin/aws"/>
+    <traversable urlString="http://www.arts.ucsb.edu/faculty/gardner/classes/artst1a"/>
+    <traversable urlString="http://mh.cla.umn.edu"/>
+    <traversable urlString="http://www.powells.com/cgi-bin/biblio"/>
+    <traversable urlString="http://www.stefan-szczelkun.org.uk"/>
+    <traversable urlString="http://www.curtin.edu.au/curtin/music"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/B00008BL8Y/102-5824346-3788947"/>
+    <traversable urlString="http://www.artincontext.org/artist/d/hanne_darboven"/>
+    <traversable urlString="http://landing.domainsponsor.com/ds/skins"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0140135154/103-7460903-1738211"/>
+    <traversable urlString="http://carbon.cudenver.edu/~mryder/itc_data"/>
+    <traversable urlString="http://www.diacenter.org/exhibs/darboven/project"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="djspooki" intensity="2"/>
+    <term stemmed="franci" intensity="4"/>
+    <term stemmed="giotto" intensity="4"/>
+    <term stemmed="hann" intensity="1"/>
+    <term stemmed="elder" intensity="4"/>
+    <term stemmed="hypertext" intensity="2"/>
+    <term stemmed="link" intensity="2"/>
+    <term stemmed="flemish" intensity="2"/>
+    <term stemmed="cdfinalcov" intensity="2"/>
+    <term stemmed="tmercer" intensity="2"/>
+    <term stemmed="galleri" intensity="2"/>
+    <term stemmed="susannah" intensity="4"/>
+    <term stemmed="review" intensity="4"/>
+    <term stemmed="see" intensity="2"/>
+    <term stemmed="miller" intensity="2"/>
+    <term stemmed="school" intensity="2"/>
+    <term stemmed="tintoretto" intensity="4"/>
+    <term stemmed="music" intensity="4"/>
+    <term stemmed="barth" intensity="3"/>
+    <term stemmed="mercer" intensity="2"/>
+    <term stemmed="engl" intensity="8"/>
+    <term stemmed="kid" intensity="4"/>
+    <term stemmed="archiv" intensity="4"/>
+    <term stemmed="anomali" intensity="2"/>
+    <term stemmed="exhib" intensity="6"/>
+    <term stemmed="spookyf" intensity="2"/>
+    <term stemmed="spooki" intensity="2"/>
+    <term stemmed="fusion" intensity="2"/>
+    <term stemmed="art" intensity="2"/>
+    <term stemmed="interior" intensity="2"/>
+    <term stemmed="alt" intensity="4"/>
+    <term stemmed="aka" intensity="4"/>
+    <term stemmed="assumpt" intensity="4"/>
+    <term stemmed="trudi" intensity="2"/>
+    <term stemmed="sublimin" intensity="4"/>
+    <term stemmed="bergersup" intensity="8"/>
+    <term stemmed="berger" intensity="2"/>
+    <term stemmed="consumpt" intensity="2"/>
+    <term stemmed="englhtml" intensity="8"/>
+    <term stemmed="death" intensity="4"/>
+    <term stemmed="visual" intensity="3"/>
+    <term stemmed="darboven" intensity="1"/>
+    <term stemmed="illustr" intensity="8"/>
+    <term stemmed="usion" intensity="2"/>
+    <term stemmed="st" intensity="4"/>
+    <term stemmed="dj" intensity="2"/>
+    <term stemmed="john" intensity="2"/>
+  </term_set>
+  <container_set>
+    <container purl="http://www.ebay.com/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.sleepbot.com/ambience/page/djspooky.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://courses.washington.edu/englhtml/engl569/berger/bergersup2.html" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://www.diacenter.org/exhibs_b/darboven/" generation="1">
+      <participant intensity="3"/>
+    </container>
+    <container purl="file:///C:/Program Files/Common Files/mozilla.org/GRE/1.6_2004011308/createdElements.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://courses.washington.edu/englhtml/engl569/berger/bergersup.html" generation="1">
+      <participant intensity="2"/>
+    </container>
+    <container purl="http://www.jahsonic.com/JohnBerger.html" generation="1">
+      <participant intensity="-10"/>
+    </container>
+    <container purl="http://courses.washington.edu/englhtml/engl569/berger/bergersup3.html" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.google.com/options/index.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://courses.washington.edu/englhtml/engl569/berger/romneybeau.jpg" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.egs.edu/faculty/spooky-lectures.html" generation="1">
+      <participant intensity="-4"/>
+    </container>
+    <container purl="http://courses.washington.edu/englhtml/engl569/berger/p-goya48.htm" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://fusionanomaly.net/djspooky.html" generation="1">
+      <participant intensity="1"/>
+    </container>
+    <container purl="http://www.nytimes.com/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.djspooky.com/index2.html" generation="1">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://www.egs.edu/faculty/spooky-lectures.html" historyNum="15">
+      <text_element alpha="202" r="178" g="178" b="112">
+        <text_chunk sameHref="true">
+          <text_token string="Miller"/>
+          <text_token string="aka"/>
+          <text_token string="DJ"/>
+          <text_token string="Spooky"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="426" y="544" width="188" height="20"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup.html" historyNum="9">
+      <image_element hasTransparency="true" minAlpha="3145728" alphaRadius="46" purl="http://courses.washington.edu/englhtml/engl569/berger/femaletrust_100.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="105" y="204" width="144" height="97"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup3.html" historyNum="14">
+      <image_element purl="http://courses.washington.edu/englhtml/engl569/berger/viewestree.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="179" y="564" width="315" height="210"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup2.html" historyNum="11">
+      <image_element hasTransparency="true" minAlpha="4849664" alphaRadius="32" purl="http://courses.washington.edu/englhtml/engl569/berger/chardin_100.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="546" y="292" width="76" height="99"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup.html" historyNum="8">
+      <image_element hasTransparency="true" minAlpha="6029312" alphaRadius="65" purl="http://courses.washington.edu/englhtml/engl569/berger/trutat_100.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="237" y="140" width="245" height="154"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup.html" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="4587520" alphaRadius="32" purl="http://courses.washington.edu/englhtml/engl569/berger/suz_100.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="646" width="134" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup2.html" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="5898240" alphaRadius="36" purl="http://courses.washington.edu/englhtml/engl569/berger/wallace/wallace_fyt_p101_100.jpg" href="http://www.the-wallace-collection.org.uk//c/w_a/p_w_d/d_f/p/p101.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="71" y="727" width="174" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diacenter.org/exhibs_b/darboven/" historyNum="1">
+      <image_element minAlpha="4718592" alphaRadius="68" purl="http://www.diacenter.org/exhibs_b/darboven/darboven-exhibs_b-top.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="143" y="353" width="479" height="223"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/p-goya48.htm" historyNum="20">
+      <image_element minAlpha="1245184" alphaRadius="138" purl="http://courses.washington.edu/englhtml/engl569/berger/goya48.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="222" y="56" width="400" height="273"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.nytimes.com/" historyNum="21">
+      <image_element hasTransparency="true" minAlpha="5636096" alphaRadius="70" purl="http://graphics7.nytimes.com/images/2004/08/19/business/google.184.2.jpg" href="http://www.nytimes.com/2004/08/19/technology/19google.html?hp" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="573" width="184" height="233"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.djspooky.com/index2.html" historyNum="12">
+      <image_element hasTransparency="true" minAlpha="1245184" alphaRadius="61" purl="http://www.djspooky.com/img/rscover.gif" href="http://www.rhythmscience.com">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="422" y="507" width="200" height="271"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="25">
+      <image_element purl="http://www.diachelsea.org/images/spacer.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="194" y="325" width="1" height="1"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="26">
+      <image_element purl="http://www.diachelsea.org/images/arrowr.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/essay.html" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="194" y="325" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="27">
+      <image_element purl="http://www.diachelsea.org/images/arrowr.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/essay.html" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="194" y="325" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="28">
+      <image_element purl="http://www.diachelsea.org/images/spacer.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="229" width="1" height="1"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="29">
+      <image_element purl="http://www.diachelsea.org/images/arrowr.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/essay.html" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="229" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="30">
+      <image_element purl="http://www.diachelsea.org/images/arrowr.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/essay.html" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="229" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="31">
+      <image_element purl="http://www.diachelsea.org/images/arrowr.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/essay.html" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="229" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="32">
+      <image_element purl="http://www.diachelsea.org/images/spacer.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="229" width="1" height="1"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="34">
+      <image_element purl="http://www.diachelsea.org/images/arrowd.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/#checklist" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="421" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="35">
+      <image_element purl="http://www.diachelsea.org/images/arrowd.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/#checklist" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="421" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="36">
+      <image_element purl="http://www.diachelsea.org/images/arrowd.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/#checklist" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="421" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="37">
+      <image_element purl="http://www.diachelsea.org/images/arrowd.gif" href="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/#checklist" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="164" y="421" width="9" height="9"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="23">
+      <image_element hasTransparency="true" minAlpha="3080192" alphaRadius="25" purl="http://www.diachelsea.org/images/darboven-kultur-titleA.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="733" width="210" height="74"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diacenter.org/exhibs_b/darboven/" historyNum="1">
+      <image_element minAlpha="4718592" alphaRadius="68" purl="http://www.diacenter.org/exhibs_b/darboven/darboven-exhibs_b-top.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="427" width="315" height="147"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.djspooky.com/index2.html" historyNum="1">
+      <image_element hasTransparency="true" minAlpha="262144" alphaRadius="114" purl="http://www.djspooky.com/img/frontpageimage.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="371" y="659" width="251" height="251"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.6_2004011308/createdElements.html" historyNum="22">
+      <text_element faceIndex="4" alpha="253" HTMLFragmentCreated="true" r="151" g="204" b="99">
+        <text_chunk sameHref="true" nonStopIndex="0.52">
+          <text_token string="This"/>
+          <text_token string="essay"/>
+          <text_token string="will"/>
+          <text_token string="celebrate"/>
+          <text_token string="hybridity."/>
+          <text_token string="This"/>
+          <text_token string="essay"/>
+          <text_token string="will"/>
+          <text_token string="engage"/>
+          <text_token string="radically"/>
+          <text_token string="different"/>
+          <text_token string="perspectives"/>
+          <text_token string="on"/>
+          <text_token string="the"/>
+          <text_token string="reality"/>
+          <text_token string="we"/>
+          <text_token string="all"/>
+          <text_token string="live"/>
+          <text_token string="in."/>
+          <text_token string="Art"/>
+          <text_token string="and"/>
+          <text_token string="environment?"/>
+          <text_token string="Self"/>
+          <text_token string="as"/>
+          <text_token string="suture?"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="204" y="818" width="418" height="92"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sleepbot.com/ambience/page/djspooky.html" historyNum="16">
+      <text_element alpha="255" r="255" g="102" b="102">
+        <text_chunk sameHref="true" nonStopIndex="0.8181818">
+          <text_token string="DJ"/>
+          <text_token string="Spooky"/>
+          <text_token string="(That"/>
+          <text_token string="Subliminal"/>
+          <text_token string="Kid)"/>
+          <text_token string=":"/>
+          <text_token string="Songs" italic="true"/>
+          <text_token string="of" italic="true"/>
+          <text_token string="a" italic="true"/>
+          <text_token string="Dead" italic="true"/>
+          <text_token string="Dreamer" italic="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="820" width="247" height="72"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://fusionanomaly.net/djspooky.html" historyNum="17">
+      <text_element alpha="221" r="140" g="165" b="116">
+        <text_chunk sameHref="true">
+          <text_token string="insubstantial:"/>
+          <text_token string="ghostly,"/>
+          <text_token string="spectral,"/>
+          <text_token string="spooky"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="300" y="758" width="234" height="12"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="33">
+      <text_element faceIndex="4" alpha="245" HTMLFragmentCreated="true" r="178" g="145" b="112">
+        <text_chunk sameHref="true">
+          <text_token string="Hanne"/>
+          <text_token string="Darboven"/>
+          <text_token string="Kultureshicte"/>
+          <text_token string="1880-1983"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="51" y="535" width="309" height="60"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="1">
+      <image_element purl="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/darboven-kultur-top.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="123" width="280" height="186"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/bergersup2.html" historyNum="13">
+      <image_element hasTransparency="true" minAlpha="5767168" alphaRadius="56" purl="http://courses.washington.edu/englhtml/engl569/berger/intartsm.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="297" width="210" height="159"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.google.com/options/index.html" historyNum="18">
+      <image_element hasTransparency="true" minAlpha="5111808" alphaRadius="56" purl="http://www.google.com/images/logo_sm.gif" href="http://www.google.com/" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="143" y="369" width="373" height="139"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://courses.washington.edu/englhtml/engl569/berger/romneybeau.jpg" historyNum="19">
+      <image_element hasTransparency="true" minAlpha="4521984" alphaRadius="77" purl="http://courses.washington.edu/englhtml/engl569/berger/romneybeau.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="381" y="222" width="241" height="175"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diachelsea.org/exhibs/darboven/kulturgeschichte/" historyNum="24">
+      <image_element purl="http://www.diachelsea.org/images/darboven-kultur-titleB.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="194" y="325" width="216" height="36"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.ebay.com/" historyNum="38">
+      <image_element hasTransparency="true" minAlpha="3866624" alphaRadius="31" purl="http://pics.ebaystatic.com/aw/pics/navbar/redesign_p1/ebayLogo.gif" href="http://pages.ebay.com/" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="258" y="211" width="150" height="70"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jahsonic.com/JohnBerger.html" historyNum="5">
+      <text_element faceIndex="1" alpha="158" r="178" g="161" b="112">
+        <text_chunk sameHref="true" nonStopIndex="0.33333334">
+          <text_token string="The"/>
+          <text_token string="relation"/>
+          <text_token string="between"/>
+          <text_token string="what"/>
+          <text_token string="we"/>
+          <text_token string="see"/>
+          <text_token string="and"/>
+          <text_token string="what"/>
+          <text_token string="we"/>
+          <text_token string="know"/>
+          <text_token string="is"/>
+          <text_token string="never"/>
+          <text_token string="settled.&quot;"/>
+          <text_token string="[John"/>
+          <text_token string="Berger,"/>
+          <text_token string="Ways"/>
+          <text_token string="of"/>
+          <text_token string="Seeing."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="196" y="287" width="385" height="81"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jahsonic.com/JohnBerger.html" historyNum="7">
+      <text_element faceIndex="1" alpha="138" r="191" g="170" b="107">
+        <text_chunk sameHref="true" nonStopIndex="0.41666666">
+          <text_token string="But"/>
+          <text_token string="there"/>
+          <text_token string="is"/>
+          <text_token string="also"/>
+          <text_token string="another"/>
+          <text_token string="sense"/>
+          <text_token string="in"/>
+          <text_token string="which"/>
+          <text_token string="seeing"/>
+          <text_token string="comes"/>
+          <text_token string="before"/>
+          <text_token string="words."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="10" width="578" height="166"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

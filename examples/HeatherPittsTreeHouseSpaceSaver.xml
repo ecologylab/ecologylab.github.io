@@ -1,0 +1,3028 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composition version="3.0">
+  <preferences>
+    <screen height="969" size="4" width="1274"/>
+  </preferences>
+  <seed_set>
+    <search engine="google" query="interior"/>
+  </seed_set>
+  <site_set>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="treehouses.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="latimes.com" stroke_hue="0.25"/>
+    <site domain="latimes.com" stroke_hue="0.25"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="cbsnews.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="yahoo.com" stroke_hue="0.25"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="reference.com" font_index="4"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="chicagotribune.com" font_index="4"/>
+    <site domain="nydailynews.com" stroke_hue="0.25"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="hauntedhouse.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="digg.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="latimes.com" stroke_hue="0.25"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="enchantedlearning.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="tumbleweedhouses.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="adobe.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="nydailynews.com" stroke_hue="0.25"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="hauntedhouse.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="nydailynews.com" stroke_hue="0.25"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="treehouses.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="state.oh.us" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="americasbestonline.net" font_index="4"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="boston.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="digg.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="lib.oh.us" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="stltoday.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="reference.com" font_index="4"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yahoo.com" stroke_hue="0.25"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="nytimes.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="enchantedlearning.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="tumbleweedhouses.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="lib.oh.us" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="chicagotribune.com" font_index="4"/>
+    <site domain="enchantedlearning.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="digg.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="reference.com" font_index="4"/>
+    <site domain="lib.oh.us" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="latimes.com" stroke_hue="0.25"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="chicagotribune.com" font_index="4"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="latimes.com" stroke_hue="0.25"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="hauntedhouse.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="lib.oh.us" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="corbinstreehouse.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="nydailynews.com" stroke_hue="0.25"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="hauntedhouse.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="state.sc.us" stroke_hue="0.16666667"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="oplin.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="artcenter.edu" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="cedarcreektreehouse.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="arborday.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="flickr.com" font_index="4"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="gannettonline.com" stroke_hue="0.16666667"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yankodesign.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="usatoday.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="wolfram.com" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="fast-growing-trees.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="yahoo.com" stroke_hue="0.25"/>
+    <site domain="nydailynews.com" stroke_hue="0.25"/>
+  </site_set>
+  <traversable_set>
+    <traversable url_string="http://www.youtube.com/results"/>
+    <traversable url_string="http://www.doi.gov/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Interior"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/United_States_Secretary_of_the_Interior"/>
+    <traversable url_string="http://www.interiordezine.com/"/>
+    <traversable url_string="http://www.dreamhomedesignusa.com"/>
+    <traversable url_string="http://myinteriordecorator.com/"/>
+    <traversable url_string="http://www.theinterior.tv/"/>
+    <traversable url_string="http://photo.net/learn/architectural/interior"/>
+    <traversable url_string="http://www.interiordesign.net/"/>
+    <traversable url_string="http://www.doityourself.com/scat/interiorimprovement"/>
+    <traversable url_string="http://www.lovelaceinteriors.com/"/>
+    <traversable url_string="http://www.essortment.com/in/Home.Decorating.Interior"/>
+    <traversable url_string="http://www.asdinteriors.com/"/>
+    <traversable url_string="http://www.interiordesignschoolreview.com/"/>
+    <traversable url_string="http://www.pellinteriors.com/"/>
+    <traversable url_string="http://www.fabjob.com"/>
+    <traversable url_string="http://www.m-w.com/dictionary/interior"/>
+    <traversable url_string="http://solarscience.msfc.nasa.gov"/>
+    <traversable url_string="http://www.aaas.org/spp/rd"/>
+    <traversable url_string="http://www.bls.gov/oco"/>
+    <traversable url_string="http://www.nytimes.com/"/>
+    <traversable url_string="http://www.realtor.com/"/>
+    <traversable url_string="http://www.youtube.com/watch"/>
+    <traversable url_string="http://www.dmoz.org/Home/"/>
+    <traversable url_string="http://home.live.com/"/>
+    <traversable url_string="http://www.latimes.com/"/>
+    <traversable url_string="http://www.latimes.com/features/home/"/>
+    <traversable url_string="http://boston.com/"/>
+    <traversable url_string="http://www.usatoday.com/"/>
+    <traversable url_string="http://news.yahoo.com/"/>
+    <traversable url_string="http://www.nasa.gov/home/"/>
+    <traversable url_string="http://folding.stanford.edu/"/>
+    <traversable url_string="http://seattlepi.nwsource.com/"/>
+    <traversable url_string="http://www.altavista.com/"/>
+    <traversable url_string="http://www.cbsnews.com/"/>
+    <traversable url_string="http://www.stltoday.com/"/>
+    <traversable url_string="http://finance.yahoo.com/"/>
+    <traversable url_string="http://www.nydailynews.com/"/>
+    <traversable url_string="http://home.wickedlocal.com/"/>
+    <traversable url_string="http://www.realestate.com/"/>
+    <traversable url_string="http://stilesdesigns.com"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Design"/>
+    <traversable url_string="http://www.rentspeed.com/"/>
+    <traversable url_string="http://www.howdesign.com/"/>
+    <traversable url_string="http://www.treehouses.com/"/>
+    <traversable url_string="http://www.adobe.com/products/indesign/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/House"/>
+    <traversable url_string="http://www.studio7designs.com/"/>
+    <traversable url_string="http://www.treehouseworkshop.com/"/>
+    <traversable url_string="http://www.digg.com/design"/>
+    <traversable url_string="http://www.realhaunts.com/"/>
+    <traversable url_string="http://designpublic.com/"/>
+    <traversable url_string="http://www.bydesignfurniture.com/"/>
+    <traversable url_string="http://www.units.muohio.edu/dragonfly/houses/"/>
+    <traversable url_string="http://www.treehouseforkids.org/"/>
+    <traversable url_string="http://www.tumbleweedhouses.com/"/>
+    <traversable url_string="http://www.tumbleweedhouses.com"/>
+    <traversable url_string="http://www.yankodesign.com/"/>
+    <traversable url_string="http://www.openhouses.com/"/>
+    <traversable url_string="http://www.fisherhouse.org/"/>
+    <traversable url_string="http://treehousemagazine.com/"/>
+    <traversable url_string="http://www.missionhouses.org/"/>
+    <traversable url_string="http://www.opendesigns.org/"/>
+    <traversable url_string="http://www.houses.com/"/>
+    <traversable url_string="http://treehousemagazine.com/catalog/treehouse-mar-2006/"/>
+    <traversable url_string="http://www.metacafe.com/watch/944959/amazing_houses/"/>
+    <traversable url_string="http://www.rmhc.org/"/>
+    <traversable url_string="http://www.download.com"/>
+    <traversable url_string="http://www.hauntedhouses.com/"/>
+    <traversable url_string="http://web-japan.org/kidsweb/virtual/house"/>
+    <traversable url_string="http://www.cedarcreektreehouse.com/"/>
+    <traversable url_string="http://www.flickr.com/photos/tags/design/"/>
+    <traversable url_string="http://realestate.nytimes.com/sales"/>
+    <traversable url_string="http://www.designcommunity.com/"/>
+    <traversable url_string="http://www.cedarcreektreehouse.com"/>
+    <traversable url_string="http://www.treehouses.org/"/>
+    <traversable url_string="http://inhabitat.com/blog/category/treehouses/"/>
+    <traversable url_string="http://www.we-make-money-not-art.com/archives/design/"/>
+    <traversable url_string="http://www.philly.com/philly/classifieds/real_estate/open_houses/"/>
+    <traversable url_string="http://www.designsbydarren.com/"/>
+    <traversable url_string="http://www.thetreehouseguide.com"/>
+    <traversable url_string="http://www.thetreehouseguide.com/"/>
+    <traversable url_string="http://www.openwebdesign.org/"/>
+    <traversable url_string="http://inphotos.org/tag/houses/"/>
+    <traversable url_string="http://domineydesign.com/"/>
+    <traversable url_string="http://americasbestonline.net"/>
+    <traversable url_string="http://www.tolweb.org/tree/home.pages"/>
+    <traversable url_string="http://www.webreference.com/authoring/design/"/>
+    <traversable url_string="http://www.hauntedhouse.com/"/>
+    <traversable url_string="http://www.stopdesign.com/log/2006/09/26"/>
+    <traversable url_string="http://www.treehousebrooklyn.com/"/>
+    <traversable url_string="http://www.dmoz.org/Home/Homeowners/Treehouses/"/>
+    <traversable url_string="http://www.artcenter.edu/"/>
+    <traversable url_string="http://www.wdvl.com/Authoring/Design/"/>
+    <traversable url_string="http://www.corbinstreehouse.com"/>
+    <traversable url_string="http://www.boardgamegeek.com/game/21955"/>
+    <traversable url_string="http://www.tourindiakerala.com"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Tree"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Tree_(data_structure)"/>
+    <traversable url_string="http://www.matadorcoupe.com/seebee65"/>
+    <traversable url_string="http://www.arborday.org/"/>
+    <traversable url_string="http://www.flickr.com/photos/tags/tree/"/>
+    <traversable url_string="http://www.treesaregood.com/treecare"/>
+    <traversable url_string="http://mathworld.wolfram.com"/>
+    <traversable url_string="http://www.urbanext.uiuc.edu/trees"/>
+    <traversable url_string="http://developer.yahoo.com/flash/astra-flash/tree/"/>
+    <traversable url_string="http://www.fast-growing-trees.com/"/>
+    <traversable url_string="http://www.usna.usda.gov/Gardens/collections"/>
+    <traversable url_string="http://www.nist.gov/dads/HTML"/>
+    <traversable url_string="http://www.enchantedlearning.com/graphicorganizers/tree/"/>
+    <traversable url_string="http://java.sun.com/docs/books/tutorial/uiswing/components"/>
+    <traversable url_string="http://www.oplin.org/tree/"/>
+    <traversable url_string="http://www.treesftf.org"/>
+    <traversable url_string="http://www.christmas-tree.com"/>
+    <traversable url_string="http://www.amazon.com/Giving-Tree-Shel-Silverstein/dp/0060256656"/>
+    <traversable url_string="http://www.nrcs.usda.gov/feature/backyard"/>
+    <traversable url_string="http://www.coloradotrees.org"/>
+    <traversable url_string="http://www.howdesign.com/GeneralMenu/"/>
+    <traversable url_string="http://www.homes.com/"/>
+    <traversable url_string="http://www.latimes.com/classified/realestate/"/>
+    <traversable url_string="http://www.hud.gov/buying"/>
+    <traversable url_string="http://www.homescape.com/"/>
+    <traversable url_string="http://www.statesman.com/homes"/>
+    <traversable url_string="http://www.sptimes.com/homes/"/>
+    <traversable url_string="http://www.sacbee.com/homes/"/>
+    <traversable url_string="http://www.startribune.com/homes/"/>
+    <traversable url_string="http://www.realestatejournal.com/"/>
+    <traversable url_string="http://www.chicagotribune.com/classified/realestate/"/>
+    <traversable url_string="http://www.stltoday.com/realestate"/>
+    <traversable url_string="http://www.ajchomefinder.com/"/>
+    <traversable url_string="http://www.jsonline.com/homes/"/>
+    <traversable url_string="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section"/>
+    <traversable url_string="http://realestate.mainetoday.com/"/>
+    <traversable url_string="http://www.usgbc.org/leed/homes/"/>
+    <traversable url_string="http://indystar.gon.gannettonline.com/apps/pbcs.dll/section"/>
+    <traversable url_string="http://www.orlandosentinel.com/classified/realestate/"/>
+    <traversable url_string="http://homes.venturacountystar.com/"/>
+    <traversable url_string="http://www.latimes.com/features/home"/>
+    <traversable url_string="http://www.nytimes.com/2008/02/12/us/politics"/>
+    <traversable url_string="http://www.arborday.org/explore/"/>
+    <traversable url_string="http://www.cbsnews.com/stories/2007/01/03/blogs"/>
+    <traversable url_string="http://www.download.com/AutoRun-Architect"/>
+    <traversable url_string="http://www.oplin.org/tree/fruit"/>
+    <traversable url_string="http://www.nytimes.com/2008/02/12/sports/baseball"/>
+    <traversable url_string="http://www.usatoday.com/life"/>
+    <traversable url_string="http://www.realtor.com/options"/>
+    <traversable url_string="http://www.arborday.org/shopping/conferences"/>
+    <traversable url_string="http://www.realtor.com/basics"/>
+    <traversable url_string="http://news.yahoo.com/404"/>
+    <traversable url_string="http://www.artcenter.edu/accd/events"/>
+    <traversable url_string="http://www.nytimes.com/pages/business/smallbusiness"/>
+    <traversable url_string="http://www.realtor.com/Redir"/>
+    <traversable url_string="http://www.latimes.com/services/site/premium"/>
+    <traversable url_string="http://www.oplin.org/tree/name"/>
+    <traversable url_string="http://www.inspire.net/trees/"/>
+    <traversable url_string="http://www.treelink.org/whattree"/>
+    <traversable url_string="http://www.treelink.org/"/>
+    <traversable url_string="http://www.arborday.org/trees/wtit/"/>
+    <traversable url_string="http://www.arborday.org/trees"/>
+    <traversable url_string="http://www.cartage.org.lb/en/themes/sciences/BotanicalSciences/TreesFamiliesNames/WhatTreeIsIt"/>
+    <traversable url_string="http://www.cartage.org.lb/en/themes/Sciences/BotanicalSciences/TreesFamiliesNames/WhatTreeIsIt/IdentifybyName/CommonName"/>
+    <traversable url_string="http://www.dnr.state.wi.us/org/caer/ce/eek/veg/treekey"/>
+    <traversable url_string="http://www.state.sc.us/forest"/>
+    <traversable url_string="http://cityroom.blogs.nytimes.com/2007/11/20/rockefeller-tree-is-green-but-is-it-green/"/>
+    <traversable url_string="http://www.sfgate.com/cgi-bin"/>
+    <traversable url_string="http://www.learnnc.org/bestweb/treeid"/>
+    <traversable url_string="http://www.dnr.state.oh.us/Home/bigtrees/form/tabid/4807"/>
+    <traversable url_string="http://new.oplin.org/tree/fact%20pages/redbud"/>
+    <traversable url_string="http://www.oplin.lib.oh.us/databases/quickstarts"/>
+    <traversable url_string="http://www.ci.crystal.mn.us"/>
+    <traversable url_string="http://blogs.usatoday.com/oped/2006/12"/>
+    <traversable url_string="http://www.usatoday.com/news/offbeat"/>
+    <traversable url_string="http://dictionary.reference.com/browse/Tree%20house"/>
+    <traversable url_string="http://finance.yahoo.com/exchanges/"/>
+    <traversable url_string="http://www.nytimes.com/2008/02/11/movies"/>
+    <traversable url_string="http://www.interiordesignschoolreview.com"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.oplin.org/tree/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Title" value="What Tree Is It? HOME      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nydailynews.com/blogs/rosemary/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="A Touch Of Rosemary NY Daily News       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cedarcreektreehouse.com/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="treehouse"/>
+        <metadata_field name="Title" value="treehouse -- Cedar Creek Treehouse at Mt. Rainier          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.flickr.com/photos/tags/design/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="design"/>
+        <metadata_field name="Title" value="Flickr: Photos tagged with design      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/life/books/default.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Books: Book reviews, news and bestseller list USATODAY. com      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/life/columnist/mediamix/2003-05-28-media-mix-archive_x.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="USATODAY. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.latimes.com/classified/realestate/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homes"/>
+        <metadata_field name="Title" value="Los Angeles Times Real Estate News Information                    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.artcenter.edu/accd/programs/undergraduate/fineartmedia.jsp">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="ACCD PROGRAMS Undergraduate Fine Art Media         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.artcenter.edu/accd/programs/graduate/industrial.jsp">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="ACCD PROGRAMS Graduate Studies Industrial Design        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/ClevelandPear.htm?link=leftnav">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Cleveland Flowering Pear Tree   "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/02/09/tifinity-titanium-toothbrush-by-dane-robinson/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="TiFinity Titanium Toothbrush by Dane Robinson Yanko Design          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/05/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="2007 May Yanko Design     "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.artcenter.edu/accd/about/about.jsp">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="ACCD ABOUT ART CENTER    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://news.yahoo.com/nphotos/Bird-Flu/ss/events/hl/013105birdflu/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Bird Flu Yahoo! News Photos    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/index.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Fast Growing Trees  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.adobe.com/products/indesign/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="design"/>
+        <metadata_field name="Title" value="Adobe InDesign CS3, Desktop Publishing, Desktop Publishing Software, Publishing Software              "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/SimplePolygon.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Simple Polygon -- from Wolfram MathWorld    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/FastestTrees.htm?link=leftnav">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Fastest Growing Trees  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/mobile/index.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="USATODAY. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/SweetbayMagnolia.htm?link=leftnav">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Sweetbay Magnolia Tree  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.latimes.com/news/local/politics/cal/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="California, Southern California Los Angeles News LATimes         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.hauntedhouse.com/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="houses"/>
+        <metadata_field name="Title" value="Haunted House. com Portal to Haunted Houses, Halloween Scary Stuff                  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.stltoday.com/stltoday/entertainment/stories.nsf/SS/Entertainment-People+in+the+News?OpenDocument">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="STLtoday Entertainment People in the News       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nytimes.com/2008/02/11/movies/11scheider.html?_r=1&amp;bl&amp;amp;ex=1202878800&amp;amp;en=5b2e43ca6568b375&amp;amp;ei=5087%0A&amp;oref=slogin">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Roy Scheider, Actor in Jaws, Dies at 75 New York Times          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/RabbiteyeBlueberries.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Blueberry Plants  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.arborday.org/trees/treeID.cfm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Title" value="Tree Identification Guide at arborday. org    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.arborday.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="tree"/>
+        <metadata_field name="Title" value="Trees The Arbor Day Foundation          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.dnr.state.oh.us/Home/bigtrees/form/tabid/4807/Default.aspx">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Title" value="Ohio Big Trees Nominate a Big Tree         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/sports/hockey/nhl/2008-02-11-senators-hurricanes-trade_N.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Sens get Commodore, Stillman from 'Canes for Corvo, Eaves USATODAY. com        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.arborday.org/trees/membershiptrees/print.cfm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Download the Member Tree Planting Guide at arborday. org       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/SierpinskiSieve.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Sierpi ski Sieve -- from Wolfram MathWorld    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2008/02/05/the-god-of-wine-has-spoken/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="The God of Wine has spoken Yanko Design         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php?tag=henry-julier">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Henry Julier Yanko Design    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/RoyalStandardHosta.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Royal Standard Hosta Plants      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/SeaHorseValley.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Sea Horse Valley -- from Wolfram MathWorld     "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.flickr.com/photos/tags/tree/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="tree"/>
+        <metadata_field name="Title" value="Flickr: Photos tagged with tree      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/SteinerChain.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Steiner Chain -- from Wolfram MathWorld    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2008/01/21/security-in-a-chair/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Security in a Chair Yanko Design       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/life/people/2008-02-11-amy-winehouse_N.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Winehouse' s mom: Amy on road to recovery USATODAY. com       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/Maine.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Maine Trees  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.corbinstreehouse.com/treehouse_old.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Corbin' s Treehouse! A real treehouse in some redwood trees in California. boy. .. what a story. .. and lots of pictures! !! .. .~ by Corbin Dunn                 "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/sports/hockey/columnist/allen/2008-02-07-rental-players_N.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="For rent: Checking who could be dealt by Feb. 26 USATODAY. com         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.latimes.com/classified/realestate/la-re-guide-sg,0,6103202.storygallery">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Neighborly Advice Los Angeles Times      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cedarcreektreehouse.com/TH_photo.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="treehouse"/>
+        <metadata_field name="Title" value="Treehouse Photo Gallery    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2008/02/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="2008 February Yanko Design          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nydailynews.com/blogs/rockaways/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Rock, Rock, Rockaway Beach NY Daily News     "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/life/default.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Entertainment News: Celebrity gossip blogs, photos, videos stories USATODAY. com       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.flickr.com/photos/tags/tree/?page=2">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Flickr: Photos tagged with tree      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.flickr.com/photos/tags/tree/?page=4">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Flickr: Photos tagged with tree      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://new.oplin.org/tree/fact%20pages/redbud/redbud.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Title" value="Redbud"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/category/living/furniture/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Furniture Yanko Design   "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/FruitTrees.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Fruit Trees  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cedarcreektreehouse.com/viewpoints.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Viewpoints"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://boston.com/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="home"/>
+        <metadata_field name="Title" value="Boston. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://news.yahoo.com/i/2837/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Pew Daily Number on Yahoo! News    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="1" purl="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Author" value="husenjo"/>
+        <metadata_field name="Title" value="OPLIN Quickstart GuideOPLIN Quickstart Guide&#13;"/>
+        <metadata_field name="Summary" value="OPLIN Quickstart GuideOPLIN Quickstart Guide&#13;&#10;March 2004&#13;&#10;What Tree is It?&#13;&#10;What Tree Is It? is a tool for identifying trees that are &#13;&#10;common in Ohio (and in many cases throughout the &#13;&#10;Midwest). It includes a dichotomous key that walks users &#13;&#10;through a series of questions about a tree's leaves or fruit &#13;&#10;to make a final identification. Photos, scientific and &#13;&#10;common names, and descriptive text are given for each.&#13;&#10; &#13;&#10;Click to begin &#13;&#10;identifying by &#13;&#10;leaf. &#13;&#10; &#13;&#10;Click to begin &#13;&#10;identifying b"/>
+        <metadata_field name="summary" value="OPLIN Quickstart GuideOPLIN Quickstart Guide&#13;&#10;March 2004&#13;&#10;What Tree is It?&#13;&#10;What Tree Is It? is a tool for identifying trees that are &#13;&#10;common in Ohio (and in many cases throughout the &#13;&#10;Midwest). It includes a dichotomous key that walks users &#13;&#10;through a series of questions about a tree's leaves or fruit &#13;&#10;to make a final identification. Photos, scientific and &#13;&#10;common names, and descriptive text are given for each.&#13;&#10; &#13;&#10;Click to begin &#13;&#10;identifying by &#13;&#10;leaf. &#13;&#10; &#13;&#10;Click to begin &#13;&#10;identifying b"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/Tree.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="tree"/>
+        <metadata_field name="Title" value="Tree -- from Wolfram MathWorld      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.tumbleweedhouses.com/houses.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="houses"/>
+        <metadata_field name="Title" value="Tumbleweed Houses The Weebee House          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/WeepingWillow.htm?link=leftnav">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Weeping Willow Tree  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2005/07/21/honda-cub-motocycle-by-sam-jibert/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Honda Cub Motocycle by Sam Jibert Yanko Design         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.state.sc.us/forest/reftree.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="what tree is it?"/>
+        <metadata_field name="Title" value="SCFC Tree Identification for SC    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/tech/science/space/2008-02-11-atlantis-spacewalk_N.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Rookie gets rave reviews as spacewalk sub USATODAY. com        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://dictionary.reference.com/browse/Tree%20house">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Tree house Definitions from Dictionary. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.enchantedlearning.com/graphicorganizers/tree/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="tree"/>
+        <metadata_field name="Title" value="Tree Graphic Organizer Printouts EnchantedLearning. com     "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nydailynews.com/ny_local/bronx/index.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="NY Daily News Online Edition Bronx       "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php?tag=ross-lovegrove">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Ross Lovegrove Yanko Design        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.corbinstreehouse.com/treehouse.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="treehouse"/>
+        <metadata_field name="Title" value="Corbin' s Treehouse A real tree house in Santa Cruz, California by Corbin Dunn                          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://mathworld.wolfram.com/SSSTheorem.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="SSS Theorem -- from Wolfram MathWorld    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cbsnews.com/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="home"/>
+        <metadata_field name="Title" value="CBS News Breaking News Headlines and Video from CBSNews. com         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/12/15/a-senseable-design/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="A â€œSenseâ€�able Design Yanko Design      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.usatoday.com/sports/default.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Sports News: Stories, Scores Stats for Pro, College Fantasy Teams USATODAY. com          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.chicagotribune.com/classified/realestate/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homes"/>
+        <metadata_field name="Title" value="Chicago real estate listings and new homes for sale from the Chicago Tribune -- chicagotribune. com                          "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2008/02/05/the-most-attractive-curtains-ever-made/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="The most ATTRACTIVE curtains ever made Yanko Design         "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.digg.com/design">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="design"/>
+        <metadata_field name="Title" value="Digg Design    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/09/28/tanning-benefits-a-tattoo/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Tanning Benefits A Tattoo Yanko Design        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/05/31/paperclip-chair-by-chris-kujawski/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Paperclip Chair by Chris Kujawski Yanko Design        "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nydailynews.com/blogs/dailypolitics/ny11/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="The Daily Politics NY Daily News      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.treehouses.com/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="treehouse"/>
+        <metadata_field name="Title" value="Welcome to Treehouses. com    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.fast-growing-trees.com/Florida.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Florida Trees "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homes"/>
+        <metadata_field name="Title" value="Cincinnati. com' s local REAL ESTATE for greater Cincinnati, Northern Kentucky and Southeast Indiana                    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.arborday.org/shop/index.cfm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Shop at arborday. org    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://news.yahoo.com/i/1545/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="World Sports AFP on Yahoo! News     "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.artcenter.edu/accd/gallery/gallery_by_role.jsp?r=UND">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="ACCD GALLERY  "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/2007/05/page/5/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="2007 May Yanko Design (5)      "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.arborday.org/trees/lifestages/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Tree Life Stages at arborday. org    "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://americasbestonline.net/treehouse.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="treehouse"/>
+        <metadata_field name="Title" value="Treehouses Resorts by America' s Best and Top Ten                "/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.yankodesign.com/index.php/category/best-of/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Best Of Yanko Design    "/>
+      </metadata>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <surrogate containerURL="http://www.enchantedlearning.com/graphicorganizers/tree/" history_num="79">
+      <image_element alpha_radius="13" bias="1.0" has_transparency="true" href="http://www.enchantedlearning.com/graphicorganizers/pmi/" min_alpha="4587520" purl="http://www.enchantedlearning.com/graphicorganizers/gifs/pmismall.GIF">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="PMI"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="30" width="56" x="1225" y="74"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cbsnews.com/" history_num="82">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" min_alpha="2949120" purl="http://wwwimage.cbsnews.com/common/images/v3/misc_local_intro.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Get your local news on CBSNews.com"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="31" width="98" x="931" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="46">
+      <image_element alpha_radius="10" bias="1.0" has_transparency="true" href="http://www.TowneCondos.com" min_alpha="1507328" purl="http://rodeo.cincinnati.com/homescape/realtors/towne-condo.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="980" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.hauntedhouse.com/" history_num="44">
+      <image_element alpha_radius="16" bias="1.0" has_transparency="true" href="http://www.hauntedhouse.com/halloween/index.html" min_alpha="3342336" purl="http://www.hauntedhouse.com/images/Halloween_Links.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Halloween Links, Costumes, Masks, Treats, Games"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="57" width="98" x="49" y="814"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/trees/lifestages/" history_num="96">
+      <image_element alpha_radius="17" bias="1.0" has_transparency="true" min_alpha="4390912" purl="http://www.arborday.org/graphics/headers/trees-txt.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="&amp;ldquo;He who plants a tree plants hope.&amp;rdquo; &amp;mdash;Lucy Larcom"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="38" width="98" x="735" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=4" history_num="47">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/23543672@N03/2258839049/" min_alpha="1114112" purl="http://farm3.static.flickr.com/2109/2258839049_40a02798b3_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Stand Out by kEybLaDes"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="1176" y="148"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/design/" history_num="33">
+      <image_element alpha_radius="30" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/truehiphopart/2258828051/" min_alpha="2424832" purl="http://farm3.static.flickr.com/2077/2258828051_5c7e82df0a_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="skull SS shirt by truehiphopart"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="735" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="34">
+      <image_element alpha_radius="28" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/22922237@N06/2258939073/" min_alpha="1048576" purl="http://farm3.static.flickr.com/2205/2258939073_debfb01e0d_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Dark Skies by beadid"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="735" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.hauntedhouse.com/" history_num="42">
+      <image_element alpha_radius="25" bias="1.0" has_transparency="true" href="http://www.hauntedhouse.com/canada/index.html" min_alpha="2424832" purl="http://www.hauntedhouse.com/images/canadian_haunts.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="98" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="41">
+      <image_element alpha_radius="8" bias="1.0" has_transparency="true" href="http://www.invernesshomesohio.com/" min_alpha="6488064" purl="http://rodeo.cincinnati.com/homescape/realtors/INV_Logo40x23.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="441" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.latimes.com/classified/realestate/" history_num="51">
+      <image_element alpha_radius="29" bias="1.0" has_transparency="true" href="http://www.latimes.com/classified/realestate/news/la-re-blog10feb10,0,1437518.story" min_alpha="65536" purl="http://www.latimes.com/media/thumbnails/story/2008-02/35394782-08165414.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Realtor blogs help reel in clients, boost sales"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="70" x="441" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.stltoday.com/stltoday/entertainment/stories.nsf/SS/Entertainment-People+in+the+News?OpenDocument" history_num="61">
+      <image_element bias="1.0" purl="http://images.stltoday.com/stltoday/images/entertainment/debfile.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="DEB"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="37" width="98" x="245"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/mobile/index.htm" history_num="103">
+      <image_element alpha_radius="23" bias="1.0" has_transparency="true" min_alpha="5505024" purl="http://images.usatoday.com/mobile/_common/_images/logo_nuance.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="55" width="86" x="1226" y="35"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="30">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/22922237@N06/2258939459/" min_alpha="2818048" purl="http://farm3.static.flickr.com/2405/2258939459_ffb3824f11_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Blurry Moon by beadid"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="931" y="-3"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/programs/graduate/industrial.jsp" history_num="43">
+      <image_element alpha_radius="1" bias="1.0" has_transparency="true" min_alpha="5373952" purl="http://www.artcenter.edu/accd/images/programs/left_prog16.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="7" x="539"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/gallery/gallery_by_role.jsp?r=UND" history_num="67">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" min_alpha="4653056" purl="http://www.artcenter.edu/accd/images/gallery/btn_popup.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="30" width="64" x="1225" y="111"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SteinerChain.html" history_num="131">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" min_alpha="1376256" purl="http://mathworld.wolfram.com/images/eps-gif/SteinerChainLines_1000.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="SteinerChainLines"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1169" y="269"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="45">
+      <image_element bias="1.0" href="http://www.mycityliving.com" purl="http://rodeo.cincinnati.com/homescape/realtors/cscity.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="980" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SteinerChain.html" history_num="133">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" min_alpha="4325376" purl="http://mathworld.wolfram.com/images/gifs/steiner.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Steiner chain"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="29" width="98" x="343" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.hauntedhouse.com/" history_num="50">
+      <image_element bias="1.0" href="http://cards.cardfountain.com/egreetings.php?aid=104032&amp;sb=130" purl="http://www.hauntedhouse.com/images/Halloween_Greetings_Cards.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="72" width="98" x="196" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/Tree.html" history_num="154">
+      <image_element alpha_radius="16" bias="1.0" has_transparency="true" min_alpha="6094848" purl="http://mathworld.wolfram.com/images/equations/Tree/Inline26.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="lim_(n-&amp;gt;infty)(T_n)/(T_(n-1))"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="37" width="53" x="1225" y="185"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="23">
+      <image_element alpha_radius="34" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/rmkooi/2258937243/" min_alpha="5898240" purl="http://farm3.static.flickr.com/2187/2258937243_6044d87a36_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="DSCN0406 by rmkooi"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="75" x="1176" y="148"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/Tree.html" history_num="151">
+      <image_element alpha_radius="14" bias="1.0" has_transparency="true" min_alpha="6356992" purl="http://mathworld.wolfram.com/images/equations/Tree/Inline13.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="xexp[sum_(r=1)^(infty)1/rT(x^r)]"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="40" width="98" x="1179" y="496"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/columnist/mediamix/2003-05-28-media-mix-archive_x.htm" history_num="153">
+      <image_element alpha_radius="11" bias="1.0" has_transparency="true" min_alpha="1638400" purl="http://images.usatoday.com/_common/_images/ribbons/life_ribbons/columnist/2006-media-mix.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="42" width="98" x="1127" y="74"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.enchantedlearning.com/graphicorganizers/tree/" history_num="102">
+      <image_element bias="1.0" href="http://www.enchantedlearning.com/graphicorganizers/fishbone/" purl="http://www.enchantedlearning.com/graphicorganizers/gifs/fishbonesmall.GIF">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fishbone"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="30" width="56" x="735" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.enchantedlearning.com/graphicorganizers/tree/" history_num="104">
+      <image_element alpha_radius="13" bias="1.0" has_transparency="true" href="http://www.enchantedlearning.com/graphicorganizers/KWHL/" min_alpha="4521984" purl="http://www.enchantedlearning.com/graphicorganizers/gifs/KWHLsmall.GIF">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="KWHL"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="30" width="56" x="686" y="74"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/programs/undergraduate/fineartmedia.jsp" history_num="58">
+      <image_element bias="1.0" purl="http://www.artcenter.edu/accd/images/programs/right_prog8.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="22" x="539"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="48">
+      <image_element alpha_radius="5" bias="1.0" has_transparency="true" href="http://www.gayletipp.com" min_alpha="4587520" purl="http://rodeo.cincinnati.com/homescape/realtors/new_GBWS.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="980" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="25">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/hermyzzz/2259729618/" min_alpha="2359296" purl="http://farm3.static.flickr.com/2290/2259729618_485a475143_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="DSC_0851 by hermyzzz"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="68" x="1154" y="761"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="49">
+      <image_element alpha_radius="33" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/AutumnCherry.htm" min_alpha="3473408" purl="http://www.fast-growing-trees.com/images/Cherry_Autumnalis_Trees_135.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="68" width="98" x="1176" y="148"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/WeepingWillow.htm?link=leftnav" history_num="56">
+      <image_element bias="1.0" purl="http://www.fast-growing-trees.com/images/Willow2-220w.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="43" y="35"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="60">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/11588396@N03/2258946621/" purl="http://farm3.static.flickr.com/2376/2258946621_596ffa0dae_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Spring wind - Tom McCall by TonyPulokas"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="71" x="312" y="-8"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=2" history_num="59">
+      <image_element alpha_radius="24" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/88147336@N00/2258896877/" min_alpha="851968" purl="http://farm3.static.flickr.com/2077/2258896877_9fd8c3e47b_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Ice Tree in Avenues by LittleNell"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1172" y="314"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="66">
+      <image_element alpha_radius="7" bias="1.0" has_transparency="true" href="http://www.maronda.com" min_alpha="3538944" purl="http://rodeo.cincinnati.com/homescape/realtors/maronda-online-button2.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="1029" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.chicagotribune.com/classified/realestate/" history_num="53">
+      <image_element alpha_radius="15" bias="1.0" has_transparency="true" href="http://www.chicagotribune.com/classified/realestate/newhomes/chi-townhouse_nh_208feb08,0,2204394.story" min_alpha="4456448" purl="http://www.chicagotribune.com/media/alternatethumbnails/story/2008-02/35312939-08065719.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Across the spectrum"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="62" width="98" x="490" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=2" history_num="62">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/looknfeel/2259686658/" purl="http://farm3.static.flickr.com/2404/2259686658_826cf824a3_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="landscape with big tree little tree by LooknFeel"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="953" y="-34"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=2" history_num="29">
+      <image_element alpha_radius="22" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/rogeriopeixoto/2258888645/" min_alpha="2293760" purl="http://farm3.static.flickr.com/2393/2258888645_30765727b5_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="by RogÃ©rio Peixoto"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="67" x="1176" y="148"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.hauntedhouse.com/" history_num="63">
+      <image_element alpha_radius="33" bias="1.0" has_transparency="true" href="http://www.hauntedhouse.com/index2.html" min_alpha="5373952" purl="http://www.hauntedhouse.com/halloween_store/images/real_ghosts.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Real Ghosts and the Supernatural"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="74" width="98" x="196" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2008/01/21/security-in-a-chair/" history_num="118">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/10/16/its-okay-to-be-a-habitual-popper/" min_alpha="4259840" purl="http://www.yankodesign.com/images/design_news/2007/10/16/pomp_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1127"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="163">
+      <image_element alpha_radius="22" bias="1.0" has_transparency="true" min_alpha="65536" purl="http://mathworld.wolfram.com/images/eps-gif/SierpinskiSieveRules_1000.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="SierpinskiSieveRules"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="66" width="98" x="1176" y="592"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="28">
+      <image_element alpha_radius="36" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/intherough/2259694924/" min_alpha="2097152" purl="http://farm3.static.flickr.com/2186/2259694924_8b86a17c50_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Three by ...-intherough-..."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="90" x="1210" y="401"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="54">
+      <image_element alpha_radius="5" bias="1.0" has_transparency="true" href="http://www.cbws.com" min_alpha="5963776" purl="http://rodeo.cincinnati.com/homescape/realtors/CBWS_40x23.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="1127" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/books/default.htm" history_num="120">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.usatoday.com/life/books/news/2008-02-04-mcbride-slavery_N.htm" min_alpha="4915200" purl="http://i.usatoday.net/life/_photos/2008/02/05/mcbride-coverx-rect.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="53" width="98" x="1078" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nydailynews.com/blogs/dailypolitics/ny11/" history_num="168">
+      <image_element alpha_radius="41" bias="1.0" has_transparency="true" min_alpha="5308416" purl="http://blogs.nydailynews.com/dailypolitics/archives/manny07a.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="147" width="98" x="49" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.treehouses.com/" history_num="72">
+      <image_element alpha_radius="15" bias="1.0" has_transparency="true" href="http://www.treehouses.com/treehouse/outfitters/home.html" min_alpha="6619136" purl="http://www.treehouses.com/pics/outnaboutfitters.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="outfitters link"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="66" width="98" x="343" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.digg.com/design" history_num="77">
+      <image_element bias="1.0" href="http://www.sawse.com/2008/02/01/designing-marvels-%e2%80%93-simple-yet-incredible/" purl="http://www.digg.com/design/9_Bizarre_Design_Marvels_PICS/s.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="48" width="48" x="980" y="46"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2008/02/" history_num="89">
+      <image_element alpha_radius="28" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/07/04/zen-heating/" min_alpha="4587520" purl="http://www.yankodesign.com/images/design_news/2007/07/04/phoebe_radiator_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1127" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/05/page/5/" history_num="73">
+      <image_element alpha_radius="30" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/05/16/bmw-welt-opening-by-coop-himmelblau/" min_alpha="3604480" purl="http://www.yankodesign.com/images/design_news/2007/05/16/bmw_welt_layout.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="70" width="98" x="1127" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/category/best-of/" history_num="70">
+      <image_element alpha_radius="23" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/04/30/mele-cultivate-system-provides-fresh-fruits-by-eoin-mcnally-ian-walton/" min_alpha="1114112" purl="http://www.yankodesign.com/images/design_news/2007/04/30/mele_cultivate_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1130" y="-3"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="155">
+      <image_element alpha_radius="9" bias="1.0" has_transparency="true" min_alpha="6553600" purl="http://mathworld.wolfram.com/images/equations/SierpinskiSieve/Inline18.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="-lim_(n-&amp;gt;infty)(lnN_n)/(lnL_n)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="37" width="66" x="1176" y="333"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse_old.html" history_num="106">
+      <image_element alpha_radius="10" bias="1.0" has_transparency="true" min_alpha="3735552" purl="http://www.corbinstreehouse.com/images/title_treehouse.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Corbin's Treehouse!"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="28" width="98" x="686" y="925"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/category/living/furniture/" history_num="115">
+      <image_element alpha_radius="18" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/07/30/dimple-portable-music-player/" min_alpha="2883584" purl="http://www.yankodesign.com/images/design_news/2007/07/30/dimple_player_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/default.htm" history_num="122">
+      <image_element alpha_radius="30" bias="1.0" has_transparency="true" href="http://www.usatoday.com/life/movies/news/2008-02-11-clone-wars-main_N.htm" min_alpha="2162688" purl="http://i.usatoday.net/life/_photos/2008/02/12/starwars-carousel.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1078" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/05/" history_num="100">
+      <image_element alpha_radius="16" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/05/31/the-companion-martini-glass-by-chris-livaudais/" purl="http://www.yankodesign.com/images/design_news/2007/05/31/companion_martini_layout.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="70" width="98" x="1167" y="54"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/09/28/tanning-benefits-a-tattoo/" history_num="121">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2007/07/04/bye-bye-ugly-ac-bricks-and-power-strips/" purl="http://www.yankodesign.com/images/design_news/2007/07/03/energy_adaptor_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="735"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.digg.com/design" history_num="158">
+      <image_element bias="1.0" href="http://www.colourlovers.com/blog/2008/02/05/is-visual-taste-perception-coloring-your-appetite/" purl="http://www.digg.com/design/Is_Visual_Taste_Perception_Coloring_Your_Appetite/s.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="48" width="48" x="784" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php?tag=ross-lovegrove" history_num="84">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2008/01/28/another-simple-mp3-player/" purl="http://www.yankodesign.com/images/design_news/2008/01/28/tactile_player_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1179" y="45"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.latimes.com/classified/realestate/la-re-guide-sg,0,6103202.storygallery" history_num="110">
+      <image_element bias="1.0" href="http://www.latimes.com/classified/realestate/la-re-guide30sep30,0,3086226.story" purl="http://www.latimes.com/media/thumbnails/story/2007-12/32871161-04140708.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="From humble origins, Corona's seaside attraction soars"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="77" width="98" x="833" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cincinnati.gon.gannettonline.com/apps/pbcs.dll/section?category=HOMES" history_num="68">
+      <image_element alpha_radius="6" bias="1.0" has_transparency="true" href="http://www.hoeting.com/" min_alpha="2162688" purl="http://rodeo.cincinnati.com/homescape/realtors/Hoetingmicrotile.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="23" width="40" x="1127" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/default.htm" history_num="88">
+      <image_element alpha_radius="11" bias="1.0" has_transparency="true" href="http://www.usatoday.com/life/movies/movieawards/oscars/2008-02-11-saoirse-ronan_N.htm" purl="http://i.usatoday.net/life/_photos/2008/02/12/ronan-carousel.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1078" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/12/15/a-senseable-design/" history_num="134">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2007/09/28/tanning-benefits-a-tattoo/" purl="http://www.yankodesign.com/images/design_news/2007/09/28/sun_tatoo_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/shop/index.cfm" history_num="109">
+      <image_element alpha_radius="22" bias="1.0" has_transparency="true" href="http://www.arborday.org/arborday/merch.cfm" min_alpha="6488064" purl="http://www.arborday.org/arborday/graphics/menu_celebrate.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Celebrate Arbor Day"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="60" y="666"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nydailynews.com/blogs/rosemary/" history_num="71">
+      <image_element bias="1.0" purl="http://www.nydailynews.com/blogs/rosemary/docs/images/Mia3.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="67" width="98" x="392" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nydailynews.com/blogs/rockaways/" history_num="69">
+      <image_element alpha_radius="24" bias="1.0" has_transparency="true" href="http://www.nydailynews.com/blogs/rockaways/docs/images/teeth.jpg" min_alpha="131072" purl="http://www.nydailynews.com/blogs/rockaways/assets_c/2007/12/teeth-thumb-500x331.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="64" width="98" x="294" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/default.htm" history_num="112">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.usatoday.com/life/music/news/2008-02-11-thriller-25th_N.htm" min_alpha="2621440" purl="http://i.usatoday.net/life/_photos/2008/02/12/thriller-vid-carousel.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="931" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2005/07/21/honda-cub-motocycle-by-sam-jibert/" history_num="86">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2007/06/18/rideable-vacuum-cleaner-by-kristina-andersson/" purl="http://www.yankodesign.com/images/design_news/2007/06/18/buster_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1160" y="12"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/02/09/tifinity-titanium-toothbrush-by-dane-robinson/" history_num="76">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/12/10/flower-power-fun-from-a-vase/" min_alpha="5898240" purl="http://www.yankodesign.com/images/design_news/2007/12/10/reborn_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1127" y="7"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2008/02/05/the-god-of-wine-has-spoken/" history_num="128">
+      <image_element bias="1.0" purl="http://www.yankodesign.com/images/design_news/2008/02/05/bachus.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="72" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/mobile/index.htm" history_num="55">
+      <image_element alpha_radius="9" bias="1.0" has_transparency="true" min_alpha="3342336" purl="http://images.usatoday.com/mobile/_common/_images/logo_sudoku.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="sudoku"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="33" width="98" x="1029" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.latimes.com/classified/realestate/la-re-guide-sg,0,6103202.storygallery" history_num="91">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" href="http://www.latimes.com/classified/realestate/la-re-guide2dec02,0,2399816.story" min_alpha="655360" purl="http://www.latimes.com/media/thumbnails/story/2007-12/34040282-04132225.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="The bohemian vibe of Silver Lake"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="77" width="98" x="735" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2008/02/05/the-god-of-wine-has-spoken/" history_num="136">
+      <image_element alpha_radius="35" bias="1.0" has_transparency="true" min_alpha="2490368" purl="http://www.yankodesign.com/images/design_news/2008/02/05/bachus3.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="122" width="98" x="1176" y="629"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/02/09/tifinity-titanium-toothbrush-by-dane-robinson/" history_num="75">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2007/12/10/to-vacuum-or-broom/" purl="http://www.yankodesign.com/images/design_news/2007/12/10/broom_magic_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="416" y="8"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/about/about.jsp" history_num="129">
+      <image_element alpha_radius="5" bias="1.0" has_transparency="true" min_alpha="5046272" purl="http://www.artcenter.edu/accd/images/about/right_bar_about.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="13" x="539"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2008/02/05/the-most-attractive-curtains-ever-made/" history_num="123">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2008/02/06/post-apocalyptic-pulpit-for-the-pious/" purl="http://www.yankodesign.com/images/design_news/2008/02/06/saint_eucaire_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/SweetbayMagnolia.htm?link=leftnav" history_num="64">
+      <image_element alpha_radius="42" bias="1.0" has_transparency="true" min_alpha="1900544" purl="http://www.fast-growing-trees.com/images/SweetbayMagnoliaTree.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Sweetbay Magnolia"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="97" width="98" x="1175" y="289"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://americasbestonline.net/treehouse.htm" history_num="95">
+      <image_element alpha_radius="31" bias="1.0" has_transparency="true" href="http://www.amazon.com/gp/product/0395629497/qid=1139411581/sr=1-1/ref=sr_1_1/002-2669828-5507269?s=books&amp;v=glance&amp;n=283155" min_alpha="6160384" purl="http://americasbestonline.net/treehouse/Peter1.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="134" width="98" x="1163" y="707"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.dnr.state.oh.us/Home/bigtrees/form/tabid/4807/Default.aspx" history_num="141">
+      <image_element alpha_radius="21" bias="1.0" has_transparency="true" href="http://www.dnr.state.oh.us/forestry/default/tabid/4803/Default.aspx" min_alpha="5439488" purl="http://www.dnr.state.oh.us/Portals/18/Skins/Forestry/images/logo_sidepanel.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="53" width="98" x="735" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/05/31/paperclip-chair-by-chris-kujawski/" history_num="119">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/02/08/concrete-pod-by-kazuya-morita/" min_alpha="786432" purl="http://www.yankodesign.com/images/design_news/2007/02/8/concrete_pod_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="602" y="23"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/life/people/2008-02-11-amy-winehouse_N.htm" history_num="93">
+      <image_element bias="1.0" purl="http://i.usatoday.net/life/_photos/2008/02/12/winehousex.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Winehouse and her mother Janis, right, celebrate the singer's Grammy wins via satellite in London."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1114" y="3"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/12/15/a-senseable-design/" history_num="140">
+      <image_element alpha_radius="18" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/07/02/lava-sofa-upholstered-seating-system-by-studio-vertijet/" min_alpha="6160384" purl="http://www.yankodesign.com/images/design_news/2007/07/02/lava_sofa_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/05/31/paperclip-chair-by-chris-kujawski/" history_num="132">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/08/08/landmark-bus-shelter-that-changes-color/" min_alpha="720896" purl="http://www.yankodesign.com/images/design_news/2007/08/08/landmark_bus_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="632" y="31"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nytimes.com/2008/02/11/movies/11scheider.html?_r=1&amp;bl&amp;amp;ex=1202878800&amp;amp;en=5b2e43ca6568b375&amp;amp;ei=5087%0A&amp;oref=slogin" history_num="164">
+      <image_element alpha_radius="28" bias="1.0" has_transparency="true" min_alpha="1376256" purl="http://graphics8.nytimes.com/images/2008/02/11/arts/scheider190.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="123" width="98" y="296"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/05/31/paperclip-chair-by-chris-kujawski/" history_num="117">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" min_alpha="4521984" purl="http://www.yankodesign.com/images/design_news/2007/05/31/paperclip.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="113" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/02/09/tifinity-titanium-toothbrush-by-dane-robinson/" history_num="81">
+      <image_element alpha_radius="31" bias="1.0" has_transparency="true" min_alpha="6160384" purl="http://www.yankodesign.com/images/design_news/2007/02/9/tifinity.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="72" x="656" y="-18"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php?tag=henry-julier" history_num="137">
+      <image_element alpha_radius="33" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/02/21/pepsi-redesign/" min_alpha="6356992" purl="http://www.yankodesign.com/images/design_news/2007/02/21/pepsi_redesign_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="1176" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/12/15/a-senseable-design/" history_num="130">
+      <image_element bias="1.0" href="http://www.yankodesign.com/index.php/2007/04/19/coil-slipper-by-zhejiang/" purl="http://www.yankodesign.com/images/design_news/2007/04/19/coil_slipper_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="587" y="15"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SeaHorseValley.html" history_num="167">
+      <image_element alpha_radius="10" bias="1.0" has_transparency="true" min_alpha="3407872" purl="http://mathworld.wolfram.com/images/eps-gif/SeaHorseValley_1000.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="SeaHorseValley"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="23" width="98" x="1176" y="518"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php?tag=henry-julier" history_num="139">
+      <image_element alpha_radius="31" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/04/11/fallen-angel-cocktail-glass-by-adam-pockette/" min_alpha="1835008" purl="http://www.yankodesign.com/images/design_news/2007/04/11/fallen_cocktail_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="548" y="-5"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/tech/science/space/2008-02-11-atlantis-spacewalk_N.htm" history_num="135">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" min_alpha="5046272" purl="http://i.usatoday.net/tech/_photos/2008/02/11/stationx.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="The European Space Agency's Columbus module, right, is guided by a robotic arm for installation to the starboard docking hatch of the Harmony node on the International Space Station."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="75" width="98" x="1235" y="45"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://news.yahoo.com/i/2837/" history_num="161">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" href="http://news.yahoo.com/nphotos/Airline-Security/ss/events/ts/082506airlinesecurit/" min_alpha="1310720" purl="http://d.yimg.com/us.yimg.com/p/ap/20080211/thumb.jrl10802111558.mideast_israel_palestinians_jrl108.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Bahrain lawmaker Naser el-Fadalah, left, hands his passport to a Palestinian Hamas official at the..."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="69" width="98" x="49" y="740"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/programs/graduate/industrial.jsp" history_num="52">
+      <image_element bias="1.0" purl="http://www.artcenter.edu/accd/images/programs/right_prog16.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="22" x="1239" y="11"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/" history_num="87">
+      <image_element alpha_radius="25" bias="1.0" has_transparency="true" min_alpha="6094848" purl="http://www.cedarcreektreehouse.com/images/TH_rainier2.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Cedar Creek Treehouse (with Mt. Rainier in the background) offers unique vacation rental lodging with this &amp;quot;bed and breakfast&amp;quot; tree house cottage 50 feet up in a cedar tree."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="111" width="54" x="686" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/" history_num="160">
+      <image_element alpha_radius="28" bias="1.0" has_transparency="true" href="http://www.arborday.org/shopping/memberships/memberships.cfm?trackingid=528" min_alpha="4718592" purl="http://www.arborday.org/graphics/menus/10freetrees.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Get 10 Free Trees"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="60" x="1176" y="333"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nydailynews.com/ny_local/bronx/index.html" history_num="125">
+      <image_element alpha_radius="17" bias="1.0" has_transparency="true" href="http://www.nydailynews.com/ny_local/columnists/mccallister/index.html" min_alpha="3145728" purl="http://www.nydailynews.com/img/static/columnists/col_sm_mccallister.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Jared McCallister"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="45" width="45" x="392" y="37"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/programs/undergraduate/fineartmedia.jsp" history_num="152">
+      <image_element bias="1.0" purl="http://www.artcenter.edu/accd/images/programs/left_prog8.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="111" width="7" x="1209" y="59"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yankodesign.com/index.php/2007/02/09/tifinity-titanium-toothbrush-by-dane-robinson/" history_num="80">
+      <image_element alpha_radius="18" bias="1.0" has_transparency="true" href="http://www.yankodesign.com/index.php/2007/05/14/stitch-customizable-eyewear-by-seungyoub-oh/" min_alpha="5111808" purl="http://www.yankodesign.com/images/design_news/2007/05/14/stitch_eyewear_sm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="582" y="13"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.adobe.com/products/indesign/" history_num="111">
+      <image_element alpha_radius="44" bias="1.0" has_transparency="true" href="http://www.adobe.com/products/creativesuite/design/?xNav=DPBox" min_alpha="4980736" purl="http://www.adobe.com/images/store/product_boxshots/112x112/box_design_premium_cs3_112x112.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Design Premium"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1168" y="629"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.artcenter.edu/accd/programs/graduate/industrial.jsp" history_num="57">
+      <image_element bias="1.0" purl="http://www.artcenter.edu/accd/images/programs/picture_prog16.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="40" width="98" x="1177" y="41"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SteinerChain.html" history_num="138">
+      <image_element alpha_radius="18" bias="1.0" has_transparency="true" href="http://demonstrations.wolfram.com/SteinerChainInversion/" min_alpha="5636096" purl="http://mathworld.wolfram.com/images/demonstrations/SteinerChainInversion.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Steiner Chain Inversion"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="62" width="44" x="1176" y="481"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/sports/hockey/nhl/2008-02-11-senators-hurricanes-trade_N.htm" history_num="101">
+      <image_element alpha_radius="45" bias="1.0" has_transparency="true" min_alpha="4456448" purl="http://images.usatoday.com/sports/_photos/2008/02/11/eaves-mug.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="The Carolina Hurricanes believe Patrick Eaves will fit their style of play. "/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="137" width="98" y="74"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="162">
+      <image_element alpha_radius="14" bias="1.0" has_transparency="true" href="http://demonstrations.wolfram.com/PascalsTriangleModK/" min_alpha="1048576" purl="http://mathworld.wolfram.com/images/demonstrations/PascalsTriangleModK.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Pascal's Triangle Mod k"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="34" width="44" x="1176" y="592"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/" history_num="83">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" min_alpha="6619136" purl="http://www.cedarcreektreehouse.com/images/Rainbow_%20Bridge_and_Observatory.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Rainbow_ Bridge_and_Observatory.JPG (99516 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="111" width="71" x="539" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/" history_num="98">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" href="http://www.arborday.org/shopping/trees/trees.cfm?trackingid=526" min_alpha="2162688" purl="http://www.arborday.org/graphics/menus/treestore.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Our Tree Store"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="60" x="200" y="23"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/trees/membershiptrees/print.cfm" history_num="97">
+      <image_element alpha_radius="14" bias="1.0" has_transparency="true" href="http://www.arborday.org/trees/graphics/membership-trees/planting.pdf" min_alpha="5832704" purl="http://www.arborday.org/trees/graphics/membership-trees/print-plant.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="79" width="98" x="1176" y="185"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Florida.htm" history_num="169">
+      <image_element alpha_radius="47" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/LeylandCypress.htm" min_alpha="4587520" purl="http://www.fast-growing-trees.com/images/Leyland-tree-140T.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="113" width="98" x="1186" y="583"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="78">
+      <image_element alpha_radius="18" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/SummersRed.htm" min_alpha="4784128" purl="http://www.fast-growing-trees.com/images/Summers_135.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1193" y="201"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/" history_num="113">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" href="http://www.arborday.org/join/partnerships.cfm" min_alpha="327680" purl="http://www.arborday.org/graphics/menus/corporate.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Corporate Partnership"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="60" x="1225" y="185"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.latimes.com/news/local/politics/cal/" history_num="170">
+      <image_element alpha_radius="23" bias="1.0" has_transparency="true" href="http://www.latimes.com/news/local/la-columnist-gskelton,1,6927604.columnist" min_alpha="1376256" purl="http://www.latimes.com/media/thumbnails/columnist/2005-12/263717.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="George Skelton"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="72" width="56" x="637" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Florida.htm" history_num="85">
+      <image_element alpha_radius="23" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/Muskogee.htm" min_alpha="5505024" purl="http://www.fast-growing-trees.com/images/Muscogee_Lavender_135.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="110" width="98" x="1181" y="311"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/ClevelandPear.htm?link=leftnav" history_num="116">
+      <image_element bias="1.0" purl="http://www.fast-growing-trees.com/images/Cleveland-220w.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Cleveland Pear"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="520" y="3"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://news.yahoo.com/nphotos/Bird-Flu/ss/events/hl/013105birdflu/" history_num="94">
+      <image_element alpha_radius="44" bias="1.0" has_transparency="true" href="http://elections.yahoo.com" min_alpha="2818048" purl="http://d.yimg.com/us.yimg.com/i/us/nws/pv/mip_election08.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Yahoo! News Elections"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="122" width="98" y="814"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/sports/hockey/nhl/2008-02-11-senators-hurricanes-trade_N.htm" history_num="99">
+      <image_element alpha_radius="39" bias="1.0" has_transparency="true" min_alpha="3080192" purl="http://i.usatoday.net/sports/_photos/2008/02/11/stillmanx.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Cory Stillman, who could become an unrestricted free agent after the season, is taking his slap shot from the Carolina Hurricanes to the Ottawa Senators as part of a 2-for-2 trade. "/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="109" width="98" x="1218" y="73"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.chicagotribune.com/classified/realestate/" history_num="114">
+      <image_element alpha_radius="21" bias="1.0" has_transparency="true" href="http://www.chicagotribune.com/classified/realestate/news/chi-cp_rev_geothermal_re_02-10feb10,0,3826518.story" min_alpha="589824" purl="http://www.chicagotribune.com/media/alternatethumbnails/story/2008-02/35358846-11090757.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Down to earth"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="833" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/viewpoints.htm" history_num="171">
+      <image_element alpha_radius="33" bias="1.0" has_transparency="true" min_alpha="5373952" purl="http://www.cedarcreektreehouse.com/images/viewpoints-1.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="viewpoints-1.JPG (21923 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="127" width="98" y="185"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://boston.com/" history_num="166">
+      <image_element alpha_radius="17" bias="1.0" has_transparency="true" href="http://www.boston.com/thingstodo/nightlife/gallery/salsasundays/" min_alpha="786432" purl="http://cache.boston.com/bonzai-fba/Original_Photo/2008/01/26/1201380683_6837-25.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Salsa Sundays @ Ryles"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="80" width="80"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/viewpoints.htm" history_num="172">
+      <image_element alpha_radius="27" bias="1.0" has_transparency="true" min_alpha="3735552" purl="http://www.cedarcreektreehouse.com/images/viewpoints-3.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="viewpoints-3.JPG (47003 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="63" width="98" x="1176" y="74"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/viewpoints.htm" history_num="173">
+      <image_element alpha_radius="40" bias="1.0" has_transparency="true" min_alpha="1114112" purl="http://www.cedarcreektreehouse.com/images/viewpoints-5.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="viewpoints-5.JPG (55689 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="125" width="98" x="1184" y="237"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/viewpoints.htm" history_num="174">
+      <image_element alpha_radius="20" bias="1.0" has_transparency="true" min_alpha="589824" purl="http://www.cedarcreektreehouse.com/images/viewpoints-2.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="viewpoints-2.JPG (42113 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="98" x="1164" y="177"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.chicagotribune.com/classified/realestate/" history_num="165">
+      <image_element alpha_radius="32" bias="1.0" has_transparency="true" href="http://www.chicagotribune.com/classified/realestate/communities/chi-downtown_nh_201feb01,0,2218176.story" min_alpha="4587520" purl="http://www.chicagotribune.com/media/alternatethumbnails/story/2008-02/35023248-01092900.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Rising expectations"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="71" width="98" x="882" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/FastestTrees.htm?link=leftnav" history_num="127">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/Dynamite.htm" min_alpha="655360" purl="http://www.fast-growing-trees.com/images/T-100H/CrapeMyrtle-100.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="100" width="73" x="1176" y="185"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse_old.html" history_num="105">
+      <image_element alpha_radius="24" bias="1.0" has_transparency="true" min_alpha="2686976" purl="http://www.corbinstreehouse.com/images/treehouse3.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="66" width="98" x="1176" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse_old.html" history_num="107">
+      <image_element alpha_radius="13" bias="1.0" has_transparency="true" min_alpha="65536" purl="http://www.corbinstreehouse.com/images/treehouse5.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1176" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse_old.html" history_num="108">
+      <image_element alpha_radius="12" bias="1.0" has_transparency="true" min_alpha="2097152" purl="http://www.corbinstreehouse.com/images/treehouse2.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="68" width="98" x="686" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/trees/treeID.cfm" history_num="149">
+      <image_element alpha_radius="47" bias="1.0" has_transparency="true" href="http://www.arborday.org/Shopping/Merchandise/MerchDetail.cfm?id=14" min_alpha="589824" purl="http://www.arborday.org/trees/graphics/wtit-large.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="137" width="98" x="1155" y="512"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Florida.htm" history_num="124">
+      <image_element alpha_radius="44" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/LombardyPoplar.htm" min_alpha="589824" purl="http://www.fast-growing-trees.com/images/LombardyPoplar16_small.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="119" width="98" x="1170" y="558"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/FastestTrees.htm?link=leftnav" history_num="126">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/Natchez.htm" purl="http://www.fast-growing-trees.com/images/T-100H/Myrtle-Natchez-10-.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="87" width="98" x="1176" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf" history_num="147">
+      <image_element bias="1.0" has_transparency="true" pdf_index="80" purl="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1146" y="394"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf" history_num="148">
+      <image_element bias="1.0" has_transparency="true" pdf_index="4" purl="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="74" width="98" x="956" y="17"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="156">
+      <image_element alpha_radius="15" bias="1.0" has_transparency="true" href="http://demonstrations.wolfram.com/FractalPolygonTiler/" min_alpha="5308416" purl="http://mathworld.wolfram.com/images/demonstrations/FractalPolygonTiler.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fractal Polygon Tiler"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="42" width="44" x="1205" y="440"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="150">
+      <image_element alpha_radius="10" bias="1.0" has_transparency="true" href="http://demonstrations.wolfram.com/FractalTetrahedron/" min_alpha="2818048" purl="http://mathworld.wolfram.com/images/demonstrations/FractalTetrahedron.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fractal Tetrahedron"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="55" width="44" x="1176" y="481"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SierpinskiSieve.html" history_num="159">
+      <image_element alpha_radius="15" bias="1.0" has_transparency="true" href="http://demonstrations.wolfram.com/SierpinskiSieve/" min_alpha="3735552" purl="http://mathworld.wolfram.com/images/demonstrations/SierpinskiSieve.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Sierpinski Sieve"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="55" width="44" x="1206" y="476"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SSSTheorem.html" history_num="157">
+      <image_element bias="1.0" purl="http://mathworld.wolfram.com/images/eps-gif/SSSTheorem_1000.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="SSSTheorem"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="56" width="98" x="1176" y="518"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.state.sc.us/forest/reftree.htm" history_num="142">
+      <image_element alpha_radius="20" bias="1.0" has_transparency="true" min_alpha="5832704" purl="http://www.state.sc.us/forest/scfcstew.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="SCFC, Stewardship Logos"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="46" width="98" x="578" y="13"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://new.oplin.org/tree/fact%20pages/redbud/redbud.html" history_num="145">
+      <image_element bias="1.0" purl="http://new.oplin.org/tree/fact%20pages/redbud/fruit.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Redbud Fruit"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="87" width="98" x="1008" y="314"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://new.oplin.org/tree/fact%20pages/redbud/redbud.html" history_num="143">
+      <image_element alpha_radius="33" bias="1.0" has_transparency="true" min_alpha="983040" purl="http://new.oplin.org/tree/fact%20pages/redbud/leaf.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Redbud Leaf"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="87" width="98" x="565" y="-10"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://news.yahoo.com/i/1545/" history_num="175">
+      <image_element bias="1.0" href="http://news.yahoo.com/s/afp/20080211/sp_wl_afp/rugbyuirbsuper14_080211190642/" purl="http://d.yimg.com/us.yimg.com/p/afp/20080211/capt.sge.ihv66.110208190638.photo00.photo.default-243x167.jpg?x=100&amp;y=68&amp;q=85&amp;sig=.ARkSWx2NzljysEoloGcdA--">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="67" width="98" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/sports/hockey/columnist/allen/2008-02-07-rental-players_N.htm" history_num="176">
+      <image_element bias="1.0" purl="http://images.usatoday.com/_common/_images/ribbons/sports_ribbons/columnist/2006-rink-rap-allen.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="53" width="122" x="154" y="-8"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/sports/default.htm" history_num="177">
+      <image_element alpha_radius="25" bias="1.0" has_transparency="true" href="http://www.usatoday.com/sports/baseball/2008-02-10-batmaker-marucci_N.htm" min_alpha="3145728" purl="http://i.usatoday.net/sports/_photos/2008/02/10/batman-carousel.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1176" y="888"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf" history_num="146" latched="true">
+      <image_element bias="1.0" pdf_index="83" purl="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="98" width="100" x="432" y="300"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf" history_num="144">
+      <image_element bias="1.0" pdf_index="6" purl="http://www.oplin.lib.oh.us/databases/quickstarts/Tree.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="93" width="95" x="624" y="305"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/FruitTrees.htm" history_num="92">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/Everbearing-Strawberries.htm" purl="http://www.fast-growing-trees.com/images/Strawberry_Eversweet_135.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Strawberry Fruit"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1006" y="203"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/FruitTrees.htm" history_num="90">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/HeritageRaspberry.htm" purl="http://www.fast-growing-trees.com/images/Raspberry_Dorman_135.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Raspberry Fruit"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="798" y="394"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/TH_photo.htm" history_num="65">
+      <image_element bias="1.0" purl="http://www.cedarcreektreehouse.com/images/TH_sunroom.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="114" width="73" x="1034" y="535"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.arborday.org/" history_num="38">
+      <image_element bias="1.0" href="http://www.arborday.org/giftplanning/" purl="http://www.arborday.org/graphics/menus/giftplanning.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Bequests/Gift Planning"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="59" width="59" x="970" y="589"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=2" history_num="37">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/patrickdentler/2258893281/" purl="http://farm3.static.flickr.com/2228/2258893281_3408382f27_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="outside seating by patrick dentler"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="145" width="93" x="296" y="693"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/RoyalStandardHosta.htm" history_num="9">
+      <image_element bias="1.0" purl="http://www.fast-growing-trees.com/images/Hosta_RS_5_220.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="77" width="98" x="431" y="427"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="35">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/WeepingWillow.htm" purl="http://www.fast-growing-trees.com/images/Willow-135tall.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fast Growing Weeping Willow Trees"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="107" width="98" x="431" y="734"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="26">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/digi-x/2259695770/" purl="http://farm3.static.flickr.com/2218/2259695770_b0fcfa9c72_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Pinecones, MY FAVORITE!!! by Digi X"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="61" width="92" x="537" y="780"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="27">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/22563839@N04/2258911385/" purl="http://farm3.static.flickr.com/2147/2258911385_8a00e5a551_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Bare Birch by deflorio2"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="533" y="700"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.latimes.com/classified/realestate/" history_num="13">
+      <image_element bias="1.0" href="http://www.latimes.com/classified/realestate/la-re-hotprop9dec09pg,0,3433611.photogallery" purl="http://www.latimes.com/media/thumbnails/blurb/2007-12/33985465-07170453.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="54" width="98" x="819" y="597"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="24">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/inkista/2259730800/" purl="http://farm3.static.flickr.com/2339/2259730800_d80ff91f8d_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="IMG_0824 by inkista"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="431" y="661"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="36">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/22922237@N06/2259736240/" purl="http://farm3.static.flickr.com/2388/2259736240_c9603493d4_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Tree and Moon by beadid"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="432" y="580"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="32">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/TulipPoplar.htm" purl="http://www.fast-growing-trees.com/images/Tulip-BG-135t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fast Growing Tulip Poplar Trees"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="135" width="90" x="634" y="427"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/TH_photo.htm">
+      <image_element bias="1.0" purl="http://www.cedarcreektreehouse.com/images/TH_footbridge.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="TH_footbridge.JPG (18414 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="67" width="98" x="187" y="381"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html" history_num="1">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse4.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse4.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="294" y="383"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html" history_num="3">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse11.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse11.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="291" y="459"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html" history_num="2">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse28.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse28.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="155" width="209" x="186" y="531"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.treehouses.com/">
+      <image_element bias="1.0" href="http://www.treehouses.com/treehouse/treesort/home.html" purl="http://www.treehouses.com/pics/pcock.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="peacock perch treehouse"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="186" width="147" x="817" y="655"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=4">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/feebnap/2259586844/" purl="http://farm3.static.flickr.com/2378/2259586844_7e00f70b1e_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="pine by feebnap"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="64" width="98" x="431" y="511"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/kysmet/2258883559/" purl="http://farm3.static.flickr.com/2338/2258883559_d91a218493_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Do I Have Anything On My Face? by kit e kat"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="899" y="201"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html" history_num="2">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse1.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse1.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="63" width="98" x="821" y="530"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/">
+      <image_element bias="1.0" href="http://www.cedarloftcabin.com/" purl="http://www.cedarcreektreehouse.com/images/Cedar_Loft_Cabin_small.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Cedar Loft Cabin"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="173" width="208" x="185" y="200"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=4">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/31715949@N00/2259568506/" purl="http://farm3.static.flickr.com/2294/2259568506_ef81f73dfa_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Victims by Vox Sciurorum"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="78" width="98" x="1008" y="411"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="6">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/Ginkgo.htm" purl="http://www.fast-growing-trees.com/images/Ginkgo_135.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="135" width="92" x="536" y="430"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/FruitTrees.htm" history_num="10">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/BurbankPlum.htm" purl="http://www.fast-growing-trees.com/images/Plum_Burbank_135.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="108" width="98" x="795" y="280"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse9.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse9.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="70" width="98" x="185" y="455"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/RabbiteyeBlueberries.htm" history_num="12">
+      <image_element bias="1.0" purl="http://www.fast-growing-trees.com/images/Blueberry-2-220.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Blueberry Plants"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="900" y="281"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="14">
+      <text_element bias="1.0" font_color="99cc00" participant_created="true" stroke_color="660066">
+        <text_chunk face_index="2" font_size="24" font_style="1">
+          <cf_text_token delims_before="" string="http://www.oplin.org/tree/"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="28" width="287" x="431" y="393"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/" history_num="11">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/usachicago/2258858693/" purl="http://farm3.static.flickr.com/2057/2258858693_97d6842695_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="1 by Chicago Man"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="189" y="693"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/tree/?page=4">
+      <image_element bias="1.0" href="http://www.flickr.com/photos/senexprime/2258780523" purl="http://farm3.static.flickr.com/2143/2258780523_858495fc51_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Tall Trees by Senex Prime"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="129" width="88" x="639" y="568"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cedarcreektreehouse.com/TH_photo.htm">
+      <image_element bias="1.0" purl="http://www.cedarcreektreehouse.com/images/loft1.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="loft1.JPG (20074 bytes)"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="187" width="136" x="972" y="655"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.digg.com/design">
+      <image_element alpha_radius="40" bias="1.0" has_transparency="true" href="http://www.digg.com/elections/" min_alpha="6619136" purl="http://www.digg.com/img/med-digg-flag.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Digg the Candidates"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="90" width="85" x="836" y="-54"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.corbinstreehouse.com/treehouse.html">
+      <image_element bias="1.0" href="http://www.corbinstreehouse.com/images/treehouse/treehouse12.jpg" purl="http://www.corbinstreehouse.com/images/treehouse/thumbs/treehouse12.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="69" width="98" x="188" y="772"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/RabbiteyeBlueberries.htm" history_num="8">
+      <image_element bias="1.0" purl="http://www.fast-growing-trees.com/images/Blueberry-Hand-220.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Delicious Blueberries"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="73" width="98" x="794" y="201"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="31">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/AutumnPurpleAsh.htm" purl="http://www.fast-growing-trees.com/images/AutumnPurpleAsh9_small.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="135" width="93" x="636" y="704"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/Maine.htm" history_num="7">
+      <image_element bias="1.0" href="http://www.fast-growing-trees.com/ScarletRedMaple.htm" purl="http://www.fast-growing-trees.com/images/RedMaple27_small.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="124" width="98" x="534" y="570"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nydailynews.com/blogs/rosemary/" history_num="74">
+      <image_element bias="1.0" purl="http://www.nydailynews.com/blogs/rosemary/docs/images/tomatoes.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="108" width="98" x="903" y="386"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.org/tree/" history_num="19" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_07.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="87" width="77" x="17" y="494"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.org/tree/" history_num="5" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_08.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="104" width="80" x="27" y="549"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="4" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_09.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="104" width="82" x="48" y="430"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.org/tree/" history_num="4" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_03.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="167" width="70" x="64" y="369"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.org/tree/" history_num="18" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_02.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="174" width="84" x="-10" y="365"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.oplin.org/tree/" history_num="17" latched="true">
+      <image_element bias="1.0" purl="http://www.oplin.org/tree/images/tree_04.GIF">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="188" width="82" x="436" y="-98"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/design/" history_num="22" latched="true">
+      <image_element alpha_radius="19" bias="1.0" has_transparency="true" href="http://www.flickr.com/photos/69752206@N00/2258922587/" min_alpha="6488064" purl="http://farm3.static.flickr.com/2340/2258922587_4226d84a28_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="IMG_8006C by chenton"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="67" x="1616" y="1359"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.tumbleweedhouses.com/houses.htm" history_num="178">
+      <image_element bias="1.0" href="http://www.tumbleweedhouses.com/houses_enesti.html" purl="http://www.tumbleweedhouses.com/slide/houseimages/enesti/enesti_tinythumb.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="50" width="50" x="630" y="881"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.tumbleweedhouses.com/houses.htm" history_num="179">
+      <image_element bias="1.0" href="http://www.tumbleweedhouses.com/houses_xshouse.html" purl="http://www.tumbleweedhouses.com/slide/houseimages/xshouse/xshouse_tinythumb.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="50" width="50" x="927" y="536"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.fast-growing-trees.com/index.htm" history_num="180">
+      <image_element alpha_radius="25" bias="1.0" has_transparency="true" href="http://www.fast-growing-trees.com/Arapaho.htm?link=bestsellerimage" min_alpha="5111808" purl="http://www.fast-growing-trees.com/images/Arapaho.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Arapaho Crape Myrtle"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="98" width="98" x="1176" y="777"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://mathworld.wolfram.com/SimplePolygon.html" history_num="181">
+      <image_element alpha_radius="15" bias="1.0" has_transparency="true" min_alpha="6356992" purl="http://mathworld.wolfram.com/images/eps-gif/PolygonTessellation_1000.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="PolygonTessellation"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="46" width="98" x="1176" y="629"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.usatoday.com/sports/default.htm" history_num="182">
+      <image_element alpha_radius="11" bias="1.0" has_transparency="true" href="http://www.usatoday.com/sports/college/mensbasketball/2008-02-10-march-to-madness_N.htm" min_alpha="196608" purl="http://i.usatoday.net/sports/_photos/2008/02/11/pitino-carousel.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="65" width="98" x="1029" y="851"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://dictionary.reference.com/browse/Tree%20house" history_num="184">
+      <text_element bias="1.0" face_index="1" font_color="a2000000" stroke_color="fa99cc00">
+        <text_chunk font_size="13" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="tree"/>
+          <cf_text_token delims_before=" " string="house"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="17" width="71" x="430" y="273"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://dictionary.reference.com/browse/Tree%20house" history_num="185">
+      <text_element bias="1.0" face_index="1" font_color="a2000000" stroke_color="fa99cc00">
+        <text_chunk font_size="13" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="noun"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="17" width="32" x="429" y="295"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://dictionary.reference.com/browse/Tree%20house" history_num="186">
+      <text_element bias="1.0" face_index="1" font_color="a2000000" stroke_color="fa99cc00">
+        <text_chunk font_size="13" non_stop_index="0.4" stroke_style="2">
+          <cf_text_token delims_before="" string="a"/>
+          <cf_text_token delims_before=" " string="small"/>
+          <cf_text_token delims_before=" " string="house,"/>
+          <cf_text_token delims_before=" " string="esp."/>
+          <cf_text_token delims_before=" " string="one"/>
+          <cf_text_token delims_before=" " string="for"/>
+          <cf_text_token delims_before=" " string="children"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="play"/>
+          <cf_text_token delims_before=" " string="in,"/>
+          <cf_text_token delims_before=" " string="built"/>
+          <cf_text_token delims_before=" " string="or"/>
+          <cf_text_token delims_before=" " string="placed"/>
+          <cf_text_token delims_before=" " string="up"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="branches"/>
+          <cf_text_token delims_before=" " string="of"/>
+          <cf_text_token delims_before=" " string="a"/>
+          <cf_text_token delims_before=" " string="tree."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="68" width="201" x="539" y="274"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="187">
+      <text_element bias="1.0" font_color="99cc00" participant_created="true" stroke_color="0">
+        <text_chunk face_index="2" font_size="59" font_style="1" non_stop_index="1.0" stroke_style="2">
+          <cf_text_token delims_before="" string="Tree"/>
+          <cf_text_token delims_before=" " string="House"/>
+          <cf_text_token delims_before=" " string="Architecture"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="134" width="311" x="428" y="133"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="191">
+      <text_element bias="1.0" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="12" non_stop_index="0.52" stroke_style="2">
+          <cf_text_token delims_before="" string="With"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="world's"/>
+          <cf_text_token delims_before=" " string="population"/>
+          <cf_text_token delims_before=" " string="steadily"/>
+          <cf_text_token delims_before=" " string="increasing,"/>
+          <cf_text_token delims_before=" " string="someday"/>
+          <cf_text_token delims_before=" " string="there"/>
+          <cf_text_token delims_before=" " string="will"/>
+          <cf_text_token delims_before=" " string="not"/>
+          <cf_text_token delims_before=" " string="be"/>
+          <cf_text_token delims_before=" " string="enough"/>
+          <cf_text_token delims_before=" " string="space"/>
+          <cf_text_token delims_before=" " string="for"/>
+          <cf_text_token delims_before=" " string="everyone"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="live."/>
+          <cf_text_token delims_before=" " string="I"/>
+          <cf_text_token delims_before=" " string="propose"/>
+          <cf_text_token delims_before=" " string="building"/>
+          <cf_text_token delims_before=" " string="eco-friendly,"/>
+          <cf_text_token delims_before=" " string="self-sustainable"/>
+          <cf_text_token delims_before=" " string="houses"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="trees."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="96" width="220" x="181" y="123"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="192">
+      <text_element bias="1.0" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="29" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="HOUSES"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="37" width="135" x="216" y="754"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="195">
+      <text_element bias="1.0" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="38" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="TREES"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="47" width="125" x="520" y="751"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="197">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="12" non_stop_index="0.3846154" stroke_style="2">
+          <cf_text_token delims_before="" string="The"/>
+          <cf_text_token delims_before=" " string="houses"/>
+          <cf_text_token delims_before=" " string="can"/>
+          <cf_text_token delims_before=" " string="be"/>
+          <cf_text_token delims_before=" " string="built"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="a"/>
+          <cf_text_token delims_before=" " string="variety"/>
+          <cf_text_token delims_before=" " string="of"/>
+          <cf_text_token delims_before=" " string="trees"/>
+          <cf_text_token delims_before=" " string="that"/>
+          <cf_text_token delims_before=" " string="can"/>
+          <cf_text_token delims_before=" " string="grow"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="food"/>
+          <cf_text_token delims_before=" " string="needed"/>
+          <cf_text_token delims_before=" " string="for"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="household."/>
+          <cf_text_token delims_before=" " string="Meat"/>
+          <cf_text_token delims_before=" " string="can"/>
+          <cf_text_token delims_before=" " string="come"/>
+          <cf_text_token delims_before=" " string="from"/>
+          <cf_text_token delims_before=" " string="squirrels"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="other"/>
+          <cf_text_token delims_before=" " string="tree-dwelling"/>
+          <cf_text_token delims_before=" " string="animals"/>
+          <cf_text_token delims_before=" " string="(as"/>
+          <cf_text_token delims_before=" " string="gross"/>
+          <cf_text_token delims_before=" " string="as"/>
+          <cf_text_token delims_before=" " string="that"/>
+          <cf_text_token delims_before=" " string="sounds)."/>
+          <cf_text_token delims_before=" " string="The"/>
+          <cf_text_token delims_before=" " string="goal"/>
+          <cf_text_token delims_before=" " string="is"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="be"/>
+          <cf_text_token delims_before=" " string="low-impact."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="80" width="307" x="796" y="128"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="198">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="38" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="FOOD"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="47" width="116" x="891" y="366"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="199">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="99cc00">
+        <text_chunk font_size="24" non_stop_index="1.0">
+          <cf_text_token delims_before="" string="PROPOSED"/>
+          <cf_text_token delims_before=" " string="PRODUCT"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="30" width="268" x="831" y="797"/>
+      </visual>
+    </surrogate>
+  </collage_element_set>
+</composition>

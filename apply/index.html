@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>apply [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab-16.png" type="image/png">
+
+<style type="text/css">
+.course
+{
+	font-size: 18px;
+	color: #000000;
+}
+h4
+{
+	color: #999999;
+	margin-top: 15px;
+	font-size: 15px;
+}
+.course:hover
+{
+	color: #0004DC;
+	text-decoration: none 
+}
+	
+</style>
+<script language="JavaScript">
+function goForm(theForm)
+{
+   var email	= theForm["email"].value + "";
+   var at	= email.indexOf("@");
+   var bad	= (at <= 0);
+   if (!bad)
+      bad	= email.substring(at).indexOf('.') == -1;
+   if (bad)
+      alert("I don't understand your email address.\nPlease fix it.");
+   else
+   {
+	 //get path value (including file name)
+	   var fileAndPath = theForm["resume"].value;
+
+	   //find the index of the last "\"
+	   var lastPathDelimiter = fileAndPath.lastIndexOf("\\");
+
+	   if (lastPathDelimiter == -1)
+	   {
+		   lastPathDelimiter = fileAndPath.lastIndexOf("/");
+	   }
+
+	   //get everything after the last "\"
+	   var fileNameOnly = fileAndPath.substring(lastPathDelimiter+1);
+	   theForm["filename"].value = fileNameOnly;
+      theForm.submit();
+   }
+}
+</script>
+
+</head>
+
+<body>
+<div class="rootcontainer" style="height: 1000px;">
+
+<div class="header">
+<img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title">
+apply
+</div>
+
+<div class="slogan">
+Connecting sensation, media, computing, networks, ontology,
+methodologies, cultures.
+</div>
+
+</div>
+
+<br clear="all"/>
+
+<div class="nav" style="height: 500px;">
+<a class="navlink" href="../index.html">home</a>
+<a class="navlink" href="../define.html">define</a>
+<a class="navlink" href="../research/index.html">research</a>
+<a class="navlink" href="../people/index.html">people</a>
+
+<a class="navlink" href="index.html">courses</a>
+</div>
+
+
+<div class="content">
+	
+<div class="intro" style="height: 1000px;">
+<h4>The interface ecology lab is hiring!</h4>
+<p>Fill out the form below, attach your resume and/or transcript, and we will contact you shortly. If you are not redirected to a thank you page, you probably failed the kaptcha and should resubmit the form.</p>
+<div style="height: 1000px;">
+ <form method="post" name="feedbackForm" action="http://ecology0.csdl.tamu.edu/jobApplication/mailservletCaptcha/" ENCTYPE="multipart/form-data">
+      <table cellspacing="15">
+      <tr>
+         <td>
+            <b>name</b>
+         </td>
+         <td>
+            <input type="text" size="25" name="firstname" value="">&nbsp;
+            <input type="text" size="25" name="lastname" value="">
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+            <b>email</b>
+         </td>
+         <td>
+            <input type="text" size="44" name="email" value="">
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <b>upload resume file</b>
+         </td>
+         <td>
+            <input type='file' name="resume">
+         </td>
+      </tr>
+
+      <tr valign="top">
+         <td>
+            <b>tell us a little about yourself</b>
+         </td>
+         <td>
+            <textarea name="comment"  wrap="physical"
+             rows="10" cols="55"></textarea>
+         </td>
+      </tr>
+      <tr valign="top">
+      	<td>
+      		<b>enter the characters<br/>from the image<br/>into the text box</b>
+      	</td>
+      	<td>
+   			<img src="http://ecology0.csdl.tamu.edu/jobApplication/kaptcha" /> <br><input type="text" name="kaptcha" value="" />
+		</td>
+       </tr>	   		
+   </table>
+   <center>
+    
+   	<br>
+   	<input type="hidden" name="filename" value="" />
+   		<input type="hidden" name="intention" value="Job Application" />
+   	<input type="hidden" name="browserLocation" value="http://ecologylab.net/apply" />
+      <input type="button"  onclick="goForm(this.form);" value="submit">
+   </center>
+   </form>
+   </div>
+
+
+
+</div>
+
+</div>
+</body> </html>

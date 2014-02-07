@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">java polymorphic</div>
+</div>
+
+<br clear="all" />
+
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink"  href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="navselected" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+
+</div>
+<!--
+<div class="tall_nav">
+
+<div class="block">
+  <a class="navlink" href="../../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../iiBAMSpecs.html">iiBAM guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink2" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="navselected" href="polyMorphicJava.html">- java polymorphic</a>
+  <a class="subnavlink2" href="javaToObjC.html" style="margin-top: 12px;">- obj c getting started</a>
+  <a class="subnavlink2" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a class="subnavlink2" href="monoMorphicCSharp.html" style="margin-top: 12px;">- c# mono-morphic</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+
+</div>
+-->
+
+<h5>Getting Started:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#annotated" >Java Annotated Classes</li>
+<li><a href="#translation" >Creating Translation Scope</li>
+<li><a href="#serialization">Serialization & De-serialization</</li>
+<li><a href="#gamedata">Game Data XML</</li>
+<li><a href="#end" >End notes</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+Here we give an example of using poly-morphic collections with s.im.pl serialization. In this example we will use GameData as our case 
+study. There are situations when building multi-player games the client and the server needs to communicated with each other by
+transferring game data from client to server and vice versa. We will show here how to annotate java class which has poly-morphic
+collections.
+</p>
+
+<p>
+To view this tutorial you will need to download the entire <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk">simplTutorials</a>, 
+<a class="checkthis" href="https://svn.ecologylab.net/simplTranslators/trunk">simplTranslators</a> and 
+<a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">ecologylabFundamental </a> projects.
+Access to the ecologylab fundamental project source is available 
+through anonymous SVN access (user: anonymous, password: anonymous).<br/><br/>The source for this tutorial is
+located under <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk/src/tutorials/">
+/trunk/simplTutorials/trunk/src/tutorials/</a></p>
+
+
+
+<a name="annotated"> </a>
+<h5>Java Annotated Classes</h5>
+<hr/>
+<p>
+Below is a set of annotated Java classes similar to the one presented in the Java "getting started" tutorial. The major difference is 
+that we are now working with polymorphic collections.
+</p>
+
+<p>Below is a code excerpt from game data which defines fields we want to translate as attributes of game data in an XML file.</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">GameData&lt;G&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Goal,&nbsp;T&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Threat&gt;&nbsp;</font><font color="#7f0055"><b>extends</b></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">timestamp;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**&nbsp;Number&nbsp;of&nbsp;game&nbsp;cycles&nbsp;remaining.&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">cycRem;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Indicates&nbsp;that,&nbsp;if&nbsp;the&nbsp;game&nbsp;is&nbsp;running,&nbsp;it&nbsp;should&nbsp;be&nbsp;paused;&nbsp;by&nbsp;default,&nbsp;the&nbsp;game&nbsp;starts&nbsp;this</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;way&nbsp;and&nbsp;a&nbsp;user&nbsp;needs&nbsp;to&nbsp;activate&nbsp;it.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">paused&nbsp;&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">loaded&nbsp;&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<br></br>
+
+<p>Below we annotate further GameData with some more attributes and a polymorphic collections of "threats". This array list can hold threat objects and subclasses of threats.</p> 
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Game&nbsp;state&nbsp;flag&nbsp;indicating&nbsp;that&nbsp;the&nbsp;game&nbsp;is&nbsp;currently&nbsp;executing&nbsp;play&nbsp;cycles.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">running&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**&nbsp;Game&nbsp;state&nbsp;flag&nbsp;indicating&nbsp;that&nbsp;the&nbsp;players&nbsp;have&nbsp;won&nbsp;the&nbsp;game.&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>boolean&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">won&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#7f0055"><b>false</b></font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**&nbsp;List&nbsp;of&nbsp;Threat&nbsp;objects.&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_classes</font><font color="#000000">(</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{&nbsp;</font><font color="#000000">Threat.class,&nbsp;SingleSeekerThreat.class,&nbsp;OrbitingThreat.class,&nbsp;RepellableThreat.class,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PatrollingThreat.</font><font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">})</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_collection</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#000000">ArrayList&lt;T&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;threats&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ArrayList&lt;T&gt;</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>protected&nbsp;</b></font><font color="#7f0055"><b>double&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">score&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;</font><font color="#990000">0</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**&nbsp;No-argument&nbsp;constructor,&nbsp;required&nbsp;for&nbsp;ElementState.&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">GameData</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<br></br>
+<p>Here we also annotate a threat class which itself does not hold any attributes. However, some attributes are derived from the "Targetter" class.
+We do not present the "Targetter" class here for simplicity.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#646464">@simpl_inherit</font><br />
+<font color="#646464">@xml_tag</font><font color="#000000">(</font><font color="#2a00ff">&#34;t&#34;</font><font color="#000000">)</font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Threat&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Targetter</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;No-argument&nbsp;constructor,&nbsp;required&nbsp;for&nbsp;ElementState.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Threat</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>super</b></font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<br></br>
+<p>Here we derive the "Threat" class to "OrbitingThreat" class. It does not define any new new attributes but it defines a new tag "ot" as a class attribute.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#646464">@simpl_inherit</font><br />
+<font color="#646464">@xml_tag</font><font color="#000000">(</font><font color="#2a00ff">&#34;ot&#34;</font><font color="#000000">)</font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">OrbitingThreat&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Threat</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f5fbf">/**&nbsp;Constructor&nbsp;stub&nbsp;for&nbsp;XML&nbsp;translation.&nbsp;*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">OrbitingThreat</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+
+
+
+<a name="translation"> </a>
+<h5>Creating Translation Scope</h5>
+<hr/>
+<p>Here we show how to create a translation scope by providing the translation scope class with the set of classes the xml file will bind to.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Creating&nbsp;Translation&nbsp;Scope&nbsp;of&nbsp;all&nbsp;the&nbsp;classes&nbsp;used&nbsp;by&nbsp;game&nbsp;data&nbsp;object</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;static&nbsp;</b></font><font color="#000000">TranslationScope&nbsp;get</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;tScope&nbsp;=&nbsp;TranslationScope.get</font><font color="#000000">(</font><font color="#2a00ff">&#34;gamedata&#34;</font><font color="#000000">,&nbsp;GameData.class,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Threat.class,&nbsp;SingleSeekerThreat.class,&nbsp;OrbitingThreat.class,&nbsp;RepellableThreat.class,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">PatrollingThreat.class,&nbsp;SeekerAvatar.class,&nbsp;LocationAwareSeekerAvatar.class,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Targetter.class,&nbsp;Mover.class,&nbsp;Entity.class,&nbsp;ColState.</font><font color="#7f0055"><b>class</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">tScope;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<p>In the code below we de-serialize a sample XML file containing game data. We call the static function on ElementState class, "translateFromXML" and provide the file 
+path of the sample file.</p>
+<p>We again serialize the GameData object and verify the produced XML file is the same as we supplied as input.</p>
+<a name="serialization"> </a>
+<h5>Serialization & Deserialization</h5>
+<hr/>
+
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Get&nbsp;translation&nbsp;scope</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;tScope&nbsp;=&nbsp;get</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String fileData = <i>readFileAsString</i><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">&#34;src/tutorials/polymorphic/GameData.xml&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Translating&nbsp;back&nbsp;from&nbsp;sample&nbsp;gameData&nbsp;file</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">GameData&lt;?&gt;&nbsp;gd&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">GameData&lt;?&gt;</font><font color="#000000">)&nbsp;</font><font color="#000000">tScope.deserializeCharSequence(fileData)<font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Translating&nbsp;the&nbsp;game&nbsp;data&nbsp;back&nbsp;to&nbsp;XML&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gd.serialize</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">&#34;ecologylab/tutorials/polymorphic/output.xml&#34;</font><font color="#000000">))</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//Again&nbsp;to&nbsp;console</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gd.serialize</font><font color="#000000">(</font><font color="#000000">System.out</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<a name="gamedata"> </a>
+<h5>Game Data XML File</h5>
+<hr/>
+<p>Below is the sample XML file we have used as our GameData. We can see that there are three different types of threats. Which are subclasses of "Threat" and belongs to the same collection</p>
+<div class="highlight"><pre><span style="color: #008000; font-weight: bold">&lt;game_data</span> <span style="color: #7D9029">timestamp=</span><span style="color: #BA2121">&quot;1234399958508&quot;</span> <span style="color: #7D9029">cyc_rem=</span><span style="color: #BA2121">&quot;8078&quot;</span> <span style="color: #7D9029">loaded=</span><span style="color: #BA2121">&quot;true&quot;</span>
+	<span style="color: #7D9029">running=</span><span style="color: #BA2121">&quot;true&quot;</span> <span style="color: #7D9029">score=</span><span style="color: #BA2121">&quot;-28.066665835678577&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;threats&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t12&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;12&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-1&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.09&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-2.88&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.26&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;171.46&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;904.72&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/nt&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t13&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;13&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.4&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.92&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.24&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.38&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;925.46&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;114.26&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/ot&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t14&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;14&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.82&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.58&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.78&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.58&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;88.1&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;542.74&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/ot&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t15&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;15&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.94&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.35&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;1.87&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.62&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;530.98&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;549.86&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/ot&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t16&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;16&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;0.98&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;0.21&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;2.02&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;0.46&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;580.81&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;702.55&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/pt&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t17&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;17&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-0.99&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.1&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-2.37&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.24&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;122.95&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;900.95&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/pt&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-5.300337003285493&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t18&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;18&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-0.81&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.59&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-1.22&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.77&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;334.58&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;734.4&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/pt&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">t_val=</span><span style="color: #BA2121">&quot;-1.0&quot;</span> <span style="color: #7D9029">id=</span><span style="color: #BA2121">&quot;_t19&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;19&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;dir</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-1&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.04&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;vel</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;-2.43&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;-0.14&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;pos</span> <span style="color: #7D9029">x=</span><span style="color: #BA2121">&quot;863.92&quot;</span> <span style="color: #7D9029">y=</span><span style="color: #BA2121">&quot;750.44&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/pt&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/threats&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/game_data&gt;</span>
+</pre></div>
+
+
+<a name="end"> </a>
+<h5>End notes</h5>
+<hr/>
+<p>So that's it! We have successfully serialized and deserialized polymorphic collections in java.</p>
+
+<br></br>
+<br></br>
+<br></br>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

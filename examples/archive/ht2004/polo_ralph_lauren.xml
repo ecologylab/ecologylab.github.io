@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="974" width="640" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="askmen.com" strokeHue="0.6888889" fontIndex="4"/>
+    <site domain="asos.com" strokeHue="0.25"/>
+    <site domain="ebay.com" strokeHue="0.8666667"/>
+    <site domain="uspolo.org" strokeHue="0.0"/>
+    <site domain="fragrancewholesale.com" strokeHue="0.33333334" fontIndex="4"/>
+    <site domain="framesdirect.com" strokeHue="0.16666667" fontIndex="4"/>
+    <site domain="amazon.com" strokeHue="0.33333334"/>
+    <site domain="about.com" strokeHue="0.125"/>
+    <site domain="diamond-jewelry-and-more.com" strokeHue="0.33333334"/>
+    <site domain="artschool-aegean.com" strokeHue="0.5555556" fontIndex="4"/>
+    <site domain="polo.com" strokeHue="0.41666666" fontIndex="2"/>
+    <site domain="zappos.com" strokeHue="0.6888889" fontIndex="1"/>
+    <site domain="linuxiskolan.org" strokeHue="0.083333336" fontIndex="2"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.polo.com/"/>
+    <traversable urlString="http://www.marcopolo-education.org/"/>
+    <traversable urlString="http://www.marcopolo-education.org"/>
+    <traversable urlString="http://www.polo.com/shop"/>
+    <traversable urlString="http://www.uspolo.org/"/>
+    <traversable urlString="http://www.amazon.com/gp"/>
+    <traversable urlString="http://www.polonews.com/"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248"/>
+    <traversable urlString="http://www.h2opolo.com/"/>
+    <traversable urlString="http://www.askmen.com/men/business_politics"/>
+    <traversable urlString="http://www.polo-motorrad.de/"/>
+    <traversable urlString="http://www.imdb.com/name/nm0491073/"/>
+    <traversable urlString="http://www.usawaterpolo.com/"/>
+    <traversable urlString="http://www.silk-road.com/artl"/>
+    <traversable urlString="http://www.korcula.net/mpolo/"/>
+    <traversable urlString="http://www.cosmogirl.com/magazine/spc"/>
+    <traversable urlString="http://www.framesdirect.com"/>
+    <traversable urlString="http://www.bikepolo.com"/>
+    <traversable urlString="http://www.fragrancewholesale.com"/>
+    <traversable urlString="http://www.hnh.com/"/>
+    <traversable urlString="http://www.polotowers.com/"/>
+    <traversable urlString="http://www.zappos.com/n/br/b"/>
+    <traversable urlString="http://www.asos.com"/>
+    <traversable urlString="http://www.fippolo.com/"/>
+    <traversable urlString="http://www.hpa-polo.co.uk/"/>
+    <traversable urlString="http://host.businessweek.com/businessweek"/>
+    <traversable urlString="http://interiordec.about.com/cs/articl2/a"/>
+    <traversable urlString="http://store.nordstrom.com/category"/>
+    <traversable urlString="http://www.polo.com/home"/>
+    <traversable urlString="http://www.marcopolosearch.org/MPSearch"/>
+    <traversable urlString="http://www.us-polo.org"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248/002-2059324-1102457"/>
+    <traversable urlString="http://www.amazon.com/gp/browse.html/002-2059324-1102457"/>
+    <traversable urlString="http://www.naxos.com/"/>
+    <traversable urlString="http://www.shoppinghere.net"/>
+    <traversable urlString="http://www.diamond-jewelry-and-more.com/directory/Polo_Ralph_Lauren_Shoes"/>
+    <traversable urlString="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org"/>
+    <traversable urlString="http://search.ebay.com/ralph-lauren_Shirts_W0QQsacategoryZ15680QQsosortorderZ2QQsosortpropertyZ3"/>
+    <traversable urlString="http://shoes.in-the-market.com"/>
+    <traversable urlString="http://www.shoes.com"/>
+    <traversable urlString="http://www.whska.com/r1-Ralph_Lauren-2"/>
+    <traversable urlString="http://www.whska.com/r1-Ralph_Lauren-3"/>
+    <traversable urlString="http://lauren-by-ralph-lauren-shoes.01shoes.com/links"/>
+    <traversable urlString="http://www.artschool-aegean.com/s2-Lauren-2"/>
+    <traversable urlString="http://corporategiftshopping.com/de"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="polo" intensity="3"/>
+    <term stemmed="ralph" intensity="6"/>
+    <term stemmed="lauren" intensity="6"/>
+    <term stemmed="free" intensity="3"/>
+    <term stemmed="ship" intensity="3"/>
+    <term stemmed="br" intensity="3"/>
+    <term stemmed="return" intensity="3"/>
+    <term stemmed="" intensity="3"/>
+  </term_set>
+  <container_set>
+    <container purl="http://www.us-polo.org" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.diamond-jewelry-and-more.com/directory/Polo_Ralph_Lauren_Shoes/page2.html" generation="2" bias="5.2631624E9">
+      <participant/>
+    </container>
+    <container purl="http://www.asos.com/product.asp?sku=AMCKN4003" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.zappos.com/n/br/b/531.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://interiordec.about.com/cs/articl2/a/pr_hdcolor_2.htm" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.askmen.com/men/business_politics/30c_ralph_lauren.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.fragrancewholesale.com/polcolformen2.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://search.ebay.com/ralph-lauren_Shirts_W0QQsacategoryZ15680QQsosortorderZ2QQsosortpropertyZ3" generation="2" bias="5.2631624E9">
+      <participant/>
+    </container>
+    <container purl="http://www.polo.com/home/index.jsp" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" generation="2" bias="5.2631624E9">
+      <participant/>
+    </container>
+    <container purl="http://www.askmen.com/men/business_politics/30_ralph_lauren.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.zappos.com/n/br/b/358.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.artschool-aegean.com/s2-Lauren-2/Lauren_by_Ralph_Lauren_Sela.html" generation="2" bias="5.2631624E9">
+      <participant/>
+    </container>
+    <container purl="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248/002-2059324-1102457?v=glance" generation="2">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://www.fragrancewholesale.com/polcolformen2.html" historyNum="17">
+      <text_element faceIndex="4" alpha="166" r="107" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5">
+          <text_token string="Polo"/>
+          <text_token string="Cologne"/>
+          <text_token string="for"/>
+          <text_token string="Men"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="2"/>
+          <text_token string="oz"/>
+          <text_token string="EDT"/>
+          <text_token string="Splash"/>
+          <text_token string="Polo"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Cologne."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="176" width="302" height="65"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.askmen.com/men/business_politics/30_ralph_lauren.html" historyNum="15">
+      <image_element purl="http://www.askmen.com/men/articlepics/v4/no/4.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="120" y="132" width="33" height="27"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fragrancewholesale.com/polcolformen2.html" historyNum="14">
+      <text_element faceIndex="4" alpha="158" r="107" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+          <text_token string="Polo"/>
+          <text_token string="for"/>
+          <text_token string="Men"/>
+          <text_token string="was"/>
+          <text_token string="created"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="in"/>
+          <text_token string="1978."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="88" width="371" height="23"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" historyNum="23">
+      <text_element faceIndex="4" alpha="188" r="191" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.55">
+          <text_token string="From"/>
+          <text_token string="the"/>
+          <text_token string="polo"/>
+          <text_token string="tie"/>
+          <text_token string="to"/>
+          <text_token string="lifestyle"/>
+          <text_token string="brands,"/>
+          <text_token string="the"/>
+          <text_token string="signature"/>
+          <text_token string="of"/>
+          <text_token string="polo"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="is"/>
+          <text_token string="the"/>
+          <text_token string="world"/>
+          <text_token string="of"/>
+          <text_token string="living"/>
+          <text_token string="it"/>
+          <text_token string="creates."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="88" width="375" height="69"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/531.html" historyNum="20">
+      <text_element faceIndex="1" alpha="170" r="173" g="169" b="204">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.zappos.com/n/sr/b/531.html" nonStopIndex="0.85714287">
+          <text_token string="Read"/>
+          <text_token string="Recent"/>
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Handbags"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="360" y="88" width="159" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" historyNum="10">
+      <text_element faceIndex="4" alpha="153" r="191" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.framesdirect.com/framesfc/Ralph_Lauren_Collection-nhlf-slb-l.html">
+          <text_token string="View"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Sunglasses"/>
+          <text_token string="Here"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="88" width="292" height="30"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="24">
+      <text_element faceIndex="1" alpha="199" r="171" g="164" b="216">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.4117647">
+          <text_token string="Would"/>
+          <text_token string="you"/>
+          <text_token string="like"/>
+          <text_token string="to"/>
+          <text_token string="be"/>
+          <text_token string="notified"/>
+          <text_token string="when"/>
+          <text_token string="we"/>
+          <text_token string="add"/>
+          <text_token string="new"/>
+          <text_token string="styles"/>
+          <text_token string="of"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="?"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="116" y="399" width="332" height="75"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" historyNum="16">
+      <text_element faceIndex="4" alpha="169" r="191" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="FEATURES" bold="true"/>
+          <text_token string="BENEFITS" bold="true"/>
+          <text_token string="OF" bold="true"/>
+          <text_token string="RALPH" bold="true"/>
+          <text_token string="LAUREN" bold="true"/>
+          <text_token string="EYEWEAR" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="88" width="243" height="70"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/531.html" historyNum="19">
+      <text_element faceIndex="1" alpha="170" r="173" g="169" b="204">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8333333">
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Handbags"/>
+          <text_token string="collection:"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="270" y="132" width="281" height="17"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="21">
+      <text_element faceIndex="1" alpha="188" r="171" g="164" b="216">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.zappos.com/n/br/b/531.html" nonStopIndex="0.85714287">
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="Handbag" bold="true"/>
+          <text_token string="Collection" bold="true"/>
+          <text_token string="42" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="88" width="145" height="60"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" historyNum="22">
+      <text_element faceIndex="4" alpha="188" r="191" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="1-800-248-9427" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="Sunglasses" bold="true"/>
+          <text_token string="and" bold="true"/>
+          <text_token string="Lens" bold="true"/>
+          <text_token string="Options" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="176" width="283" height="82"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/531.html" historyNum="18">
+      <text_element faceIndex="1" alpha="163" r="173" g="169" b="204">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.zappos.com/n/es/d/722067968.html" nonStopIndex="0.8333333">
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="Handbags" bold="true"/>
+          <text_token string="42" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="88" width="132" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="26">
+      <text_element faceIndex="1" alpha="197" r="171" g="164" b="216" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8333333">
+          <text_token string="Women's" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="Shoes" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="220" width="426" height="33"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="25">
+      <text_element faceIndex="1" alpha="197" r="171" g="164" b="216" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8">
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="collection:"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="572" width="355" height="32"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="27">
+      <text_element faceIndex="1" alpha="200" r="171" g="164" b="216" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.zappos.com/n/p/p/7134805.html" nonStopIndex="0.75">
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="264" width="271" height="34"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" historyNum="29">
+      <text_element faceIndex="2" alpha="208" r="191" g="149" b="107" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Wednesday"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="210" y="352" width="351" height="32"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" historyNum="30">
+      <text_element faceIndex="2" alpha="210" r="191" g="149" b="107" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" nonStopIndex="0.6">
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="by" bold="true"/>
+          <text_token string="Ralph" bold="true"/>
+          <text_token string="Lauren" bold="true"/>
+          <text_token string="Wednesday" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="440" width="175" height="102"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://lauren-by-ralph-lauren-wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" historyNum="31">
+      <text_element faceIndex="2" alpha="218" r="191" g="149" b="107" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://Lauren-by-Ralph-Lauren-Wednesday.linuxiskolan.org/Lauren-by-Ralph-Lauren-Wednesday.html" nonStopIndex="0.6">
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Wednesday"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="330" y="132" width="156" height="98"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diamond-jewelry-and-more.com/directory/Polo_Ralph_Lauren_Shoes/page2.html" historyNum="32">
+      <text_element alpha="228" r="107" g="191" b="107" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Polo"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Shoes"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="210" y="220" width="131" height="88"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248/002-2059324-1102457?v=glance" historyNum="33">
+      <image_element hasTransparency="true" minAlpha="524288" alphaRadius="7" purl="http://g-images.amazon.com/images/G/01/goldbox/gb_sparkle_033103.gif" href="http://www.amazon.com/exec/obidos/tg/stores/static/-/goldbox/index/ref=xs_gb_nav_cls/002-2059324-1102457/">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="210" y="88" width="80" height="45"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.us-polo.org" historyNum="28">
+      <image_element hasTransparency="true" minAlpha="589824" alphaRadius="19" purl="http://www.us-polo.org/sponsors/playersedition.jpg" href="http://www.poloplayersedition.com">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="146" y="65" width="120" height="60"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.askmen.com/men/business_politics/30c_ralph_lauren.html" historyNum="13">
+      <image_element purl="http://www.askmen.com/men/business_politics/pictures/ralph_lauren_150g.JPG">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="50" y="323" width="150" height="340"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="12">
+      <image_element hasTransparency="true" minAlpha="6356992" alphaRadius="45" purl="http://www.zappos.com/images/805/7134805/75881-t.jpg" href="http://www.zappos.com/n/p/p/7134805.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="474" y="292" width="150" height="112"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.polo.com/home/index.jsp" historyNum="11">
+      <image_element hasTransparency="true" alphaRadius="90" purl="http://POLO.imageg.net/graphics/storeman/polo/polo_home_080304_new_12.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="289" y="447" width="293" height="223"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.polo.com/home/index.jsp" historyNum="9">
+      <image_element hasTransparency="true" minAlpha="655360" alphaRadius="62" purl="http://POLO.imageg.net/graphics/storeman/polo/polo_home_080304_new_04.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="331" y="159" width="293" height="144"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248/002-2059324-1102457?v=glance" historyNum="5">
+      <image_element hasTransparency="true" minAlpha="5373952" alphaRadius="29" purl="http://images.amazon.com/images/P/0847825248.01._PE32_PIdp-schmoo2,TopRight,7,-26_SCMZZZZZZZ_.jpg" href="http://www.amazon.com/gp/reader/0847825248/ref=sib_dp_pt/002-2059324-1102457/#reader-link">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="474" y="542" width="150" height="173"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://interiordec.about.com/cs/articl2/a/pr_hdcolor_2.htm" historyNum="8">
+      <image_element hasTransparency="true" minAlpha="1835008" alphaRadius="56" purl="http://interiordec.about.com/library/graphics/ralph1ax.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="292" y="692" width="150" height="225"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.zappos.com/n/br/b/358.html" historyNum="7">
+      <image_element hasTransparency="true" minAlpha="2883584" alphaRadius="80" purl="http://www.zappos.com/boutiques/lauren/images/lauren_main052004.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="444" y="714" width="180" height="200"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.asos.com/product.asp?sku=AMCKN4003" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="5898240" alphaRadius="33" purl="http://www.asos.com/images/prods/AACWS1005/Image5XL.GIF" href="http://www.asos.com/product.asp?sku=AACWS1005">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="218" y="821" width="85" height="85"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.polo.com/home/index.jsp" historyNum="4">
+      <image_element hasTransparency="true" minAlpha="2031616" alphaRadius="42" purl="http://POLO.imageg.net/graphics/storeman/polo/polo_home_080304_new_03.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="145" y="31" width="270" height="103"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.framesdirect.com/Ralph-Lauren-sunglasses.asp" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="3932160" alphaRadius="93" purl="http://www.framesdirect.com/Lewis's%20Images/designer1.jpg" href="http://www.framesdirect.com/framesfc/Ralph_Lauren_Collection-nhlf-slb-l.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="655" width="210" height="260"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.polo.com/home/index.jsp" historyNum="2">
+      <image_element hasTransparency="true" minAlpha="3145728" alphaRadius="47" purl="http://POLO.imageg.net/graphics/storeman/polo/polo_home_080304_new_15.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="387" y="31" width="237" height="99"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.askmen.com/men/business_politics/30_ralph_lauren.html" historyNum="1">
+      <image_element hasTransparency="true" minAlpha="2424832" alphaRadius="61" purl="http://www.askmen.com/men/business_politics/pictures/ralph_lauren_150e.JPG">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="29" width="150" height="313"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.diamond-jewelry-and-more.com/directory/Polo_Ralph_Lauren_Shoes/page2.html" historyNum="34">
+      <text_element alpha="240" r="107" g="191" b="107" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Polo"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Shoes"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="210" y="352" width="266" height="26"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.us-polo.org" historyNum="35">
+      <image_element hasTransparency="true" minAlpha="3276800" alphaRadius="21" purl="http://www.us-polo.org/img/topright2.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="360" y="264" width="172" height="81"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.amazon.com/exec/obidos/tg/detail/-/0847825248/002-2059324-1102457?v=glance" historyNum="36">
+      <image_element hasTransparency="true" minAlpha="2359296" alphaRadius="13" purl="http://images.amazon.com/images/P/0847825248.01.THUMBZZZ.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="90" y="132" width="52" height="60"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://search.ebay.com/ralph-lauren_Shirts_W0QQsacategoryZ15680QQsosortorderZ2QQsosortpropertyZ3" historyNum="37">
+      <image_element hasTransparency="true" minAlpha="327680" alphaRadius="29" purl="http://thumbs.ebaystatic.com/pict/39241110806464.jpg" href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;amp;category=57990&amp;amp;item=3924111080&amp;amp;rd=1" bias="5.2631624E9">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="270" y="88" width="64" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.artschool-aegean.com/s2-Lauren-2/Lauren_by_Ralph_Lauren_Sela.html" historyNum="38">
+      <text_element faceIndex="4" alpha="227" r="107" g="163" b="191" bias="5.2631624E9">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.artschool-aegean.com/s2-Lauren-2/Lauren_by_Ralph_Lauren_Leanne.html" nonStopIndex="0.8">
+          <text_token string="Lauren"/>
+          <text_token string="by"/>
+          <text_token string="Ralph"/>
+          <text_token string="Lauren"/>
+          <text_token string="Leanne"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="210" y="528" width="170" height="97"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

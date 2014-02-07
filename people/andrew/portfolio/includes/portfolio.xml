@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<portfolio>
+	<content>
+		<item title="Choreographic Buttons" screen="cb.jpg">
+			  <!--
+			<p>
+				I lead a team in the design and construction of an interactive art installation called 
+				<a href="javascript:popUp('http://ecologylab.cs.tamu.edu/cb/', 'Choreographic Buttons', 995, 700);">Choreographic Buttons</a>. 
+				The installation introduces a new type of affordance, the choreographic button, which integrates 
+				movement, gesture recognition, and interactive visual feedback. As leader of the team, I was involved 
+				in every aspect of designing and building the installation. My responsibilities included 
+				developing the motion tracking algorithm for gesture recognition, curating a collection of images,
+				designing the graphical affordances, managing the other team members, and tying all the pieces together. Choreographic Buttons
+				has received publications in both ACM Multimedia and the Leonardo Electronic Almanac.
+			</p>
+			-->
+		</item>
+                <item title="In-Context Slider" screen="ics.jpg">
+		        <!--
+			        <p>The In-Context Slider is my thesis project, <a href="javascript:popUp('../awebb-thesis.pdf', '', 995, 700);"><i>A Transitory 
+				Interface Component for In-Context Visualization and Adjustment of a Value</i></a>. The In-Context Slider is a new transitory 
+				slider interface component that seeks to reduce demand on user attention and cognitive effort by providing an interface that 
+				appears when needed near the point of focus. The In-Context Slider was implemented in 
+				<a href="http://ecologylab.cs.tamu.edu/combinFormation/" target="_blank">
+				combinFormation</a> (cF) as a mechanism for expressing interest. combinFormation is a creativity support tool that integrates 
+				processes of searching, browsing, collecting, mixing, organizing, and thinking about information. The prior interest 
+				expression interface in cF was a modal toolbar interface that required the user to constantly switch back and forth
+				between an element being worked on the toolbar interface. The In-Context Slider provides the user with an slider at the point of 
+				focus, so the user can more easily maintain focus on the task at hand.</p>
+				
+				<p>The current version of combinFormation uses the In-Context Slider and can be found <a href="http://ecologylab.cs.tamu.edu/combinFormation">here</a>.
+	
+
+			-->
+		</item>
+		<item title="Structures of Interactive Information" screen="cpsc489.png">
+			<!--
+			<p>
+			  I developed this website for a course called <a href="http://ecologylab.cs.tamu.edu/courses/sii/" target="_blank">
+				Structures of Interactive Information</a> that I took as an 
+				undergraduate student in Spring 2004 semester at Texas A&amp;M University.  The course covered among other things
+				design issues involving structures of information such as affordances, layering, and mappings.   
+			</p>
+			<p>
+				We conducted two major projects for the course.  I have included them as well in my portfolio.
+			</p>
+			-->
+		</item>
+		<item title="EssaySketch" screen="essay.png">
+			<!--
+			<p>
+			  The EssaySketch project is an assignment I developed for my Structures of Interactive Information course.  What 
+				exactly is an EssaySketch?  Put simply, it is a combination of an essay and a sketch.  The material for the
+				essay portion was to be derived from several nodes.  Each node represented an author and his ideas pertaining to 
+				structures of information.  Some of the authors are Jorge Luis Borges, Marcel Duchamp, Ted Nelson, Johannes Itten,
+				and Vanevar Bush.  The sketch portion represented the actual design metaphor for relating the nodes.
+			</p>
+			<p>
+				My concept for this assignment was based off the board game Scrabble.  It was possible to use all the authors' names
+				if starting with the base word of &quot;conceptual&quot; for the conceptual nodes and &quot;visual&quot; for the visual
+				nodes.  I had original planned for the project to be more like a real game of scrabble with points scored and everything.
+				The project ended up not being as complex as planned due to time constraints and the realization that something simpler 
+				work just as well.
+			</p>
+			-->
+		</item>
+		<item title="Dynamic Ontology Map" screen="final.jpg">
+			<!--
+			<p>
+			The Dynamic Ontology Map is another assignment I created for my Structures of Interactive Information course.  The 
+			project involved developing a new ontology for an existing collection.  During the semester, I had created a 
+			<a href="sii/journal/week01.html" target="_blank">journal</a> 
+			(another assignment for the course) which acted as my collection.  My love for hexagons led me to derive six attributes 
+			to form my ontology.  Each attribute represented an axis from the center of the hexagon to one of the six vertices on the
+			perimeter. 
+			</p>
+			-->
+		</item>
+		
+		<item title="Personal Website" screen="website.jpg">
+			<!--
+			<p>
+				This is my personal website.  It contains information about myself such as my hobbies, a resume, and my portfolio.  Within 
+				the site, the image at the top is chosen at random and comes from a selection of photographs I took in a photography course.  As well, 
+				I have created several icons to provide references to other pages on the site.  For example if I refer to my resume 
+				anywhere in the site, the resume icon will appear at this point of reference.
+			</p>
+			-->
+		</item>
+		<item title="Artwork" screen="">
+			<!--
+				<p>
+					In this section is a collection of all my non-website related work (paintings, drawings, etc).
+				</p>
+				<a href="#"><h2>Paintings & Drawings</h2></a>
+				<div class="images" style="float:right;">
+		  		<a href="javascript:popUp('images/paintings/medium/blueTatooMan.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/blueTatooMan.jpg"/></a>
+		  		<a href="javascript:popUp('images/paintings/medium/monoChairGuy.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/paintings/thumbs/monoChairGuy.jpg"/></a>
+		  		<a href="javascript:popUp('images/paintings/medium/manInFire.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/paintings/thumbs/manInFire.jpg"/></a>
+		  		<a href="javascript:popUp('images/paintings/medium/nightSkeletons.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/nightSkeletons.jpg"/></a>
+		  		<a href="javascript:popUp('images/paintings/medium/landscape.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/landscape.jpg"/></a>
+		  		<a href="javascript:popUp('images/drawings/medium/artistStudio.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/artistStudio.jpg"/></a>
+		  		<a href="javascript:popUp('images/drawings/medium/inkWoman.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/inkWoman.jpg"/></a>
+					<a href="javascript:popUp('images/drawings/medium/theGrudge.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/theGrudge.jpg"/></a>
+					<a href="javascript:popUp('images/drawings/medium/clown.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/clown.jpg"/></a>
+		 		</div>
+	
+				
+			</div>
+			-->
+		</item>
+		<item title="Paintings" screen="">
+		  <!--
+			<div class="images">
+		  <a href="javascript:popUp('images/paintings/medium/blueTatooMan.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/blueTatooMan.jpg" onMouseOver="showPreview('tatoo');" onMouseOut="hidePreview();"/></a>
+		  <a href="javascript:popUp('images/paintings/medium/monoChairGuy.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/paintings/thumbs/monoChairGuy.jpg" onMouseOver="showPreview('chair');" onMouseOut="hidePreview();"/></a>
+		  <a href="javascript:popUp('images/paintings/medium/manInFire.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/paintings/thumbs/manInFire.jpg" onMouseOver="showPreview('fire');" onMouseOut="hidePreview();"/></a>
+		  <a href="javascript:popUp('images/paintings/medium/nightSkeletons.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/nightSkeletons.jpg" onMouseOver="showPreview('skeleton');" onMouseOut="hidePreview();"/></a>
+		  <a href="javascript:popUp('images/paintings/medium/landscape.jpg', 'Vision', 1000, 803);"><img class="thumb" src="images/paintings/thumbs/landscape.jpg" onMouseOver="showPreview('landscape');" onMouseOut="hidePreview();"/></a>
+		  </div>
+			-->
+		</item>
+		<item title="Drawings" screen="">
+			<!--
+			<div class="images">
+					<a href="javascript:popUp('images/drawings/medium/artistStudio.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/artistStudio.jpg" onMouseOver="showPreview('studio');" onMouseOut="hidePreview();"/></a>
+		  		<a href="javascript:popUp('images/drawings/medium/inkWoman.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/inkWoman.jpg" onMouseOver="showPreview('woman');" onMouseOut="hidePreview();"/></a>
+					<a href="javascript:popUp('images/drawings/medium/theGrudge.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/theGrudge.jpg" onMouseOver="showPreview('grudge');" onMouseOut="hidePreview();"/></a>
+					<a href="javascript:popUp('images/drawings/medium/clown.jpg', 'Vision', 803, 1000);"><img class="thumb" src="images/drawings/thumbs/clown.jpg" onMouseOver="showPreview('clown');" onMouseOut="hidePreview();"/></a>
+			</div>
+			-->
+		</item>
+		
+	</content>
+	<images>
+		<painting id="tatoo" src="blueTatooMan.jpg" title="Vision" medium="Oils on Canvas"/>
+		<painting id="chair" src="monoChairGuy.jpg" title="Untitled" medium="Acrylics on Canvas"/>
+		<painting id="fire" src="manInFire.jpg" title="About a Burning Fire" medium="Oils on Canvas"/>
+		<painting id="skeleton" src="nightSkeletons.jpg" title="Sacrifice" medium="Oils on Canvas"/>
+		<painting id="landscape" src="landscape.jpg" title="Why is the water purple?" medium="Oils on Canvas"/>
+		<drawing id="studio" src="artistStudio.jpg" title="The Artist's Studio" medium="Conte on Black paper"/>
+		<drawing id="woman" src="inkWoman.jpg" title="The Artist's Studio Inspiration" medium="Ink on White paper"/>
+		<drawing id="grudge" src="theGrudge.jpg" title="The Grudge" medium="Ink on Bristol"/>
+		<drawing id="clown" src="clown.jpg" title="Clowning Around" medium="Conte on Black paper"/>
+	
+		
+	</images>
+</portfolio>

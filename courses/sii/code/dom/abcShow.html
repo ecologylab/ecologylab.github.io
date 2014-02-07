@@ -1,0 +1,975 @@
+<html>
+<head>
+<TITLE>ABCNEWS.com: Home</TITLE>
+<base href="http://abcnews.go.com">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script src="http://abcnews.go.com/jscript/mainFP2.js" language="javascript"></script>
+<script src="http://abcnews.go.com/jscript/realone_detect.js" language="javascript"></script>
+<script src="http://abcnews.go.com/jscript/flashdetector.js" language="javascript"></script>
+<script src="http://abcnews.go.com/jscript/validate_getquote.js" language="javascript"></script>
+<SCRIPT LANGUAGE='JavaScript'>
+<!--
+
+var BROWSER_NAME = navigator.appName;
+var plat = navigator.appVersion;
+
+if (BROWSER_NAME && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("4.7")>=0 && plat.indexOf("Win") != -1) {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net_win.css" type="text/css">');
+} else
+
+if (BROWSER_NAME && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("4.7")>=0 && plat.indexOf("Mac") != -1)  {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net_mac.css" type="text/css">');
+} else
+
+if (BROWSER_NAME && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("5.")>=0 && plat.indexOf("Win") != -1) {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net6_win.css" type="text/css">');
+} else
+
+if (BROWSER_NAME && navigator.appName.indexOf("Netscape")>=0 && navigator.appVersion.indexOf("5.")>=0 && plat.indexOf("Mac") != -1)  {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net6_mac.css" type="text/css">');
+} else
+
+if (BROWSER_NAME == "Netscape" && plat.indexOf("Win") != -1) {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net_win.css" type="text/css">');
+} else
+
+if (BROWSER_NAME == "Microsoft Internet Explorer" && plat.indexOf("Win") != -1){
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_IE_win.css" type="text/css">');
+} else
+
+if (BROWSER_NAME == "Netscape" && plat.indexOf("Mac") != -1) {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_net_mac.css" type="text/css">');
+} else
+
+
+if (plat.indexOf("Mac") != -1 && plat.indexOf("MSIE") != -1) {
+	if (plat.indexOf("MSIE 5") != -1) {
+		document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_IE5_mac.css" type="text/css">');
+	}
+	else {
+		document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_IE_mac.css" type="text/css">');
+	}
+}
+
+// default style sheet loaded if no browsers match
+else {
+document.write('<LINK rel="stylesheet" href="http://abcnews.go.com/css2/ABC_default.css" type="text/css">');
+}
+
+
+//-->
+</SCRIPT><script language=javascript>
+	window.name = "_homewindow";
+<!--
+
+function PopoffWindow(DaURL, orient) {
+
+	var ItsTheWindow;
+		if (orient == "Horizontal")  {
+			ItsTheWindow = window.open(DaURL,"ABCNEWS","status,height=339,width=626,scrolling=no,resizable=no,toolbar=0");
+		} else if (orient == "Vertical")  {
+		    ItsTheWindow = window.open(DaURL,"ABCNEWS","status,height=339,width=626,scrolling=no,resizable=no,toolbar=0");
+		}
+
+
+
+}
+
+
+//-->
+
+</script>
+<script language="JavaScript">
+<!--
+
+function Checkitout(){
+
+//      Gets Browser and Version
+
+        var appver = "null";
+        var browser = navigator.appName;
+        var version = navigator.appVersion;
+        if ((browser == "Netscape")) version = navigator.appVersion.substring(0, 3);
+        if ((browser == "Microsoft Internet Explorer")) version = navigator.appVersion.substring(22, 25);
+
+//      Gives AppVersion (appver) for Detect Strings
+
+        if ((browser == "Microsoft Internet Explorer") && (version >= 3)) appver = "ie3+";
+        if ((browser == "Netscape") && (version >= 3)) appver = "ns3+";
+        if ((browser == "Netscape") && (version < 3)) appver = "ns2";
+
+
+       if ((appver == "ie3+")) {
+                return 0;
+        }  else {
+                return 1;
+                }
+}
+
+
+
+
+	var RealAudio = 0;
+	var RealVideo = 0;
+
+	var nudrTest = null;
+
+	if (Checkitout())  {
+		for (var i = 0; i < navigator.plugins.length ; i++)  {
+			nudrTest = navigator.plugins[i].name.toLowerCase();
+			if (nudrTest.substring(0,10) == 'realplayer')  {
+				RealVideo = 1;
+			}
+		}
+	}
+
+//-->
+</script>
+
+
+<SCRIPT LANGUAGE="VBScript">
+<!--
+	RealAudio = 0
+	RealVideo = 0
+
+	On error resume next
+	useRealAudio = NOT IsNull(CreateObject("RealAudio.RealAudio(tm) ActiveX Control (32-bit)"))
+
+	useRealVideo = NOT IsNull(CreateObject("RealVideo.RealVideo(tm) ActiveX Control (32-bit)"))
+
+	if useRealAudio Then RealAudio = 1
+	if useRealVideo Then RealVideo = 1
+//-->
+</SCRIPT>
+
+<script language=javascript>
+
+<!--
+
+
+
+function MPPopoffWindow(DaURL, orient) {
+
+	if (RealVideo != 1)  {
+
+		start = DaURL.lastIndexOf (".");
+		tempString = DaURL.substring(0,start);
+		DaURL = tempString + "_NP.html";
+
+	}
+
+	var ItsTheWindow;
+		if (orient == "Horizontal")  {
+			ItsTheWindow = window.open(DaURL,"ABCNEWS","status,height=339,width=626,scrolling=no,resizable=no,toolbar=0");
+		} else if (orient == "Vertical")  {
+		    ItsTheWindow = window.open(DaURL,"ABCNEWS","status,height=339,width=626,scrolling=no,resizable=no,toolbar=0");
+		}
+
+}
+
+
+
+
+//-->
+
+</script>
+</head>
+<BODY BGCOLOR="#000066" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<!--- ABCNEWS MAIN --->
+<script language=JavaScript type="text/javascript">
+var SectionID="FrontPage";
+var SubsectionID="null";
+var NameID="FRONTPAGE";
+</script>
+<!-- Begin HBtrack_part1 script -->
+<!-- BEGIN WEBSIDESTORY CODE -->
+<!-- COPYRIGHT 1997-2001 WEBSIDESTORY, INC. ALL RIGHTS RESERVED. U.S.PATENT PENDING. Privacy notice at:  http://websidestory.com/privacy -->
+
+<script language="javascript">
+var _pn="PUT+PAGE+NAME+HERE"; 	//page name(s)
+var _mlc="CONTENT+CATEGORY";	//multi-level content category
+var _acct="DM5103306BDW86EN3;DM510330EDNZ78EN3;DM5103083LCA38EN3"; 	//account number(s)
+var _cmpn="cmp";//ca-name for id
+var _cp="null"; 	//campaign
+var _pndef="title";	//default page name
+var _ctdef="full"; 	//default content category
+var _dlf="n";	//download filter
+var _elf="n";	//exit link filter
+var _epg="n"; 	//event page identifier
+var _mn="we19"; //machine name
+var _gn="ehg-dig.hitbox.com"; //gateway name
+var _lp=location.protocol.indexOf('https')>-1?'https://':'http://';
+</script>
+<script language="javascript">
+if ((NameID != null) && (NameID != "null")) {
+	_pn=NameID;
+}
+if ((SectionID != null) && (SectionID != "null")) {
+	if ((SubsectionID != null) && (SubsectionID != "null")) {
+	_mlc="/" + SectionID + "/" + SubsectionID;
+	}
+	else {
+	_mlc="/" + SectionID;
+	}
+}
+</script>
+<script language="javascript">
+function _wn(_nm){if((_nm.indexOf("NAME")>0&&_nm.indexOf("PUT")>=0)||
+(_nm.indexOf("CONTENT")>=0&&_nm.indexOf("CATEGORY")>0))return true;return false;}
+function _gd(_x,_w){_ed = (_x.lastIndexOf("/"));
+_be = (_w!="full")?(_x.lastIndexOf("/",(_ed-2))):(_x.indexOf("/"));
+_dn = (_be==_ed)?"/":(_x.substring(_be, _ed));return _dn;}
+function _gf(_x){_ed = (_x.length);_be = ((_x.lastIndexOf("/"))+1);
+_fn = (_x.substring(_be, _ed));return _fn;}
+function _vc(_ml){_mll=_ml.length-1;if(_ml.lastIndexOf("/")==_mll){_ml=_ml.substring(0,_mll)}
+if(_ml.indexOf("/")!=0){_ml="/"+_ml;}return _ml;}
+function _ps(_ip,_pml){if(!_ip){_pml=(_wn(_pml))?_gd(location.pathname,_ctdef):_vc(_pml);}
+else{if (_wn(_pml)){if (_pndef=="title"){_pt=document.title; if (_pt!=""){_pml=_pt};}
+else{_pml=_gf(location.pathname);if (_pml==""){_pml=_pndef};}};}return _pml;}
+function _pm(_ml,_fml,_ipn){if (_ml.indexOf(";")!=-1){_nml=_ml.substring(0,(_ml.indexOf(";")));
+_rm=_ml.substring((_ml.indexOf(";")+1),_ml.length);_fml+=_ps(_ipn,_nml)+";";
+_fp=_pm(_rm,_fml,_ipn);return _fp;}else {_fml+=_ps(_ipn,_ml);return _fml;}}
+var _sv=10;var _bn=navigator.appName;if(_bn.substring(0,9)=="Microsoft"){_bn="MSIE";};var _hcv=68;
+var _bv=(Math.round(parseFloat(navigator.appVersion)*100));if((_bn=="MSIE")&&(parseInt(_bv)==2))_bv=301;
+var _rf=escape(document.referrer);_mlc=_pm(_mlc,"",false);_pn=_pm(_pn,"",true);
+</script>
+<script language="javascript1.1" id="_hbc">_sv=11;</script>
+<script language="javascript1.1" defer src="http://abcnews.go.com/jscript/hbe.js"></script>
+<script language="javascript">if (_sv==10){if (document.cookie.indexOf("CP=")!=-1){_ce="y";}else{
+document.cookie="CP=null*; path=/; expires=Wed, 1 Jan 2020 00:00:00 GMT";
+_ce=(document.cookie.indexOf("CP=")!=-1)?"y":"n";};if((_rf=="undefined")||(_rf=="")){_rf="bookmark";};
+_x2="<img src='"+_lp+_gn+"/HG?hc="+_mn+"&hb="+escape(_acct)+"&n="+escape(_pn);
+_x3="&cd=1&hv=6&seg="+_seg+"' border=0 height=1 width=1>";
+_ar="&bn="+escape(_bn)+"&bv="+_bv+"&ce="+_ce+"&ss=na&sc=na&dt=&sv="+_sv+"&con="+escape(_ct);
+_ar+="&vcon="+escape(_mlc)+"&epg="+_epg+"&hp=u&cy=u&ja=na&ln=na&cp="+escape(_cp)+"&pl=&rf="+_rf;
+document.write(_x2+_ar+_x3);}document.write("<\!--");</script>
+<noscript><img  src="http://ehg-dig.hitbox.com/HG?hc=we19&cd=1&hv=6&ce=u&hb=DM5103306BDW86EN3&n=PUT+PAGE+NAME+HERE&vcon=CONTENT+CA TEGORY&seg=&cmp=&gp=" border='0' width='1' height='1'>
+</noscript><!--//-->
+<!--  END WEBSIDESTORY CODE  -->
+<!-- End HBtrack_part1 script  -->
+
+<!-- Begin HBtrack_noscript_FrontPage -->
+
+<script language="javascript">document.write("<\!--");</script>
+<noscript>
+<img src="http://ehg-dig.hitbox.com/HG?hc=we19&cd=1&hv=6&ce=u&hb=DM5103306BDW86EN3;DM510330EDNZ78EN3;DM5103083LCA38EN3&n=JavaScriptDisabled&vcon=/FrontPage" border='0' width='1' height='1'>
+</noscript><!--//-->
+
+<!-- End HBtrack_noscript_FrontPage -->
+<meta http-equiv="Refresh" content="600">
+<A NAME="top"></A>
+<!----------------- BEGIN TOP MAIN TABLE ------------>
+<!-- TOP BANNER -->
+<!-- Top Branding -->
+
+<!-- Top Branding -->
+<!-- TOP BANNER -->
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+<tr><td><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="5"></td></tr>
+<tr><td valign="middle" align="center" height="95"><SCRIPT LANGUAGE="JavaScript">
+var flash = 0;
+var ShockMode = 0;
+var Flash_File_Path = "http://adimages.go.com/ad/sponsors/ABCNews_Internet_Ventures_(AIV)/Apr_2003/abcn-728x90-0002.swf";
+var default_image = "http://adimages.go.com/ad/sponsors/ABCNews_Internet_Ventures_(AIV)/Apr_2003/abcn-728x90-0002.gif";
+var default_URL = "http://login.mailpref.go.com/login%3FappRedirect=lists";
+var URL = escape("http://login.mailpref.go.com/login%3FappRedirect=lists");
+var default_alttext = "Click Here!";
+var trackclick = "?trackclick=";
+var default_track = "http://transfer.go.com/cgi/atransfer.pl?name=128704&srvc=nws&guid=E169D696-324D-4250-9827-2110B630B2D8&context=417&goto=";
+var encoded_track = "http://transfer.go.com/cgi/atransfer.pl?name%3d128704%26srvc%3dnws%26guid%3dE169D696-324D-4250-9827-2110B630B2D8%26context%3d417%26goto%3d";
+var ad_width = "728";
+var ad_height = "90";
+</script>
+<SCRIPT LANGUAGE="VBScript">
+on error resume next
+FlashInstalled = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))
+If FlashInstalled = "True" then
+flash = 1
+End If
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+if (flash == 1) {
+document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" ID=banner1 WIDTH='+ad_width +' HEIGHT='+ad_height+'>');
+document.write('<PARAM NAME=movie VALUE='+Flash_File_Path+trackclick+encoded_track+URL+'>');
+document.write('<PARAM NAME=quality VALUE="HIGH">');
+document.write('</OBJECT>');
+}else{
+if (navigator.mimeTypes && navigator.mimeTypes['application/x-shockwave-flash'] && navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin) {
+if(navigator.plugins["Shockwave Flash"].description.substring(16,19) >= 4) {
+ShockMode = 1;
+document.write('<EMBED SRC='+Flash_File_Path+trackclick+encoded_track+URL+'');
+document.write(' NAME=banner1 swLiveConnect=FALSE WIDTH='+ad_width +' HEIGHT='+ad_height +' border="0"');
+document.write(' QUALITY="HIGH" MENU=FALSE');
+document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+document.write('</EMBED>');
+}}} if (flash != 1 && ShockMode != 1) {
+document.write('<A HREF='+default_track+default_URL +'>');
+document.write('<img WIDTH='+ad_width+' HEIGHT='+ad_height +' border="0" src='+default_image +' alt='+ default_alttext +'>');
+document.write('</a>');
+}
+</SCRIPT><NOSCRIPT><A HREF="http://transfer.go.com/cgi/atransfer.pl?name=128704&srvc=nws&guid=E169D696-324D-4250-9827-2110B630B2D8&context=417&goto=http://login.mailpref.go.com/login%3FappRedirect=lists"><img width="728" height="90" border="0" src="http://adimages.go.com/ad/sponsors/ABCNews_Internet_Ventures_(AIV)/Apr_2003/abcn-728x90-0002.gif" alt="<%ALT_TEXT%>"></a></NOSCRIPT><script language="javascript" src="http://log.go.com/log?ft=j&srvc=nws&addata=93:417:126555:0|0:417:128704:0|19:417:126342:0|55:::2|1034:417:125878:0|804:75:121760:2&method=GET&svr=newsweb10&host=abcnews.go.com&guid=E169D696-324D-4250-9827-2110B630B2D8"></script></td></tr>
+<tr><td><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="5"></td></tr></table>
+<!-- END TOP BANNER -->
+<table border="0" cellspacing="0" cellpadding="0" width="778">
+ <tr>
+	<td><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="1"></td>
+	<td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+	<td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+	<td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+</tr>  
+<tr> 
+ 	<td><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="1"></td>  	
+  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+  <td bgcolor="#070B3F"><a href="http://abcnews.go.com"><img src="http://a.abcnews.com/images/nav/abcnews_logo.gif" width="776" height="52" alt="" border="0" name="logo"></a></td>
+  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+</tr> 
+<tr>
+	<td colspan="4"><table border="0" cellspacing="0" cellpadding="0" width="778">    
+			<form action="http://clickit.go2net.com/search">
+			<tr> 
+			 <td><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="24"></td>   	
+			  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+			  <td bgcolor="#4C4FA1" background="/images/nav/search_bg.gif"> 	
+					<table width="770" border="0" cellspacing="0" cellpadding="0">
+						 <tr>
+							<td align="right" valign="middle">
+								<input type="hidden" name="cid" value="282019">
+							  <input type="hidden" name="area" value="is.clicktracking">
+							  <input type="hidden" name="site" value="srch">
+							  <input type="hidden" name="shape" value="textlink">
+							  <input type="hidden" name="cp" value="info.abcnws">
+							  <input type="hidden" name="eto" value="http://www.infospace.com/info.abcnws/redirs_all.htm">
+							  <input type="hidden" name="ran" value="">
+							  <input type="hidden" name="qcat" value="web">
+							  <input type="hidden" name="pgtarg" value="wbsdogpile">
+							  <span class="whiteLink">Search the Web and ABCNEWS.com&nbsp;&nbsp;</span><input type="text" name="qkw" size="28" class="searchInput"></td>
+							<td align="right" valign="middle" width="30"><input type="image" src="/images/nav/go.gif" value="Search" name="image" border="0" hspace=5></td>
+						 </tr>
+					</table></td>
+			  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+			</tr> 
+			<tr> 
+			 	<td><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="1"></td>
+			  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+			  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="776" height="1"></td>
+			  <td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+			</tr></form>    
+			</table></td>
+</tr>   
+</table>
+<!-- DEFAULT BUTTON NAV TABLE -->
+<table border="0" cellspacing="0" cellpadding="0" width="778">
+  <tr>
+  	<td><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="1"></td>
+	  	<td class="black9pt" nowrap><a href="/Sections/GMA/" onMouseOver="RollOver(imageA,'/images/nav/gma_on.gif');" onMouseOut="RollOut(imageA)"><img src="http://a.abcnews.com/images/nav/gma_off.gif" width="112" height="35" name="imageA" border="0" alt="Good Morning America"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/WNT/" onMouseOver="RollOver(imageB,'/images/nav/wnt_on.gif');" onMouseOut="RollOut(imageB)"><img src="http://a.abcnews.com/images/nav/wnt_off.gif" width="113" height="35" name="imageB" border="0" alt="World News Tonight"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/2020/" onMouseOver="RollOver(imageC,'/images/nav/2020_on.gif');" onMouseOut="RollOut(imageC)"><img src="http://a.abcnews.com/images/nav/2020_off.gif" width="87" height="35" name="imageC" border="0" alt="20/20"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/Primetime/" onMouseOver="RollOver(imageD,'/images/nav/primetime_on.gif');" onMouseOut="RollOut(imageD)"><img src="http://a.abcnews.com/images/nav/primetime_off.gif" width="119" height="35" name="imageD" border="0" alt="Primetime"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/Nightline/" onMouseOver="RollOver(imageE,'/images/nav/nightline_on.gif');" onMouseOut="RollOut(imageE)"><img src="http://a.abcnews.com/images/nav/nightline_off.gif" width="100" height="35" alt="" border="0" name="imageE" alt="Nightline"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/WNN/" onMouseOver="RollOver(imageF,'/images/nav/wnn_on.gif');" onMouseOut="RollOut(imageF)"><img src="http://a.abcnews.com/images/nav/wnn_off.gif" width="129" height="35" name="imageF" border="0" alt="World News Now"></a><img src="http://a.abcnews.com/images/nav/top_nav_div.gif" width="1" height="35" alt="" border="0"><a href="/Sections/ThisWeek/" onMouseOver="RollOver(imageG,'/images/nav/thisweek_on.gif');" onMouseOut="RollOut(imageG)"><img src="http://a.abcnews.com/images/nav/thisweek_off.gif" width="112" height="35" alt="" name="imageG" border="0"></a></td>
+	</tr>
+	<tr>
+		<td><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+		<td bgcolor="#4C4FA1"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="1"></td>
+		<td><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="10"></td>
+	</tr>
+</table><!-- END DEFAULT BUTTON NAV TABLE:: --><!-- End Top Branding -->
+<!----------------- END TOP MAIN TABLE ------------>
+<TABLE WIDTH="778" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD ROWSPAN="2" ALIGN="left" VALIGN="top">
+<!-- BEGIN LEFT NAV -->
+<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tr><td align="center" colspan="2"><script language="javascript">
+<!---
+function popTheAd() {
+window.open('http://transfer.go.com/cgi/atransfer.pl?name=121760&srvc=nws&guid=BDD7AC9B-86B3-436C-A399-2E93BEDFA517&context=75&goto=http://www.compaq.com/bridge/poweredby/consumer/index-wdig.html', 'reminder','toolbar=no,scrollbars=no,scrolling=no,location=no,width=780,height=580');
+}
+//---->
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+var flash = 0;
+var ShockMode = 0;
+var Flash_File_Path = "http://adimages.go.com/ad/sponsors/compaq/comp-log0302/comp-log0302.swf";
+var default_image = "http://adimages.go.com/ad/sponsors/compaq/comp-log0302/comp-log0302.gif";
+var default_alttext = "visit hp.com";
+var ad_width = "95";
+var ad_height = "30";
+
+</script>
+<SCRIPT LANGUAGE="VBScript">
+on error resume next
+FlashInstalled = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))
+If FlashInstalled = "True" then
+flash = 1
+End If
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+if (flash == 1) {
+document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://active.macromedia.com/flash2/cabs/swflash.cab#version=4,0,0,0" ID=banner1 WIDTH='+ad_width +' HEIGHT='+ad_height+'>');
+document.write('<PARAM NAME=movie VALUE='+Flash_File_Path+'>');
+document.write('<PARAM NAME=quality VALUE="HIGH">');
+document.write('<PARAM NAME=wmode VALUE="opaque">');
+document.write('</OBJECT>');
+}else{
+if (navigator.mimeTypes && navigator.mimeTypes['application/x-shockwave-flash'] && navigator.mimeTypes['application/x-shockwave-flash'].enabledPlugin) {
+if(navigator.plugins["Shockwave Flash"].description.substring(16,19) >= 4) {
+ShockMode = 1;
+document.write('<EMBED SRC='+Flash_File_Path+'');
+document.write(' NAME=banner1 swLiveConnect=FALSE WIDTH='+ad_width +' HEIGHT='+ad_height +' border="0"');
+document.write(' QUALITY="HIGH" MENU=FALSE BGCOLOR="#000063"');
+document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">');
+document.write('</EMBED>');
+}}} if (flash != 1 && ShockMode != 1) {
+document.write('<A HREF="#" onClick="javascript:popTheAd();">');
+document.write('<img WIDTH='+ad_width+' HEIGHT='+ad_height +' border="0" src='+default_image +' alt='+ default_alttext +'>');
+document.write('</a>');
+}
+</SCRIPT><NOSCRIPT><A HREF="http://transfer.go.com/cgi/atransfer.pl?name=121760&srvc=nws&guid=BDD7AC9B-86B3-436C-A399-2E93BEDFA517&context=75&goto=http://www.compaq.com/bridge/poweredby/consumer/index-wdig.html"><img width=95 height=30 border="0" src="http://adimages.go.com/ad/sponsors/compaq/comp-log0302/comp-log0302.gif" alt="visit hp.com"></a></NOSCRIPT></td></tr>
+</table>
+<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tr><td rowspan="27"><img src="http://a.abcnews.com/images/spacer.gif" width="10" height="20"></td><td width="119">&nbsp;</td></tr>
+<tr><td width="119" height="15"><a class=link href="/newsflash">NEWS SUMMARY</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/us/">US</a></td></tr> 
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/world/">INTERNATIONAL</a></td></tr> 
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/business/">MONEYScope</a></td></tr> 
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a href="http://my.abcnews.go.com/localpage?myABCNewsZipcode=" class="link">WEATHER</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/local/index.html">LOCAL NEWS </a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/entertainment/">ENTERTAINMENT</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/sports/">ESPN SPORTS</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/scitech/">SCI/TECH</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/politics/">POLITICS</a></td></tr> 
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/living/">HEALTH</a></td></tr>
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/travel/">TRAVEL</a></td></tr> 
+<tr><td width="119" align="right"><img height=1 src="http://a.abcnews.com/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+</table> 
+<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan=2 height=20 valign=middle class="black9pt">&nbsp;</td></tr>
+<tr><td colspan=2 height=30 valign=middle align="center"><iframe src="http://adfarm.mediaplex.com/ad/fm/2095-10929-2686-16?mpt=2003.04.23.01.21.41&mpvc=http://transfer.go.com/cgi/atransfer.pl?name=126555&srvc=nws&guid=31E039EF-0798-4262-ACD3-4C186A24B1B2&context=417&goto=" width=120 height=120 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no bordercolor="#000000">
+  <script language="JavaScript1.1" src="http://adfarm.mediaplex.com/ad/js/2095-10929-2686-16?mpt=2003.04.23.01.21.41&mpvc=http://transfer.go.com/cgi/atransfer.pl?name=126555&srvc=nws&guid=31E039EF-0798-4262-ACD3-4C186A24B1B2&context=417&goto=">
+  </script>
+  <noscript>
+    <a href="http://transfer.go.com/cgi/atransfer.pl?name=126555&srvc=nws&guid=31E039EF-0798-4262-ACD3-4C186A24B1B2&context=417&goto=http://adfarm.mediaplex.com/ad/ck/2095-10929-2686-16?mpt=2003.04.23.01.21.41">
+      <img src="http://adfarm.mediaplex.com/ad/bn/2095-10929-2686-16?mpt=2003.04.23.01.21.41"
+        alt="Samsung (Ad served by Mediaplex)" border="0">
+    </a>
+  </noscript>
+</iframe><p><a href="http://transfer.go.com/cgi/atransfer.pl?goto=http://www.abcnews.go.com/sections/GMA/GoodMorningAmerica/HealthyWoman_Index.html&name=126342&srvc=nws&context=417&guid=42D03B5A-2930-4A4E-9FF1-4D7C4F60BDFC" target="_top"><img src="http://adimages.go.com/ad/sponsors/johnsonjohnson/john-til0051.gif" width=120 height=34 border="0" alt="Sponsored by Tylenol" align=><font face="verdana,arial,helvetica" SIZE="1"><b></b></font></a></td></tr>
+</table>
+<table width="130" border="0" cellpadding="0" cellspacing="0">
+<tr><td rowspan="23"><img src="/images/spacer.gif" width="10" height="20"></td><td width="119">&nbsp;</td></tr>
+<tr><td colspan=2 height=20 valign=middle class="black9pt">&nbsp;</td></tr>
+<tr><td width="119" height="15"><span class="lightblueSmall">FEATURED SERVICES</span></td></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><A class=link href="/sections/relationships/">RELATIONSHIPS</A></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><A class=link href="http://abcnews.go.com/sections/shopping/weeklyfeature/index.html">SHOPPING</A></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><A class=link href="http://abcnews.go.com/Turbo/DailyNews/turbonews.html">DOWNLOADS</A></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><A class=link href="http://abcnews.go.com/sections/wireless/DailyNews/Wireless.html">WIRELESS</A></TD></tr>
+<tr><td colspan=2 height=40 valign=middle class="black9pt">&nbsp;</td></tr>
+<tr><td width="119" height="15"><span class="lightblueSmall">INTERACT</span></td></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/sections/us/video_index/video_index.html">VIDEO &amp; AUDIO</a></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/community/DailyNews/Community_Index.html#boards">BOARDS</a></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr> 
+<tr><td width="119" height="15"><a class=link href="/sections/community/DailyNews/Community_Index.html#chat">CHAT</a></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="http://login.mailpref.go.com/login?appRedirect=lists">NEWS ALERTS</a></TD></tr>
+<tr><td width="119" align="right"><img height=1 src="/images/!1x1_blu_pixel.gif" width="119"></td></tr>
+<tr><td width="119" height="15"><a class=link href="/service/help/abccontact.html">CONTACT ABC</a></TD></tr>
+</table>
+<!-- END LEFT NAV -->
+</TD>
+<TD ROWSPAN="2" WIDTH="376" BGCOLOR="#FFFFFF" HEIGHT="428" ALIGN="left" VALIGN="top">
+<TABLE WIDTH="376" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD WIDTH="4" BGCOLOR="#FFFFFF" ALIGN="left" VALIGN="top"><IMG SRC="http://a.abcnews.com/images/HP_corner_010529.gif" WIDTH="4" HEIGHT="17"></TD>
+<!-- HEADLINE TICKER GIF -->
+<TD WIDTH="372" BGCOLOR="#FFFFFF" ALIGN="left" VALIGN="top">
+<!-- BEGIN TICKER --->
+<script language=javascript>
+<!-- 
+var SOB=new flashObj(); 
+SOB.flashFile = "http://abcnews.go.com/ticker.swf"; 
+SOB.DenyIEdl = "TRUE"; 
+SOB.width = "370"; 
+SOB.height = "18"; 
+SOB.cabVersion = "4,0,0,0"; 
+SOB.altTxt = "<a href='http://abcnews.go.com/newsflash/'><IMG SRC='http://abcnews.go.com/data/hp_headlines.gif' WIDTH='370' HEIGHT='17' BORDER=0></a>"; 
+document.write(SOB.render()); 
+ //-->
+</script>
+<!-- END TICKER --->
+<!-- END TICKER --->
+</TD>
+</TR></TABLE>
+<!-- begin Top stories -->
+<TABLE WIDTH="376" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR ALIGN="left">
+<TD COLSPAN="2"><IMG SRC="http://a.abcnews.com/images/HP_darkblue_1x1_010529.gif" WIDTH="376" HEIGHT="2"></TD>
+</TR>
+<TR>
+<!---- Beginning of TopCalloutAuto ---->
+<!--- test2 --->
+<TD WIDTH="370" HEIGHT="135" ALIGN="center">
+<TABLE WIDTH=370 CELLSPACING=2 CELLPADDING=3 BORDER=0 BGCOLOR=#ffffff VALIGN=top>
+<TR>
+<TD VALIGN=top>
+<img src="http://abcnews.go.com/images/autowirestory/AP/XDG101042301.jpeg" width=185 height=125 vspace=0 hspace=5 border=1 alt="null" align=left>
+<!--- problem area starts here --->
+<style type "text/css">
+<!--
+							.blueLead { font-family: Arial, Helvetica, sans-serif; font-size: 13pt; font-weight: bold; color: #003399; text-decoration: none }
+							--->
+</style>
+<!--- table ---->
+<table border="0" cellpadding="1" cellspacing="1" width=140>
+<tr><td>
+<a href="/wire/World/ap20030423_142.html" class="blueLead" id="UL">Scientists: Bacteria Destruction Ordered</a>
+<DIV class="black9pt">Six Iraqi scientists working at different Baghdad research institutions were ordered to destroy some bacteria and equipment and...</DIV>
+</td></tr></table>
+ </TD>
+</TR></TABLE>
+<!---- Top Callout Auto ---->
+<!-- designer blob addition -->
+</TD>
+<TD WIDTH="196" ALIGN="left" VALIGN="top">&nbsp;</TD>
+</TR>
+<TR ALIGN="left">
+<TD>
+<IMG SRC="http://a.abcnews.com/images/HP_grey_1x1_010529.gif" WIDTH="376" HEIGHT="1">
+<TD>
+</TR>
+<TR ALIGN="left">
+<TD COLSPAN="2" HEIGHT="0">
+<TABLE WIDTH="373" BORDER="0" CELLSPACING="2" CELLPADDING="4">
+<!------Begin Middle Callouts------>
+<!--middle callouts--->
+<TR>
+<TD>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" HSPACE="0">
+<TR>
+<TD WIDTH="64" VALIGN="top">
+<a href="/sections/wnt/Business/Bethlehemsteel_030422.html" >
+<img src="http://a.abcnews.com/media/WNT/images/ap_bethle_steel_030422_cx.jpg" width=60 height=70 vspace=0 hspace=3 border=0 alt="Bethlehem Steel Factory" align=left>
+</a>
+</TD>
+<TD WIDTH="4"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0"></TD>
+<TD ALIGN="left" VALIGN="top" WIDTH="125">
+<a href="/sections/wnt/Business/Bethlehemsteel_030422.html"  class="blueLinkNoStyleFP" id="UL">Fallen Giant</a>
+<br>
+<div class="black9pt">Loss of steel behemoth hits community hard.&nbsp; &#0149; <a href="javascript:LaunchRealChannel('/sections/wnt/videofiles/Video/030422steel_video')" class="blueLinkNoStyleFP" id="UL">Video</a> <img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" 
+width="11" border="0"> </div>
+</TD>
+</TR></TABLE>
+</TD>
+<!--Second Middle callout--->
+<TD WIDTH="185"><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" HSPACE="0" >
+<TR>
+<TD WIDTH="64" VALIGN="top">
+<a href="/sections/us/WolfFiles/wolffiles.html" >
+<img src="http://a.abcnews.com/media/Entertainment/images/wolf_files_030422_cx.jpg" width=60 height=70 vspace=0 hspace=3 border=0 alt="Wolf Files" align=left>
+</a>
+</TD>
+<TD WIDTH="4"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0"></TD>
+<TD ALIGN="left" VALIGN="top" WIDTH="125">
+<a href="/sections/us/WolfFiles/wolffiles.html"  class="blueLinkNoStyleFP" id="UL">Joke Town</a>
+<br>
+<div class="black9pt">Have you ever passed Gas? Gone to Hell? Visited Nutsville? Small town charm.</div>
+</TD>
+</TR></TABLE>
+</TD>
+</TR></TABLE>
+</TD>
+</TR>
+</TABLE>
+<!-- end Middle Callouts -->
+<!-- begin headlines box -->
+<TABLE WIDTH="376" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<TD WIDTH="372" colspan="2"><IMG SRC="http://a.abcnews.com/images/HP_grey_1x1_010529.gif" WIDTH="376" HEIGHT="1"></TD>
+</TR>
+<TR>
+<TD WIDTH="372"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="1" HEIGHT="1"></TD>
+</TR><TR>
+<td width="372" align="left">&nbsp;<a href="http://abcnews.go.com/newsflash"><img src="http://a.abcnews.com/images/abcnews_hd.gif" width="140" height="18" border="0"></a></td>
+</TR></TABLE>
+<!-- BEGIN LOWER HEADLINES --->
+<!-- Published on Wednesday April 23,  1:19am ET using TopHeadlinesWireNodeFP.t -->
+<TABLE BORDER="0" CELLPADDING="2" CELLSPACING="0" WIDTH="376">
+<TR>
+<TD WIDTH="376" COLSPAN="2"><IMG SRC="/images/spacer.gif" WIDTH="376" HEIGHT="1"></TD>
+</TR>
+<!-- Begin LowerCallouts --->
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/World/ap20030423_163.html" class="blueLinkNoStyleFP" id="UL">France, Russia Push for U.N. Inspectors</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/World/ap20030422_2659.html" class="blueLinkNoStyleFP" id="UL">U.S., N. Korea, China Prepare for Talks</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/Business/ap20030422_2538.html" class="blueLinkNoStyleFP" id="UL">Bush to Keep Greenspan As Fed's Chief</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/World/ap20030423_73.html" class="blueLinkNoStyleFP" id="UL">Nigeria President Re-Elected Amid Protest</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/US/ap20030422_2669.html" class="blueLinkNoStyleFP" id="UL">ACLU Seeks Gov't Data on 'No-Fly' List</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/Living/ap20030423_174.html" class="blueLinkNoStyleFP" id="UL">China Closes Beijing Schools Due to SARS</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/Business/ap20030423_151.html" class="blueLinkNoStyleFP" id="UL">Kmart Officials 'Jubilant' at Ruling</a></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP" width="9">&nbsp;&#149;&nbsp;</TD>
+<TD ALIGN="LEFT" width="367"><a href="/wire/Entertainment/ap20030422_2411.html" class="blueLinkNoStyleFP" id="UL">No More Cash Prizes at Reader's Digest</a></TD>
+</TR>
+<TR>
+<TD width="9">&nbsp;&#149;</TD>
+<TD ALIGN="LEFT" WIDTH="367"><a href="/newsflash/" class="blueLinkNoStyleFP" id="UL">More News Headlines</a></TD>
+</TR>
+<TR>
+<TD COLSPAN="2"> <IMG SRC="/images/spacer.gif" WIDTH="376" HEIGHT="9"></TD>
+</TR>
+</TABLE>
+
+<!-- end headlines box -->
+<TABLE WIDTH="380" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<td width="376" align="left"><img src="http://a.abcnews.com/images/HP_grey_1x1_010529.gif" width="374"  height="1" align="left"></td>
+</TR>
+</TABLE>
+<!--- BEGIN SPECIALS / BACK PAGE AREA --->
+<TABLE WIDTH="380" BORDER="0" CELLPADDING="2" CELLSPACING="0">
+<tr> 
+<td width="376" align="left">&nbsp;<img src="http://a.abcnews.com/images/backpage_hd.gif" width="138" height="17" border="0"></td>
+</tr>
+<tr><td>&nbsp;&#149;&nbsp;<a href="/sections/relationships/index.html" class=blueLinkNoStyleFP id="UL">Should Professors Be Able to Date Students?</a>
+</td></tr>
+<tr><td>&nbsp;&#149;&nbsp;<a href="/wire/US/ap20030421_2045.html" class=blueLinkNoStyleFP id="UL">Lucky Dog: Pooch Survives Car Crash, Gunshot, Freezer Storage</a>
+</td></tr>
+<tr><td>&nbsp;&#149;&nbsp;<a href="javascript:PopoffWindow('/news/popoff/DailyNews/QuoteofDay_homepage/index.html', 'Horizontal')
+
+" class=blueLinkNoStyleFP id="UL">Quote of the Day: &#0145;We Have Been Fortunate&#0146;</a></td></tr>
+<TR><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--- END SPECIALS / BACK PAGE AREA --->
+<!--- BEGIN MONEYSCOPE AREA --->
+<TABLE WIDTH="380" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<TR>
+<td width="376" align="left"><img src="http://a.abcnews.com/images/HP_grey_1x1_010529.gif" width="374"  height="1" align="left"></td>
+</TR>
+</TABLE>
+<TABLE WIDTH="380" BORDER="0" CELLPADDING="2" CELLSPACING="0">
+<tr>
+<td width="376" align="left">&nbsp;&#149;&nbsp;<a href="http://abcnews.go.com/wire/Business/MarketCoverage.html" class=blueLinkNoStyleFP id="UL">Latest Market Details</a></td>
+</tr>
+</TABLE>
+<TABLE WIDTH="380" BORDER="0" CELLPADDING="2" CELLSPACING="0">
+</TABLE>
+<TABLE width="266" BORDER="0" CELLPADDING="0" CELLSPACING="0" bgcolor="#ffffff">
+<tr bgcolor="#ffffff">
+<td colspan="2" valign="top">
+<table width="266" border="0" cellpadding="3" cellspacing="0">
+<tr>
+<td width="261" height="120" align="left" valign="top">
+<table width="270" border=0 cellspacing=0 cellpadding=0 bgcolor="#FFFFFF">
+<tr bgcolor="#ffffff">
+<td valign=top colspan="5"><img src="http://a.abcnews.com/images/spacer.gif" width="16" height="0"></td>
+</tr>
+<tr bgcolor="#ffffff">
+<td valign=top colspan="3">&nbsp;&nbsp;<a href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=dji&view=detailed&name=MSHP_DJIA&srvc=nws"><span class="stock1">DOW JONES</span></a></td>
+<TD VALIGN=top COLSPAN="2" BGCOLOR="#ffffff"><A href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=dji&view=detailed&name=MSHP_DJIA&srvc=nws"><IMG src="http://abcnews.go.com/intraday/q3INDU.gif" width="120" height="21" border="0"></A></TD>
+</tr>
+<tr bgcolor="#ffffff">
+<td valign=top colspan="3">&nbsp;&nbsp;<a href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=inx&view=detailed&name=MSHP_SP&srvc=nws"><span class="stock2">S&P</span></a></td>
+<TD VALIGN=top COLSPAN="2" BGCOLOR="#ffffff"><A href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=inx&view=detailed&name=MSHP_SP&srvc=nws"><IMG src="http://abcnews.go.com/intraday/q3INX.GIF" width=120 height=21 border=0></A></td>
+</tr>
+<tr bgcolor="#ffffff">
+<td valign=top colspan="3">&nbsp;&nbsp;<a href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=compx&view=detailed&name=MSHP_NASDAQ&srvc=nws"><span class="stock3">NASDAQ</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<TD VALIGN=top COLSPAN="2" BGCOLOR="#ffffff"><A href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/quotes?quote=stocksymbol&tid=compx&view=detailed&name=MSHP_NASDAQ&srvc=nws"><IMG src="http://abcnews.go.com/intraday/q3COMPX.GIF" width=120 height=21 border=0></A></TD>
+</tr>
+<tr bgcolor="#ffffff">
+<td valign=top colspan="5"><img src="http://a.abcnews.com/images/spacer.gif" width="16" height="2"></td>
+</tr>
+</table>
+<table width="259" border=0 cellspacing=0 cellpadding=0 bgcolor="#FFFFFF">
+<tr bgcolor="#ffffff">
+<TD colspan="2" VALIGN="top" NOWRAP bgcolor="#ffffff">&nbsp;&nbsp;<a href="http://transfer.go.com/cgi/transfer.pl?goto=http://portfolios.abcnews.go.com/portfolios&name=MSHP_PORT2&srvc=nws" class="blueLinkNoStyleFP" id="UL"><b>Click here for your customized portfolio</b></A>&nbsp;&nbsp;</TD>
+<FORM action=http://portfolios.abcnews.go.com/quotes method=get name=getquote onSubmit="isABCNewsProperties=1;return ValidateComplete2(document.getquote)">
+<TD VALIGN="top" ALIGN="left"><INPUT TYPE=TEXT SIZE=6 MAXLENGTH=40 NAME="tid"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="1" HEIGHT="10"></TD>
+<TD VALIGN="top" ALIGN="left"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="10" HEIGHT="10"><input type=image border=0 src="http://abcnews.go.com/images/HP_get_quote_010529.gif" width="63" height="20" NAME="image">&nbsp;&nbsp;</TD>
+</TR></FORM>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</TABLE>
+<!--- END MONEYSCOPE AREA --->
+</TD>
+<! ---- Begin upper right column ---->
+<TD ROWSPAN="2" WIDTH="4" BGCOLOR="#EFEFEF"><IMG SRC="http://a.abcnews.com/images/spacer.gif" WIDTH="1" HEIGHT="1"></TD>
+<TD WIDTH="266" ALIGN="left" VALIGN="top">
+<TABLE WIDTH="266" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD>
+<!-- begin big Unit -->
+<TABLE WIDTH="266" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR ALIGN="CENTER" VALIGN="MIDDLE">
+<!-- BEGIN SHOWBRANDING --->
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH="266" BACKGROUND="/images/SBC_030409_wnn.jpg" style="background-repeat: no-repeat;">
+<table border=0 cellpadding=5 cellspacing=0 background="http://abcnews.go.com/images/spacer.gif">
+<tr><td valign="top"><img src="http://abcnews.go.com/images/spacer.gif" width="1" height="3"></td></tr>
+<tr><td width="153" height="80" valign="top" align="left">
+<!-- <a href="/onair/worldnewsnow/WorldNewsNowIndex.html"><SPAN CLASS="whiteSmallbold" ID="noUL">World News Now</SPAN></a><br> -->
+<a href="/onair/worldnewsnow/WorldNewsNowIndex.html"><SPAN CLASS="whiteSmall" ID="noUL">Can't sleep? Working all night? Get the insomniacs' take on the day's events with Derek McGinty and Liz Cho.</SPAN></A><br></td>
+<td valign="top"><a href="/onair/worldnewsnow/WorldNewsNowIndex.html"><img src="http://abcnews.go.com/images/spacer.gif" width="110" height="80" border=0></a></td>
+</tr>
+</table>
+</td>
+</TR></TABLE>
+<!-- END SHOWBRANDING --->
+</TD></TR></TABLE>
+</TD>
+</TR>
+<TR>
+<TD WIDTH="266" ALIGN="left" VALIGN="top" bgcolor="#efeff5">
+<TABLE WIDTH="266" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<!-- end big Unit -->
+<tr bgcolor="#EFEFEF">
+<td><img src="http://a.abcnews.com/images/spacer.gif" width="266" height="3"></td>
+</tr>
+<tr bgcolor="#EFEFEF">
+<td width=265 bgcolor="#000066" align="center"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="3"><br><font face="arial" size="2" color="#ffffff"><b>Personalize Your News and Weather</b></font></td>
+</tr>
+<tr bgcolor="#EFEFEF">
+<td><img src="http://a.abcnews.com/images/HP_grey_1x1_010529.gif" width="266" height="1"></td>
+</tr>
+<TR>
+<!-- begin MYABCNews-->
+
+
+
+
+<TR VALIGN=TOP ALIGN=LEFT BGCOLOR=#EFEFEF>
+<TD>
+  <FORM method="GET" action="http://my.abcnews.go.com/localpageMainHandler" onSubmit="isABCNewsProperties=1;"><SPAN CLASS="linkon">
+&nbsp;&nbsp;&nbsp;Get your local news, sports, and weather.<BR>&nbsp;&nbsp;&nbsp;Enter Zip Code or City:<BR>&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME=input SIZE="7">&nbsp;&nbsp;<INPUT TYPE="image" BORDER="0" NAME="image3" SRC="/images/hp_go_010529.gif" WIDTH=23 HEIGHT=17 ALIGN="ABSMIDDLE" Value="submit"><BR><IMG SRC="/images/spacer.gif" WIDTH="264" HEIGHT="2"><BR></span>
+</TD></FORM>
+</TR>
+<!-- end MYABCNews-->
+</TR></TABLE>
+<TABLE width="260" BORDER="0" CELLPADDING="0" CELLSPACING="0" bgcolor="#efeff5">
+<tr>
+<TD VALIGN=TOP>
+<table width="266" border=0 cellpadding=0 cellspacing=0>
+<tr><td colspan="3" height="40"><img src="http://a.abcnews.com/images/spacer.gif" width="1" height="10"><br><a href="/sections/us/video_index/video_index.html" class="blueSmall" ID="NoUL"><img src="http://a.abcnews.com/media/frontpage/images/abcnews_ondemand_hp_gif.gif" width="266" height="67" border="0" vspace="0"></a></td></tr>
+</table>
+</TD>
+</TR>
+</TABLE>
+<!-- begin On Demand -->
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#efeff5">
+<TR>
+<!-- <TD WIDTH="77" VALIGN="MIDDLE" ALIGN="CENTER" BGCOLOR="#efeff5"><img src="http://abcnews.go.com/images/abc_9_11_video_live_events.gif" vspace="0" hspace="0"></TD> -->
+<TD WIDTH="266" VALIGN="MIDDLE" BGCOLOR="#efeff5">
+<table width="266" border="0" cellspacing="0" cellpadding="0" bgcolor="#efeff5">
+</table>
+</TD>
+</TR>
+</TABLE>
+<table width="266" border="0" CELLSPACING="0" CELLPADDING="2" bgcolor="#efeff5">
+<tr>
+<td colspan="2" bgcolor="#efeff5" align="center" width="16"><img src="http://a.abcnews.com/images/spacer.gif" width="14" height="2"></td>
+</tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchRealChannel('/sections/us/videofiles/Video/abcnews_live_video')"> <img src="http://a.abcnews.com/media/US/images/abcnewslive_65_50.gif" width=65 height=50 vspace=4 hspace=5 border=0 alt="ABC News Live" align=left></a><a href="javascript:LaunchRealChannel('/sections/us/videofiles/Video/abcnews_live_video')" class="blueSmall" ID="NoUL">ABC News <font color="#FF3333">Live</font>&nbsp;</a><img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0" hspace="5"><br><div class="black9pt">Get breaking news and updates 24 hours a day.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchVideo('rtsp://abcnews.go.com/sections/world/Video/newsa')"> <img src="http://a.abcnews.com/media/Webcasts/images/abc_quad_vid.jpg" width=65 height=50 vspace=4 hspace=5 border=0 alt="Virtual Control Room" align=left></a><a href="javascript:LaunchVideo('rtsp://abcnews.go.com/sections/world/Video/newsa')" class="blueSmall" ID="NoUL">Virtual Control Room <img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0"></a><br><div class="black9pt">Select from four simultaneous live streams using split-screen technology.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchRealChannel('/sections/us/videofiles/Video/030422peterson_video')"> <img src="http://a.abcnews.com/media/US/images/abc_gma_peterson_030422_vid.jpg" width=65 height=50 vspace=4 hspace=5 border=0 alt="Sharon Rocha" align=left></a><a href="javascript:LaunchRealChannel('/sections/us/videofiles/Video/030422peterson_video')" class="blueSmall" ID="NoUL">Justice Vowed</a><img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0" hspace="5"><br><div class="black9pt">Laci Peterson's family vows justice as Scott Peterson pleads not guilty.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchRealChannel('/sections/WNN/videofiles/Video/wnn_auto030422_video')"> <img src="http://a.abcnews.com/media/WNN/images/abc_wnn_auto030422v.jpg" width=65 height=50 vspace=4 hspace=5 border=0 alt="Auto Show" align=left></a><a href="javascript:LaunchRealChannel('/sections/WNN/videofiles/Video/wnn_auto030422_video')" class="blueSmall" ID="NoUL">Car Crazy</a><img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0" hspace="5"><br><div class="black9pt">Gizmo Guy Dick DeBartolo takes a spin around the New York Auto Show.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchRealChannel('/sections/GMA/videofiles/Video/030421woods_video')"> <img src="http://a.abcnews.com/media/GMA/images/abc_gma_woods_030421_vid.jpg" width=65 height=50 vspace=4 hspace=5 border=0 alt="null" align=left></a><a href="javascript:LaunchRealChannel('/sections/GMA/videofiles/Video/030421woods_video')" class="blueSmall" ID="NoUL">Tiger's Wild Side</a><img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0" hspace="5"><br><div class="black9pt">Tiger Woods talks about his charity and letting loose.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:LaunchVideo('rtsp://abcnews.go.com/media/world/audio/status_report')"> <img src="http://a.abcnews.com/media/Webcasts/images/abc_status_vid.jpg" width=65 height=50 vspace=4 hspace=5 border=0 alt="Status Reports" align=left></a><a href="javascript:LaunchVideo('rtsp://abcnews.go.com/media/world/audio/status_report')" class="blueSmall" ID="NoUL">Top Stories<img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" height="11" width="11" border="0"></a><br><div class="black9pt">Up-to-the-minute news on Iraq.</div>
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+</td></tr>
+<tr>
+<td colspan="2" width="266" align="left" valign="top" bgcolor="#efeff5">
+<a href="javascript:launchURL('http://abcnews.go.com/sections/us/RealOne/video_messages_signup.html', 'quiz', 550, 555)"> <img src="http://a.abcnews.com/images/hpart_video_alert_65x50.gif" width=65 height=50 vspace=4 hspace=5 border=0 alt="Video Messenger Alerts" align=left></a><a href="javascript:launchURL('http://abcnews.go.com/sections/us/RealOne/video_messages_signup.html', 'quiz', 550, 555)" class="blueSmall" ID="NoUL">Video Alerts <img src="http://a.abcnews.com/images/hp_videoalerts_icon_030127.gif" border="0"></a><br><div class="black9pt">For RealOne Subscribers: Click here to receive <b>FREE</b> video e-mails to your RealOne Player.</div>
+</td></tr>
+<tr>
+<td colspan="2" align=right><br><img src="http://a.abcnews.com/media/realone/images/icon_r1_2.gif" hspace="5"><span class="blueSmall" id="NoUL"><b>= Premium Video Content</b>&nbsp;&nbsp;&nbsp;<br><a href="http://www.real.com/partners/abcnews" class="blueSmall" ID="NoUL"></a>&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;<a href="http://abcnews.go.com/sections/us/video_index/video_index.html" class="blueSmall" ID="NoUL">More video and audio ></a>&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+<td valign="top" align="right" colspan="2" height="230">&nbsp;</td>
+</tr>
+</table>
+<!-- end On Demand -->
+<!-- begin Today Onbox -->
+<table width="266" border="0" CELLSPACING="0" CELLPADDING="0" bgcolor="#EFEFEF">
+</table>
+</TR>
+</TD>
+</tr>
+</table>
+<!----------------- END TOP MAIN TABLE ------------>
+<table width="778" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+<td width="133" align="left" valign="top"> 
+<p align="center">&nbsp;</p>
+</td>
+<td colspan="2" bgcolor="#000066" align="left" valign="top"> 
+<br /><div align="center" class="whiteSmall">Updated: 4:15am ET on April 23, 2003</div>
+</td>
+</tr>
+</table>
+<!---- footer table  ---------->
+<table width="778" border="0" cellpadding="0" cellspacing="0">
+<tr> 
+<td width="133" align="left" valign="top"> 
+<p align="center">&nbsp;</p>
+</td>
+<td colspan="2" bgcolor="#000066" align="left" valign="top"> 
+<p align="center"><span class="whiteSmall">&nbsp;<br>
+Copyright © 2003 ABCNEWS Internet Ventures. <br>
+Click here for: &nbsp;<a class="whiteSmall" href="/service/help/toolbox.html">HELP</a> 
+&nbsp;&nbsp;<a class="whiteSmall" href="http://adsource.go.com/abcnews/index.html">ADVERTISER 
+INFO</a> &nbsp;&nbsp;<a class="whiteSmall" href="/service/help/abccontact.html">CONTACT 
+ABC</a> &nbsp;&nbsp;<a class="whiteSmall" href="/service/help/toolbox.html">TOOLS</a> 
+&nbsp;&nbsp;<a class="whiteSmall" href="http://disney.go.com/corporate/press/wdig/abcnews/">PR</a> 
+&nbsp;&nbsp;<a class="whiteSmall" href="http://disney.go.com/legal/conditions_of_use.html">TERMS 
+OF USE</a> &nbsp;&nbsp;<a class="whiteSmall" href="http://disney.go.com/corporate/legal/wdig_privacy.html">PRIVACY 
+POLICY</a></span> 
+<p align="center"><span class="whiteSmall">Family of sites: 
+&nbsp;&nbsp;&nbsp;&nbsp; <a class="whiteSmall" href="http://abc.go.com/">ABC.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="whiteSmall" href="http://abcfamily.go.com/">ABC Family</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a class="whiteSmall" href="http://espn.go.com/">ESPN.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a class="whiteSmall" href="http://disney.go.com/">Disney.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a class="whiteSmall" href="http://familyfun.go.com/">FamilyFun.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a class="whiteSmall" href="http://gomailus.go.com/">GO Mail</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a class="whiteSmall" href="http://movies.go.com/">Movies.com</a></span> 
+<br>&nbsp;
+</td>
+</tr>
+</table>
+<!---- End footer table  ---------->
+
+
+
+<script language="JavaScript" src="http://adimages.go.com/ad/sponsors/utilities/adinsert.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var timestamp = new Date();
+var popvalue = "gopopped";
+var popname = "gopopunder";
+timestamp.setTime (timestamp.getTime() + (6 * 60 * 60 * 1000)); // six hours in between
+var popexpire = timestamp.toGMTString()
+
+// exclude real1, added 3/19/02, exclude earthlink added 5/7/02
+   var real1 = false
+   var ua = window.navigator.userAgent
+   if (ua.indexOf ("R1") > 0) real1 = true
+
+   var partner_earthlink = false
+   var urlquery=location.href.split("?")
+   if(urlquery[1] != null) {
+   	var urlterms=urlquery[1].split("&")
+       if (urlterms[0] == "partner=earthlink") {
+   	var partner_earthlink = true
+
+   setcookie("gopopunder", popvalue, "");
+
+   	}
+   }
+
+   if ((partner_earthlink != true) && (real1 != true)) {
+	GetCookie("gopopunder");
+   }
+
+
+function GetCookie(popvar) {
+var extract = document.cookie.indexOf(popvar);
+if (extract == -1){
+setcookie("gopopunder", popvalue, popexpire);
+deliverad(this);
+}}
+
+function setcookie(popname, setvalue, setexpire){
+document.cookie = popname +"=" + setvalue +"; PATH=/; expires="+ setexpire;
+}
+
+function deliverad(){
+getAd("PopUnder","468x60","nws","/POPUNDER","","");
+}
+//-->
+</SCRIPT>
+
+<script language="JavaScript"
+src="http://localhost/ecologylab/courses/sii/code/dom/domTools.js">
+</script>
+<script language="JavaScript"
+ src="http://localhost/ecologylab/courses/sii/code/dom/domShuffle.js">
+</script>
+
+</BODY>
+</HTML>

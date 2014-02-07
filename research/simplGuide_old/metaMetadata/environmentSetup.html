@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">environment setup [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4a">development environment</div>
+</div>
+
+<div class="tall_nav">
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+	<a class="navselected_bold" href="index.html">meta-metadata</a>
+	<a class="navlink" href="prereqs.html">prereqs</a>
+	<a class="navlink" href="generalPrincipals.html">principles</a>
+	<a class="navselected" href="environmentSetup.html">development<br/>environment</a>
+	<a class="navlink" href="ice.html">in-context expander</a>
+	<a class="navlink" href="libtutorials.html">tutorials</a>
+</div>
+
+<div class="block">
+	<a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+	<a class="navlink"  href="../repository.html">repository</a>
+	<a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+
+</div>
+
+<div class="content">
+
+<p class="main">
+This page explains how to set up a cross-platform development environment for meta-metadata.
+Currently, meta-metadata supports development in <b>Java</b> and <b>.NET (C#)</b>, among several
+other targeting languages. For any questions or feedback, feel free to contact the
+<a class="destination" href="community.html">community</a>.
+</p>
+
+<p class="main">
+To setup your environment, first of all you need to <a href="#checkout" class="destination">check
+out the environment</a> which contains the meta-metadata wrapper repository and related projects.
+If you plan to primarily develop in Java, refer to the <a href="#java" class="destination">Java
+section</a> to setup your Eclipse workspace. If you plan to primarily develop in .NET (C#), refer
+to the <a href="#csharp" class="destination">.NET (C#) section</a> to setup your Visual Studio
+solution.
+</p>
+
+<br />
+<br />
+<a name="checkout"><h2>Checking out the environment</h2></a>
+
+<p class="main">
+You will need a Subversion (SVN) client to check out the environment. For Windows, we recommend
+<a class="destination" href="http://tortoisesvn.tigris.org/" target="_blank">TortoiseSVN</a>. The
+following tutorial will assume you have TortoiseSVN installed. For other operating systems or SVN
+clients, the process will be similar.
+</p>
+
+<p class="main">
+1. Choose an empty folder, e.g. <i>crossPlatformSemantics</i> in your user profile (we will assume
+that you have chosen a folder with this name in the following tutorial), as the root folder for
+the environment.
+</p>
+
+<p class="main">
+2. Right click the folder, and select <i>SVN Checkout</i>.
+</p>
+
+<p class="main">
+3. Use the following SVN repository URL to check out the environment:
+<span style="display: block; font-family: monospace; margin: 5px; margin-left: 50px;">
+https://svn.ecologylab.net/crossPlatformSemantics/trunk
+</span>
+use user name and password <b><i>anonymous</i></b> if prompted.
+</p>
+
+<p class="main">
+4. In the folder, you should see subfolders including <i>MetaMetadataRepository</i>, <i>Java</i>,
+and <i>CSharp</i>, as shown below.</p>
+
+<p style="text-align: center; margin-up: 10px;">
+<img src="images/crossPlatformSemanticsLayout.png" />
+</p>
+
+<br />
+<br />
+<a name="java"><h2>Java</h2></a>
+
+<p class="main">
+Meta-metadata works with <a	class="destination"	href="http://www.oracle.com/technetwork/java/javase/downloads/jdk-6u29-download-513648.html"
+target="_blank">Java SE 1.6 development environment</a> (JDK 1.6). If you do not have it in your machine,
+you should follow the link, download and install it.
+</p>
+
+<p class="main">
+In the lab we prefer to use <a class="destination" href="http://eclipse.org" target="_blank">Eclipse</a>
+and some parts of the tutorials will be Eclipse specific.
+</p>
+
+<p class="main">
+You will also want <a class="destination" href="http://subclipse.tigris.org/" target="_blank">Subclipse
+Plugin 1.6+</a> for easily accessing SVN from inside Eclipse. We recommend to use it.
+</p>
+
+<p class="main">
+1. Start Eclipse, and choose <i>crossPlatformSemantics/Java</i> as the workspace folder.
+</p>
+
+<p class="main">
+2. Select <i>File</i> -&gt; <i>Import</i>, and then select <i>Existing Projects into Workspace</i>
+from <i>General</i> in the tree view. Then click <i>Next</i>.
+</p>
+
+<p class="main">
+3. In the dialog, choose <i>Select root directory</i>, and use <i>Browse</i> to select the
+<i>crossPlatformSemantics</i> folder. Several projects should then be listed below. Select
+all of them; if you are not doing Android development, deselect those ended with "Android"
+(e.g. <span style="font-family: monospace;">ecologylabFundamentalAndroid</span> and <span
+	style="font-family: monospace;">ecologylabSemanticsSun</span>). Then click <i>Finish</i>.
+</p>
+
+<p class="main">
+Now your Eclipse workspace should compile (no red 'x' or exclamatory mark in Package Explorer).
+</p>
+
+<p class="main">
+Also, if you have Subclispe installed, it should be able to recognize the projects:
+<br/>
+ - Open <i>SVN Repository Exploring</i> perspective (see illustration below to open the perspective), you
+should be able to see the SVN repository URL listed.
+<br/>
+ - You can use the <i>Team Synchronizing</i> perspective to update projects through SVN within Eclipse.
+</p>
+
+<p style="text-align: center;">
+<img src="images/openPerspective.png" />
+</p>
+
+<p class="main">
+4. Locate the <span style="font-family: monospace;">NewMmTest.launch</span> file in project
+<span style="font-family: monospace;">ecologylabSemanticsExample</span>, right click on it and run
+it as Java application. You should be able the see extracted semantics from the console output, in
+the form of serialized XML.
+</p>
+
+<p class="main">
+Eclipse allows you to configure the launch file in a dialog box. In the <i>Program Arguments</i>
+pane, you can try other URLs to invoke and test existing wrappers, such as:
+</p>
+
+<ul style="margin: 5px; font-family: monospace;">
+	<li>http://www.google.com/search?q=interface+ecology+lab</li>
+	<li>http://remodelista.com/products/victoria-and-albert-wessex-bath</li>
+	<li>http://www.informaworld.com/smpp/content~db=all?content=10.1080/10447310802142243</li>
+</ul>
+
+<p class="main">
+Keep the VM arguments (arguments to the Java Virtual Machine) as:
+<span style="display: block; text-align: center; font-family: monospace; margin: 5px;">-Xms320m -Xmx320m -Xincgc -XX:NewSize=128M -XX:MaxNewSize=128M</span>
+Try it out. For code samples, see the <a href="libtutorials.html" class="destination">tutorial</a>.
+</p>
+
+<br/>
+<br/>
+<a name="csharp"><h2>.NET (C#)</h2></a>
+
+<p class="main">
+1. You will need Visual Studio 2010 + Service Package 1. Visual Studio 2010 can be obtained through
+MSDN Academic Alliance or Dreamspark if you are qualified. Service Package 1 can be downloaded
+<a class="destination" href="http://www.microsoft.com/download/en/details.aspx?id=23691" target="_blank">here</a>.
+</p>
+
+<p class="main">
+2. For accessing SVN from inside Visual Studio, you can install
+<a class="destination" href="http://ankhsvn.open.collab.net/" target="_blank">AnkhSVN</a>. In Visual Studio menu, choose
+<i>Tools</i> -> <i>Extension Manager</i>, choose <i>Online Gallery</i> from the left column, and
+search for SVN. You will find it in the search result. Alternatively, you can use TortoiseSVN with Windows Explorer.
+</p>
+
+<p class="main">
+3. If you use AnkhSVN, make sure to select it as the source control plug-in from <i>Tools</i> ->
+<i>Options</i> -> <i>Source Control</i> in the left column.
+</p>
+
+<p class="main">
+4. Install <a class="destination" href="http://www.microsoft.com/download/en/details.aspx?id=9983" target="_blank">
+Visual Studio Async CTP (SP1 Refresh)</a>. This extension enables language support for making
+asynchronous calls, and will be part of Visual Studio 2012.
+</p>
+
+<p class="main">
+5. Install <a class="destination" href="http://www.microsoft.com/download/en/details.aspx?id=26716" target="_blank">
+Microsoft Surface 2.0 SDK and Runtime</a> (you may need to install <a class="destination"
+href="http://www.microsoft.com/download/en/details.aspx?id=20914" target="_blank">Microsoft XNA
+Framework Redistributable 4.0</a> which is required by Surface 2.0 SDK).
+</p>
+
+<p class="main">
+6. Install <a class="destination" href="http://www.microsoft.com/download/en/details.aspx?id=10801" target="_blank">
+Microsoft Expression Blend SDK for .NET 4</a>.
+</p>
+
+<p class="main">
+7. Click the solution file (.sln) in <i>crossPlatformSemantics/CSharp</i> to launch the workspace
+with Visual Studio. You should be able to see a list of projects in the solution.
+</p>
+
+
+<p class="main">
+8. Build the solutions. <u>If there is compilation error about Async CTP (SP1 Refresh), such as failing
+to recognize <span style="font-family: monospace;">async</span> as a keyword, follow
+<a class="destination" href="http://blogs.msdn.com/b/lucian/archive/2011/04/13/async-ctp-refresh-installation.aspx"
+target="_blank">this link</a> to correct your Async CTP installation</u>. Note that <i>Windows Phone
+Dev Tools</i> and <i>VB for phone developers</i> are optional depending on your needs for
+development.
+<br />
+<br />
+Make sure that your <span style="font-family: monospace;">csc.exe</span>,
+<span style="font-family: monospace;">vbc.exe</span>,
+<span style="font-family: monospace;">msvbide.dll</span>,
+<span style="font-family: monospace;">AsyncCtpLibrary_Phone.dll</span> are at least not older than
+listed in that article, if you do have the file.
+<br />
+<br />
+If you still have problems, uninstall all <u>Visual Studio related</u> hotfixes and updates (Control Panel
+ -&gt; Uninstall a program -&gt; View installed updates), and reinstall Async CTP (SP1 Refresh).
+</p>
+
+<p class="main">
+9. Create your own application! Note to refer to relevant projects when needed (Visual Studio does
+not add references for you automatically, even the referred project is in the same solution).
+</p>
+
+<p class="main">
+<b>Special Tips on Debugging: </b>Visual Studio by default does not break when Common Language Runtime exceptions (such as NullPointerException or IndexOutOfRangeException). 
+To make Visual Studio break correctly at the line in your code where such an error occurs, go to the <i>Debug > Exceptions</i>. 
+Ensure that the <i>Common Language Runtime Exceptions</i> is checked under the <i>Thrown</i> column.      
+</p>
+
+<p class="main">
+10. Add a reference to <span style="font-family: monospace;">AsyncCtpLibrary.dll</span> in your
+application. You will also need Awesomium related DLLs in project <span style="font-family: monospace">
+AwesomiumSharp</span>; you can automate copying these dependencies using Post-Build Event: Right click
+on project <span style="font-family: monospace">MmTest</span>, select <i>Properties</i> -&gt;
+<i>Build Events</i>, and copy the script into the same place in your project (see illustration below).
+
+<p style="text-align: center; margin-right: 40px;">
+<img src="images/postBuildEvent.png" />
+</p>
+
+<br/>
+
+</div>
+
+
+</div>
+</body></html>

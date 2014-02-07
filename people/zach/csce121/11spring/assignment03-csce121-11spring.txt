@@ -1,0 +1,95 @@
+(Print this page as a cover sheet for your printouts)
+
+LAB 3 Section: CSCE 121-______________ Due: 11:59 P.M. Tuesday,
+March 1, 2011
+
+"On my honor, as an Aggie, I have neither given nor received any
+unauthorized aid on any portion of the academic work included in this
+assignment."
+
+
+________________________________	________________________________
+Typed or printed name of student	Signature of student
+
+NOTE:  Please follow your lab instructor's directions for submitting
+your assignment through CSNET.  ONLY ASSIGNMENTS SUBMITTED TO CSNET WILL
+BE GRADED!  Make a printout of this cover sheet, sign it and give it to
+your TA in lab or put it in your TA's mailbox in the corner of the 3rd
+floor of HRBB, near room 312.  IF YOU DO NOT TURN IN A SIGNED COVER
+SHEET YOUR WORK WILL NOT BE GRADED!
+
+NOTE:  Homework will be graded on unix.cse.tamu.edu using g++.  You are
+free to develop your programs on Visual C++ or any other platform, but
+it is your responsibility to make sure your programs also compile and
+execute correctly on unix.cs.tamu.edu using g++.
+
+The grade for this lab will be based on style (formatting, variable
+names, comments, etc.), syntax (no compilation or link errors), and
+correctness (passes all test cases).  Your grade for this lab is:
+
+Problem #       1       2      
+Style            /2     /2      
+Syntax           /3     /3      
+Correctness      /10    /5    
+Part #6          /2
+Part #7          /12
+Part #8          /3
+Part #9          /12
+Part #10         /3
+Part #11         /3
+-------------------------------------------------------------------
+Total            /50    /10
+
+Grand total _____/50
+
+
+1. (50 points) The drill on page 250 (the file in question is 
+http://www.stroustrup.com/Programming/calculator08buggy.cpp).  Scoring
+on the assignment is as above.
+
+Note the following updates to the grammar:
+
+calculation:
+	statement
+	print
+	quit
+	calculation statement
+	
+statement:
+	declaration
+	expression
+	
+declaration:
+	"let" name "=" expression 
+
+expression: 
+	term
+	expression "+" term
+	expression "-" term
+	
+term:
+	primary
+	term "*" primary
+	term "/" primary
+	term "%" primary
+	
+primary:
+	number
+	"(" expression ")"
+	"sqrt(" expression ")"	
+	"pow(" expression "," expression ")"
+	
+number:
+	floating-point-literal
+
+Name your program hw3pr1.cpp.
+
+OPTIONAL EXTRA CREDIT =====================
+
+4. (10 points) Modify the program above to handle the factorial
+operation, !. Recall that n! ("n factorial") is n * (n - 1) * (n - 2) *
+... * 2. You will find it advantageous to update the grammar and
+understand that it should be higher precedence than everything except 
+parenthesis.
+
+Name your program hw3pr2.cpp.

@@ -1,0 +1,423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px }
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #518187}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #b930a1}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #7140a7}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #b930a1; min-height: 14.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #008311}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #3e217f}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #ce2f24}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px ; color: #33595d}
+    span.s1 {color: #b930a1}
+    span.s2 {color: #000000}
+    span.s3 {color: #518187}
+    span.s4 {color: #7140a7}
+    span.s5 {color: #3e217f}
+    span.s6 {color: #33595d}
+    span.s7 {color: #ce2f24}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">objective-c polymorphic</div>
+</div>
+
+<br clear="all" />
+
+
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink"  href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="navselected" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+</div>
+<!--
+<div class="tall_nav">
+<div class="block">
+  <a class="navlink" href="../../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../iiBAMSpecs.html">iiBAM guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink2" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicJava.html">- java polymorphic</a>
+  <a class="subnavlink2" href="javaToObjC.html" style="margin-top: 12px;">- obj c getting started</a>
+  <a class="subnavlink2" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="navselected" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a class="subnavlink2" href="monoMorphicCSharp.html" style="margin-top: 12px;">- c# mono-morphic</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+</div>
+-->
+
+<h5>Polymorphic Collections:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#objc" >Objective-C Header Files</li>
+<li><a href="#translation" >Creating Translation Scope</li>
+<li><a href="#translationxml" >Translation Scope XML file</li>
+<li><a href="#serialization" >Serialization & De-serliazation</li>
+<li><a href="#xmlfile" >Schmannel XML File</li>
+
+<li><a href="#end" >End Notes</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+In this tutorial we will show how to serialize/de-serialize polymorphic collections in objective-c. In the getting started objective-c tutorial, we generated a set of header and implementation files 
+from java annotated classes. We will use the same procedure for polymorphic collections in java and generate header files from the annotated java GameData tutorial.
+</p>
+
+<p>
+To view this tutorial you will need to download the entire ecologylabFundamental project.
+Access to the ecologylab fundamental project source is available 
+through <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamentalObjC">
+anonymous SVN access</a> (user: anonymous, password: anonymous).<br/><br/>The source for this tutorial is the ecologylab fundamental Objective-C project 
+located under <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamentalObjC/trunk/">/ecologylabFundamentalObjC/trunk/</a>. The code specific to this tutorial is in the Classes/Library/Rouge/ group in the Xcode project.</a></p>
+
+
+<a name="objc"> </a>
+<h5> Objective-C Header Files</h5>
+<hr/>
+
+<p>Following are the generated header files from the Java Tutorial. For each class in Java we have generated an equivalent objective-c class.</p>
+
+<p>Below the GameData objective-c class generated from Java version it also extends ElementeState class</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<p class="p1"><span class="s1">@interface</span> GameData : ElementState</p>
+<p class="p1">{</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">long</span><span class="s2"> </span>timestamp<span class="s2">;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">int</span><span class="s2"> </span>cycRem<span class="s2">;</span></p>
+
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">bool</span><span class="s2"> </span>paused<span class="s2">;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">bool</span><span class="s2"> </span>loaded<span class="s2">;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span>bool<span class="s2"> </span><span class="s3">over</span><span class="s2">;</span></p>
+
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">bool</span><span class="s2"> </span>running<span class="s2">;</span></p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span>bool<span class="s2"> </span><span class="s3">won</span><span class="s2">;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-tab-span">	</span></span>NSMutableArray<span class="s2"> *</span><span class="s3">threats</span><span class="s2">;</span></p>
+
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span>double<span class="s2"> </span><span class="s3">score</span><span class="s2">;</span></p>
+<p class="p1">}</p>
+<p class="p5"><br></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>long<span class="s2"> </span><span class="s3">timestamp</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>int<span class="s2"> </span><span class="s3">cycRem</span><span class="s2">;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">paused</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">loaded</span><span class="s2">;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">over</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">running</span><span class="s2">;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">won</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">, </span>retain<span class="s2">) </span><span class="s4">NSMutableArray</span><span class="s2"> *</span><span class="s3">threats</span><span class="s2">;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>double<span class="s2"> </span><span class="s3">score</span><span class="s2">;</span></p>
+
+<p class="p5"><br></p>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<p>Below is the generated Entity class from Java. It extends ElementState and defines its attributes</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<p class="p1"><span class="s1">@interface</span> Entity : ElementState</p>
+<p class="p1">{</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="s4">NSString</span> *m_id;</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">bool</span><span class="s2"> </span>online<span class="s2">;</span></p>
+
+<p class="p1"><span class="Apple-tab-span">	</span><span class="s1">bool</span> m_in;</p>
+<p class="p3"><span class="s2"><span class="Apple-tab-span">	</span></span>bool<span class="s2"> </span><span class="s3">safe</span><span class="s2">;</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="s1">int</span> <span class="s3">ord</span>;</p>
+
+<p class="p1">}</p>
+<p class="p5"><br></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">, </span>retain<span class="s2">) </span><span class="s4">NSString</span><span class="s2"> *m_id;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">online</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> m_in;</span></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>bool<span class="s2"> </span><span class="s3">safe</span><span class="s2">;</span></p>
+
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>int<span class="s2"> </span><span class="s3">ord</span><span class="s2">;</span></p>
+<p class="p5"><br></p>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p>Below we have the Threat class which is also similar to the Java class. Note that it does not define any of its attributes and is only acting as a dummy base class. 
+The generated objective-c version does not define any attributes which are not bound to any of its XML representation. Developers can add their own variables for programmatic use that are not bound XML representation.
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p1"><span class="s1">@interface</span> Threat : Entity</p>
+
+<p class="p1">{</p>
+<p class="p1">}</p>
+
+
+	
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p> Below we have a sample SingleSeekerThreat class which extends the Threat class. It also defines its own attribute targetOrd which is serializable. 
+	Note that as in the Java version we do not have any annotations defined on the attributes, since objective-c does not support annotations. The translation semantics are defined 
+	in "gamedata_translationscope.xml"
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p1"><span class="s1">@interface</span> SingleSeekerThreat : Threat</p>
+<p class="p1">{</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">int</span><span class="s2"> </span>targetOrd<span class="s2">;</span></p>
+
+<p class="p1">}</p>
+<p class="p5"><br></p>
+<p class="p3">@property<span class="s2"> (</span>nonatomic<span class="s2">,</span>readwrite<span class="s2">) </span>int<span class="s2"> </span><span class="s3">targetOrd</span><span class="s2">;</span></p>
+<p class="p5"><br></p>
+
+
+
+	
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<a name="translation"> </a>
+<h5> Creating Translation Scope</h5>
+<hr/>
+<p> We create the below translation as we did in the previous examples by simply reading the "gamedata_translationscope.xml" file. 
+	This will populate the internal data strucutres of the s.im.pl serialization to drive the serialzation process.
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0"  bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+   
+<p class="p7">/*</p>
+<p class="p7"><span class="Apple-converted-space"> </span>* Create Translation Scope from XML file</p>
+<p class="p7"><span class="Apple-converted-space"> </span>*/</p>
+<p class="p1">+ (<span class="s3">TranslationScope</span> *) getTranslationScope {</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">if</span><span class="s2">(</span>translationScope<span class="s2"> == </span><span class="s1">nil</span><span class="s2">){</span></p>
+
+<p class="p8"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s4">NSString</span><span class="s2"> *path = [[[</span><span class="s4">NSBundle</span><span class="s2"> </span>mainBundle<span class="s2">] </span>resourcePath<span class="s2">]<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s5">stringByAppendingPathComponent</span><span class="s2">: </span>@"gamedata_translationScope.xml"<span class="s2">];</span></p>
+
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>translationScope<span class="s2"> = [[</span>TranslationScope<span class="s2"> </span><span class="s5">alloc</span><span class="s2">] </span><span class="s6">initWithXMLFilePath</span><span class="s2">: path];<span class="Apple-tab-span">	</span></span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><span class="s2"><span class="Apple-tab-span">	</span></span><span class="s1">return</span><span class="s2"> </span>translationScope<span class="s2">;</span></p>
+
+<p class="p1">}</p>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="translationxml"> </a>
+<h5> Serialization & De-Serialization</h5>
+<hr/>
+<p>Just as we did in our previous example we will again read a sample XML file containing game data. First we will deserialize it and then serialize it back again. 
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p1"><span class="s4">NSString</span> *gameDataInput = [[[<span class="s4">NSBundle</span> <span class="s5">mainBundle</span>] <span class="s5">resourcePath</span>]<span class="Apple-converted-space"> </span></p>
+
+<p class="p8"><span class="s2"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>stringByAppendingPathComponent<span class="s2">: </span><span class="s7">@"GameData.xml"</span><span class="s2">];</span></p>
+<br></br>
+<p class="p1"><span class="s3">GameData</span> *testGameData = (<span class="s3">GameData</span> *) [<span class="s2">[</span><span class="s3">GameData</span><span class="s2"> </span>getTranslationScope<span class="s2">]</span> <span class="s6">deserialize</span>: gameDataInput<span class="Apple-converted-space"> </span>];</p>
+<p class="p5"><span class="Apple-tab-span">	</span></p>
+
+<p class="p4">NSMutableString<span class="s2"> *gamedataOutput = [</span>NSMutableString<span class="s2"> </span><span class="s5">string</span><span class="s2">];</span></p>
+
+<p class="p5"><span class="Apple-tab-span">	</span></p>
+<p class="p7">//Serializing the data back to XML into an ouptut MutableString buffer.</p>
+<p class="p1">[testGameData <span class="s6">serialize</span>:gamedataOutput];</p>
+<p class="p5"><span class="Apple-tab-span">	</span></p>
+<p class="p7">//Throwing output to console</p>
+<p class="p1"><span class="s5">NSLog</span>(gamedataOutput);</p>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="xmlfile"> </a>
+<h5> GameData XML File</h5>
+<hr/>
+<p>Below is the game data XML file we have used for this example. Notice that the  tag names "nt", "ot" and "pt" are from the class definition @xml_tag annotation. The threat collection is polymorphic type and can contain different types of Threat subclass objects.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<div class="highlight"><pre><span style="color: #008000; font-weight: bold">&lt;game_data</span> <span style="color: #7D9029">timestamp=</span><span style="color: #BA2121">&quot;1234399958508&quot;</span> <span style="color: #7D9029">cyc_rem=</span><span style="color: #BA2121">&quot;8078&quot;</span> <span style="color: #7D9029">loaded=</span><span style="color: #BA2121">&quot;true&quot;</span>
+	<span style="color: #7D9029">running=</span><span style="color: #BA2121">&quot;true&quot;</span> <span style="color: #7D9029">score=</span><span style="color: #BA2121">&quot;-28.066665835678577&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;threats&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t0&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t1&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;1&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t2&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t3&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;3&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t4&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;4&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t5&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;5&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t6&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;6&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t7&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;7&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t8&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;8&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t9&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;9&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t10&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;10&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t11&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;11&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;nt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t12&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;12&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t13&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;13&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t14&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;14&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;ot</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t15&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;15&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t16&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;16&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t17&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;17&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t18&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;18&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;pt</span> <span style="color: #7D9029">m_id=</span><span style="color: #BA2121">&quot;_t19&quot;</span> <span style="color: #7D9029">ord=</span><span style="color: #BA2121">&quot;19&quot;</span> <span style="color: #008000; font-weight: bold">/&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/threats&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/game_data&gt;</span>
+</pre></div>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<a name="end"> </a>
+<h5>End notes</h5>
+<hr/>
+<p>In this tutorial presented how to translate objective-c polymorphic types. We generated class definitions from Java polymorphic tutorial and used the same XML file to serialize/de-serialize in objective-c. </p>
+<br></br>
+<br></br>
+<br></br>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

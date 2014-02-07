@@ -1,0 +1,16 @@
+
+
+
+The time when punch cards, mice, and keyboards are sufficient as input modalities for human computer interaction has passed.
+Instead, now we require richer sensory modalities, enabling interactive computing systems to respond to people and the world.
+
+The focus of this research-oriented course is to build engaging human experiences based on sensing embodied forms of expression and recognition.
+We will begin by studying how to connect the Cypress Programmable System on a Chip (PSoC) to hardware sensors, to capture many forms of real world events.
+These can include IR LEDs and diodes, Near Field Communication (NFC), Galvanic Skin Response (for "excitation"), and many others.
+The PSoC is notable because it can be configured to provide signal chain support, such as pre-amplication and filtering, in the analog domain,
+as well as digital signal processing (DSP) and other computing before sending data to a host computer using a medium such as USB.
+Support for sensor buses, such as SPI (Serial Perheral Interface), is also facilitated.
+The recently ubiquitous sensor kits of smart phones, which include cameras, accelerometers, gyroscopes, and touch screens are also in play,
+as is The Interface Ecology Lab's multi-finger ZeroTouch sensor.
+
+This is a skills and project oriented course for advanced students to develop innovative research.

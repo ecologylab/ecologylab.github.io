@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>cF regression testing [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../code/styles/ecologylab/internal.css" rel="stylesheet">
+</head>
+
+<script language="JavaScript" src="../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../code/javascript/ecologylab/ecologylab.js"></script>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+combinFormation regression testing 
+</div>
+<br clear="all">
+</div>
+
+<div class="main_nav_box">
+
+  <div class="right_nav_box">
+
+    <a class="navlink" href="../index.html">insiders home</a>
+    <a class="navselected" href="../softwareDevelopment/index.html">software development</a>
+    <a class="navlink" href="../publishing/index.html">publishing</a>
+    <a class="navlink" href="../studies/index.html">studies</a>
+    <a class="navlink" href="../hardwareDevelopment/index.html">hardware development</a>
+    <a target="_blank" class="navlink"
+ href="http://ecologylab.cs.tamu.edu">ecologylab public</a>
+  </div>
+&nbsp;
+  <div class="right_nav_box">
+
+    <a class="navlink" href="javascript:ecologylabPopup('http://twang.csdl.tamu.edu/bugzilla/')">bugzilla</a>
+    <a class="navlink" href="branchesAndTags.html">our cvs branches &amp; tags</a>
+    <a class="navlink" href="cvsInEclipse.html">cvs in eclipse</a>
+    <a class="navselected" href="regressionTesting.html">regression testing</a>
+    <a class="navlink" href="programmingStyle.html">programming style</a>
+    <a class="navlink" href="javaPractices.html">java practices</a>
+  </div>
+</div>
+
+<div class="main_content">
+<ol>
+
+  <li>Buld JavaDocs. Look at the error messages that are
+      generated. Resolve problems. Also add documentation as needed.
+  </li>
+  
+  <li>Launch the news collection from the browser. 
+      After it's running fine for 5 minutes:
+      <ul>
+      <li>Save the information space without history.</li>
+      <li>Load the saved version of the information space without history.</li>
+      <li>Save the information space with history.</li>
+      <li>Load the saved version of the information space with history.</li>
+      </ul>
+  </li>
+
+  <li>From the browser,
+      launch a re:mix with 2-4 searches and websites
+      that are of interest to you. 
+      Once it runs o.k. for some time:
+      <ul>
+      <li>Save the information space without history.</li>
+      <li>Load the saved version of the information space without history.</li>
+      <li>Save the information space with history.</li>
+      <li>Load the saved version of the information space with history.</li>
+      </ul>
+  </li>
+  
+  <li>Within eclipse, run a search with 2-4 keyword queries that are of interest to you. 
+      Once it runs o.k. for some time:
+      <ul>
+      <li>Save the information space without history.</li>
+      <li>Load the saved version of the information space without history.</li>
+      <li>Save the information space with history.</li>
+      <li>Load the saved version of the information space with history.</li>
+      </ul>
+  </li>
+  
+  <li>Build the ecologylab.jar and cF.jar files. Sign both jars and (if necessary)
+      re-sign all-pdf.jar. Then, from the web interface in both Internet Explorer and Firefox:
+      <ul>
+	  <li>Open a new (blank) composition space and ensure that it starts up properly.</li>
+      <li>Run the news collection and ensure it starts up properly.</li>
+	  <li>Seed a new session with 2-4 queries consisting of only sites and
+	      ensure that it starts up properly.</li>
+	  <li>Seed a new session with 2-4 queries consisting only of keywords and
+	      ensure that it starts up properly.</li>
+      <li>Seed a new session with 2-4 queries consisting of half sites, half keywords. 
+	      Ensure that it starts up properly.</li>
+      </ul>
+  </li>
+  
+  <li>After launching from the web interface, try navigating to a container or
+      container's hyperlink. Ensure that the page loads properly in the browser.
+	  Do this for both Internet Explorer and Firefox.</li>
+
+  <li>Use drag and drop to bring elements in from a web page.
+      Do this both with our extension installed in Firefox, and
+      without it in Internet Explorer and Firefox. Save them to a file.
+      Start a new session and open the file to ensure it opens properly.</li>
+  
+  <li>Create several new text elements in an empty space.
+      Save the space. Restart combinFormation and restore the contents of the space
+      to ensure that it opens properly.</li>
+  
+  <li>Edit some existing elements in a space. Save the space. 
+      Restart combinFormaiton and restore the contents of the space.</li>
+	  
+  <li>Edit the metadata of some existing elements in the space. Save the
+      composition, restart combinFormation, and reload the space. Ensure
+	  that the metadata displays and that the changes were preserved.</li>
+	  
+  <li>Express interest in metadata terms using the in-context-slider. Save
+      the composition, restart combinFormation, and reload the space. Ensure
+	  that the metadata term's interest levels have been preserved.</li>
+	  
+  <li>Run any large search or collection for 8 hours, or until it
+      crashes or becomes impossibly slow. In the console output,
+      occasional debugging information will be shown
+      indicating number of elements in the candidate pools and the free memory.
+	  If possible, notice these values at the time when the session stopped being
+      productive, or when the 8 hours was up (whichever is first).
+      The program should be able to run for at least the 8 hours.</li>
+</ol>
+
+<div class="subbox">
+</div>
+
+<div class="subbox">
+
+</div>
+</div>
+
+</div>
+</body> </html>
+

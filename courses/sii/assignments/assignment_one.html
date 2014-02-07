@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>assignment one: css layout | structures of interactive information</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../code/styles/ecologylab/courses.css" rel="stylesheet">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<script language="JavaScript" src="../../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../../../code/javascript/ecologylab/ecologylab.js"></script>
+
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="banner">
+  <span class="banner3">information</span>
+  <span class="banner2">interactive</span>
+  <span class="banner1">structures of</span>
+</div>
+
+<div class="navigation">
+
+<div class="block">
+  <a class="navlink" href="../index.html">welcome</a>
+  <a class="navlink" href="../policies.html">policies</a>
+  <a class="navlink" href="../procedures.html">procedures</a>
+  <a class="navlink" href="../participants.html">participants</a>
+  <a class="navlink" href="../contact.html">contact info</a>
+</div>
+
+<div class="block">
+  <a class="sectiontitle" href="../modules/index.html">modules</a>
+  <a class="subnavlink" href="../modules/visual/index.html">visual&nbsp;&lsaquo;</a>
+  <a class="subnavlink" href="../modules/dynamic/index.html">dynamic &lsaquo;</a>
+  <a class="subnavlink"
+   href="../modules/theReference/index.html">the&nbsp;reference&nbsp;&lsaquo;</a>
+  <a class="subnavlink" href="../modules/meaning/index.html">meaning &lsaquo;</a>
+</div>
+
+<div class="block">
+  <a class="subnavtitle" href="index.html">assignments</a>
+  <a class="navselected" href="assignment_one.html">one:&nbsp;css&nbsp;layout</a>
+  <a class="subnavlink" href="assignment_two.html">two:&nbsp;home&nbsp;page</a>
+</div>
+
+<div class="block">
+  <a class="navlink" href="../mustsee/index.html">must see!</a>
+  <a class="navlink" href="../references.html">references</a>
+  <a class="navlink" href="../texts.html">texts</a>
+</div>
+
+<div class="block">
+  <a class="spaced_navlink" href="../../">other courses</a>
+</div>
+
+</div>
+
+<div class="content_title">assignment one: css layout</div>
+
+<div class="content">
+
+<p>
+This assignment is about learning the fundamentals of Cascading Style
+Sheets (CSS), especially relative positioning, and the rich set of
+attributes that can be applied to control layout. You will also use
+CSS to control the appearance of text. 
+</p>
+
+<p>
+Using only CSS and the CSS-positioning HTML tags listed below,
+duplicate the layout of an old version of the Metropolitan Museum of Art
+<a
+href="javascript:siiPopup('metHomeComplete.htm')">navigational
+home page</a>.
+This will be a shift in coding, since they use tables, and
+font tags, and for this assignment, you will not. Link to their
+versions of all the images, unless they disappear (see below), in
+which case, put whatever copies you need into a directory.
+</p>
+
+<p>
+You will
+replace image text with regular HTML text, with appearance controlled
+by CSS. When replacing the image text, choose a set of fonts such that
+the first one is as close a match as possible; the later entries in
+the set will be fonts that make sure that at least one of those that
+you specify will be available on any computer.
+</p>
+
+<p>
+You will need to 
+capture a snapshot of this page, at the start of the assignment.
+Follow the following procedure:
+<ol>
+  <li>Open their <a href="javascript:siiPopup('metHomeComplete.htm')">home page</a>
+      in a fullscreen Internet Explorer browser window. 
+ </li>
+  <li>Save 2 versions of the page. One should be HTML only; the other
+      should be "Web Page, complete". The latter will save all of the
+      images for you on your local hard drive, just in case they
+      disappear from the Met's site (though this is unlikely).</li>
+  <li>Use the print screen button to take a screen shot of the page in
+      the browser window. Use Photoshop or Programs->Accessories->Paint
+      to save this screenshot as a JPEG file.
+  </li>
+  <li>Use Photoshop to carefully crop the image of the page, from inside of
+      the browser, in your screenshot. Save this as a copy, keeping
+      the original. This will be your reference image.
+      Add a link to the bottom of the page that allows the viewer to see your
+      reference image.
+  </li>
+  <li>To check your progress, as you code your version of the file,
+      you can swap this reference background image in as the background, using 
+      the CSS background attribute of the <code>body</code> tag. </li>
+  <li>When you get comfortable enough, using a little javascript,
+      create a link at the very bottom of the page that toggles
+      whether or not the reference background is showing. 
+      This will be convenient for development.</li>
+</ol>
+</p>
+
+<p>
+Refer to image assets by linking to versions on the Met's servers, not
+your own copies, unless this becomes impossible. If that is the case,
+please report about it explicitly.
+</p>
+
+<p>
+If for any reason, there are some features of the Met page that are
+impossible to duplicate without tables, explain the nature of the
+limtation, how you have done your best to provide similar but alternative
+functionality, and what the differences are.
+</p>
+
+<p>
+Do not look at the source for the current Met Home Page while working
+on this assignment. </p>
+
+<p>
+<div class="destination">
+<a class="destination_link" 
+ href="javascript:siiPopup('http://www.w3.org/TR/REC-html32.html#block')">
+Block level</a> HTML elements for this assignment
+</div>
+<code>
+&lt;div&gt;<br />
+&lt;p&gt;<br />
+&lt;h1&gt;...&lt;h6&gt;<br />
+</code>
+</p>
+
+<p>
+<div class="destination">
+Some Useful CSS attributes
+</div>
+<code>
+float:<br />
+border:<br />
+margin:<br />
+padding:<br />
+width:<br />
+height:<br />
+position:<br />
+</code>
+</p>
+
+<p>
+<div class="destination">
+HTML Elements not allowed for this assignment
+</div>
+<code>
+&lt;table&gt;<br />
+&lt;font&gt;<br />
+</code>
+</p>
+
+<p>
+<div class="destination">
+Variant: Your Exhibition
+</div>
+When you have finished coding the main part of the assignment, create
+an additional variant version of the page. On the variant, modify the
+set of "Special Exhibitons," so that one of them is an imagined
+exhibition for some work of yours. Make sure to exactly imitate the style of
+their presented exhibits (same sized image, same amount of text and
+formatting). Your exhibit should look like it belongs, except for the
+content, which can be whatever your heart (or your sense of humor) desires.
+Add links to the bottom of each version of the page, to enable
+navigation from one to the other.
+</p>
+
+<p>
+<div class="destination">
+Coding Standards
+</div>
+Please adhere to the following HTML coding standards for this
+assignment, and throughout the course:
+<ol>
+  <li>Make your code readable. Use whitespace. Name styles and other
+      identifiers so that each name indicates function.</li>
+  <li>Put all of your style declarations into a separate .css file.
+      Access them in your HTML via the <code>class</code> attribute, the 
+      <code>name</code> attribute, or through HTML element level declarations.
+  </li>
+</ol>
+</p>
+
+<p>
+You will need to identify some web space for your work on this and future
+assignments. In your web space, make a subdirectory called assignment_one.
+Put your assignment in there, as index.html.
+Email to me a link that tells me where the top of your web space is.
+For now, don't tell others where it is. Soon, we will share this information.
+</p>
+
+<p>
+On this assignment, unlike on most assignments in this class, you are
+NOT allowed to share your code, or look at other people's. Violations
+of this policy will be considered A&M honor code violations: VERY SERIOUS.
+</p>
+
+<p>
+Make sure that your version of the assignment works on Windows 2000
+and XP, for mozilla 1+, and ie 6. Make sure it works for a full range
+of browser window sizes, and at assorted reasonable monitor resolutions.
+</p>
+
+<div class="source">
+due thursday 9/6
+</div>
+
+</div>
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+<br>
+an <a href="../../../../">interface ecology lab</a> production
+</div>
+
+</div>
+</body>
+</html>

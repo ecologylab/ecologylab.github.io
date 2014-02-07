@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="1.1">
+  <preferences>
+    <screen height="1024.0" width="1280.0" size="1"/>
+  </preferences>
+  <site_set>
+    <site domain="www.sics.se" strokeHue="0.041666668" fontIndex="1"/>
+    <site domain="nec.com" strokeHue="0.75" fontIndex="2"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.sics.se/humle"/>
+    <traversable urlString="http://citeseer.nj.nec.com"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/1265638/452237/"/>
+    <traversable urlString="http://portal.acm.org"/>
+    <traversable urlString="http://arsenal.media.mit.edu/notebook/archives"/>
+    <traversable urlString="http://www.sics.se/humle/projects"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah/"/>
+    <traversable urlString="http://gunther.smeal.psu.edu/context/168727/0/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah2003/"/>
+    <traversable urlString="http://www.sics.se/~kia"/>
+    <traversable urlString="http://www.edfac.usyd.edu.au/projects/ah/"/>
+    <traversable urlString="http://www.naturalbeauty.no/naturalbeauty"/>
+    <traversable urlString="http://www.acm.org/sigchi/chi95/proceedings/shortppr"/>
+    <traversable urlString="http://www.uni-paderborn.de/fachbereich/AG/agdomik/arbeitsschwerpunkte/ucmm/idias"/>
+    <traversable urlString="http://www.sics.se/~kia/papers"/>
+    <traversable urlString="http://ah2000.itc.it/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah"/>
+    <traversable urlString="http://iat.ubalt.edu/courses/old"/>
+    <traversable urlString="http://www.esi.umontreal.ca/~dufresne/COM6535"/>
+    <traversable urlString="http://iat.ubalt.edu/courses/old/pbds664_F98/hidframe/"/>
+    <traversable urlString="http://www.stemnet.nf.ca/~elmurphy/emurphy"/>
+    <traversable urlString="http://www.ida.liu.se/~nilda/"/>
+    <traversable urlString="http://www.stretchtext.com/"/>
+    <traversable urlString="http://sirius.lcc.uma.es/AH2002/"/>
+    <traversable urlString="http://www.dsv.su.se/~calle"/>
+    <traversable urlString="http://www.bokai.com/BarcodeJSP"/>
+    <traversable urlString="http://www.bokai.com/BarCodeASP"/>
+    <traversable urlString="http://128.205.122.10/~trebor/dms419/txt"/>
+    <traversable urlString="http://www.zeiberg.com"/>
+    <traversable urlString="http://computing.unn.ac.uk/staff/cgpb4/ijaied/members01/archive/vol_12/brusilovsky"/>
+    <traversable urlString="http://www.sentex.net/~ajy"/>
+    <traversable urlString="http://www.sics.se/humle/gallery/2001"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/1852330902"/>
+    <traversable urlString="http://www.usefilm.com/image"/>
+    <traversable urlString="http://osdn.pricegrabber.com/search_attrib_books.php/bkcat2=66820/page=2/"/>
+    <traversable urlString="http://books.mysic.com"/>
+    <traversable urlString="http://www.metal-sludge.com"/>
+    <traversable urlString="http://www.racinecats.com/html"/>
+    <traversable urlString="http://hpsearch.uni-trier.de/hp/a-tree/w"/>
+    <traversable urlString="http://www.spiritone.com/~paulg"/>
+    <traversable urlString="http://www.sics.se/humle/gallery/2002/sitidagen020207"/>
+    <traversable urlString="http://www.dfki.de/imedia/workshops/i3-spring99"/>
+    <traversable urlString="http://www.chi2003.org"/>
+    <traversable urlString="http://www.acm.org/sigs/sigchi/chi2001/ap/technical-program"/>
+    <traversable urlString="http://www.sics.se/humle/"/>
+    <traversable urlString="http://hpsearch.uni-trier.de/hp/a-tree/j"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah94"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/75173/0/"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/91646/0/"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0792348435"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/803323/132766/"/>
+    <traversable urlString="http://w5.cs.uni-sb.de/~UM97/abstracts"/>
+    <traversable urlString="http://www.sis.pitt.edu/~peterb"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0792348435/104-5668866-9139110"/>
+    <traversable urlString="http://informationr.net/ir/3-2"/>
+    <traversable urlString="http://www.igd.fhg.de/archive/1995_www95/proceedings/posters/48/"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/458028/0/"/>
+    <traversable urlString="http://web.media.mit.edu/~hugo/vitae/"/>
+    <traversable urlString="http://www.dlib.org/dlib/march03/diaz"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/186207/0/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/asum99"/>
+    <traversable urlString="http://csdl.computer.org/comp/proceedings/hicss/1997/7734/06"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/186216/82150/"/>
+    <traversable urlString="http://www.igd.fhg.de/archive/1995_www95/proceedings/papers/105"/>
+    <traversable urlString="http://hsb.baylor.edu/ramsower/ais.ac.96/papers"/>
+    <traversable urlString="http://www2.iicm.edu/harguide/overview/hyperg/"/>
+    <traversable urlString="http://citeseer.ist.psu.edu"/>
+    <traversable urlString="http://www.ida.liu.se/~nilda"/>
+    <traversable urlString="http://www2003.org/cdrom/papers/alternate/P810"/>
+  </traversable_set>
+  <term_set>
+    <term stemmed="push" intensity="3"/>
+    <term stemmed="stopword" intensity="3"/>
+    <term stemmed="util" intensity="3"/>
+    <term stemmed="evalu" intensity="3"/>
+    <term stemmed="hook" intensity="3"/>
+    <term stemmed="hypermedia" intensity="6"/>
+    <term stemmed="adapt" intensity="6"/>
+    <term stemmed="photo" intensity="3"/>
+  </term_set>
+  <container_set>
+    <container url="http://www.sics.se/humle/gallery/2002/sitidagen020207/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/context/186207/0/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/dolog02hypermedia.html" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/441072.html" generation="1">
+      <content_element>
+        <participant intensity="8"/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/hk96individual.html" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/context/44306/0/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/context/75180/0/" generation="1">
+      <content_element>
+        <participant intensity="-6"/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/brusilovsky97efficient.html" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/63958.html" generation="1">
+      <content_element>
+        <participant intensity="9"/>
+      </content_element>
+    </container>
+    <container url="http://citeseer.nj.nec.com/context/442330/0/" generation="1">
+      <content_element>
+        <participant intensity="8"/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/~kia/adaptive_hypermedia.html" generation="1">
+      <content_element>
+        <participant intensity="5"/>
+      </content_element>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://citeseer.nj.nec.com/brusilovsky97efficient.html" historyNum="15">
+      <media_element negativeClicks="4">
+        <content_element>
+          <participant intensity="-8"/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.5416667">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="&quot;Efficient"/>
+            <text_token string="techniques"/>
+            <text_token string="for"/>
+            <text_token string="adaptive"/>
+            <text_token string="hypermedia&quot;."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="55" y="630" width="140" height="106"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="7">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20017.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="259" y="613" width="312" height="234"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/hk96individual.html" historyNum="10">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://citeseer.nj.nec.com/graphs/d0/df/b5/4f/docyear442185.png"/>
+      </media_element>
+      <visual>
+        <extent x="208" y="1078" width="156" height="46"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="5">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20015.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="70" y="424" width="156" height="208"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/~kia/adaptive_hypermedia.html" historyNum="1">
+      <media_element positiveClicks="2" negativeClicks="5">
+        <content_element>
+          <participant intensity="-6"/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.625">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Some"/>
+            <text_token string="links"/>
+            <text_token string="related"/>
+            <text_token string="to"/>
+            <text_token string="adaptive"/>
+            <text_token string="hypermedia:"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="238" y="531" width="105" height="80"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/63958.html" historyNum="11">
+      <media_element positiveClicks="4">
+        <content_element>
+          <participant intensity="8"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="A"/>
+            <text_token string="glass"/>
+            <text_token string="box"/>
+            <text_token string="approach"/>
+            <text_token string="to"/>
+            <text_token string="adaptive"/>
+            <text_token string="hypermedia."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="244" y="430" width="125" height="94"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/brusilovsky97efficient.html" historyNum="20">
+      <media_element positiveClicks="2" negativeClicks="1">
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Efficient"/>
+            <text_token string="Techniques"/>
+            <text_token string="for"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="(1997)"/>
+            <text_token string="(Make"/>
+            <text_token string="Corrections)"/>
+            <text_token string="(7"/>
+            <text_token string="citations)"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="352" y="511" width="223" height="94"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/44306/0/" historyNum="17">
+      <media_element positiveClicks="6" negativeClicks="7">
+        <content_element>
+          <participant intensity="-4"/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.75">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="(1995)"/>
+            <text_token string="`"/>
+            <text_token string="An"/>
+            <text_token string="adaptive"/>
+            <text_token string="hypermedia"/>
+            <text_token string="system"/>
+            <text_token string="'."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="373" y="458" width="174" height="50"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="4">
+      <media_element positiveClicks="4">
+        <content_element>
+          <participant intensity="8"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Kristina"/>
+            <text_token string="Höök"/>
+            <text_token string="talks"/>
+            <text_token string="about"/>
+            <text_token string="emotions"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="172" y="653" width="111" height="49"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="6">
+      <media_element positiveClicks="5">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20005.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="410" y="333" width="156" height="120"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/hk96individual.html" historyNum="8">
+      <media_element positiveClicks="4" negativeClicks="1">
+        <content_element>
+          <participant intensity="6"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" commonHref="http://citeseer.nj.nec.com/hk97evaluating.html" nonStopIndex="0.0">
+            <text_token string="Evaluating"/>
+            <text_token string="the"/>
+            <text_token string="Utility"/>
+            <text_token string="and"/>
+            <text_token string="Usability"/>
+            <text_token string="of"/>
+            <text_token string="an"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia.."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="266" y="345" width="154" height="84"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/75180/0/" historyNum="18">
+      <media_element positiveClicks="6" negativeClicks="10">
+        <content_element>
+          <participant intensity="-10"/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.47916666">
+          <text_chunk sameHref="true" commonHref="http://citeseer.nj.nec.com/brusilovsky02domain.html" nonStopIndex="0.0">
+            <text_token string="Domain,"/>
+            <text_token string="Task,"/>
+            <text_token string="and"/>
+            <text_token string="User"/>
+            <text_token string="Models"/>
+            <text_token string="for"/>
+            <text_token string="an"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia.."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="69" y="328" width="146" height="86"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/186207/0/" historyNum="19">
+      <media_element positiveClicks="6">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="A"/>
+            <text_token string="WWW"/>
+            <text_token string="Interface"/>
+            <text_token string="to"/>
+            <text_token string="an"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="System"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="60" y="212" width="137" height="102"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/442330/0/" historyNum="12">
+      <media_element positiveClicks="8">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" commonHref="http://citeseer.nj.nec.com/63958.html" nonStopIndex="0.0">
+            <text_token string="A"/>
+            <text_token string="Glass"/>
+            <text_token string="Box"/>
+            <text_token string="Approach"/>
+            <text_token string="to"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="-"/>
+            <text_token string="Höök,"/>
+            <text_token string="Karlgren,"/>
+            <text_token string="Wærn.."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="53" y="95" width="203" height="96"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/~kia/adaptive_hypermedia.html" historyNum="2">
+      <media_element positiveClicks="6">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" commonHref="http://www.sics.se/humle/projects/push.html" nonStopIndex="0.0">
+            <text_token string="PUSH"/>
+            <text_token string=","/>
+            <text_token string="our"/>
+            <text_token string="own"/>
+            <text_token string="adaptive"/>
+            <text_token string="hypermedia"/>
+            <text_token string="application."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="254" y="97" width="123" height="92"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/441072.html" historyNum="21">
+      <media_element positiveClicks="9">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Evaluating"/>
+            <text_token string="the"/>
+            <text_token string="Utility"/>
+            <text_token string="and"/>
+            <text_token string="Usability"/>
+            <text_token string="of"/>
+            <text_token string="an"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="System,"/>
+            <text_token string="Proc."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="372" y="89" width="193" height="86"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/186207/0/" historyNum="13">
+      <media_element positiveClicks="12" negativeClicks="7">
+        <content_element>
+          <participant intensity="-4"/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.75">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Hypermedia"/>
+            <text_token string="information"/>
+            <text_token string="is"/>
+            <text_token string="fully"/>
+            <text_token string="supported."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="413" y="175" width="153" height="73"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/~kia/adaptive_hypermedia.html" historyNum="3">
+      <media_element positiveClicks="7">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia:"/>
+            <text_token string="a"/>
+            <text_token string="short"/>
+            <text_token string="introduction"/>
+            <text_token string="Kristina"/>
+            <text_token string="H"/>
+            <text_token string="k"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="408" y="253" width="134" height="78"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="9">
+      <media_element positiveClicks="9">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20012.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="194" y="192" width="208" height="156"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/context/186207/0/" historyNum="14">
+      <media_element positiveClicks="10">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="A"/>
+            <text_token string="WWW"/>
+            <text_token string="Interface"/>
+            <text_token string="to"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="System"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="182" y="736" width="133" height="101"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://citeseer.nj.nec.com/dolog02hypermedia.html" historyNum="16">
+      <media_element positiveClicks="1">
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk sameHref="true" commonHref="http://citeseer.nj.nec.com/dolog03integrating.html" nonStopIndex="0.0">
+            <text_token string="Integrating"/>
+            <text_token string="Adaptive"/>
+            <text_token string="Hypermedia"/>
+            <text_token string="Techniques"/>
+            <text_token string="and"/>
+            <text_token string="Open.."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="61" y="739" width="160" height="111"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

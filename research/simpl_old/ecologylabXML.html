@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>s.im.pl serialization [interface ecology lab | research]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../code/styles/ecologylab/ecologylab.css"
+	rel="stylesheet">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+
+<script language="JavaScript"
+	src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/ecologylab/ecologylab.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header"><img class="logo"
+	src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title">s.im.pl serialization</div>
+
+</div>
+
+<br clear="all" />
+
+<div class="nav" style="height: 500px;"><a class="navlink"
+	href="../../index.html">home</a> <a class="navlink"
+	href="../../define.html">define</a>
+
+	<div class="block">
+		<div class="subblock">
+			<a class="navselected" href="../index.html">research</a>
+			<a class="subnavlink" href="../combinFormation.html">combinFormation</a>
+			<a class="subnavlink" href="../tec.html">team coordination games</a>
+			<a class="subnavlink" href="../sensoryInterfaces.html">embodied interfaces</a>
+		</div>
+
+		<div class="subblock">
+			<a class="subnavlink" href="../ecosystemsApproach.html">interface ecosystems</a>
+			<a class="subnavlink" href="../informationDiscovery.html">information discovery</a>
+		</div>
+		<div class="subblock">
+			<a class="navselected" href="index.html">s.im.pl</a>
+			<a class="subnavselected" href="ecologylabXML.html">- s.im.pl serialization</a>
+			<a class="subnavlink" href="oodss.html">- oodss</a>			
+			<a class="subnavlink" href="metaMetadata.html">- meta-metadata</a>
+		</div>
+	</div>
+
+
+<a class="navlink" href="../../people/index.html">people</a> <a
+	class="navlink" href="../../courses/index.html">courses</a> <a
+	class="navlink" href="../../technicalReports/index.html">technical
+reports</a></div>
+
+<h4>A Concise Binding Framework Facilitates Practical
+Object-Oriented Document Engineering</h4>
+
+<p>Semantic web researchers tend to assume that XML Schema and OWL-S
+are the correct means for representing the types, structure, and
+semantics of serialized data used for documents and interchange between
+programs and services. These technologies separate information
+representation from implementation. The separation may seem like a
+benefit, because it is platform-agnostic.</p>
+
+<p>The problem is that separating data from code interferes with
+writing correct programs for practical document engineering, because it
+violates a primary principle of object-oriented programming: integration
+of data structures and algorithms. We develop an Object
+Binding Framework that connects object declarations with
+serialized representation. A basis of the framework is an Integrated Information Binding Annotation
+Metalanguage (iiBAM), embedded in Java or C# object and field declarations, designed
+to be particularly concise, to facilitate the authoring and maintenance
+of programs that generate and manipulate equivalent documents. 
+In the present implementation, the serialization is performed as XML documents; 
+support for other serialization formats is planned. The framework
+serves as the foundation for a layered software architecture that
+includes meta-metadata descriptions for multimedia information
+extraction, modeling, and visualization; Object-Oriented Distributed
+Semantic Services; interaction logging services; and a user studies
+framework.</p>
+
+<p><code>s.im.pl serialization</code> is part of the Interface Ecologylab
+Fundamental API, which is being released as open source. In addition to
+the Serialization and <a class="checkthis" href="../oodss/index.html">Object-Oriented
+Distributed Semantic Services (OODSS)</a>, this API includes other component
+bundles for building applications, storing and editing preferences, and
+working with HTTP.
+</p>
+
+<p>
+	The framwork currently supports iiBAM declarations in Java and C#. It also supports cross-compilation of Java-based declarations
+	into equivalent serializable objects in C# and Objective C>
+</p>
+
+<p>
+S.IM.PL serialization generalizes the framework formerly known as <code>ecologylab.xml</code>.
+</p>
+
+
+
+<h4>performance</h4>
+
+<p>Performance measures were computed using the <a target="_blank"
+	class="checkthis" href="https://bindmark.dev.java.net/">bindmark
+XML binding benchmarks</a>.
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" style="{padding:2px;}">
+
+ <tr >
+  <td  class="rightBorder">framework /</td>
+  <td  colspan=2>marshalling time (nanoseconds)</td>
+  <td  class="rightBorder" ></td>
+  <td colspan=2 >unmarshalling time (nanoseconds)</td>
+  <td class="rightBorder" ></td>
+  <td class="darkenedTableCell">runtime</td>
+ </tr>
+ <tr class="rightBorder" >
+  <td class="rightBorder" align="right">(# runs)</td>
+  <td class="rightBorder" >small (1000 runs)</td>
+  <td class="rightBorder" >medium (100)</td>
+  <td class="rightBorder" >large (10)</td>
+  <td class="rightBorder" >small (1000)</td>
+  <td class="rightBorder" >medium (100)</td>
+  <td class="rightBorder" >large (10)</td>
+  <td  class="darkenedTableCell">size (KB)</td>
+ </tr>
+ <tr class="rightBorder" >
+  <td  class="rightBorder" >s.im.pl serialization</td>
+  <td  class="rightBorder" align=right>39,004</td>
+  <td  class="darkenedTableCellRightBorder" align=right>1,528,674</td>
+  <td  class="darkenedTableCellRightBorder" align=right>7,151,383</td>
+  <td  class="rightBorder" align=right>289,966</td>
+  <td  class="rightBorder" align=right>5,815,660</td>
+  <td  class="darkenedTableCellRightBorder" align=right>35,446,572</td>
+  <td   class="darkenedTableCell" align=right>176</td>
+ </tr>
+ <tr >
+  <td  class="rightBorder" >JiBX*</td>
+  <td  class="darkenedTableCellRightBorder" align=right>35,943</td>
+  <td  class="rightBorder" align=right>1,719,212</td>
+  <td  class="rightBorder" align=right>15,627,181</td>
+  <td  class="darkenedTableCellRightBorder" align=right>70,420</td>
+  <td  class="darkenedTableCellRightBorder" align=right>5,683,769</td>
+  <td  class="rightBorder" align=right>39,249,876</td>
+  <td  class="darkenedTableCell" align=right>141</td>
+ </tr>
+ <tr >
+  <td  class="rightBorder" >JAXB 2.0</td>
+  <td class="rightBorder"  align=right>65,749</td>
+  <td class="rightBorder"  align=right>2,223,438</td>
+  <td class="rightBorder"  align=right>10,567,599</td>
+  <td class="rightBorder"  align=right>362,868</td>
+  <td class="rightBorder"  align=right>14,889,646</td>
+  <td class="rightBorder"  align=right>87,146,075</td>
+  <td  class="darkenedTableCell" align=right>3,800</td>
+ </tr>
+ <tr >
+  <td  class="rightBorder" >XStream</td>
+  <td class="rightBorder"  align=right>413,465</td>
+  <td class="rightBorder"  align=right>18,373,301</td>
+  <td class="rightBorder"  align=right>173,198,604</td>
+  <td class="rightBorder"  align=right>719,290</td>
+  <td class="rightBorder"  align=right>28,818,238</td>
+  <td class="rightBorder"  align=right>211,358,650</td>
+  <td  class="darkenedTableCell" align=right>368</td>
+ </tr>
+ <tr >
+  <td  class="rightBorder" >Castor</td>
+  <td class="rightBorder"  align=right>1,183,407</td>
+  <td class="rightBorder"  align=right>11,831,280</td>
+  <td class="rightBorder"  align=right>55,922,610</td>
+  <td class="rightBorder"  align=right>1,813,563</td>
+  <td class="rightBorder"  align=right>22,926,830</td>
+  <td class="rightBorder"  align=right>162,330,464</td>
+  <td  class="darkenedTableCell" align=right>3,000</td>
+ </tr>
+ <tr  class="darkenedTableCell" >
+  <td  class="rightBorder">XML file size (KB)</td>
+  <td >&nbsp;</td>
+	<td>&nbsp;</td>
+  <td class="rightBorder" >&nbsp;</td>
+  <td class="rightBorder"  align=right>1.42</td>
+  <td class="rightBorder"  align=right>123</td>
+  <td class="rightBorder"  align=right>1,003</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  class="darkenedTableCell" >
+  <td class="rightBorder" class="rightBorder"  >XML file lines</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td class="rightBorder"  >&nbsp;</td>
+  <td class="rightBorder"  align=right>55</td>
+  <td class="rightBorder"  align=right>1,817</td>
+  <td class="rightBorder"  align=right>8,567</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  class="darkenedTableCell" >
+  <td  class="rightBorder" >XML file depth</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td class="rightBorder" >&nbsp;</td>
+  <td class="rightBorder"  align=right>2</td>
+  <td class="rightBorder"  align=right>20</td>
+  <td class="rightBorder"  align=right>45</td>
+  <td >&nbsp;</td>
+ </tr>
+</table>
+</p>
+<p>
+*JiBX uses a binding compile step to optimize Java byte code for performance; this step is excluded from the benchmark.
+</p>
+
+<h4><a class="checkthis" href="../simplGuide/serialization/index.html">guide</a></h4>
+<p> A guide may be found <a class="checkthis" href="../simplGuide/serialization/index.html">here</a>.</p>
+
+
+
+<h4>publications</h4>
+
+<div class="feature">
+<a href="../publications/sp44245-kerne.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/doceng08Icon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, M.
+<a href="../publications/sp44245-kerne.pdf" target="_blank">
+A Concise XML Binding Framework Facilitates Practical Object-Oriented Document Engineering
+</a>, 
+<i>Proceedings of ACM Symposium on Document Engineering</i>, 
+Sao Paulo, Brazil, 16-19 September 2008.
+</div>
+
+<a target="_blank" href="../../technicalReports/ecolabXML_TR_08_06.pdf">
+<div class="feature">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/xmlTRIcon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, K.,
+<a target="_blank" href="../../technicalReports/ecolabXML_TR_08_06.pdf">Expressive, Efficient, Embedded, and Component-based 
+XML-Java Data Binding Framework</a>,
+<i> Interface Ecology Lab Technical Report 08-06</i> </div>
+</div>
+</body>
+</html>

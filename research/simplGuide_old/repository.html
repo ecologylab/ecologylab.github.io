@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>repository [s.im.pl]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../code/styles/ecologylab/guide.css"
+	rel="stylesheet">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+
+<script language="JavaScript"
+	src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+	src="../../code/javascript/ecologylab/ecologylab.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl guide:<br/></div>
+<div class="title4a">svn repository</div>
+</div>
+
+<div class="nav">
+
+<div class="block">
+  <a class="navselected_bold_red" href="index.html">s.im.pl</a>
+	<a class="subnavlink" href="serialization/index.html">serialization</a>
+	<a class="subnavlink" href="oodss/index.html">oodss</a>
+	<a class="subnavlink" href="metaMetadata/index.html">meta-metadata</a>
+</div>
+
+<div class="block">
+  <a class="navselected"  href="repository.html">repository</a>
+  <a class="navlink" href="community.html">community</a>
+  <a class="navlink"  href="practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+	
+
+</div>
+
+<p>Access to s.imp.pl code is provided by anonymous access to our SVN repository (user: anonymous, password: anonymous).
+The code is broken down into several projects. Which ones you need depend on what you are doing. 
+The source code for these projects are provided under the <a class="checkthis" target="_blank" href="LICENSE.txt">LGPL V3</a> license, included with each project.</p>
+
+<h5>java</h5><br />
+<p>The 
+<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">ecologylabFundamental project</a>
+ includes the code for s.im.pl serialization and OODSS. This project is required for Meta-Metadata.</p>
+ 
+<p>
+	The
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabSemantics/trunk">ecologylabSemantics project</a>
+	provides the basic code for the Meta-Metadata language and architecture.
+</p>
+
+<p>
+	The
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/simplTutorials/trunk">simplTutorials project</a>
+	provides code for the tutorials in the simpl serialization guide.
+</p>
+
+<p>
+	The
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/simplTranslators/trunk">simplTranslators project</a>
+	provides code for cross-platform class translators. simplTutorials project depends upon this project. 
+</p>
+
+<p>
+	The
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabGeneratedSemantics/trunk">ecologylabGeneratedSemantics project</a>
+	provides Java classes generated from a Meta-Metadata repository XML file of information source template definitions. Ultimately, you may want to use the 
+	Meta-Metadata compiler to generate your own version of this, but to start you will probably want this one.
+</p>
+
+<p>
+	The
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabSemanticsExample/trunk">ecologylabSemanticsExample project</a>
+	includes the tutorial code for Meta-Metadata applications developers. It depends on all of the projects above, so if you want to run it, pull all of them into your Eclipse environment.
+</p>
+
+<p>
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/cyberneko/trunk">Cyberneko</a>
+	is used in s.im.pl serialization to parse HTML DOMs into java objects.
+</p>
+
+<p>
+	<a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabSemanticsCyberneko/trunk">ecologylabSemanticsCyberneko</a>	
+	holds wrapper classes for the Cyberneko HTML DOM parser.
+</p>
+
+<p>
+	The <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabImageAwt/trunk">ecologylabImageAwt project</a>
+	is used for collecting and parsing images.
+</p>
+
+<p>
+	The <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabImageAwtTest/trunk">ecologylabImageAwtTest project</a>	
+	is used to test image collecting and parsing.
+</p>
+
+<p>
+	The <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/metadataExtractor/trunk">metadataExtractor project</a>	
+	is used to extract metadata information from images.
+</p>
+
+<p>
+	The <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/multivalent/trunk">multivalent project</a>
+	is used to extract metadata from document files (such as pdf files).
+</p>
+	
+<h5>c# dot net</h5><br />
+<p>
+	The  <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabFundamental.NET/trunk/">ecologylabFundamental.NET project</a>
+	includes the code for s.im.pl serialization in C# with examples, as a Visual Studio Solution.
+</p>
+
+<p>
+	The <a class="checkthis" target="_blank" href="https://svn.ecologylab.net/ecologylabSemantics.NET/trunk">ecologylabSemantics.NET project</a>
+	provides the basic code for the meta-metadata framework and architecture in C# as a Visual Studio Solution.
+	
+</div>
+</body>
+</html>

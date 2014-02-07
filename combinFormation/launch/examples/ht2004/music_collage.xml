@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="718" width="512" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="kweevak.com" strokeHue="0.083333336" fontIndex="2"/>
+    <site domain="starling.rinet.ru" strokeHue="0.5555556" fontIndex="5"/>
+    <site domain="classicrockpage.com" strokeHue="0.16666667"/>
+    <site domain="filesystem.local" strokeHue="0.75" fontIndex="1"/>
+    <site domain="smallsjazz.com" strokeHue="0.8666667" fontIndex="1"/>
+    <site domain="classicbands.com" strokeHue="0.33333334"/>
+    <site domain="unm.edu" strokeHue="0.6888889" fontIndex="1"/>
+    <site domain="keno.org" strokeHue="0.0" fontIndex="4"/>
+    <site domain="pbs.org" strokeHue="0.41666666" fontIndex="4"/>
+    <site domain="8k.com" strokeHue="0.125" fontIndex="2"/>
+  </site_set>
+  <traversable_set/>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container purl="http://starling.rinet.ru/music/hendrix.htm" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://www.pbs.org/jazz/biography/artist_id_armstrong_louis.htm" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://www.classicrockpage.com/main.htm" generation="1">
+      <participant intensity="5"/>
+    </container>
+    <container purl="file:///C:/Program Files/Mozilla Firefox/createdElements.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.smallsjazz.com/free_jazz/index.shtml" generation="1">
+      <participant intensity="-6"/>
+    </container>
+    <container purl="http://www.kweevak.com/rd_art_2003_07_013_me.htm" generation="1">
+      <participant intensity="-8"/>
+    </container>
+    <container purl="http://www.keno.org/classic_rock/album_reviews/the_who_by_numbers.htm" generation="1">
+      <participant intensity="-2"/>
+    </container>
+    <container purl="http://atj.8k.com/atjh1.html" generation="1">
+      <participant intensity="2"/>
+    </container>
+    <container purl="http://atj.8k.com/" generation="1">
+      <participant intensity="3"/>
+    </container>
+    <container purl="http://www.smallsjazz.com/" generation="1">
+      <participant intensity="10"/>
+    </container>
+    <container purl="http://starling.rinet.ru/music/airplane.htm" generation="1">
+      <participant intensity="-6"/>
+    </container>
+    <container purl="http://www.keno.org/classic_rock/album_reviews/bringing_it_all_back_home.htm" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.pbs.org/jazz/kids/nowthen/then-greats.html" generation="1">
+      <participant intensity="-10"/>
+    </container>
+    <container purl="http://www.keno.org/classic_rock/album_reviews/wish_you_were_here.htm" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.classicbands.com/dead.html" generation="1">
+      <participant intensity="3"/>
+    </container>
+    <container purl="http://www.pbs.org/jazz/biography/artist_id_morton_jelly_roll.htm" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.unm.edu/~mckean/jazz.html" generation="1">
+      <participant intensity="-10"/>
+    </container>
+    <container purl="http://www.classicbands.com/tull.html" generation="1">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://www.classicbands.com/tull.html" historyNum="12">
+      <image_element hasTransparency="true" minAlpha="1703936" alphaRadius="20" purl="http://www.classicbands.com/images/tull.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="137" y="576" width="216" height="84"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.kweevak.com/rd_art_2003_07_013_me.htm" historyNum="11">
+      <image_element hasTransparency="true" minAlpha="2293760" alphaRadius="93" purl="http://www.kweevak.com/img_art_pics/me_styx_02.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="388" y="593" width="75" height="67"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.smallsjazz.com/free_jazz/index.shtml" historyNum="16">
+      <image_element hasTransparency="true" minAlpha="6160384" alphaRadius="48" purl="http://www.smallsjazz.com/smallsjazz.files/ornette1.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="107" width="72" height="104"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.classicrockpage.com/main.htm" historyNum="9">
+      <image_element hasTransparency="true" minAlpha="6225920" alphaRadius="45" purl="http://www.classicrockpage.com/graphics/yellow2.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="215" y="260" width="58" height="87"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.pbs.org/jazz/biography/artist_id_armstrong_louis.htm" historyNum="15">
+      <image_element hasTransparency="true" minAlpha="5308416" alphaRadius="50" purl="http://www.pbs.org/jazz/images/biography/armstrong.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="364" y="10" width="84" height="105"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://starling.rinet.ru/music/hendrix.htm" historyNum="7">
+      <image_element hasTransparency="true" minAlpha="1900544" alphaRadius="32" purl="http://starling.rinet.ru/music/sleeves/zap_hendrix12.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="18" y="477" width="104" height="101"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.unm.edu/~mckean/jazz.html" historyNum="4">
+      <image_element hasTransparency="true" minAlpha="5570560" alphaRadius="74" purl="http://www.unm.edu/~mckean/louis.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="364" y="116" width="85" height="105"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.unm.edu/~mckean/jazz.html" historyNum="2">
+      <image_element hasTransparency="true" minAlpha="5373952" alphaRadius="47" purl="http://www.unm.edu/~mckean/dizzy.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="262" y="12" width="101" height="86"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.pbs.org/jazz/kids/nowthen/then-greats.html" historyNum="1">
+      <image_element hasTransparency="true" minAlpha="1835008" alphaRadius="39" purl="http://www.pbs.org/jazz/kids/nowthen/images/pic-side-goodman.gif" href="http://www.pbs.org/jazz/kids/nowthen/goodman.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="168" y="144" width="111" height="96"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://atj.8k.com/atjh1.html" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="2097152" alphaRadius="13" purl="http://atj.8k.com/graf/atj.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="133" y="114" width="180" height="34"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.keno.org/classic_rock/album_reviews/wish_you_were_here.htm" historyNum="17">
+      <image_element hasTransparency="true" minAlpha="2490368" alphaRadius="46" purl="http://www.keno.org/rock_images/pkwishu.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="382" y="476" width="112" height="110"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.pbs.org/jazz/biography/artist_id_morton_jelly_roll.htm" historyNum="18">
+      <image_element hasTransparency="true" minAlpha="1966080" alphaRadius="41" purl="http://www.pbs.org/jazz/images/biography/j_roll_morton.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="24" width="65" height="82"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.smallsjazz.com/" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="1310720" alphaRadius="68" purl="http://www.smallsjazz.com/smallsjazz.files/1.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="90" y="10" width="155" height="109"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://atj.8k.com/" historyNum="5">
+      <image_element hasTransparency="true" minAlpha="3997696" alphaRadius="47" purl="http://atj.8k.com/graf/atjpiano.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="165" y="232" width="72" height="57"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.classicbands.com/dead.html" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="3670016" alphaRadius="60" purl="http://www.classicbands.com/images/dead.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="62" y="351" width="112" height="110"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.keno.org/classic_rock/album_reviews/bringing_it_all_back_home.htm" historyNum="13">
+      <image_element hasTransparency="true" minAlpha="5636096" alphaRadius="38" purl="http://www.keno.org/rock_images/bringing_it_home.GIF">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="197" y="340" width="108" height="106"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.keno.org/classic_rock/album_reviews/the_who_by_numbers.htm" historyNum="14">
+      <image_element hasTransparency="true" minAlpha="3735552" alphaRadius="45" purl="http://www.keno.org/rock_images/who_by_numbers.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="328" y="357" width="101" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://starling.rinet.ru/music/airplane.htm" historyNum="8">
+      <text_element faceIndex="5" alpha="255" r="173" g="169" b="204">
+        <text_chunk sameHref="true" nonStopIndex="0.7777778">
+          <text_token string="British" italic="true"/>
+          <text_token string="American" italic="true"/>
+          <text_token string="Psychedelia" italic="true"/>
+          <text_token string="of" italic="true"/>
+          <text_token string="the" italic="true"/>
+          <text_token string="mid-" italic="true"/>
+          <text_token string="to" italic="true"/>
+          <text_token string="late" italic="true"/>
+          <text_token string="Sixties" italic="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="142" y="476" width="259" height="71"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Mozilla Firefox/createdElements.html" historyNum="19">
+      <text_element faceIndex="1" alpha="236" participantCreated="true" r="193" g="158" b="229" bias="2.0">
+        <text_chunk sameHref="true">
+          <text_token string="Evolution"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="269" width="148" height="31"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Mozilla Firefox/createdElements.html" historyNum="20">
+      <text_element faceIndex="1" alpha="236" participantCreated="true" r="193" g="158" b="229" bias="2.0">
+        <text_chunk sameHref="true">
+          <text_token string="of"/>
+          <text_token string="Rock"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="322" y="273" width="121" height="33"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Mozilla Firefox/createdElements.html" historyNum="21">
+      <image_element hasTransparency="true" minAlpha="2752512" alphaRadius="23" purl="http://images.google.com/images?q=tbn:CY8ei1MfHosJ:www.countrymall.com/Celebrity/Tshirt/Beatles-A10338B.jpg" href="http://images.google.com/imgres?imgurl=http://www.countrymall.com/Celebrity/Tshirt/Beatles-A10338B.jpg&amp;amp;imgrefurl=http://www.sorishop.com/board/soriggun/board_view.html%3Fno%3D4560%26page%3D2&amp;amp;h=225&amp;amp;w=225&amp;amp;sz=16&amp;amp;tbnid=CY8ei1MfHosJ:&amp;amp;tbnh=102&amp;amp;tbnw=102&amp;amp;start=12&amp;amp;prev=/images%3Fq%3DBeatles%26hl%3Den%26lr%3D%26ie%3DUTF-8%26sa%3DN" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="34" y="583" width="75" height="75"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

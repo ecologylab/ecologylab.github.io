@@ -1,0 +1,129 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.2
+date	99.04.25.06.50.54;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.02.07.05.35.49;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Version stem-0.2.2: improved content node infrastructure + bug fixes, including Files.copy()
+@
+text
+@/**
+ * duplicate definition to mimic style sheet for ns3.
+ */
+
+/**
+ * duplicate definition to mimic style sheet for ns3.
+ */
+
+textSize	= 10;
+if (top.mac || top.sgi)
+    textSize+=3;
+
+document.tags.body.fontSize	= (textSize - 1) + "pt";
+document.tags.body.fontFamily	= top.textStyle;
+document.tags.body.fontWeight	= 650;
+
+document.tags.td.fontSize	= document.tags.body.fontSize;
+document.tags.td.fontFamily	= document.tags.body.fontFamily;
+document.tags.td.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.normal.all.fontSize	= document.tags.body.fontSize;
+document.classes.normal.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.normal.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.nav.all.fontSize	= (textSize - 1) + "pt";
+document.classes.nav.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.nav.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.larger.all.fontSize	= (textSize+1) + "pt";
+
+document.classes.small.all.fontSize =  (textSize - 2) + "pt";
+
+document.classes.copyright.all.fontSize	 =  (textSize - 3) + "pt";
+document.classes.copyright.all.fontFamily= document.tags.body.fontFamily;
+document.classes.copyright.all.fontWeight= 100;
+
+document.classes.caption.all.fontSize	= (textSize - 2) + "pt";;
+document.classes.caption.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.caption.all.fontWeight	= 650;
+
+document.classes.tiny.all.fontSize	=  (textSize - 4) + "pt";
+document.classes.tiny.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.tiny.all.fontWeight	=  100;
+
+document.tags.input.fontSize	= (textSize - 1) + "pt";
+document.tags.input.fontFamily	= "";
+
+document.tags.select.fontSize	= (textSize - 1) + "pt";
+document.tags.select.fontFamily	= "";
+
+document.classes.head.all.fontSize = "11pt";
+document.classes.head.all.fontFamily = top.textStyle;
+
+document.classes.subhead.all.fontFamily = top.textStyle;
+document.classes.subhead.all.fontSize	= textSize + "pt";
+document.classes.subhead.all.fontWeight = "900";
+document.classes.subhead.all.color	= "cc6600";
+
+document.classes.slogan.all.fontSize	= (textSize - 2) + "pt";
+document.classes.slogan.all.fontStyle	= "italic";
+document.classes.slogan.all.fontWeight	= "700";
+document.classes.slogan.all.color	= "336699";
+
+@
+
+
+1.1
+log
+@Version stem-0.1.0: 1st version which works extensively. still tuning output. propogate,mosh,versioning,SourceControl, and tags all seem to work. documentation function has not been started yet. site tree building is untested. site tree Template elements have not been updated yet to use setArg(...) functionality
+@
+text
+@d5 59
+a63 28
+textSize	= 9;
+if (top.mac)
+    textSize++;
+
+tags.body.fontFamily	= top.textStyle;
+tags.body.fontSize	 = 33 + "pt";
+tags.body.fontWeight	= "light";
+
+tags.td.fontFamily	= top.textStyle;
+tags.td.fontSize	 = textSize + "pt";
+tags.td.fontWeight	= 600;
+
+classes.small.all.fontSize =  (textSize - 2) + "pt";
+
+classes.tiny.all.fontSize =  (textSize - 4) + "pt";
+
+tags.input.fontFamily	= "courier";
+tags.input.fontSize	= (textSize - 3) + "pt";
+// tags.input.fontSize	= 7 + "pt";
+tags.select.fontFamily	= "courier";
+tags.select.fontSize	= (textSize - 3) + "pt";
+// tags.textarea.color = "red";
+classes.hack.all.fontFamily = "";
+// classes.hack.all.fontSize = "33pt";
+
+classes.history.all.fontSize = classes.small.all.fontSize;
+classes.history.all.background = "cccc99";
+classes.history.all.fontWeight = "normal";
+@

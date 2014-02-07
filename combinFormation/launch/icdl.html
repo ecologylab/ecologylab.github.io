@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>launch::icdl :: combinFormation</title>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../../images/ecologylab16lBack.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "collections";
+thisParent	= "collageMachine";
+thisAlt	= "children's library";
+strongBrowser	= 0;
+
+</script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/xml.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+
+<script language="JavaScript">
+
+var selectedKeyword		= "action_adventure";
+
+function selectKeyword(name)
+{
+   var oldDiv			= document.getElementById(selectedKeyword);
+   var newDiv			= document.getElementById(name);
+   selectedKeyword		= name;
+
+   oldDiv.className		= "icon";
+   newDiv.className		= "icon_selected"
+   launchICDL(name);
+}
+
+function setupGray()
+{
+}
+
+function setupGray()
+{
+   var g    = document.getElementById("gray");
+   var grid = document.getElementById("grid");
+   var width= grid.offsetWidth;
+   var height= grid.offsetHeight;
+   var top= grid.offsetTop;
+   var left= grid.offsetLeft;
+//   alert(left+","+top+"  "+width+"x"+height);
+   g.style.width	= grid.offsetWidth + "px";
+   g.style.height	= grid.offsetHeight + "px";
+   g.style.left		= grid.offsetLeft + "px";
+   g.style.top		= grid.offsetTop + "px";
+}
+
+function grayGrid()
+{
+//   alert("grayGrid");
+   var g    = document.getElementById("gray");
+   g.style.visibility		= "visible";
+}
+function ungrayGrid()
+{
+//   alert("ungrayGrid");
+   var g    = document.getElementById("gray");
+   g.style.visibility		= "hidden";
+}
+disableLaunchHook	= grayGrid;
+enableLaunchHook	= ungrayGrid;
+
+</script>
+
+</head>
+
+<body onload="checkBrowser();preloadNav(); setupGray();">
+
+<form name="launchForm" action="http://localhost:10010" method="post" target="ping" enctype="text/plain">
+	<input type="hidden" name="requestXML" value=""></input>
+</form>
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="../images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1)" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif"></a></div></td>
+  </tr>
+</table>
+
+
+<div class="launch_img"
+ style="font-size:23px; color: #3399cc;">international children's digital library</div>
+
+<div class="content">
+<h5><b>Seeding: Tell the Agent what kinds of books you want.</b></h5>
+
+<div class="blue_line"></div>
+
+<h5 id="oollage_size_h5">1)&nbsp;Select size on screen:&nbsp;
+<script>
+      collageSize();
+</script>
+</h5>
+
+<div style="float:left"><h5 style="margin-top:10px; padding-top:0px;">2)</h5></div>
+<div id="gray">&nbsp;</div>
+<div id="grid">
+<table id="entries" cellspacing="0" cellpadding="4">
+<tr>
+<td>
+<div id="action_adventure" class="icon">
+<a href="javascript:selectKeyword('action_adventure');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/action_adventure_round.gif"/>
+action/adventure</a>
+</div>
+</td>
+<td>
+<div id="make_believe_books" class="icon">
+<a href="javascript:selectKeyword('make_believe_books');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/make_believe_books_round.gif"/><br/>
+make believe</a>
+</td>
+<td>
+<div id="funny_humorous" class="icon">
+<a href="javascript:selectKeyword('funny_humorous');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/funny_humorous_round.gif"/><br/>
+funny</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<div id="kids" class="icon">
+<a href="javascript:selectKeyword('kids');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/kids_round.gif"/><br/>
+kids</div>
+</td>
+<td>
+<div id="animals" class="icon">
+<a href="javascript:selectKeyword('animals');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/animals_round.gif"/><br/>
+animals
+</td>
+<td>
+<div id="imaginary_beasts_creature" class="icon">
+<a href="javascript:selectKeyword('imaginary_beasts_creature');"><img border="0"
+ src="http://www.childrenslibrary.org/library/basic/images/imaginary_beasts_creature_round.gif"/><br/>
+imaginary creatures
+</td>
+</tr>
+</table>
+
+</form>
+
+
+<div id="launch_controls">&nbsp;</div>
+</div>
+
+<div class="tight_line"></div>
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="../white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="../white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ src="../nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+</div>
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+
+</div>
+
+
+<div class="nav">
+  <a class="support_link" href="mix.html">re:mix</a>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <a class="support_link" href="open.html">re:open</a>
+  <div class="support_link_selected">children's library</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>support :: combinFormation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="code/styles/combinformation/combinformation.css"
+ type="text/css">
+<style type="text/css">
+ #iFrame {
+   display     : none;
+   visibility  : hidden;
+   height      : 1px;
+ }
+</style>
+<link rel="stylesheet" href="code/styles/combinformation/cfInform.css"
+ type="text/css">
+
+<script language="JavaScript">
+
+rootDir	= "./";
+
+</script>
+<script language="JavaScript" src="code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="code/javascript/ecology/cm_cookie.js"></script>
+<script language="JavaScript"
+ src="code/javascript/ecology/prefs.js"></script>
+<script language="JavaScript"
+ src="code/javascript/combinformation/combinformation.js"></script>
+
+<script language="JavaScript" src="code/javascript/ecology/cfTools.js"></script>
+<script language="JavaScript" src="code/javascript/common/cookie.js"></script>
+
+<script language="JavaScript">
+
+var sections =
+["intro", "faq", "status", "hardware", "browser", "java",
+ "launch", "expressing", "agent_controls", "hotAndCool", "int",
+ "context_image", "context_text", "menus", "tips",
+ "publishing", "feedback", "thanks", "help", "metadesign", "dnd"
+];
+
+function displaySection(sNum)
+{
+	if (!sNum)
+		return;
+   //alert("displaySection: " + sNum);
+
+   // in the case of no value passed thru querystring
+   var sNumLegit = false; // flag for legit sNum param
+
+   // hide all support sections that might be showing
+   for (var i=0; i<sections.length; i++)
+   {
+      var thatSection = sections[i];
+      //alert("checking : " + thatSection);
+      if (sNum == thatSection)
+      {
+       sNumLegit = true;
+       continue;
+      }
+      var thatContent = document.getElementById("support_content_"+thatSection);
+      if (thatContent)
+      {
+	 // alert("found element: " + thatContent.id);
+	 thatContent.style.display = "none";
+	 var supportMark = document.getElementById("support_mark_"+thatSection);
+// alert("found element: " + thatContent.id +"\n\nget rid of " + thatSection +" " +supportMark);
+
+	 if (supportMark)
+	    supportMark.style.display = "none";
+      }
+   }
+
+   // in case we got bad input, set section to default
+   if (!sNumLegit)
+      sNum = sections[0];
+
+
+   // display  section and nav marker
+   //document.getElementById("support_content_dnd").style.display = "inline";
+   
+   document.getElementById("support_content_"+sNum).style.display = "inline";
+   document.getElementById("support_mark_"+sNum).style.display = "inline";
+
+   setFormFromCookies();
+}
+// querystring handling
+function getArgs()
+{
+   var args = new Object();
+   var query = location.search.substring(1);
+   var pairs = query.split(",");
+   for(var i=0; i<pairs.length; i++) {
+      var pos = pairs[i].indexOf('=');
+      if(pos == -1) continue;
+      var argname = pairs[i].substring(0,pos);
+      var value = pairs[i].substring(pos+1);
+      args[argname] = unescape(value);
+   }
+   return args;
+}
+// parse the querystring
+var args = getArgs();
+
+var initialSection	= args.section;
+
+//if (!initialSection)
+//      initialSection	= "intro";
+
+var anyBad	= false;
+
+var EMAIL		= "email";
+var FIRST_NAME	= "firstname";
+var LAST_NAME	= "lastname";
+var FIELDS_TO_SET = [EMAIL, FIRST_NAME, LAST_NAME];
+
+function goForm(theForm)
+{
+   var email	= theForm[EMAIL].value + "";
+   var at	= email.indexOf("@");
+   var bad	= (at <= 0);
+   if (!bad)
+      bad	= email.substring(at).indexOf('.') == -1;
+   if (bad)
+      alert("I don't understand your email address.\nPlease fix it.");
+   else
+   {
+	  setCookiesFromForm(theForm);
+      theForm.submit();
+   }
+}
+
+function setCookiesFromForm(theForm)
+{
+   setCookieFromForm(FIRST_NAME, theForm);
+   setCookieFromForm(LAST_NAME, theForm);
+   setCookieFromForm(EMAIL, theForm);
+}
+function setCookieFromForm(thatForm, name)
+{
+   var thatValue		= thatForm[name];
+   if (thatValue && (thatValue != undefined))
+	  setCookie(name, thatValue);
+}
+function setFormFromCookies()
+{
+   var cookieJar	= doubleSplit(document.cookie, ";");
+
+   for (thatName in cookieJar)
+   {
+	  var thatValue		= cookieJar[thatName];
+	  if (thatValue && (thatValue != undefined))
+	  {
+		 if (thatName == "fname")
+			document.forms[0].firstname.value = cookieJar[thatName];
+		 else if (thatName == "lname")
+			document.forms[0].lastname.value = cookieJar[thatName];
+		 else if (thatName == "email")
+		 {
+			//alert(thatName + " = "+thatValue);
+			document.forms[0].email.value = cookieJar[thatName];
+		 }
+	  }
+   }
+}
+
+var popupArgs = "height=300,width=800,scrollbars,status,resizable";
+var downloadWin;
+
+var downloadLocation = mac ? "http://www.apple.com/java/" :  downloadLocation	= "http://www.java.com/en/download/windows_automatic.jsp";
+
+function getJava(location)
+{
+   if (!location)
+      location	= downloadLocation;
+   downloadWin = popup4(location, "download_java", popupArgs);
+}
+
+function serverCaptchaResponse(passed) {
+	 if(passed)
+	 {
+	   	//Redirect to the thank you page.
+	   	window.location="support.html?section=thanks";
+	 }
+	 else
+	 {
+	 	document.getElementById('errorText').style.visibility = 'visible';
+	 	refreshKaptcha()
+	 }
+ }
+
+var attempt=1;
+function refreshKaptcha()
+{
+	attempt += 1;
+ 	document.getElementById('kaptchaImg').src="http://csdll.cs.tamu.edu:9080/feedback/kaptcha?attempt=" + attempt;
+}
+
+ function getCurrLoc()
+ {
+ 	return location.protocol + "//" + location.host + rel('.');
+ }
+</script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body onLoad="displaySection(initialSection); preloadNav();">
+
+<table class="menu">
+   <tr>
+      <td valign="top">
+         <a href="index.html" target="_parent"><img width="259" height="77" src="images/combinFormationMenuLogo.gif"></a></td>
+      <td valign="middle" align="right">
+      <div class="menucell" align="right">
+         <nobr>
+	    <a href="launch/index.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('launch','','images/buttons/launchButton_anim.gif',1);"><img name="launch" src="images/buttons/launchButton.gif"></a>
+
+            <img src="images/buttons/supportButton_active.gif">
+
+            <a href="about.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('read','','images/buttons/aboutButton_anim.gif',1);" target="_parent"><img name="read" src="images/buttons/aboutButton.gif"></a>
+
+            <a href="developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="images/buttons/developersButton.gif"></a>
+         </nobr>
+         </div>
+      </td>
+   </tr>
+</table>
+
+<div id="support_nav">
+<div class="lila">
+   <a class="support_link" href="javascript:displaySection('intro');"><span class="support_mark" id="support_mark_intro">&rsaquo;&nbsp;</span>introduction</a>
+   <a class="support_link" href="javascript:displaySection('faq');"><span class="support_mark" id="support_mark_faq">&rsaquo;&nbsp;</span>FAQ</a>
+   <div class="support_link" style="color: #3399CC;">configuration</div>
+   <a class="support_link" href="javascript:displaySection('hardware');"><span class="support_mark" id="support_mark_hardware">&rsaquo;&nbsp;</span>hardware</a>
+   <a class="support_link" href="javascript:displaySection('browser');"><span class="support_mark" id="support_mark_browser">&rsaquo;&nbsp;</span>browser</a>
+
+   <a class="support_link" href="javascript:displaySection('java');"><span class="support_mark" id="support_mark_java">&rsaquo;&nbsp;</span>java</a>
+   <a class="support_link" href="javascript:displaySection('help');"><span class="support_mark" id="support_mark_help">&rsaquo;&nbsp;</span>help!</a>
+</div>
+<div class="lila" style="margin-top:6px;">
+   <a class="support_link" href="javascript:displaySection('feedback');"><span class="support_mark" id="support_mark_feedback">&rsaquo;&nbsp;</span>feedback</a>
+</div>
+<div class="lila" style="margin-top:6px;">
+   <span class="support_link" style="color: #3399CC;">how-to-use</span>
+   <a class="support_link" href="javascript:displaySection('launch');"><span class="support_mark" id="support_mark_launch">&rsaquo;&nbsp;</span>launch</a>
+   <a class="support_link" href="javascript:displaySection('menus');"><span class="support_mark" id="support_mark_menus">&rsaquo;&nbsp;</span>save &amp; open</a>
+   <a class="support_link" href="javascript:displaySection('tips');"><span class="support_mark" id="support_mark_tips">&rsaquo;&nbsp;</span>tips</a>
+</div>
+<div class="lila">
+   <a class="support_link"
+href="javascript:displaySection('agent_controls');"><span
+class="support_mark"
+id="support_mark_agent_controls">&rsaquo;&nbsp;</span>agent controls</a>
+   <a class="support_link" href="javascript:displaySection('hotAndCool');"><span class="support_mark" id="support_mark_hotAndCool">&rsaquo;&nbsp;</span>hot &amp; cool<br />spaces</a>
+   <a class="support_link" href="javascript:displaySection('expressing');"><span class="support_mark" id="support_mark_expressing">&rsaquo;&nbsp;</span>interest expression</a>
+</div>
+<div class="lila">
+   <a class="support_link" href="javascript:displaySection('dnd');"><span class="support_mark" id="support_mark_dnd">&rsaquo;&nbsp;</span>drag &amp; drop</a>
+   <a class="support_link" href="javascript:displaySection('context_image');"><span class="support_mark" id="support_mark_context_image">&rsaquo;&nbsp;</span>image editing</a>
+   <a class="support_link" href="javascript:displaySection('context_text');"><span class="support_mark" id="support_mark_context_text">&rsaquo;&nbsp;</span>text editing</a>
+   <a class="support_link"
+href="javascript:displaySection('metadesign');"><span
+class="support_mark"
+id="support_mark_metadesign">&rsaquo;&nbsp;</span>element
+details &amp; tools</a>
+   <a class="support_link" href="javascript:displaySection('publishing');"><span class="support_mark" id="support_mark_publishing">&rsaquo;&nbsp;</span>publishing</a>
+</div>
+
+   <a class="lab_link"  href="../index.html"
+target="_blank">interface<br/>ecology lab</a>
+</div>
+
+<div class="support_content_container">
+
+<div class="support_content" style="display: block;" id="support_content_intro">
+   <h1>support &rsaquo; introduction</h1>
+   <p>
+   Welcome to combinFormation (<a href="javascript:launchPopup('http://dictionary.reference.com/browse/combine')">kom-bahyn</a>
+   <a
+href="javascript:launchPopup('http://dictionary.reference.com/browse/information')">fawr-mey-shuhn</a>).
+<br/>Please check out the menu to the right, as it connects you to important
+information about how to operate our software.
+   <br/><br/><br/>
+   <a href="javascript:displaySection('launch')">Launch combinFormation</a>
+   to use the internet for <a
+   href="javascript:displaySection('expressing')">expressing</a> your
+   creativity. (something we noticed is that)
+   It does a fine job of <a href="javascript:displaySection('hotAndCool')">organizing</a> and
+   <a href="javascript:displaySection('dnd')">collecting</a>
+information as well! Sometimes when you use it, you'll
+   discover that (all of a sudden) you found something new and unique,
+something important to you that would have been REALLY hard
+   to find if you were just using
+   <a href="javascript:supplementalPopup('http://google.com')">google</a>, or
+   <a href="javascript:supplementalPopup('http://yahoo.com')">yahoo</a>, or
+   <a href="javascript:supplementalPopup('http://www.bing.com')">bing</a>.
+   <br/><br/><br/>
+   Think of combinFormation as a different way to see all those search
+engines out there, which intelligently
+   searches webpages (as intially found by google, yahoo, etc) for any relevant pieces of information.
+   We constantly use combinFormation ourselves, and hope you will too!
+   <br/><br/><br/>
+   We use <a href="javascript:getJava()">Java</a> to create this application., so if you don't have Java
+   installed, then it just won't work for you. Also, because our application intensly searches the
+   internet, it would be a good idea to not play games or use any other program on the computer
+   that uses a lot of CPU and memory.
+   <br/><br/><br/>
+   Speaking of CPU and memory, we do have some
+   <a href="javascript:displaySection('hardware')">hardware requirements</a>.
+   <br/>
+   You also need a nice
+   <a href="javascript:displaySection('browser')">web browser</a>.
+</li>
+
+</div>
+
+
+<div class="support_content" id="support_content_faq">
+
+<h1>support &rsaquo; FAQ</h1>
+
+<ol>
+	<li>
+		<h2>What does combinFormation really do and why will I find it useful?</h2>
+
+		combinFormation provides a mixed-initiative composition space for searching, 
+		browsing, collecting, and organizing from the net and other information sources. 
+		If you use it, you'll discover that (all of a sudden) you found something new and 
+		unique that would have been REALLY hard to find if you were just using google, or yahoo, 
+		or liveSearch. 
+
+		<br/><br/><a href='support.html?section=introduction'>Find out more!</a>
+	</li>
+
+	<li> 
+		<h2>What are the system requirements to run combinFormation?</h2>
+		
+		<p>
+		What OS (windows, mac, linux, etc), CPU (pentium IV or core duo),
+			resolution and how much RAM does my system need
+			to run combinFormation?
+		</p>
+		<p>
+		For best performance, combinFormation requires recent hardware:
+		a nice monitor, plenty of RAM, and a fast CPU.
+		</p>
+		<ul>
+			<li>
+				Monitor (display and resolution)
+				You should have at least a 17 inch monitor.
+				Set the display resolution (using the Control Panel) as high as possible.
+				At least 1024x768 is strongly recommended. 
+			</li>
+		
+			<li> 
+				Memory (RAM)
+				At least 768M (megabytes) of RAM is essential.
+			        1 G preferred.
+			</li>
+			
+			<li>
+				Computer (OS and CPU)
+				PC
+					Pentium 4 2.4+ Ghz.
+					Windows 2000/XP/Vista/7
+				MACINTOSH
+					Core Duo is recommended. 
+					OSX 10.4+
+				LINUX
+					Pentium 4 2.4+ Ghz.
+					Any linux distribution
+				
+				-- Note
+				bigger display -> better experience
+				more RAM + faster CPU = better performance 
+			</li>
+		</ul>
+		
+		<br/><a href='support.html?section=hardware'>Details</a>
+		</li>
+		<li>
+			<h2>What software do I need to run combinFormation?</h2>
+
+			You need two things, a reasonably new version of Java, and a reasonably new web browser:
+			<br/><br/>
+			
+			<span style="font-weight:bold;font-size:smaller">JAVA: </span><br/>
+			Java version 6 is required. Java is a standard Web technology developed by Oracle.
+			
+			<br/><br/>
+			What you need is the JRE (Java Runtime Environment): <br/>
+			Windows users get it <a href='http://www.java.com/'>here</a>.<br/>
+			Mac users get it <a href='http://www.apple.com/macosx/features/java/'>here</a>. <br/>
+			Linux users get it <a href='http://www.java.com/'>here</a>.
+			
+			<br/><br/><a href='support.html?section=java'>Details</a>
+			
+			<br/><br/>
+			<span style="font-weight:bold;font-size:smaller">WEB BROWSER: </span><br/>
+			Macintosh, Windows XP, Linux: Firefox 3 <br/>
+			This is the supported browser. Install our 
+			extension so that drag and drop of images and text from the browser will work nicely.
+			<br/>
+			Download firefox <a href='http://www.getfirefox.com'>here</a> and
+			install our firefox drag'n'drop extension <a href='fireFoxDnd/cfTools_v1.5.xpi'>here</a>
+			<br/><br/>
+			
+			Macintosh: Safari, Chrome <br/>
+			Safari and Chrome are not supported.
+			<br/><br/>
+			
+			Windows: Internet Explorer, Chrome<br/>
+			Internet Explorer and Chrome are not supported.
+			<br/><br/>
+		
+			<br/><br/><a href='support.html?section=browser'>More about browsers</a>
+		</li>		
+		<li>
+			<h2>HELP!!! I can't seem to start combinFormation (it won't launch)!</h2>
+	
+			There is a common java bug that may be to blame! All you have to do is empty your cache. We have a 
+			<a href='support.html?section=java'>step-by-step guide</a> to this workaround available. 
+			
+			<br/><br/>
+			Make sure that you meet the minimum requirements outlined above. If this doesn't work for you, email us! You can use our 
+			<a href='support.html?section=feedback'>feedback form</a> to tell us what's wrong.
+		</li>
+		<li>
+			<h2>HELP!!! I'm running into a problem or bug that keeps me from working!</h2>
+	
+			Don't worry, the combinFormation developers WANT to fix your problem. We just need a little information from you so we know what's going on.
+			
+			This means you need to turn on tracing and send us some information. Don't worry, it's really simple and we walk you through everything! 
+			<a href='support.html?section=help'>Click here for step-by-step directions.</a>
+		</li>
+		<li>
+			<h2>I have combinFormation running, now what?</h2>
+	
+			There are a few features that you should be aware of because they make using combinFormation smoother; these features include drag'n'drop, undo, and toolsets.
+			
+			Find out more about these <a href='support.html?section=tips'>features</a>!
+		</li>
+		<li>
+			<h2>There are so many options, how do I create a composition?</h2>
+	
+			Tool and feature details: <br/>
+			<ul>
+				<li>
+					<a href='support.html?section=expressing'>Design and interest toolbar</a><br/>
+				</li>
+				<li>
+					<a href='support.html?section=agent_controls'>Recorder and mixer controls</a><br/>
+				</li>
+				<li>
+					<a href='support.html?section=hotAndCool'>Hot and cool spaces</a><br/>
+				</li>
+				<li>
+					<a href='support.html?section=dnd'>Drag and drop</a><br/>
+				</li>
+				<li>
+					<a href='support.html?section=context_image'>Image actions</a><br/>
+				</li>
+				<li>
+					<a href='support.html?section=context_text'>Text actions</a><br/>
+				</li>
+			</ul>			
+		</li>
+		<li>
+			<h2>I love/hate combinFormation and the developers need to know it!</h2>
+	
+			We'd love to hear your opinions on combinFormation. Use our 
+			<a href='support.html?section=feedback'>feedback form</a> to tell us what you like and don't like about combinFormation.
+		</li>		
+	</ol>
+</div>
+
+<div class="support_content" id="support_content_thanks">
+        <h1>support &rsaquo; feedback &rsaquo; thanks</h1>
+   <h2>Thank you for your feedback.</h2>
+   <p></p>
+</div>
+
+<div class="support_content" id="support_content_hardware">
+
+   <h1>support &rsaquo; hardware</h1>
+
+   For best performance, combinFormation requires recent hardware:<br/>
+   a nice monitor, plenty of RAM, and a fast CPU.
+   <br>
+
+   <br>
+   <h2>&#8250; Monitor</h2>
+   You should have at least a 17 inch monitor.
+   <br>
+   Set the display resolution (using the Control Panel) as high as possible.<br/>
+   At least 1024x768 is strongly recommended.
+   <br>
+
+   <br>
+   <h2>&#8250; Memory</h2>
+   At least 1GB of RAM is essential.
+   <br>
+   <h2>&#8250; Computer</h2>
+
+   <div class="lilp">
+      PC
+   </div>
+      Pentium 4 2.4+ Ghz, or, better, Core Duo.
+
+   <div class="p">
+   <div class="lilp">
+      MACINTOSH
+   </div>
+      Core Duo is recommended.
+   </div>
+
+   <h2>&#8250; Note</h2>
+   <div class="lilp">
+      <b><code>bigger display -> better experience</code></b>
+   </div>
+   <div class="lilp">
+      <b><code>more RAM + faster CPU = better performance</code></b>
+   </div>
+
+</div>
+
+<div class="support_content" id="support_content_browser">
+
+   <h1>support &rsaquo; browser</h1>
+
+   <h4>Macintosh, Windows XP, Linux: Firefox 3</h4>
+   This is the preferred browser. Also, install our extension so that
+   <a href="javascript:displaySection('dnd')">drag&nbsp;and&nbsp;drop</a> of images
+   and text from the browser will work nicely.
+   <br/><br/>
+
+   Macintosh: Safari, Chrome <br/>
+	Safari and Chrome are not supported.
+	<br/><br/>
+	
+	Windows: Internet Explorer, Chrome<br/>
+	Internet Explorer and Chrome are not supported.
+	<br/><br/>
+
+
+</div>
+
+<div class="support_content" id="support_content_java">
+   <h1>support &rsaquo; java</h1>
+   Java version 6 is required.
+   Java is a standard Web technology developed by
+   <a href="javascript:launchPopup('http://www.oracle.com/technetwork/java/index.html')">Oracle</a>.
+   <br/>
+   <br/>
+   What you need is the JRE (Java Runtime Environment).
+   <a href="javascript:getJava()">Get it here.</a>.
+   <br/>
+   <br/>
+   If combinFormation doesn't properly start-up after you click
+   launch on the <a target="_blank" href="launch/index.html">launch page</a>,
+   the problem is (most likely) that you need to
+   <a href="javascript:getJava()">install the latest Java</a>.
+	
+	
+   <h4>Macintosh</h4>
+   <div class="p">
+   Macintosh: Mac OSX 10.4+ (Tiger) is required.
+   </div>
+
+   <h4>Windows and Linux</h4>
+   <div class="p">
+   Use 
+   Java 6 Update 7+.
+   <br/>
+   <h5>Java version</h5>
+   To check what version of java is installed on your system, 
+   <ul>
+      <li>Open the Java Control Panel.
+      <div class="lilp">
+          On Windows, find this by selecting<br/>
+          <code>Start > Settings > Control Panel</code>.
+      </div>
+      <div class="lilp">
+          On the Macintosh, in the Finder, go to<br/>
+
+	      <code>Macintosh HD > Applications > Utilities > Java 
+		  > J2SE 5.0 ( or a diff version) > Java Preferences</code>.
+      </div>
+	  <div align="center">
+         <img class="screenshot" src="images/support/javaControlPanelAboutHover.png">
+      </div>
+      </li>
+	  <li>Click on the About Button<br/>
+	  A window like the one below will tell you which version you are running. In this case it's says Java 6.
+	  <div align="center">
+         <img class="screenshot" src="images/support/javaControlPanelAboutWindow.png">
+      </div>
+	  </li>
+   </ul>
+   </div>
+
+   <h5>caching problems: bug workaround</h5>
+   We have seen that sometimes Java holds onto old versions of files in
+   its cache, even though it shouldn't, since we've released new
+   versions.
+
+   <div class="lilp">
+   To work around this problem, do the following:
+   </div>
+
+   <ul>
+      <li>Open the Java Control Panel.
+      <div class="lilp">
+          On Windows, find this by selecting<br/>
+          <code>Start > Settings > Control Panel</code>.
+      </div>
+      <div class="lilp">
+          On the Macintosh, in the Finder, go to<br/>
+
+      <code>Macintosh HD > Applications > Utilities > Java 
+	  > J2SE 5.0 > Java Preferences</code>.
+      </div>
+      </li>
+
+      <li>You should arrive at the <code><b>General</b></code> tab.
+      </li>
+
+      <li>Under <code>Temporary Internet Files</code>, click on <b><code>Delete Files</code></b>
+      </li>
+      <div align="center">
+         <img class="screenshot" src="images/support/javaControlPanelGeneral.png">
+      </div>
+      <li>Make sure all possible types of files are checked:<br/>
+         <div align="center">
+            <img class="screenshot" src="images/support/javaControlPanelDeleteTemporary.png">
+             and then click OK.
+         </div>
+      </li>
+   </ul>
+
+</div>
+
+<div class="support_content" id="support_content_help">
+   <h1>support &rsaquo; help!</h1>
+   Please report your problem using the <a href="javascript:displaySection('feedback')">feedback form</a>.
+   <br><br>
+   Sometimes you'll want to turn on tracing, as it allows us to know <i>exactly</i> what happened, and why
+   it isn't working. If you're having problems - for whatever reason - if you turn on tracing and do the
+   <a href="javascript:displaySection('feedback')">feedback</a> thing, it will really help us fix it!!
+   (it's really hard to if you don't...)
+   <br><br>
+   <div class="lilp">
+   <h5>To turn on tracing:</h5>
+   </div>
+
+   Open Java Preferences.
+   <ul>
+      <li> On <b>Windows</b>, find this by selecting <code>Start > Settings > Control Panel > Java </code>
+      </li>
+      <li>On the <b>Macintosh</b>, in the Finder, go to
+         <code>Macintosh HD > Applications > Utilities > Java
+	  > J2SE 5.0 > Java Preferences</code>
+      </li>
+   </ul>
+   </br>
+
+   You should arrive at the <b>General</b> tab.
+   <ul>
+      <li>Click on the <b>Advanced</b> tab.</li>
+      <img class="screenshot" src="images/doc/cfProblemsPanel.jpg">
+      <ul>
+         <li>Double-click <b>Debugging</b> to expand the options underneath it.</li>
+         <li>Make sure the box next to <b>Enable tracing</b> is checked.</li>
+         <img class="screenshot" src="images/doc/cfProblemsTracing.jpg">
+         <li>Click the <b>OK</b> button <i>(<b>Save</b> on the Mac).</i></li>
+      </ul>
+   </ul>
+   <br><br>
+   Your trace files will usually be stored...
+   <ul>
+      <li>On the <b>Mac:</b> <code>Finder > username > Library > Caches > Java > log</code></li>
+      <li>On <b>Windows Vista:</b> <code>C drive > Users > andruid > AppData > LocalLow > Sun > Java > Deployment > log</code></li>
+      <li>On <b>Windows XP:</b> <code>C drive > Documents and Settings > username > Application Data > Sun > Java > Deployment > log</code></li>
+      <li>To find which trace file corresponds to your most recent collection,
+      look at the file properties and determine what time the file was last modified. (usually it's the most recent file)</li>
+      <img class="screenshot" src="images/doc/cfProblemsSort.jpg">
+      You can click on the <b>Date Modified</b> section, and it will automatically sort your files by date.
+      <br><br>
+      The trace file will <b>always</b> start with <code>javaws</code>.
+   </br>
+   </ul>
+</div>
+
+<div class="support_content" id="support_content_launch">
+   To run combinFormation
+   <ul>
+   <li>Navigate to <a href="launch/index.html">launch</a>.</li>
+   <li>Choose a Seeding Type.</li>
+   <li>Click Launch button at bottom.</li>
+   <li>In Firefox, the first time, you will see this dialogue box:<br/>
+       <img style="margin-top: 5px; margin-bottom: 4px;" src="images/support/firefoxOpeningJNLP.png"><br/>
+       <ul>
+       <li>
+       Select "Do this automatically for files like this from now on."</li>
+      <li>Then Click OK.</li></ul>
+</li>
+   <li>For Firefox or IE, Click Run, when you see this screen.</li>
+   <img src="images/support/security.png">
+   <li style="margin-top:10px;">Then, wait briefly as the composition space window opens, the
+       interface builds, and the agent uses your seeds to start
+       collecting and composing.
+   </ul>
+</div>
+
+<div class="support_content" id="support_content_expressing">
+   <h1>support &rsaquo;&nbsp;interest&nbsp;expression&nbsp</h1>
+
+   <h2>&#8250; the interest expression</h2>
+   <br>
+   <a name="expressing_interest" class="blank">
+
+      <img src="images/support/inContextSliderWords.png"
+       class="support_img" style="margin-right: 25px;">
+   
+	The agents in in combinFormation are designed to work for you.
+	How can they know what you want?
+<p>
+	You can express interest in an image, a word in a text
+   element, or a word in the details
+ is to model your interests and to work on your behalf. 
+	This rating (scale -5 to +5) tells the agents what you want!
+</p>
+<div style="float:left; margin-top:10px;">
+      <img src="images/support/inContextSliderImage.jpg"
+       class="support_img" style="margin-right: 25px;">
+   
+	You can specify this rating by mousing over any element.  Along with any text
+	editing tools or image options, a radio button will appear just to the left of the
+	element, or if the element is against the left side of the screen, just to the right
+	of the element.  By putting your mouse cursor over this button, a scale will appear.
+	Move the mouse up or down along the scale to express your preference and click when
+	you have decided.
+</div>
+
+<div style="float:left; margin-top:10px;">
+      <img src="images/support/inContextSliderDetails.jpg"
+       class="support_img" style="margin-right: 25px;">
+	You can also specify a rating more specifically on any
+   individual word in a text element, or in element details.  To do this, b
+	put your mouse cursor over the word or highlighted text.  After a few seconds, a 
+	radio button will appear and you can follow the procedure described above.
+      <br clear="left"/>
+
+      <h2>&#8250; how infomation is related</h2>
+      <br>
+      Interest expressions also affect <i>related</i> elements.
+	This means that interest expression immediately affects the images and text that combinFormation
+	retrieves for you.  It can affect it in two ways: based on the structure of 
+	the web pages and links from which the element belongs
+	and also based on words (called terms). For text elements, the terms you are expressing
+	interest in are those you actually see in the displayed element. For images, the program 
+	derives metadata terms for the image (from its web page). You can see this metadata
+	in the information bubble that pops up over the it if you roll your mouse over the
+	image. 
+   </a>
+</div>
+
+   <a name="expressing" class="blank"></a>
+
+</div>
+
+
+<div class="support_content" id="support_content_agent_controls">
+   <h1>support &rsaquo; agent controls</h1>
+
+<p>
+<li>A tape recorder control lets you turn the composition agent on or
+off.</li>
+<li>A mixer lets you control how the balance of images and text the agent
+will show you.</li>
+<li>Resizable <a href="javascript:displaySection('hotAndCool');">hot and cool
+spaces</a> let you share control of some space with the agent, and
+take control of the center for yourself.</li>
+<li><a href="javascript:displaySection('expressing');">Interest expression</a> lets you tell the agents that you want more of
+    some stuff, and less of other.</li>
+</p><br/>
+   <span align="center">
+   <img src="images/doc/tapeRecorder.gif" width="248" height="43" class="toolbar">
+   </span>
+   <p>
+   The tape recorder control lets you to start or stop the <i>agent</i>
+   and affect its speed.
+   <ul>
+      <li>The play button starts the agent. It is only works when
+          there is information available for the agent to add to
+          the display and/or links available for the agent to
+          get to.
+      <li>The pause button pauses the agent.
+      <li>The slider lets you control how fast the agent will add new
+          information to the display. When you adjust this slider, the number
+          that appears is the number of seconds the program will wait
+          between adding elements.
+   </ul>
+   </p>
+   <br/>
+   <br/>
+   <span align="center">
+   <img src="images/doc/imageTextSlider.png" width="190" height="49" class="toolbar">
+   </span>
+   <p>
+   The mixer lets you determine the proportion of images-to-text
+   that the agent will add to the display, and it starts at 50-50. Slide
+   it to the left for more text, or to the right for more images. If the
+   agent runs out of images or text, then it will wait a while for it to
+   download more. If it <i>still</i> doesn't have what you want,
+   then it will just substitute the what it <i>does</i> have.
+   </p>
+   <p>
+   <ul>
+      <li>For example, if you have the slider all the way to the right
+          (meaning you want mostly images), the next element to
+          display is an image. However,' if there are <b>no images to
+          display</b> then the program will wait 5 turns (you
+          determine the how long a turn is by the tape recorder
+          slider) while it looks for images. If there are <i>still</i>
+          no images available, then
+          it will add some text instead.
+   </ul>
+   </p>
+   <p><br/><br/>
+   
+
+   <h1>support &rsaquo; move &amp; text tools</h1>
+   <br/><br/>
+   <img src="images/doc/cfMoveTool.jpg" width="34" height="35"
+    class="support_img">
+
+	
+   <b>Move: </b> <br/><br/>The move tool allows you to select a single item in
+   your workspace and move it around. Just click the hand icon in the
+   tool set with the left mouse button to select the tool. Then you
+   can use the left mouse button to click and drag an element to move it.
+   If an element falls behind another one you can hold down the shift key
+   on the keyboard and click the left mouse button on the element to bring
+   it to the top.
+   </p>
+   
+   <p>
+   <br/><br/>
+   <img src="images/doc/cfTextTool.jpg" width="34" height="35"
+    class="support_img">
+   <b>Text: </b><br/><br/>Edit existing text. Or, if you wish to add your
+   own text annotations to the web page, you will use the text tool.
+   Left click on the text tool in the basic tool set to activate it.
+   Once it is activated left click and drag the mouse to make a
+   text box. You will see a colored box form as you drag the mouse
+   that shows you how big your text box will be. To set the size
+   of the text box, stop dragging and let go of the left mouse
+   button. Now you can begin typing text into the box. Once
+   you are finished, click outside the text box with the left
+   mouse button. It is suggested you switch to the move tool at
+   this point to position your text box.
+   </p>
+   <p>
+</div>
+
+
+<div class="support_content" id="support_content_hotAndCool">
+   <h1>support &rsaquo; hot &amp; cool design spaces</h1>
+   <h2>&#8250; the cool space </h2>
+   <p>
+   <img src="images/doc/cfCoolSpace.jpg" width="240" height="288"
+       class="support_img">
+   The cool space is described by the display as a large rectangle in
+   background, in the middle of your window. If you move an piece of
+   information to the cool space, it will tell the <i>agent</i> to
+   keep that element and not get rid of it. Having just a part of an
+   element touching the rectangle is the same as having the element
+   completely inside the rectangle.
+   <br>
+   You can also resize the cool space rectangle by clicking on it and
+   dragging it to the size you want.
+   </p>
+   <br clear="left"/><br/><br/><br/>
+   <h2>&#8250; the hot space </h2>
+   <p>
+   <img src="images/doc/cfHotSpace.jpg" width="240" height="288"
+       class="support_img">
+   The hot space is the area <i>outside</i> the rectangle, and is
+   where the <i>agent</i> will visualize information elements that it
+   finds. This is generally where you will be expressing different
+   levels of interest, and discovering new areas. The information that
+   is placed here will constantly be changing, and if you want to keep
+   them, you should move them to the cool space.
+   </p>
+</div>
+
+<div class="support_content" id="support_content_dnd">
+   <h1>support &rsaquo; drag &amp; drop</h1>
+
+   combinFormation provides support for drag and drop of information
+   samples from web pages in the regular browser, into the composition
+   space. You simply select content in your browser, drag it to
+combinFormation, and drop it where you want it in the composition space.
+   <br>
+   <br>
+
+When using drag and drop to collect and compose elements, you may
+   find it important to maintain the association between the element
+   and its source web page. This is what We are not able to accomplish this using
+   the standard functionality provided by browsers and Java.
+   <br>
+   <br>
+   To overcome this limitation, we have created an extension to the
+   Firefox browser. You must install
+   <a href="fireFoxDnd/cfTools.xpi" onclick=" return installCfTools(this);">this extension</a>
+    to use drag and drop properly.
+   <br>
+   <br>
+   <b>Note:</b> you will have to tell the
+   browser that you trust the <i>ecologylab.cs.tamu.edu</i> website as the
+   source of extensions in order to do this.
+</div>
+
+<div class="support_content" id="support_content_context_image">
+   <h1>support &rsaquo; image editing</h1>
+   Other capabilites are supported when you interact with the images</a>
+   and <a href="javascript:displaySection('context_text')">text </a>that
+   are visible in combinFormation, which are shown
+   on mouseover. These actions include resizing the image and changing its translucency.
+   <br/>
+   <br/>
+   <br/>
+
+   <a name="navigate_action_image" class="blank"></a>
+ 
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfImageResize.png"
+       class="support_img">
+       </span>
+     <br/><br/><br/><br/><br/><br/><br/><br/><br/> <br/><br/><b>Resize Bars</b> <br/><br/>
+      This next tool is one you will more than like use a lot. The
+      squares highlighted in red are the resize boxes. Clicking on
+      one of these squares with the left mouse button and dragging
+      will allow you to resize the element. As you mouse over these
+      squares you will notice the mouse cursor change into the
+      resize icon like this . This cursor just lets you know you
+      can now resize the element. To further help while resizing,
+      what the gray border that appears when dragging the mouse
+      during resizing. It lets you know what size the resized
+      element will be, or in the case of text, how much space
+      the text will have to fit in.
+   </p>
+   <br clear="left"/><br/><br/><br/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cftranslucence.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Translucence</b> <br/><br/>
+      You may notice elements in combinFormation that seem to have
+      fuzzy or blurred edges. This is the work of the translucence
+      tool. It makes the edges of images translucent, or partially
+      clear, so you can blend them together easily. This can be
+      used when you have images you might feel are related and you
+      want to group them closely together. As you can see, on this
+      image there is a check mark next to the word translucence.
+      That means the tool is on and the edges of the image will
+      be clear. To turn it on or off, left click where the check
+      mark is.
+   </p>
+   <br clear="left"/><br/><br/><br/><br/><br/><br/>
+</div>
+   
+<div class="support_content" id="support_content_context_text">
+   <h1>support &rsaquo; text editing</h1>
+	You can interact with text in addition to images. These actions include
+ 	adjusting the size of the text, changing the color and font of text, changing
+	the shape of the text, and changing the style of the text.
+   <br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfText.png"
+       class="support_img">
+       </span>
+ 	<br/><br/><br/><br/>This is what you will see if place your mouse over an text element.  As you may 
+	notice, the difference between this tool and the image tool is that 
+ 	the translucence tool is replaced with a set of text tools that allow you to alter
+ 	the color scheme, font, style, and size of the text in your text box.
+   </p>
+   <br clear="left"/><br/>
+   
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfTextFont.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Font</b> <br/><br/><br/>
+	Clicking on this menu will drop down a list of fonts. Clicking on a font name will change the 
+	font of the highlighted area of the text element.  If no text is highlighted, clicking on the
+	font name will modify the text of the entire text element. 
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfTextFontSize.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Font Size</b> <br/><br/><br/>
+	Clicking in this area will drop down a list of numbers. The number on the display correlates to the current 
+	font size of your text element. When you choose the font size you may note that the shape of the 
+	text may change. If this happens you can resize the text box, using the resize bar to fix the problem. 
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfTextColor.png" 
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Font Color &amp Background (Stroke) Color</b> <br/><br/><br/>
+	Using the T button, you can change both the font color and the background color of the text.
+	Clicking on the T button will first bring up a window entitled "Choose Font Color."  You can choose
+	a font color in three different ways: using Swatches, HSB, or RGB.  In Swatches,
+	there is a palette of pre-selected colors in boxes.  Click on a box to select a color.
+	Your choice will automatically be added to the Recent palette at the right of the 
+	window.  Access the HSB selection by clicking the HSB tab at the top of the window.
+	Here, you can change the Hue, Saturation, and Brightness of a color.  You can specify
+	this numerically by entering values or using the arrows to increment or decrement
+	the aspect of the color.  You can also simply drag the white circle on the color picture at the left.  
+	The R(red)G(green)B(blue) values will be automatically adjusted to reflect 
+	the changes you have made.  Like the HSB selection, access RGB selection by clicking 
+	the RGB tab at the top of the window.  Drag the notches of the sliding scaled to adjust
+	the balances of red, green, and blue, or simply adjust the values numerically, using the indicators
+	at the right of the sliders.<br>
+	Using the color selection in the swatches, the HSB, or the RGB tabs, you can specify a certain color.
+	When you choose a color, a Preview is shown in the box at the bottom of the window.
+	Also, a display of how that color looks around black and white is shown in the Preview.
+	When you are satisfied with a color for the font, click the OK button.  If you would
+	like to set all the windows back to their default position, click Reset.<br>
+	Upon clicking the Ok button, another window entitled "Choose Stroke Color" will appear.
+	Follow the same steps as above to pick your desired background color for the text.
+	If you are satisfied with the current background color that you had before bringing up the
+	menu, click Cancel.  Otherwise, choose Ok or Reset.<br>
+	The appearance of the T button will change to reflect the changes you have made to the text.
+	The background of the T button will be the background (stroke) color of the text, and the T itself
+	will be the color of the font color.<br>
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfTextStyle.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Font Style</b> <br/><br/><br/>
+	Clicking on the B, I, and U buttons will change the style of the text (bold, italics, underline).
+	The appearance of these buttons will change to reflect the changes you have made to the text.
+	When all the text in an element is the same style, the background of the button of that style
+	will be copmletely shaded.  For example, if all the text in an element was bold, the button would look 
+	like this: (show picture).  If only some of the text is selected in an element and you change the style
+	of that particular text, this change will be noted by the background shading of the style button.  The
+	bottom half of the button will be shaded to reflect that only the selected portion of text has the style change.
+	The bottom half of the button background represents the text that is currently selected.  The top 
+	half of the button background represents the general style settings for the whole element itself.  When the bottom
+	half of the button is
+	shaded, it means that the style is applied to the selected text but that the style is not applied
+	to the rest of the text in the element.  When the bottom half of the button is
+	white, it means that the style is not applied to the selected text but that the style is applied to 
+	the rest of the text in the element. 
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfTextShape.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Font Shape</b> <br/><br/><br/>
+	Clicking on this menu will drop down a list of different shapes for the background color.
+	The last option with the line through it means that no separate background color will be displayed behind 
+	the text.
+   </p>
+   <br clear="left"/><br/><br/><br/>
+
+</div>
+
+<div class="support_content" id="support_content_metadesign">
+   <h1>support &rsaquo; element details and  tools</h1>
+	When mousing over an element, a window displaying metadata information about where the element is from and
+	a small toolbar to help you interact with an element will appear on the bottom side (or top side if against
+ 	the bottom of the screen) of the element.  The metadata includes information about the webpage source,
+	while the design tools include
+ 	starting a new search, navigating to a source website, removing the element, and latching the element.
+   <br/>
+   <br/>
+   <br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cfmetadata.png"
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><br/><br/><br/><br/><b>Metadata Details</b> <br/><br/><br/>
+	This box presents information about the location where the element was found.
+	It also displays
+	additional information such as the query that was sent to the
+search engine, the title of the source webpage, the
+	 captions of images, and the text context that surrounds a
+clipping in its source document.  Use this to quickly learn about the source of an element.
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cftoolbarsearch.png"
+       class="support_img">
+       </span>
+       <br/><br/><br/><br/><b>Searching</b> <br/><br/><br/>
+	By clicking on this tool, you can start a new combinFormation search on the one element.  It 
+	generates a google search with a search query automatically formulated from terms in the elements. 
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cftoobarnavigate.png"
+       class="support_img">
+       </span>
+       <br/><br/><br/><br/><b>Navigating</b> <br/><br/><br/>
+	Using this tool, you can visit the source webpage where the element is from originally.  This will open a new
+	browser window that is pointed at the address of the source of which the element came.
+   </p>
+   <br clear="left"/><br/>
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cftoolbarcut.png" 
+       class="support_img">
+       </span>
+      <br/><br/><br/><br/><b>Cutting</b> <br/><br/><br/>
+	Click on this tool when you would like to permanently remove an element from the screen view.  
+   </p>
+   <br clear="left"/><br/><br/><br/>
+
+
+   <p>
+   <span align="center">
+      <img src="images/doc/cftoolbarlatch.png"
+       class="support_img">
+       </span>
+    <br/><br/><br/><br/><b>Latching</b><br/><br/><br/>
+	This tool enables you to create a single element floating cool region. The agent will not remove
+ 	elements latched by you even though the element is in the hot space. You can latch elements
+ 	by clicking on this button.  Click another time on the button to unlatch the element. 
+   </p>
+   </a>
+</div>
+
+
+<div class="support_content" id="support_content_menus">
+      <img src="images/doc/menu1.jpg" width="242" height="168"
+       class="support_img">
+   <h1>support &rsaquo; Save and Open</h1>
+   <p>
+   <span align="center">
+       </span>
+      <b>Save</b> <br/>
+      You can save your composition space using the
+      <code><b>Save</b></code> or <code><b>Save As...</b></code>
+      items in the menu bar. When you save the space, you will get
+      four types of files, which are XML, HTML, JPG, and JPG
+      thumbnail image. Make a folder, to help you keep them together.
+   </p>
+<br/>
+   <p>
+      <b>Open</b><br/>
+      There are two ways to re-open your saved space in combinFormation.
+   <ol>
+      <li>Click <a target="_blank"
+	  href="launch/index.html">launch</a> and then
+	   <a target="_blank"
+	  href="launch/open.html">re:open</a>, and launch again.
+	  Once inside cF,
+	  select menu <code><b>File-&rsaquo;Open</b></code>
+	  and then select the XML file for your saved composition.
+
+      </li>
+      <li>
+      You can also open the saved HTML from the Windows Explorer or
+	  Macintosh Finder by double-clicking. Notice the links are
+	  navigable from here, but you can't edit yet. To go further,
+	  click the launch in cF link.
+      </li>
+   </ol>
+   </p>
+
+   <br clear="left"/><br/><br/><br/><br/>
+</div>
+
+<div class="support_content" id="support_content_tips">
+   <h1>support &rsaquo; tips</h1>
+   <h2>&rsaquo; drag and drop</h2>
+   <p>When browsing the <span lang=en-US>Internet</span> you can drag and drop text
+   and images into combinFormation. This is done with images by clicking and
+   holding the left button, dragging the image over the canvas in <span
+   lang=en-US>combinFormation</span> and letting go of the mouse button. It may
+   take a moment for the software to download the image, so be <span
+   lang=en-US>patient.</span> For text the method is similar, just make sure to
+   select all the text you want to put on the canvas on the web page before
+   dragging it in. Also, note that if you select more than one paragraph of text,
+   combinFormation may break this text up into more than one text element.
+   </p>
+   <p>
+   <h2>&rsaquo; undo</h2>
+   If you make a mistake when working on your composition space, you can undo
+   that mistake by hitting both the control key and the 'Z' key. You can do this
+   multiple times to undo a series of events as well.
+   </p>
+   <p>
+   <h2>&rsaquo; tools</h2>
+   When building your composition spaces use the tools as best you can to
+   organize the information to your liking. If you feel an image needs a label, use
+   the text tool to add one. If you think a group of images belong together, you
+   could make them all translucent and blend them together. Text elements also
+   group well if the same or similar colors. Find new and interesting ways to
+   present your ideas!
+   </p>
+</div>
+
+<div class="support_content" id="support_content_publishing">
+   <h1>support &rsaquo; publishing</h1>
+
+   <p>
+   After saving a composition space, you can easily move it onto a web
+   server. This is the same as what you would do to publish a regular
+   HTML web page. You can then link the composition space into a
+   regular web page.
+   </p>
+   <p>
+
+   In order to do this, you must create a link tag in HTML that
+   connects your published composition space to
+   <i>combinFormation</i>. You do this by passing your space to a
+   special publisher's page that we have arranged for you.
+   </p>
+   <p>
+
+   You can do it like this<br/>
+   <span class="small">(expect without line breaks in the midst of
+   the url)</span>:
+
+   <br/>
+   <br/>
+
+   <code>
+      &lt;a target="_blank"<br/>
+      href="http://ecologylab.cs.tamu.edu<br/>
+      /combinformation/launch/regenerate.html?<br/>
+      infospace=http://yourserver.net/yourDir/yourSpace.xml"&gt;<br>
+   </code>
+   </p>
+
+   <p>
+   There are some additional arguments you can pass. One controls
+   whether the composition space will start with the generative agent
+   playing or paused. The default is paused. Also, you can pass a
+   title in for the published composition space. This title will be
+   integrated into the intermediate web page that your users launch
+   <i>combinFormation</i> from. (You must also change all instances of
+   space to %20 in this title.) For example
+   </p>
+   <p>
+
+   <code>
+      &lt;a target="_blank" href="http://ecologylab.cs.tamu.edu/combinformation/launch/regenerate.html?infospace=http://yourserver.net/yourDir/yourSpace.xml&amp;start=play&amp;title=Zinnias%20and%20Petunias"&gt;<br>
+
+   </code>
+   </p>
+   <p>
+   As an alternative, you may include a small JavaScript file that we
+   provide. Then, you will get a small <i>combinFormation</i> launch
+   window, that will not cover up your page. Additionally, you will no
+   longer need to convert spaces. The JavaScript function calling
+   syntax is simpler:
+   </p>
+   <p>
+
+   <code>
+
+      function regeneratePopup(infospace, title, start)
+   </code>
+   </p>
+   <p>
+   For example,
+   </p>
+   <p>
+
+   <code>
+      &lt;script src="http://ecologylab.cs.tamu.edu/combinformation/publish.js"
+      language="JavaScript"&gt;&lt;/script&gt;
+
+   </code>
+   </p>
+   <p>
+   <code>
+      &lt;a
+      href="javascript:regeneratePopup('http://yourserver.net/yourDir/yourSpace.xml', 'Zinnias and Petunias', 'play')"&gt;
+   </code>
+   </p>
+</div>
+
+
+<div class="support_content" id="support_content_feedback">
+   <h1>support &rsaquo; feedback</h1>
+   <h2>Give feedback to the developers!</h2>
+   <p>
+   What is working well for you? What would you like to see improved?
+   What would you like that is new?
+   <br/>
+   Would you like to use the program in a site you are building?
+   </p>
+   <p>
+   We'll be grateful if you take the time to let us know about your
+   experiences.
+   </p>
+
+   <p>
+  <form method="post" name="feedbackForm" action="http://ecology0.cs.tamu.edu/feedback/mailservletCaptcha/" ENCTYPE="multipart/form-data" target="hiddenFrame">
+      <table cellspacing="15">
+      <tr>
+         <td>
+            <b>name</b>
+         </td>
+         <td>
+         	<input type="text" size="25" name="firstname" value="">&nbsp;
+            <input type="text" size="25" name="lastname" value="">
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+            <b>email</b>
+         </td>
+         <td>
+            <input type="text" size="44" name="email" value="">
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+            <b>type of <br/>feedback</b>
+         </td>
+         <td>
+            <select name="intention">
+               <option value="need_help">ask for help</option>
+               <option value="bug_report">report problem</option>
+               <option value="idea">share idea</option>
+               <option value="feature_request">request feature</option>
+               <option value="other">other</option>
+            </select>
+         </td>
+      </tr>
+
+      <tr>
+         <td>
+            <b>upload <a href="javascript:displaySection('help')">trace </a> file</b>
+         </td>
+         <td>
+            <input type='file' name="traceFile">
+         </td>
+      </tr>
+
+      <tr valign="top">
+         <td>
+            <b>feedback</b>
+         </td>
+         <td>
+            <textarea name="comment"  wrap="physical"
+             rows="10" cols="55"></textarea>
+         </td>
+      </tr>
+      <tr valign="top">
+      	<td>
+      		<b>enter the characters<br/>from the image<br/>into the text box</b>
+      	</td>
+      	<td>
+   			<img id="kaptchaImg" src="http://ecology0.cs.tamu.edu/feedback/kaptcha" /> 
+   			<br><input type="text" name="kaptcha" value="" />
+   			<div id="errorText" style="visibility: hidden; color: red; text-align: left; ">Please try again. Click <a href="javascript:refreshKaptcha();">here</a> for a different image.</div>
+		</td>
+       </tr>
+       <tr>
+       	<td></td>
+       	<td><input type="button"  onclick="goForm(this.form);" value="submit feedback"></td>	   		
+   </table>
+      
+  <script language="JavaScript">document.write("<input type='hidden' name='browserLocation' value='" + getCurrLoc() + "'>");</script>
+   </form>
+</div>
+<br/>
+<iframe name="hiddenFrame" id="iFrame">
+</iframe>
+</body>
+</html>

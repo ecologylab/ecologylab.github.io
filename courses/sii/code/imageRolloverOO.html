@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<title>[sii] image rollover example</title>
+
+<script language="JavaScript">
+//alert(navigator.userAgent);
+
+
+/**
+ * Rollover
+ */
+var button   = new Button('rollImage', '../../../research/images/doceng07_icon.jpg',
+		   '../../../research/images/sigir07_icon.jpg');
+
+function Button(name, orig, roll)
+{
+   this.name	= name;
+   this.orig	= orig;
+   this.roll	= roll;
+   this.flip	= flipMethod;
+}
+function preload(path)
+{
+   var image = new Image();
+   image.src = path;
+}
+function flipMethod(which)
+{
+   flip(this.name, this, which);
+}
+
+function flip(imageName, button, which)
+{
+  document[imageName].src = button[which];
+}
+</script>
+
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="0025C5" topmargin=0
+      vlink="F70010">
+<a href="#"
+   onmouseover="button.flip('roll');"
+   onmouseout="button.flip('orig');">
+   <img border="0"
+   name="rollImage" width="100" height="77"
+   src="../../../research/images/doceng07_icon.jpg"></a>
+<script language="JavaScript">
+document.write("<br><br>whatever");
+</script>
+
+<p align="right">
+<a href="imageAndCaption.html">image and caption</a>
+</p>
+<p align="right">
+<a href="cookies.html">cookies experiment</a>
+</p>
+
+</body> </html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title cftoolsversion="0.1.2">implementation [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+</head>
+<body>
+
+	<div class="rootcontainer">
+
+		<div class="header">
+			<div class="title4">s.im.pl:<br/></div>
+			<div class="title4a">meta-metadata guide</div>
+		</div>
+
+		<div class="nav">
+			<div class="block">
+  				<a class="navlink" href="../index.html">s.im.pl</a>
+				<a class="subnavlink" href="../serialization/index.html">s.im.pl serialization</a>
+				<a class="subnavlink" href="../oodss/index.html">oodss</a>
+			</div>
+	
+			<div class="block">
+  				<a class="navlink_bold" href="index.html">meta-metadata</a>
+  				<a class="subnavlink" href="prereqs.html">prerequisites</a>
+				<a class="subnavlink" href="generalPrincipals.html">general<br/>principles</a>
+				<a class="subnavlink" href="tips.html">tool tips</a>
+			</div>
+
+			<div class="block">
+  				<a class="navlink" href="libtutorials.html">librarian<br/>tutorials</a>
+			</div>
+
+			<div class="block">
+			  <a class="navlink" href="apptutorials.html">application<br/>developer<br/>tutorials</a>
+			  <a class="subnavlink" href="environmentSetup.html">dev environment<br/>setup</a>
+				<a class="navselected" href="implementation.html">implementation</a>
+			</div>
+
+			<div class="block">
+  				<a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+			</div>
+
+			<div class="block">
+  				<a class="navlink"  href="../repository.html">source repository</a>
+  				<a class="navlink" href="../community.html">community</a>
+			</div>
+	
+			<div class="block">
+  				<a class="navlink" href="http://ecologylab.net">interface<br/>ecology lab</a>
+			</div>
+		</div>
+		
+		<div class="content_title">Implementation</div>
+		
+		<div class="content">
+			<p class="main" style="line-height: 150%;">
+				This tutorial will cover in detail each of the classes used in the example application, NewWeatherDataCollector.
+			</p>
+			<br />
+			<div class="bluebar"></div>
+			
+			<h2><a target="blank" href="NewInfoCollector.java">NewInfoCollector</a></h2>
+			<p	class="main" style="line-height:150%;">
+				A NewInfoCollector initiates the seeding process, holds containers and document closures and manages the download process through DownloadMonitor.
+			</p>
+			<div class="subpoint">
+				<b>Note</b>: We use DownloadMonitor (from ecologylabFundamental) to manage the downloading process.
+				It provides multi-thread downloading in an easy-to-use way. However, you should remember to set the
+				VM arguments to allocate enough memory for it, or it can't start working (you'll see console output like "Memory.reclaim...").	
+			</div>
+			<p class="main" style="line-height: 150%;">
+				<b> Important Method</b>: getOrConstructDocument() - Creates a document object for a given URL and sets the infoCollector
+			
+			<div class="bluebar"></div>
+			
+			<h2><a target="blank" href="DocumentClosure.java">DocumentClosure</a></h2>
+			<p class="main" style="line-height:150%;">
+				A DocumentClosure serves as a closure for Document objects. It is used as a candidate and wrapper for downloading.
+			</p>
+			<b>Important Methods:</b>
+			<br /><br />
+			<p class="main" style="line-height: 150%;">
+				<b>setDispatchTarget()</b><br />
+				Sets the DispatchTarget, which sends collected metadata to the delivery() method overriden by that DispatchTarget.
+				<br /><br />
+				<b>queueDownload()</b><br />
+				Starts the download process using the DownloadMonitor and the DispatchTarget.
+			</p>
+			
+			<div class="bluebar"></div>
+			
+			<h2><a name="metadata_compiler" target="blank" href="MetadataCompiler.java">MetaMetadataCompiler</a></h2>
+			<p class="main" style="line-height: 150%;">
+				The MetaMetadataCompiler class is used to compile the meta-metadata repository. Compiling the repository
+				generates the Java classes for the <i>meta-metadata</i> objects.
+				<div class="subpoint">
+					<b>Note</b>:  The MetaMetadataRepository must be recompiled everytime a new <span class="mmd">meta_metadata</span>
+					object or <span class="mmd">scalar</span>, <span class="mmd">composite</span>, or <span class="mmd">collection</span> field is added or modified.
+				</div>	
+			</p>
+			<p class="main" style="line-height: 150%;">
+				In Eclipse, you can run MetaMetadataCompiler from a launch file we provide for convenience. It is located in the root directory of project ecologylabSemantics, with name &quote;MetaMetadataCompiler.launch&quote;. Right click it and choose Run As as shown below:
+			</p>
+			<p class="main" style="text-align: center;">
+				<img src="images/metadataCompilerFromEclipse.png" alt="how to launch MetadataCompiler from Eclipse, using our launch file." />
+			</p>
+			
+			<div class="bluebar"></div>	
+			
+			<h2><a target="blank" href="NewWeatherDataCollector.java">NewWeatherDataCollector</a></h2>
+			<p class="main" style="line-height: 150%;">
+				This class is the heart of the example application. It contains the collect() method which
+				determines the initial seeding of the NewInfoCollector, creates a DocumentClosure, and uses the DownloadMonitor.
+				Each time metadata is sent, the overriden delivery() method is called. This creates a Document object
+				and formats and outputs the information.
+				<div class="subpoint">
+					<b>Note</b>:  To access the class WeatherReport the WeatherReport.java file generated
+					by the MetaMetadataCompiler must be imported.
+				</div>
+			</p>
+			
+			<div class="bluebar"></div>
+			
+			<h2>Create your own application</h2>
+				<p class="main" style="line-height: 150%;">
+				Using the implementations of DocumentClosure, NewInfoCollector, and MetadataCompiler we have provided,
+				<b>you only need to modify the collect(), deliver(), and main() methods in order to create your own <i>meta-metadata</i> applications</b>.  
+				<br/><br/>
+				You can also change any of our implementations or create your own from scratch.
+			</p>	 		 		
+		</div>
+		<div class="credits">
+			designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+			an <a href="http://ecologylab.net">interface ecology lab</a> production
+		</div>
+	</div>	
+</body>
+</html>

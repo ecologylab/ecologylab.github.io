@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>launch::buzz :: combinFormation</title>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "buzz";
+thisParent	= "collageMachine";
+thisAlt	= "buzz";
+strongBrowser	= 0;
+
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/xml.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/dialog.js"></script> 
+
+ 
+<script language="JavaScript">
+var selectedCollection = "actors";
+
+var buzzFeedURLs = new Array();
+
+buzzFeedURLs["overall_leaders"] 	= "http://buzzlog.buzz.yahoo.com/feeds/buzzoverl.xml";
+buzzFeedURLs["overall_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzoverm.xml";
+buzzFeedURLs["tv_leaders"] 			= "http://buzzlog.buzz.yahoo.com/feeds/buzztvl.xml",
+buzzFeedURLs["tv_movers"] 			= "http://buzzlog.buzz.yahoo.com/feeds/buzztvm.xml",
+buzzFeedURLs["music_leaders"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzmusl.xml",
+buzzFeedURLs["music_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzmusm.xml",
+buzzFeedURLs["sports_leaders"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzsportl.xml",
+buzzFeedURLs["sports_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzsportm.xml",
+buzzFeedURLs["actors_leaders"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzactl.xml",
+buzzFeedURLs["actors_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzactm.xml",
+buzzFeedURLs["movies_leaders"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzmovl.xml",
+buzzFeedURLs["movies_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzmovm.xml",
+buzzFeedURLs["games_leaders"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzgamesl.xml",
+buzzFeedURLs["games_movers"] 		= "http://buzzlog.buzz.yahoo.com/feeds/buzzgamesm.xml";
+                    
+
+function emitSeeding(name)
+{
+   var oldDiv = document.getElementById(selectedCollection);
+   var newDiv = document.getElementById(name);
+   selectedCollection = name;
+   oldDiv.className = "icon";
+   newDiv.className = "icon_selected";
+   
+
+   var isMovers = document.buzz_radio.movers[0].checked;
+   name		   += (isMovers ? "_movers" : "_leaders");
+   var seed     = createFeedSeed(buzzFeedURLs[name]); 
+// alert(name);
+
+//   var seedSet	= xmlDoc.createElement("seed_set");
+//   seedSet.appendChild(seed);
+//   launchCF(seedSet);
+   launchSeed(seed);
+}
+
+
+</script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body onload="checkBrowser();preloadNav(); ">
+
+<form name="launchForm" action="http://localhost:10010" method="post" target="ping" enctype="text/plain">
+	<input type="hidden" name="requestXML" value=""></input>
+</form>
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1)" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif"></a></div></td>
+  </tr>
+</table>
+
+<!--
+<div class="launch_img"
+ style="font-size:23px; color: #3399cc;">Yahoo! Buzz</div>
+-->
+<div class="launch_img"><img border="0"
+ src="images/buzz.png"/></div>
+ 
+<div class="content">
+<h5><b>Seeding: Tell the Agent what popular media you want to
+remix.</b></h5>
+
+<div class="blue_line"></div>
+
+<div style="float:left"><h5 style="padding-top:0px;">
+
+<form name="buzz_radio">
+<input type="radio" name="movers" value="movers" checked> Top Movers: the greatest percentage increase in buzz score from one day to the next</input>
+<br>
+<input type="radio" name="movers" value="leaders"> Top Leaders: the overall most searched subjects on Yahoo!</input>
+
+</h5>
+
+<div id="grid">
+<table id="entries" cellspacing="0" cellpadding="4">
+<tr>
+<td>
+<div id="overall" class="icon">
+<a href="javascript:emitSeeding('overall');">
+<font size=4 >overall</font></a></div>
+</td>
+
+<td>
+<div id="actors" class="icon">
+<a href="javascript:emitSeeding('actors');">
+<font size=4 >actors</font></a></div>
+</td>
+
+<td>
+<div id="movies" class="icon">
+<a href="javascript:emitSeeding('movies');">
+<font size=4 >movies</font></a></div>
+</td>
+<td>
+<div id="music" class="icon">
+<a href="javascript:emitSeeding('music');">
+<font size=4 >music</font></a></div>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+<div id="sports" class="icon">
+<a href="javascript:emitSeeding('sports');">
+<font size=4 >sports</font>
+</a></div>
+</td>
+<td>
+<div id="tv" class="icon">
+<a href="javascript:emitSeeding('tv');">
+<font size=4 >tv</font>
+</a></div>
+</td>
+<td>
+<div id="games" class="icon">
+<a href="javascript:emitSeeding('games');">
+<font size=4 >video games</font>
+</a></div>
+</td>
+</tr>
+</table>
+
+</form>
+
+<h5 id="oollage_size_h5">Size on screen:
+<script>
+      collageSize();
+$(document).ready(function() {
+  $('#cancel_button').hide();
+});
+</script>
+<h2>
+<a id='cancel_button' onClick='javascript:cancelLaunch()'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cancel</a>
+</h2>
+
+</h5>
+
+<div id="launch_controls">&nbsp;</div>
+</div>
+
+<div class="tight_line"></div>
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="../white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="../white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ src="../nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+</div>
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+
+</div>
+
+
+	
+<div class="nav">
+  <a class="support_link" href="mix.html">re:mix</a>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <div class="support_link_selected" href="buzz.html">re:buzz</div>
+  <a class="support_link" href="open.html">re:open</a>
+</div>
+
+</body>
+</html>

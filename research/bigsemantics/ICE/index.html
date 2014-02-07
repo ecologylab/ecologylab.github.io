@@ -1,0 +1,170 @@
+<html>
+	<head>
+		<title>ICE</title>
+		
+		<!-- Styles -->
+        <link href="../MDC/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="ice.css" rel="stylesheet" type="text/css">
+		
+		<!-- Code -->
+		<script type="text/javascript" src="ice.js"></script>
+		
+		<script type="text/javascript" src="browserCheck.js"></script>
+		
+		<style>
+			body {
+				margin: 0px;
+				min-width: 1000px;
+			}
+		
+			#controls {
+				background: #1B1B1B;
+				padding: 8px;
+                width: 100%;
+                position: fixed;
+                top: 0px;
+                z-index: 100;
+			}
+      
+            #controls_space {
+                height: 45px;
+            }
+      
+			#control_bar {
+                width: 85%;
+                height: 25px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                font-weight: 200;
+            }
+            
+            #nav_bar {
+							display: none;
+                font-size: 11pt;
+                margin-top: -5px;
+                margin-bottom: 10px;
+            }
+            
+            #nav_bar a {
+                margin-right: 25px;
+                color: #70B5FA;
+                text-decoration: none;
+            }
+      
+            #nav_bar a:hover {
+                color: #B4D7FA;
+            }
+            
+            #ice_title {
+                font-size: 14pt;
+                color: #dddddd;
+                float: left;
+            }
+            
+            #btn_render {
+                float: right;
+                padding: 2px;
+                padding-left: 10px;
+                padding-right: 10px;
+                border-radius: 3px;
+                margin: 5px;
+                margin-top: auto;
+                margin-bottom: auto;
+                
+                cursor: pointer;
+                background-color: #FAC85C;
+                font-size: 10pt;
+            }
+            
+            #targetURL {
+                float: right;
+                width: 400px;
+                height: 25px;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+			
+			#content {
+                width: 85%;
+                margin-left: auto;
+                margin-right: auto;
+				background: white;
+				padding: 8px;
+				overflow: auto;
+			}
+		</style>
+		
+		<script>
+			function showMetadata()
+			{
+				var url = document.getElementById("targetURL").value;
+				var content = document.getElementById("content");
+				
+				MetadataRenderer.addMetadataDisplay(content, url, true);
+			}
+			
+			function onEnterShowMetadata(event)
+			{
+				if(event.keyCode == 13)
+					showMetadata();	
+			}
+			
+			function setInitalSourceDoc()
+			{
+				var url = getParameter("url")
+				if(url != -1)
+				{
+					MetadataRenderer.addMetadataDisplay(content, url, true);
+					document.getElementById("targetURL").value = url;
+				}
+			}
+			
+			//Thanks to http://bloggerplugnplay.blogspot.in/2012/08/how-to-get-url-parameter-in-javascript.html
+			function getParameter(param)
+			{
+				var val = document.URL;				
+				var loc = val.indexOf(param);
+				
+				if(loc === -1)
+				{
+					return -1;
+				}
+				else
+				{
+					var url = val.substr(loc);
+					var n=url.replace(param+"=","");
+					return n;
+				}
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="controls">
+          <div id="control_bar">
+            <div id="nav_bar">
+              <a target="_blank" href="http://ecologylab.net">interface ecology lab</a>
+              <a target="_blank" href="http://ecologylab.net/bigsemantics">big semantics</a>
+              <a target="_blank" href="https://github.com/ecologylab/BigSemantics/wiki/In-Context-Expander-(ICE)">ice wiki</a>
+            </div>
+            <div id="ice_title">In-Context Expander (ICE)</div>
+            <div id="btn_render" onclick="showMetadata();">Render Metadata</div>
+			<input id="targetURL" type="text" size="100" placeholder="Enter Source Document URL" onkeydown="onEnterShowMetadata(event);"/>
+          </div>
+		</div>
+    
+        <div id="controls_space"></div>
+		
+		<div id="content" class="metadataRendering">
+			<a id="initialSourceURL" href=""> </a>			
+		</div>
+		
+		<script>
+			setInitalSourceDoc();
+			MetadataRenderer.initMetadataRenderings();
+		</script>
+	</body>
+</html>

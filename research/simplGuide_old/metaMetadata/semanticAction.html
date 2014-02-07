@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">semantic action [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4b">tutorial [semantic actions]</div>
+</div>
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="index.html">meta-metadata</a>
+  <a class="navlink" href="prereqs.html">prereqs</a>
+  <a class="navlink" href="generalPrincipals.html">principles</a>
+  <a class="navlink" href="environmentSetup.html">development<br/>environment</a>
+  <a class="navlink" href="ice.html">in-context expander</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="libtutorials.html">tutorials</a>
+  <a class="subnavlink2" href="dataDefinition.html">- data definition</a>
+  <a class="subnavlink2" href="informationExtraction.html">- information<br/>extraction</a>
+  <a class="navselected" href="semanticAction.html">- semantic&nbsp;actions</a>
+  <a class="subnavlink2" href="advancedTopics.html">- advanced&nbsp;topics</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+  <a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+<div class="content">
+<h5>This tutorial will show you how to create useful semantic actions for the <span class="mmd">meta_metadata</span> object <span class="mmdVal">urban_spoon_restaurant</span>.</h5>
+<br/>
+All semantic actions must be placed within the <span class="mmd">meta_metadata</span> tag of the object they are intended for.
+<br/><br/>
+In general there are three types of semantic actions: <b>variable declarations</b>, <b>control flow statements</b>, and <b>bridge function statements</b>.
+<br/><br/>
+<b>Variable Declarations</b>:
+<ul>
+	<li><span class="mmd">get_field</span> - Puts a <span class="mmd">meta_metadata_field</span> in context, needed before that field can be passed as an argument.</li>
+	<li><span class="mmd">check</span> - Decide the value of a flag. </li>
+</ul>
+<b>Control Flow Statements</b>:
+<ul>
+	<li><span class="mmd">for_each</span> - Iterates through a collection <span class="mmd">meta_metadata_field</span>/</li>
+	<li><span class="mmd">if</span> - Checks the conditions of a <span class="mmd">flag_check</span>.</li>
+	<li><span class="mmd">flag_check</span> - Used in conjunction with an <span class="mmd">if</span> statement.</li>
+</ul>
+<b>Bridge Function Statements</b>:
+<ul>
+	<li><span class="mmd">create_and_visualize_img_surrogate</span> - Used to signal to visualization application to display an image, the image's URL is included as an argument.</li>
+	<li><span class="mmd">create_and_visualize_text_surrogate</span> - Same as the previous function except<br/>
+	 the argument passed is text.</li>
+	<li><span class="mmd">parse_document</span> - Signals the information crawler to download and parse a<br/> resource, either immediately or later, taking a URL as an argument.</li>
+</ul>
+
+The actions we want to take for an Urban Spoon restaurant information page might include:
+<ul>
+	<li>Displaying a picture of the restaurant</li>
+	<li>If that picture is not available display a picture of the restaurant on the map</li>
+	<li>Queue for download the pages containing lists of similar restaurants</li>
+</ul>
+The semantic_actions for displaying the image of the restaurant (as stored in the <span class="mmd">meta_metadata_field</span>  <span class="mmdVal">pic</span>) are:
+<div class="mmdBlock">
+<span class="mmd">
+&#60;semantic_actions><br/><br/>
+	<div class="mmdfields">
+	&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"pic"</span>/> <br/><br/>
+	    &#60;create_and_visualize_img_surrogate> <br/><br/>
+	    	<div class="mmdcollection">
+	   		&#60;arg <span class="mmdAtt">value</span>=<span class="mmdVal">"pic"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"image_purl"</span>/> <br/><br/>
+			</div>
+		&#60;/create_and_visualize_img_surrogate> <br/><br/>
+	</div>
+&#60;/semantic_actions></span>
+</div>
+<br/>
+Not all restaurant pages have a picture. In the case that it doesn't have a picture this action will do nothing.
+We can add a <span class="mmd">check</span> to see if <span class="mmdVal">pic</span> is null and if so then we can display the image <span class="mmdVal">map</span>.
+<div class="mmdBlock">
+<span class="mmd">
+&#60;semantic_actions><br/><br/>
+	<div class="mmdfields">
+	&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"pic"</span>> <br/><br/>
+		<div class="mmdcollection">
+		&#60;check <span class="mmdAtt">condition</span>=<span class="mmdVal">"NOT_NULL"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"picFound"</span>/><br/><br/>
+		</div>
+	&#60;/get_field> <br/><br/>
+	&#60;if> <br/><br/>
+	&#60;flag_check <span class="mmdAtt">value</span>=<span class="mmdVal">"picFound"</span>/> <br/><br/>
+		&#60;create_and_visualize_img_surrogate> <br/><br/>
+	  		<div class="mmdcollection">
+			&#60;arg <span class="mmdAtt">value</span>=<span class="mmdVal">"pic"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"image_purl"</span>/> <br/><br/>
+			</div>
+		&#60;/create_and_visualize_img_surrogate> <br/><br/>
+	&#60;/if> <br/><br/>
+	&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"map"</span>/> <br/><br/>
+	&#60;create_and_visualize_img_surrogate> <br/><br/>
+	  		<div class="mmdcollection">
+			&#60;arg <span class="mmdAtt">value</span>=<span class="mmdVal">"pic"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"image_purl"</span>/> <br/><br/>
+			</div>
+		&#60;/create_and_visualize_img_surrogate> <br/><br/>
+	</div>
+&#60;/semantic_actions></span>
+</div>
+
+<div class="bluebar">
+</div>
+
+Now we will add the semantic actions for adding each food genre page to the download queue.
+To do this we will have to use a <span class="mmd">for_each</span> statement as well as <span class="mmd">parse_document</span>.
+<br/><br/>
+This is the corresponding action set that will be added to the end of our existing semantic actions:
+<div class="mmdBlock">
+<span class="mmd">
+	&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"genres"</span>/> <br/><br/>
+	&#60;for_each <span class="mmdAtt">collection</span>=<span class="mmdVal">"genres"</span> <span class="mmdAtt">as</span>=<span class="mmdVal">"genre"</span>/> <br/><br/>
+		<div class="mmdfields">
+		&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"link"</span> <span class="mmdAtt">object</span>=<span class="mmdVal">"genre"</span>/> <br/><br/>
+		&#60;get_field <span class="mmdAtt">name</span>=<span class="mmdVal">"heading"</span> <span class="mmdAtt">object</span>=<span class="mmdVal">"genre"</span>/> <br/><br/>
+		&#60;parse_document> <br/><br/>
+	  		<div class="mmdcollection">
+			&#60;arg <span class="mmdAtt">value</span>=<span class="mmdVal">"link"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"container_link"</span>/> <br/><br/>
+			&#60;arg <span class="mmdAtt">value</span>=<span class="mmdVal">"heading"</span> <span class="mmdAtt">name</span>=<span class="mmdVal">"anchor_text"</span>/> <br/><br/>
+			</div>
+		&#60;/parse_document> <br/><br/>
+		</div>
+	&#60;/for_each> <br/><br/>
+</div>
+
+<br/><br/>
+
+<b>Tip</b>: The default behavior of <span class="mmd">parse_document</span> is to queue that URL
+for downloading and parsing in a waiting list. However, it has an attribute <span class="mmdAtt">now</span>
+that you can set to <span class="mmdAtt">true</span> if you want meta-metadata to immediately
+download and parse that document.
+<br/><br/>
+
+The <a class="destination" href="advancedTopics.html">next part</a> of this tutorial talks about some advanced topics about the meta-language.
+
+</div>
+
+</div>
+</body></html>
+

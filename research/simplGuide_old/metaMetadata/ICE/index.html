@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>ICE</title>
+		
+		<!-- Styles -->
+		<link href="ice.css" rel="stylesheet" type="text/css">
+		
+		<!-- Code -->
+		<script type="text/javascript" src="ice.js"></script>
+		
+		<script type="text/javascript" src="browserCheck.js"></script>
+		
+		<style>
+			body {
+				margin: 0px;
+			}
+		
+			#controls {
+				background: #1B1B1B;
+				padding: 8px;
+			}
+			
+			#content {
+				background: white;
+				padding: 8px;
+				overflow: auto;
+			}
+		</style>
+		
+		<script>
+			function showMetadata()
+			{
+				var url = document.getElementById("targetURL").value;
+				var content = document.getElementById("content");
+				
+				MetadataRenderer.addMetadataDisplay(content, url, true);
+			}
+			
+			function onEnterShowMetadata(event)
+			{
+				if(event.keyCode == 13)
+					showMetadata();	
+			}
+			
+			function setInitalSourceDoc()
+			{
+				var url = getParameter("url")
+				if(url != -1)
+				{
+					MetadataRenderer.addMetadataDisplay(content, url, true);
+					document.getElementById("targetURL").value = url;
+				}
+			}
+			
+			//Thanks to http://bloggerplugnplay.blogspot.in/2012/08/how-to-get-url-parameter-in-javascript.html
+			function getParameter(param)
+			{
+				var val = document.URL;				
+				var loc = val.indexOf(param);
+				
+				if(loc === -1)
+				{
+					return -1;
+				}
+				else
+				{
+					var url = val.substr(loc);
+					var n=url.replace(param+"=","");
+					return n;
+				}
+			}
+		</script>
+		
+	</head>
+	<body>
+		<div id="controls">
+			<input id="targetURL" type="text" size="120" placeholder="Enter Source Document URL"onkeydown="onEnterShowMetadata(event);"/>
+			<input type="button" value="Render Metadata" onclick="showMetadata();"/>
+		</div>
+		
+		<div id="content" class="metadataRendering">
+			<a id="initialSourceURL" href=""> </a>			
+		</div>
+		
+		<script>
+			setInitalSourceDoc();
+			MetadataRenderer.initMetadataRenderings();
+		</script>
+	</body>
+</html>

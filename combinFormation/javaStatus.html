@@ -1,0 +1,27 @@
+<html> <head>
+<title></title>
+</head>
+<script language="JavaScript" src="code/javascript/common/GeneralPurpose.js"></script>
+
+<script language="JavaScript">
+
+var query	= location.search;
+if (query)
+{
+   query	= query.substring(1);
+
+   var args = doubleSplit(query, "&");
+   
+   var that	= parent;
+   if ((parent != null) && (parent != this))
+   {
+//      alert("javaStatus.html calling parent");
+      parent.displayAppletStatus(args);
+   }
+}
+</script>
+
+<BODY bgcolor="#000000">
+
+
+</body> </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>launch::re:open :: combinFormation</title>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "yourSites";
+thisParent	= "collageMachine";
+thisAlt	= "re:open";
+strongBrowser	= 0;
+
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/xml.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/dialog.js"></script>
+
+<script language="JavaScript">
+autoPrefs.play_on_start	= 0;
+</script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body onload="preloadNav(); checkBrowser();">
+
+<form name="launchForm" action="http://localhost:10010" method="post" target="ping" enctype="text/plain">
+	<input type="hidden" name="requestXML" value=""></input>
+</form>
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1)" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif" style="margin-right: 7px;"></a></div></td>
+  </tr>
+</table>
+
+
+<form>
+<div class="launch_img"><img src="images/open.png"></div>
+
+<div class="content">
+<h5><b>Seeding: Start empty. Build your Composition inside.</b></h5>
+
+<div class="blue_line"></div>
+
+<h4>
+Once inside,
+collect elements by
+<a href="javascript:openSupport('dnd')">drag and drop</a> 
+from the browser, 
+<br/>
+or reopen a space already saved on your computer.
+</h4>
+
+
+<table>
+<tbody>
+<tr><td>
+<h5 id="oollage_size_h5">&nbsp;Select size on screen:&nbsp;
+<script>
+      collageSize();
+</script>
+</h5>
+
+<script>
+
+function launchEmp()
+{
+  launchEmpty();
+  $("#cancel_button").show();
+  setTimeout('$("#cancel_button").hide()', 5000);
+}
+
+if (autoPrefs['pdf_parsing'] != "multivalent_and_pdfbox")
+{
+	document.write('<h5 style="display:none;">2)&nbsp;Select PDF&nbsp;parser&nbsp;<br>');
+	document.write(pdfRadios()/* +"</h5" + ">"*/);
+	document.write('</h5>');
+}
+
+document.write("<td><a onClick='launchEmp();' name='launch_button' href='javascript:void();'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img onmouseover=\"this.src='../images/buttons/arrow.png'\" onmouseout=\"this.src='../images/buttons/arrowdark.png'\"  src='../images/buttons/arrowdark.png'/></a></td><td><a id='cancel_button' onClick='javascript:cancelLaunch()'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cancel</a></td>");
+
+$(document).ready(function() {
+  $('#cancel_button').hide();
+});
+
+
+</script>
+</tr>
+</tbody>
+</table>
+<!--
+<div id="launch_controls" class="buttons_area">
+<input  class="launch_button" type="button" value="Launch combinFormation"
+ onClick="launchEmpty();" name="launch_button">
+</div>
+-->
+</form>
+
+
+<div class="tight_line"></div>
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ class="jnlp"
+ src="nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+
+</div>
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+</div>
+
+
+<div class="nav">
+  <a class="support_link" href="mix.html">re:mix</a>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <a class="support_link" href="buzz.html">re:buzz</a>
+  <div class="support_link_selected">re:open</div>
+</div>
+
+</body>
+</html>

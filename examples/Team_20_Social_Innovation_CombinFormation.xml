@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<composition version="3.0">
+  <preferences>
+    <screen height="919" size="3" width="1274"/>
+  </preferences>
+  <seed_set>
+    <search engine="google" query="homeless"/>
+    <search engine="google" query="homeless outreach"/>
+    <search engine="google" query="homeless programs"/>
+    <search engine="google" query="homeless community"/>
+  </seed_set>
+  <site_set>
+    <site domain="yesmagazine.org" font_index="5" stroke_hue="0.125"/>
+    <site domain="coalitionforthehomeless.org" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="meetingground.org" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="phoenix.gov" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="hypermart.net" font_index="4"/>
+    <site domain="careforthehomeless.org" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="wikipedia.org" stroke_hue="0.25"/>
+    <site domain="thehomelessoutreach.org" font_index="2" stroke_hue="0.75"/>
+    <site domain="familyhomelessness.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="ed.gov" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="homelessprenatal.org" stroke_hue="0.25"/>
+    <site domain="helpthehomelessdc.org" stroke_hue="0.16666667"/>
+    <site domain="charitynavigator.org" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="huduser.org" font_index="2" stroke_hue="0.75"/>
+    <site domain="youtube.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="flickr.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="cchfp.org" font_index="2" stroke_hue="0.75"/>
+    <site domain="samhsa.gov" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="va.gov" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="uwsd.org" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="lenoxhill.org" font_index="5" stroke_hue="0.125"/>
+    <site domain="sfgate.com" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="homeless.org.au" font_index="4"/>
+    <site domain="care2.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="voaut.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="scn.org" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="dphw.org" font_index="1" stroke_hue="0.3611111"/>
+  </site_set>
+  <traversable_set>
+    <traversable url_string="kamirice.blogspot.com/2008/02"/>
+    <traversable url_string="www.anti-bush.com"/>
+    <traversable url_string="www.compass-sf.org"/>
+    <traversable url_string="www.lib.msu.edu/harris23/grants"/>
+    <traversable url_string="www.huduser.org/publications/homeless/homelessness"/>
+    <traversable url_string="www.helpthehomelessdc.org"/>
+    <traversable url_string="www.youtube.com/results"/>
+    <traversable url_string="blogtown.portlandmercury.com/2008/02"/>
+    <traversable url_string="www.whitehouse.gov/government/fbci"/>
+    <traversable url_string="www.grandcentral.com/about/projectcare"/>
+    <traversable url_string="www.parklandhospital.com/medical_services/outreach"/>
+    <traversable url_string="www.ssa.gov/homelessness"/>
+    <traversable url_string="www.uwsd.org/our-focus/homeless-outreach-prevention-1"/>
+    <traversable url_string="www.dol.gov/vets/programs/fact"/>
+    <traversable url_string="www.va.gov/homeless"/>
+    <traversable url_string="www.austinhomeless.org"/>
+    <traversable url_string="www.homeless.org.au"/>
+    <traversable url_string="www.ich.gov"/>
+    <traversable url_string="www.dpi.state.nc.us/schoolimprovement/alternative/homeless"/>
+    <traversable url_string="www.lenoxhill.org"/>
+    <traversable url_string="www.nvrhc.org"/>
+    <traversable url_string="www.careforthehomeless.org"/>
+    <traversable url_string="www.cchfp.org"/>
+    <traversable url_string="www.coalitionforthehomeless.org"/>
+    <traversable url_string="www1.va.gov/homeless"/>
+    <traversable url_string="www.cnn.com/2007/US/02/19/homeless.attacks"/>
+    <traversable url_string="www.samhsa.gov/Homeless"/>
+    <traversable url_string="www.voaut.org"/>
+    <traversable url_string="4homeless.hypermart.net"/>
+    <traversable url_string="www.ala.org/ala/olos/outreachresource"/>
+    <traversable url_string="www.redcross.org/more/commserv"/>
+    <traversable url_string="www.merriam-webster.com/dictionary/homeless"/>
+    <traversable url_string="www.cchealth.org/services/homeless"/>
+    <traversable url_string="www.cchealth.org/groups/homeless"/>
+    <traversable url_string="www.sandiego.gov/homeless-services"/>
+    <traversable url_string="en.wikipedia.org/wiki/Homelessness"/>
+    <traversable url_string="www.hud.gov/offices/cpd/homeless"/>
+    <traversable url_string="www.hud.gov/homeless"/>
+    <traversable url_string="www.hhs.state.ne.us/fia/nhap"/>
+    <traversable url_string="www.yesmagazine.org"/>
+    <traversable url_string="www.flickr.com/photos/tags/homeless"/>
+    <traversable url_string="www.hopics.org"/>
+    <traversable url_string="www.dallasobserver.com/2008-01-31/music/the-pikahsso-helps-the-homeless-community-event-and-birthday-party-with-performances-by-ppt-money-waters-the-boondox-and-more"/>
+    <traversable url_string="phoenix.gov/CITZASST"/>
+    <traversable url_string="www.dphw.org"/>
+    <traversable url_string="famcent.phila.gov/sos"/>
+    <traversable url_string="www.cphi.org"/>
+    <traversable url_string="www.homelessprenatal.org"/>
+    <traversable url_string="www.meetingground.org"/>
+    <traversable url_string="www.charitynavigator.org"/>
+    <traversable url_string="www.isbe.net/homeless"/>
+    <traversable url_string="www.sfgate.com/homeless"/>
+    <traversable url_string="www.acf.hhs.gov/programs/fbci/progs"/>
+    <traversable url_string="www.stopcovertwar.com"/>
+    <traversable url_string="www.ed.gov/programs/homeless"/>
+    <traversable url_string="www.scn.org/housing/homeless"/>
+    <traversable url_string="www.care2.com/c2c/group/HCA"/>
+    <traversable url_string="www.sohh.com/articles/article.php/10975"/>
+    <traversable url_string="www1.co.snohomish.wa.us/Departments/Human_Services/Divisions/OHHCD"/>
+    <traversable url_string="www.petitiononline.com/sd1004"/>
+    <traversable url_string="www.nationalhomeless.org"/>
+    <traversable url_string="www.nhchc.org/Curriculum"/>
+    <traversable url_string="homelessoutreach.com"/>
+    <traversable url_string="www.dreamcenter.org"/>
+    <traversable url_string="www.familyhomelessness.org/pdf"/>
+    <traversable url_string="www.itsmeowornever.org"/>
+    <traversable url_string="psychservices.psychiatryonline.org/cgi/content/full/55/8/942"/>
+    <traversable url_string="www.crossroadsatlanta.org"/>
+    <traversable url_string="amh.health.state.hi.us/Directives"/>
+    <traversable url_string="www.sfhsa.org"/>
+    <traversable url_string="www.thehomelessoutreach.org"/>
+    <traversable url_string="www.cham-ministry.org"/>
+  </traversable_set>
+  <untraversable_set>
+    <untraversable>null</untraversable>
+  </untraversable_set>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.youtube.com/results?q=homeless+outreach&amp;num=20&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=w1">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless outreach"/>
+        <metadata_field name="Title" value="YouTube Broadcast Yourself."/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=10832">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless community"/>
+        <metadata_field name="Title" value="Charity Navigator Rating Community Partnership for Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.huduser.org/publications/homeless/homelessness/ch_2b.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Homelessness: Programs and the People They Serve"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.coalitionforthehomeless.org/take_action/take_action.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Take Action Coalition for the Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.voaut.org/Services/OutreachServices/CircleofHope/tabid/1911/Default.aspx">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Circle of Hope"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.careforthehomeless.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Care for the Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.homelessprenatal.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless programs"/>
+        <metadata_field name="Title" value="Homeless Prenatal Program Ending Family Homelessness"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="2" purl="http://www.ed.gov/programs/homeless/guidance.pdf">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless programs"/>
+        <metadata_field name="Author" value="ESGRUTKIN"/>
+        <metadata_field name="Title" value=" &#13;"/>
+        <metadata_field name="summary" value=" &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10;EDUCATION FOR  &#13;&#10;HOMELESS CHILDREN AND YOUTH PROGRAM &#13;&#10; &#13;&#10;TITLE VII-B OF THE MCKINNEY-VENTO HOMELESS &#13;&#10;ASSISTANCE ACT,  &#13;&#10; &#13;&#10;AS AMENDED BY THE  &#13;&#10; &#13;&#10;NO CHILD LEFT BEHIND ACT OF 2001 &#13;&#10; &#13;&#10;NON-REGULATORY GUIDANCE &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10; &#13;&#10;UNITED STATES DEPARTMENT OF EDUCATION &#13;&#10;WASHINGTON, DC &#13;&#10; &#13;&#10;July 2004 &#13;&#10; &#13;&#10;TABLE OF CONTENTS &#13;&#10; &#13;&#10;Summary of Updates in this Guidance    Page  1 &#13;&#10; &#13;&#10;A.  Introduction       Page  2 &#13;&#10; &#13;&#10;B. Federal Awards to States      Page  4 &#13;&#10;   &#13;&#10;C. State Uses of Fun"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.coalitionforthehomeless.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Coalition Coalition for the Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.dphw.org/home.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Home"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.flickr.com/photos/tags/homeless/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Flickr: Photos tagged with homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://phoenix.gov/CITZASST/homeoutr.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless outreach"/>
+        <metadata_field name="Title" value="HOMELESS OUTREACH TEAM INFORMATION GUIDE"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.cchfp.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless community"/>
+        <metadata_field name="Title" value="Community Council for the Homeless at Friendship Place, DC"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.sfgate.com/homeless/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="SF Gate: Chronicle Homeless Special"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.charitynavigator.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Charity Navigator America' s Largest Charity Evaluator Home"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.lenoxhill.org/index_sitemap.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Lenox Hill Neighborhood House Site Map"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www1.va.gov/homeless/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Homeless Veterans Home"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.lenoxhill.org/homeless.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless outreach"/>
+        <metadata_field name="Title" value="Homeless Services"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.yesmagazine.org/default.asp?ID=98">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="YES! Education Program Overview"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.voaut.org/Services/OutreachServices/tabid/1912/Default.aspx">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Homeless Outreach Programs"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="3" purl="http://www.cchfp.org/newsletters/2007_Fall_NL.pdf">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="CCHFP REACHING OUT • FALL 2007        1&#13;"/>
+        <metadata_field name="Trapped" value="False"/>
+        <metadata_field name="summary" value="CCHFP REACHING OUT • FALL 2007        1&#13;&#10;CCHFP&#13;&#10;Reaching Out&#13;&#10;Pilgrim Poet&#13;&#10;By Julia Butner and Christine Lauterbach&#13;&#10;Development Department&#13;&#10;David Harris hasn’t forgotten what it was like to sleep among the falling leaves &#13;&#10;during his three years of homelessness. And now he shares his memories with &#13;&#10;bright-eyed and curious teenagers who come to Washington to learn about &#13;&#10;poverty and homelessness.&#13;&#10; David works at The Pilgrimage, a program of Church of the Pilgrims that &#13;&#10;invites hundreds of y"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.homeless.org.au/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless community"/>
+        <metadata_field name="Title" value="Homeless People Homelessness (Houseless Houselessness)"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.coalitionforthehomeless.org/spotlight/right_to_shelter.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Preserve the Right To Shelter Coalition for the Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="2" purl="http://www.familyhomelessness.org/pdf/fact_children.pdf">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Author" value="Valued Gateway Client"/>
+        <metadata_field name="Title" value="America’s Homeless Children&#13;"/>
+        <metadata_field name="summary" value="America’s Homeless Children&#13;&#10;More Than One Million Homeless Children&#13;&#10;• At least 1.35 million children are homeless during a year’s time.  &#13;&#10;• One any given day 800,000 people are homeless in the United States, including 200,000 children in homeless&#13;&#10;families.&#13;&#10;• Families with children are among the fastest growing segment of the homeless population.&#13;&#10;• Most children living with homeless parents are very young (42% are under the age of 6 years).&#13;&#10;• Family homelessness is increasing.  Requests fo"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="PDFTypeMultiAndBox" generation="4" purl="http://www.meetingground.org/Cecil%20Resource%20Directory%20August%202006.pdf">
+      <participant/>
+      <metadata>
+        <metadata_field name="Author" value="Dennis Carl Mazza"/>
+        <metadata_field name="Title" value="Cecil County, MD&#13;"/>
+        <metadata_field name="summary" value="Cecil County, MD&#13;&#10;Resource Directory&#13;&#10; &#13;&#10;Published by Meeting Ground Community&#13;&#10;through a grant from Citigroup Foundation&#13;&#10;Compiled and Edited by Ashley DeVore&#13;&#10;August, 2006&#13;&#10;Table of Contents&#13;&#10;Identity .......................................3&#13;&#10;Birth Certificates .........................3&#13;&#10;Driver’s License and Identification Cards . . . . . . 4&#13;&#10;Social Security Cards......................5&#13;&#10;Department of Social Services . . . . . . . . . . . . . . . . . . . . . 6&#13;&#10;Department of Aging .........."/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.care2.com/c2c/group/HCA">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless community"/>
+        <metadata_field name="Title" value="Community Development: HOMELESS COMMUNITY AID (HCA) Group on Care2"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.thehomelessoutreach.org/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless outreach"/>
+        <metadata_field name="Title" value="The Homeless Outreach (Washington D. C. and Maryland)"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.youtube.com/results?q=homeless+programs&amp;num=20&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=w1">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless programs"/>
+        <metadata_field name="Title" value="YouTube Broadcast Yourself."/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://en.wikipedia.org/wiki/Homelessness">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Homelessness Wikipedia, the free encyclopedia"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.samhsa.gov/Homeless/hmpa.aspx">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless programs"/>
+        <metadata_field name="Title" value="Homeless Program Matrix"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.scn.org/housing/homeless/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless community"/>
+        <metadata_field name="Title" value="Seattle Community Network: Housing, Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.flickr.com/photos/tags/homeless/clusters/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Flickr: Photos tagged with homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.helpthehomelessdc.org/site/c.plI4IcNWJyE/b.2699651/k.3837/Who_Are_The_Homeless_and_Is_There_a_Solution.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless"/>
+        <metadata_field name="Title" value="Who Are The Homeless and Is There a Solution? Help the Homeless Washington, D. C. 2007"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.coalitionforthehomeless.org/about_us/volunteer_opportunities.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Volunteer Opportunities Coalition for the Homeless"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://4homeless.hypermart.net/">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless programs"/>
+        <metadata_field name="Title" value="Web page design, promotion, and search engine optimization Tedrico' s Page"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.uwsd.org/our-focus/homeless-outreach-prevention-1">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="homeless outreach"/>
+        <metadata_field name="Title" value="Homeless Outreach Prevention United Way of San Diego"/>
+      </metadata>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <surrogate containerURL="http://www.meetingground.org/Cecil%20Resource%20Directory%20August%202006.pdf" history_num="8">
+      <image_element bias="1.0" pdf_index="428" purl="http://www.meetingground.org/Cecil%20Resource%20Directory%20August%202006.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="196" width="134" x="661" y="419"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.lenoxhill.org/homeless.html">
+      <image_element alpha_radius="9" bias="1.0" min_alpha="1572864" purl="http://www.lenoxhill.org/images/homelss_hed.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="20" width="132" x="603" y="257"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.homelessprenatal.org/" history_num="1">
+      <image_element alpha_radius="48" bias="1.0" href="http://www.homelessprenatal.org/index.html" min_alpha="2490368" purl="http://www.homelessprenatal.org/pix/hpplogosmall.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="134" width="134" x="796" y="304"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.homelessprenatal.org/" history_num="4">
+      <image_element alpha_radius="38" bias="1.0" href="http://www.homelessprenatal.org/video.htm" min_alpha="2883584" purl="http://www.homelessprenatal.org/pix/vid1.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="524" y="385"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.homelessprenatal.org/" history_num="3">
+      <image_element alpha_radius="34" bias="1.0" href="http://www.homelessprenatal.org/donate.htm" min_alpha="1638400" purl="http://www.homelessprenatal.org/pix/howtohelp.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="90" width="134" x="524" y="291"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/homeless/" history_num="7">
+      <image_element alpha_radius="17" bias="1.0" href="http://www.flickr.com/photos/pilar-almagro-paz/2265068729/" min_alpha="1507328" purl="http://farm3.static.flickr.com/2373/2265068729_2656f67e70_t.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="por las calles de montevideo III by . pilar almagro paz ."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="94" width="100" x="553" y="493"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.careforthehomeless.org/" history_num="10">
+      <image_element alpha_radius="23" bias="1.0" href="http://www.careforthehomeless.org/media/index.html" min_alpha="2555904" purl="http://www.careforthehomeless.org/support/images/Facing%20Homelessness1.JPG">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="90" width="134" x="526" y="490"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.care2.com/c2c/group/HCA" history_num="11">
+      <text_element bias="1.0" face_index="4" font_color="9a000000" stroke_color="e964c9fc">
+        <text_chunk font_size="11" non_stop_index="0.6666667">
+          <cf_text_token delims_before="" href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=943084&amp;archival=&amp;posts=1" string="Homeless" underline="4"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=943084&amp;archival=&amp;posts=1" string="in" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=943084&amp;archival=&amp;posts=1" string="New" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=943084&amp;archival=&amp;posts=1" string="Orleans" underline="5"/>
+          <cf_text_token delims_before=" " string="days"/>
+          <cf_text_token delims_before=" " string="ago"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="30" width="100" x="674" y="624"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.ed.gov/programs/homeless/guidance.pdf" history_num="2">
+      <image_element bias="1.0" pdf_index="1941" purl="http://www.ed.gov/programs/homeless/guidance.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="113" width="113" x="672" y="301"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.coalitionforthehomeless.org/spotlight/right_to_shelter.html" history_num="14">
+      <image_element alpha_radius="20" bias="1.0" min_alpha="2949120" purl="http://www.coalitionforthehomeless.org/spotlight/images/spotlight/tnav_right_to_shelter_on.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Right to Shelter"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="50" width="71" x="437" y="325"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://en.wikipedia.org/wiki/Homelessness" history_num="9">
+      <image_element alpha_radius="23" bias="1.0" href="http://en.wikipedia.org/wiki/Image:A_gipsy_woman_with_her_dog.JPG" min_alpha="1114112" purl="http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_gipsy_woman_with_her_dog.JPG/180px-A_gipsy_woman_with_her_dog.JPG">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="A homeless woman with her dog in Rome."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="380" y="382"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.homelessprenatal.org/" history_num="5">
+      <text_element bias="1.0" font_color="a1000000" stroke_color="f9b0fc64">
+        <text_chunk font_size="11" non_stop_index="0.75">
+          <cf_text_token delims_before="" string="&quot;HPP"/>
+          <cf_text_token delims_before=" " string="changed"/>
+          <cf_text_token delims_before=" " string="my"/>
+          <cf_text_token delims_before=" " string="life."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="45" width="63" x="862" y="583"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.care2.com/c2c/group/HCA" history_num="12">
+      <text_element bias="1.0" face_index="4" font_color="9d000000" stroke_color="ee64c9fc">
+        <text_chunk font_size="11" non_stop_index="0.5">
+          <cf_text_token delims_before="" href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="Why" underline="4"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="we" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="should" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="treat" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="the" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="homeless" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="with" underline="5"/>
+          <cf_text_token delims_before=" " href="http://www.care2.com/c2c/groups/disc.html?gpp=6669&amp;pst=941132&amp;archival=&amp;posts=6" string="compassion" underline="5"/>
+          <cf_text_token delims_before=" " string="days"/>
+          <cf_text_token delims_before=" " string="ago"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="60" width="117" x="534" y="590"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.samhsa.gov/Homeless/hmpa.aspx" history_num="13">
+      <text_element bias="1.0" face_index="4" font_color="84000000" stroke_color="d764c9fc">
+        <text_chunk font_size="11" non_stop_index="0.5">
+          <cf_text_token delims_before="" string="SAMHSA'"/>
+          <cf_text_token delims_before=" " string="s"/>
+          <cf_text_token delims_before=" " string="Homelessness"/>
+          <cf_text_token delims_before=" " string="Programs"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="Activites"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="60" width="94" x="423" y="253"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.scn.org/housing/homeless/" history_num="6">
+      <text_element bias="1.0" face_index="1" font_color="97000000" stroke_color="ef7efc93">
+        <text_chunk font_size="11" non_stop_index="0.2857143">
+          <cf_text_token delims_before="" href="http://anitraweb.org/homelessness/faqs/helping/" string="Where" underline="4"/>
+          <cf_text_token delims_before=" " href="http://anitraweb.org/homelessness/faqs/helping/" string="How" underline="5"/>
+          <cf_text_token delims_before=" " href="http://anitraweb.org/homelessness/faqs/helping/" string="to" underline="5"/>
+          <cf_text_token delims_before=" " href="http://anitraweb.org/homelessness/faqs/helping/" string="Help" underline="5"/>
+          <cf_text_token delims_before=" " href="http://anitraweb.org/homelessness/faqs/helping/" string="the" underline="5"/>
+          <cf_text_token delims_before=" " href="http://anitraweb.org/homelessness/faqs/helping/" string="Homeless" underline="5"/>
+          <cf_text_token delims_before=" " string="Shelters"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="45" width="120" x="804" y="544"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://4homeless.hypermart.net/" history_num="16">
+      <image_element alpha_radius="26" bias="1.0" has_transparency="true" href="http://www.netmechanic.com/" min_alpha="3670016" purl="http://4homeless.hypermart.net/tedricospage/Wsglogo.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="banner creation, logo creation, company logo, company logo development, online, resources, logos, banners, animation, company"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="60" width="56" x="798" y="581"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.coalitionforthehomeless.org/take_action/take_action.html" history_num="20">
+      <image_element alpha_radius="38" bias="1.0" href="http://www.coalitionforthehomeless.org/donate/donate.html" min_alpha="983040" purl="http://www.coalitionforthehomeless.org/take_action/images/take_action_1.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="86" width="80" x="336" y="252"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.uwsd.org/our-focus/homeless-outreach-prevention-1" history_num="24">
+      <image_element alpha_radius="25" bias="1.0" min_alpha="2686976" purl="http://www.uwsd.org/uw-newsletter.png">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="test"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="67" width="118" x="390" y="181"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.sfgate.com/homeless/" history_num="28">
+      <image_element alpha_radius="19" bias="1.0" href="http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2007/11/08/BARGT85O9.DTL" min_alpha="1572864" purl="http://www.sfgate.com/c/pictures/2007/09/23_t/ba_ggpark_006_pc_t.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="64" width="64" x="931" y="645"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.coalitionforthehomeless.org/" history_num="22">
+      <image_element alpha_radius="16" bias="1.0" href="http://www.coalitionforthehomeless.org/take_action/take_action.html" min_alpha="4063232" purl="http://www.coalitionforthehomeless.org/images/5things_5_off.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Speak Out"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="81" width="82" x="512" y="205"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.lenoxhill.org/homeless.html" history_num="29">
+      <image_element alpha_radius="16" bias="1.0" href="http://www.lenoxhill.org/help.html" min_alpha="5439488" purl="http://www.lenoxhill.org/images/helpnav.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Donations, Volunteers"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="36" width="98" x="571" y="205"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=10832" history_num="30">
+      <image_element bias="1.0" purl="http://www.charitynavigator.org/_gfx_/buttons/donatenowlogo1.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Donate Now"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="50" width="134" x="652" y="663"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.voaut.org/Services/OutreachServices/CircleofHope/tabid/1911/Default.aspx" history_num="17">
+      <image_element alpha_radius="29" bias="1.0" min_alpha="393216" purl="http://72.32.194.107/Portals/29/photo1a.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Outreach workers with van"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="237" y="450"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://en.wikipedia.org/wiki/Homelessness" history_num="21">
+      <image_element alpha_radius="45" bias="1.0" href="http://en.wikipedia.org/wiki/Image:Street_Sleeper_2_by_David_Shankbone.jpg" min_alpha="2162688" purl="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Street_Sleeper_2_by_David_Shankbone.jpg/180px-Street_Sleeper_2_by_David_Shankbone.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Many homeless keep all their possessions with them since they have no access to storage."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="236" y="345"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.sfgate.com/homeless/" history_num="25">
+      <image_element alpha_radius="18" bias="1.0" href="http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2006/05/14/MNG74IRMTN1.DTL" min_alpha="2097152" purl="http://www.sfgate.com/c/pictures/2006/05/14_t/ba_a3_stboniface803_war_t.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="64" width="64" x="940" y="386"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.care2.com/c2c/group/HCA" history_num="27">
+      <image_element alpha_radius="52" bias="1.0" min_alpha="3407872" purl="http://tinypic.com/i5xe8o.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Image hosted by TinyPic.com"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="122" width="134" x="936" y="257"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/homeless/clusters/" history_num="32">
+      <image_element alpha_radius="33" bias="1.0" href="http://www.flickr.com/photos/ivan_shusky/310816740/" min_alpha="4587520" purl="http://farm1.static.flickr.com/99/310816740_dca5ced083_s.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="by Lord Ivan"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="75" width="75" x="674" y="173"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.flickr.com/photos/tags/homeless/clusters/" history_num="33">
+      <image_element alpha_radius="13" bias="1.0" href="http://www.flickr.com/photos/hernanhernandez/1024019319/" min_alpha="2949120" purl="http://farm2.static.flickr.com/1427/1024019319_2df8036a9b_s.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Summer Street Sleeper #3 (NYC, August 2007) by Hernan Hernandez"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="75" width="75" x="935" y="456"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.homeless.org.au/" history_num="15">
+      <image_element alpha_radius="17" bias="1.0" min_alpha="3735552" purl="http://www.homeless.org.au/images/d-steve.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Homeless People"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="72" width="134" x="381" y="491"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.coalitionforthehomeless.org/about_us/volunteer_opportunities.html" history_num="23">
+      <image_element alpha_radius="35" bias="1.0" min_alpha="2686976" purl="http://www.coalitionforthehomeless.org/about_us/photos_large/cfh_van.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="92" width="134" x="792" y="635"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.huduser.org/publications/homeless/homelessness/ch_2b.html" history_num="36">
+      <image_element alpha_radius="21" bias="1.0" min_alpha="1966080" purl="http://www.huduser.org/publications/homeless/homelessness/images/fig2.3.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Figure 2.3"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="93" width="134" x="512" y="660"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.charitynavigator.org/" history_num="37">
+      <image_element alpha_radius="14" bias="1.0" min_alpha="327680" purl="http://www.charitynavigator.org/_gfx_/featured/national_donor_day.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="National Donor Day"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="39" width="134" x="371" y="665"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.charitynavigator.org/" history_num="38">
+      <image_element alpha_radius="14" bias="1.0" href="http://www.charitynavigator.org/index.cfm?bay=content.view&amp;amp;cpid=699" min_alpha="2031616" purl="http://www.charitynavigator.org/_gfx_/home/good_card2.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Give a Good Card"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="34" width="134" x="234" y="667"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.coalitionforthehomeless.org/take_action/take_action.html" history_num="39">
+      <image_element alpha_radius="22" bias="1.0" min_alpha="4784128" purl="http://www.coalitionforthehomeless.org/photos_small/woman_3children.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="66" width="100" x="282" y="181"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.youtube.com/results?q=homeless+outreach&amp;num=20&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=w1">
+      <image_element alpha_radius="47" bias="1.0" href="http://www.youtube.com/watch?v=PlXhgUg1ciA" min_alpha="1572864" purl="http://i.ytimg.com/vi/PlXhgUg1ciA/default.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="video"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="97" width="130" x="799" y="438"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.youtube.com/results?q=homeless+outreach&amp;num=20&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=w1" history_num="41">
+      <image_element bias="1.0" href="http://www.youtube.com/watch?v=MtAlDWSCRZk" purl="http://i.ytimg.com/vi/MtAlDWSCRZk/default.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="video"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="97" width="130" x="147" y="154"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.thehomelessoutreach.org/" history_num="18">
+      <image_element alpha_radius="17" bias="1.0" min_alpha="3932160" purl="http://www.thehomelessoutreach.org/images/outreach5.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="87" width="134" x="381" y="569"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.youtube.com/results?q=homeless+programs&amp;num=20&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;tab=w1" history_num="42">
+      <image_element alpha_radius="33" bias="1.0" href="http://www.youtube.com/watch?v=J4Nta9ZIl5Y" min_alpha="655360" purl="http://i.ytimg.com/vi/J4Nta9ZIl5Y/default.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="video"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="97" width="130" x="294" y="710"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www1.va.gov/homeless/" history_num="31">
+      <image_element alpha_radius="53" bias="1.0" min_alpha="1507328" purl="http://www1.va.gov/homeless/images/hlogo193.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Homeless Logo "/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="112" width="134" x="932" y="528"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.careforthehomeless.org/" history_num="49">
+      <image_element alpha_radius="47" bias="1.0" href="http://www.nhchc.org" min_alpha="4980736" purl="http://www.careforthehomeless.org/images/logos/councillogo1.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="114" width="125" x="1002" y="639"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cchfp.org/" history_num="26">
+      <image_element alpha_radius="39" bias="1.0" href="http://www.unityhealthcare.org/index.html" min_alpha="327680" purl="http://www.cchfp.org/images/UnityLogoPMS1-small.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Unity Health Care medical services are first come on days listed. Psychiatric services are by appointment only."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="103" width="134" x="197" y="247"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.dphw.org/home.html" history_num="50">
+      <image_element alpha_radius="41" bias="1.0" min_alpha="4980736" purl="http://www.dphw.org/Quickstart/ImageLib/quakers002.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="120" width="134" x="96" y="349"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.thehomelessoutreach.org/" history_num="51">
+      <image_element alpha_radius="17" bias="1.0" min_alpha="327680" purl="http://www.thehomelessoutreach.org/images/logo179.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="96" width="84" x="545" y="105"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.familyhomelessness.org/pdf/fact_children.pdf">
+      <image_element bias="1.0" pdf_index="245" purl="http://www.familyhomelessness.org/pdf/fact_children.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="56" width="192" x="738" y="248"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cchfp.org/newsletters/2007_Fall_NL.pdf" history_num="34">
+      <image_element bias="1.0" pdf_index="158" purl="http://www.cchfp.org/newsletters/2007_Fall_NL.pdf">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="186" width="134" x="890" y="67"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.voaut.org/Services/OutreachServices/tabid/1912/Default.aspx" history_num="48">
+      <image_element bias="1.0" purl="http://www.voaut.org/Portals/29/9767_homeless.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Homeless man sitting on steps"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="1015" y="389"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://en.wikipedia.org/wiki/Homelessness" history_num="19">
+      <image_element alpha_radius="49" bias="1.0" href="http://en.wikipedia.org/wiki/Image:P7032101_small2.jpg" min_alpha="5570560" purl="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/P7032101_small2.jpg/180px-P7032101_small2.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="A homeless person in Paris."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="134" x="238" y="558"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://phoenix.gov/CITZASST/homeoutr.html" history_num="53">
+      <image_element alpha_radius="42" bias="1.0" min_alpha="4653056" purl="http://phoenix.gov/SCANPIC/hometeen.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="114" width="101" x="117" y="482"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.yesmagazine.org/default.asp?ID=98" history_num="40">
+      <image_element bias="1.0" href="http://www.yesmagazine.org/EdConnectionNews/January2008/default.html" purl="http://www.yesmagazine.org/images/issues/47/ed0108_NewsSnapshot.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="education newsletter"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="99" width="134" x="97" y="605"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="43">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk face_index="4" font_size="45" font_style="3" non_stop_index="1.0" stroke_style="3">
+          <cf_text_token delims_before="" string="HOMELESS"/>
+          <cf_text_token delims_before=" " string="COMMUNITY"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="104" width="322" x="157" y="34"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.helpthehomelessdc.org/site/c.plI4IcNWJyE/b.2699651/k.3837/Who_Are_The_Homeless_and_Is_There_a_Solution.htm" history_num="35">
+      <image_element alpha_radius="37" bias="1.0" min_alpha="5242880" purl="http://www.helpthehomelessdc.org/atf/cf/{03DAEAEA-5116-4220-A6AB-293C4F96CECC}/HTH_LOGO2_NEW.GIF">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Help the Homeless, 20 years of Commitment"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="116" width="134" x="755" y="136"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.lenoxhill.org/index_sitemap.htm" history_num="52">
+      <image_element alpha_radius="28" bias="1.0" min_alpha="6291456" purl="http://www.lenoxhill.org/images/site_mantage.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="61" width="134" x="638" y="104"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="47">
+      <text_element bias="2.7182817" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="66" font_style="2" non_stop_index="0.5" stroke_style="3">
+          <cf_text_token delims_before="" face_plus_one="5" string="OUTREACH"/>
+          <cf_text_token delims_before=" " face_plus_one="5" string="PROGRAM"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="76" width="717" x="440" y="756"/>
+      </visual>
+    </surrogate>
+  </collage_element_set>
+</composition>

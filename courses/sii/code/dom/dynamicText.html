@@ -1,0 +1,87 @@
+<html> <head>
+<title>simple dynamic text</title>
+<style type="text/css">
+<!--
+
+.entry
+{
+	font-family: 'Verdana, Century Gothic, Geneva, Arial, Sans-Serif';
+	font-size: 11pt;
+	padding-left: 12pt;
+	padding-right: 12pt;
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+        color: eaf078;
+}
+
+ -->
+</style>
+<script language="JavaScript">
+var sizes  = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+var colors = ["eaf078", "e9f06c", "e9f060", "e8f054", "ecf549", 
+	      "ecf53d", "ebf531", "eaf525", "eaf518", "e9f50c", "edfa00"];
+var currentState = 0;
+
+var nodes= ["identity", "maps", "ecosystems", "ontologies", "stories"];
+
+function animate(entity, animationFunction, increase)
+{
+   var intervalId	= setInterval(nextFrame, 30);
+   var frame		= increase ? 0 : (sizes.length - 1);
+   
+   function nextFrame()
+   {
+      if (!animationFunction(entity, frame))
+	 clearInterval(intervalId);
+      if (increase)
+	 frame++;
+      else
+	 frame--;
+   }
+}
+
+function emphasize(entity, frame)
+{
+   if (frame >= sizes.length)
+      return false;
+
+   entity.style.fontSize = sizes[frame] + "pt";
+   entity.style.color	 = colors[frame];
+
+   return true;
+}
+
+function deemphasize(entity, frame)
+{
+   if (frame < 0)
+      return false;
+
+   entity.style.fontSize = sizes[frame] + "pt";
+   entity.style.color	 = colors[frame];
+   
+   return true;
+}
+</script>
+</head>
+
+<BODY bgcolor="#000000" text="#ffffff" link="00cc33"  alink="00cc33" 
+      vlink="00cc33" topmargin="50px" leftmargin="50px">
+
+
+<script language="JavaScript">
+var body = document.body;
+
+for (var i=0; i<nodes.length; i++)
+{
+   var thatNode	= document.createElement("span");
+   thatNode.className = "entry";
+   thatNode.onmouseover = function() {animate(this, emphasize, true);};
+   thatNode.onmouseout = function() {animate(this, deemphasize, false);};
+
+   thatNode.innerHTML = nodes[i];
+//   thatNode.text = nodes[i];
+
+   body.appendChild(thatNode);
+}
+</script>
+</body> </html>

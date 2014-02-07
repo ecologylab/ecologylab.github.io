@@ -1,0 +1,56 @@
+<html> <head>
+<title></title>
+<script language="JavaScript">
+function leftBlock()
+{
+   return document.getElementById("left_block");
+}
+function swapBg()
+{
+   var body = document.body;
+   var bg = body.background;
+   if (bg)
+   {
+      alert("already set");
+	  body.background = null;
+   }
+   else
+   {
+	  body.background = "../ecologylab/images/interfaceEcologyLabLogos240.png";
+	  alert("set bg=" + body.background);
+
+	  // turn off bgcolor in divs
+	  leftBlock().style.backgroundColor = null;
+   }
+}
+var message = "hi ";
+function mouseIn(that)
+{
+   that.style.backgroundColor='#bbbb00'; 
+   that.innerHTML=message;
+   message += message+"<br/>";
+}
+
+</script>
+</head>
+
+
+<BODY bgcolor="#E6E8FA" text="#000000" link="0025C5" topmargin=0
+      vlink="F70010">
+<a href="javascript:swapBg()">stuff</a>
+
+<div id="left_block" style="background-color:red"
+ onmouseover="mouseIn(this);"
+ onmouseout="this.style.backgroundColor='#00bbbb';">
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+ddddddddddddddddddddddddddddddddddddd<br/>
+</div>
+
+
+</body> </html>

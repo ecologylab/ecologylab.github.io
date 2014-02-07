@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>developers :: combinFormation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="code/styles/combinformation/cfInform.css" type="text/css">
+
+<link rel="shortcut icon" href="images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+    rootDir	= "../";
+</script>
+<script language="JavaScript" src="code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="code/javascript/combinformation/combinformation.js"></script>
+<script type="text/javascript">
+//probably a better way to do this, but most sites only show a templating system soulution
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body onLoad="preloadNav();">
+<table class="menu">
+  <tr> 
+    <td valign="top">
+		  <a href="index.html" target="_parent"><img width="259"
+ height="77" src="images/combinFormationMenuLogo.gif"></a></td>
+
+    <td valign="middle" align="right"> 
+      <div class="menucell" align="right"><nobr>
+		<a href="launch/index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','images/buttons/launchButton_anim.gif',1)"><img name="launch" src="images/buttons/launchButton.gif"></a>
+
+		<a href="support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="images/buttons/supportButton.gif"></a>
+
+		<a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="images/buttons/aboutButton.gif"></a>
+
+		<img src="images/buttons/developersButton_active.gif"></nobr>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<div id="support_nav" style="width: 150px; height: 900px; margin-top:50px;">
+
+<a class="support_link"
+ href="support.html?section=feedback">give<br/>feedback</a>
+
+<br/><br/>
+
+<a class="lab_link"  href="../index.html"
+   target="_blank">interface<br/>ecology lab</a>
+</div>
+
+<div class="content" style="line-height: 140%;">
+
+<h1>developers  &gt; how to integrate</h1>
+<br/>
+You can integrate combinFormation (cF) into any website and any application.
+You can do this by defining/designing a set of starting points that
+combinFormation's agents will use to develop a recombinant informationscape
+of relevant content. This can be done by specifying
+particular web addresses or searches or a composition that you've
+previously created. The starting points are called seeds. You use the
+<a href="#seeding_language">seeding language</a> to specify them.
+The seeding language enables you to affect how the agents work.
+<br/><br/>
+You will pass a set of seeds to combinFormation through  
+<code>ecologylab.services</code>. 
+We have created an AJAX-like framework for communicating between the web browser
+and combinFormation. This method is used to pass expressions in the
+seeding language from the web browser to combinFormation.  
+The browser act as a client, while combinFormation acts as a services server. 
+To deal with
+The same socket-based mechanism can
+be used to control combinFormation from from other applications.
+
+<br/><br/>
+In order to access this functionality, you will need to use the
+combinFormation developer SDKs.
+To integrate into a web application you need to integrate our <a
+href="#javascript_sdk">JavaScript SDK</a> into your 
+HTML file. An example is provided, which puts this all together.
+
+<br/><br/>
+To integrate combinFormation into a Java program, you will need our <a
+href="#java_sdk">Java SDK</a>. For other languages, you can pass XML
+directly through a socket. 
+<a href="support.html?section=feedback">Contact us</a> for more information.
+
+<br/><br/><br/>
+<a name="seeding_language"></a>
+
+<h1>cF seeding language</h1>
+The cF Seedding language is an XML-based language for specifying
+seeds, which are used to initiate
+a mixed-initiative composition.
+The seeds tell the information collecting agent in
+combinFormation what to collect, and how.
+Each seed could be a search with one the various supported search engines,
+a plain web address (URL), an RSS feed, or a local file directory path. 
+Or it could contain special directives to the agent.
+The purpose of the cF Seeding Language is to help you
+control the operations of the agent, including the web crawler, and
+the model of interest. Any number of seeds can be specified to start a
+session. 
+
+</p>
+<p>
+Crawling the web, the agent may encounter noisy content, which would
+lead to noisy informatin displays. For this reason, when the user
+specifices the "stay close" option at startup, the web crawler
+information collecting agent will only traverse links to pages that
+are down within a web site. In this case, it will ignore cross-links
+to other sites.
+</p>
+<p>
+Thus, in the "stay close" mode of operations, some web addresses are
+considered <i>traversable</i>. The directory containing any page
+specified in a <i>site</i> 
+seed, or that is returned directly by a search is automatically
+registered as a traversable seed. Traversablity can also be specified
+with directives to the crawler.
+</p>
+<p>
+The seeding language is a dialect of XML. 
+A set of seeds is wrapped with a <code>&lt;seed_set&gt;</code>
+XML element. It constitutes the specification for a mix to be
+performed by the combinFormation agents.
+
+<h4>web site or rss feed</h4>
+Example:<br/>
+<example>&lt;document url=&quot;http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml&quot;/&gt;</example>
+Interpretation: use the New York Times home page RSS feed to seed the
+information collecting agent.
+
+
+<h4>search</h4>
+Example:<example>&lt;search engine=&quot;google&quot; query=&quot;tangible interfaces&quot;/&gt;</example>
+Use the search engine of choice, google, to collect information on a topic,
+such as tangible interfaces. Other currently supported choices for
+engines are: yahoo, yahoo_image, yahoo_news, flickr, delicious, icdl.
+
+<h4>traversable</h4>
+Example:<example>&lt;crawler action=&quot;traversable&quot; url=&quot;http://ecologylab.cs.tamu.edu/research/&quot;/&gt;</example>
+Interpretation: tells the web crawler that when it finds links that begin with the
+<code><i>web_address_prefix</i></code>, in this case,
+<code>http://ecologylab.cs.tamu.edu/research/</code>
+that it is allowed to crawl to them.
+Unlike an unmodified web_address, the crawler will not download from here
+to start with.
+
+<h4>untraversable</h4>
+The opposite of traversable.
+Tells the web crawler that when it finds links that begin with this
+<code><i>web_address_prefix</i></code>, that it is NOT allowed to crawl to
+them (when the user selects the stay close option). 
+
+<h4>reject</h4>
+Example:
+<example>&lt;crawler action=&quot;reject&quot; domain=&quot;earth-netone.com&quot;/&gt;</example>
+Like untraversable, but more extreme: it rejects all content from the domain.
+As you can see in the example, *do not* start with <i>http://</i>.
+Also, it really does apply to a whole domain. So, don't bother with
+<i>www.foo.com</i>; just specify <i>foo.com</i>.
+
+
+<h4>justcrawl</h4>
+Download from <code><i>web_address</i></code> and add it to
+traversable, like a plain seed. 
+But dont actually use any media from the inital document. only get links to crawl
+to from it.
+Example:
+<example>&lt;document justcrawl=&quot;true&quot; url=&quot;http://www.thing.net/~humbot/archive/&quot;/&gt;</example>
+
+<h4>justmedia</h4>
+The opposite of <code>justfollow</code>. Download the page and add it to
+traversable, like a plain seed.  Get media from the page, but dont
+crawl any of the &lt;a href hyperlinks found in the page.
+Example:
+<example>&lt;document justmedia=&quot;true&quot; url=&quot;http://www.geocities.com/newsgrist/Siege.html&quot;/&gt;</example>
+
+</p>
+<p>
+
+<h4>composition</h4>
+This is for accessing a saved and published <i>combinFormation</i>
+composition by <code><i>web_address</i></code> published on a web server.
+Published compositions can be mixed with other seeds.
+
+<br/><br/><br/>
+<a name="java_sdk"></a>
+<h1>cF Java SDK</h1>
+
+<br/>
+The Java SDK is included in the
+<a target="_blank"
+ href="http://ecologylab.cs.tamu.edu/research/xml/index.html"> 
+ecologylab.xml release </a>. 
+We provide the example code (ecologylab.tutorials.CFServicesClientExample.java) 
+to send seeds to combinFormation using <code>ecologylab.services</code>. 
+Launch combinFormation by opening the JNLP file, and then send seeds
+using the Ecologylab Services Client. 
+
+<br/><br/><br/>
+<a name="javascript_sdk"></a>
+<h1>cF JavaScript SDK</h1>
+
+<br/>
+To use the cF JavaScript SDK:
+<ul>
+  <li>Ask us for the cF javacript sdk through <a href="support.html?section=feedback">feedback</a>. </li>
+  <li>Create your HTML page based on the following example.</li>
+</ul>
+The browser control flow is enabled through a server-side redirect to 
+JavaScript pages on the original web server. This is a method that we
+have developed to deal with the fact that web application launch comes
+from one server on one host, while combinFormation and its server run
+on a different host and port (on the user's machine).
+For this reason, while you can access the combinFormation jar file
+from our web site, you must host the JavaScript yourself.
+That is why we will send you the SDK, instead of letting you refer to
+our hosted versions.
+If you would like to work with our javascript library, please
+<a href="support.html?section=feedback">contact us through feedback</a>.
+<br/><br/>
+
+Here is a simple example of how to launch cF with the JavaScript SDK.
+Note that you must set-up the SDK javascript files, and fix the paths
+below to match where you put them, relative to your launch page.
+You must also set-up the IFRAME structure as shown, at the bottom.
+<br/><br/>
+
+Note well: Only one instance of cF may run on a client machine at one time.
+The SDK functions will check to see whether cF is already running or not 
+using customized ping request. 
+If you try to launch when already running, the library will
+send more seeds to mix into the existing combinFormation composition space. 
+<br/>
+<code>
+<pre>
+
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/common/BrowserSense.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/common/GeneralPurpose.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/common/xml.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/common/cookie.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/common/launch.js"&gt; &lt;/script&gt;
+
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/combinformation/prefs.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/combinformation/seeding.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/combinformation/cfLaunch.js"&gt; &lt;/script&gt;
+&lt;script language="JavaScript" src="http://ecologylab.cs.tamu.edu/code/javascript/combinformation/combinformation.js"&gt; &lt;/script&gt;
+
+&lt;script language="JavaScript"&gt;
+
+/* 
+ * Create a seed for a search query for "apple" with the "google" engine.
+ * Launch combinFormaiton using this seed.
+ * This function is defined in seeding.js, which is included above.
+ * Look there for other convenience functions for creating seeds.
+ */
+function emitSeeding()
+{
+   var seedSet      = xmlDoc.createElement("seed_set");
+   
+   var thatTypeName = "google";
+   
+   var searchSeed   = createSearchSeed("apple", "google");
+   seedSet.appendChild(searchSeed);
+   var docSeed   = createDocumentSeed("http://rss.cnn.com/rss/cnn_topstories.rss");
+   seedSet.appendChild(docSeed);
+
+   launchCF(seedSet);
+}
+&lt;/script&gt;
+
+&lt;body&gt;
+
+&lt;div class="buttons_area"&gt;
+
+&lt;div id="launch_controls"&gt;
+&lt;input class="launch_button" type="button" value="  Launch combinFormation  "onClick="emitSeeding();" name="launch_button"&gt; 
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;div class="tight_line"&gt; &lt;/div&gt;
+
+&lt;div onclick="clearStatus()" id="progress_console"&gt; &nbsp;&lt;/div&gt;
+
+&lt;div class="iframe_holder"&gt;
+&lt;iframe name="ping" src="white.html" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;
+&lt;iframe name="seeding" src="white.html" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;
+&lt;iframe name="cf_jnlp" class="jnlp" src="nearBlack.html" frameborder="0" scrolling="no"&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+
+
+</pre>
+</code>
+</div>
+
+<div class="tight_line"></div>
+
+<h6>
+Get 
+<a href="support.html">help</a> | 
+Give 
+<a href="support.html?section=feedback">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../index.html" target="_blank"">interface ecology</a>.</h6>
+
+</body>
+</html>

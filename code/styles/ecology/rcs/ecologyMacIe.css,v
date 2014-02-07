@@ -1,0 +1,184 @@
+head	1.3;
+access;
+symbols;
+locks
+	andruid:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2000.06.06.05.45.05;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2000.05.30.15.05.03;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.03.13.03.18.38;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@Version ecology-1.5.5: improved html interface; better ad filtering; works w google for search
+@
+text
+@<!- -*-Java-*- ->
+<html>
+<style type="text/css">
+<!--
+body
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 12pt;
+   font-weight: 600;
+}
+td
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+.normal
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+.larger
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 13pt;
+   font-weight: 600;
+}
+.head
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 14pt;
+   font-weight: 600;
+}
+select.feedback
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 11pt;
+   font-weight: 500;
+}
+select
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 11pt;
+   font-weight: 500;
+}
+
+input
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 12pt;
+   font-weight: 500;
+}
+input.feedback
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 12pt;
+   font-weight: 500;
+}
+
+.caption
+{
+   font-family: "Courier New, Courier, Sans-Serif"; 
+   font-size: 10pt;
+   font-weight: 600;
+}
+
+.copyright
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 8pt;
+   font-weight: 300;
+}
+.small
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 10pt;
+   font-weight: 300;
+}
+.nav
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 11pt;
+   font-weight: 700;
+}
+.tm
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   vertical-align: super;
+   font-size: 6pt;
+}
+-->
+</style>
+</html>
+@
+
+
+1.2
+log
+@Version ecology-1.5.4: trying to fix mac java bug; updated style sheers
+@
+text
+@d63 2
+a64 2
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 11pt;
+d77 1
+a77 1
+   font-size: 11pt;
+@
+
+
+1.1
+log
+@Version ecology-0.7.0: 1st major ecology release
+@
+text
+@d8 1
+a8 1
+   font-size: 13pt;
+d14 1
+a14 1
+   font-size: 13pt;
+d20 6
+d29 1
+a29 1
+.larger
+d31 1
+d33 1
+a34 1
+
+d51 1
+a51 1
+   font-size: 13pt;
+d57 1
+a57 1
+   font-size: 13pt;
+d68 1
+a68 1
+.head
+a70 4
+   font-size: 11pt;
+}
+.copyright
+{
+d76 1
+d82 2
+a83 1
+   font-size: 13pt;
+d88 1
+@

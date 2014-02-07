@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">advanced topics [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<style>
+p { font-size: 12px; }
+</style>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4b">tutorial [advanced topics]</div>
+</div>
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="index.html">meta-metadata</a>
+  <a class="navlink" href="prereqs.html">prereqs</a>
+  <a class="navlink" href="generalPrincipals.html">principles</a>
+  <a class="navlink" href="environmentSetup.html">development<br/>environment</a>
+  <a class="navlink" href="ice.html">in-context expander</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="libtutorials.html">tutorials</a>
+  <a class="subnavlink2" href="dataDefinition.html">- data definition</a>
+  <a class="subnavlink2" href="informationExtraction.html">- information<br/>extraction</a>
+  <a class="subnavlink2" href="semanticAction.html">- semantic&nbsp;actions</a>
+  <a class="navselected" href="advancedTopics.html">- advanced&nbsp;topics</a>  
+</div>
+
+<div class="block">
+  <a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+  <a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+
+<div class="content">
+
+<p>This tutorial will talk about advanced language features provided by meta-metadata, including regular expression based filtering and extraction, nested meta-metadata, and generic fields.</p>
+
+<h5>filtering extracted information <br/> with regular expression</h5>
+
+<p>
+If you are not familiar with regular expression please refer to <a href="http://gnosis.cx/publish/programming/regular_expressions.html" target="_blank">this tutorial</a>.
+</p>
+
+<p>
+It is common that extracted information is not in a immediately usable shape, and some post-processing is needed to normalize them into a uniform representation that can be used by the application.
+Regular expression is powerful tool for this task.
+</p>
+
+<p>
+Meta-metadata supports filtering extracted information with regular expression in the form of an extra element <span class="mmd">&lt;filter&gt;</span> inside a <span class="mmd">&lt;scalar&gt;</span> field:
+</p>
+
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<div class="mmdfields"><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="author_name" <span class="mmdAtt">xpath</span>="..."<span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;filter</span> <span class="mmdAtt">regex</span>="[A-Z][a-z]+, [A-Z]\." <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&#60;/scalar&gt;</span>
+		</div>
+	</div>
+</div>
+
+<p>
+In the above example, the regular expression will be used to extract a name in the form of "Jobs, S." from the extracted information.
+</p>
+
+<br />
+
+<p>
+It is also to replace the matched part with another one. In the following example, the leading<br/> "ISBN: " of the extracted information will be replaced by an empty string (thus removed):
+</p>
+
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<div class="mmdfields"><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="isbn" <span class="mmdAtt">xpath</span>="..."<span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;filter</span> <span class="mmdAtt">regex</span>="ISBN:\s+" <span class="mmdAtt">replace</span>="" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&#60;/scalar&gt;</span>
+		</div>
+	</div>
+</div>
+
+<h5>information extraction with regular expression</h5>
+
+<p>
+Meta-metadata allows extracting information from a flat string into a <span class="mmd">&lt;composite&gt;</span> or a <span class="mmd">&lt;collection&gt;</span> element,
+using regular expression or other means, through an element <span class="mmd">&lt;field_parser&gt;</span>.
+</p>
+
+<p>
+The two basic <span class="mmd">&lt;field_parser&gt;</span>s are <span class="mmdAtt">regex_find</span> and <span class="mmdAtt">regex_split</span>.
+The former applies to a <span class="mmd">&lt;composite&gt;</span>, which takes the string for that <span class="mmd">&lt;composite&gt;</span>
+(evaluated from XPath / direct binding tag name) as input, matches the input string against specified regular expression, and outputs indexed <i>capture groups</i>.
+Subfields nested inside the <span class="mmd">&lt;composite&gt;</span> can specify <span class="mmdAtt">field_parser_key</span> in the form of <span class="mmd"
+style="color: black;">$1</span>,<span class="mmd" style="color: black;">$2</span> to assign a capture group into that field. For example:
+
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<div class="mmdfields"><br/>
+			<span class="mmd">&#60;composite</span> <span class="mmdAtt">name</span>="citation_info" <span class="mmdAtt">xpath</span>="//h1"<span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;field_parser</span> <span class="mmdAtt">name</span>="regex_find" <span class="mmdAtt">regex</span>="(\d+) citations .* (\d+) self" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&nbsp;&nbsp;&lt;scalar</span> <span class="mmdAtt">name</span>="total_citation" <span class="mmdAtt">field_parser_key</span>="$1" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&nbsp;&nbsp;&lt;scalar</span> <span class="mmdAtt">name</span>="self_citation" <span class="mmdAtt">field_parser_key</span>="$2" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&#60;/composite&gt;</span>
+		</div>
+	</div>
+</div>
+
+In this example, the field parser uses XPath "//h1" to retrieve the citation information string (e.g. "40 citations -- 2 self") from CiteSeerX,
+matches it against the regular expression to capture the 2 numbers, and assigns them to the 2 nested scalar fields.
+</p>
+
+<p>
+<span class="mmdAtt">regex_split</span> uses the regular expression as the delimiter to split the input string into a set of values, and assigns each of the value
+to an element in a collection (if there is more than one nested field in the collection, the field with <span class="mmdAtt">field_parser_key</span> set to
+<span class="mmd" style="color: black;">$0</span> will have the value). For instance, the following example separates a list of comma (with spaces around) separated
+author names into a collection:
+
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<div class="mmdfields"><br/>
+			<span class="mmd">&#60;collection</span> <span class="mmdAtt">name</span>="authors" <span class="mmdAtt">xpath</span>="..."<span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;field_parser</span> <span class="mmdAtt">name</span>="regex_split" <span class="mmdAtt">regex</span>="\s*,\s*" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&nbsp;&nbsp;&lt;scalar</span> <span class="mmdAtt">name</span>="author_name" <span class="mmdAtt">field_parser_key</span>="$0" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&#60;/collection&gt;</span>
+		</div>
+	</div>
+</div>
+</p>
+
+<p>
+The <span class="mmd">&lt;field_parser&gt;</span> mechanism is extendable by deriving sub-classes from <span class="mmd" style="color: black;">FieldParser</span>
+and register them with name to <span class="mmd" style="color: black;">FieldParserFactory</span>. For example, <span class="mmdAtt">bibtex</span> handles input
+string in BibTeX format; <span class="mmdAtt">regex_split_and_find</span> allows you to combine the functionality of <span class="mmdAtt">regex_split</span> and
+<span class="mmdAtt">regex_find</span>. We encourage people to experiment with them or make your own parser when needed.
+
+<h5>nested meta-metadata</h5>
+
+<p>
+As nested class definition in Java or other OOP langauge, it is permitted to extend a new meta-metadata type from an existing one just at the place you need it -- typically on a
+<span class="mmd">&lt;composite&gt;</span> or <span class="mmd">&lt;collection&gt;</span> field. The nested meta-metadata type will be visible only in the encampusing
+meta-metadata and its subtypes, or inside the field itself. For example:
+
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="search" <span class="mmdAtt">extends</span>="compound_document"<span class="mmd">&gt;</span><br/><br/>
+		<div class="mmdfields">
+			<span class="mmd">&nbsp;&nbsp;&lt;collection</span> <span class="mmdAtt">name</span>="search_results" <span class="mmdAtt">child_type</span>="search_result" <span class="mmd">/&gt;</span><br/><br/>
+		</div>
+		<span class="mmd">&#60;/meta_metadata&gt;</span><br/><br/>
+	</div>
+	<br/>
+	<div class="mmdVal">
+		<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="delicious_search" <span class="mmdAtt">extends</span>="search"<span class="mmd">&gt;</span><br/><br/>
+		<div class="mmdfields">
+			<span class="mmd">&nbsp;&nbsp;&lt;collection</span> <span class="mmdAtt">name</span>="search_results" <span class="mmdAtt">child_type</span>="<u>delicious_search_result</u>" <u><span class="mmdAtt">child_extends</span>="search_result"</u> <span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&nbsp;&nbsp;&lt;scalar</span> <span class="mmdAtt">name</span>="author" <span class="mmdAtt">scalar_type</span>="String" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&nbsp;&nbsp;&lt;collection</span> <span class="mmdAtt">name</span>="tags" <span class="mmdAtt">child_scalar_type</span>="String" <span class="mmd">/&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;/collection&gt;</span><br/><br/>
+		</div>
+		<span class="mmd">&#60;/meta_metadata&gt;</span>
+	</div>
+</div>
+
+<span class="mmd">search_result</span> is a basic type for search results, with a <span class="mmd">title</span>, a <span class="mmd">description</span> (the snippet) and a <span class="mmd">location</span> (the target document URL).
+However, for Delicious search, we would like to get the author and tag names, too. One can create a new meta-metadata extending <span class="mmd">search_result</span> with new field definitions, as an independent
+<span class="mmd">meta_metadata</span> in the repository, but it is also possible to do it for <span class="mmd">delicious_search</span> where you actually use the type, as shown in the above example. Note the use of
+<span class="mmdAtt">child_extends</span> to implicitly specify that this is a new type and explicitly specify the supertype for it.
+</p>
+
+<p>
+In the above example, the new type <span class="mmd">delicious_search_result</span> will only be visible to subclasses of <span class="mmd">delicious_search</span> (including itself), or inside the field <span class="mmd">search_result</span>
+itself.
+</p>
+
+<h5>generic fields</h5>
+
+<p>
+When a <span class="mmd">composite</span> (or <span class="mmd">collection</span>) field is inherited in a sub meta-metadata type, it is possible to change its <span class="mmdAtt">type</span> (or <span class="mmdAtt">child_type</span>)
+to a more specific type. In other words, one can define the base field using a generic type and specify a concrete sub-type for that field in the derived meta-metadata. Let's look at an example:
+ 
+<div class="mmdBlock">
+	<div class="mmdVal">
+		<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="search" <span class="mmdAtt">extends</span>="compound_document"<span class="mmd">&gt;</span><br/><br/>
+		<div class="mmdfields">
+			<span class="mmd">&nbsp;&nbsp;&lt;collection</span> <span class="mmdAtt">name</span>="search_results" <span class="mmdAtt">child_type</span>="search_result" <span class="mmd">/&gt;</span><br/><br/>
+		</div>
+		<span class="mmd">&#60;/meta_metadata&gt;</span><br/><br/>
+	</div>
+	<br/>
+	<div class="mmdVal">
+		<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="social_search" <span class="mmdAtt">extends</span>="search"<span class="mmd">&gt;</span><br/><br/>
+		<div class="mmdfields"><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;collection</span> <span class="mmdAtt">name</span>="search_results" <span class="mmdAtt">child_type</span>="<u>social_search_result</u>" <span class="mmd">&gt;</span><br/><br/>
+			<span class="mmd">&nbsp;&nbsp;&lt;/meta_metadata&gt;</span><br/><br/>
+		</div>
+		<span class="mmd">&#60;/meta_metadata&gt;</span>
+	</div>
+</div>
+
+In the above example we assume that there is an independent type <span class="mmd">social_search_result</span> which extends ordinary <span class="mmd">search_result</span> with Social Network Service specific fields.
+<span class="mmd">social_search</span>, which extends <span class="mmd">search</span>, can just use <span class="mmd">social_search_result</span> instead of <span class="mmd">search_result</span> for the same field,
+to specify the concrete type used for this field in this context.
+</p>
+ 
+<p>
+Note that a more fundamental support for generic fields is under active development. The syntax may change in near future.
+</p>
+
+<p>
+This is not a complete list of all the advanced features meta-metadata supports for modeling, extracting, and using complex
+metadata semantics. There have been many unexpected and unusual challenges and subtleties to build such a system to support
+real world problems. For more details, please see our <a class="destination" target="_blank" href="../index.html">publications</a>
+about the meta-metadata and S.IM.PL system.
+</p>
+
+</div>
+</div>
+</body></html>
+

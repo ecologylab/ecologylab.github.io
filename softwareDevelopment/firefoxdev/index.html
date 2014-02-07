@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>software development [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../code/styles/ecologylab/internal.css" rel="stylesheet">
+</head>
+
+<script language="JavaScript" src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../../code/javascript/ecologylab/ecologylab.js"></script>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+Firefox Extension Development
+</div>
+<br clear="all">
+</div>
+
+<div class="hot_link_box">
+<div style="padding-bottom: 6px;">
+Quick Links
+</div>
+<a class="hot_link" href="javascript:ecologylabPopup('http://www-128.ibm.com/developerworks/webservices/library/co-xpcom.html#h4')">IBM Devloper Works XPCOM guide</a><br/>
+<a class="hot_link" href="javascript:ecologylabPopup('http://www.xulplanet.com/')">XUL Planet</a><br/>
+<a class="hot_link" href="javascript:ecologylabPopup('http://kb.mozillazine.org/Dev_:_Extensions')">MozillaZine Extension Tutorial</a><br/>
+<a class="hot_link" href="javascript:ecologylabPopup('http://roachfiend.com/archives/2004/12/08/how-to-create-firefox-extensions/')">Roachfiend.com's basic extension tutorial</a><br/>
+</div>
+
+<div class="main_nav_box">
+
+  <div class="right_nav_box">
+
+    <a class="navlink" href="../../index.html">insiders home</a>
+    <a class="navselected" href="../../softwareDevelopment/index.html">software development</a>
+    <a class="navlink" href="../../publishing/index.html">publishing</a>
+    <a class="navlink" href="../../studies/index.html">studies</a>
+    <a class="navlink" href="../../hardwareDevelopment/index.html">hardware development</a>
+    <a target="_blank" class="navlink"
+ href="http://ecologylab.cs.tamu.edu">ecologylab public</a>
+  </div>
+&nbsp;
+  <div class="right_nav_box">
+  
+  	<a class="navselected" href="index.html">Overview</a>
+  	<a class="navlink" 	   href="firefoxext.html">Firefox Extensions</a>
+  	<a class="navlink" 	   href="rolling.html">Rolling Your Own</a>
+  	<a class="navlink" 	   href="hacking.html">Hacking our DND Extension</a>
+  	<a class="navlink" 	   href="mozbugs.html">DND Extension Mozilla Bugs</a>
+  	<a class="navlink" 	   href="emails.html">DND Extension Mozilla e-mails</a>
+  </div>
+</div>
+
+<div class="main_content">
+<p><br>
+<h2>Overview</h2>
+</p>
+<p>It is important to begin by providing some background information concerning The Firefox browser.  As you are likely aware, the Firefox browser is created and maintained as part of the Mozilla project. Although it is partially true to say that Firefox is an upgraded version of the Mozilla browser, the reality is that Firefox is a new XUL based application which utilizes the underlying Mozilla code base.  In fact if you look at the about box for your Firefox browser it will include the Mozilla version that your firefox install is built on.</p>
+
+<p>The Mozilla code base provides the underlying core functionality of the browser, exposed through XPCOM objects,  as well as the Java Script Interpeter, XUL parsing and interpreters, HTML parsing and visualization.  Perhaps it is best to describe Mozilla as a platform itself.  Mozilla can essential be thought of as an operating system abstraction, which provides events, graphics context, threading, I/O and networking.  The Mozilla Platform is designed  to run on a number of operating systems, including Microsoft Windows, Linux, and Unix. </p>
+
+<p>Although it is possible to pull down a Mozilla base distribution, and begin creating your own applications directly, it is much easier to utilize the Firefox or Mozilla browser to run your application, thus removing the need to distribute and maintain large binary distributions.  Applications can be more easily constructed using the XUL language, and running from within Firefox using a chrome URL.  </p>
+
+<p>Basically XUL utilizes XML, CSS, HTML, and Java Script, to access XPCOM components which access abstracted operating system functions. For example it is easy to create a window using the following XUL</p>
+
+<p>
+&lt;window
+    id="findfile-window"
+    title="Find Files"
+    orient="horizontal"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"&gt;
+ ...
+&lt;/window&gt;
+</p>
+<p>When Firefox executes the XUL file containing this code, it finds the appropriate XPCOM objects for creating windows, gets a reference to the XPCOM interface, and request a new window object. The XPCOM objects are responsible for talking to the actual operating system and actually creating the window.  Firefox then uses the XPCOM interface for the window to enable Java Script access to the newly created window object. </p>
+
+<p>XUL applications are only limited by the abilities of Java Script and the availability of XPCOM objects.  In the case that you need functionality which is not available in the Mozilla base XPCOM objects, it is possible to create your own XPCOM interfaces and objects. This type of work is outside the scope of this  document, however for interested parties, IBM's Developer Works has a nice series of articles covering  XPCOM, available <a href= "http://www-128.ibm.com/developerworks/webservices/library/co-xpcom.html#h4">here.</a> </p>
+
+<p>Now that you have some basic knowledge of the environment you will be working on lets talk more specifically about how you can use XUL to modify Firefox using <a href="firefoxext.html"> Firefox Extensions</a>  </p>
+
+</div>
+
+</div>
+</body> </html>
+

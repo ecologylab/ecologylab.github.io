@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="site.js"/>
+<code file="applets.js"/>
+<code file="collages.js"/>
+<code file="interfaces.js"/>
+<code file="openStacks.js"/>
+
+<code dir="openStacksNav"/>
+
+</code_spec>

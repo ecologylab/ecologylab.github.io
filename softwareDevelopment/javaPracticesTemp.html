@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>java practices [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../code/styles/ecologylab/internal.css" rel="stylesheet">
+</head>
+
+<script language="JavaScript" src="../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../code/javascript/ecologylab/ecologylab.js"></script>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+java practices
+</div>
+<br clear="all">
+</div>
+
+<div class="main_nav_box">
+
+  <div class="right_nav_box">
+
+    <a class="navlink" href="../index.html">insiders home</a>
+    <a class="navselected" href="../softwareDevelopment/index.html">software development</a>
+    <a class="navlink" href="../publishing/index.html">publishing</a>
+    <a class="navlink" href="../studies/index.html">studies</a>
+    <a class="navlink" href="../hardwareDevelopment/index.html">hardware development</a>
+    <a target="_blank" class="navlink"
+ href="http://ecologylab.cs.tamu.edu">ecologylab public</a>
+  </div>
+&nbsp;
+  <div class="right_nav_box">
+
+    <a class="navlink" href="javascript:ecologylabPopup('http://twang.csdl.tamu.edu/bugzilla/')">bugzilla</a>
+    <a class="navlink" href="branchesAndTags.html">our cvs branches &amp; tags</a>
+    <a class="navlink" href="cvsInEclipse.html">cvs in eclipse</a>
+    <a class="navlink" href="regressionTesting.html">regression testing</a>
+    <a class="navlink" href="programmingStyle.html">programming style</a>
+    <a class="navselected" href="javaPractices.html">java practices</a>
+  </div>
+</div>
+
+<div class="main_content">
+<p>
+The structure of code has an enormous impact on efficiency, as well as
+readability and maintainability. This document is a pool of important
+Java programming practices. The form is a list of structures that are
+better, with explanations about why.
+
+<ol>
+  <li style="line-height: 170%;">Use <i>temporaries</i>, also known as 
+      <i>local variables</i> whenever a computed or dereferenced value is used
+      more than once. 
+
+      Primary Benefit:
+      The computations of method calls, and pointer dereferencing have
+      an associated computational overhead. Temporary variables
+      usually go into CPU registers, where they can be accessed
+      extremely rapidly.
+
+      Side benefit:
+      You get to author a name for the temporary variable, which can
+      help make the function/meaning of it clear to the next programmer.
+</li>
+ <li style="line-height: 170%;">Use known Java compiler optimizations.
+	The java compiler is capable of optimizing some code at compile time. 
+      As there are no compiler directives to enforce optimzation, it is important 
+      to know what types of optimizations the compiler will attempt and how to
+	write your code so that these optimizations will take place. 
+
+	The following is a list of some best practices that we are currently aware of.
+	<ol>
+	  <li>
+        Use final judicicously, anytime a variable or function can be made final, this
+        will result in inlining of the code the final keyword applies to. Conditionals based 
+	  on final variables, tend to not even be compiled into Byte Code. 
+	  </li>
+	  <li>
+ 	  Statics tend to be heavly optimized bye the compiler. They preform very well.
+	  However you need to be aware of extactly what it means to make something static. 
+        Only use static if it is appropriate at :an API level. 	  
+ 	  </li>
+ 	</ol>
+ </li>
+</ol>
+
+<div class="subbox">
+</div>
+
+<div class="subbox">
+
+</div>
+</div>
+
+</div>
+</body> </html>
+

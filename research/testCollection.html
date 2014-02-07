@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Test Collection [interface ecology lab | research]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab-16.png" type="image/png">
+
+<script language="JavaScript" src="../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../code/javascript/ecologylab/ecologylab.js"></script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+Test Collection
+</div>
+
+</div>
+
+<br clear="all"/>
+
+<div class="nav">
+<a class="navlink" href="../index.html">home</a>
+<a class="navlink" href="../define.html">define</a>
+
+<div class="block">
+	<div class="subblock">
+		<a class="navselected" href="index.html">research</a>
+		<a class="subnavlink" href="combinFormation.html">combinFormation</a>
+		<a class="subnavlink" href="tec.html">team coordination games</a>
+		<a class="subnavlink" href="sensoryInterfaces.html">embodied interfaces</a>
+	</div>
+
+	<div class="subblock">
+		<a class="subnavlink" href="ecosystemsApproach.html">interface ecology</a>
+		<a class="subnavlink" href="informationDiscovery.html">information based ideation</a>
+		<a class="subnavlink" target="_blank" href="simplGuide/index.html">s.im.pl</a>
+	</div>
+</div>
+
+
+<a class="navlink" href="../people/index.html">people</a>
+<a class="navlink" href="../courses/index.html">courses</a>
+<a class="navlink" href="../../technicalReports/index.html">technical reports</a>
+</div>
+
+<p>
+<img class="illustrate_left"  src="images/testCollection1.png">
+In order to evaluate the performance of information retrieval and extraction algorithms, we need test collections. 
+A test collection consists of a set of documents, a clearly formed problem that an algorithm is supposed to provide solutions to, and the answers that the algorithm should produce when executed on the documents. 
+Defining the association between elements in the test collection and answers is known as labeling. 
+For mainstream information retrieval problems, there are publicly available test collections which have been maintained for years. 
+However, the scope of these problems, and thus the associated test collections, is limited. 
+In other cases, researchers need to build, label, and manage their own test collections, which can be a tedious and error-prone task. 
+Also, there are no public repository spaces to store those collections for sharing among research community.
+</p>
+
+<p>
+<img class="illustrate" src="images/testCollection2.jpg" width=500>
+ To lighten researchers� burden of building their own test collections, we are developing a test collection digital library system (TCDLS). 
+ A systematic mechanism for building test collections enforces consistency in labeling practices, reducing errors and increasing validity. 
+ While the present research is developed to meet our needs for information extraction algorithm and test collection development, 
+ we have worked to develop an infrastructural system that fosters further development of test collections and infrastructure across the research community, 
+ enabling the expansion of research.
+</p>
+<p>
+<a target="_blank" href="http://csdll.cs.tamu.edu:9080/TestCollections/websites"><b>Publicy available Test Collection collected and labeled with TCDLS.</b></a>
+We currently collected 239 article pages from news sites, 
+which are 80 pages from CNN, 52 from the BBC, 54 from ABC, and 53 from Scientific American. 
+We also collected index pages from same sites. 
+They are 27 pages from CNN, 77 pages from BBC, 23 from ABC, 36 from NYTimes, and 15 pages from Scientific American. 
+We call this test data set as news collection. We created another test data set calls research collection. 
+In this collection, we collected pages about research from university labs and from research center sites such NSF, 
+PARC, Microsoft Research, IBM Research, and Los Alamos Laboratory. 
+We collected 151 research article pages and 103 research index pages.
+</p>
+<p>
+The TCDLS is used to label components in each test document, by clicking labeling buttons.
+We labeled informative text, informative images, and caption text to associate with the informative images. 
+We also labeled non-informative text and images. The label information is stored in XML, and it is used to 
+evaluate information extraction algorithms that recognize informative components in each document. 
+</p>
+
+</p>
+
+
+<p/>
+<h4>publications</h4>
+
+<div class="feature">
+<a href="publications/eng077s-koh.pdf" target="_blank"> 
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="images/testCollection.png" />
+</a>
+Koh, E., Kerne, A., Berry, S.,
+<a href="publications/eng077s-koh.pdf" target="_blank">
+Test Collection Management and Labeling System</a>, 
+<i>Proc ACM DocEng 2009</i>, 
+Munich, Germany, Sept 16-18.
+</div>
+
+</div>
+</body> </html>

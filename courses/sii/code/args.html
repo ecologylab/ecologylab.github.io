@@ -1,0 +1,48 @@
+<html> <head>
+<title></title>
+
+<script language="JavaScript">
+function doubleSplit(str, delim1, delim2)	// String[] (String, char)
+{
+   if (!str || (str.length == 0))
+      return null;
+   if (!delim1)
+      delim1	= "&";
+   if (!delim2)
+      delim2	= "=";
+   var result	= new Array();	// build associative array of all
+   // alert("doubleSplit:'" + str+"'");
+   var set		= str.split(delim1);
+//   alert("doubleSplit: set.length=" + set.length)
+//   for (i in set)
+   for (i=0;i<set.length;i++)
+   {
+      anArg		= set[i].split(delim2);
+      alert("split property=" + i + "\tsplitted arg="+anArg);
+      prop		= unescape(anArg[0]);
+      result[prop]	= unescape(anArg[1]);
+      alert(prop + " = " + result[prop]);
+  }
+  // alert ("result.length="+qq.length + " " + qq.type);
+  return result;
+}
+var search = location.search;
+//if ((search != null) & (search != ""))
+if (search)
+{
+   alert("search = '" + search + "'");
+   search = search.substring(1);
+   doubleSplit(search, "&");
+}
+else
+   alert("no arguments passed in");
+
+
+</script>
+
+</head>
+
+<body>
+
+
+</body> </html>

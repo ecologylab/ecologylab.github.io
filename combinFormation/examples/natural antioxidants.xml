@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composition version="3.0">
+  <preferences>
+    <screen height="663" size="2" width="506"/>
+  </preferences>
+  <seed_set>
+    <search engine="google" query="natural antioxidants"/>
+  </seed_set>
+  <site_set>
+    <site domain="nytimes.com" font_index="4"/>
+    <site domain="go.com" font_index="4" stroke_hue="0.5555556"/>
+    <site domain="healthcastle.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="answers.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="vitacost.com" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="naturalhub.com" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="prevention.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="youtube.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="lifeplusvitamins.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="cancermonthly.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="wikipedia.org" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="webmd.com" font_index="4"/>
+    <site domain="webmd.com" font_index="4"/>
+    <site domain="aacrjournals.org" stroke_hue="0.25"/>
+    <site domain="raysahelian.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="drugnatural.com" font_index="2" stroke_hue="0.75"/>
+    <site domain="annieappleseedproject.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="nytimes.com" font_index="4"/>
+    <site domain="healthcastle.com" font_index="5" stroke_hue="0.125"/>
+    <site domain="vitamins-supplements.org" stroke_hue="0.16666667"/>
+    <site domain="webmd.com" font_index="4"/>
+    <site domain="columbia.edu" stroke_hue="0.16666667"/>
+    <site domain="nih.gov" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="mercola.com" stroke_hue="0.25"/>
+    <site domain="webmd.com" font_index="4"/>
+    <site domain="webmd.com" font_index="4"/>
+    <site domain="usda.gov" font_index="7" stroke_hue="0.8666667"/>
+    <site domain="cancermonthly.com" font_index="1" stroke_hue="0.041666668"/>
+    <site domain="prevention.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="aacrjournals.org" stroke_hue="0.25"/>
+    <site domain="youtube.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="nytimes.com" font_index="4"/>
+    <site domain="annieappleseedproject.org" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="vitamins-supplements.org" stroke_hue="0.16666667"/>
+    <site domain="prevention.com" font_index="2" stroke_hue="0.5972222"/>
+    <site domain="naturallydirect.net" font_index="7" stroke_hue="0.41666666"/>
+    <site domain="cdc.gov" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="raysahelian.com" font_index="1" stroke_hue="0.3611111"/>
+    <site domain="nih.gov" font_index="5" stroke_hue="0.083333336"/>
+    <site domain="naturallydirect.net" font_index="7" stroke_hue="0.41666666"/>
+  </site_set>
+  <traversable_set>
+    <traversable url_string="http://www.youtube.com/results"/>
+    <traversable url_string="http://www.prevention.com/cda"/>
+    <traversable url_string="http://nm.essortment.com"/>
+    <traversable url_string="http://www.naturalantioxidants.org/"/>
+    <traversable url_string="http://www.ars.usda.gov/Research"/>
+    <traversable url_string="http://www.mercola.com/2004/aug/18"/>
+    <traversable url_string="http://www.ecomcanada.com"/>
+    <traversable url_string="http://www.drugnatural.com/"/>
+    <traversable url_string="http://www.abc.net.au/rn/talks/8.30/helthrpt/stories"/>
+    <traversable url_string="http://www.get-healthier.com"/>
+    <traversable url_string="http://www.naturallydirect.net"/>
+    <traversable url_string="http://www.naturalessentials.com/"/>
+    <traversable url_string="http://www.allnaturalantioxidants.com/"/>
+    <traversable url_string="http://www.thefishsite.com/fishnews/5739/natural-antioxidants-give-feed-the-full-organic-stamp"/>
+    <traversable url_string="http://www.sciencedaily.com/releases/2007/11"/>
+    <traversable url_string="http://www.ncbi.nlm.nih.gov/pubmed/16368299"/>
+    <traversable url_string="http://www.algatech.com"/>
+    <traversable url_string="http://www.foodnavigator.com/news"/>
+    <traversable url_string="http://www.liptont.com/tea_health/aox"/>
+    <traversable url_string="http://www.astafactor.com/"/>
+    <traversable url_string="http://www.cancer.gov/cancertopics/factsheet/antioxidantsprevention"/>
+    <traversable url_string="http://www.cancer.gov/cancertopics/factsheet/tea-and-cancer-prevention"/>
+    <traversable url_string="http://cancer.about.com/od/alternativetreatments/a"/>
+    <traversable url_string="http://www.cancer.org/docroot/NWS/content"/>
+    <traversable url_string="http://www.nlm.nih.gov/medlineplus/news"/>
+    <traversable url_string="http://www.itmonline.org/arts"/>
+    <traversable url_string="http://www.amazon.com/Antioxidants-Against-Cancer-Ralph-Moss/dp/1881025284"/>
+    <traversable url_string="http://www.foh.dhhs.gov/NYCU"/>
+    <traversable url_string="http://www.drlam.com/A3R_brief_in_doc_format"/>
+    <traversable url_string="http://www.goaskalice.columbia.edu"/>
+    <traversable url_string="http://www.rush.edu/rumc"/>
+    <traversable url_string="http://abcnews.go.com/Health/Diet/story"/>
+    <traversable url_string="http://www.annieappleseedproject.org"/>
+    <traversable url_string="http://ezinearticles.com/"/>
+    <traversable url_string="http://dietary-supplements.info.nih.gov/news/conferences/ada2002"/>
+    <traversable url_string="http://www.rice.edu/~jenky/sports"/>
+    <traversable url_string="http://www.coenzymeq10supplement.com"/>
+    <traversable url_string="http://www.medicalnewstoday.com/articles"/>
+    <traversable url_string="http://abclocal.go.com/wabc/story"/>
+    <traversable url_string="http://www.drweil.com/drw/u/id/QAA400036"/>
+    <traversable url_string="http://www.cancer.gov/"/>
+    <traversable url_string="http://www.cancer.gov/cancertopics"/>
+    <traversable url_string="http://www.cancer.org/"/>
+    <traversable url_string="http://www.washingtonpost.com/wp-dyn/content/article/2008/02/11"/>
+    <traversable url_string="http://www.cancer.org/docroot/CRI/content"/>
+    <traversable url_string="http://cancer.about.com/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Cancer"/>
+    <traversable url_string="http://www.webmd.com/cancer"/>
+    <traversable url_string="http://www.nlm.nih.gov/medlineplus/ency/article"/>
+    <traversable url_string="http://www.nlm.nih.gov/medlineplus"/>
+    <traversable url_string="http://www.cdc.gov/cancer/az/"/>
+    <traversable url_string="http://www.cafeastrology.com"/>
+    <traversable url_string="http://www.interscience.wiley.com/jpages/0008-543X/"/>
+    <traversable url_string="http://www.msnbc.msn.com/id/3034576/"/>
+    <traversable url_string="http://topics.nytimes.com/top/news/health/diseasesconditionsandhealthtopics/cancer"/>
+    <traversable url_string="http://www.nature.com/cancer/"/>
+    <traversable url_string="http://www.cancer.com/"/>
+    <traversable url_string="http://www.cancermonthly.com/"/>
+    <traversable url_string="http://www.medicinenet.com/cancer"/>
+    <traversable url_string="http://www.nci.nih.gov/dictionary"/>
+    <traversable url_string="http://www.oncolink.com/"/>
+    <traversable url_string="http://www.cancer.org/docroot/home"/>
+    <traversable url_string="http://www.nature.com/cancer"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Antioxidant"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Polyphenol_antioxidant"/>
+    <traversable url_string="http://www.healthcastle.com"/>
+    <traversable url_string="http://www.medterms.com/script/main"/>
+    <traversable url_string="http://www.webmd.com/diet/guide/20061101/antioxidants-found-unexpected-foods"/>
+    <traversable url_string="http://www.webmd.com/food-recipes/tc/antioxidants-topic-overview"/>
+    <traversable url_string="http://lpi.oregonstate.edu/f-w00"/>
+    <traversable url_string="http://www.americanheart.org"/>
+    <traversable url_string="http://www.vitaminstuff.com"/>
+    <traversable url_string="http://www.newscientist.com/article"/>
+    <traversable url_string="http://www.garynull.com/Documents"/>
+    <traversable url_string="http://www.csiro.au/resources"/>
+    <traversable url_string="http://cancerweb.ncl.ac.uk/cgi-bin/omd"/>
+    <traversable url_string="http://www.healthchecksystems.com"/>
+    <traversable url_string="http://www.britannica.com/eb/article-9007869/antioxidant"/>
+    <traversable url_string="http://www.eatright.org/cps/rde/xchg/ada/hs.xsl"/>
+    <traversable url_string="http://jama.ama-assn.org/cgi/content/abstract/297/8/842"/>
+    <traversable url_string="http://www.ific.org/publications/factsheets"/>
+    <traversable url_string="http://www.wisegeek.com"/>
+    <traversable url_string="http://www.raysahelian.com"/>
+    <traversable url_string="http://www.bodybuilding.com/store"/>
+    <traversable url_string="http://www.vitacost.com/Healthnotes/Supp"/>
+    <traversable url_string="http://www.vitamins-supplements.org"/>
+    <traversable url_string="http://www.lifeplusvitamins.com"/>
+    <traversable url_string="http://www.nutrasanus.com"/>
+    <traversable url_string="http://medical-dictionary.thefreedictionary.com/antioxidant"/>
+    <traversable url_string="http://www.answers.com/topic/antioxidant"/>
+    <traversable url_string="http://ezinearticles.com/forums"/>
+    <traversable url_string="http://www.cyberlipid.org/perox"/>
+    <traversable url_string="http://www.exrx.net/Nutrition/Antioxidants"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Lipid_peroxidation"/>
+    <traversable url_string="http://www.ias.ac.in/jarch/jbiosci/15"/>
+    <traversable url_string="http://www.pubmedcentral.nih.gov"/>
+    <traversable url_string="http://www.freeradicalscience.com"/>
+    <traversable url_string="http://linkinghub.elsevier.com/retrieve/pii/S0891584999000325"/>
+    <traversable url_string="http://linkinghub.elsevier.com/retrieve/pii/S0531513102001632"/>
+    <traversable url_string="http://carcin.oxfordjournals.org/cgi/reprint/15/11"/>
+    <traversable url_string="http://www.encyclopedia.com/doc"/>
+    <traversable url_string="http://bja.oxfordjournals.org/cgi/content/full/90/2/253-a"/>
+    <traversable url_string="http://het.sagepub.com/cgi/reprint/22/4"/>
+    <traversable url_string="http://www.vivo.colostate.edu/hbooks/pathphys/misc_topics"/>
+    <traversable url_string="http://www.ingentaconnect.com/content/els/13572725/1996/00000028/00000002/art00131"/>
+    <traversable url_string="http://www.agron.missouri.edu/mnl/64"/>
+    <traversable url_string="http://ci.nii.ac.jp/naid/110003639347/en/"/>
+    <traversable url_string="http://www.springerlink.com/index"/>
+    <traversable url_string="http://findarticles.com/p/articles/mi_m0BUM/is_8_81/ai_90869427"/>
+    <traversable url_string="http://www.msnbc.msn.com/id/22919156/"/>
+    <traversable url_string="http://www.youtube.com/"/>
+    <traversable url_string="http://www.quackwatch.com/03HealthPromotion"/>
+    <traversable url_string="http://www.youtube.com/watch"/>
+    <traversable url_string="http://www.youtube.com/signup"/>
+    <traversable url_string="http://content.nejm.org/cgi/content/extract/335/14/1065"/>
+    <traversable url_string="http://health.usnews.com/usnews/health/briefs/cancer"/>
+    <traversable url_string="http://www.webmd.com/cancer/news/20080125/antioxidant-pills-dont-cut-cancer-risk"/>
+    <traversable url_string="http://www.medicinenet.com/script/main"/>
+    <traversable url_string="http://www.sciencedaily.com/releases/2008/01"/>
+    <traversable url_string="http://www.sciencedaily.com/releases/2004/11"/>
+    <traversable url_string="http://www.liebertonline.com/doi/pdf/10.1089"/>
+    <traversable url_string="http://cancerres.aacrjournals.org/cgi/content/full/63/15/4295"/>
+    <traversable url_string="http://www.jacn.org/cgi/content/full/19/5/563"/>
+    <traversable url_string="http://www.newhope.com/nutritionsciencenews/nsn_backs/Mar_99"/>
+    <traversable url_string="http://www.huliq.com/47690/researchers-examine-effect-antioxidant-supplements-cancer"/>
+    <traversable url_string="http://www.connecticutcenterforhealth.com"/>
+    <traversable url_string="http://www.organicconsumers.org/organic"/>
+    <traversable url_string="http://www.ahrq.gov/clinic/tp"/>
+    <traversable url_string="http://www.healthfinder.gov/news"/>
+    <traversable url_string="http://www.crumcreek.com/library"/>
+    <traversable url_string="http://www.naturalhub.com"/>
+    <traversable url_string="http://www.ext.colostate.edu/pubs/columnnn"/>
+    <traversable url_string="http://www.ecoviva.com/"/>
+    <traversable url_string="http://www.woodheadpublishing.com/en"/>
+    <traversable url_string="http://www.tropicaltraditions.com"/>
+    <traversable url_string="http://www.shapefit.com"/>
+    <traversable url_string="http://linkinghub.elsevier.com/retrieve/pii/S0309174000000905"/>
+    <traversable url_string="http://linkinghub.elsevier.com/retrieve/pii/S0309174000001297"/>
+    <traversable url_string="http://www.fatfreekitchen.com/nutrition"/>
+    <traversable url_string="http://www.mercola.com/2003/mar/22"/>
+    <traversable url_string="http://pubs.acs.org/cgi-bin/abstract.cgi/jafcau/2002/50/i20/abs"/>
+    <traversable url_string="http://www.joyfulaging.com"/>
+    <traversable url_string="http://www.cababstractsplus.org/google"/>
+    <traversable url_string="http://www.ars.usda.gov/is/pr/2007"/>
+    <traversable url_string="http://www.newscientist.com/channel/health/cancer"/>
+    <traversable url_string="http://www.cancerpage.com/"/>
+    <traversable url_string="http://www.sciencedaily.com/releases/2008/02"/>
+    <traversable url_string="http://www.breadwithoutborders.com/printable"/>
+    <traversable url_string="http://health.howstuffworks.com"/>
+    <traversable url_string="http://164.109.43.73/wholegrains/"/>
+    <traversable url_string="http://www.mypyramid.gov/pyramid"/>
+    <traversable url_string="http://www.healthyeatingclub.com/info/articles/diets-foods"/>
+    <traversable url_string="http://wholegrainscouncil.org/whole-grains-101/what-are-the-health-benefits"/>
+    <traversable url_string="http://www.sciencedaily.com/releases/2007/05"/>
+    <traversable url_string="http://nationalhogfarmer.com/mag/farming_distillers_grains_offers/"/>
+    <traversable url_string="http://www.bio-medicine.org/medicine-news/Whole-Grain-Foods-Result-In-Health-Benefits-7123-1/"/>
+    <traversable url_string="http://www.hsph.harvard.edu/nutritionsource"/>
+    <traversable url_string="http://www.wheatfoods.org/"/>
+    <traversable url_string="http://www.horizonmilling.com/wheat"/>
+    <traversable url_string="http://www.greatharvest.com/bread"/>
+    <traversable url_string="http://www.eatgrains.com/"/>
+    <traversable url_string="http://en.wikipedia.org/wiki/Whole_grain"/>
+    <traversable url_string="http://www.whfoods.com"/>
+    <traversable url_string="http://lowcarbdiets.about.com/od/whattoeat/a"/>
+    <traversable url_string="http://linkinghub.elsevier.com/retrieve/pii/S0144861702001443"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term intensity="10" stemmed="report"/>
+    <term intensity="10" stemmed="tool"/>
+    <term intensity="10" stemmed="garlic"/>
+    <term intensity="10" stemmed="incid"/>
+    <term intensity="2" stemmed="radic"/>
+    <term intensity="10" stemmed="immun"/>
+    <term intensity="10" stemmed="benefit"/>
+    <term intensity="10" stemmed="juic"/>
+    <term intensity="10" stemmed="veget"/>
+    <term intensity="10" stemmed="statist"/>
+    <term intensity="10" stemmed="asset"/>
+    <term intensity="10" stemmed="pomegran"/>
+    <term intensity="2" stemmed="peroxid"/>
+    <term intensity="10" stemmed="common"/>
+    <term intensity="10" stemmed="fruit"/>
+    <term intensity="8" stemmed="chest"/>
+    <term intensity="10" stemmed="vitamin"/>
+    <term intensity="8" stemmed="rai"/>
+    <term intensity="2" stemmed="mechan"/>
+    <term intensity="10" stemmed="diabet"/>
+    <term intensity="2" stemmed="free"/>
+    <term intensity="10" stemmed="mortal"/>
+    <term intensity="10" stemmed="heart"/>
+    <term intensity="10" stemmed="cancer"/>
+    <term intensity="2" stemmed="lipid"/>
+    <term intensity="10" stemmed="health"/>
+    <term intensity="10" stemmed="sourc"/>
+    <term intensity="10" stemmed="grain"/>
+    <term intensity="10" stemmed="antioxid"/>
+    <term intensity="10" stemmed="clove"/>
+    <term intensity="10" stemmed="unit"/>
+    <term intensity="10" stemmed="â"/>
+  </term_set>
+  <container_set>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.naturallydirect.net/natural-skin-care.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Natural Skin Care, Facial Creams, Body Lotions Lip Balms."/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.lifeplusvitamins.com/core-antioxidants.htm">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.annieappleseedproject.org/vitretandcar.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.healthcastle.com/antioxidant.shtml">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.naturallydirect.net/natural-oral-hygiene.html">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Natural Body Care Products for Skin, Hair, Nails, Bath, Massage and Oral Hygiene."/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.webmd.com/cancer/default.htm">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://abcnews.go.com/Health/Diet/story?id=3500666&amp;page=1">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.raysahelian.com/antioxidant.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.answers.com/topic/antioxidant">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.ars.usda.gov/Research/docs.htm?docid=8621">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="natural antioxidants"/>
+        <metadata_field name="Title" value="Fruit Berries and Natural Antioxidants"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nlm.nih.gov/medlineplus/cancer.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.webmd.com/cancer/news/20080125/antioxidant-pills-dont-cut-cancer-risk">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="2" purl="http://www.mercola.com/2004/aug/18/natural_antioxidants.htm">
+      <participant/>
+      <metadata>
+        <metadata_field name="Query" value="natural antioxidants"/>
+        <metadata_field name="Title" value="Natural Antioxidants the Best 8/ 18/ 04"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://cancerres.aacrjournals.org/cgi/content/full/63/15/4295">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.vitamins-supplements.org/antioxidant.php">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.prevention.com/cda/categorypage.do?channel=fitness&amp;category=cardio">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Cardio Prevention. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="3" purl="http://www.drugnatural.com/blog/">
+      <participant intensity="4"/>
+      <metadata>
+        <metadata_field name="Title" value="Health Nutritional Supplements DrugNatural Blog"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.naturalhub.com/natural_food_guide_fruit_common.htm">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.prevention.com/cda/categorypage.do?channel=news.voices&amp;category=multimedia&amp;topic=slideshows">
+      <participant/>
+      <metadata>
+        <metadata_field name="Title" value="Prevention Slideshows Prevention. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.webmd.com/food-recipes/tc/antioxidants-topic-overview">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.nlm.nih.gov/medlineplus/nutritionforseniors.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cdc.gov/cancer/az/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.youtube.com/watch?v=cQR49TZ2Ia8&amp;amp;feature=related">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://topics.nytimes.com/top/news/health/diseasesconditionsandhealthtopics/cancer/index.html?inline=nyt-classifier">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.annieappleseedproject.org/viteandsel.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.goaskalice.columbia.edu/0830.html">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.youtube.com/watch?v=TxwIzdPMSjM&amp;amp;feature=related">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.vitacost.com/Healthnotes/Supp/Vitamin-E.aspx">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="4" purl="http://www.prevention.com/cda/categorypage.do?channel=nutrition.recipes&amp;amp;category=food.chain">
+      <participant intensity="5"/>
+      <metadata>
+        <metadata_field name="Title" value="Nutrition Recipes Prevention. com"/>
+      </metadata>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.cancermonthly.com/">
+      <participant/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://www.healthcastle.com/pomegranate-juice-heart-diabetes.shtml">
+      <participant intensity="4"/>
+      <metadata/>
+    </container>
+    <container bias="1.0" document_type="HTMLPage" generation="1" purl="http://en.wikipedia.org/wiki/Cancer">
+      <participant/>
+      <metadata/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <surrogate containerURL="http://www.naturallydirect.net/natural-skin-care.html" history_num="3">
+      <image_element bias="1.0" href="http://www.naturallydirect.net/lip-balm.html" purl="http://www.naturallydirect.net/media/nb-hcb-lip-balm-plain-thumb.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="62" width="100" x="264" y="140"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.prevention.com/cda/categorypage.do?channel=news.voices&amp;category=multimedia&amp;topic=slideshows" history_num="6">
+      <image_element alpha_radius="24" bias="1.0" href="http://www.prevention.com/slideshows/legsshapeup/" min_alpha="917504" purl="http://www.prevention.com/pvnstatic-assets/images/86x67_sm_size/replaced_article_images/86x67_pv_walkingtesters_ST.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="subChannelItemAlternateImage"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="51" width="66" x="57" y="512"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.naturallydirect.net/natural-oral-hygiene.html" history_num="5">
+      <image_element alpha_radius="10" bias="1.0" href="http://www.naturallydirect.net/breath-freshener.html" min_alpha="3932160" purl="http://www.naturallydirect.net/media/nb-hcb-oral-breath-freshener-thumb.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="100" width="28" x="50" y="248"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.mercola.com/2004/aug/18/natural_antioxidants.htm" latched="true">
+      <image_element alpha_radius="27" bias="1.0" min_alpha="5898240" purl="http://www.mercola.com/images/blog/2004.08.03.natural_antioxidants.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="97" width="95" x="326" y="549"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.drugnatural.com/blog/" latched="true">
+      <image_element alpha_radius="17" bias="1.0" min_alpha="3604480" positive_clicks="1" purl="http://farm3.static.flickr.com/2018/2199892687_e3069b0db0_m.jpg">
+        <participant intensity="4"/>
+        <metadata>
+          <metadata_field name="Caption" value="Garlic Cloves"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="46" width="88" x="167" y="448"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.prevention.com/cda/categorypage.do?channel=nutrition.recipes&amp;amp;category=food.chain" history_num="1" latched="true">
+      <image_element alpha_radius="20" bias="1.0" min_alpha="6094848" positive_clicks="1" purl="http://www.prevention.com/pvnstatic-assets/common/images/img_tool_caloriecounter.gif">
+        <participant intensity="5"/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="63" width="88" x="234" y="544"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.prevention.com/cda/categorypage.do?channel=fitness&amp;category=cardio" history_num="2" latched="true">
+      <image_element alpha_radius="33" bias="1.0" min_alpha="4063232" purl="http://www.prevention.com/pvnstatic-assets/images/298x232_article_size/fitness/298x232-energetic_woman-298x232_energetic_woman.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="energetic woman"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="51" width="66" x="182" y="193"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.ars.usda.gov/Research/docs.htm?docid=8621" history_num="4" latched="true">
+      <image_element alpha_radius="27" bias="1.0" min_alpha="5373952" purl="http://www.ars.usda.gov/incme/images/sitelogos/12751100/12751100.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Fruit Site Logo"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="61" width="110" x="-3" y="431"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.annieappleseedproject.org/viteandsel.html">
+      <text_element bias="1.0" face_index="1" font_color="94000000" stroke_color="ec8afb9c">
+        <text_chunk font_size="10" non_stop_index="0.47368422" stroke_style="2">
+          <cf_text_token delims_before="" string="Vitamin"/>
+          <cf_text_token delims_before=" " string="E"/>
+          <cf_text_token delims_before=" " string="at"/>
+          <cf_text_token delims_before=" " string="mM"/>
+          <cf_text_token delims_before=" " string="concentration"/>
+          <cf_text_token delims_before=" " string="arrested"/>
+          <cf_text_token delims_before=" " string="tumor"/>
+          <cf_text_token delims_before=" " string="cells"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="G1"/>
+          <cf_text_token delims_before=" " string="phase"/>
+          <cf_text_token delims_before=" " string="of"/>
+          <cf_text_token delims_before=" " string="the"/>
+          <cf_text_token delims_before=" " string="cell"/>
+          <cf_text_token delims_before=" " string="cycle,"/>
+          <cf_text_token delims_before=" " string="leading"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="apoptosis."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="70" width="155" x="350" y="377"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.vitamins-supplements.org/antioxidant.php" latched="true">
+      <image_element bias="1.0" purl="http://www.vitamins-supplements.org/aff/vitabase-super-antioxidant-formula.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="81" width="48" x="145" y="226"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.raysahelian.com/antioxidant.html">
+      <image_element bias="1.0" purl="http://www.raysahelian.com/images/mindrpowerrx6cm.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="107" width="64" x="336" y="255"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.webmd.com/cancer/news/20080125/antioxidant-pills-dont-cut-cancer-risk" latched="true">
+      <image_element bias="1.0" href="http://www.webmd.com/video/treating-brain-tumors/" purl="http://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/thumbnails/video/48x48_targeting_brain_tumors.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="74" width="74" x="184" y="76"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.raysahelian.com/antioxidant.html">
+      <image_element bias="1.0" purl="http://www.raysahelian.com/images/Multi6cm1.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="74" width="56" x="296" y="200"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.webmd.com/food-recipes/tc/antioxidants-topic-overview" latched="true">
+      <image_element bias="1.0" href="http://www.webmd.com/video/high-tech-eggs/" purl="http://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/thumbnails/video/48x48_high_tech_eggs.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="48" width="48" x="158" y="143"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cdc.gov/cancer/az/" latched="true">
+      <image_element bias="1.0" purl="http://www.cdc.gov/cancer/00_images/npcr/2004_uscs_cover_small.jpg">
+        <participant intensity="3"/>
+        <metadata>
+          <metadata_field name="Caption" value="United States Cancer Statistics: 2004 Incidence and Mortality Report"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="43" width="59" x="285" y="149"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.goaskalice.columbia.edu/0830.html" latched="true">
+      <text_element bias="1.0" face_index="5" font_color="9b000000" stroke_color="f3fcd664">
+        <text_chunk font_size="11" non_stop_index="0.6666667" stroke_style="2">
+          <cf_text_token delims_before="" string="Sweet"/>
+          <cf_text_token delims_before=" " string="potatoes,"/>
+          <cf_text_token delims_before=" " string="carrots,"/>
+          <cf_text_token delims_before=" " string="spinach,"/>
+          <cf_text_token delims_before=" " string="cantaloupe,"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="mangoes"/>
+          <cf_text_token delims_before=" " string="are"/>
+          <cf_text_token delims_before=" " string="great"/>
+          <cf_text_token delims_before=" " string="sources"/>
+          <cf_text_token delims_before=" " string="of"/>
+          <cf_text_token delims_before=" " string="antioxidants."/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="60" width="158" x="103" y="383"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.webmd.com/cancer/default.htm" latched="true">
+      <image_element bias="1.0" href="http://www.webmd.com/content/Article/120/113797/" purl="http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/thumbnails/thumb_spBox_AstraZ_OncolLung_4076-01.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="The Right Help. Right Now.â„¢"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="59" width="54" x="2" y="518"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="28">
+      <text_element bias="1.0" font_color="990099" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="9" non_stop_index="1.0" stroke_style="2">
+          <cf_text_token delims_before="" string="regular"/>
+          <cf_text_token delims_before=" " string="exercise"/>
+          <cf_text_token delims_before=" " string="enhances"/>
+          <cf_text_token delims_before=" " string="antioxidant"/>
+          <cf_text_token delims_before=" " string="system"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="22" width="228" x="5" y="574"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="30">
+      <text_element bias="1.0" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="12" non_stop_index="0.5">
+          <cf_text_token delims_before="" string="vitamin"/>
+          <cf_text_token delims_before=" " string="E"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="16" width="57" x="351" y="502"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.annieappleseedproject.org/vitretandcar.html">
+      <text_element bias="1.0" face_index="1" font_color="a3006666" stroke_color="fb8afb9c">
+        <text_chunk font_size="10" font_style="1" non_stop_index="0.5714286" stroke_style="2">
+          <cf_text_token delims_before="" string="Vitamin"/>
+          <cf_text_token delims_before=" " string="A"/>
+          <cf_text_token delims_before=" " string="and"/>
+          <cf_text_token delims_before=" " string="Carotenoids"/>
+          <cf_text_token delims_before=" " string="as"/>
+          <cf_text_token delims_before=" " string="Cancer"/>
+          <cf_text_token delims_before=" " string="Treatment"/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="42" width="107" x="322" y="520"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="33">
+      <text_element bias="1.0" font_color="ff3366" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="16" font_style="1" non_stop_index="0.5">
+          <cf_text_token delims_before="" string="Antioxidants:the"/>
+          <cf_text_token delims_before=" " string="early"/>
+          <cf_text_token delims_before=" " string="prevention"/>
+          <cf_text_token delims_before=" " string="to"/>
+          <cf_text_token delims_before=" " string="cancer"/>
+          <cf_text_token delims_before=" " string=""/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="21" width="394" x="66" y="357"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="34">
+      <text_element bias="1.0" font_color="0" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="12" non_stop_index="0.33333334">
+          <cf_text_token delims_before="" string="vitamin"/>
+          <cf_text_token delims_before=" " string="C"/>
+          <cf_text_token delims_before="&#10;" string=""/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="32" width="61" x="22" y="496"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cancerres.aacrjournals.org/cgi/content/full/63/15/4295" latched="true">
+      <image_element bias="1.0" href="http://ict.sagepub.com" purl="http://ict.sagepub.com/portal_imgs/search_result.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Home page"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="80" width="59" x="72" y="273"/>
+      </visual>
+    </surrogate>
+    <surrogate history_num="36">
+      <text_element bias="1.0" font_color="ff3366" participant_created="true" stroke_color="c8c8c8">
+        <text_chunk font_size="15" non_stop_index="0.5833333" stroke_style="2">
+          <cf_text_token delims_before="" string="The"/>
+          <cf_text_token delims_before=" " string="fundamental"/>
+          <cf_text_token delims_before=" " string="prevention"/>
+          <cf_text_token delims_before=" " string="is"/>
+          <cf_text_token delims_before=" " string="a"/>
+          <cf_text_token delims_before=" " string="healthy"/>
+          <cf_text_token delims_before=" " string="lifestyle"/>
+          <cf_text_token delims_before=" " string="rich"/>
+          <cf_text_token delims_before=" " string="in"/>
+          <cf_text_token delims_before=" " string="natural"/>
+          <cf_text_token delims_before="  " string="antioxidants"/>
+          <cf_text_token delims_before=" " string=""/>
+        </text_chunk>
+        <participant/>
+        <metadata/>
+      </text_element>
+      <visual>
+        <extent height="40" width="498" x="7" y="601"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cancermonthly.com/" latched="true">
+      <image_element bias="1.0" href="http://www.cancermonthly.com/immune.asp" purl="http://www.cancermonthly.com/images/p_immune2.jpg">
+        <participant intensity="4"/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="43" width="43" x="261" y="194"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.answers.com/topic/antioxidant" latched="true">
+      <image_element bias="1.0" purl="http://content.answers.com/main/content/wp/en/thumb/f/f2/270px-Vegetarian_diet.jpg">
+        <participant intensity="1"/>
+        <metadata>
+          <metadata_field name="Caption" value="Fruits and vegetables are good sources of antioxidants."/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="142" width="86" x="422" y="450"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.healthcastle.com/pomegranate-juice-heart-diabetes.shtml" latched="true">
+      <image_element bias="1.0" positive_clicks="1" purl="http://www.healthcastle.com/images/pomegranate.jpg">
+        <participant intensity="4"/>
+        <metadata>
+          <metadata_field name="Caption" value="Pomegranate Juice heart diabetes"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="93" width="64" x="258" y="447"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://abcnews.go.com/Health/Diet/story?id=3500666&amp;page=1" latched="true">
+      <image_element bias="1.0" purl="http://a.abcnews.com/images/Health/pd_vitamins_070622_ms.jpg">
+        <participant intensity="4"/>
+        <metadata>
+          <metadata_field name="Caption" value="Vitamins"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="49" width="66" x="130" y="302"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.naturalhub.com/natural_food_guide_fruit_common.htm" latched="true">
+      <image_element bias="1.0" purl="http://www.hort.purdue.edu/newcrop/proceedings1999/images/v4-343.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="63" width="88" x="262" y="381"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.youtube.com/watch?v=cQR49TZ2Ia8&amp;amp;feature=related" latched="true">
+      <image_element bias="1.0" href="http://www.youtube.com/watch?v=8VGk8vIKbXs&amp;amp;feature=related" purl="http://i.ytimg.com/vi/8VGk8vIKbXs/default.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="49" width="66" x="117" y="511"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.youtube.com/watch?v=TxwIzdPMSjM&amp;amp;feature=related" latched="true">
+      <image_element bias="1.0" href="http://www.youtube.com/watch?v=puDRDZSSw44&amp;amp;feature=related" purl="http://i.ytimg.com/vi/puDRDZSSw44/default.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="58" width="79" x="180" y="498"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.lifeplusvitamins.com/core-antioxidants.htm" latched="true">
+      <image_element bias="1.0" purl="http://www.lifeplusvitamins.com/images/healthy-nutrition-3.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="healthy nutrition antioxidants, lycopene, vitamin C, vitamin E, noni juice, green tea extract, information, OPC, free radicals, antioxidant"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="52" width="88" x="12" y="381"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.cancermonthly.com/" latched="true">
+      <image_element bias="1.0" purl="http://www.cancermonthly.com/images/p_nutritional.jpg">
+        <participant intensity="4"/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="47" width="47" x="379" y="450"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.webmd.com/cancer/default.htm" latched="true">
+      <image_element alpha_radius="17" bias="1.0" has_transparency="true" href="http://www.webmd.com/video/lung-cancer-men-vs-women/" min_alpha="4128768" purl="http://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/thumbnails/video/48x48_lung_cancer_men_vs_wo.jpg">
+        <participant intensity="5"/>
+        <metadata>
+          <metadata_field name="Caption" value="chest x-ray"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="44" width="44" x="140" y="187"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://topics.nytimes.com/top/news/health/diseasesconditionsandhealthtopics/cancer/index.html?inline=nyt-classifier" latched="true">
+      <image_element bias="1.0" href="http://nytimes.feedroom.com/?fr_story=95b74079b4481046579a98f8d62638d10011f7ab" purl="http://graphics8.nytimes.com/images/2005/12/12/health/can_environ190.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="The Environment and Cancer"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="45" width="61" x="304" y="97"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.webmd.com/cancer/news/20080125/antioxidant-pills-dont-cut-cancer-risk" latched="true">
+      <image_element bias="1.0" href="http://www.webmd.com/video/foods-after-cancer/" purl="http://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/thumbnails/video/48x48_foods_after_cancer.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="62" width="62" x="105" y="447"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nlm.nih.gov/medlineplus/cancer.html" latched="true">
+      <image_element alpha_radius="13" bias="1.0" has_transparency="true" min_alpha="2031616" purl="http://www.nlm.nih.gov/medlineplus/images/cancercells.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Illustration of cancer cells"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="67" width="79" x="186" y="186"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://topics.nytimes.com/top/news/health/diseasesconditionsandhealthtopics/cancer/index.html?inline=nyt-classifier" latched="true">
+      <image_element alpha_radius="6" bias="1.0" has_transparency="true" href="http://video.on.nytimes.com/?fr_story=bca7cf83a63a6db9071d0bfaf1f037fbcf0611d4" min_alpha="1310720" purl="http://graphics8.nytimes.com/images/2006/09/19/science/19kolata_vid.190.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Blocking a Path to Cancer"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="43" width="60" x="348" y="216"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.nlm.nih.gov/medlineplus/nutritionforseniors.html" latched="true">
+      <image_element bias="1.0" purl="http://www.nlm.nih.gov/medlineplus/images/seniorlunch2.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Photograph of a senior woman eating lunch with a caregiver"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="66" width="66" x="346" y="143"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.vitacost.com/Healthnotes/Supp/Vitamin-E.aspx" latched="true">
+      <image_element bias="1.0" href="http://www.vitacost.com/NSI-100-Natural-Vitamin-E-1-000-IU-250-Softgels/" purl="http://www.vitacost.com/store/images/Images50/835003001927.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Nutraceutical Sciences Institute (NSI) 100% Natural Vitamin E"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="100" width="49" x="281" y="256"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://cancerres.aacrjournals.org/cgi/content/full/63/15/4295" latched="true">
+      <image_element bias="1.0" href="http://carcin.oxfordjournals.org" purl="http://carcin.oxfordjournals.org/portal_imgs/search_result.gif">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Home page"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="86" width="64" x="395" y="267"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.vitamins-supplements.org/antioxidant.php" latched="true">
+      <image_element bias="1.0" href="http://www.xtend-life.com/product/Total_Balance_Unisex.aspx?id=213186" purl="http://www.vitamins-supplements.org/totalbalance.gif">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="99" width="78" x="201" y="260"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://en.wikipedia.org/wiki/Cancer" latched="true">
+      <image_element bias="1.0" href="http://en.wikipedia.org/wiki/Image:Normal_cancer_cell_division_from_NIH.png" purl="http://upload.wikimedia.org/wikipedia/commons/b/b7/Normal_cancer_cell_division_from_NIH.png">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="119" width="57" x="253" y="31"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://www.healthcastle.com/antioxidant.shtml" latched="true">
+      <image_element bias="1.0" href="http://www.healthcastle.com/whole-grains.shtml" purl="http://www.healthcastle.com/images/wholegrains_50.jpg">
+        <participant/>
+        <metadata/>
+      </image_element>
+      <visual>
+        <extent height="61" width="61" x="321" y="446"/>
+      </visual>
+    </surrogate>
+    <surrogate containerURL="http://topics.nytimes.com/top/news/health/diseasesconditionsandhealthtopics/cancer/index.html?inline=nyt-classifier" latched="true">
+      <image_element bias="1.0" href="http://nytimes.feedroom.com/?fr_story=5b04b37c2678c35dbd369bab57f98a296da98b44" purl="http://graphics8.nytimes.com/images/2006/04/23/nyregion/20chernobyl-video.190.jpg">
+        <participant/>
+        <metadata>
+          <metadata_field name="Caption" value="Thyroid Cancer in New York"/>
+        </metadata>
+      </image_element>
+      <visual>
+        <extent height="43" width="66" x="212" y="148"/>
+      </visual>
+    </surrogate>
+  </collage_element_set>
+</composition>

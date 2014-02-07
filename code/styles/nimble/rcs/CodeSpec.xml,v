@@ -1,0 +1,35 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	99.02.07.05.35.49;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Version stem-0.1.0: 1st version which works extensively. still tuning output. propogate,mosh,versioning,SourceControl, and tags all seem to work. documentation function has not been started yet. site tree building is untested. site tree Template elements have not been updated yet to use setArg(...) functionality
+@
+text
+@<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="nimble.css"/>
+<code file="nimbleie3.css"/>
+<code file="nimble.js"/>
+
+</code_spec>
+@

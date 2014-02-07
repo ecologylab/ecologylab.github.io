@@ -1,0 +1,81 @@
+<!- -*-Java-*- ->
+<html>
+<style type="text/css">
+<!--
+body
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif";
+   font-size: 12pt;
+   font-weight: 600;
+}
+td
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+ul
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Sans-Serif"; 
+   font-size: 11pt;
+   font-weight: 600;
+}
+blockquote
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+.subhead
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 12pt;
+   color: "cc6600";
+   font-weight: bolder;
+}
+
+.head
+{
+   font-family: "Verdana, Century Gothic, Geneva, Arial, Sans-Serif"; 
+   font-size: 13pt;
+}
+.tiny
+{
+   font-size: 7pt
+}
+.small
+{
+   font-size: 9pt
+}
+.caption
+{
+   font-size: 9pt;
+   color: "#996600";
+}
+.ibm
+{
+   font-size: 10pt;
+   font-weight: 700;
+   color: "330099";
+}
+.mitsui
+{
+   font-size: 10pt;
+   font-weight: 700;
+   color: "black";
+}
+.slogan
+{
+   font-style: italic;
+   font-size: 8pt;
+   font-weight: 700;
+   color: "336699";
+}
+.tm
+{
+   vertical-align: super;
+   font-size: 5pt;
+}
+-->
+</style>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">environment setup [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="res/guide.css" rel="stylesheet">
+<link rel="icon" href="http://ecologylab.net/images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="http://ecologylab.net/images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="http://ecologylab.net/images/ecologylab-16.png" type="image/png">
+
+<script src="res/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">In browser Meta Metadata Authoring Tool:</div>
+<div class="title4a">tutorial [configuring tool]</div>
+</div>
+
+<div class="nav">
+<div class="block">
+ 	<a class="navselected_bold_red" href="http://ecologylab.net/research/simplGuide/index.html">s.im.pl</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/serialization/index.html">serialization</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/oodss/index.html">oodss</a>
+	<a class="subnavlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+	<a class="navselected_bold" href="http://ecologylab.net/research/simplGuide/metaMetadata/index.html">meta-metadata</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/prereqs.html">prereqs</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/generalPrincipals.html">principles</a>
+	<a class="navselected" href="http://ecologylab.net/research/simplGuide/metaMetadata/environmentSetup.html">development<br>environment</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/metaMetadata/libtutorials.html">tutorials</a>
+</div>
+
+<div class="block">
+	<a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&amp;hl=en&amp;single=true&amp;gid=3&amp;output=html">reference</a>
+	<a class="navlink" target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/repository.html">repository</a>
+	<a class="navlink" href="http://ecologylab.net/research/simplGuide/community.html">community</a>
+</div>
+	
+<div class="block">
+  <a class="navlink" target="_blank" href="http://ecologylab.net/research/index.html">research</a>
+  <a class="navlink" target="_blank" href="http://ecologylab.net/index.html">interface ecology lab</a>
+</div>
+
+</div>
+<div class="content">
+  <h2>Pre-requisites</h2>
+<ol>
+  <li><a href="http://eclipse.org/">Eclipse</a></li>
+  <li><span class="main" style="line-height: 150%;"> You will need the <a href="http://subclipse.tigris.org/">Subclipse Plugin 1.6+</a>, or some other means for accessing SVN. </span></li>
+  <li><a href="http://www.google.com/chrome" target="blank">Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/fx/">Firefox</a>.</li>
+  <li><a href="http://wiki.greasespot.net/Greasemonkey">Greasemonkey</a> (only for Firefox)<br>
+  </li>
+</ol>
+<h2>Downloading the repositories</h2>
+<p class="main" style="line-height: 150%;">
+To download all the necessary projects that will be needed to create a
+<i>meta-metadata</i> application follow these steps:
+</p>
+<ol>
+<li>
+ In Eclipse select Window &gt; Open Perspective &gt; Other
+<br>
+Then select SVN Repository Explorer.
+<img src="res/openPerspective.png" alt=""  width="50%"></li>
+<li>
+ Right click in the space below SVN Repositories and select New &gt; Repository Location
+
+<br>
+The URLs of the five projects needed:
+<img src="res/reposLoc.png"  width="50%"><br><br>
+https://svn.ecologylab.net/ecologylabFundamental/trunk
+<br><br>
+https://svn.ecologylab.net/ecologylabGeneratedSemantics/trunk
+<br><br>
+https://svn.ecologylab.net/ecologylabSemantics/trunk
+<br><br>
+https://svn.ecologylab.net/cyberneko/trunk
+<br>
+<br>
+https://svn.ecologylab.net/jtidy<br>
+<br>
+https://svn.ecologylab.net/MMDAuthoring/trunk
+<br>
+<br>
+Username: anonymous, password: anonymous.
+</li>
+<li> For each repository right-click on the trunk folder, and select Checkout.
+The default project settings should be correct, click Finish.
+</li></ol>
+<br>
+<h2>Setting up Meta MetaData Respository Service</h2>
+<ol>
+<li>
+Once all the projects are checked out return to the Java perspective.<br> A few errors might show up, to correct these you may need<br> <ul>
+  <li>
+To right-click
+  on the ecologylabGeneratedSemantics project &gt; click Properties &gt; choose Java Build Path
+  on the left &gt; click the Projects Tab &gt; select ecologylabInteractive &gt; hit Remove.
+  This will fix those errors.
+  </li><li>
+  To cleanup by going to Projects->Clean->clean all projects</li></ul><img src="res/buildPath.png"  width="70%"></li>
+<li>Before starting service please make sure that your port 82 is available.</li>
+<li>To start Respository service run MMDRepositoryServer.java </li>
+</ol>
+
+<h2>Installing extension </h2>
+<h2>Firefox</h2>
+<ol>
+  <li>Install Greasemonkey.</li>
+  <li>Enable your Greasemonkey Add and just drag and drop xpath_firefox.user.js from working directory of  MMDAuthoring project.<br><img src="res/firefox_install.png"  ></li>
+  <li>Click install. That's it.</li>
+</ol><br><h2>Chrome</h2><ol>
+  <li>Just drag and drop xpath_chrome.user.js from working directory of  MMDAuthoring project.</li>
+  <li>Click continue on bottom right and then click install. That's it.<br><img src="res/chrome_install.png"  ><br><br><img src="res/chrome_install2.png"  ></li>
+</ol>
+
+Contiue to next tutorial on <a href="usingMMDAuthoringTool.html">Using MMD Authoring Tool.</a></div>
+
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+an <a href="http://ecologylab.net/">interface ecology lab</a> production
+</div>
+
+
+</div>
+</body></html>

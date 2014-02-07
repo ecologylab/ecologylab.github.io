@@ -1,0 +1,437 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">java mono-morphic</div>
+</div>
+
+<br clear="all" />
+
+
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="navselected" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="navselected_bold" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+
+</div>
+<!--
+
+<div class="tall_nav">
+
+<div class="block">
+  <a class="navlink" href="../../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../iiBAMSpecs.html">iiBAM guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="navselected" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicJava.html">- java polymorphic</a>
+  <a class="subnavlink2" href="javaToObjC.html" style="margin-top: 12px;">- obj c getting started</a>
+  <a class="subnavlink2" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a class="subnavlink2" href="monoMorphicCSharp.html" style="margin-top: 12px;">- c# mono-morphic</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+
+</div>
+-->
+
+<h5>Getting Started:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#annotated" >Java Annotated Classes</li>
+<li><a href="#translation" >Translation Scopes</li>
+<li><a href="#translate" >Translating XML</li>
+
+
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+In this tutorial we give a brief example of how S.IM.PL serialization can be used to translate between xml
+and java annotated classes. The particular xml scheme that this example focuses on is RSS. 
+</p>
+
+<p>
+To view this tutorial you will need to download the entire <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk">simplTutorials</a>, 
+<a class="checkthis" href="https://svn.ecologylab.net/simplTranslators/trunk">simplTranslators</a> and 
+<a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">ecologylabFundamental </a> projects.
+Access to the ecologylab fundamental project source is available 
+through anonymous SVN access (user: anonymous, password: anonymous).<br/><br/>The source for this tutorial is
+located under <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk/src/tutorials/">
+/trunk/simplTutorials/src/tutorials/</a></p>
+
+
+<a name="annotated"> </a>
+<h5>Java Annotated Classes</h5>
+<hr/>
+
+<p>
+The following are the set of classes defined to represent the Rss xml structure. Note that each of these
+classes extends ElementState, which is the root class of all classes that intend to use translation. In addition
+to being a subclass of ElementState, each class has an annotated set of fields. These fields can either be translated
+into attributes of the class's tag or into elements nested within the class element.
+</p>
+<p>
+Rss is the definition for the root Rss element. It contains a single scalar version, which is annotated
+by @simpl_scalar, and composite element Channel, annotated by @simpl_composite. It is important to note that class names and
+field names are associated with tags and attributes in the xml based on a default translation. In the case of Rss, 
+s.im.pl serialization uses the part of the name prior to "State" by default.</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Rss.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Rss&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">version;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_composite&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Channel&nbsp;&nbsp;&nbsp;&nbsp;channel;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Rss</font><font color="#000000">()&nbsp;{}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<br></br>
+
+<p>
+Now we'll take a look at Channel, the composite component of Rss. Channel has several sub-elements.
+These sub-elements are all of types that we refer to as scalar. So in this case to specify that they
+are sub-elements rather than attributes we use the @simple_hints(Hint.XML_LEAF) annotation. 
+</p>
+<p>
+In addition, channel contains a collection. This is a collection of "items". In Rss, this collection is
+not contained within a seperate element. For this reason, we specify the @simpl_nowrap annotation, which indicates
+that the collection should not be contained within a sub-element. The @simpl_collection("item") annotation specifies
+two things. First, it specifies that the collection items should be translated. Second, it associates a tag
+name of "item" with the collection. This ensures that the translated elements of items have the tag name "item". 
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Channel.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.ArrayList;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.net.ParsedURL;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Channel&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;title;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;description;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;link;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_nowrap</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;item&#34;</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">ArrayList&lt;Item&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Channel</font><font color="#000000">()&nbsp;{&nbsp;}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ArrayList&lt;Item&gt;&nbsp;getItems</font><font color="#000000">()&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">items;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<br></br>
+<p>
+Finally, we define the item class. An item has several sub elements, each of which is a leaf.
+An item may also have a collection of category elements. Here we use the same annotation as before with items.
+
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Item.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.ArrayList;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.net.ParsedURL;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Item&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;&nbsp;&nbsp;link;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;&nbsp;&nbsp;guid;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_nowrap</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;category&#34;</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">ArrayList&lt;String&gt;&nbsp;&nbsp;&nbsp;&nbsp;categorySet;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Item</font><font color="#000000">()&nbsp;{}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="translation"> </a>
+<h5>Translation Scopes</h5>
+<hr/>
+
+<p>
+Translation scopes are used to specify the set of classes available for translation when 
+translating from xml. Here we define a class with a static method that returns a translation
+scope referencing all of the Rss classes: Rss, Channel, and Item.
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//RssTranslations.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.generic.Debug;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.serialization.TranslationScope;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">RssTranslations&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Debug</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#000000">TranslationScope&nbsp;get</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">TranslationScope.get</font><font color="#000000">(</font><font color="#2a00ff">&#34;rss&#34;</font><font color="#000000">,&nbsp;Rss.class,&nbsp;Channel.class,&nbsp;Item.</font><font color="#7f0055"><b>class</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="translate"> </a>
+<h5>Translating XML</h5>
+<hr/>
+
+<p>
+In order to translate from XML we must acquire the proper translation scope.
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+		<font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><font color="#7f0055"><b>throws&nbsp;</b></font><font color="#000000">IOException,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">XMLTranslationException</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;rssTranslations&nbsp;=&nbsp;RssTranslations.get</font><font color="#000000">()</font><font color="#000000">;</font>
+	</code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<p>
+Next we'll read in the Rss feed for a comparison with the translated version.
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">URL&nbsp;url&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">URL</font><font color="#000000">(</font><font color="#2a00ff">&#34;http://www.xkcd.com/rss.xml&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String&nbsp;rssContent&nbsp;=&nbsp;readURL</font><font color="#000000">(</font><font color="#000000">url</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff"></font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;Raw&nbsp;RSS&nbsp;Feed:&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#000000">rssContent</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff"></font>
+</code>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<p>
+Now we'll translate the xml feed into an Rss object and then translate back to xml. Notice how if
+there are parts of the xml that are not annotated with the classes that they are simply ignored. In this case
+channel's language element and item's pubDate element. 
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Rss&nbsp;feed&nbsp;=&nbsp;</font><font color="#000000">(</font><font color="#000000">Rss</font><font color="#000000">)&nbsp;</font><font color="#000000">rssTranslations.deserialize</font><font color="#000000">(</font><font color="#000000">url</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;\nFeed&nbsp;translated&nbsp;back&nbsp;to&nbsp;xml&nbsp;by&nbsp;s.im.pl serialization:&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#000000">feed.serialize</font><font color="#000000">())</font><font color="#000000">;</font><br />
+</code>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<p>
+In this last section we will create our own channel item and then put it in the Rss feed.
+Note we can just create an instance of item and set all of it's instance variables to the
+values that we wish. Then we just add the new item to the channel's list of items and 
+translate back to xml.
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Item&nbsp;ecologylabItem&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">Item</font><font color="#000000">()</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ecologylabItem.setTitle</font><font color="#000000">(</font><font color="#2a00ff">&#34;The&nbsp;Interface&nbsp;Ecology&nbsp;Lab&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ecologylabItem</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.setDescription</font><font color="#000000">(</font><font color="#2a00ff">&#34;Highlights&nbsp;the&nbsp;cool&nbsp;research&nbsp;going&nbsp;on&nbsp;at&nbsp;the&nbsp;lab.&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ecologylabItem.setAuthor</font><font color="#000000">(</font><font color="#2a00ff">&#34;Dr.&nbsp;Andruid&nbsp;Kerne&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ecologylabItem</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">.setLink</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ParsedURL</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">URL</font><font color="#000000">(</font><font color="#2a00ff">&#34;http://www.ecologylab.net&#34;</font><font color="#000000">)))</font><font color="#000000">;</font><br />
+		<font color="#ffffff"></font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">feed.getChannel</font><font color="#000000">()</font><font color="#000000">.getItems</font><font color="#000000">()</font><font color="#000000">.add</font><font color="#000000">(</font><font color="#990000">0</font><font color="#000000">,&nbsp;ecologylabItem</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff"></font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;\nFeed&nbsp;translated&nbsp;to&nbsp;xml&nbsp;with&nbsp;our&nbsp;added&nbsp;item:&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#000000">feed.serialize</font><font color="#000000">())</font><font color="#000000">;</font><br />
+		<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font>
+</code>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

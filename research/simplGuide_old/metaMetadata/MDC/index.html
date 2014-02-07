@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Metadata Director's Cut</title>
+    <!-- CSS! -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+    <link href="css/mdc.css" rel="stylesheet" media="screen">
+    <link href="../ICE/ice.css" rel="stylesheet" type="text/css">
+
+    <!-- Scripts! -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/prettify.js"></script>
+
+    <script type="text/javascript" src="../ICE/ice.js"></script>
+    <script type="text/javascript" src="../ICE/browserCheck.js"></script>
+
+    <script type="text/javascript" src="js/mdc.js"></script>
+
+  </head>
+  <body onload="onBodyLoad()">
+
+    <!-- Loading Modal - Doesn't work yet -->
+    <div id="loadingModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-body">
+        <p>Loading</p>
+      </div>
+    </div>
+
+    <!-- Link Modal -->
+    <div id="linkModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <h3 id="myModalLabel">Link to this Metadata</h3>
+      </div>
+      <div class="modal-body">
+        <p>Copy this link to your clipboard for easy sharing</p>
+        <input type="text" class="span5" id="modalLinkValue" placeholder="Type something…">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="https://github.com/ecologylab/BigSemantics/wiki/In-Context-Expander-(ICE)"> Metadata Director's Cut</a>
+            <form class="navbar-form pull-right" action="" onsubmit="return false;">
+              <input type="text" size="500" class="span5" id="targetURL" onkeydown="onEnterShowMetadata(event);" value="http://en.wikipedia.org/wiki/Red_panda"/>
+              <button type="button" class="btn" onclick="showMetadata();">Go!</button>
+              <button type="button" class="btn" data-toggle="modal" data-target="#linkModal" onclick="setLinkValue();"><i class="icon-bookmark"></i></button>
+            </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Content -->
+    <div class ="container">
+      <div class="row">
+        <div class="span9 title">ICE</div>
+      </div>
+      <!-- http://jsfiddle.net/KJQ9K/ -->
+
+      <!-- old layout
+        <div class="row">
+          <div class="span6 content" id="mdcIce"></div>
+          <div class="span6 content" id="mdcJson">
+            <pre class="prettyprint languague-css" id="mdcJsonPP"></pre>
+          </div>
+        </div> 
+      -->
+      <div class="row">
+        <div class="span9 content" id="mdcIce"></div>
+      </div> 
+
+      <div class="row">
+        <div class="span9 title">
+          JSON
+          <div class="btn-group" data-toggle="buttons-radio">
+            <button type="button" id="mdJsonButton" class="btn btn-mini btn-primary active">Metadata</button>
+            <button type="button" id="mmdJsonButton" class="btn btn-mini">MMD</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span9 content" id="mdcJson">
+          <pre class="prettyprint languague-css" id="mdcJsonPP"></pre>
+        </div>
+      </div> 
+      
+    </div>
+
+    <script>
+      MetadataRenderer.initMetadataRenderings();
+    </script>
+
+  </body>
+</html>

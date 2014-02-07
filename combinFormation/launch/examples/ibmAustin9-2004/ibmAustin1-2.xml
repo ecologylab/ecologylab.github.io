@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="772" width="520"/>
+  </preferences>
+  <site_set>
+    <site domain="filesystem.local" strokeHue="0.041666668"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.research.ibm.com/arl/"/>
+    <traversable urlString="http://www-106.ibm.com/developerworks/wireless/"/>
+    <traversable urlString="http://www.internethomealliance.com/"/>
+    <traversable urlString="http://domino.research.ibm.com/acas/"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container purl="http://www.research.ibm.com/arl/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.internethomealliance.com/pilots_projects/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://domino.research.ibm.com/acas/w3www_acas.nsf/pages/mission.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.internethomealliance.com/" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.internethomealliance.com/resrch_reports/" generation="1">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://domino.research.ibm.com/acas/w3www_acas.nsf/pages/mission.html" historyNum="8">
+      <text_element alpha="255" HTMLFragmentCreated="true" g="172" b="255">
+        <text_chunk sameHref="true" nonStopIndex="0.509434">
+          <text_token string="IBM"/>
+          <text_token string="Austin"/>
+          <text_token string="Center"/>
+          <text_token string="for"/>
+          <text_token string="Advanced"/>
+          <text_token string="Studies"/>
+          <text_token string="Mission:"/>
+          <text_token string="promoting"/>
+          <text_token string="and"/>
+          <text_token string="cultivating"/>
+          <text_token string="university"/>
+          <text_token string="relationships"/>
+          <text_token string="and"/>
+          <text_token string="collaborative"/>
+          <text_token string="research"/>
+          <text_token string="between"/>
+          <text_token string="IBM"/>
+          <text_token string="and"/>
+          <text_token string="universities"/>
+          <text_token string="across"/>
+          <text_token string="the"/>
+          <text_token string="United"/>
+          <text_token string="States"/>
+          <text_token string="and"/>
+          <text_token string="beyond."/>
+          <text_token string=""/>
+          <text_token string=""/>
+          <text_token string="Provides"/>
+          <text_token string="universities"/>
+          <text_token string="with"/>
+          <text_token string="a"/>
+          <text_token string="window"/>
+          <text_token string="that"/>
+          <text_token string="spans"/>
+          <text_token string="a"/>
+          <text_token string="relevant"/>
+          <text_token string="cross-section"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="Corporation."/>
+          <text_token string=""/>
+          <text_token string=""/>
+          <text_token string="A"/>
+          <text_token string="focal"/>
+          <text_token string="point"/>
+          <text_token string="for"/>
+          <text_token string="an"/>
+          <text_token string="effective,"/>
+          <text_token string="coordinated"/>
+          <text_token string="approach"/>
+          <text_token string="to"/>
+          <text_token string="university"/>
+          <text_token string="rdddelations."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="55" width="455" height="142"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://domino.research.ibm.com/acas/w3www_acas.nsf/pages/mission.html" historyNum="9">
+      <image_element purl="http://www.research.ibm.com/images/v11/icons/rt_arrow.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="298" y="969" width="7" height="5"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://domino.research.ibm.com/acas/w3www_acas.nsf/pages/mission.html" historyNum="10">
+      <image_element purl="http://www.research.ibm.com/images/v11/icons/ra_cl.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="298" y="969" width="7" height="5"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://domino.research.ibm.com/acas/w3www_acas.nsf/pages/mission.html" historyNum="2">
+      <image_element minAlpha="3801088" alphaRadius="18" purl="http://www.research.ibm.com/images/v11/masthead/mast_logo.gif" href="http://www.ibm.com/" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="10" width="150" height="47"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="17">
+      <image_element purl="http://www.internethomealliance.com/images/spacer.gif" HTMLFragmentCreated="true" bias="Infinity">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="85" y="697" width="2" height="2"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="18">
+      <image_element purl="http://www.internethomealliance.com/images/spacer.gif" HTMLFragmentCreated="true" bias="Infinity">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="85" y="697" width="2" height="2"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="19">
+      <image_element purl="http://www.internethomealliance.com/images/spacer.gif" HTMLFragmentCreated="true" bias="Infinity">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="85" y="697" width="2" height="2"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/pilots_projects/" historyNum="15">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="255" g="133" b="51" bias="2.7182817">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.48">
+          <text_token string="The"/>
+          <text_token string="Alliance"/>
+          <text_token string="views"/>
+          <text_token string="the"/>
+          <text_token string="connected"/>
+          <text_token string="home"/>
+          <text_token string="as"/>
+          <text_token string="a"/>
+          <text_token string="series"/>
+          <text_token string="of"/>
+          <text_token string="three"/>
+          <text_token string="distinct,"/>
+          <text_token string="but"/>
+          <text_token string="related"/>
+          <text_token string="ecosystems:"/>
+          <text_token string="family,"/>
+          <text_token string="career"/>
+          <text_token string="and"/>
+          <text_token string="entertainment."/>
+          <text_token string="The"/>
+          <text_token string="Alliance"/>
+          <text_token string="is"/>
+          <text_token string="operationalizing"/>
+          <text_token string="this"/>
+          <text_token string="concept."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="339" width="287" height="369"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="21">
+      <image_element purl="http://www.internethomealliance.com/images/spacer.gif" HTMLFragmentCreated="true" bias="Infinity">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="48" y="242" width="2" height="2"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="23">
+      <image_element hasTransparency="true" minAlpha="3997696" alphaRadius="57" purl="http://www.internethomealliance.com/images/corner/graph.jpg" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="107" y="268" width="180" height="280"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/resrch_reports/" historyNum="22">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="255" g="133" b="51" bias="2.7182817">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+          <text_token string="rigorous"/>
+          <text_token string="market"/>
+          <text_token string="research"/>
+          <text_token string="and"/>
+          <text_token string="original"/>
+          <text_token string="interviews"/>
+          <text_token string="in"/>
+          <text_token string="hopes"/>
+          <text_token string="of"/>
+          <text_token string="improving"/>
+          <text_token string="your"/>
+          <text_token string="understanding"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="market"/>
+          <text_token string="and"/>
+          <text_token string="more"/>
+          <text_token string="importantly,"/>
+          <text_token string="informing"/>
+          <text_token string="your"/>
+          <text_token string="business"/>
+          <text_token string="strategies."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="303" y="583" width="195" height="125"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/" historyNum="14">
+      <image_element hasTransparency="true" minAlpha="1638400" alphaRadius="21" purl="http://www.internethomealliance.com/images/nav_home.gif" href="http://www.internethomealliance.com/" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="305" width="200" height="81"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/" historyNum="12">
+      <image_element hasTransparency="true" minAlpha="5308416" alphaRadius="102" purl="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/Lab10s2.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="202" y="351" width="300" height="234"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/" historyNum="13">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="180" g="230" b="254">
+        <text_chunk sameHref="true" nonStopIndex="0.7">
+          <text_token string="hands-off"/>
+          <text_token string="control"/>
+          <text_token string="and"/>
+          <text_token string="a"/>
+          <text_token string="means"/>
+          <text_token string="for"/>
+          <text_token string="visually"/>
+          <text_token string="monitoring"/>
+          <text_token string="the"/>
+          <text_token string="network"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="184" y="501" width="318" height="46"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.internethomealliance.com/pilots_projects/" historyNum="20">
+      <image_element hasTransparency="true" minAlpha="2949120" alphaRadius="32" purl="http://www.internethomealliance.com/images/corner/member_comm.jpg" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="236" y="583" width="78" height="125"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.research.ibm.com/arl/" historyNum="27">
+      <image_element purl="http://www.research.ibm.com/arl/images/gen/arl-collage.jpg" HTMLFragmentCreated="true" bias="2.7182817">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="206" width="336" height="48"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/" historyNum="11">
+      <image_element hasTransparency="true" minAlpha="6094848" alphaRadius="111" purl="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/PvCKit1.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="189" y="181" width="300" height="225"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www-106.ibm.com/developerworks/wireless/library/wi-pvc/" historyNum="10">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="180" g="230" b="254">
+        <text_chunk sameHref="true" nonStopIndex="0.71428573">
+          <text_token string="Ideas"/>
+          <text_token string="are"/>
+          <text_token string="cooking"/>
+          <text_token string="in"/>
+          <text_token string="the"/>
+          <text_token string="networked"/>
+          <text_token string="kitchen"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="332" y="292" width="170" height="70"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.research.ibm.com/arl/" historyNum="26">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="255" g="255" b="255" bias="2.7182817">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Austin"/>
+          <text_token string="Research"/>
+          <text_token string="Lab"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="106" y="233" width="188" height="31"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>history echo tutorial [oodss]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl oodss:<br/></div>
+<div class="title4a">history echo tutorial [java]</div>
+</div>
+
+<br clear="all" />
+
+<div class="nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../../serialization/index.html">serialization</a>
+	<a class="navlink" href="../index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">oodss</a>
+ 	<a class="navlink" href="../tutorial.html">tutorials</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+	
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+</div>
+	
+<div class="block">
+  <a class="navlink" target="_blank" href="../../index.html">research</a>
+  <a class="navlink" target="_blank" href="../../../../index.html">interface ecology lab</a>
+</div>
+
+</div>
+
+<h5>Contents:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#request" >Request Messages</li>
+<li><a href="#response" >HistoryEchoResponse</li>
+<li><a href="#translation" >Creating a Translation Scope</li>
+<li><a href="#serverclient" >Server/Client Instantiation</li>
+<li><a href="#flow" >Message Flow Explanation</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>Here we give an example service which demonstrates how to use the OODSS
+library for creating a network service.  The service shown is a History Echo 
+Service in which a server takes requests and then simply responds with a message 
+containing the request message just received in addition to the client's previous 
+request message.
+</p>
+
+<p>Access to the entire ecologylab fundamental project source is available 
+through <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">
+anonymous SVN access</a> (user: anonymous, password: anonymous).<br/>The source for this tutorial is in a project
+located under <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk/">
+/simplTutorials/trunk/</a></p>
+
+<a name="request"> </a>
+<h5>Request Messages</h5>
+<hr/>
+<p> 
+We first show the example message declarations, embedded with 
+<tt><a href="../xml/index.html" class="checkthis">s.im.pl serialization</a></tt> 
+metalanguage, then the creation of a translation scope, which specifies what 
+services are provided by a server. We conclude by walking through the flow of 
+control between a Java OODSS client and server, showing the messages that will 
+be passed through the network and resulting program output.
+</p>
+
+<p>
+ We define our RequestMessage subclass first. 
+ This message carries a String to be echoed by
+ the server (newEcho) from a client
+ application. It stores newEcho in the ECHO_HISTORY binding in the client 
+ session scope after retrieving its previous value (if any).
+</p> 
+
+<p>
+ This service does not use the application object scope, because each 
+ client only needs information about its own context. One could imagine 
+ a broader service, that echoed the previous message sent by any client, 
+ which would store the new message in the application object scope 
+ instead of the client session scope.
+</p>
+
+<div class="java">
+<span class="java4">public class </span><span class="java10">HistoryEchoRequest </span><span class="java4">extends </span><span class="java10">RequestMessage<br />
+</span><span class="java8">{<br />
+&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0; * ECHO_HISTORY binds to a String representing the previous string<br />
+&#xA0;&#xA0; * sent from the client application<br />
+&#xA0;&#xA0; */<br />
+&#xA0; </span><span class="java4">final static </span><span class="java10">String ECHO_HISTORY = </span><span class="java5">&#34;ECHO_HISTORY&#34;</span><span class="java10">;<br />
+&#xA0; </span><span class="java16">@simpl_scalar </span><span class="java10">String newEcho;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Constructor used on server.<br />
+&#xA0;&#xA0; * Fields populated automatically by s.im.pl serialization<br />
+&#xA0; */<br />
+&#xA0; </span><span class="java4">public </span><span class="java10">HistoryEchoRequest</span><span class="java8">() {}<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** Constructor used on client.<br />
+&#xA0;&#xA0; * </span><span class="java11">@param </span><span class="java14">newEcho a String that will be passed to the server to echo<br />
+&#xA0;&#xA0; * */<br />
+&#xA0; </span><span class="java4">public </span><span class="java10">HistoryEchoRequest</span><span class="java8">(</span><span class="java10">String newEcho</span><span class="java8">)<br />
+&#xA0; {<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">this</span><span class="java10">.newEcho = newEcho;<br />
+&#xA0; </span><span class="java8">}<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Called automatically by LSDCS on server<br />
+&#xA0;&#xA0; */<br />
+&#xA0; </span><span class="java16">@Override </span><span class="java4">public </span><span class="java10">HistoryEchoResponse performService</span><span class="java8">(</span><span class="java10">Scope cSScope</span><span class="java8">)<br />
+&#xA0; {<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * retrieve, from the session object registry,<br />
+&#xA0;&#xA0;&#xA0;&#xA0; *&#xA0; the last-sent string<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">StringBuffer prevEcho;<br />
+&#xA0;&#xA0;&#xA0; String prevEchoTmp;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * Retrieve, from the object registry,<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * the last-sent string. In the case that <br />
+&#xA0;&#xA0;&#xA0;&#xA0; * we are running a server in which echo_history<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * has already been instantiated in the application scope<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * then we will use and update a application level history value.<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">if</span><span class="java8">(</span><span class="java10">cSScope.get</span><span class="java8">(</span><span class="java10">ECHO_HISTORY</span><span class="java8">) </span><span class="java10">== </span><span class="java4">null</span><span class="java8">)<br />
+&#xA0;&#xA0;&#xA0; {<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; * In the case that the sever hasn't then we instantiate our own,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; * in the session scope.<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">cSScope.put</span><span class="java8">(</span><span class="java10">ECHO_HISTORY, </span><span class="java4">new </span><span class="java10">StringBuffer</span><span class="java8">())</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java8">}<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">prevEcho = </span><span class="java8">(</span><span class="java10">StringBuffer</span><span class="java8">) </span><span class="java10">cSScope.get</span><span class="java8">(</span><span class="java10">ECHO_HISTORY</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java3">// Temporarily store the previous echo string<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">prevEchoTmp = </span><span class="java4">new </span><span class="java10">String</span><span class="java8">(</span><span class="java10">prevEcho</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; *&#xA0; replace it with the new one<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">prevEcho.replace</span><span class="java8">(</span><span class="java7">0</span><span class="java10">,prevEcho.length</span><span class="java8">()</span><span class="java10">,newEcho</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * use both messages to create a new response<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">return new </span><span class="java10">HistoryEchoResponse</span><span class="java8">(</span><span class="java10">prevEchoTmp, newEcho</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; </span><span class="java8">}<br />
+}</span></div>
+
+<a name="response"> </a>
+<h5>Response Messages</h5>
+<hr/>
+<p>
+We now define our ResponseMessage subclass, an instance of which
+ is returned by the performService(...) method of HistoryEchoRequest. 
+ This class represents the result of the service execution on the server, 
+ and an instance of it will be serialized and returned to the client. Because 
+ we are using a Java OODSS client, this message's processResponse(...) method will 
+ be called automatically, printing both the previous (prevEcho) and most
+ recent (echo) strings sent to the server.
+</p>
+
+<div class="java">
+<span class="java4">public class </span><span class="java10">HistoryEchoResponse </span><span class="java4">extends </span><span class="java10">ResponseMessage<br />
+</span><span class="java8">{<br />
+&#xA0; </span><span class="java16">@simpl_scalar </span><span class="java10">String echo;<br />
+&#xA0; </span><span class="java16">@simpl_scalar </span><span class="java10">String prevEcho;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Constructor used on client.<br />
+&#xA0;&#xA0; * Fields populated automatically by s.im.pl serialization<br />
+&#xA0;&#xA0; */&#xA0; <br />
+&#xA0; </span><span class="java4">public </span><span class="java10">HistoryEchoResponse</span><span class="java8">() {}<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Constructor used on server<br />
+&#xA0;&#xA0; * </span><span class="java11">@param </span><span class="java14">prevEcho a String which indicates the previous echo<br />
+&#xA0;&#xA0; * received by the server.<br />
+&#xA0;&#xA0; * <br />
+&#xA0;&#xA0; * @ echo echo of the string just received by the History server.<br />
+&#xA0;&#xA0; */<br />
+&#xA0; </span><span class="java4">public </span><span class="java10">HistoryEchoResponse </span><span class="java8">(</span><span class="java10">String prevEcho, String echo</span><span class="java8">)<br />
+&#xA0; {<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">this</span><span class="java10">.prevEcho = prevEcho;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">this</span><span class="java10">.echo = echo;<br />
+&#xA0; </span><span class="java8">}<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Called automatically by OODSS on client<br />
+&#xA0;&#xA0; * */<br />
+&#xA0; </span><span class="java16">@Override </span><span class="java4">public </span><span class="java9">void </span><span class="java10">processResponse</span><span class="java8">(</span><span class="java10">Scope appObjScope</span><span class="java8">)<br />
+&#xA0; {<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">System.out.println</span><span class="java8">(</span><span class="java5">&#34;2nd To Last Message: &#34; </span><span class="java10">+ prevEcho +<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java5">&#34;\nLast Message: &#34; </span><span class="java10">+ echo</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; </span><span class="java8">}<br />
+&#xA0; <br />
+&#xA0; </span><span class="java14">/** <br />
+&#xA0;&#xA0; * Checks that the message does not have an error condition,<br />
+&#xA0;&#xA0; *&#xA0; for now we assume it doesn't */<br />
+&#xA0; </span><span class="java16">@Override </span><span class="java4">public </span><span class="java9">boolean </span><span class="java10">isOK</span><span class="java8">()<br />
+&#xA0; {<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">return true</span><span class="java10">;<br />
+&#xA0; </span><span class="java8">}<br />
+}</span></div>
+
+<a name="translation"> </a>
+<h5>Creating a Translation Scope</h5>
+<hr/>
+<p>
+The History Echo Services server and client each need a translation scope. 
+We define a single TranslationScope instance that we can use for both.  
+In addition to history echo messages, the application must translate 
+messages for establishing a session. The translations for such messages 
+are normally automatically added to the scope, but we will demonstrate 
+manual assembly. In practice, a class is usually defined for a service 
+which has a static get() accessor which will perform a similar process, 
+returning a translation scope for the associated service.
+</p>
+
+<div class="java">
+<span class="java10">
+&#xA0;&#xA0;&#xA0; Class</span><span class="java8">[] </span><span class="java10">historyEchoClasses = </span><span class="java8">{ </span><span class="java10">HistoryEchoRequest.class,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; HistoryEchoResponse.</span><span class="java4">class </span><span class="java8">}</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; *&#xA0; Get base translations with static accessor<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">TranslationScope baseServices = DefaultServicesTranslations.get</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/*<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * compose translations, to create the "histEchoTrans"<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * space inheriting the base translations<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">TranslationScope histEchoTranslations = <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; TranslationScope.get</span><span class="java8">(</span><span class="java5">&#34;histEchoTrans&#34;</span><span class="java10">,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; historyEchoClasses,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; baseServices</span><span class="java8">)</span><span class="java10">;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; <br />
+</span> </div>
+
+<a name="serverclient"> </a>
+<h5>Server/Client Instantiation</h5>
+<hr/>
+<p>
+We now initialize an instance of DoubleThreadedNIOServer.  We must first 
+instantiate a Scope for the server to use as an application/client scope.  The 
+constructor also requires a list of all local host addresses.  After the instance 
+has been constructed, we may just start the server which will then handle all 
+incoming requests.
+</p>
+
+<div class="java">
+&#xA0;&#xA0;&#xA0; <span class="java2">/*<br/>
+&#xA0;&#xA0;&#xA0;&#xA0; * Create a scope for the server to use as an application scope<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * as well as individual client session scopes.<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">Scope applicationScope = </span><span class="java4">new </span><span class="java10">Scope</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/* Acquire an array of all local ip-addresses */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">InetAddress</span><span class="java8">[] </span><span class="java10">locals = NetTools.getAllInetAddressesForLocalhost</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java2">/* Create the server and start the server so that it can<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * accept incoming connections.<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">DoubleThreadedNIOServer historyServer =<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; DoubleThreadedNIOServer.getInstance</span><span class="java8">(</span><span class="java7">2107</span><span class="java10">,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; locals,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; histEchoTranslations,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; applicationScope,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; idleTimeout,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; MTU</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; historyServer.start</span><span class="java8">()</span><span class="java10">;<br />
+</span></div>
+
+<p>
+If we want the server to act as a global history echo server we may instantiate
+the echo history object within the application scope.  In this case the
+HistoryEchoRequest message will use an application level value for the 
+message history causing the server to always return the last received 
+message by any client.
+</p>
+
+<div class="java">
+&#xA0;&#xA0;&#xA0; <span class="java2">/* <br />
+&#xA0;&#xA0;&#xA0;&#xA0; * Initialize the ECHO_HISTORY registry in the application scope<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * so that the performService(...) of HistoryEchoRequest modifies<br />
+&#xA0;&#xA0;&#xA0;&#xA0; * the history in the application scope.<br />
+&#xA0;&#xA0;&#xA0;&#xA0; */<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">applicationScope.put</span><span class="java8">(</span><span class="java10">HistoryEchoRequest.ECHO_HISTORY,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">new </span><span class="java10">StringBuffer</span><span class="java8">())</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br /></span>
+</div>
+
+<p>
+ In order to initialize the client we must also specify a TranslationScope and
+ an application scope for the client application to use.  In addition, we must 
+ also give the address and port number of the server we wish the client to connect to.  
+ Once the client is initialized we must call the connect method in order for the client 
+ to create a socket connection to the server and perform the handshake.
+</p>
+
+<div class="java">
+<span class="java10">
+&#xA0;&#xA0;&#xA0; Scope clientScope = </span><span class="java4">new </span><span class="java10">Scope</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; client = </span><span class="java4">new </span><span class="java10">NIOClient</span><span class="java8">(</span><span class="java10">serverAddress, portNumber,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; histEchoTranslations,clientScope</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; client.connect</span><span class="java8">()</span><span class="java10">;<br />
+</span></div>
+
+<p>
+ All that is left at this point is to read messages from STDIN, create instances
+ of the HistoryRequestMessages with the given input and have the client send the
+ message to the server.
+</p>
+
+<div class="java">
+&#xA0;&#xA0;&#xA0; <span class="java4">while</span><span class="java8">(</span><span class="java4">true</span><span class="java8">)<br />
+&#xA0;&#xA0;&#xA0; {<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">String input = scan.nextLine</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">if</span><span class="java8">(</span><span class="java10">input.trim</span><span class="java8">()</span><span class="java10">.toLowerCase</span><span class="java8">()</span><span class="java10">.equals</span><span class="java8">(</span><span class="java5">&#34;exit&#34;</span><span class="java8">))<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">break</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; HistoryEchoRequest echoRequest = </span><span class="java4">new </span><span class="java10">HistoryEchoRequest</span><span class="java8">(</span><span class="java10">input</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">try<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java8">{<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">client.sendMessage</span><span class="java8">(</span><span class="java10">echoRequest</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java8">}<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">catch </span><span class="java8">(</span><span class="java10">MessageTooLargeException e</span><span class="java8">)<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; {<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">System.err.println</span><span class="java8">(</span><span class="java5">&#34;The message you sent was too large!&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; e.printStackTrace</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java8">}<br />
+&#xA0;&#xA0;&#xA0; }<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">client.disconnect</span><span class="java8">()</span><span class="java10">;<br />
+</span></div>
+
+<a name="flow"> </a>
+<h5>Message Flow Explanation</h5>
+<hr/>
+<p>
+In order to make clear the exchanges in an OODSS little semantic web service, 
+we will walk through the flow of control using a Java OODSS client 
+and server (see Figure 1). 
+</p>
+
+<p>
+Once the client application logic reads a string from the user, it then passes the message to the 
+constructor of <tt>HistoryEchoRequest</tt>. The instance of <tt>HistoryEchoRequest</tt> is transmitted to
+the server with the <tt>send(...)</tt> method, which automatically serializes the instance to XML 
+using <tt><a href="../../xml/index.html" class="checkthis">s.im.pl serialization</a></tt>. An HTTP-like header is created containing metadata about the message 
+(content length, etc.) and is pre-pended. The resulting bytes are then sent over the network 
+to the server.
+</p>
+
+<p>
+We assume the client provides the string "V. Bush". Because we used @xml_attribute 
+in <tt>HistoryEchoRequest</tt> to create compact XML representing a scalar String (new_echo), 
+the XML exchange begins:
+</p>
+
+<p><tt>
+&lt;history_echo_request new_echo="V. Bush"&gt;
+</tt></p>
+
+<p>
+The server reads the incoming header bytes and decodes them. Parsing the header 
+indicates to the server how to decode the remainder of the message and its length. 
+The incoming bytes are translated back into a XML, which is deserialized by <tt><a href="../../xml/index.html" class="checkthis">s.im.pl serialization</a></tt> 
+into a RequestMessage instance populated with the client-specified data (in this case, a 
+<tt>HistoryEchoRequest</tt>). 
+</p>
+
+<div style="border:1px solid black;">
+	<img src="../flowchart.png"/>
+	<p><b> Figure 1. Echo server with history flow of control. </b> Flow moves from top to bottom,
+	alternating sides. The example application echoes the client's input, along with the previous
+	input. Bold entries are method calls; underlined calls are overridden by the developer to define
+	functionality and invoked automatically by LSDCS; italicized calls are invoked manually by the
+	LSDCS application authored by the developer.
+	</p>
+</div>
+
+<p>
+The client manager on the server calls the message's performService(...) method using
+its client session scope. This extracts the previous string sent by the client
+(null in the first execution) from the session scope and stores it. It then places the
+new string into the scope for later, and instantiates a <tt>HistoryEchoResponse</tt> containing 
+both strings.
+</p>
+
+<p>
+On the first execution, previousEcho will be null, and thus will not be serialized in
+the XML in the server's response:
+</p>
+
+<p><tt>
+&lt;history_echo_response echo=&quot;V. Bush&quot;/&gt;
+</tt></p>
+
+<p>
+The client continues by sending &quot;T. Berners-Lee&quot;&#58;
+</p>
+
+<p><tt>
+&lt;history_echo_request new_echo=&quot;T. Berners-Lee&quot;/&gt;
+</tt></p>
+
+<p>
+The server then sends back both of the strings, after retrieving the
+previous one from the client's session scope:
+</p>
+
+<p><tt>
+&lt;history_echo_respnse echo=&quot;T. Berners-Lee&quot; prev_echo=&quot;V. Bush&quot;/&gt;
+</tt></p>
+
+<p>
+As with <tt>HistoryEchoRequest</tt> on the client, the <tt>HistoryEchoResponse</tt> is serialized using
+<tt><a class="checkthis" href="../../xml/index.html">s.im.pl serialization</a></tt>, a header of metadata is prepended, encoded, and sent over the network.
+As with the server, the client then decodes this message and deserializes it into a
+<tt>HistoryEchoResponse</tt> instance. Its <tt>processResponse(...)</tt> method is invoked, printing both
+of the user's strings. The final output from our example will read:
+</p>
+
+<p>
+<tt>
+V. Bush <br/>
+T. Berners-Lee
+</tt>
+</p>
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

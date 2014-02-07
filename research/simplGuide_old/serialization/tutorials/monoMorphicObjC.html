@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; color: #008311}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; color: #ce2f24}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px }
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #518187}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #b930a1}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #b930a1; min-height: 14.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #77492d}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #7140a7}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #3e217f}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #33595d}
+    span.s1 {color: #77492d}
+    span.s2 {color: #b930a1}
+    span.s3 {color: #000000}
+    span.s4 {color: #518187}
+    span.s5 {color: #ce2f24}
+    span.s6 {color: #7140a7}
+    span.s7 {color: #3e217f}
+    span.s8 {color: #33595d}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+
+
+	
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">objective-c mono-morphic</div>
+</div>
+
+<br clear="all" />
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink"  href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="javaToObjC.html">- obj c getting started</a>
+  <a class="navselected" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+</div>
+<!--
+<div class="tall_nav">
+
+<div class="block">
+  <a class="navlink" href="../../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../iiBAMSpecs.html">iiBAM guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink2" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicJava.html">- java polymorphic</a>
+  <a class="subnavlink2" href="javaToObjC.html" style="margin-top: 12px;">- obj c getting started</a>
+  <a class="navselected" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a class="subnavlink2" href="monoMorphicCSharp.html" style="margin-top: 12px;">- c# mono-morphic</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+
+</div>
+-->
+<h5>Mono-morphic Collections:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#objc" >Objective-C Header files</li>
+<li><a href="#translation" >Creating Translation Scope</li>
+<li><a href="#translationxml" >Translation Scope XML file</li>
+<li><a href="#serialization" >Serialization & De-serliazation</li>
+<li><a href="#xmlfile" >Rss XML File</li>
+
+<li><a href="#end" >End Notes</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+In this example we will show how to use the objective-c version of s.im.pl serialization to translate between 
+runtime objects and xml files. In the getting started objective-c tutorial, we generated a set of header and implementation files 
+from java annotated classes. We will now use those and slightly modify our rss_translationScope.xml file to serialize and deserialize 
+a modified xml file.
+</p>
+
+<p>
+To view this tutorial you will need to download the entire ecologylabFundamental project.
+Access to the ecologylab fundamental project source is available 
+through <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamentalObjC">
+anonymous SVN access</a> (user: anonymous, password: anonymous).<br/><br/>The source for this tutorial is
+located under <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamentalObjC/trunk/">
+/trunk/ecologylabXMLObjC/library/Rss</a></p>
+
+<a name="objc"> </a>
+<h5> Objective-C Header File</h5>
+<hr/>
+<p>
+   Below is the header file of Rss we generated from our Java annotated class definitions in the "getting started" tutorial.
+   This defines the attributes which were annotated in Java or were semantically defined to bind to the XML file, such as a float variable "version"
+   and a nested "Channel" object. 
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" >
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p4"><span class="s2">@interface</span> Rss : ElementState</p>
+<p class="p4">{</p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s2">float</span><span class="s3"> </span>version<span class="s3">;</span></p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span>Channel<span class="s3"> *</span>channel<span class="s3">;</span></p>
+
+<p class="p4">}</p>
+<p class="p2"><br></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">) </span>float<span class="s3"> </span><span class="s4">version</span><span class="s3">;</span></p>
+<p class="p2"><br></p>
+<p class="p4">+ (<span class="s4">TranslationScope</span> *) getTranslationScope;</p>
+<p class="p2"><br></p>
+<p class="p4">+ (<span class="s2">id</span>) rssTestObject;</p>
+<p class="p4">- (<span class="s2">void</span>) setVersionWithReference: (<span class="s2">float</span> *) t;</p>
+<p class="p4">- (<span class="s2">id</span>) initTestObject;</p>
+<p class="p2"><br></p>
+<p class="p6">@end</p>
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p class="p7"><br></p>
+<p>Below is the header of the "Channel" class which defines a set of attributes and a list of "Items". In objective-c we do not have strongly
+   typed fields so items is defined as type "NSMutableArray".
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p4"><span class="s2">@interface</span> Channel : ElementState</p>
+<p class="p4">{</p>
+<p class="p9"><span class="s3"><span class="Apple-tab-span">	</span></span>NSString<span class="s3"> *</span><span class="s4">title</span><span class="s3">;</span></p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s6">NSString</span><span class="s3"> *</span>description<span class="s3">;</span></p>
+
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span>ParsedURL<span class="s3"> *</span>link<span class="s3">;</span></p>
+<p class="p9"><span class="s3"><span class="Apple-tab-span">	</span></span>NSMutableArray<span class="s3"> *</span><span class="s4">items</span><span class="s3">;</span></p>
+<p class="p4">}</p>
+<p class="p2"><br></p>
+
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSString</span><span class="s3"> *</span><span class="s4">title</span><span class="s3">;</span></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSString</span><span class="s3"> *</span><span class="s4">description</span><span class="s3">;</span></p>
+
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s4">ParsedURL</span><span class="s3"> *</span><span class="s4">link</span><span class="s3">;</span></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSMutableArray</span><span class="s3"> *</span><span class="s4">items</span><span class="s3">;</span></p>
+
+<p class="p2"><br></p>
+<p class="p4">+ (<span class="s2">id</span>) channelTestObject;</p>
+<p class="p4">- (<span class="s2">id</span>) initTestObject;</p>
+<p class="p2"><br></p>
+<p class="p6">@end</p>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<p class="p7"><br></p>
+<p>Below is the class definition of "Item" which again defines a set of attributes and a list of "categorySets".</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+
+<p class="p4"><span class="s2">@interface</span> Item : ElementState</p>
+<p class="p4">{</p>
+<p class="p9"><span class="s3"><span class="Apple-tab-span">	</span></span>NSString<span class="s3"> *</span><span class="s4">title</span><span class="s3">;</span></p>
+
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s6">NSString</span><span class="s3"> *</span>description<span class="s3">;</span></p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span>ParsedURL<span class="s3"> *</span>link<span class="s3">;</span></p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span>ParsedURL<span class="s3"> *</span>guid<span class="s3">;</span></p>
+
+<p class="p9"><span class="s3"><span class="Apple-tab-span">	</span></span>NSString<span class="s3"> *</span><span class="s4">author</span><span class="s3">;</span></p>
+<p class="p9"><span class="s3"><span class="Apple-tab-span">	</span></span>NSMutableArray<span class="s3"> *</span><span class="s4">categorySet</span><span class="s3">;</span></p>
+<p class="p4">}</p>
+<p class="p2"><br></p>
+
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSString</span><span class="s3"> *</span><span class="s4">title</span><span class="s3">;</span></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSString</span><span class="s3"> *</span><span class="s4">description</span><span class="s3">;</span></p>
+
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s4">ParsedURL</span><span class="s3"> *</span><span class="s4">link</span><span class="s3">;</span></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s4">ParsedURL</span><span class="s3"> *</span><span class="s4">guid</span><span class="s3">;</span></p>
+
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSString</span><span class="s3"> *</span><span class="s4">author</span><span class="s3">;</span></p>
+<p class="p6">@property<span class="s3"> (</span>nonatomic<span class="s3">, </span>readwrite<span class="s3">, </span>retain<span class="s3">) </span><span class="s6">NSMutableArray</span><span class="s3"> *</span><span class="s4">categorySet</span><span class="s3">;</span></p>
+
+<p class="p2"><br></p>
+<p class="p4">+ (<span class="s2">id</span>) itemTestObject;</p>
+<p class="p4">- (<span class="s2">id</span>) initTestObject;</p>
+<p class="p2"><br></p>
+<p class="p6">@end</p>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<a name="translation"> </a>
+<h5> Creating Translation Scope</h5>
+<hr/>
+
+<p>In objective-c we create the translation scope from the XML file we generated from our Java classes. This translation scope XML is the internal data structure
+	which s.im.pl serialization will use to derive the serialization and deserialization of the XML file.
+ </p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<div class="highlight"><pre><span style="color: #008000; font-weight: bold">&lt;translation_scope</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;rss&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;s.im.pl serialization.library.rss.Item&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;title&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;title&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;description&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;description&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;guid&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;guid&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;author&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;author&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;categorySet&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;category_set&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;5&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span>
+			<span style="color: #7D9029">collection_or_map_tag_name=</span><span style="color: #BA2121">&quot;category&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;s.im.pl serialization.library.rss.Rss&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;rss&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;version&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;version&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;1&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;FloatType&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;channel&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;channel&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;3&quot;</span> <span style="color: #7D9029">element_class=</span><span style="color: #BA2121">&quot;s.im.pl serialization.library.rss.Channel&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;s.im.pl serialization.library.rss.Channel&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;channel&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;title&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;title&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;description&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;description&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;items&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;items&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;4&quot;</span> <span style="color: #7D9029">collection_or_map_tag_name=</span><span style="color: #BA2121">&quot;item&quot;</span> <span style="color: #7D9029">wrapped=</span><span style="color: #BA2121">&quot;true&quot;</span>
+			<span style="color: #7D9029">element_class=</span><span style="color: #BA2121">&quot;s.im.pl serialization.library.rss.Item&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/translation_scope&gt;</span> 
+</pre></div>
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p>Below we call the static "initWithXMLFilePath" function on TranslationScope, which will parse the above XML and create and initialize the internal data structures which will perform and drive the translation processes.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+<p class="p1">/*</p>
+<p class="p1"><span class="Apple-converted-space"> </span>* Creating translation scope from XML file</p>
+
+<p class="p1"><span class="Apple-converted-space"> </span>*/</p>
+<p class="p4">+ (<span class="s4">TranslationScope</span> *) getTranslationScope {</p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s2">if</span><span class="s3">(</span>translationScope<span class="s3"> == </span><span class="s2">nil</span><span class="s3">){</span></p>
+
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span><span class="s6">NSString</span><span class="s3"> *path = [[[</span><span class="s6">NSBundle</span><span class="s3"> </span>mainBundle<span class="s3">] </span>resourcePath<span class="s3">]<span class="Apple-converted-space"> </span></span></p>
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>stringByAppendingPathComponent<span class="s3">: </span><span class="s5">@"RssTranslationScope.xml"</span><span class="s3">];</span></p>
+
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>translationScope<span class="s3"> = [[</span>TranslationScope<span class="s3"> </span><span class="s7">alloc</span><span class="s3">] </span><span class="s8">initWithXMLFilePath</span><span class="s3">: path];<span class="Apple-tab-span">	</span></span></p>
+<p class="p4"><span class="Apple-tab-span">	</span>}</p>
+<p class="p5"><span class="s3"><span class="Apple-tab-span">	</span></span><span class="s2">return</span><span class="s3"> </span>translationScope<span class="s3">;</span></p>
+
+<p class="p4">}</p>
+
+
+
+<p class="p2"><br></p>
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p>We have now successfully initialized s.im.pl serialization and can now start serializing and deserializing XML files.</p> 
+<a name="translationxml"> </a>
+<h5> Serialization & De-Serialization</h5>
+<hr/>
+<p>Serialization and de-serialization is driven by two functions. The static "TranslationScope" function "deserialize" and te "ElementState"
+inherited function "translateToXML".</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<p class="p1">//Rss Monomorphic test case</p>
+<p class="p1">//test.xml contains dummy Rss data which will deserialize and then serialize.</p>
+
+<p class="p10"><span class="s6">NSString</span><span class="s3"> *rssInput = [[[</span><span class="s6">NSBundle</span><span class="s3"> </span>mainBundle<span class="s3">] </span>resourcePath<span class="s3">]<span class="Apple-converted-space"> </span></span></p>
+
+<p class="p10"><span class="s3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span></span>stringByAppendingPathComponent<span class="s3">: </span><span class="s5">@"test.xml"</span><span class="s3">];</span></p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1">//Creating translation scope from RssTranslationScope.xml and deserializing test.xml</p>
+<p class="p5">Rss<span class="s3"> *test = (</span>Rss<span class="s3"> *)[[</span><span class="s4">Rss</span><span class="s3"> </span>getTranslationScope<span class="s3">]</span><span class="s3"> </span><span class="s8">deserialize</span><span class="s3">: rssInput<span class="Apple-converted-space">]; </span></span></p>
+
+<p class="p2"><br></p>
+<p class="p9">NSMutableString<span class="s3"> *rssoutput = [</span>NSMutableString<span class="s3"> </span><span class="s7">string</span><span class="s3">];</span></p>
+
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1">//Serializing the data back to XML into an output MutableString buffer.</p>
+<p class="p4">[test <span class="s8">serialize</span>:rssoutput];</p>
+
+
+
+
+
+
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+
+
+
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<p> In the above code we use both the functions to translate back to a sample XML file.</p>
+<a name="xmlfile"> </a>
+<h5> Rss XML File</h5>
+<hr/>
+<p>Below is the test Rss XML file which we used for translation. This is not a correct Rss feed and "item" is wrapped by "items" tag. We can see in the above translation scope XML file that "items" collection is marked as wrapped.</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+  
+<div class="highlight"><pre><span style="color: #008000; font-weight: bold">&lt;rss</span> <span style="color: #7D9029">version=</span><span style="color: #BA2121">&quot;1&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;channel&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;title&gt;</span>s<span style="color: #008000; font-weight: bold">&lt;/title&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;description&gt;</span>description.Student<span style="color: #008000; font-weight: bold">&lt;/description&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;link&gt;</span>http://www.google.com/ig<span style="color: #008000; font-weight: bold">&lt;/link&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;items&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;item&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;title&gt;</span>aItem.title.Nabeel<span style="color: #008000; font-weight: bold">&lt;/title&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;description&gt;</span>Item.description.Nabeel<span style="color: #008000; font-weight: bold">&lt;/description&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;link&gt;</span>http://www.google.com/ig<span style="color: #008000; font-weight: bold">&lt;/link&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;guid&gt;</span>http://www.google.com/ig<span style="color: #008000; font-weight: bold">&lt;/guid&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;author&gt;</span>Item.author.Nabeel<span style="color: #008000; font-weight: bold">&lt;/author&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;category&gt;</span>newCat 0<span style="color: #008000; font-weight: bold">&lt;/category&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;category&gt;</span>newCat 1<span style="color: #008000; font-weight: bold">&lt;/category&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;/item&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;item&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;title&gt;</span>bItem.title.Nabeel<span style="color: #008000; font-weight: bold">&lt;/title&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;description&gt;</span>Item.description.Nabeel<span style="color: #008000; font-weight: bold">&lt;/description&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;link&gt;</span>http://www.google.com/ig<span style="color: #008000; font-weight: bold">&lt;/link&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;guid&gt;</span>http://www.google.com/ig<span style="color: #008000; font-weight: bold">&lt;/guid&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;author&gt;</span>Item.author.Nabeel<span style="color: #008000; font-weight: bold">&lt;/author&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;category&gt;</span>newCat 0<span style="color: #008000; font-weight: bold">&lt;/category&gt;</span>
+				<span style="color: #008000; font-weight: bold">&lt;category&gt;</span>newCat 1<span style="color: #008000; font-weight: bold">&lt;/category&gt;</span>
+			<span style="color: #008000; font-weight: bold">&lt;/item&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;/items&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/channel&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/rss&gt;</span>
+</pre></div>
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<a name="end"> </a>
+<h5>End notes</h5>
+<hr/>
+<p>We have now successfully translated to and from XML files in objective-c.</p> 
+<br></br>
+<br></br>
+<br></br>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

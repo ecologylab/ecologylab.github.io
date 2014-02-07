@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="974" width="640" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="www.fashion.at" strokeHue="0.8666667" fontIndex="2"/>
+    <site domain="style.com" strokeHue="0.083333336" fontIndex="4"/>
+    <site domain="fuk.co.uk" strokeHue="0.41666666" fontIndex="1"/>
+    <site domain="web62.com" strokeHue="0.041666668" fontIndex="2"/>
+    <site domain="fashionwindows.com" strokeHue="0.25" fontIndex="2"/>
+    <site domain="fashion-planet.com" strokeHue="0.041666668" fontIndex="2"/>
+    <site domain="nytimes.com" strokeHue="0.125" fontIndex="2"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.fashion.net/"/>
+    <traversable urlString="http://www.fashion-planet.com/"/>
+    <traversable urlString="http://www.ftv.com/"/>
+    <traversable urlString="http://www.fashionmall.com/"/>
+    <traversable urlString="http://www.nytimes.com/pages/fashion/"/>
+    <traversable urlString="http://www.fuk.co.uk/"/>
+    <traversable urlString="http://www.hintmag.com/"/>
+    <traversable urlString="http://www.fashion-icon.com/"/>
+    <traversable urlString="http://www.fashionclick.com/"/>
+    <traversable urlString="http://www.style.com/"/>
+    <traversable urlString="http://www.fashion.at/"/>
+    <traversable urlString="http://www.fashionangel.com/linkpages/"/>
+    <traversable urlString="http://www.fashionwindows.com/"/>
+    <traversable urlString="http://www.web62.com"/>
+    <traversable urlString="http://www.fashiontelevision.com/episodes/08_2004/"/>
+    <traversable urlString="http://www.fashion.net/ads/shiseido/200404/suncare"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="fashion" intensity="3"/>
+  </term_set>
+  <container_set>
+    <container purl="http://www.fashionwindows.com/fashion_designers/default.asp" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.web62.com/videos/mp/fashion/van-laack-56.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.fashionwindows.com/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.fashionwindows.com/fashion_designers/sandra_sung.asp" generation="5">
+      <participant/>
+    </container>
+    <container purl="http://www.style.com/fashionshows/collections/S2005MEN/review/CKMEN/" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.fashionwindows.com/fashion/b_michael/default.asp" generation="5">
+      <participant/>
+    </container>
+    <container purl="http://www.web62.com/engl/fashion/01x.html" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://www.fashionwindows.com/fashion_review/sonia_rykiel/F041.asp" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://www.nytimes.com/pages/fashion/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.fashion.at/neu.htm" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.style.com/fashionshows/collections/F2004RTW/editor/062604/" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://www.fashion-planet.com/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.style.com/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.style.com/fashionshows/collections/F2004CTR/review/VALENTIN/" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://www.fashionwindows.com/fashion_review/paris/S05.asp" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.style.com/fashionshows/" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.web62.com/index.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.fuk.co.uk/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.fashion.at/collections/neu.htm" generation="5">
+      <participant/>
+    </container>
+    <container purl="http://www.nytimes.com/pages/fashion/index.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.web62.com/videos/mp/fashion/tilley-256.html" generation="3">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion_designers/default.asp" historyNum="26">
+      <text_element faceIndex="2" alpha="207" r="145" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.4375">
+          <text_token string="If"/>
+          <text_token string="geneticists"/>
+          <text_token string="can"/>
+          <text_token string="identify"/>
+          <text_token string="a"/>
+          <text_token string="“fashion"/>
+          <text_token string="gene,”"/>
+          <text_token string="chances"/>
+          <text_token string="are,"/>
+          <text_token string="they"/>
+          <text_token string="will"/>
+          <text_token string="find"/>
+          <text_token string="it"/>
+          <text_token string="among"/>
+          <text_token string="the"/>
+          <text_token string="French."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="396" width="267" height="68"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion_designers/default.asp" historyNum="27">
+      <text_element faceIndex="2" alpha="207" r="145" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.42105263">
+          <text_token string="PARIS,"/>
+          <text_token string="Oct"/>
+          <text_token string="4"/>
+          <text_token string="12,"/>
+          <text_token string="2004/"/>
+          <text_token string="FW/"/>
+          <text_token string="--"/>
+          <text_token string="There"/>
+          <text_token string="is"/>
+          <text_token string="no"/>
+          <text_token string="doubt"/>
+          <text_token string="that"/>
+          <text_token string="the"/>
+          <text_token string="French"/>
+          <text_token string="has"/>
+          <text_token string="a"/>
+          <text_token string="flair"/>
+          <text_token string="for"/>
+          <text_token string="fashion."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="300" y="88" width="263" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/index.html" historyNum="28">
+      <text_element faceIndex="2" alpha="213" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.7">
+          <text_token string="China" bold="true"/>
+          <text_token string="has"/>
+          <text_token string="the"/>
+          <text_token string="fastest"/>
+          <text_token string="growing"/>
+          <text_token string="Fashion"/>
+          <text_token string="market"/>
+          <text_token string="in"/>
+          <text_token string="the"/>
+          <text_token string="world."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="360" y="220" width="189" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fuk.co.uk/" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="4915200" alphaRadius="66" purl="http://www.widemedia.com/fashionuk/front/sequin.jpg" href="http://www.widemedia.com/fashionuk/fashion/savage/index.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="420" y="88" width="134" height="484"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.nytimes.com/pages/fashion/" historyNum="17">
+      <image_element hasTransparency="true" minAlpha="2883584" alphaRadius="31" purl="http://graphics7.nytimes.com/images/2004/08/08/fashion/08puls.75,0.jpg" href="http://www.nytimes.com/slideshow/2004/08/08/fashion/20040808_PULSE_SLIDESHOW_index.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="390" y="88" width="75" height="75"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/" historyNum="23">
+      <text_element faceIndex="4" alpha="193" r="178" g="145" b="112">
+        <text_chunk doUnderline="true" nonStopIndex="0.75">
+          <text_token string="--&gt;"/>
+          <text_token string="gaultier"/>
+          <text_token string="--&gt;"/>
+          <text_token string="givenchy"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="88" width="193" height="23"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/" historyNum="24">
+      <text_element faceIndex="4" alpha="193" r="178" g="145" b="112">
+        <text_chunk doUnderline="true" nonStopIndex="0.6666667">
+          <text_token string="versace"/>
+          <text_token string="--&gt;"/>
+          <text_token string="vuitton"/>
+          <text_token string="--&gt;"/>
+          <text_token string="yamamoto"/>
+          <text_token string="--&gt;"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="176" width="147" height="65"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/engl/fashion/01x.html" historyNum="19">
+      <text_element faceIndex="2" alpha="186" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.web62.com/engl/fashion/falinks.html">
+          <text_token string="Top"/>
+          <text_token string="60"/>
+          <text_token string="Fashion"/>
+          <text_token string="Links"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="360" y="528" width="72" height="62"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/engl/fashion/01x.html" historyNum="20">
+      <text_element faceIndex="2" alpha="186" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" nonStopIndex="0.85714287">
+          <text_token string="Impressive"/>
+          <text_token string="is"/>
+          <text_token string="also"/>
+          <text_token string="Austrian"/>
+          <text_token string="Designer"/>
+          <text_token string="Fashion"/>
+          <text_token string="."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="704" width="265" height="15"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/index.html" historyNum="12">
+      <image_element hasTransparency="true" minAlpha="1769472" alphaRadius="20" purl="http://www.web62.com/pix/travel/brz/brazil.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="420" y="132" width="120" height="90"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.nytimes.com/pages/fashion/index.html" historyNum="25">
+      <text_element faceIndex="2" alpha="210" r="178" g="161" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.nytimes.com/2004/08/08/fashion/08DRES.html" nonStopIndex="0.75">
+          <text_token string="Less" bold="true"/>
+          <text_token string="Bling," bold="true"/>
+          <text_token string="More" bold="true"/>
+          <text_token string="Elegance" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="450" y="440" width="109" height="76"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/videos/mp/fashion/van-laack-56.html" historyNum="22">
+      <image_element hasTransparency="true" minAlpha="5373952" alphaRadius="35" purl="http://www.web62.com/videos/mpp/vondaniels.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="60" y="88" width="108" height="120"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/engl/fashion/01x.html" historyNum="18">
+      <text_element faceIndex="2" alpha="176" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" sameHref="true">
+          <text_token string="Fashion"/>
+          <text_token string="Sp"/>
+          <text_token string="e"/>
+          <text_token string="cials"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="88" width="147" height="32"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion_review/sonia_rykiel/F041.asp" historyNum="30">
+      <text_element faceIndex="2" alpha="210" r="140" g="165" b="116">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5555556">
+          <text_token string="Object"/>
+          <text_token string="Moved"/>
+          <text_token string="This"/>
+          <text_token string="object"/>
+          <text_token string="may"/>
+          <text_token string="be"/>
+          <text_token string="found"/>
+          <text_token string="here"/>
+          <text_token string="."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="88" width="225" height="17"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/collections/F2004CTR/review/VALENTIN/" historyNum="31">
+      <text_element faceIndex="4" alpha="205" r="165" g="140" b="116">
+        <text_chunk doUnderline="true" nonStopIndex="0.75">
+          <text_token string="--&gt;"/>
+          <text_token string="gaultier"/>
+          <text_token string="--&gt;"/>
+          <text_token string="givenchy"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="330" y="132" width="160" height="24"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/collections/F2004CTR/review/VALENTIN/" historyNum="32">
+      <text_element faceIndex="4" alpha="205" r="165" g="140" b="116">
+        <text_chunk doUnderline="true" nonStopIndex="0.6666667">
+          <text_token string="versace"/>
+          <text_token string="--&gt;"/>
+          <text_token string="vuitton"/>
+          <text_token string="--&gt;"/>
+          <text_token string="yamamoto"/>
+          <text_token string="--&gt;"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="420" y="572" width="122" height="55"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion_designers/sandra_sung.asp" historyNum="33">
+      <text_element faceIndex="2" alpha="246" r="130" g="153" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.4">
+          <text_token string="&quot;The"/>
+          <text_token string="show"/>
+          <text_token string="is"/>
+          <text_token string="designed"/>
+          <text_token string="to"/>
+          <text_token string="provide"/>
+          <text_token string="a"/>
+          <text_token string="breath"/>
+          <text_token string="of"/>
+          <text_token string="fresh"/>
+          <text_token string="air,"/>
+          <text_token string="and"/>
+          <text_token string="next"/>
+          <text_token string="year's"/>
+          <text_token string="shows"/>
+          <text_token string="will"/>
+          <text_token string="have"/>
+          <text_token string="to"/>
+          <text_token string="measure"/>
+          <text_token string="up"/>
+          <text_token string="to"/>
+          <text_token string="that.&quot;"/>
+          <text_token string="Gittens,"/>
+          <text_token string="an"/>
+          <text_token string="accomplished"/>
+          <text_token string="tap-dancer,"/>
+          <text_token string="has"/>
+          <text_token string="worked"/>
+          <text_token string="in"/>
+          <text_token string="Vancouver"/>
+          <text_token string="for"/>
+          <text_token string="the"/>
+          <text_token string="last"/>
+          <text_token string="twelve"/>
+          <text_token string="years"/>
+          <text_token string="in"/>
+          <text_token string="fashion,"/>
+          <text_token string="theater"/>
+          <text_token string="and"/>
+          <text_token string="multimedia."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="210" y="176" width="359" height="72"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.nytimes.com/pages/fashion/index.html" historyNum="29">
+      <text_element faceIndex="2" alpha="255" r="178" g="161" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5925926">
+          <text_token string="At"/>
+          <text_token string="the"/>
+          <text_token string="traditional"/>
+          <text_token string="Hindu"/>
+          <text_token string="wedding"/>
+          <text_token string="at"/>
+          <text_token string="the"/>
+          <text_token string="Inn"/>
+          <text_token string="at"/>
+          <text_token string="Longshore"/>
+          <text_token string="in"/>
+          <text_token string="Westport,"/>
+          <text_token string="Conn.,"/>
+          <text_token string="puzzled"/>
+          <text_token string="golfers"/>
+          <text_token string="looked"/>
+          <text_token string="on"/>
+          <text_token string="as"/>
+          <text_token string="the"/>
+          <text_token string="bridegroom"/>
+          <text_token string="trotted"/>
+          <text_token string="by"/>
+          <text_token string="on"/>
+          <text_token string="a"/>
+          <text_token string="white"/>
+          <text_token string="quarter"/>
+          <text_token string="horse."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="400" width="344" height="90"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion-planet.com/" historyNum="11">
+      <image_element hasTransparency="true" minAlpha="2490368" alphaRadius="29" purl="http://www.fashion-planet.com/coverbuttons/logo-chrstfl120-lyr.gif" href="http://www.fashion-planet.com/products/christofle_products/index-new.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="275" y="758" width="120" height="118"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/neu.htm" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="3866624" alphaRadius="50" purl="http://www.fashion.at/who/jarick8-2004kl.jpg" href="http://www.fashion.at/who/index.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="412" y="20" width="210" height="105"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/index.html" historyNum="15">
+      <image_element hasTransparency="true" minAlpha="1048576" alphaRadius="59" purl="http://www.web62.com/pix/var/62xmas03-co.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="13" y="129" width="175" height="140"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/engl/fashion/01x.html" historyNum="21">
+      <image_element hasTransparency="true" minAlpha="65536" alphaRadius="83" purl="http://www.web62.com/pix/fashion/cover/special-1.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="316" y="449" width="180" height="428"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/collections/S2005MEN/review/CKMEN/" historyNum="16">
+      <image_element purl="http://www.style.com/slideshows/fashionshows/S2005MEN/CKMEN/RUNWAY/00001f.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="111" y="510" width="240" height="360"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/collections/neu.htm" historyNum="13">
+      <image_element hasTransparency="true" minAlpha="3276800" alphaRadius="34" purl="http://www.fashion.at/collections/clikits7-2004kl.jpg" href="http://www.fashion.at/collections/clikits7-2004.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="410" y="621" width="180" height="90"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.web62.com/videos/mp/fashion/tilley-256.html" historyNum="8">
+      <image_element hasTransparency="true" minAlpha="6619136" alphaRadius="49" purl="http://www.web62.com/videos/mpp/tilley.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="619" width="108" height="120"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/collections/neu.htm" historyNum="7">
+      <image_element hasTransparency="true" minAlpha="5242880" alphaRadius="27" purl="http://www.fashion.at/collections/wolford6-2004bkl.jpg" href="http://www.fashion.at/collections/wolford6-2004d.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="178" y="27" width="243" height="131"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.nytimes.com/pages/fashion/" historyNum="5">
+      <image_element hasTransparency="true" minAlpha="5505024" alphaRadius="20" purl="http://www.iht.com/images/chunkletphotos/web.1307bw.jpg" href="http://www.iht.com/articles/527540.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="470" y="724" width="127" height="157"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/neu.htm" historyNum="4">
+      <image_element hasTransparency="true" minAlpha="2949120" alphaRadius="29" purl="http://www.fashion.at/collections/lezard7-2004kl.jpg" href="http://www.fashion.at/collections/index.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="23" width="200" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/neu.htm" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="3211264" alphaRadius="42" purl="http://www.fashion.at/beauty/ungaro8-2004kl.jpg" href="http://www.beautyme.com">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="240" y="813" width="200" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion-planet.com/" historyNum="1">
+      <image_element hasTransparency="true" minAlpha="1638400" alphaRadius="106" purl="http://www.fashion-planet.com/sept98/cover_spring04/images/COVER2004_03.jpg" href="http://www.fashion-planet.com/sept98/features/bangkokfc/index.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="313" y="98" width="300" height="435"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/" historyNum="2" latched="true">
+      <image_element hasTransparency="true" minAlpha="5898240" alphaRadius="60" purl="http://www.style.com/images/homepage/hp_btm_left_promo.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="18" y="723" width="240" height="166"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion-planet.com/" historyNum="9" latched="true">
+      <image_element hasTransparency="true" minAlpha="1376256" alphaRadius="60" purl="http://www.fashion-planet.com/coverbuttons/burberrys.gif" href="http://www.fp1.com/products/burberrys_products/burberrys_frame.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="253" width="280" height="136"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashion.at/collections/neu.htm" historyNum="14" latched="true">
+      <image_element hasTransparency="true" minAlpha="3538944" alphaRadius="35" purl="http://www.fashion.at/collections/coccinelle6-2004kl.jpg" href="http://www.fashion.at/collections/coccinelle6-2004.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="536" width="180" height="90"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion_review/paris/S05.asp" historyNum="34">
+      <text_element faceIndex="2" alpha="224" r="145" g="178" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.4375">
+          <text_token string="If"/>
+          <text_token string="geneticists"/>
+          <text_token string="can"/>
+          <text_token string="identify"/>
+          <text_token string="a"/>
+          <text_token string="“fashion"/>
+          <text_token string="gene,”"/>
+          <text_token string="chances"/>
+          <text_token string="are,"/>
+          <text_token string="they"/>
+          <text_token string="will"/>
+          <text_token string="find"/>
+          <text_token string="it"/>
+          <text_token string="among"/>
+          <text_token string="the"/>
+          <text_token string="French."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="660" width="444" height="23"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/fashion/b_michael/default.asp" historyNum="35">
+      <text_element faceIndex="2" alpha="224" r="130" g="153" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5555556">
+          <text_token string="Object"/>
+          <text_token string="Moved"/>
+          <text_token string="This"/>
+          <text_token string="object"/>
+          <text_token string="may"/>
+          <text_token string="be"/>
+          <text_token string="found"/>
+          <text_token string="here"/>
+          <text_token string="."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="450" y="704" width="115" height="47"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/" historyNum="36">
+      <text_element faceIndex="4" alpha="246" r="178" g="145" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.style.com/fashionshows/collections/F2004CTR/runwayshows/index.html">
+          <text_token string="FALL"/>
+          <text_token string="2004"/>
+          <text_token string="HAUTE"/>
+          <text_token string="COUTURE"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="132" width="225" height="22"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.style.com/fashionshows/collections/F2004RTW/editor/062604/" historyNum="37">
+      <text_element faceIndex="4" alpha="241" r="165" g="140" b="116">
+        <text_chunk doUnderline="true" nonStopIndex="0.625">
+          <text_token string="fashion"/>
+          <text_token string="shows"/>
+          <text_token string="/"/>
+          <text_token string="news"/>
+          <text_token string="trends"/>
+          <text_token string="/"/>
+          <text_token string="people"/>
+          <text_token string="parties"/>
+          <text_token string="/"/>
+          <text_token string="shopping"/>
+          <text_token string="/"/>
+          <text_token string="beauty"/>
+          <text_token string="/"/>
+          <text_token string="vogue"/>
+          <text_token string="/"/>
+          <text_token string="w"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="88" width="190" height="43"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fashionwindows.com/" historyNum="38">
+      <text_element faceIndex="2" alpha="247" r="149" g="191" b="107">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.45945945">
+          <text_token string="MILAN,"/>
+          <text_token string="Aug"/>
+          <text_token string="9,"/>
+          <text_token string="2004/"/>
+          <text_token string="FW/"/>
+          <text_token string="--"/>
+          <text_token string="As"/>
+          <text_token string="we"/>
+          <text_token string="are"/>
+          <text_token string="entering"/>
+          <text_token string="the"/>
+          <text_token string="middle"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="first"/>
+          <text_token string="decade"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="21st"/>
+          <text_token string="century,"/>
+          <text_token string="changes"/>
+          <text_token string="in"/>
+          <text_token string="men’s"/>
+          <text_token string="fashion"/>
+          <text_token string="is"/>
+          <text_token string="already"/>
+          <text_token string="very"/>
+          <text_token string="apparent"/>
+          <text_token string="as"/>
+          <text_token string="seen"/>
+          <text_token string="during"/>
+          <text_token string="the"/>
+          <text_token string="Milan"/>
+          <text_token string="Menswear"/>
+          <text_token string="Spring"/>
+          <text_token string="2005"/>
+          <text_token string="season."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="396" width="494" height="55"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

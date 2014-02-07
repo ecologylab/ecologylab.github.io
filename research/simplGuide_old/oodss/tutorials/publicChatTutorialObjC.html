@@ -1,0 +1,578 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>objective-c public chat tutorial [oodss]</title>
+<style type="text/css">
+    code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }
+</style>
+ <style type="text/css">
+   p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #3f6e74}
+   p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; min-height: 14.0px}
+   p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New}
+   p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #aa0d91}
+   p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #aa0d91; min-height: 14.0px}
+   p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #007400}
+   p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #26474b}
+   p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #643820}
+   p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #2e0d6e}
+   p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Courier New; color: #c41a16}
+   span.s1 {color: #aa0d91}
+   span.s2 {color: #000000}
+   span.s3 {color: #5c2699}
+   span.s4 {color: #3f6e74}
+   span.s5 {color: #2e0d6e}
+   span.s6 {color: #c41a16}
+   span.s7 {color: #007400}
+   span.s8 {color: #26474b}
+   span.s9 {color: #1c00cf}
+   span.s10 {color: #643820}
+   span.Apple-tab-span {white-space:pre}
+ </style>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl oodss:<br/></div>
+<div class="title4b">public chat tutorial [objective-c]</div>
+</div>
+
+<br clear="all" />
+
+<div class="nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../../serialization/index.html">serialization</a>
+	<a class="navlink" href="../index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">oodss</a>
+ 	<a class="navlink" href="../tutorial.html">tutorials</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+</div>
+	
+<div class="block">
+  <a class="navlink" target="_blank" href="../../index.html">research</a>
+  <a class="navlink" target="_blank" href="../../../../index.html">interface ecology lab</a>
+</div>
+
+</div>
+
+
+<h5>Contents:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#request" >Chat Request</li>
+<li><a href="#update" >Update Message</li>
+<li><a href="#client" >Client Instantiation</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+This example demonstrates how to use the OODSS library in Objective-C.
+In this tutorial we present the implementation of an iPhone client for the
+ <a class="checkthis" href="./publicChatTutorial">Public Chat Service</a>.
+This tutorial demonstrates how to use the the Objective-C OODSS client implementation.
+</p>
+
+<p>Access to the entire ecologylab fundamental Objective-C project source is available 
+through <a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamentalObjC">
+anonymous SVN access</a> (user: anonymous, password: anonymous).<br/>The source for this tutorial is
+located under in the Xcode project under /Classes/Applications/ChatClientTutorial/Messages</p>
+
+<a name="request"> </a>
+<h5>Chat Request</h5>
+<hr/>
+<p> 
+We will first show the implementation of the single request message in
+the public chat service. <code>ChatRequest</code> is the message that is initially sent
+from the client to indicate the posting of a new message to the chat service.
+The ChatRequest message only contains the message being posted, stored as a String instance variable,
+and passed in XML as an attribute. The code show below was generated automatically
+with the java <code>CocoaTranslator</code>.
+
+</p>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<p class="p10"><span class="s10">#import </span>"ChatRequest.h"</p>
+			
+			<p class="p2"><br></p>
+			<p class="p4">@implementation<span class="s2"> ChatRequest</span></p>
+			<p class="p2"><br></p>
+			<p class="p4">@synthesize<span class="s2"> message;</span></p>
+			<p class="p2"><br></p>
+			<p class="p3">+ (<span class="s1">void</span>) initialize {</p>
+			<p class="p1"><span class="s2"><span class="Apple-tab-span">	</span>[</span>ChatRequest<span class="s2"> </span><span class="s5">class</span><span class="s2">];</span></p>
+			
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p4">@end</p>
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<a name="update"> </a>
+<h5>Update Message</h5>
+<hr/>
+<p>We now define the update message that is sent to clients to
+indicate that another client has posted a message to the chat service.
+Update messages are messages that are sent from the server to client
+without being specifically requested. Updates do not require that the
+client respond, if further action is necessary on the part of the client, then
+it may initiate a new request. Updates must extend the <code>UpdateMessage</code>
+class. We also show the declaration of the ChatUpdateDelegate class.
+</p>
+<p>Upon reception, the client calls the <code>processUpdate</code>
+callback that <code>ChatUpdate</code> overrides from the <code>UpdateMessage</code>
+class. We implement <code>processUpdate</code> in a category of <code>ChatUpdate</code>
+so that, if we have to edit the structure of chat update, we can replace 
+the generated source files without having to worry about 
+losing the implementation of <code>processUpdate</code>.
+In this example, the client accesses the application scope to
+access a delegate for chat updates, and then informs that delegate that
+it has been received. The delegate is simply a class that implements the
+<code>ChatUpdateListener</code> protocol
+that has registered itself with the application scope to recieve updates
+when ChatUpdates are recieved. You'll notice in the <a href="#client">Client</a> section that
+our client registers itself in the application scope as the <code>CHAT_UPDATE_DELEGATE</code>.</p>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<p class="p1"><span class="s1">extern</span><span class="s2"> </span><span class="s3">NSString</span><span class="s2"> * </span><span class="s1">const</span><span class="s2"> </span>CHAT_UPDATE_DELEGATE<span class="s2">;</span></p>
+			<p class="p2"><br></p>
+			<p class="p3"><span class="s1">@protocol</span> ChatUpdateDelegate</p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>- (<span class="s1">void</span>) recievedChatUpdate:(<span class="s4">ChatUpdate</span>*)update;</p>
+			<p class="p4">@end</p>
+
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<p class="p1"><span class="s1">#import </span>"ChatUpdate.h"</p>
+      <p class="p2"><br></p>
+      <p class="p3">@implementation<span class="s2"> ChatUpdate</span></p>
+      <p class="p2"><br></p>
+      <p class="p3">@synthesize<span class="s2"> message;</span></p>
+      <p class="p3">@synthesize<span class="s2"> host;</span></p>
+      <p class="p3">@synthesize<span class="s2"> port;</span></p>
+      <p class="p2"><br></p>
+      <p class="p4">+ (<span class="s3">void</span>) initialize {</p>
+      <p class="p5"><span class="s2"><span class="Apple-tab-span">  </span>[</span>ChatUpdate<span class="s2"> </span><span class="s4">class</span><span class="s2">];</span></p>
+      <p class="p4">}</p>
+      <p class="p2"><br></p>
+      <p class="p4">- (<span class="s3">void</span>) dealloc {</p>
+      <p class="p5"><span class="s2"><span class="Apple-tab-span">  </span>[</span>message<span class="s2"> </span><span class="s4">release</span><span class="s2">];</span></p>
+      <p class="p6"><span class="s2"><span class="Apple-tab-span">  </span>[</span><span class="s5">host</span><span class="s2"> </span>release<span class="s2">];</span></p>
+      <p class="p4">}</p>
+      <p class="p2"><br></p>
+      <p class="p4">- (<span class="s3">void</span>) setPortWithReference: (<span class="s3">int</span> *) p_port {</p>
+      <p class="p4"><span class="Apple-tab-span"> </span><span class="s5">port</span> = *p_port;</p>
+      <p class="p4">}</p>
+      <p class="p2"><br></p>
+      <p class="p3">@end</p>
+
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<div align="left" class="java">
+  <table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+    <tr>
+     <td nowrap="nowrap" valign="top" align="left">
+      <code>  
+        <p class="p2"><span class="s1">#import </span>"ChatUpdateImpl.h"</p>
+        <p class="p2"><span class="s1">#import </span>"ChatUpdateDelegate.h"</p>
+        <p class="p1"><br></p>
+        <p class="p3"><span class="s2">@implementation</span> ChatUpdate (Implementation)</p>
+        <p class="p1"><br></p>
+        <p class="p3">-(<span class="s2">void</span>) processUpdate:(<span class="s3">Scope</span> *) scope</p>
+        <p class="p3">{</p>
+        <p class="p6"><span class="s4"><span class="Apple-tab-span"> </span></span>/*</p>
+        <p class="p6"><span class="Apple-tab-span"> </span> * Get reference to the CHAT_UPDATE_DELEGATE</p>
+        <p class="p6"><span class="Apple-tab-span"> </span> * out of the application scope.</span></p>
+        <p class="p6"><span class="Apple-tab-span"> </span> */</p>
+        <p class="p3"><span class="Apple-tab-span"> </span><span class="s5">NSValue</span>* updateDelegatePtr = (<span class="s5">NSValue</span>*)</p>
+        <p class="p5"><span class="s4"><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span> [scope </span><span class="s6">objectForKey</span><span class="s4">:</span>CHAT_UPDATE_DELEGATE<span class="s4">];</span></p>
+        <p class="p1"><br></p>
+        <p class="p5"><span class="s4"><span class="Apple-tab-span">  </span></span><span class="s2">id</span><span class="s4">&lt;</span>ChatUpdateDelegate<span class="s4">&gt; updateDelegate = (</span><span class="s2">id</span><span class="s4">&lt;</span>ChatUpdateDelegate<span class="s4">&gt;)</span></p>
+        <p class="p3"><span class="Apple-tab-span"> </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span><span class="Apple-tab-span">  </span>&nbsp;[updateDelegatePtr pointerValue];</p>
+        <p class="p1"><span class="Apple-tab-span"> </span></p>
+        <p class="p6"><span class="s4"><span class="Apple-tab-span"> </span></span>/*</p>
+        <p class="p6"><span class="Apple-tab-span"> </span> * updateDelegate may be nil but we can send a selector to nil</p>
+        <p class="p6"><span class="Apple-tab-span"> </span> */</p>
+        <p class="p3"><span class="Apple-tab-span"> </span>[updateDelegate <span class="s7">recievedChatUpdate</span>:<span class="s2">self</span>];</p>
+        <p class="p3">}</p>
+        <p class="p1"><br></p>
+        <p class="p3">@end</p>
+       </code>
+     </td>
+    </tr>
+  </table>
+</div>
+
+<a name="client"> </a>
+<h5>Client Instantiation</h5>
+<hr/>
+
+<table>
+<tr>
+		<td>
+		<p>
+			We now give the implementation for the client (shown to the
+			right). Note that in the <code>applicationDidFinishLaunching</code> method
+			the application registers the <code>ChatRoomViewController</code> 
+			(which implements the <code>ChatUpdateDelegate</code> protocol) as the 
+			<code>CHAT_UPDATE_DELEGATE</code>	
+			with the application scope. Also note that <code>ChatAppDelegate</code> implements
+			the <code>XMLClientDelegate</code> protocol. This allows it to receive notifications
+			of the change in state of the client's state. The client is implemented as a simple
+			iPhone application that allows the user to read their previous messages
+			along with new messages being posted to the service.
+		</p>
+		
+		<p>
+			When the user presses the return button the <code>textFieldShouldReturn</code> method in
+			ChatRoomViewController.m is invoked. Here we instantiate a new <code>ChatRequest</code> message and
+			send it to the server to post the message. When a <code>ChatRequest</code> is recieved
+			the server sends a ChatUpdate messages to the other clients. The client then
+			simply updates the text area to reflect the new message.
+		</p>
+		<p>
+			The <code>applicationDidFinishLaunching</code> method in ChatAppDelegate.m sets up an <code>XMLClient</code>
+			(the equivalent of the java NIOClient) with the <code>ChatTranslations</code> translation
+			scope. It also connects the client, and sets up the ChatRoomViewController. We give the implementation
+			of <code>ChatTranslations</code>, <code>ChatAppDelegate</code>, and <code>ChatRoomViewController</code> below.
+		</p>
+		</td>
+		<td><img  src="../../../images/iphone_chat.png" ALIGN=BASELINE />
+</td>
+
+</table>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<p class="p3"><span class="s1">@implementation</span> ChatTranslations</p>
+			<p class="p2"><br></p>
+			<p class="p3"><span class="s1">static</span> TranslationScope* theScope;</p>
+			
+			<p class="p2"><br></p>
+			<p class="p6">/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* Class level accessor for ChatTranslations</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+			<p class="p1"><span class="s2">+(</span>TranslationScope<span class="s2">*) get</span></p>
+			<p class="p3">{</p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span><span class="s1">if</span>(<span class="s4">theScope</span> == <span class="s1">nil</span>)</p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>{<span class="Apple-converted-space">&nbsp;</span></p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s7">/*</span></p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>* Initiate translation scope with xml file resource.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>*/</p>
+			<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span></span><span class="s3">NSString</span><span class="s2"> *path = [[[</span><span class="s3">NSBundle</span><span class="s2"> </span>mainBundle<span class="s2">] </span>resourcePath<span class="s2">]<span class="Apple-converted-space">&nbsp;</span></span></p>
+			
+			<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span>stringByAppendingPathComponent<span class="s2">: </span><span class="s6">@"ChatTranslations.xml"</span><span class="s2">];</span></p>
+			<p class="p2"><br></p>
+			
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span></span>theScope<span class="s2"> = [[[</span>TranslationScope<span class="s2"> </span><span class="s5">alloc</span><span class="s2">] </span><span class="s8">initWithXMLFilePath</span><span class="s2">: path] </span><span class="s5">retain</span><span class="s2">];</span></p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>}</p>
+			
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s1">return</span><span class="s2"> </span>theScope<span class="s2">;</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p4">@end</p>
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<p class="p3"><span class="s1">@implementation</span> ChatAppDelegate</p>
+			<p class="p2"><br></p>
+			
+			<p class="p4">@synthesize<span class="s2"> window;</span></p>
+			<p class="p3"><span class="s1">@synthesize</span> chatRoomViewController;</p>
+			<p class="p4">@synthesize<span class="s2"> client;</span></p>
+			<p class="p2"><br></p>
+			<p class="p3">- (<span class="s1">void</span>)applicationDidFinishLaunching:(<span class="s3">UIApplication</span> *)application<span class="Apple-converted-space">&nbsp;</span></p>
+			
+			<p class="p3">{<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Get an instance of the ChatTranslations scope.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>TranslationScope<span class="s2">* scope = [</span>ChatTranslations<span class="s2"> </span><span class="s8">get</span><span class="s2">];</span></p>
+			
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp;</span></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Initialize the client with the ChatTranslations scope.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p10"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s1">self</span><span class="s2">.</span><span class="s4">client</span><span class="s2"> = [[</span><span class="s4">XMLClient</span><span class="s2"> </span><span class="s5">alloc</span><span class="s2">] </span><span class="s8">initWithHostAddress</span><span class="s2">:</span>@"shady.cse.tamu.edu"</p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s8">andPort</span>:<span class="s9">2108</span><span class="Apple-converted-space">&nbsp;</span></p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s8">andTranslationScope</span>:scope];</p>
+			
+			<p class="p2"><br></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Designate self as the client's delegate.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s1">self</span><span class="s2">.</span>client<span class="s2">.</span>delegate<span class="s2"> = </span><span class="s1">self</span><span class="s2">;</span></p>
+			
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Set the ChatRoomViewController's client as the client.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>chatRoomViewController<span class="s2">.</span>client<span class="s2"> = </span><span class="s1">self</span><span class="s2">.</span>client<span class="s2">;</span></p>
+			
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Set up the chatRoomViewController as<span class="Apple-converted-space">&nbsp;</span></p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* the CHAT_UPDATE_DELEGATE in the application scope.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s1">self</span><span class="s2">.</span>client<span class="s2">.</span>scope<span class="s2"> </span><span class="s5">setObject</span><span class="s2">:</span></p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>[<span class="s3">NSValue</span> <span class="s5">valueWithPointer</span>:(<span class="s4">chatRoomViewController</span>)]</p>
+			
+			<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">forKey</span>:<span class="s4">CHAT_UPDATE_DELEGATE</span>];</p>
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Connect the client to the server.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>[<span class="s1">self</span>.<span class="s4">client</span> <span class="s8">connect</span>];</p>
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span>window<span class="s2"> </span><span class="s5">addSubview</span><span class="s2">:</span>chatRoomViewController<span class="s2">.</span><span class="s5">view</span><span class="s2">];</span></p>
+			
+			<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s4">window</span><span class="s2"> </span>makeKeyAndVisible<span class="s2">];</span></p>
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p2"><br></p>
+			<p class="p3">- (<span class="s1">void</span>)dealloc {</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span>chatRoomViewController<span class="s2"> </span><span class="s5">release</span><span class="s2">];</span></p>
+			
+			<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s4">window</span><span class="s2"> </span>release<span class="s2">];</span></p>
+			<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s1">super</span><span class="s2"> </span>dealloc<span class="s2">];</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			
+			<p class="p6">/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* Show chat room</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+			<p class="p3">- (<span class="s1">void</span>)showChatRoom</p>
+			<p class="p3">{</p>
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span>chatRoomViewController<span class="s2"> </span><span class="s8">activate</span><span class="s2">]; <span class="Apple-converted-space">&nbsp;</span></span></p>
+			
+			<p class="p1"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span>window<span class="s2"> </span><span class="s5">bringSubviewToFront</span><span class="s2">:</span>chatRoomViewController<span class="s2">.</span><span class="s5">view</span><span class="s2">];</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p2"><br></p>
+			<p class="p2"><br></p>
+			<p class="p6">/*</p>
+			
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* XMLClientDelegate methods:</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+			<p class="p3">- (<span class="s1">void</span>) connectionTerminated:(<span class="s4">XMLClient</span>*)client</p>
+			<p class="p3">{</p>
+			<p class="p10"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s5">NSLog</span><span class="s2">(</span>@"The connection terminated!\n"<span class="s2">);</span></p>
+			
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p3">- (<span class="s1">void</span>) connectionAttemptFailed:(<span class="s4">XMLClient</span>*) connection</p>
+			<p class="p3">{</p>
+			<p class="p10"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s5">NSLog</span><span class="s2">(</span>@"The connection failed to connect!\n"<span class="s2">);</span></p>
+			
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			<p class="p3">- (<span class="s1">void</span>) connectionSuccessful:(<span class="s4">XMLClient</span>*) client<span class="Apple-converted-space">&nbsp;</span></p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; </span>withSessionId:(<span class="s3">NSString</span>*) sessionId;</p>
+			
+			<p class="p3">{</p>
+			<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Show the chat window after the client has connected.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/<span class="s2"><span class="Apple-converted-space">&nbsp;</span></span></p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>[window <span class="s5">bringSubviewToFront</span>:chatRoomViewController.<span class="s5">view</span>];</p>
+			
+			<p class="p7"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s1">self</span><span class="s2"> </span>showChatRoom<span class="s2">];</span></p>
+			<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp;</span></p>
+			<p class="p10"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span><span class="s5">NSLog</span><span class="s2">(</span>@"Connection successful with session id:%@\n"<span class="s2">, sessionId);</span></p>
+			<p class="p3">}</p>
+			<p class="p2"><br></p>
+			
+			<p class="p6">/*</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* Close the connection when the user hits the home button.</p>
+			<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+			<p class="p3">- (<span class="s1">void</span>) applicationWillTerminate:(<span class="s3">UIApplication</span>*) application</p>
+			<p class="p3">{</p>
+			<p class="p3"><span class="Apple-converted-space">&nbsp; </span>[client <span class="s8">disconnect</span>];</p>
+			
+			<p class="p3">}</p>
+			<p class="p4">@end</p>
+			
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<div align="left" class="java">
+	<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+	  <tr>
+	   <td nowrap="nowrap" valign="top" align="left">
+	    <code>
+			<br></p>
+<p class="p3"><span class="s1">@implementation</span> ChatRoomViewController</p>
+<p class="p2"><br></p>
+<p class="p4">@synthesize<span class="s2"> client;</span></p>
+
+<p class="p2"><br></p>
+<p class="p6">/*</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* Add a chat message</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+<p class="p3">- (<span class="s1">void</span>)displayChatMessage:(<span class="s3">NSString</span>*)message<span class="Apple-converted-space">&nbsp;</span></p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span>fromUser:(<span class="s3">NSString</span>*)userName<span class="Apple-converted-space">&nbsp;</span></p>
+
+<p class="p3">{</p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s4">chat</span><span class="s2"> </span>appendTextAfterLinebreak<span class="s2">:</span></p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span>[<span class="s3">NSString</span> <span class="s5">stringWithFormat</span>:<span class="s6">@"%@: %@"</span>, userName, <span class="s5">message</span>]];</p>
+
+<p class="p7"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s4">chat</span><span class="s2"> </span>scrollToBottom<span class="s2">];</span></p>
+<p class="p3">}</p>
+<p class="p2"><br></p>
+<p class="p6">/*</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* ChatUpdateDelegate method.</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+<p class="p3">- (<span class="s1">void</span>) recievedChatUpdate:(<span class="s4">ChatUpdate</span>*)update;</p>
+
+<p class="p3">{</p>
+<p class="p6"><span class="s2"><span class="Apple-converted-space">&nbsp; </span></span>/*</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>* Build username (ip:port) and post to chat area.</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; </span>*/</p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; </span><span class="s3">NSString</span>* user = [<span class="s3">NSString</span> <span class="s5">stringWithFormat</span>:<span class="s6">@"%@:%d"</span>,<span class="Apple-converted-space">&nbsp;</span></p>
+
+<p class="p3"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>update.<span class="s4">host</span>, update.<span class="s5">port</span>];</p>
+
+<p class="p7"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s1">self</span><span class="s2"> </span>displayChatMessage<span class="s2">:update.</span><span class="s4">message</span><span class="s2"> </span>fromUser<span class="s2">:user];</span></p>
+<p class="p3">}</p>
+<p class="p2"><br></p>
+<p class="p8">#pragma mark -</p>
+<p class="p8">#pragma mark UITextFieldDelegate Method Implementations</p>
+
+<p class="p2"><br></p>
+<p class="p6">/*</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>* This is called whenever "Return" is touched on <leo_highlight style="border-bottom: 2px solid rgb(255, 255, 150); background: transparent none repeat scroll 0% 0%; cursor: pointer; display: inline; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="leoHighlights_Underline_0" onclick="leoHighlightsHandleClick('leoHighlights_Underline_0')" onmouseover="leoHighlightsHandleMouseOver('leoHighlights_Underline_0')" onmouseout="leoHighlightsHandleMouseOut('leoHighlights_Underline_0')" leohighlights_keywords="iphone" leohighlights_url="http%3A//thebrowserhighlighter.com/leonardo/highlights/keywords?keywords%3Diphone">iPhone</leo_highlight>'s keyboard</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;</span>*/</p>
+<p class="p3">- (<span class="s1">BOOL</span>)textFieldShouldReturn:(<span class="s3">UITextField</span> *)theTextField {</p>
+<p class="p3"><span class="Apple-tab-span">	</span><span class="s1">if</span> (theTextField == <span class="s4">input</span>) {</p>
+
+<p class="p3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="s3">NSString</span>* inputText = <span class="s4">input</span>.text;</p>
+<p class="p2"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s7">/*</span></p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>* Initialize ChatRequest and set message to content's of the text field.</p>
+
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>*/</p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s4">ChatRequest</span>* request = [[<span class="s4">ChatRequest</span> <span class="s5">alloc</span>] <span class="s5">init</span>];</p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span>[request <span class="s5">setMessage</span>:inputText];</p>
+
+<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp;</span></p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s7">/*</span></p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>* Setup the client to send the message a little later in</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>* the run loop.</p>
+<p class="p6"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp; </span>*/</p>
+
+<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span>[</span><span class="s4">client</span><span class="s2"> </span>performSelector<span class="s2">:</span><span class="s1">@selector</span><span class="s2">(</span><span class="s8">sendMessage</span><span class="s2">:) </span>withObject<span class="s2">: request];</span></p>
+<p class="p2"><span class="Apple-converted-space">&nbsp;&nbsp; &nbsp;</span></p>
+<p class="p3"><span class="Apple-converted-space">&nbsp; &nbsp; </span>[request <span class="s5">release</span>];</p>
+
+<p class="p2"><br></p>
+<p class="p3"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>[<span class="s4">input</span> <span class="s5">setText</span>:<span class="s6">@""</span>];</p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span>[</span><span class="s1">self</span><span class="s2"> </span>displayChatMessage<span class="s2">:inputText </span>fromUser<span class="s2">:</span><span class="s6">@"me"</span><span class="s2">];</span></p>
+
+<p class="p3"><span class="Apple-tab-span">	</span>}</p>
+<p class="p4"><span class="s2"><span class="Apple-tab-span">	</span></span>return<span class="s2"> </span>YES<span class="s2">;</span></p>
+<p class="p3">}</p>
+<p class="p2"><br></p>
+<p class="p3">- (<span class="s1">void</span>)activate {</p>
+<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s4">input</span><span class="s2"> </span>becomeFirstResponder<span class="s2">];</span></p>
+
+<p class="p3">}</p>
+<p class="p2"><br></p>
+<p class="p3">- (<span class="s1">void</span>)dealloc {</p>
+<p class="p9"><span class="s2"><span class="Apple-converted-space">&nbsp; </span>[</span><span class="s1">super</span><span class="s2"> </span>dealloc<span class="s2">];</span></p>
+<p class="p3">}</p>
+<p class="p2"><br></p>
+
+<p class="p4">@end</p>
+
+		</code>
+	   </td>
+	  </tr>
+	</table>
+</div>
+
+<div class="credits">
+designed for mozilla 1+ and ie 6+ <br container="http://localhost/nic/research/metametadata/index.html">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

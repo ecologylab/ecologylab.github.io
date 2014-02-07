@@ -1,0 +1,739 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>summer of code 2012 [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../images/ecologylab-16.png" type="image/png">
+
+<style type="text/css">
+.course {
+	font-size: 18px;
+	color: #000000;
+}
+
+h4 {
+	color: #777;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+h1 {
+	margin-top: 12px;
+	margin-bottom: 3px;
+	padding-top: 12px;
+	padding-bottom: 3px;
+}
+
+.course:hover {
+	color: #0004DC;
+	text-decoration: none
+}
+</style>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+	<div class="rootcontainer">
+
+		<div class="header">
+			<img class="logo"
+				src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+			<div class="title">summer of code internships 2012</div>
+
+			<div class="slogan">Connecting sensation, media, computing,
+				networks, ontology, methodologies, cultures.</div>
+		</div>
+
+		<br clear="all" />
+
+		<div class="nav" style="height: 300px;">
+			<div class="block">
+				<a class="navlink" href="../index.html">home</a> <a class="navlink"
+					href="../define.html">define</a> <a class="navlink"
+					href="../research/index.html">research</a> 
+					
+<a class="navlink" href="../people/index.html">people</a>
+					<a class="navlink"href="../workshops/index.html">workshops</a>
+					<a class="navselected" href="index.html">summer of code</a> 
+					<a class="subnavselected" href="../softwareDevelopment/index.html">programming
+					practices</a>
+					<a class="subnavlink" href="index.html">summer of code 2013</a>
+					<a class="subnavselected" href="gsoc2012.html">summer of code 2012</a>
+					<a class="subnavlink" href="gsoc2011.html">summer of code 2011</a>
+
+<div class="subblock">
+			<a class="nav_nowrap" target="_blank"
+			 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+					
+			</div>
+
+		</div>
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<h1>Summer of Code at the Interface Ecology Lab!</h1>
+
+			<p>The Interface Ecology Lab is a supportive community of developers dedicated to human-centered computing, object-oriented design, and open source software.
+			We are engaged in cutting-edge research that 
+			<a target="_blank" class="destination" href="../infocomposer/index.html">visualizes and embodies social and semantic information</a>, 
+			with multi-touch interaction, for use in games, creativity support tools, interactive art, and other digital media. 
+			Eight Summer of Code Internships enabled students from Romania, India, and The United States to participate.
+			</p>
+				
+			<p>The foundation of our software is <a target="_blank" class="destination" href="../research/simplGuide/index.html">S.IM.PL</a>
+				(Support for Information Mapping in Programming Languages),
+				the best-in-class open source framework for developing distributed programs across programming languages that share and store complex data structures. 
+				Its great for writing programs that connect iOS and WPF clients to Java servers.
+				</p>
+				
+			<p>Built on S.IM.PL, 
+				<a target="_blank" class="destination" href="../research/simplGuide/metaMetadata/index.html">meta-metadata</a> 
+				is a language and software architecture for metadata wrappers.
+				
+				for representing the rich structures of the world's metadata, 
+				facilitating extraction, manipulation, visualization, and embodiment.
+				
+				Mmd transforms the web into a structured type system and ontology of semantics. This facilitates extraction, 
+				manipulation, visualization, and embodiment of the world's data.
+				We use meta-metadata to enable people to collect, visualize, and embody metadata as rich bookmarks to support ideation in 
+				<a target="_blank" class="destination" href="../infocomposer/index.html">InfoComposer</a> and <a href="#M7">trans-surface interaction</a>.</p>
+				
+			<p>The Interface Ecology Lab works on developing innovative
+				multi-touch hardware, such as <a href="../research/zerotouch/index.html">ZeroTouch</a>, to embody people's
+				interaction with information. This makes important developing open source software for
+				connecting sensory interface hardware like ZeroTouch, with common software
+				platforms. Likewise, we are using S.IM.PL and meta-metadata to develop <a href="../research/publications/kerneHamiltonToupsTransSurfaceCBDcscw2012.pdf" target="_blank" class="destination">trans-surface interaction</a>
+				techniques for exchanging rich bookmarks between Android phones.</p>
+
+			<p>This summer's projects involve S.IM.PL, meta-metadata, and multi-touch:
+			<ul>
+				<li><a href="#S1"><b>S1: Make Python S.IM.PL</b><br>
+				Bring Python to the table of S.IM.PL supported languages and platforms, with Java, C#, IOS, and Javascript: 
+				automatic cross-generation of source code for equivalent, inter-operable object definitions.
+				</a></li>
+<!-- 				<li><a href="#S2"><b>S2: Make C++ S.IM.PL</b><br> -->
+<!-- 				Bring C++ to the table of S.IM.PL supported languages and platforms, with Java, C#, IOS, and Javascript:  -->
+<!-- 				automatic cross-generation of source code for equivalent, inter-operable object definitions. -->
+<!-- 				</a></li> -->
+				<li><a href="#M1"><b>M1: Meta-Metadata C# Port</b><br>Bring meta-metadata rich bookmarks and their semantics into C# for creation of rich Windows applications.</a></li>
+				<li><a href="#M2"><b>M2: Django Information Composition
+							Social Network </b><br>
+							Design the next social network: sharing creative collections rich bookmarks.
+							</a></li>
+				<li><a href="#M3"><b>M3: Semantic Service</b><br>Transform the wild web into well structured semantics, in the form of XML or JSON, with a RESTful interface.</a></li>
+				<li>
+					<a href="#M4">
+					<b>M4: Interactive Metadata Browser Extension and Mashup</b><br>
+					Improve the Chrome browsing experience with an extension to visualize metadata for linked documents.
+					</a>
+				</li>
+<!-- 				<li><a href="#M5"><b>M5: Meta-Metadata SDK</b><br>Create mash-up demos that use meta-metadata to create cool interactive pages involving OpenStreetMaps, shopping, entertainment, and/or scholarly research.</a></li> -->
+<!-- 				<li><a href="#M6"><b>M6: Facebook and Other Social -->
+<!-- 							Media Wrappers</b><br>Use meta-metadata to develop a slick new -->
+<!-- 						cross-platform API for Twitter, Facebook, ...</a></li> -->
+				<li><a href="#M7"><b>M7: Trans-surface Metadata Message
+							Passing with NFC</b><br>
+							Support NFC based OODSS on various platforms  
+							</a></li>
+							
+				<li><a href="#T1"><b>T1: TUIO Windows Touch Driver</b><br></a></li>
+			</ul>
+			</p>
+			<p>
+				Find our <a href="#apptemplate" class="destination">application
+					template</a> at the bottom of this page. Applications are strictly due on April 6 19:00 UTC (4 pm Central Daylight Time),
+					and must be submitted through <a href="http://www.google-melange.com/gsoc/org/google/gsoc2012/ecologylab" target="_blank" class="destination">Google GSoC</a>;
+					specify <a href="../index.html" target="_blank" class="destination">Interface Ecology Lab @ Texas A&M University</a> as the organization.
+					Google will pay each participating student $5000 for the summer.
+			</p>
+			<p>
+			Applications for Projects M1-M7 require you to author a <b>meta-metadata wrapper</b>. See the 
+			<a href="../research/simplGuide/metaMetadata/index.html" target="_blank">meta-metadata guide</a>
+			for instruction on setting up a development environment and tutorials on authoring wrappers.
+			</p>
+
+			<p>
+				Subscribe to  <a class="destination" target="_blank" href="http://groups.google.com/group/metametadata/subscribe">meta-metadata developers group</a>, and
+				<a class="destination" target="_blank" href="http://groups.google.com/group/ecologylabAPI/subscribe">s.im.pl api developers group</a> to see our history and ask questions.
+			</p>
+			<p>
+				IRC channel: <a class="destination" target="_blank" href="irc://irc.freenode.net/ecologylab">irc://irc.freenode.net/ecologylab</a>.<br/>
+			</p>
+
+		</div>
+
+
+
+        <div class="intro" style="padding-right: 10px;">
+			<a name="S1"></a>
+			<h5>Project S1: Make Python S.IM.PL</h5>
+			
+            <span>contact: rhema<img src="../people/images/at.png">ecologylab.net</span>
+			<p>Porting <a target="_blank" class="destination" href="../research/simplGuide/index.html">S.IM.PL</a> to Python 
+			will mate Python's powerful fluid scripting with the cross-language object declaration support of S.IM.PL and meta-metadata.
+			combine the rapid web app development aspects of  with the multiple platform and language agnostic features of S.IM.PL.  
+			S.IM.PL Serialization is a de/serialization framework that supports information mappings across programming languages and platforms.  S.IM.PL lets developers write complex data structures (e.g. trees, hashmaps, and graphs) in annotated Java and generate equivalent de/serializable class types in C#, Objective C, and partially in Javascript.  S.IM.PL runs on Java Sun, Android, Mac OSX, and IOS.</p>
+
+			<p>The result will be great savings in time and simplicity for developers writing distributed applications with Java, C#, or iOS clients and server-side Python / <a href="https://www.djangoproject.com/" target="_blank">Django</a>.
+			Writing code by hand for each programming language introduces human error and inconsistent representations between class definitions that are supposed to represent the same data.  
+			In the pre-S.IM.PL world, to save or pass an instance of a type from one programming language to another, one must hand-code a de/serialization scheme that marshals each instance of a type, such that its structure can be remade.  
+			Clients and servers often do not share a common programming language, so the entire process of defining the data structure and de/serialization across languages is foisted on developers.</p>
+
+			<p>Using standard object representations across programming languages and platforms provides the interoperability required for utilizing the best aspects of a language or platform,
+			without incurring the development cost of writing and maintaining the same complex data structures each time the schema changes.  
+			Passing objects between platforms as serialized instances of S.IM.PL objects will provide a common context for clients, servers, and applications.
+			The type definitions and JSON or XML bindings will be encapsulated in a SimplTypeScope.</p>
+
+			<p>The student will start by implementing de/serialization of S.IM.PL objects in Python/Django.  Django models must be used because Django's database integration provides persistent storage.  
+			The student will create a Python/Django code generator in Java, which will be similar to other implementations, that takes a SimpleTypeScope as input and gives Python/Django code as output.  
+			The code generator will output code for adding objects into Django's administration management.  
+			As in other S.IM.PL language support packages, De/serialization must be implemented for JSON and XML serialization formats.  
+			The parsing in other languages will be ported.
+			Testing this code will be accomplished by deserializing and serializing S.IM.PL objects from different platforms.</p>
+
+			<p>Once S.IM/PL de/serialization and code generation is finished, the student will implement HTTP <a href="../research/simplGuide/oodss/index.html" target="blank" class="destination">OODSS</a> in Python/Django.  The Student may use the same session handling mechanisms that are implemented in Java HTTP OODSS or design another mechanism for handling sessions.  Clients accessing the server will make a request through a serialized S.IM.PL object passed as a POST parameter.  The server will send with a serialized OODSS Response object.  Non-HTTP implementations of OODSS are designed for persistent bidirectional communication include Update messages that a server may send clients (push communication).  Update messages will simulate bidirectional communication with long polling.</p>
+
+			<p>After Python/Django OODSS is developed, the student will use S.IM.PL Python to create an interactive web app for sharing and authoring rich bookmarks as lists and grids.  The rich bookmarks will use the Metadata.js code from the M4 project to show explorable metadata over collected items.  Each rich bookmark will be represented by a picture or a text snippet and have metadata that is available for viewing on demand.  The student must use Django templates and interact with the server though asynchronous Javascript. </p>
+
+			<p>The student should be familiar with Python, Django, Java, Javascript, HTML, jQuery, and web services.</p>
+
+			<h4>Deliverables</h4>
+			<ul>
+				<li>Python/Django S.IM.PL
+					<ul>
+						<li>De/serialization to/from S.IM.PL/Django objects</li>
+						<li>Java SimplTypesScope to Python/Django code generator</li>
+					</ul>
+				</li>
+				
+				<li>Python/Django HTTP OODSS Server
+					<ul>
+						<li>Request and Response messages via POST</li>
+						<li>Update messages</li>
+					</ul>
+				</li>
+				
+				<li>Example Web Application
+					<ul>
+						<li>Generate Python and Javascript from Java classes</li>
+						<li>Write application using Django templates</li>
+						<li>Run publicly on server</li>
+					</ul>
+				</li>
+				
+				<li>Documentation</li>
+			</ul>
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<a name="M1"></a>
+			<h5>Project M1 - Meta-Metadata C# Porting</h5>
+			<img style="float: right; padding: 10px;" src="wpfMetadataComposition.png" />
+            <span>contact: Zach Toups</span>
+			<p>Port current meta-metadata functionalities from Java into C#,
+				to support seamless cross-language and cross-platform metadata
+				semantics interoperability and the creation of rich Windows applications
+				built around meta-metadata. 
+			</p>
+			<p>
+				Having meta-metadata in C# allows it to be used in native Windows frameworks such as WPF, WCF, and WinForms.
+				This allows developers to create applications which can take full advantage of the Windows platform,
+				including Windows 8, Windows Touch, and Windows Phone to name a few.				
+			</p>
+			<p>During the porting process, you will gain an understanding of how the meta-metadata system
+				works, as well as interesting research and engineering problems such
+				as:
+				<ul>
+					<li>handling complex, structured information</li>
+					<li>web semantics extraction and interaction</li>
+					<li>generating meaningful rich bookmarks for web pages</li>
+					<li>information retrieval techniques to capture user interest</li>
+				</ul>
+			</p>
+			<h4>Deliverables</h4>
+				<ul>
+					<li>tracking document and download monitor status</li>
+					<li>carrying out semantic operations (formerly semantic actions)</li>
+					<li>handling the iterative extraction of metadata graph data structures
+						(so that references to documents embedded in existing metadata objects
+						get updated when their corresponding metadata objects are fully parsed)</li>
+					<li>generating image / text clippings by traversing the DOM tree using
+						our surrogate extraction algorithm</li>
+					<li>creating term vectors and supporting interest expression for extracted
+						metadata semantics</li>
+					<li>maintenance of global document map and handling document graphs.
+				The role of the global document map is to maintain a mapping from
+				URLs to document metadata objects for the life of a program,
+				enabling reuse of document metadata without re-parsing.</li>		
+				</ul>
+				
+			<h4>Prerequisites</h4>
+			<p>C#, Java, XML, XPath.</p>
+			<p>As part of the application students will need to get familiar with meta-metadata by
+				authoring a wrapper and running tests.</p>
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<a name="M2"></a>
+			<h5>Project M2 - Django Information Composition Social Network</h5>
+            <span>contact: rhema<img src="../people/images/at.png">ecologylab.net</span>
+			<p>An information compositions is a spatially arranged set of rich bookmarks that visualizes concepts and ideas.  
+			<a class="destination" href="http://www.ecologylab.net/infocomposer/" target="_blank">InfoComposer</a> is made to support the creative process of collecting, arranging, reflecting, and generating new ideas.  
+			Letting users save and collaborate with compositions will help people share ideas and communicate in a flexible, visually appealing medium.</p>
+			
+			<p>Design an out of the box server solution for sharing <a target="_blank" class="destination" href="../research/informationComposition.html">information composition</a>s.  
+			This will allow an individual or organization host a reusable, extensible, web portal application that stores information compositions and supports users in sharing and maintaining information compositions in a social network.</p>
+			
+			<p>The student will create a self contained web application where users upload, download, browse, share, and publish compositions authored with InfoComposer.  
+			This site will also serve applications with an API for retrieval and storage of information compositions.  This constitutes cloud storage with social networking for individuals who create information compositions.  
+			Saving compositions should also allow a user to add tags, which will be used for searching and browsing public information compositions.  The student will also implement an account management service using the Django admin site. 
+			The student will use Django and Pinax to implement a social network where users can form groups  and publish information compositions on the web publicly, to a group, or just for themselves.</p>
+			
+			<p>In InfoComposer, an information composition is saved as an icom file, which is a zip compressed file that include all information about the composition.  
+			This file includes a generated HTML versions of the information composition, which the social network would use to show compositions.  It also includes information about all clippings included in the composition and annotations.  
+			Being able to understand and use this information will make the information composition social network better.  
+			The student will use the Python implementation of S.IM.PL to help tag information compositions and provide as much information about information compositions as possible.</p>
+			
+			<p>The student should be familiar with Java, Python, Django
+				(Templates, Database Objects, Rest responses), HTML, Javascript,
+				CSS, XML, and web services. While the student should have a local
+				application development environment initially. We will provide a
+				virtualized environment to enable more realistic deployment
+				conditions.</p>
+
+			<h4>Deliverables</h4>
+			<ul>
+				<li>Information Composition Social Network Site Using <a href="https://www.djangoproject.com/" class="destination"  target="_blank">Django</a>
+					and Probably <a href="http://pinaxproject.com/" target="_blank" class="destination" >Pinax</a>
+					<ul>
+						<li>User authentication</li>
+						<li>Administration</li>
+						<li>Sharing</li>
+						<li>API for Upload, Download, of User Compositions</li>
+					</ul>
+				</li>
+				
+				<li>InfoComposer upload and download of compositions through API</li>
+				<li>Documentation</li>
+			</ul>
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<a name="M3"></a>
+						
+						<div class="illustrate" style="border:0px;"><img class="illustrate" src="images/harryPotterRichBookmark.png" alt="rich bookmark example"/><br/>
+						<center>Rich Bookmark</center></div>
+			<h5>Project M3 - Semantic Service</h5>
+			
+            <span>contact: <a class="destination" href="../people/quyin.html" target="_blank">Yin Qu</a></span>
+						<p>The semantic service will transform the wild web into well
+						structured rich semantics, in the form of XML or JSON, with a
+						RESTful interface, using <a target="_blank" class="destination"
+							href="../research/simplGuide/metaMetadata/index.html">meta-metadata</a>.
+						Rich semantics will be directly mapped to classes and instances in
+						programming languages including Java and C# for convenient use. The
+						semantic service is critical for building thin clients (web-based,
+						Android or desktop) working with rich semantics from multiple
+						sources, such as a web site mixing all your social network
+						activities; an application allowing you to collect rich bookmarks
+						(see the figure; check out <a target="_blank" class="destination"
+							href="../infocomposer/">InfoComposer</a>); a mobile app that you
+						can share rich bookmarks with annotations to your family or
+						friends, or even social networks.</p>
+
+			<p>The semantic service will store complex <i>metadata semantics</i> in a
+			distributed database back-end, and communicate with clients through HTTP.
+			SIMPL <a class="destination"
+				href="../research/simplGuide/oodss/index.html"
+				target="blank">OODSS</a> over HTTP, an easy-to-use web service
+			framework, will simplify the implementation, by using <a
+				class="destination"
+				href="../research/simplGuide/serialization/index.html"
+				target="blank">S.IM.PL Serialization</a> on information and message
+			data structures.  However, rich semantics also brings unusual challenges:
+			storing complex metadata semantics into a database back-end (we are
+			primarily focusing on PostgreSQL for now) results in large number of
+			tables and performance issues; the messy nature of semantics in the real
+			world requires dealing with cross references both in memory and in
+			database; we must survive schema evolution along with changes in the
+			wrapper repository, and maintain high performance through distributed,
+			fault-tolerant data stores and caches.</p>
+
+			<p>In GSoC 2011, an Object-Relational Mapping module has been
+			implemented, connecting metadata semantics with databases. This year,
+			building on previous work, the student will put components together and
+			finally kick off the service! The student will work with the mentor to
+			design the service interface, create testings, deploy the service, code
+			simple maintenance tools, and deal with aforementioned challenges. The
+			student will learn about and experience web semantics, RESTful web
+			services, distributed storage and processing, among other exciting
+			techniques that are related to complex big data, and participate in
+			cutting edge research. We will provide access to a virtualized
+			environment on a many-core server that we have.</p>
+
+			<h4>Prerequisites</h4>
+			<p>Java, XML/JSON, SQL (ideally PostgreSQL), HTTP. Experiences with web
+				sites, services, Ehcache/memcached, and distributed systems will be a plus.</p>
+
+			<h4>Deliverables</h4>
+			<p>The specific scope of work may be adjusted according to the student's
+			experiences. A minimum set of deliverables includes:</p>
+			<ul>
+				<li>Service API design.</li>
+				<li>Semantics extraction as a service.</li>
+				<li>Middle layer between semantics extraction service and current ORM layer.</li>
+				<li>Basic scripts for testing and deployment.</li>
+				<li>Basic administration / log viewing portal.</li>
+				<li>Basic schema evolution tool.</li>
+			</ul>
+			<p>Optional deliverables:</p>
+			<ul>
+				<li>Caches.</li>
+				<li>Replications.</li>
+				<li>Search service.</li>
+			</ul>
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<a name="M4"></a>
+			<h5>Project M4: Interactive Metadata Browser Extension and
+				Mashup</h5>
+                <span>contact: <a class="destination" href="../people/andrew.html" target="_blank">Andrew Webb</a></span>
+			<p>This project seeks to help Google Chrome users better explore the web and improve the
+				value of mashups by providing
+				metadata about linked documents. The student will build a Chrome extension for interactive
+				visualization and browsing of metadata as HTML5. For the general use
+				case, the extension will display metadata associated with linked
+				documents when the user brushes her mouse over hyperlinks. The
+				extension will build on existing Javascript extraction that uses
+				<a target="_blank" class="destination" href="../research/simplGuide/metaMetadata/index.html">meta-metadata</a> JSON objects to extract metadata as JSON and present
+				the metadata through javascript injection.</p>
+				
+				<p>The idea is to bring <a target="_blank" class="destination" href="../infocomposer/index.html">InfoComposer</a>'s treatment of rich bookmarks into HTML5!
+				Launch InfoComposer, drag an image from Amazon from Firefox into an empty 
+				<a target="_blank" class="destination" href="../research/informationComposition.html">information composition</a>, 
+				and see what we mean :).</p>
+
+			<p>The student will be responsible for designing structures,
+				interactions, and visual styling (CSS3) of the metadata browser. A
+				clean, space efficient, visualization is important. The student will
+				need to create a design that mitigates difficulties inherent in
+				displaying metadata that include large tree structures, cyclic
+				graphs and lengthy text fields.</p>
+
+			<p>One deliverable is to develop an exciting use case involving
+				mashups, including authoring new meta-metadata wrappers as needed.
+				The student will use existing open source mashup and visualization
+				tools, such as OpenStreetMap, Google Maps, and SIMILE. This use
+				case will enable users to quickly create mashups from collected
+				metadata.</p>
+
+			<P>Examples of possible mashup use cases are:
+			<ul>
+				<li>Use geolocational information from sites like Urban Spoon,
+					anchoring meal cost, environment, and reviews to physical locations
+					relevant to the user embedded in a Google Map.</li>
+				<li>Visualize documents and metadata organized by temporal
+					information using SIMILE timeline widget.</li>
+			</ul>
+			</P>
+
+			<h4>Deliverables</h4>
+			<p>
+			<ul>
+				<li>Metadata browser Chrome extension</li>
+				<li>New meta-metadata wrappers for mashup</li>
+				<li>Mashup use case</li>
+				<li>Documentation and tutorial</li>
+			</ul>
+			</p>
+			
+			<h4>Resources</h4>
+			<p>
+			<ul>
+				<li><a class="destination" href="http://code.google.com/chrome/extensions/devguide.html" target="_blank">Google Chrome Extension Developer's Guide</a>
+				<li><a class="destination" href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></li>
+				<li><a class="destination" href="http://simile.mit.edu/" target="_blank">SIMILE</a></li>
+				
+				
+		</div>
+
+
+		<div class="intro" style="padding-right: 10px;">
+<!-- 			<a name="M5"></a> -->
+<!-- 			<h5>Project M5: Meta-Metadata SDK</h5> -->
+<!--             <span>contact: <a class="destination" href="../people/sashikanth.html" target="_blank">Sashikanth Damaraju</a></span> -->
+<!-- 			<p>The expected result of this project includes source code and -->
+<!-- 				pre-compiled binaries (e.g. JAR files), utilities such as -->
+<!-- 				meta-metadata authoring tool, compiler, documentation, and code -->
+<!-- 				samples with reusable patterns for the meta-metadata formal language -->
+<!-- 				and architecture.</p> -->
+
+<!-- 			<p>The student will work on the implementation of various -->
+<!-- 				components of a meta-metadata SDK, and deploy it in the open source -->
+<!-- 				community to help wrapper authors and developers easily use the -->
+<!-- 				software, including but not limited to building scripts for software -->
+<!-- 				components, meta-metadata compiler automation tools and scripts, -->
+<!-- 				metadata extraction and representation samples, and reusable patterns.</p> -->
+
+<!-- 			<p>The core of the SDK will consist of tools that make writing wrappers either, -->
+<!-- 			and a small set of extremely well-documented example applications that utilize meta-metadata to create cool web mashups. -->
+<!-- 				The mash-up application areas can include meta-search, feed aggregator, -->
+<!-- 				bibliography manager, vacation planner, ...  -->
+<!-- 				Mash-up sources can include Open Street Maps / Google Maps, Facebook, Google+, Tumblr, ... -->
+<!-- 				They can involve integrating and re-presenting information involving shopping, travel, entertainment, gaming, scholarly research, and social media.</p> -->
+
+<!-- 			<p>The student will work with the mentor to determine specific -->
+<!-- 				components s/he will focus on, and define deliverables. Ideally, -->
+<!-- 				work will be performed both in Java and in C#.</p> -->
+
+<!-- 			<h4>Prerequisites</h4> -->
+
+<!-- 			<p>Java, XML, XPath, Ant, C#</p> -->
+
+<!-- 			<a name="M6"></a> -->
+<!-- 			<h5>Project M6: Facebook and Other Social Media Wrappers</h5> -->
+<!--             <span>contact: <a class="destination" href="../people/andruid.html" target="_blank">Andruid Kerne</a></span> -->
+<!-- 			<p>The student will author meta-metadata definitions that -->
+<!-- 				describe structure, presentation, and extraction rules for social -->
+<!-- 				media sites will enable developers to create engaging experiences -->
+<!-- 				and analytical processes that help people manage social information.</p> -->
+
+<!-- 			<p>Because Facebook is the most widely used social network, the -->
+<!-- 				student should prioritize it as the most important wrapper to write. -->
+<!-- 				Facebook has many kinds of pages that should have wrappers built -->
+<!-- 				including: -->
+<!-- 			<ul> -->
+<!-- 				<li>Newsfeed</li> -->
+<!-- 				<li>Profiles</li> -->
+<!-- 				<li>Photos</li> -->
+<!-- 				<li>Groups</li> -->
+<!-- 				<li>Events</li> -->
+<!-- 				<li>Notes</li> -->
+<!-- 			</ul> -->
+<!-- 			</p> -->
+
+<!-- 			<p>Other social networks that you can build wrappers and -->
+<!-- 				interactive demo tutorials for include Google+, Twitter, Pinterest, -->
+<!-- 				LinkedIn, Reddit, YouTube, StumbleUpon, Blogspot/Blogger, -->
+<!-- 				Foursquare, Wordpress, Tumblr, Squidoo, Photobucket, Dailymotions, -->
+<!-- 				and Vimeo.</p> -->
+<!-- 			<p>The student should be familiar with JavaScript, XPaths, Java, -->
+<!-- 				and meta-metadata. The student will also design and implement -->
+<!-- 				authentication for use with meta-metadata when extracting metadata -->
+<!-- 				from user access specific (non-public) content from web pages. As -->
+<!-- 				part of the deliverable sequence, student will create sample -->
+<!-- 				applications that use and mashup social media wrappers to engage -->
+<!-- 				users.</p> -->
+
+<!-- 			<h4>Deliverables</h4> -->
+<!-- 			<ul> -->
+<!-- 				<li>Facebook Meta-Metadata Wrappers</li> -->
+<!-- 				<li>Design and Implementation of Non Public Site Extraction</li> -->
+<!-- 				<li>Example Application that Uses Student Authored Social Media -->
+<!-- 					Wrappers</li> -->
+<!-- 				<li>Additional Wrappers for ~10 Social Media Sites</li> -->
+<!-- 			</ul> -->
+
+			<a name="M7"></a>
+			<h5>Project M7: Trans-surface Metadata Message Passing with NFC</h5>
+			<p>The Object-Oriented Distributed Semantic Services (<a href="../research/simplGuide/oodss/index.html" target="blank">OODSS</a>)
+				framework supports developers in defining web services easily by
+				enabling them to specify the data sent over the wire, its serialized
+				form, and the operations upon it together in one place. Near Field
+				Communication (NFC) is a set of standards for smartphones and
+				similar devices to establish radio communication with each other by
+				touching them together or bringing them into close proximity. Mobile
+				phones equipped with NFC chips can send <a href="../research/simplGuide/oodss/index.html" target="blank">OODSS</a> messages to each other
+				and also to PCs or other devices with NFC. NFC wraps the message
+				into NFC Data Exchange Format (NDEF). There are four different types
+				of NFC tags in NDEF. This project will develop libraries for
+				wrapping, sending, receiving, interpreting NFC messages from <a href="../research/simplGuide/oodss/index.html" target="blank">OODSS</a>
+				messages targeting various programming platforms including Android,
+				Windows phone 8 (in the future), and PC/Mac (Java, .NET,
+				Objective-C, etc.) through USB connected NFC chip.</p>
+
+			<p>Enabling the trans-surface transfer of messages, such as rich
+				bookmarks, across different devices can support a collaborative
+				working environment. Information composition is a holistic form for
+				representing collections and to support ideation. Image and text
+				clippings from web pages function as visual, semiotic, and
+				navigational surrogates (rich bookmarks) for significant ideas.
+				compositions are formed by collecting rich bookmarks , which are
+				generated by <a target="_blank" class="destination" href="../research/simplGuide/metaMetadata/index.html">meta-metadata</a>. Meta-metadata is an open source
+				framework addressing problems associated with supporting metadata
+				semantics for diverse information sources. Mobile devices usually
+				have access to mobile versions of websites that are different from
+				normal desktop version of the sites. Thus, the student will author
+				meta-metadata wrappers for these website,versions.</p>
+
+			<h4>Prerequisites</h4>
+
+			<p>Familiarity with XML and multiple languages, including Java,
+				C, .NET, Objective-C is recommended. Previous experience with mobile
+				devices development is a plus. The student must state in the
+				application which devices and platforms s/he has available for
+				development.</p>
+
+			<h4>Deliverables</h4>
+			<p>The student will be responsible for becoming familiar with
+				S.IM.PL framework and <a href="../research/simplGuide/oodss/index.html" target="blank" class="destination">OODSS</a>. S/he will then develop high-level
+				Windows, Mac, and Java APIs to support application developers
+				developing software across phones, tablets and PCs, using NFC to
+				communicate. Will work with the mentor and other people who are
+				developing applications that potentially use NFC to communicate. The
+				student and the mentor will also identify websites targeting mobile
+				devices that are of particular interest. The student will author
+				wrappers for these web sites. With the completion of each wrapper,
+				the mentor will inspect the work and provide feedback.</p>
+		</div>
+		
+<!-- 		<a name="S2"></a> -->
+<!-- 		<h5>Project S2: Make C++ S.IM.PL</h5> -->
+<!--         <span>contact: <a class="destination" href="../people/nabeel.html" target="_blank">Nabeel Shahzad</a></span> -->
+<!-- 		<p>C++ is an important ANSI/ISO standard object-oriented programming language.  -->
+<!-- 		Making C++ <a href="../research/simplGuide/index.html" target="blank" class="destination">S.IM.PL</a> will facilitate developing distributed programs,  -->
+<!-- 		for example connecting Java and C++ server components that need to exchange complex data, but live in separate processes. -->
+<!-- 		C++'s STL supports complex de/serialization of object graphs, but without the fine-grained control S.IM.PL provides, or -->
+<!-- 		the ability to automatically generate equivalent object definitions and exchange object-oriented data with programs in Java, C#, and Objective C. -->
+<!-- 		</p> -->
+<!-- 		<p> -->
+<!-- 		The C++ S.IM.PL port presents some interesting challenges to the programmer, because C++ will be the first S.IM.PL language that lacks reflection. -->
+<!-- 		This means instead of using optimized reflection at runtime for serialization, code must be generated for serializing each class. -->
+<!-- 		The structure of the generated code will be similar to that currently employed during runtime. -->
+<!-- 		The new abstraction layer will likely employ <a href="http://www.antlr.org/wiki/display/ST4/Introduction" target="_blank">ANTLR StringTemplate</a>. -->
+<!-- 		</p> -->
+<!-- 		<p> -->
+<!-- 			<h4>Deliverables</h4> -->
+<!-- 			<li>A Java program, part of the simplTranslators project, which will generate C++ class representations from S.IM.PL <code>ClassDescriptor</code>s. Generated code will include  -->
+<!-- 			<a href="../research/simplGuide/serialization/index.html" target="_blank" class="destination">serialization and deserialization</a> methods.  -->
+<!-- 			</li> -->
+<!-- 			<li>Serialization methods in generated C++ classes. Output formats for objects will include XML and JSON. Serialized objects will be compatible with S.IM.PL serialization in Java, C#, and Objective C.</li> -->
+<!-- 			<li>Compatible deserialization methods in generated C++ classes.</li> -->
+<!-- 			<li>C++ runtime libraries that support serialization and deserilation.</li> -->
+<!-- 			<li>S.IM.PL compatible object graph serialization, using <code>simpl:id</code> and <code>simpl:ref</code>.</li> -->
+<!-- 			<li>Bonus: a C++ S.IM.PL <a href="../research/simplGuide/oodss/index.html" target="blank" class="destination">OODSS</a> client.</li> -->
+<!-- 		</p> -->
+
+
+		<a name="T1"></a>
+		<h5>T1: TUIO Windows Touch Driver</h5>
+        <span>contact: <a class="destination" href="../people/bill.html" target="_blank">Bill Hamilton</a></span>
+		<p>Design and implement a Windows 7 and 8 application which
+			converts incoming TUIO (http://www.tuio.org/) events into Windows
+			touch events.</p>
+
+		<p>Currently the only available TUIO to Windows touch bridge
+			application is Multi-Touch Vista
+			(http://multitouchvista.codeplex.com/). This application is difficult
+			to use, does not support multiple monitor setups, and contains bugs
+			and memory leaks. The goal of this project is to create an
+			application similar to the (only partially open source) Multi-Touch
+			Vista, but better designed, more robust, and feature complete.</p>
+
+		<p>Required features of the application: able to listen for TUIO
+			events and convert them to driver level Windows touch events, stable,
+			and easy to install and run. The application should be free of memory
+			leaks and should not output ghost touch events.</p>
+		<p>Other desired features include: having the application in the
+			Windows system-tray so configuration options can be viewed and
+			modified, supporting multiple monitors and multiple incoming TUIO
+			ports, and options to disable and emulate stylus events. Future work,
+			as these platforms enable support for multiple monitors and touch
+			events, will build compatible functionality for Android and Apple.</p>
+		<p>The student should begin by learning about Multi-Touch Vista,
+			Windows 7/8 touch events, and TUIO messages. Then, formulate a design
+			and implementation plan. The final application should include
+			adequate documentation, so that it can be easily utilized and
+			distributed.</p>
+		<p>The desired student should have experience creating Windows
+			drivers. The student should also be familiar with TUIO and OSC.
+			Ideally, the student will have a touch-enabled Windows device. The
+			Java TUIO-based simulator will in any case be utilized.</p>
+
+
+		<div class="intro">
+			<a name="apptemplate"></a>
+			<h1>Application Template</h1>
+			<p>Please use the following format and guidelines when preparing
+				your application</p>
+			<h4>General Information</h4>
+			<ul>
+				<li>Name</li>
+				<li>Email</li>
+				<li>School Affiliation</li>
+				<li>Project Title</li>
+				<li>Resume URL</li>
+			</ul>
+			<h4>Logistical Information</h4>
+			<ul>
+				<li>Timezone</li>
+				<li>Typical working hours (in your local timezone)</li>
+				<li>Skype, IRC, GChat, and other Instant Messanging Handles</li>
+			</ul>
+			<h4>Short Bio</h4>
+			<p>Describe your previous experience in software or hardware
+				development, and what skills you bring to the table. Tell us what
+				brings you to the open-source development community. Explain how
+				open source fits with your other pursuits in life, academic or otherwise. </p>
+			<h4>Motivation</h4>
+			<p>2 to 3 paragraphs describing your motivation for working on
+				the project you have chosen. What you expect to gain from working on
+				the project, why you are interested, and what you believe to be the
+				expected benefits to the open-source community.</p>
+			<h4>Deliverables and Timeline</h4>
+			<p>In roughly a page of text, breakdown your selected project
+				into a set of milestones or deliverables and set realistic
+				timetables for accomplishing these deliverables. Include a GANTT
+				chart showing your planned progress over the summer. Explain the
+				deliverables that are "must-haves", as well as expanding on future
+				work that you may or may not accomplish, time permitting. Keep in
+				mind that some things may take longer than you originally
+				anticipated, so be sure and include contingency plans for such
+				circumstances. This is the heart of your proposal.</p>
+			<h4>Communication</h4>
+			<p>Write a short paragraph detailing how you plan on keeping in
+				communication with your project mentor and ensuring that your
+				deliverables are on time. Will you have weekly Skype meetings? Is
+				email your preferred method of communication? How do you plan to
+				keep us informed of both progress as well as problems?</p>
+			<h4>Code Sample URL</h4>
+			<p>For projects M1-M7, the code sample is a meta-metadata wrapper that you have authored, along with an example URL that extracts metadata from it.
+			Present a web page that links to the wrapper XML, any newly generated Java classes, and one or more input URL / output xml pairs.</p>
+		<p>For projects S1 and S2, write a small test program in Java or C# that uses S.IM.PL Serialization's Data Binding Annotation Language to serialize and deserialize some complex data structure.
+			In order to show that you understand S.IM.PL's power, ideally, this will be a graph-like structure, with cycles. It will also use composite objects, collections, and polymorphism.
+			Again, present a web page with links to the source file, and its output in one or more test cases.</p>
+			<h4>Background</h4>
+			<p>Anything else that you want to let us know about yourself,
+				about the project, or any other information you think would help
+				your application should be included as well. This includes other
+				projects you may have worked on, code samples you are particularly
+				proud of, academic publications, your personal blog, software
+				development experience, education, etc. Remember, you are trying to
+				sell yourself as the right person for the job! Anything that would
+				help convice us of that should be in your application, including its associated web pages.</p>
+			<!-- <h4>Meta-metadata Wrapper (M Projects only)</h4>
+			<p>Author a meta-metadata wrapper for a new information source. Please see the 
+				<a href="../research/simplGuide/metaMetadata/index.html" target="_blank">meta-metadata guide</a>
+				for instruction on setting up a development environment and tutorials on authoring wrappers. 
+				Submit<p> -->
+		</div>
+	</div>
+
+</body>
+</html>

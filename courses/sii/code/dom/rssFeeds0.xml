@@ -1,0 +1,113 @@
+<rss_source name="NY Times"/>
+<rss_source name=""/>
+<rss_source name=""/>
+<rss_source name=""/>
+<rss_source name=""/>
+<rss_source name=""/>
+
+<rss_feed source="NY Times" title="" url="" category=""/>
+
+<rss_feed source="NY Times" title="Circuits"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Circuits.xml"
+ category="technology"/>
+
+<rss_feed source="NY Times" title="Technology"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Technology.xml"
+ category="technology"/>
+
+<rss_feed source="NY Times" title="Health"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Health.xml"
+ category="health"/>
+
+<rss_feed source="NY Times" title="International"
+ url="http://www.nytimes.com/services/xml/rss/nyt/International.xml"
+ category="international"/>
+
+<rss_feed source="NY Times" title="National"
+ url="http://www.nytimes.com/services/xml/rss/nyt/National.xml"
+ category="u.s."/>
+
+<rss_feed source="NY Times" title="Science"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Science.xml"
+ category="science"/>
+
+<rss_feed source="NY Times" title="Sports"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Sports.xml"
+ category="sports"/>
+
+<rss_feed source="NY Times" title="Education"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Education.xml"
+ category="education"/>
+
+<rss_feed source="NY Times" title="Media and Advertising"
+ url="http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml"
+ category="business"/>
+
+<rss_feed source="NY Times" title="Business"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Business.xml"
+ category="business"/>
+
+<rss_feed source="NY Times" title="Arts"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Arts.xml"
+ category="arts"/>
+
+<rss_feed source="NY Times" title="Books"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Books.xml"
+ category="books"/>
+
+<rss_feed source="NY Times" title="Dining and Wine"
+ url="http://www.nytimes.com/services/xml/rss/nyt/DiningandWine.xml"
+ category="dining"/>
+
+<rss_feed source="NY Times" title="Movies"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Movies.xml"
+ category="movies"/>
+
+<rss_feed source="NY Times" title="Theater"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Theater.xml"
+ category="theater"/>
+
+<rss_feed source="NY Times" title="Travel"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Travel.xml"
+ category="travel"/>
+
+<rss_feed source="NY Times" title="FashionandStyle"
+ url="http://www.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml"
+ category="fashion"/>
+
+<rss_feed source="NY Times" title="Magazine"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Magazine.xml"
+ category="colorful features"/>
+
+<rss_feed source="NY Times" title="HomeandGarden"
+ url="http://www.nytimes.com/services/xml/rss/nyt/HomeandGarden.xml"
+ category="colorful features"/>
+
+<rss_feed source="NY Times" title="Automobiles"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Automobiles.xml"
+ category="cars"/>
+
+<rss_feed source="NY Times" title="Multimedia"
+ url="http://www.nytimes.com/services/xml/rss/nyt/Multimedia.xml"
+ category="colorful features"/>
+
+
+
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+<rss_feed source="NY Times" url="" title="" category=""/>
+
+<rss_feed source="" url="" title="" category=""/>
+
+<rss_feed source="" url="" title="" category=""/>
+
+<rss_feed source="" url="" title="" category=""/>
+
+<rss_feed source="" url="" title="" category=""/>
+

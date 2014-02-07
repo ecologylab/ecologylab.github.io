@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen height="974" width="640" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="boardhost.com" strokeHue="0.041666668" fontIndex="4"/>
+    <site domain="annasinkovska.com" strokeHue="0.41666666" fontIndex="4"/>
+    <site domain="fashionmodeldirectory.com" strokeHue="0.041666668" fontIndex="4"/>
+    <site domain="jurgita.com" strokeHue="0.083333336"/>
+    <site domain="amazon.com" strokeHue="0.8666667" fontIndex="2"/>
+    <site domain="supermodelguide.com" strokeHue="0.16666667" fontIndex="4"/>
+    <site domain="models.com" strokeHue="0.125" fontIndex="4"/>
+    <site domain="modaitalia.net" strokeHue="0.5555556" fontIndex="1"/>
+    <site domain="mymodelingagency.com" strokeHue="0.5555556" fontIndex="2"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.fashionmodeldirectory.com/"/>
+    <traversable urlString="http://www.models.net/"/>
+    <traversable urlString="http://www.mymodelingagency.com/links"/>
+    <traversable urlString="http://models.com/"/>
+    <traversable urlString="http://www.annasinkovska.com/"/>
+    <traversable urlString="http://www.supermodelguide.com"/>
+    <traversable urlString="http://www.learndirect-advice.co.uk/helpwithyourcareer/jobprofiles/profiles/profile514/"/>
+    <traversable urlString="http://www.imran.com/pakistan/showbiz"/>
+    <traversable urlString="http://www.jurgita.com/"/>
+    <traversable urlString="http://www.jurgita.com/models/fashion-models"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0891348964"/>
+    <traversable urlString="http://www.fmd1.com/v2/"/>
+    <traversable urlString="http://www.fashion.net/"/>
+    <traversable urlString="http://members4.boardhost.com/FashionModels/"/>
+    <traversable urlString="http://en.wikipedia.org/wiki/Fashion_model"/>
+    <traversable urlString="http://search.modaitalia.net/Models/"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/0891348964/002-2059324-1102457"/>
+    <traversable urlString="http://www.fashion.net/ads/shiseido/200404/suncare"/>
+    <traversable urlString="http://www.jurgita.com"/>
+  </traversable_set>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set>
+    <term stemmed="fashion" intensity="3"/>
+    <term stemmed="model" intensity="3"/>
+  </term_set>
+  <container_set>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9611.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.annasinkovska.com/fashion-directory/model/" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9743.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9312.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9271.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://models.com/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.fmd1.com/v2/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.jurgita.com/models-search.php" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://search.modaitalia.net/Models/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9263.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9721.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9411.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.amazon.com/exec/obidos/tg/detail/-/0891348964/002-2059324-1102457?v=glance" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9536.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/msg/9069.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.annasinkovska.com/fashion-directory/model/l.htm" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://www.supermodelguide.com/male-models.html" generation="3">
+      <participant/>
+    </container>
+    <container purl="http://members4.boardhost.com/FashionModels/index.html?1089014269" generation="4">
+      <participant/>
+    </container>
+    <container purl="http://www.annasinkovska.com/" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.mymodelingagency.com/links/FashionModels.html" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.jurgita.com/models/fashion-models" generation="2">
+      <participant/>
+    </container>
+    <container purl="http://www.supermodelguide.com/guide.html" generation="2">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9263.html" historyNum="29">
+      <text_element faceIndex="4" alpha="198" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1087906984">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="330" y="704" width="187" height="25"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9411.html" historyNum="14">
+      <text_element faceIndex="4" alpha="168" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1088736532">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="88" width="108" height="68"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9536.html" historyNum="27">
+      <text_element faceIndex="4" alpha="211" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1089751019">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="330" y="484" width="90" height="55"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.annasinkovska.com/fashion-directory/model/" historyNum="9">
+      <text_element faceIndex="4" alpha="140" r="112" g="178" b="145">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.22727273">
+          <text_token string="As"/>
+          <text_token string="long"/>
+          <text_token string="as"/>
+          <text_token string="a"/>
+          <text_token string="model"/>
+          <text_token string="works,"/>
+          <text_token string="worked,"/>
+          <text_token string="or"/>
+          <text_token string="wishes"/>
+          <text_token string="to"/>
+          <text_token string="work"/>
+          <text_token string="in"/>
+          <text_token string="the"/>
+          <text_token string="fashion"/>
+          <text_token string="business,"/>
+          <text_token string="we"/>
+          <text_token string="want"/>
+          <text_token string="to"/>
+          <text_token string="list"/>
+          <text_token string="him"/>
+          <text_token string="or"/>
+          <text_token string="her."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="120" y="704" width="447" height="87"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9271.html" historyNum="20">
+      <text_element faceIndex="4" alpha="181" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1087938824">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="176" width="110" height="70"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9611.html" historyNum="23">
+      <text_element faceIndex="4" alpha="181" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1090884915">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="88" width="180" height="17"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9312.html" historyNum="13">
+      <text_element faceIndex="4" alpha="164" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1088250135">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="308" width="109" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9743.html" historyNum="22">
+      <text_element faceIndex="4" alpha="186" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1091825075">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="450" y="748" width="110" height="70"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9069.html" historyNum="24">
+      <text_element faceIndex="4" alpha="200" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1087214432">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="240" y="748" width="102" height="62"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jurgita.com/models/fashion-models" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="3080192" alphaRadius="35" purl="http://www.jurgita.com/images_new/models/F/other/w75xh100/Jurgita-Jurksaite-1-3.jpg" href="http://www.jurgita.com/models-id1.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="270" y="484" width="73" height="100"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/index.html?1089014269" historyNum="12">
+      <text_element faceIndex="4" alpha="152" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/msg/9413.html" nonStopIndex="0.85714287">
+          <text_token string="High"/>
+          <text_token string="Fashion"/>
+          <text_token string="Print"/>
+          <text_token string="Gloss" bold="true"/>
+          <text_token string="Models" bold="true"/>
+          <text_token string="2/7/2004," italic="true"/>
+          <text_token string="21:10:05" italic="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="150" y="572" width="266" height="83"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/msg/9721.html" historyNum="19">
+      <text_element faceIndex="4" alpha="172" r="178" g="128" b="112">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/index.html?1091738775">
+          <text_token string="Fashion"/>
+          <text_token string="Model"/>
+          <text_token string="Discussion"/>
+          <text_token string="]"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="90" y="264" width="111" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.annasinkovska.com/fashion-directory/model/" historyNum="17">
+      <text_element faceIndex="4" alpha="162" r="112" g="178" b="145">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.23684211">
+          <text_token string="With"/>
+          <text_token string="that"/>
+          <text_token string="in"/>
+          <text_token string="mind,"/>
+          <text_token string="we"/>
+          <text_token string="want"/>
+          <text_token string="to"/>
+          <text_token string="list"/>
+          <text_token string="all"/>
+          <text_token string="sites"/>
+          <text_token string="of"/>
+          <text_token string="and"/>
+          <text_token string="about"/>
+          <text_token string="fashion"/>
+          <text_token string="models"/>
+          <text_token string="we"/>
+          <text_token string="can"/>
+          <text_token string="find"/>
+          <text_token string="-"/>
+          <text_token string="established"/>
+          <text_token string="models,"/>
+          <text_token string="models"/>
+          <text_token string="who"/>
+          <text_token string="are"/>
+          <text_token string="just"/>
+          <text_token string="getting"/>
+          <text_token string="started,"/>
+          <text_token string="and"/>
+          <text_token string="even"/>
+          <text_token string="fan"/>
+          <text_token string="sites"/>
+          <text_token string="about"/>
+          <text_token string="models"/>
+          <text_token string="who"/>
+          <text_token string="are"/>
+          <text_token string="no"/>
+          <text_token string="longer"/>
+          <text_token string="working."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="572" width="386" height="122"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/index.html?1089014269" historyNum="25">
+      <text_element faceIndex="4" alpha="196" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.61538464">
+          <text_token string="Forum" bold="true"/>
+          <text_token string="for" bold="true"/>
+          <text_token string="discussion" bold="true"/>
+          <text_token string="of" bold="true"/>
+          <text_token string="fashion" bold="true"/>
+          <text_token string="models," bold="true"/>
+          <text_token string="exchange/request" bold="true"/>
+          <text_token string="of" bold="true"/>
+          <text_token string="fashion" bold="true"/>
+          <text_token string="model" bold="true"/>
+          <text_token string="scans," bold="true"/>
+          <text_token string="site" bold="true"/>
+          <text_token string="updates." bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="132" width="444" height="76"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jurgita.com/models/fashion-models" historyNum="18">
+      <image_element hasTransparency="true" minAlpha="4456448" alphaRadius="43" purl="http://www.jurgita.com/images_new/models/F/other/w75xh100/Laura-Muraskaite-368-23.jpg" href="http://www.jurgita.com/models-id368.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="210" y="132" width="90" height="94"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jurgita.com/models/fashion-models" historyNum="26">
+      <image_element hasTransparency="true" minAlpha="2293760" alphaRadius="23" purl="http://www.jurgita.com/images_new/models/F/portfolio-picture/w75xh100/Gisele-Bundchen-10339-7.jpg" href="http://www.jurgita.com/models-id10339.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="120" y="176" width="75" height="98"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.supermodelguide.com/male-models.html" historyNum="28">
+      <image_element hasTransparency="true" minAlpha="5701632" alphaRadius="61" purl="http://www.supermodelguide.com/images/male-models.jpg" href="http://www.supermodelguide.com/supermodels/marcus-schenkenberg.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="60" y="308" width="200" height="200"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.annasinkovska.com/" historyNum="30">
+      <text_element faceIndex="4" alpha="214" r="107" g="191" b="149">
+        <text_chunk doUnderline="true" nonStopIndex="0.45">
+          <text_token string="A"/>
+          <text_token string="fashion"/>
+          <text_token string="directory"/>
+          <text_token string="listing"/>
+          <text_token string="sites"/>
+          <text_token string="of"/>
+          <text_token string="fashion"/>
+          <text_token string="models"/>
+          <text_token string=","/>
+          <text_token string="magazines"/>
+          <text_token string=","/>
+          <text_token string="designers"/>
+          <text_token string=","/>
+          <text_token string="photographers"/>
+          <text_token string=","/>
+          <text_token string="modeling"/>
+          <text_token string="agencies"/>
+          <text_token string=","/>
+          <text_token string="and"/>
+          <text_token string="more."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="180" y="748" width="310" height="51"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://search.modaitalia.net/Models/" historyNum="31">
+      <image_element hasTransparency="true" minAlpha="1048576" alphaRadius="20" purl="http://www.modaitalia.net/images/arreda.jpg" href="http://www.modaitalia.net/common/forniture.htm">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="150" y="220" width="65" height="51"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.jurgita.com/models-search.php" historyNum="32">
+      <text_element alpha="224" r="178" g="145" b="112">
+        <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8">
+          <text_token string="Se" bold="true"/>
+          <text_token string="a" bold="true"/>
+          <text_token string="rch" bold="true"/>
+          <text_token string="For" bold="true"/>
+          <text_token string="models" bold="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="300" y="616" width="222" height="25"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.fmd1.com/v2/" historyNum="33">
+      <text_element faceIndex="4" alpha="216" r="191" g="128" b="107">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://www.fmd1.com/v2/Modelsearch.asp">
+          <text_token string="Search"/>
+          <text_token string="the"/>
+          <text_token string="FMD"/>
+          <text_token string="Model"/>
+          <text_token string="Database"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="330" y="528" width="103" height="49"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="16">
+      <image_element hasTransparency="true" minAlpha="4849664" alphaRadius="38" purl="http://models.com/model_culture/top10agencies/images/James_Penfold.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="128" y="559" width="210" height="290"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="15">
+      <image_element hasTransparency="true" minAlpha="3276800" alphaRadius="93" purl="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/images/img_julien.jpg" href="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="397" y="250" width="196" height="300"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="11">
+      <image_element hasTransparency="true" minAlpha="4849664" alphaRadius="68" purl="http://models.com/model_culture/top10agencies/images/Nic_bryant.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="209" y="35" width="210" height="259"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.amazon.com/exec/obidos/tg/detail/-/0891348964/002-2059324-1102457?v=glance" historyNum="8">
+      <image_element purl="http://images.amazon.com/images/P/B00005R8BC.01.TZZZZZZZ.jpg" href="http://www.amazon.com/exec/obidos/tg/detail/-/B00005R8BC/ref=mag_ec_b_a/002-2059324-1102457?v=glance&amp;s=books">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="295" y="719" width="150" height="195"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="7">
+      <image_element hasTransparency="true" minAlpha="4587520" alphaRadius="79" purl="http://models.com/model_culture/top10agencies/images/Tell.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="15" width="240" height="275"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="6">
+      <image_element hasTransparency="true" minAlpha="2162688" alphaRadius="114" purl="http://models.com/model_culture/top10agencies/images/Tyrone.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="427" y="375" width="180" height="273"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.supermodelguide.com/guide.html" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="1376256" alphaRadius="93" purl="http://www.supermodelguide.com/images/model-guide-cover.jpg" href="http://www.supermodelguide.com/become-a-model.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="27" y="158" width="210" height="287"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.mymodelingagency.com/links/FashionModels.html" historyNum="2">
+      <image_element hasTransparency="true" minAlpha="3276800" alphaRadius="94" purl="http://www.modelscouts.com/images/scouts.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="675" width="240" height="240"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.annasinkovska.com/" historyNum="1">
+      <image_element purl="http://www.annasinkovska.com/images/page/anna20a.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="422" y="643" width="180" height="271"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="5" latched="true">
+      <image_element hasTransparency="true" minAlpha="2228224" alphaRadius="52" purl="http://models.com/model_culture/top10agencies/images/Jon_Passavantes.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="18" y="514" width="210" height="189"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="4" latched="true">
+      <image_element hasTransparency="true" minAlpha="5898240" alphaRadius="88" purl="http://models.com/model_culture/top10agencies/images/Andres.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="382" y="10" width="240" height="346"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/model_culture/top10agencies/top10men_agencies_nyc/nyc_top10-6.html" historyNum="21" latched="true">
+      <image_element hasTransparency="true" minAlpha="5439488" alphaRadius="76" purl="http://models.com/model_culture/top10agencies/images/wade.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="240" y="176" width="240" height="344"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.annasinkovska.com/fashion-directory/model/l.htm" historyNum="34">
+      <text_element faceIndex="4" alpha="235" r="116" g="165" b="140">
+        <text_chunk doUnderline="true" nonStopIndex="0.8888889">
+          <text_token string="Current"/>
+          <text_token string="Location:"/>
+          <text_token string="Anna"/>
+          <text_token string="Sinkovska"/>
+          <text_token string="Fashion"/>
+          <text_token string="Directory"/>
+          <text_token string="Fashion"/>
+          <text_token string="Models"/>
+          <text_token string="L"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="440" width="455" height="21"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.amazon.com/exec/obidos/tg/detail/-/0891348964/002-2059324-1102457?v=glance" historyNum="35">
+      <image_element hasTransparency="true" minAlpha="4587520" alphaRadius="30" purl="http://images.amazon.com/images/P/B0000AXE8I.01.TZZZZZZZ.jpg" href="http://www.amazon.com/exec/obidos/tg/detail/-/B0000AXE8I/ref=pd_ecs_d_b_a/002-2059324-1102457?v=glance&amp;s=dvd&amp;n=">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="360" y="660" width="64" height="90"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://models.com/" historyNum="36">
+      <image_element hasTransparency="true" minAlpha="3473408" alphaRadius="10" purl="http://models.com/images/40/caribb.jpg" href="http://models.com/model_culture/oftheminute/caribbean04/index.html">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="270" y="616" width="50" height="50"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://members4.boardhost.com/FashionModels/index.html?1089014269" historyNum="37">
+      <text_element faceIndex="4" alpha="236" r="165" g="128" b="116">
+        <text_chunk doUnderline="true" sameHref="true" commonHref="http://members4.boardhost.com/FashionModels/msg/9632.html" nonStopIndex="0.85714287">
+          <text_token string="San"/>
+          <text_token string="Francisco"/>
+          <text_token string="Fashion"/>
+          <text_token string="Week"/>
+          <text_token string="Zob" bold="true"/>
+          <text_token string="27/7/2004," italic="true"/>
+          <text_token string="22:38:38" italic="true"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="60" y="308" width="235" height="69"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

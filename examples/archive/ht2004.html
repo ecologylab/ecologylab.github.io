@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>examples</title>
+<link href="examples.css" rel="stylesheet">
+<script language="JavaScript" src="../../publishLocal.js"></script> 
+<script language="JavaScript">
+var navwin;
+function popnav(url)
+{
+   if (!navwin || navwin.closed)
+   {
+      navwin = window.open(url, 'infospaceNav', 'width=700, height=650,scrollbars=yes,resizable=yes,location=yes');
+      navwin.moveTo(0,0);
+   }
+   
+if (!navwin)
+{if (url) location.href = url;}
+else
+{
+if (url) navwin.location = url;
+navwin.focus();
+}
+}
+</script>
+
+
+</head>
+
+<body>
+
+<div class="rootcontainerht">
+
+<table>
+<tr>
+
+<td><p>
+<a href="javascript:regeneratePopup('ht2004/Fashion3.xml', 'fashion')"><img
+ border="0" width="150" height="197"
+ src="ht2004/Fashion3_thumbnail.jpg"></a>
+<a href="javascript:popnav('ht2004/Fashion3.html')"><h2>fashion</h2></a>
+</p></td>
+
+<td><p>
+<a href="javascript:regeneratePopup('ht2004/Koreanfood2.xml', 'korean food')"><img
+ border="0" width="150" height="197"
+ src="ht2004/Koreanfood2_thumbnail.jpg"></a>
+<a href="javascript:popnav('ht2004/Koreanfood2.html')"><h2>korean food</h2></a>
+</p></td>
+
+<td><p>
+<a href="javascript:regeneratePopup('ht2004/polo_ralph_lauren.xml', 'fashion')"><img
+ border="0" width="150" height="197"
+ src="ht2004/polo_ralph_lauren_thumbnail.jpg"></a>
+<a href="javascript:popnav('ht2004/polo_ralph_lauren.html')"><h2>ralph lauren: polo</h2></a>
+</p></td>
+
+<td><p>
+<a href="javascript:regeneratePopup('ht2004/music_collage.xml', 'rock_music')"><img
+ border="0" width="150" height="197"
+ src="ht2004/music_collage_thumbnail.jpg"></a>
+<a href="javascript:popnav('ht2004/music_collage.html')"><h2>rock music</h2></a>
+</p></td>
+
+</tr>
+</table>
+
+<h1>combinFormation: composition examples<br/>
+<span class="this">[hypertext 2004]</span><br/></h1>
+
+</div>
+
+<div class="others"><a
+href="index.html">[cosign 2004]</a></div>
+
+</body> </html>

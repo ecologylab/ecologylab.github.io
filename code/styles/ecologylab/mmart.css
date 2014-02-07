@@ -1,0 +1,65 @@
+.person
+{
+	font-size: 13px;
+	line-height: 130%;
+}
+.h6
+{
+	font-style: italic;
+	color: #555555;
+	margin-bottom: 4px;
+	padding-bottom: 0px; 
+	font-size: 14px;
+}
+.logo
+{
+	float: right;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+.title2
+{
+/*	background-color: #00EEEE;  */
+	text-align: right;
+	position: relative;
+	font-size: 44px;
+	padding-top: 58px;
+	font-weight: bold;
+	color: #555555;
+	color: #227358;
+	color: #18513e;
+}
+.nav
+{
+	text-align: right;
+	float: right;
+	border-left: 5px solid #527198;
+	margin-left: 20px;
+	top: 10px;
+	right: 10px;
+	width: 155px;
+	height: 400px;
+	padding: 10px;
+	padding-bottom: 30px;
+}
+.nav_narrow
+{
+	text-align: right;
+	float: right;
+	border-left: 5px solid #527198;
+	top: 10px;
+	right: 10px;
+	width: 125px;
+	height: 400px;
+	padding: 10px;
+	padding-bottom: 30px;
+}
+.footer
+{
+	font-size: 10px;
+	padding-top: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #444;	
+}
+

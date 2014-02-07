@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="1.1">
+  <site_set>
+    <site domain="lycos.com" strokeHue="0.25" fontIndex="1"/>
+    <site domain="wordcircuits.com" strokeHue="0.8666667" fontIndex="2"/>
+    <site domain="tamu.edu" strokeHue="0.083333336" fontIndex="2"/>
+    <site domain="moonstar.com" strokeHue="0.6888889" fontIndex="1"/>
+    <site domain="themodernword.com" strokeHue="0.75" fontIndex="1"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/"/>
+    <traversable urlString="http://www.wordcircuits.com/gallery/sandsoot"/>
+    <traversable urlString="http://www.moonstar.com/~nedmay/chromat"/>
+    <traversable urlString="http://hotwired.lycos.com/webmonkey/authoring/html_basics/"/>
+    <traversable urlString="http://www.themodernword.com/borges/"/>
+    <traversable urlString="http://www.themodernword.com/borges"/>
+    <traversable urlString="http://www.geocities.com/papanagnou/"/>
+    <traversable urlString="http://www.cope.co.za/"/>
+    <traversable urlString="http://stateless.freehosting.net"/>
+    <traversable urlString="http://diversity.uoregon.edu"/>
+    <traversable urlString="http://www.wtc.tas.gov.au/html"/>
+    <traversable urlString="http://www.avitale.com"/>
+    <traversable urlString="http://www.fortunecity.com/greenfield/dreams/383"/>
+    <traversable urlString="http://www.spanport.ucsb.edu/courses"/>
+    <traversable urlString="http://id.mind.net/~extang"/>
+    <traversable urlString="http://www.german-cinema.de/archive"/>
+    <traversable urlString="http://www.cult-film.com/cult_directors/alex_cox/death_and_the_compass/"/>
+    <traversable urlString="http://www.digitallyobsessed.com"/>
+  </traversable_set>
+  <term_set>
+    <term stemmed="fork" intensity="6"/>
+    <term stemmed="path" intensity="6"/>
+    <term stemmed="garden" intensity="4"/>
+  </term_set>
+  <container_set>
+    <container url="http://www.themodernword.com/borges/review_secret-books.html" generation="3">
+      <content_element>
+        <participant intensity="-2"/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_quotes.html" generation="3">
+      <content_element>
+        <participant intensity="1"/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_bookstore.html" generation="3">
+      <content_element>
+        <participant intensity="1"/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/index.html" generation="3">
+      <content_element>
+        <participant intensity="1"/>
+      </content_element>
+    </container>
+    <container url="http://hotwired.lycos.com/webmonkey/authoring/html_basics/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_film.html" generation="3">
+      <content_element>
+        <participant intensity="1"/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_film_compass.html" generation="4">
+      <content_element>
+        <participant intensity="2"/>
+      </content_element>
+    </container>
+    <container url="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_audio.html" generation="3">
+      <content_element>
+        <participant intensity="1"/>
+      </content_element>
+    </container>
+    <container url="http://www.moonstar.com/~nedmay/chromat/forks.htm" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/borges_reynolds_palace.html" generation="4">
+      <content_element>
+        <participant intensity="2"/>
+      </content_element>
+    </container>
+    <container url="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html" generation="3">
+      <content_element>
+        <participant intensity="4"/>
+      </content_element>
+    </container>
+    <container url="http://www.themodernword.com/borges/kernan/frog.html" generation="4">
+      <content_element>
+        <participant intensity="2"/>
+      </content_element>
+    </container>
+    <container url="http://www.wordcircuits.com/gallery/sandsoot/menupage.html" generation="2">
+      <content_element bias="4.0">
+        <participant/>
+      </content_element>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.8888889">
+            <text_token string="Visual"/>
+            <text_token string="design,"/>
+            <text_token string="including"/>
+            <text_token string="color"/>
+            <text_token string="theory,"/>
+            <text_token string="space,"/>
+            <text_token string="and"/>
+            <text_token string="foreground/background"/>
+            <text_token string="relationships."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="336" y="420" width="219" height="88"/>
+      </visual> historyNum = "1" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_quotes.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.7692308">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.5">
+            <text_token string="--"/>
+            <text_token string="The"/>
+            <text_token string="Garden"/>
+            <text_token string="of"/>
+            <text_token string="Forking"/>
+            <text_token string="Paths"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="336" y="510" width="144" height="81"/>
+      </visual> historyNum = "30" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.5">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6666667">
+            <text_token string="Ontologies,"/>
+            <text_token string="maps,"/>
+            <text_token string="and"/>
+            <text_token string="navigation"/>
+            <text_token string="as"/>
+            <text_token string="means"/>
+            <text_token string="of"/>
+            <text_token string="structuring"/>
+            <text_token string="information."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="630" y="270" width="205" height="102"/>
+      </visual> historyNum = "5" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" commonHref="http://hotwired.lycos.com/webmonkey/97/19/index2a.html?tw=authoring" nonStopIndex="0.85714287">
+            <text_token string="The" bold="true"/>
+            <text_token string="Wonderful" bold="true"/>
+            <text_token string="div" bold="true"/>
+            <text_token string="Tag" bold="true"/>
+            <text_token string="Makes" bold="true"/>
+            <text_token string="Markup" bold="true"/>
+            <text_token string="Easier" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="126" y="210" width="138" height="82"/>
+      </visual> historyNum = "4" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.88235295">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.42857143">
+            <text_token string="Which"/>
+            <text_token string="browsers"/>
+            <text_token string="support"/>
+            <text_token string="what"/>
+            <text_token string="HTML"/>
+            <text_token string="and"/>
+            <text_token string="stylesheets?"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="252" y="510" width="96" height="56"/>
+      </visual> historyNum = "14" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.3076923">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.35">
+            <text_token string="References"/>
+            <text_token string="and"/>
+            <text_token string="tools"/>
+            <text_token string="to"/>
+            <text_token string="help"/>
+            <text_token string="you"/>
+            <text_token string="build"/>
+            <text_token string="sites"/>
+            <text_token string="that"/>
+            <text_token string="are"/>
+            <text_token string="truly"/>
+            <text_token string="Renaissance,"/>
+            <text_token string="running"/>
+            <text_token string="on"/>
+            <text_token string="every"/>
+            <text_token string="browser"/>
+            <text_token string="and"/>
+            <text_token string="at"/>
+            <text_token string="every"/>
+            <text_token string="resolution."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="756" y="630" width="205" height="56"/>
+      </visual> historyNum = "12" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.75">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="Students"/>
+            <text_token string="will"/>
+            <text_token string="create"/>
+            <text_token string="hypermedia"/>
+            <text_token string="projects"/>
+            <text_token string="that"/>
+            <text_token string="are"/>
+            <text_token string="expressive"/>
+            <text_token string="and"/>
+            <text_token string="interpretive."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="84" y="60" width="242" height="144"/>
+      </visual> historyNum = "8" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="This"/>
+            <text_token string="course"/>
+            <text_token string="develops"/>
+            <text_token string="an"/>
+            <text_token string="ecosystems"/>
+            <text_token string="approach"/>
+            <text_token string="to"/>
+            <text_token string="structures"/>
+            <text_token string="of"/>
+            <text_token string="information."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="294" y="210" width="133" height="60"/>
+      </visual> historyNum = "10" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.16666667">
+            <text_token string="This"/>
+            <text_token string="site"/>
+            <text_token string="has"/>
+            <text_token string="all"/>
+            <text_token string="the"/>
+            <text_token string="answers."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="630" y="540" width="84" height="49"/>
+      </visual> historyNum = "23" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" commonHref="http://hotwired.lycos.com/webmonkey/97/36/index3a.html?tw=authoring" nonStopIndex="0.8">
+            <text_token string="Symbols," bold="true"/>
+            <text_token string="Accents," bold="true"/>
+            <text_token string="and" bold="true"/>
+            <text_token string="Funky" bold="true"/>
+            <text_token string="Characters" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="336" y="30" width="161" height="126"/>
+      </visual> historyNum = "11" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.27272728">
+            <text_token string="Carter"/>
+            <text_token string="tells"/>
+            <text_token string="you"/>
+            <text_token string="what"/>
+            <text_token string="it"/>
+            <text_token string="is"/>
+            <text_token string="and"/>
+            <text_token string="how"/>
+            <text_token string="to"/>
+            <text_token string="use"/>
+            <text_token string="it."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="840" y="510" width="86" height="76"/>
+      </visual> historyNum = "22" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" nonStopIndex="0.33333334">
+            <text_token string="home"/>
+            <text_token string="/"/>
+            <text_token string="authoring"/>
+            <text_token string="/"/>
+            <text_token string="html_basics"/>
+            <text_token string="/"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="546" y="30" width="89" height="40"/>
+      </visual> historyNum = "20" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_film.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/images/search.gif" href="http://www.themodernword.com/search.pl"/>
+      </media_element>
+      <visual>
+        <extent x="378" y="510" width="71" height="26"/>
+      </visual> historyNum = "28" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.38461536">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.41666666">
+            <text_token string="These"/>
+            <text_token string="structures"/>
+            <text_token string="are"/>
+            <text_token string="cultural"/>
+            <text_token string="and"/>
+            <text_token string="creative,"/>
+            <text_token string="as"/>
+            <text_token string="well"/>
+            <text_token string="as"/>
+            <text_token string="semantic"/>
+            <text_token string="and"/>
+            <text_token string="technical."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="42" y="210" width="143" height="70"/>
+      </visual> historyNum = "15" </collage_element>
+    <collage_element containerURL="http://hotwired.lycos.com/webmonkey/authoring/html_basics/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.6153846">
+          <text_chunk doUnderline="true" sameHref="true" commonHref="http://hotwired.lycos.com/webmonkey/97/37/index3a.html?tw=authoring" nonStopIndex="0.4">
+            <text_token string="A" bold="true"/>
+            <text_token string="mailto" bold="true"/>
+            <text_token string="with" bold="true"/>
+            <text_token string="a" bold="true"/>
+            <text_token string="Subject" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="294" y="540" width="93" height="55"/>
+      </visual> historyNum = "24" </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/ecologylab/courses/structuresOfInteractiveInformation/">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="2" alpha="0.53846157">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+            <text_token string="We"/>
+            <text_token string="will"/>
+            <text_token string="explore"/>
+            <text_token string="the"/>
+            <text_token string="programming,"/>
+            <text_token string="design,"/>
+            <text_token string="authoring,"/>
+            <text_token string="and"/>
+            <text_token string="theory"/>
+            <text_token string="of"/>
+            <text_token string="hypermedia."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="42" y="600" width="159" height="74"/>
+      </visual> historyNum = "21" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/tforks2.gif" href="http://www.moonstar.com/~nedmay/images/forks2.gif"/>
+      </media_element>
+      <visual>
+        <extent x="252" y="90" width="127" height="100"/>
+      </visual> historyNum = "2" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_bookstore.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/alibris.gif" href="http://www.commission-junction.com/track/track.dll?AID=42019&amp;PID=297783&amp;URL=http%3A%2F%2Fwww%2Ealibris%2Ecom"/>
+      </media_element>
+      <visual>
+        <extent x="42" y="60" width="100" height="100"/>
+      </visual> historyNum = "27" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_bookstore.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/half.gif" href="http://www.qksrv.net/click-297783-1100785/"/>
+      </media_element>
+      <visual>
+        <extent x="210" y="510" width="120" height="60"/>
+      </visual> historyNum = "29" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/tforks1.jpg" href="http://www.moonstar.com/~nedmay/images/forks1.gif"/>
+      </media_element>
+      <visual>
+        <extent x="462" y="150" width="121" height="100"/>
+      </visual> historyNum = "3" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html">
+      <media_element>
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <image_element url="http://www.wordcircuits.com/gallery/sandsoot/images/3rocks_sm.JPG" href="http://www.wordcircuits.com/gallery/sandsoot/rainsound.html"/>
+      </media_element>
+      <visual>
+        <extent x="42" y="30" width="150" height="224"/>
+      </visual> historyNum = "17" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/forks1.gif"/>
+      </media_element>
+      <visual>
+        <extent x="42" y="330" width="126" height="131"/>
+      </visual> historyNum = "7" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html">
+      <media_element>
+        <content_element>
+          <participant intensity="4"/>
+        </content_element>
+        <text_element faceIndex="2">
+          <text_chunk doUnderline="true" nonStopIndex="0.6666667">
+            <text_token string="Harry"/>
+            <text_token string="Soot"/>
+            <text_token string="loved"/>
+            <text_token string="to"/>
+            <text_token string="listen"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="210" y="210" width="108" height="75"/>
+      </visual> historyNum = "19" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_audio.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6923077">
+            <text_token string="Highlights"/>
+            <text_token string="include"/>
+            <text_token string="The"/>
+            <text_token string="Garden"/>
+            <text_token string="of"/>
+            <text_token string="Forking"/>
+            <text_token string="Paths,"/>
+            <text_token string="Shakespeare's"/>
+            <text_token string="Memory"/>
+            <text_token string="and"/>
+            <text_token string="Borges"/>
+            <text_token string="and"/>
+            <text_token string="I."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="210" y="150" width="237" height="98"/>
+      </visual> historyNum = "31" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_bookstore.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.4">
+            <text_token string="You"/>
+            <text_token string="may"/>
+            <text_token string="either"/>
+            <text_token string="return"/>
+            <text_token string="to"/>
+            <text_token string="The"/>
+            <text_token string="Garden"/>
+            <text_token string="of"/>
+            <text_token string="Forking"/>
+            <text_token string="Paths"/>
+            <text_token string="or"/>
+            <text_token string="shop"/>
+            <text_token string="around"/>
+            <text_token string="at"/>
+            <text_token string="Amazon.com."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="252" y="540" width="233" height="104"/>
+      </visual> historyNum = "25" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" nonStopIndex="0.5714286">
+            <text_token string="The"/>
+            <text_token string="title"/>
+            <text_token string="is"/>
+            <text_token string="taken"/>
+            <text_token string="from"/>
+            <text_token string="a"/>
+            <text_token string="story"/>
+            <text_token string="by"/>
+            <text_token string="Jorge"/>
+            <text_token string="Luis"/>
+            <text_token string="Borges"/>
+            <text_token string=","/>
+            <text_token string="El" italic="true"/>
+            <text_token string="Jard" italic="true"/>
+            <text_token string=";n" italic="true"/>
+            <text_token string="De" italic="true"/>
+            <text_token string="Senderos" italic="true"/>
+            <text_token string="Que" italic="true"/>
+            <text_token string="Se" italic="true"/>
+            <text_token string="Bifurcan" italic="true"/>
+            <text_token string="."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="714" y="30" width="250" height="98"/>
+      </visual> historyNum = "16" </collage_element>
+    <collage_element containerURL="http://www.wordcircuits.com/gallery/sandsoot/menupage.html">
+      <media_element positiveClicks="2">
+        <content_element bias="4.0">
+          <participant intensity="4"/>
+        </content_element>
+        <image_element url="http://www.wordcircuits.com/gallery/sandsoot/images/menupage4.JPG" href="http://www.wordcircuits.com/gallery/sandsoot/fanatic.html"/>
+      </media_element>
+      <visual>
+        <extent x="84" y="300" width="415" height="305"/>
+      </visual> historyNum = "9" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_film.html">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="6"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/borges_film.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="443" y="25" width="320" height="240"/>
+      </visual> historyNum = "26" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1" alpha="0.46153843">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.54545456">
+            <text_token string="The"/>
+            <text_token string="program"/>
+            <text_token string="which"/>
+            <text_token string="constructed"/>
+            <text_token string="this"/>
+            <text_token string="design"/>
+            <text_token string="was"/>
+            <text_token string="written"/>
+            <text_token string="in"/>
+            <text_token string="Visual"/>
+            <text_token string="Basic."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="168" y="30" width="194" height="102"/>
+      </visual> historyNum = "18" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element positiveClicks="1">
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.moonstar.com/~nedmay/images/forks2.gif"/>
+      </media_element>
+      <visual>
+        <extent x="504" y="60" width="420" height="563"/>
+      </visual> historyNum = "6" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_film_compass.html">
+      <media_element positiveClicks="2">
+        <content_element>
+          <participant intensity="6"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/borges_compass.gif" href="http://www.themodernword.com/borges/borges_compass_lg.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="379" y="195" width="210" height="330"/>
+      </visual> historyNum = "32" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/index.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/spiral.gif" href="http://www.themodernword.com/site_info.html"/>
+      </media_element>
+      <visual>
+        <extent x="420" y="510" width="75" height="75"/>
+      </visual> historyNum = "33" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/review_secret-books.html">
+      <media_element>
+        <content_element>
+          <participant intensity="-2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/eight.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="210" y="510" width="168" height="128"/>
+      </visual> historyNum = "34" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/index.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/garden.quote.GIF"/>
+      </media_element>
+      <visual>
+        <extent x="42" y="30" width="252" height="55"/>
+      </visual> historyNum = "35" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/kernan/frog.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/kernan/frog.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="462" y="240" width="168" height="128"/>
+      </visual> historyNum = "36" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/index.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/secret_books_small.gif" href="http://www.themodernword.com/borges/review_secret-books.html"/>
+      </media_element>
+      <visual>
+        <extent x="756" y="510" width="117" height="99"/>
+      </visual> historyNum = "37" </collage_element>
+    <collage_element containerURL="http://www.themodernword.com/borges/borges_reynolds_palace.html">
+      <media_element>
+        <content_element>
+          <participant intensity="2"/>
+        </content_element>
+        <image_element url="http://www.themodernword.com/borges/reynolds_palace.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="504" y="450" width="252" height="193"/>
+      </visual> historyNum = "38" </collage_element>
+    <collage_element containerURL="http://www.moonstar.com/~nedmay/chromat/forks.htm">
+      <media_element positiveClicks="6">
+        <content_element>
+          <participant intensity="10"/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk doUnderline="true" sameHref="true" nonStopIndex="0.6">
+            <text_token string="The" bold="true"/>
+            <text_token string="Garden" bold="true"/>
+            <text_token string="of" bold="true"/>
+            <text_token string="Forking" bold="true"/>
+            <text_token string="Paths" bold="true"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="75" y="516" width="128" height="73"/>
+      </visual> historyNum = "13" </collage_element>
+  </collage_element_set> DEFAULT_UNDO_LEVELS = "32" </collage>

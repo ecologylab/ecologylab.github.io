@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+	
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; color: #008311}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px; color: #ce2f24}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px }
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #518187}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #b930a1}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #b930a1; min-height: 14.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #77492d}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #7140a7}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #3e217f}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px ; color: #33595d}
+    span.s1 {color: #77492d}
+    span.s2 {color: #b930a1}
+    span.s3 {color: #000000}
+    span.s4 {color: #518187}
+    span.s5 {color: #ce2f24}
+    span.s6 {color: #7140a7}
+    span.s7 {color: #3e217f}
+    span.s8 {color: #33595d}
+    span.Apple-tab-span {white-space:pre}
+    
+    p.p12 {margin: 0.0px 0.0px 0.0px 9.3px; text-align: center; text-indent: -9.3px; font: 16.0px Arial}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; font: 12.0px Arial; min-height: 11.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 9.3px; text-align: justify; text-indent: -9.3px; font: 12.0px Arial; min-height: 11.0px}
+    p.p15 {margin: 0.0px 0.0px 0.0px 9.3px; text-align: justify; text-indent: -9.3px; font: 12.0px Arial}
+    p.p16 {margin: 6.0px 0.0px 0.0px 9.3px; text-align: justify; text-indent: -9.3px; font: 12.0px Arial}
+    p.p17 {margin: 0.0px 0.0px 0.0px 9.3px; text-align: justify; text-indent: -9.3px; font: 11.5px 'Lucida Console'}
+    p.p18 {margin: 6.0px 0.0px 0.0px 4.5px; text-align: justify; text-indent: -4.5px; font: 12.0px Arial}
+    p.p19 {margin: 0.0px 0.0px 4.0px 0.0px; text-align: justify; font: 11.0px 'Times New Roman'; min-height: 10.0px}
+    span.s9 {font: 11.5px 'Lucida Console'}
+    span.s10 {font: 12.0px Arial}
+    span.s11 {font: 12.0px 'Lucida Grande'}
+    
+    table.specs {
+	  border-collapse: collapse;
+	  border: 1px solid #666666;
+	  font: normal 12px verdana, arial, helvetica, sans-serif;
+	  color: #363636;
+	  background: #ffffff;
+	  text-align:left;
+	  }
+	
+	thead.specs, tfoot.specs 
+		text-align:left;
+		height:30px;
+	}
+  </style>
+
+
+	
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization:<br/></div>
+<div class="title4a">annotation language (DBAL)</div>
+</div>
+
+<br clear="all" />
+
+<div class="nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="navlink" href="index.html">serialization</a>
+	<a class="navlink" href="../oodss/index.html">oodss</a>
+	<a class="navlink" href="../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="index.html">serialization</a>
+ 	<a class="navlink" href="tutorials/index.html">tutorials</a>
+	<a class="navselected" href="iiBAMSpecs.html">DBAL guide</a>
+	<a class="navlink" target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+ 	
+</div>
+	
+<div class="block">
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink"  href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#specs" >Specifications</a></li>
+<li><a href="#grammar" >Grammar</a></li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+<code>S.IM.PL serialization</code>'s Data Binding Annotation Language (DBAL) enables embedding specification of which fields to serialize and how directly into Java or C# source code.
+DBAL is designed to be concise and expressive at the same time. 
+Developers use DBAL to connect their class definitions with XML, JSON, and binary representations of complex data structures.  
+The annotations also serve as integrated documentation about data structure de/serialization.
+S.IM.PL automatically stores all type and data-binding information, at run time, into S.IM.PL type scopes.
+</p>
+
+
+
+<a name="specs"> </a>
+<h5> Specification</h5>
+<hr/>
+
+ 
+<br></br>
+<table border="0" cellpadding="5" cellspacing="0" width="100%"  >
+		<thead>
+					<tr bgcolor="#9dbfd4">
+						<th scope="col" >Annotation</th>
+						<th scope="col" width = "45%">Production Rule</th>
+						<th scope="col" >Description</th>		
+					</tr>
+				</thead>	
+		<tbody>
+		<tr>
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_scalar</font></code>
+			</td>
+			<td >
+				<p class="p16"><b><i>SIMPLIndividualAnnotation:</i></b></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>@simpl_composite<span class="s10"><span class="Apple-converted-space"> </span></span></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_scalar</p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_hints({<b>HintName {, HintName }})</b> </p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_filter(<b>regex = <i>"Expression"</i></b>)</p>
+				
+			</td>
+			<td >
+				defines a scalar class attribute to be translated as XML attribute.
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_scalar</font> String  item;</code> 
+			</td>
+		</tr>		
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_hints</font></code>
+			</td>
+			<td >
+				<p class="p16"><b><i>SIMPLIndividualAnnotation:</i></b></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>@simpl_composite<span class="s10"><span class="Apple-converted-space"> </span></span></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_scalar</p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_hints({<b>HintName {, HintName }})</b> </p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_filter(<b>regex = <i>"Expression"</i></b>)</p>				
+			</td>
+			<td >
+				precisely define the syntactic structure of serialization by using XML_ATTRIBUTE, XML_LEAF, XML_LEAF_CDATA, XML_TEXT, XML_TEXT_CDATA, or UNDEFINED
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_hints</font>(Hint.XML_ATTRIBUTE)<br></br>String  item;</code>
+			</td>				
+		</tr>
+		<tr>
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_filter</font></code>
+			</td>
+			<td >
+				<p class="p16"><b><i>SIMPLIndividualAnnotation:</i></b></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>@simpl_composite<span class="s10"><span class="Apple-converted-space"> </span></span></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_scalar</p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_hints({<b>HintName {, HintName }})</b> </p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_filter(<b>regex = <i>"Expression"</i></b>)</p>				
+			</td>
+			<td >
+				takes a valid regular expression to filter out the data when translating from serialized representation.
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_filter</font>(regex = "") String  item;</code>
+			</td>				
+		</tr>
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_composite</font></code>
+			</td>
+			<td>
+				<p class="p16"><b><i>SIMPLIndividualAnnotation:</i></b></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>@simpl_composite<span class="s10"><span class="Apple-converted-space"> </span></span></p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_scalar</p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_hints({<b>HintName {, HintName }})</b> </p>
+				<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_filter(<b>regex = <i>"Expression"</i></b>)</p>
+			</td>
+			<td>
+				 field annotated with <code><font color="#646464">@simpl_composite</font></code> must be declared with a <i>Type</i> that is a subclass of <code>ElementState</code>, meaning that it, in turn, has further annotated fields which bind to XML
+				 <br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				 <code><font color="#646464">@simpl_composite</font><br></br> NestedObject item;</code>
+			</td>
+		</tr>
+		<tr >
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_map</font></code>
+			</td>
+			<td>
+				<p class="p18"><b><i>SIMPLCollectionAnnotation:</i></b><span class="s11"><b><br>
+				</b></span><span class="s9">@simpl_wrap | @simpl_nowrap</span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s9">@simpl_collection(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i><span class="Apple-converted-space"> </span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>| <span class="s9">@simpl_map(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i></p>
+			</td>
+			<td>
+				Defines a collections attribute of class to be translated as a set of XML leaf nodes.<br></br>
+				Used in conjuction with <code><font color="#646464">@simpl_nowrap</font></code> and <code><font color="#646464">@simpl_wrap</font></code>. By default the collections are wrapped. <code><font color="#646464">@simpl_collection</font></code>
+				also accepts a parameter to define which defines the tags on leaf nodes.
+				
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_map</font><br></br> HashMap&lt;String, Object&gt itemMap;</code>
+			</td>
+		</tr>	
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_collection</font></code>
+			</td>
+			<td>
+				<p class="p18"><b><i>SIMPLCollectionAnnotation:</i></b><span class="s11"><b><br>
+				</b></span><span class="s9">@simpl_wrap | @simpl_nowrap</span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s9">@simpl_collection(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i><span class="Apple-converted-space"> </span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>| <span class="s9">@simpl_map(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i></p>
+			</td>
+			<td>
+				Defines a collections attribute of class to be translated as a set of XML leaf nodes.<br></br>
+				Used in conjuction with <code><font color="#646464">@simpl_nowrap</font></code> and <code><font color="#646464">@simpl_wrap</font></code>. By default the collections are wrapped. <code><font color="#646464">@simpl_collection</font></code>
+				also accepts a parameter to define which defines the tags on leaf nodes.
+				
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;item&#34;</font><font color="#000000">)</font><br></br>ArrayList&lt;String&gt;  items;</code>
+			</td>
+		</tr>		
+		
+		<tr >
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_wrap</font></code>
+			</td>
+			<td>
+				<p class="p18"><b><i>SIMPLCollectionAnnotation:</i></b><span class="s11"><b><br>
+				</b></span><span class="s9">@simpl_wrap | @simpl_nowrap</span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s9">@simpl_collection(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i><span class="Apple-converted-space"> </span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>| <span class="s9">@simpl_map(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i></p>
+			</td>
+			<td>
+				Used with <code>collections</code> and <code>maps</code>. This directive defines if the resultant leaf nodes in XML files be wrapped with class or attribute name.
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code>
+					<font color="#646464">@simpl_wrap</font><br />
+					<font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;item&#34;</font><font color="#000000">)</font><br />
+					<font color="#000000">ArrayList&lt;String&gt;&nbsp;items;</font>
+				</code>
+			</td>
+		</tr>
+		
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_nowrap</font></code>
+			</td>
+			<td>
+				<p class="p18"><b><i>SIMPLCollectionAnnotation:</i></b><span class="s11"><b><br>
+				</b></span><span class="s9">@simpl_wrap | @simpl_nowrap</span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s9">@simpl_collection(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i><span class="Apple-converted-space"> </span></p>
+				<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>| <span class="s9">@simpl_map(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Identifier TypeArguments</i></p>
+			</td>
+			<td>
+				Used with <code>collections</code> and <code>maps</code>. This directive defines if the resultant leaf nodes in XML files be wrapped with class or attribute name.
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code>
+					<font color="#646464">@simpl_nowrap</font><br />
+					<font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;item&#34;</font><font color="#000000">)</font><br />
+					<font color="#000000">ArrayList&lt;String&gt;&nbsp;items;</font>
+				</code>
+			</td>
+		</tr>
+		<tr>
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_classes</font></code>
+			</td>
+			<td>
+				<p class="p16"><b><i>SIMPLClasses:</i></b></p>
+				<p class="p15"><i><span class="Apple-tab-span">	</span></i><span class="s9">@simpl_classes({</span><b><i>ClassName</i>.class</b><span class="s9">{, </span><b><i>ClassName</i>.class</b><span class="s9">}})</span></p>
+			</td>
+			<td>
+				for polymorphism, <code><font color="#646464">@simpl_classes</font></code> can be used to bind one of various polymorphic instances of a super type to a single field.
+				
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_classes <font color="#000000">(</font><br></br>
+					<font color="#000000">{</font><font color="#000000">Base.</font><font color="#7f0055"><b>class&nbsp;</b></font>, <font color="#000000">Sub.</font></font><font color="#7f0055"><b>class&nbsp;</b></font><font color="#000000">})</font> <br></br> 
+					<font color="#646464">@simpl_collection</font><br></br>ArrayyList&lt;Base&gt;  items;</code>
+			</td>
+		</tr>
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_scope</font></code>
+			</td>
+			<td>
+				<p class="p16"><b><i>SIMPLScope:</i></b></p>
+				<p class="p15"><i><span class="Apple-tab-span">	</span></i><span class="s9">@simpl_scope(</span><b><i>["TranslationScope"]</i></b>)</p>
+			</td>
+			<td>
+				for polymorphism, <code><font color="#646464">@simpl_scope</font></code> can be used to bind one of various polymorphic instances of a super type to a single field.
+				
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code><font color="#646464">@simpl_scope <font color="#000000">(</font>
+					<font color="#000000"></font><font color="#000000">TranslationScope.get()</font> )</font> <br></br> 
+					<font color="#646464">@simpl_collection</font><br></br>ArrayyList&lt;Base&gt;  items;</code>
+			</td>
+		</tr>
+		<tr >
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@simpl_inherit</font></code>
+			</td>
+			<td>
+				<p class="p16"><i>ClassDeclaration:<span class="Apple-converted-space"> </span></i></p>
+				<p class="p15"><span class="s11"><span class="Apple-tab-span">	</span></span><span class="s9">class</span><span class="s11"> </span><b>[</b><span class="s9">@simpl_inherit</span><b>]</b><span class="s9"> </span><b>[</b><span class="s9">@xml_tag("</span><b><i>TagName</i></b><span class="s9">")</span><b>]<span class="Apple-converted-space">  </span>[<i>XMLOtherTags</i>] </b><i>Identifier</i> [<span class="s9">extends</span><i> Type</i>] [<span class="s9">implements</span><span class="s11"> </span><i>TypeList</i>]<i> ClassBody</i></p>
+			</td>
+			<td>
+				The <code><font color="#646464">@simpl_inherit</font></code> construct , by its presence in a class's declaration, indicates that the fields of the class's <i>superclass should be translated.</i>
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code>
+					<font color="#646464">@simpl_inherit</font><br />
+					<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><br></br><font color="#000000">SomeClass&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">AnotherClass</font>
+				</code>
+			</td>
+		</tr>
+		<tr bgcolor="#CAD1D7">
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@xml_tag</font></code>
+			</td>
+			<td>
+				<p class="p16"><b><i>FieldDecl:</i></b></p>
+				<p class="p15"><b><span class="Apple-tab-span">	</span>[</b><span class="s9">@xml_tag("</span><b><i>TagName</i></b><span class="s9">")</span><b>] [<i>XMLOtherTags</i>] [<i>SIMPLClasses</i>] <i>SIMPLIndividualAnnotation </i></b><i>Type Identifier MethodOrFieldRest</i></p>
+				<p class="p15"><span class="s11"><span class="Apple-tab-span">	</span></span>| <b><i>SIMPLCollectionAnnotation</i></b><i> Identifier MethodOrFieldRest</i></p>
+			</td>
+			<td>
+				allows the programmer to explicitly declare the tag name for a given field or class. <code><font color="#646464">@xml_tag</font></code> overrides s.im.pl serialization's automatic camel case conversion of names.
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code>
+				<font color="#646464">@xml_tag</font><font color="#000000">(</font><font color="#2a00ff">&#34;old_tag&#34;</font><font color="#000000">)</font><br></br>
+					  String item;
+				</code>
+			</td>
+		</tr>
+		<tr >
+			<td class="rightBorderBlue">
+				<code><font color="#646464">@xml_other_tags</font></code>
+			</td>
+			<td>
+				<p class="p16"><b><i>XMLOtherTags:</i></b></p>
+				<p class="p17"><span class="s10"><i><span class="Apple-tab-span">	</span></i></span>@xml_other_tags({"<span class="s10"><b><i>TagName</i></b></span>"{, "<span class="s10"><b><i>TagName</i></b></span>"}})</p>
+			</td>
+			<td>
+				Support for compatibility with old versions of an XML dialect is provided by this directive. It takes one or more strings as its argument. It can be applied to either a class or field declaration
+				<br></br><br></br>
+				<p class="p16"><b><i>Example:</i></b></p>
+				<code>
+				<font color="#646464">@xml_other_tags</font><font color="#000000">(</font><font color="#2a00ff">&#34;old_tag&#34;</font><font color="#000000">)</font><br></br>
+					  String item;
+				</code>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="p7"><br></p>
+
+<a name="grammar"> </a>
+<h5> Grammar </h5>
+<hr/>
+<p>
+   Below is the specifications of DBAL as defined in s.im.pl serialization. We define all the DBAL language constructs. 
+   You can also download an offline version of the grammer <a href="../../../technicalReports/iiBAM_grammar.pdf">from here </a>
+</p>
+
+<div align="center">
+
+
+<p class="p15">[x] denotes zero or one occurrences of x.<span class="Apple-converted-space"> </span></p>
+<p class="p15">{x} denotes zero or more occurrences of x.<span class="Apple-converted-space"> </span></p>
+<p class="p15">x | y means one of either x or y.<span class="Apple-converted-space"> </span></p>
+<div style="background-color: #CAD1D7;">
+<p class="p16"><i>ClassBody:<span class="Apple-converted-space"> </span></i></p>
+<p class="p15"><span class="Apple-tab-span">	</span>{ {<i>ClassBodyDeclaration</i>} }</p>
+<p class="p16"><i>ClassBodyDeclaration</i>:</p>
+<p class="p15"><span class="Apple-tab-span">	</span>;<span class="Apple-converted-space"> </span></p>
+<p class="p15"><span class="Apple-tab-span">	</span>| [<span class="s9">static</span>]<i> Block</i></p>
+
+<p class="p15"><span class="Apple-tab-span">	</span>| {<b><i>OtherModifier</i></b>}<i> MemberDecl</i></p>
+<p class="p16"><b><i>OtherModifier</i></b><i>:</i></p>
+<p class="p17"><span class="s10"><i><span class="Apple-tab-span">	</span></i><b><i>OtherAnnotation</i></b> | </span>public<span class="s10"> | </span>protected<span class="s10"> | </span>private<span class="s10"> | </span>static<span class="s10"> | </span>abstract<span class="s10"> | </span>final<span class="s10"> | </span>native<span class="s10"> | </span>synchronized<span class="s10"> | </span>transient<span class="s10"> | </span>volatile<span class="s10"> | </span>strictfp</p>
+
+<p class="p16"><i>MemberDecl:</i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>| <i>GenericMethodOrConstructorDecl</i></p>
+<p class="p15"><b><i><span class="Apple-tab-span">	</span></i></b>| <b><i>MethodDecl</i></b></p>
+<p class="p15"><b><i><span class="Apple-tab-span">	</span></i></b>| <b><i>FieldDecl</i></b></p>
+<p class="p15"><span class="s11"><span class="Apple-tab-span">	</span></span>| <span class="s9">void</span><i> Identifier MethodDeclaratorRest</i></p>
+
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>| <i>Identifier ConstructorDeclaratorRest</i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>| <i>ClassOrInterfaceDeclaration</i></p>
+</div>
+<p class="p16"><i>ClassOrInterfaceDeclaration:<span class="Apple-converted-space"> </span></i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span>ModifiersOpt </i>(<i>ClassDeclaration </i>|<i> InterfaceDeclaration</i>)</p>
+<div style="background-color: #CAD1D7;">
+<p class="p16"><i>ClassDeclaration:<span class="Apple-converted-space"> </span></i></p>
+<p class="p15"><span class="s11"><span class="Apple-tab-span">	</span></span><span class="s9">class</span><span class="s11"> </span><b>[</b><span class="s9">@simpl_inherit</span><b>]</b><span class="s9"> </span><b>[</b><span class="s9">@xml_tag("</span><b><i>TagName</i></b><span class="s9">")</span><b>]<span class="Apple-converted-space">  </span>[<i>XMLOtherTags</i>] </b><i>Identifier</i> [<span class="s9">extends</span><i> Type</i>] [<span class="s9">implements</span><span class="s11"> </span><i>TypeList</i>]<i> ClassBody</i></p>
+</div>
+<p class="p16"><i>Type:</i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span>Identifier</i> [<i>TypeArguments</i>]{ . <i>Identifier</i> [<i>TypeArguments</i>]} {[ ]}</p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>| <i>BasicType</i></p>
+
+<p class="p16"><i>TypeArguments:</i></p>
+<p class="p15"><span class="Apple-tab-span">	</span>&lt; <i>TypeArgument</i> {, <i>TypeArgument</i>} &gt;</p>
+<p class="p16"><i>TypeArgument:</i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span>Type</i></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>| ? [( <span class="s9">extends</span> | <span class="s9">super</span> ) <i>Type</i>]</p>
+<div style="background-color: #CAD1D7;">
+<p class="p16"><b><i>FieldDecl:</i></b></p>
+<p class="p15"><b><span class="Apple-tab-span">	</span>[</b><span class="s9">@xml_tag("</span><b><i>TagName</i></b><span class="s9">")</span><b>] [<i>XMLOtherTags</i>] [<i>SIMPLClasses</i>] <i>SIMPLIndividualAnnotation </i></b><i>Type Identifier MethodOrFieldRest</i></p>
+<p class="p15"><span class="s11"><span class="Apple-tab-span">	</span></span>| <b><i>SIMPLCollectionAnnotation</i></b><i> Identifier MethodOrFieldRest</i></p>
+
+<p class="p16"><b><i>SIMPLIndividualAnnotation:</i></b></p>
+<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>@simpl_composite<span class="s10"><span class="Apple-converted-space"> </span></span></p>
+<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_scalar</p>
+<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_hints({<b>HintName {, HintName }})</b> </p>
+<p class="p17"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s10">| </span>@simpl_filter(<b>regex = <i>"Expression"</i></b>)</p>
+<p class="p18"><b><i>SIMPLCollectionAnnotation:</i></b><span class="s11"><b><br>
+</b></span><span class="s9">@simpl_wrap | @simpl_nowrap</span></p>
+<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span><span class="s9">@simpl_collection(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><i>Identifier TypeArguments</i><span class="Apple-converted-space"> </span></p>
+
+<p class="p15"><span class="s11"><b><span class="Apple-tab-span">	</span></b></span>| <span class="s9">@simpl_map(</span><b>[</b><span class="s9">"</span><b><i>TagName</i></b><span class="s9">"</span><b>]</b><span class="s9">)</span><b> [<i>SIMPLClasses</i>] </b><i>Identifier TypeArguments</i></p>
+<p class="p16"><b><i>SIMPLClasses:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i><span class="s9">@simpl_classes({</span><b><i>ClassName</i>.class</b><span class="s9">{, </span><b><i>ClassName</i>.class</b><span class="s9">}})</span></p>
+<p class="p16"><b><i>SIMPLScope:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i><span class="s9">@simpl_scope(</span><b><i>["TranslationScope"]</i></b>)</p>
+<p class="p16"><b><i>XMLOtherTags:</i></b></p>
+<p class="p17"><span class="s10"><i><span class="Apple-tab-span">	</span></i></span>@xml_other_tags({"<span class="s10"><b><i>TagName</i></b></span>"{, "<span class="s10"><b><i>TagName</i></b></span>"}})</p>
+
+<p class="p16"><b><i>TagName:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>any allowed XML tag name</p>
+<p class="p16"><b><i>ClassName:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>name of any existing class</p>
+<p class="p16"><b><i>TranslationScope:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>the name identifier of the translation scope</p>
+<p class="p16"><b><i>HintName:</i></b></p>
+<p class="p15"><i><span class="Apple-tab-span">	</span></i>XML_ATTRIBUTE, XML_LEAF, XML_LEAF_CDATA, XML_TEXT, XML_TEXT_CDATA, or UNDEFINED</p>
+</div>
+<p class="p19"><br></p>
+
+</div>
+
+
+<br></br>
+<br></br>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>

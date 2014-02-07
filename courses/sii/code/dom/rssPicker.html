@@ -1,0 +1,73 @@
+<html>
+
+<html>
+
+<head>
+<title>dynamic text from xml</title>
+<link href="dynamicText.css" rel="stylesheet">
+
+</head>
+
+<script language="JavaScript" src="domTools.js">
+</script>
+
+<script language="JavaScript" src="xml.js">
+</script>
+
+<script language="JavaScript" src="zoomableXML.js">
+</script>
+
+<script language="JavaScript" src="rss.js">
+</script>
+
+<script language="JavaScript">
+var attributeNames = ["source", "title", "url"];
+
+horizontalLayout	= false;
+
+function build()
+{
+   var xml = loadXML("rssFeeds.xml");
+//   alert(xml);
+   
+   var sources = xml.getElementsByTagName("source");
+// alert("sources.length = " + sources.length);
+   
+   var body = document.body;
+
+   for (var i=0; i<sources.length; i++)
+   {
+      parseSource(sources[i]);
+   }
+
+   for (var categoryName in categories)
+   {
+      var thatSpan	= document.createElement("span");
+
+      thatSpan.className = "entry";
+      thatSpan.origColor = thatSpan.style.color;
+      thatSpan.onmouseover = function() {animate(this, emphasize, true, displayMetadata, attributeNames);};
+      thatSpan.onmouseout = function() {animate(this, deemphasize, false);};
+
+      var thatCategory	= categories[categoryName];
+//    alert("got category " + categoryName+" "+ thatCategory);
+      
+//      thatSpan.node	 = thatCategory[0]; // create referentiality!!!
+      thatSpan.node	 = thatCategory; // create referentiality!!!
+      thatSpan.innerHTML = categoryName;
+//      thatSpan.innerHTML = thatCategory;
+
+      body.appendChild(thatSpan);
+      body.appendChild(document.createElement("br"));
+      body.appendChild(document.createElement("br"));
+   }
+}
+
+</script>
+
+<body  bgcolor="#000000" text="#ffffff" 
+ topmargin="50px" leftmargin="50px" onload="build();">
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">info extraction [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4b">tutorial [information&nbsp;extraction]</div>
+</div>
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="index.html">meta-metadata</a>
+  <a class="navlink" href="prereqs.html">prereqs</a>
+  <a class="navlink" href="generalPrincipals.html">principles</a>
+  <a class="navlink" href="environmentSetup.html">development<br/>environment</a>
+  <a class="navlink" href="ice.html">in-context expander</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="libtutorials.html">tutorials</a>
+  <a class="subnavlink2" href="dataDefinition.html">- data definition</a>
+  <a class="navselected" href="informationExtraction.html">- information<br/>extraction</a>
+  <a class="subnavlink2" href="semanticAction.html">- semantic&nbsp;actions</a>
+  <a class="subnavlink2" href="advancedTopics.html">- advanced&nbsp;topics</a>  
+</div>
+
+<div class="block">
+  <a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+  <a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+
+<div class="content">
+<h5>This tutorial will show you how to create a <span class="mmd">meta_metadata</span> object specific to <a href="http://www.urbanspoon.com">UrbanSpoon</a>,
+complete with the necessary information extraction rules.</h5>
+<br/>
+We will start with a new <span class="mmd">meta_metadata</span> object named
+<span class="mmdVal">urban_spoon_restaurant</span>.  The object will be of the
+<span class="mmdVal">restaurant</span> type we created in the <a
+	class="destination" href="dataDefinition.html">last tutorial</a>, and can be
+placed in the same file after <span class="mmdVal">restaurant</span>.
+<br/><br/>
+
+The object will contain all of the data fields we defined for the <span class="mmdVal">restaurant</span> object, for now the XPaths will be left blank.
+
+The <span class="mmd">selector</span> specifies how this meta-metadata is selected when parsing documents. In this tutorial, we use the 
+<span class="mmdAtt">url_path_tree</span> attribute of selector to define a base URL path for all documents that will use this meta-metadata.
+
+<div class="mmdBlock">
+&#60;meta_metadata_repository <span class="mmdAtt">name</span><span class="mmdVal">="urban_spoon"</span> <span class="mmdAtt">package</span><span class="mmdVal">="ecologylab.semantics.generated.library.tutorial.urbanspoon"</span> >
+<br />
+<br />
+	<div class="mmdVal">
+		<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="urban_spoon_restaurant" <span class="mmdAtt">type</span>="restaurant" <span class="mmdAtt">parser</span>="xpath" <span class="mmdAtt">comment</span>="UrbanSpoon restaurant description page"<span class="mmd"> &gt; </span><br/>
+		<div class="mmdfields"><br/>
+			<span class="mmd">&#60;selector</span> <span class="mmdAtt">url_path_tree</span>="http://www.urbanspoon.com/r/" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="title" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="phone" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="pic" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="link" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="rating" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="price_range" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="map" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+			<span class="mmd">&#60;collection</span> <span class="mmdAtt">name</span>="genres" <span class="mmdAtt">xpath</span>="" <span class="mmd"> &gt; </span><br/><br/>
+				<div class="mmdcollection">
+				<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="title" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+				<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="location" <span class="mmdAtt">xpath</span>="" <span class="mmd"> /&gt; </span><br/><br/>
+				</div>
+			<span class="mmd">&#60;/collection> </span><br/><br/>
+		</div>
+		<span class="mmd">&#60;/meta_metadata> </span><br/>
+	</div>
+&#60;/meta_metadata_repository>
+</div>
+
+The following key changes were made from the previous tutorial:
+<ul>
+  <li>we use <span class="mmdAtt">type</span> instead of <span class="mmdAtt">extends</span>, which means use that <span class="mmd">meta_metadata</span> directly (in terms of its attributes and subfields) without defining any new fields;</li>
+	<li>for <span class="mmd">meta_metadata</span>, <span class="mmdAtt">parser</span><span class="mmdVal">="xpath"</span> means this object will use the XPath parser to extract the data from the raw HTML. When the data is presented as XML such as RSS or a web service API, direct binding (<span class="mmdAtt">parser</span><span class="mmdVal">="direct"</span>) can be used to directly map data to a XML tree;</li>
+  <li>added <span class="mmd">selector</span> with attribute <span class="mmdAtt">url_path_tree</span><span class="mmdVal">="http://www.urbanspoon.com/r/"</span> - This is the URL path that all UrbanSpoon restaurant pages start with, therefore all pages with a mathcing URL path will be mapped to this <span class="mmd">meta_metadata</span> object;</li>
+	<li>there are other ways for specifying URL pattern in a <span class="mmd">selector</span>. A <span class="mmdAtt">url_stripped</span> specifies the non-query part (the part before '?') in a URL. A <span class="mmdAtt">url_regex</span> allows using regular expression for URL pattern; an attribute <span class="mmdAtt">domain</span> will be needed together with <span class="mmdAtt">url_regex</span> for performance, e.g. <span class="mmdAtt">domain</span><span class="mmdVal">="urbanspoon.com"</span>.</li>
+	<li>multiple <span class="mmd">selector</span> is allowed if there is more than one way to select the same wrapper.
+</ul>
+
+<div class="subpoint">
+Note that when a <span class="mmd">meta_metadata</span> is reusing another one directly through <span class="mmdAtt">type</span>, one cannot define new fields, or use <i>nested meta-metadata</i> or <i>generic fields</i> in it.
+In those cases one will need to use <span class="mmdAtt">extends</span> to create a new type. We will talk about the two advanced topic later.
+</div>
+
+Also note that there are now two new fields contained within <span class="mmdVal">genres</span>.  Remember that <span class="mmdVal">genres</span> was defined with <span class="mmdAtt">child_type</span> = <span class="mmdVal">document</span>. 
+These are the fields from the <span class="mmdVal">document</span> type that we will be using: <span class="mmdAtt">title</span> - <span class="mmdVal">String</span> and <span class="mmdAtt">location</span> - <span class="mmdVal">ParsedURL</span>,
+to store the name of the food genre and a link to respective UrbanSpoon search page.
+
+<div class="bluebar">
+</div>
+
+<h5>XPath Expressions</h5>
+If you are not familiar with XPath expressions please visit this <a class="destination" href="http://www.w3schools.com/xpath/default.asp">tutorial</a>.
+<br/><br/>
+We will look closely at the XPath for three distinct elements: <span class="mmdVal">title</span>, <span class="mmdVal">pic</span>, and <span class="mmdVal">genres</span>.
+<br/><br/>
+Using Firebug we can see that the restaurant's title in the HTML:
+
+<div class="mmdBlock" style="color:black">
+&#60;div class='hreview-aggregate' id='directory'><br/><br/>
+&#60;div class='item'><br/><br/>
+<div class="mmdfields">
+&#60;h1 class='page_title fn org'><b style="color:red">Christopher's World Grill</b>&#60;/h1>
+</div>
+&hellip;
+</div>
+Therefore a correct XPath expression for extracting the restaurant title would be:
+<div class="mmdBlock" style="color:blue">
+//div[@id='directory']/div/h1
+</div>
+<br/>
+Now we will look at extracting an image source URL.
+<div class="mmdBlock" style="color:black">
+&lt;a href="/rph/114/875031/27276/college-station-christopher-s-world-grill-christopher-s-world-grill-photo"><br/><br/>
+<div class="mmdfields">
+&lt;img alt="Christopher's World Grill" height="130" src='/images/1/blank.gif' srcd="<b style="color:red">http://a1.urbancdn.com/w/s/ht/n1Pc0RahTuNJQK-130.jpg</b>" width="130" /><br/><br/>
+</div>
+&lt;/a>
+</div>
+There are many images on the page and none of the 'div id's or 'class' names are very helpful.  Instead of forming a path like the previous one
+I used xPather to help me deduce the correct expression:
+<div class="mmdBlock" style="color:blue">
+//div[@id='aside']/div[@class='list photos']/ul[1]/li[1]/ div[@class='photo']/div[@class='image']/a/img/@srcd
+</div>
+Be sure when setting the XPath expressions for images to specifiy the <i>src</i> attribute. 
+<br/><br/>
+The last XPath we will explore will be for <span class="mmdVal">genres</span>. Because the <span class="mmdVal">genres</span> field is collection
+the XPath will need to be for a list of nodes. 
+<br/><br/>
+Looking through the HTML and using xPather I have formulated a correct expression.
+<div class="mmdBlock" style="color:blue">
+//div[@id='secondary']/div[@class='cuisines']/fieldset/a
+</div>
+
+It returns three nodes, one for each of the listed genres.  For each genre we want the
+name as a <span class="mmdVal">String</span> and the link to its respective search page as a <span class="mmdVal">ParsedURL</span>.
+<br/><br/>
+The XPaths for <span class="mmdAtt">title</span> and <span class="mmdAtt">location</span> inside <span class="mmdAtt">genres</span> can be applied to the nodes marked by the expression for <span class="mmdVal">genres</span>. Or in other words, we can use relative XPaths for fields
+nested in a composite or collection field, though global XPaths are still allowed.
+Here these XPaths will be:
+<div class="mmdBlock" style="color:blue">
+./text()
+<br/><span style="color:black">and</span><br/>
+./@href
+</div>
+
+The XPath expressions for <span class="mmdVal">title</span> and <span class="mmdVal">phone</span> begin with the same sequence. 
+We define a variable to store the common component of the XPath expressions to reduce repetition and assist maintenance. We use the <span class="mmd">def_var</span> tag to define 
+a variable of type <span class="mmdVal">node</span> with the common XPath component.
+
+<div class="mmdBlock" style="color:blue">
+<span class="mmd">&#60;def_var</span> <span class="mmdAtt">name</span>="main_block" <span class="mmdAtt">type</span>="node" <br/><span class="mmdAtt">xpath</span>="./div/h1" <span class="mmd"> /> </span><br/><br/>
+<span class="mmd">&#60;def_var</span> <span class="mmdAtt">name</span>="primary" <span class="mmdAtt">type</span>="node" <br/><span class="mmdAtt">xpath</span>="//div[@id='primary']" <span class="mmd"> /> </span>
+</div>
+
+We can then reference this variable in the <span class="mmdAtt">context_node</span> attribute for <span class="mmdVal">title</span> 
+and <span class="mmdVal">phone</span>, and shorten the XPath expressions for these fields to contain only the unique ending.
+
+<div class="mmdBlock" style="color:blue">
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="title" <span class="mmdAtt">context_node</span>="main_block" <br/><span class="mmdAtt">xpath</span>="./div/h1" <span class="mmd"> /> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="phone" <span class="mmdAtt">context_node</span>="primary" <span class="mmdAtt">xpath</span>="./h3" <span class="mmd"> /> </span>
+</div>
+
+<h5><span class="mmdVal">urban_spoon_restaurant</span> <span class="mmd">meta_metadata</span> object complete with XPath expressions:</h5>
+<div class="mmdBlock">
+
+&#60;meta_metadata_repository <span class="mmdAtt">name</span><span class="mmdVal">="urban_spoon"</span> <span class="mmdAtt">package</span><span class="mmdVal">="ecologylab.semantics.generated.library.tutorial.urbanspoon"</span> >
+<br />
+<br />
+<span class="mmdVal">
+<span class="mmd">&#60;meta_metadata</span> <span class="mmdAtt">name</span>="urban_spoon_restaurant" <span class="mmdAtt">type</span>="restaurant" <span class="mmdAtt">parser</span>="xpath" <span class="mmdAtt">comment</span>="UrbanSpoon restaurant description page"<span class="mmd">></span><br/>
+<div class="mmdfields"><br/>
+<span class="mmd">&#60;selector</span> <span class="mmdAtt">url_path_tree</span>="http://www.urbanspoon.com/r/" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;def_var</span> <span class="mmdAtt">name</span>="main_block" <span class="mmdAtt">type</span>="node" <br/><span class="mmdAtt">xpath</span>="//div[@id='directory']" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;def_var</span> <span class="mmdAtt">name</span>="primary" <span class="mmdAtt">type</span>="node" <br/><span class="mmdAtt">xpath</span>="//div[@id='primary']" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="title" <span class="mmdAtt">context_node</span>="main_block" <br/><span class="mmdAtt">xpath</span>="./div/h1" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="phone" <span class="mmdAtt">context_node</span>="primary" <span class="mmdAtt">xpath</span>="./h3" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="pic" <span class="mmdAtt">xpath</span>="//div[@id='aside']/<br/>div[@class='list photos']/ul[1]/li[1]/<br/>div[@class='photo']/div[@class='image']/a/img/@srcd" <span class="mmd"> /> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="link" <span class="mmdAtt">context_node</span>="primary" <span class="mmdAtt">xpath</span>="./p[@class='website']/a[@class='ext']/@href" <span class="mmd"> /> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="rating" <span class="mmdAtt">xpath</span>="//div[@id='vote_block']/<br/>div[@class='score up']/div[@class='number']/<br/>span[@class='digits percent-text rating average']" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="price_range" <span class="mmdAtt">xpath</span>="//div[@id='secondary']/div[@class='menu']/fieldset/<br/>div[@class='price']/span[@class='pricerange']" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="map" <span class="mmdAtt">context_node</span>="primary" <span class="mmdAtt">xpath</span>="./div[@class='address adr']/a[1]/@href" <span class="mmd">/> </span><br/><br/>
+<span class="mmd">&#60;collection</span> <span class="mmdAtt">name</span>="genres" <span class="mmdAtt">xpath</span>="//div[@id='secondary']/div[@class='cuisines']/fieldset/a" <span class="mmd">> </span><br/><br/>
+	<div class="mmdcollection">
+	<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="title" <span class="mmdAtt">xpath</span>="./text()" <span class="mmd">/> </span><br/><br/>
+	<span class="mmd">&#60;scalar</span> <span class="mmdAtt">name</span>="location" <span class="mmdAtt">xpath</span>="./@href" <span class="mmd">/> </span><br/><br/>
+	</div>
+<span class="mmd">&#60;/collection> </span><br/><br/>
+</div>
+<br />
+<span class="mmd">&#60;/meta_metadata> </span><br/>
+</span>
+
+&#60;/meta_metadata_repository>
+
+
+</div>
+
+Note that XPaths may need change because websites may update their layout.
+<br/><br/>
+
+Now you've learned how to create data definitions (types, schemas, data models, or whatever you would like to call them) and attach
+extraction rules for specific information sources using meta-metadata. If you are a developer, you can now take a look at
+<a class="destination" target="_blank" href="libtutorials.html#appDev">code samples</a>,
+especially the <span style="font-family: monospace;">NewMmTest</span> program to see if your wrappers work correctly.
+<br/><br/>
+
+The <a class="destination" href="semanticAction.html">next part</a> of the tutorial will explain how to use <b>semantic actions</b> to implement control flows on extracted metadata, and
+connect them to your own application.
+
+</div>
+
+</div>
+</body></html>
+

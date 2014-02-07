@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>software development [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../code/styles/ecologylab/internal.css" rel="stylesheet">
+</head>
+
+<script language="JavaScript" src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript" src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript" src="../../code/javascript/ecologylab/ecologylab.js"></script>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+Firefox Extension Development
+</div>
+<br clear="all">
+</div>
+
+
+<div class="main_nav_box">
+
+  <div class="right_nav_box">
+
+    <a class="navlink" href="../../index.html">insiders home</a>
+    <a class="navselected" href="../../softwareDevelopment/index.html">software development</a>
+    <a class="navlink" href="../../publishing/index.html">publishing</a>
+    <a class="navlink" href="../../studies/index.html">studies</a>
+    <a class="navlink" href="../../hardwareDevelopment/index.html">hardware development</a>
+    <a target="_blank" class="navlink"
+ href="http://ecologylab.cs.tamu.edu">ecologylab public</a>
+  </div>
+&nbsp;
+  <div class="right_nav_box">
+  
+  	<a class="navlink" href="index.html">Overview</a>
+  	<a class="navselected" 	   href="firefoxext.html">Firefox Extensions</a>
+  	<a class="navlink" 	   href="rolling.html">Rolling Your Own</a>
+  	<a class="navlink" 	   href="hacking.html">Hacking our DND Extension</a>
+  	<a class="navlink" 	   href="mozbugs.html">DND Extension Mozilla Bugs</a>
+  	<a class="navlink" 	   href="emails.html">DND Extension Mozilla e-mails</a>
+  </div>
+</div>
+
+<div class="main_content">
+<p><br>
+<h2>Firefox Extensions</h2>
+</p>
+
+<p>Firefox provides an extensions mechanism which allows 3rd parties to modify the browser's appearance and abilities.  For the most part the extensions tend to modify the browser's UI and the various scripts which control its behavior. This is generally referred to as the applications "chrome". This is a similar concept to skinning, but offers more capabilities than just changing the appearance of the application.</p>
+
+<p>Arbitrary XUL applications can be run inside of the Firefox browser, through the use of a Chrome url.  A Chrome URL is special protocal avialable on the Mozilla platform. It functions in much the same way as a normal URL, except that rather than pointing to  a HTML document, a Chrome URL points to a XUL application. Such Applications are run as trusted code, and can access all aspects of the browser which are exposed through XPCOM interfaces. Additionally, these applications can also use a special XUL device called an overlay to replace, modify, or enhance existing browser XUL applications.</p>
+
+<p>There is very little difference between an XUL application and a Firefox extension. The only tangible difference is the way in which the XUL is distributed. For  a normal XUL application, the application is accessed directly via its chrome URL, something like chrome://www.asd.com/myXULAPP.xul. The browser then executes the XUL application, subsequently unloads it when a different URL is entered into the applications.  It perhaps best to think of a nromal XUL application as a special kind of web page, that only works in in the Mozilla browsers. </p>
+
+<p>An extension on the other hand, is packaged a distributed via a XPI file. This is an archive file which contains the XUL code, and several RDF/XML documents which tell the browser how to install the application. Unlike a normal XUL application, extensions are installed locally, loaded when the browser starts, and continue execution until the browser is shut down, or a user turns it off through a UI component. </p>
+
+<p>In addition to being distributed in this way, many Firefox extensions utilize an XUL construct called an overlay, overlays allow you to replace, modify, and add additional XUL code into an existing XUL file or application.  This technology enables us to change the browser behavior and appearance without having to submit and maintain code inside the Mozilla or Firefox projects. </p>
+
+<p>Rather than try to create and maintain an extension tutorial I will now redirect you to the primary place to find all things related to Firefox extension development.  <a href="javascript:ecologylabPopup('http://kb.mozillazine.org/Dev_:_Extensions')">The MozillaZine Dev Extensions</a> is the best place to get started. </p>
+
+<p>The primary tutorial I  suggest is the one at <a href="javascript:ecologylabPopup('http://roachfiend.com/archives/2004/12/08/how-to-create-firefox-extensions/')">roachfiend.com</a>. This is a very clear, easy to follow, step by step guide to get you up and running. </p>
+
+<p>If you want to get started working on your own extension right away, please take a look at the <a href="rolling.html">Rolling Your Own</a> section in this document. It provides a quick walkthrough of modifying the base XPI package of the Drag and Drop extension so that you can quickly create your own extension. </p>
+
+<p>If you are interested in adding to, or altering the existing Drag and Drop extension please see the <a href="hacking.html"> Hacking the DND Extension</a> section for a quick guide on unpacking the DND extension so that you can modify it directly. </p>
+
+</div>
+
+</div>
+</body> </html>

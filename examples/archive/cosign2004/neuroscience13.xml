@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen width="640" height="750" size="2"/>
+  </preferences>
+  <site_set>
+    <site domain="filesystem.local" strokeHue="0.16666667"/>
+  </site_set>
+  <traversable_set/>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container purl="http://faculty.washington.edu/chudler/introb.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://science-education.nih.gov/supplements/nih2/addiction/guide/lesson1-1.htm" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://hypatia.ss.uci.edu/psych9a/lectures/lec2notes.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="file:///C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www.brainchannels.com/evolution/physicalbrain.html" generation="1">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://hypatia.ss.uci.edu/psych9a/lectures/lec2notes.html" historyNum="4">
+      <image_element purl="http://hypatia.ss.uci.edu/psych9a/lectures/s-homunc.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="60" y="354" width="246" height="274"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="1">
+      <image_element purl="http://www.alumni.ca/%7Emcleodl/images/ctang1.gif" href="http://science-education.nih.gov/supplements/nih2/addiction/guide/lesson2-1.htm" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="308" y="392" width="251" height="220"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://science-education.nih.gov/supplements/nih2/addiction/guide/lesson1-1.htm" historyNum="7">
+      <image_element purl="http://science-education.nih.gov/supplements/nih2/addiction/images/guide/fig1.1.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="362" y="219" width="260" height="168"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" historyNum="10">
+      <image_element hasTransparency="true" minAlpha="6488064" alphaRadius="35" purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/brmodelb.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="53" y="220" width="130" height="116"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" historyNum="7">
+      <image_element purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/cerebel8.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="41" y="195" width="50" height="49"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" historyNum="7">
+      <image_element purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/pituita3.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="21" y="253" width="47" height="80"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" historyNum="9">
+      <image_element purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/lobes5.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="114" y="186" width="75" height="62"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://pegasus.cc.ucf.edu/%7EBrainmd1/brain.html" historyNum="8">
+      <image_element purl="http://pegasus.cc.ucf.edu/%7EBrainmd1/smaller.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="35" y="289" width="105" height="65"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="11">
+      <text_element faceIndex="2" alpha="255" participantCreated="true" r="255" g="153" b="153">
+        <text_chunk sameHref="true" nonStopIndex="0.75">
+          <text_token string="Anatomy"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="Brain"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="71" y="231" width="99" height="77"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="12">
+      <text_element faceIndex="2" alpha="255" participantCreated="true" r="209" g="186" b="151">
+        <text_chunk sameHref="true">
+          <text_token string="The"/>
+          <text_token string="Brain"/>
+          <text_token string=""/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="62" y="536" width="147" height="33"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="14">
+      <text_element faceIndex="2" alpha="255" participantCreated="true" r="51" g="255" b="153">
+        <text_chunk sameHref="true">
+          <text_token string="Neurotransmission"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="322" y="489" width="188" height="25"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="15">
+      <text_element faceIndex="2" alpha="255" participantCreated="true" r="204" g="204" b="204">
+        <text_chunk sameHref="true">
+          <text_token string="Brain"/>
+          <text_token string="Function"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="447" y="275" width="79" height="50"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.brainchannels.com/evolution/physicalbrain.html" historyNum="16">
+      <image_element purl="http://www.brainchannels.com/evolution/evolutionmedia/reptilianbrain.jpg" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="267" y="10" width="300" height="209"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="3">
+      <text_element alpha="255" HTMLFragmentCreated="true" r="255" g="204" b="102">
+        <text_chunk sameHref="true" nonStopIndex="0.5">
+          <text_token string="The"/>
+          <text_token string="evidence"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="evolution"/>
+          <text_token string="of"/>
+          <text_token string="the"/>
+          <text_token string="human"/>
+          <text_token string="brain"/>
+          <text_token string="can"/>
+          <text_token string="be"/>
+          <text_token string="found"/>
+          <text_token string="in"/>
+          <text_token string="its"/>
+          <text_token string="anatomical"/>
+          <text_token string="structure."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="279" y="56" width="338" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://faculty.washington.edu/chudler/introb.html" historyNum="7">
+      <image_element hasTransparency="true" minAlpha="4128768" alphaRadius="97" purl="http://faculty.washington.edu/chudler/gif/autdor.gif" HTMLFragmentCreated="true">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="153" y="177" width="251" height="305"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="file:/C:/Program Files/Common Files/mozilla.org/GRE/1.7_2004051408/createdElements.html" historyNum="13">
+      <text_element faceIndex="2" alpha="255" participantCreated="true" r="51" g="51" b="255">
+        <text_chunk sameHref="true">
+          <text_token string="Neuroscience"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="196" y="306" width="241" height="35"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

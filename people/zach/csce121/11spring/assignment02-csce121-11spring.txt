@@ -1,0 +1,102 @@
+(Print this page as a cover sheet for your printouts)
+
+LAB 2 Section: CSCE 121-______________ Due: 11:59 P.M. Tuesday,
+February 15, 2011
+
+"On my honor, as an Aggie, I have neither given nor received any
+unauthorized aid on any portion of the academic work included in this
+assignment."
+
+
+________________________________	________________________________
+Typed or printed name of student	Signature of student
+
+NOTE:  Please follow your lab instructor's directions for submitting
+your assignment through CSNET.  ONLY ASSIGNMENTS SUBMITTED TO CSNET WILL
+BE GRADED!  Make a printout of this cover sheet, sign it and give it to
+your TA in lab or put it in your TA's mailbox in the corner of the 3rd
+floor of HRBB, near room 312.  IF YOU DO NOT TURN IN A SIGNED COVER
+SHEET YOUR WORK WILL NOT BE GRADED!
+
+NOTE:  Homework will be graded on unix.cse.tamu.edu using g++.  You are
+free to develop your programs on Visual C++ or any other platform, but
+it is your responsibility to make sure your programs also compile and
+execute correctly on unix.cs.tamu.edu using g++.
+
+The grade for this lab will be based on style (formatting, variable
+names, comments, etc.), syntax (no compilation or link errors), and
+correctness (passes all test cases).  Your grade for this lab is:
+
+Problem #       1       2       3       4 
+Style           /2      /4      /4      /2 
+Syntax          /3      /6      /6      /3 
+Correctness     /5      /10     /10     /5
+-------------------------------------------------------------------
+Total           /10     /20     /20     /10
+
+Grand total _____/50
+
+
+1. (10 points) Exercise 9 on page 127.  Name your program hw2pr1.cpp.
+
+2. (20 points) Exercise 5 on page 168.  Make sure that you handle
+absolute zero in both cases (Kelvin input and Celsius input).  Name your
+program hw2pr2.cpp.
+
+3. (20 points) Exercise 11 on page 86, but with the following
+modifications. Instead of using US currency, write your program for the
+Euro. Note that Euro coins come in different denominations from US
+coins; there are 8 that you must account for. Report to the user the
+individual counts (as in the original problem) and the sum in Euros and
+cents (instead of dollars and cents). In addition, convert the final
+value to US dollars using a recent exchange rate (do not worry about
+rounding the result, for now).
+
+Note that you may need to do some research on the Internet for the
+denominations of Euro coins and a recent exchange rate. Be careful that
+you convert from Euros to dollars and not the other way around!
+
+Do not worry about right-justifying the results for now.
+
+Your program's output should look something like:
+
+You have 3 one-cent pieces.
+You have 8 two-cent pieces.
+... <etc.> ...
+
+You have 0.19 Euros.
+In US Dollars, that is $.2626.
+
+Name your program hw2pr3.cpp.
+
+OPTIONAL EXTRA CREDIT =====================
+
+4. (10 points) Modify problem 3 to right-justify the numbers, e.g.,
+
+You have 103 one-cent pieces.
+You have  14 two-cent pieces.
+You have   1 five-cent pieces.
+
+Hint: Look up 
+   cout.flags(ios::left);
+and
+   cout << setw(24) << number;
+somewhere, or experiment with these two statements.
+
+Also, make sure that you round your result to the nearest hundredths
+place, include the trailing zero(s), and include a zero to the left of
+the decimal if the value is less than one. 
+
+So, instead of the following outputs:
+   In US Dollars, that is $.2626.
+or
+   In US Dollars, that is $1.
+
+You would instead have:
+   In US Dollars, that is $0.26.
+or
+   In US Dollars, that is $1.00.
+
+Hint: Look up the printf(...) function.
+
+Name your program hw2pr4.cpp.

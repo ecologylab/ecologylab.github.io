@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="2.0">
+  <preferences>
+    <screen width="512" height="718"/>
+  </preferences>
+  <site_set>
+    <site domain="csdl.tamu.edu" strokeHue="0.5555556" fontIndex="0"/>
+    <site domain="guardian.co.uk" strokeHue="0.5555556"/>
+    <site domain="tamu.edu" strokeHue="0.0" fontIndex="1"/>
+    <site domain="cnn.com" strokeHue="0.16666667"/>
+    <site domain="donswaim.com" strokeHue="0.41666666" fontIndex="2"/>
+    <site domain="cornell.edu" strokeHue="0.125" fontIndex="4"/>
+    <site domain="cjonline.com" strokeHue="0.083333336" fontIndex="2"/>
+    <site domain="southerncrossreview.org" strokeHue="0.33333334" fontIndex="2"/>
+  </site_set>
+  <traversable_set/>
+  <untraversable_set/>
+  <reject_domain_set/>
+  <term_set/>
+  <container_set>
+    <container purl="http://www.guardian.co.uk/diary/story/0,3604,1226529,00.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://www2.law.cornell.edu/cgi-bin/foliocgi.exe/historic/query=%5Bgroup+413+u!2Es!2E+15!3A%5D!28%5Bgroup+syllabus!3A%5D!7C%5Blevel+case+citation!3A%5D!29/doc/%7B@1%7D/hit_headings/words=4/hits_only" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://donswaim.com/nytimes.sontag.html" generation="1">
+      <participant intensity="2"/>
+    </container>
+    <container purl="http://www.cnn.com/2004/ALLPOLITICS/08/03/tues.hot/index.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://csdl.tamu.edu/~andruid/censorship/definitionOfObscenityUK.txt" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://southerncrossreview.org/35/sontag.htm" generation="1">
+      <participant intensity="2"/>
+    </container>
+    <container purl="http://csdl.tamu.edu/~andruid/censorship/index.html" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://quest.cjonline.com" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://csdl.tamu.edu/~andruid/censorship/contextFreeSpeechIrrelevant.txt" generation="1">
+      <participant/>
+    </container>
+    <container purl="http://money.cnn.com/news/specials/rebuild_iraq/" generation="1">
+      <participant/>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://csdl.tamu.edu/~andruid/censorship/index.html" historyNum="12">
+      <text_element faceIndex="0" alpha="246" r="255" g="255" b="255">
+        <text_chunk sameHref="true">
+          <text_token string="censorship"/>
+          <text_token string="at"/>
+          <text_token string="acm"/>
+          <text_token string="hypertext"/>
+          <text_token string="2004"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="290" y="5" width="260" height="17"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://donswaim.com/nytimes.sontag.html" historyNum="8">
+      <text_element alpha="225" r="228" g="84" b="84">
+        <text_chunk sameHref="true" nonStopIndex="0.5555556">
+          <text_token string="To"/>
+          <text_token string="acknowledge"/>
+          <text_token string="that"/>
+          <text_token string="Americans"/>
+          <text_token string="torture"/>
+          <text_token string="their"/>
+          <text_token string="prisoners"/>
+          <text_token string="would"/>
+          <text_token string="contradict"/>
+          <text_token string="everything"/>
+          <text_token string="this"/>
+          <text_token string="administration"/>
+          <text_token string="has"/>
+          <text_token string="invited"/>
+          <text_token string="the"/>
+          <text_token string="public"/>
+          <text_token string="to"/>
+          <text_token string="believe"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="62" y="27" width="367" height="248"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/~andruid/censorship/contextFreeSpeechIrrelevant.txt" historyNum="8">
+      <text_element faceIndex="4" alpha="251" r="171" g="171" b="171">
+        <text_chunk sameHref="true" nonStopIndex="0.21428572">
+          <text_token string="If"/>
+          <text_token string="I"/>
+          <text_token string="wanted"/>
+          <text_token string="to"/>
+          <text_token string="look"/>
+          <text_token string="at"/>
+          <text_token string="smut,"/>
+          <text_token string="I"/>
+          <text_token string="know"/>
+          <text_token string="how"/>
+          <text_token string="to"/>
+          <text_token string="go"/>
+          <text_token string="about"/>
+          <text_token string="it"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="194" width="426" height="138"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.cnn.com/2004/ALLPOLITICS/08/03/tues.hot/index.html" historyNum="11">
+      <text_element faceIndex="4" alpha="251" r="156" g="177" b="188">
+        <text_chunk sameHref="true" nonStopIndex="0.68421054">
+          <text_token string="Kerry"/>
+          <text_token string="said"/>
+          <text_token string="President"/>
+          <text_token string="Bush"/>
+          <text_token string="is"/>
+          <text_token string="&quot;encouraging"/>
+          <text_token string="recruitment"/>
+          <text_token string="of"/>
+          <text_token string="terrorists&quot;"/>
+          <text_token string="response"/>
+          <text_token string="to"/>
+          <text_token string="September"/>
+          <text_token string="11,"/>
+          <text_token string="terrorist"/>
+          <text_token string="attack"/>
+          <text_token string="has"/>
+          <text_token string="alienated"/>
+          <text_token string="moderate"/>
+          <text_token string="Muslims"/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="432" width="168" height="124"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://money.cnn.com/news/specials/rebuild_iraq/" historyNum="1">
+      <image_element purl="http://i.cnn.net/money/images/specials/rebuild_iraq/iraq_fact.gif">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="118" y="287" width="285" height="308"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://southerncrossreview.org/35/sontag.htm" historyNum="3">
+      <image_element hasTransparency="true" minAlpha="1966080" alphaRadius="76" purl="http://graphics7.nytimes.com/images/2004/05/20/magazine/23torture.184.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="305" y="144" width="168" height="491"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.guardian.co.uk/diary/story/0,3604,1226529,00.html" historyNum="2">
+      <text_element faceIndex="6" alpha="255" r="255" g="255" b="102">
+        <text_chunk sameHref="true" nonStopIndex="0.375">
+          <text_token string="Doubtless"/>
+          <text_token string="Mr"/>
+          <text_token string="Cheney"/>
+          <text_token string="knew"/>
+          <text_token string="nothing"/>
+          <text_token string="of"/>
+          <text_token string="this,"/>
+          <text_token string="however."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="193" y="398" width="207" height="73"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://quest.cjonline.com" historyNum="5">
+      <image_element hasTransparency="true" minAlpha="2555904" alphaRadius="105" purl="http://quest.cjonline.com/images/101700/bush.jpg">
+        <participant/>
+      </image_element>
+      <visual>
+        <extent x="10" y="250" width="256" height="379"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://donswaim.com/nytimes.sontag.html" historyNum="7">
+      <text_element alpha="225" r="228" g="84" b="84">
+        <text_chunk sameHref="true" nonStopIndex="0.5">
+          <text_token string="it"/>
+          <text_token string="is"/>
+          <text_token string="probable"/>
+          <text_token string="that"/>
+          <text_token string="the"/>
+          <text_token string="''torture''"/>
+          <text_token string="word"/>
+          <text_token string="will"/>
+          <text_token string="continue"/>
+          <text_token string="to"/>
+          <text_token string="be"/>
+          <text_token string="banned."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="11" y="584" width="409" height="64"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www2.law.cornell.edu/cgi-bin/foliocgi.exe/historic/query=%5Bgroup+413+u!2Es!2E+15!3A%5D!28%5Bgroup+syllabus!3A%5D!7C%5Blevel+case+citation!3A%5D!29/doc/%7B@1%7D/hit_headings/words=4/hits_only" historyNum="10">
+      <text_element faceIndex="4" alpha="241" r="151" g="204" b="99">
+        <text_chunk sameHref="true" nonStopIndex="0.6818182">
+          <text_token string="Miller"/>
+          <text_token string="v."/>
+          <text_token string="California,"/>
+          <text_token string="413"/>
+          <text_token string="U.S."/>
+          <text_token string="15"/>
+          <text_token string="(1973)"/>
+          <text_token string="(USSC+)"/>
+          <text_token string="Obscene"/>
+          <text_token string="material"/>
+          <text_token string="taken"/>
+          <text_token string="as"/>
+          <text_token string="a"/>
+          <text_token string="whole,"/>
+          <text_token string="lacks"/>
+          <text_token string="serious"/>
+          <text_token string="literary,"/>
+          <text_token string="artistic,"/>
+          <text_token string="political,"/>
+          <text_token string="or"/>
+          <text_token string="scientific"/>
+          <text_token string="value."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="10" y="53" width="238" height="76"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/~andruid/censorship/definitionOfObscenityUK.txt" historyNum="9">
+      <text_element faceIndex="4" alpha="251" r="151" g="204" b="99">
+        <text_chunk sameHref="true" nonStopIndex="0.5714286">
+          <text_token string="strong"/>
+          <text_token string="precedents:"/>
+          <text_token string="factual"/>
+          <text_token string="reports"/>
+          <text_token string="about"/>
+          <text_token string="important"/>
+          <text_token string="matters"/>
+          <text_token string="of"/>
+          <text_token string="public"/>
+          <text_token string="interest"/>
+          <text_token string="should"/>
+          <text_token string="not"/>
+          <text_token string="be"/>
+          <text_token string="sanitized."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="303" y="55" width="177" height="60"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://csdl.tamu.edu/~andruid/censorship/contextFreeSpeechIrrelevant.txt" historyNum="6">
+      <text_element faceIndex="4" alpha="251" r="171" g="171" b="171">
+        <text_chunk sameHref="true" nonStopIndex="0.6666667">
+          <text_token string="Arguments"/>
+          <text_token string="about"/>
+          <text_token string="free"/>
+          <text_token string="speech"/>
+          <text_token string="are"/>
+          <text_token string="irrelevant"/>
+          <text_token string="in"/>
+          <text_token string="this"/>
+          <text_token string="context."/>
+        </text_chunk>
+        <participant/>
+      </text_element>
+      <visual>
+        <extent x="40" y="232" width="230" height="38"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

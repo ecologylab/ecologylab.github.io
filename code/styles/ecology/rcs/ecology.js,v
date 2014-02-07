@@ -1,0 +1,232 @@
+head	1.6;
+access;
+symbols;
+locks
+	andruid:1.6; strict;
+comment	@# @;
+
+
+1.6
+date	2000.06.06.05.45.05;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2000.05.30.15.05.03;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	99.04.15.01.24.08;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	99.04.07.20.01.06;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	99.03.30.23.44.21;	author StemSiteCirculation;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	99.03.13.03.18.39;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.6
+log
+@Version ecology-1.5.5: improved html interface; better ad filtering; works w google for search
+@
+text
+@/**
+ * duplicate definition to mimic style sheet for ns3.
+ */
+
+textSize	= 10;
+if (top.mac || top.sgi)
+    textSize+=3;
+
+document.tags.body.fontSize	= (textSize - 1) + "pt";
+document.tags.body.fontFamily	= top.textStyle;
+document.tags.body.fontWeight	= 650;
+
+document.tags.td.fontSize	= document.tags.body.fontSize;
+document.tags.td.fontFamily	= document.tags.body.fontFamily;
+document.tags.td.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.normal.all.fontSize	= document.tags.body.fontSize;
+document.classes.normal.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.normal.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.nav.all.fontSize	= (textSize - 1) + "pt";
+document.classes.nav.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.nav.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.larger.all.fontSize	= (textSize+1) + "pt";
+document.classes.larger.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.larger.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.small.all.fontSize =  (textSize - 2) + "pt";
+document.classes.small.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.small.all.fontWeight	= 300;
+
+document.classes.copyright.all.fontSize	 =  (textSize - 3) + "pt";
+document.classes.copyright.all.fontFamily= document.tags.body.fontFamily;
+document.classes.copyright.all.fontWeight= 100;
+
+document.classes.caption.all.fontSize	= (textSize - 2) + "pt";;
+document.classes.caption.all.fontFamily	= "Courier New, Courier";
+document.classes.caption.all.fontWeight	= 650;
+
+document.classes.tiny.all.fontSize	=  (textSize - 4) + "pt";
+document.classes.tiny.all.fontFamily	= document.tags.body.fontFamily;
+document.classes.tiny.all.fontWeight	=  100;
+
+document.tags.input.fontSize	= (textSize - 1) + "pt";
+document.tags.input.fontFamily	= "";
+
+document.tags.select.fontSize	= (textSize - 1) + "pt";
+document.tags.select.fontFamily	= "";
+
+document.classes.head.all.fontSize	= (textSize + 1) + "pt";
+document.classes.head.all.fontFamily	= top.textStyle;
+document.classes.head.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.larger.all.fontSize	= textSize + "pt";
+document.classes.larger.all.fontFamily	= top.textStyle;
+document.classes.larger.all.fontWeight	= document.tags.body.fontWeight;
+
+document.classes.subhead.all.fontFamily = top.textStyle;
+document.classes.subhead.all.fontSize	= textSize + "pt";
+document.classes.subhead.all.fontWeight = "900";
+document.classes.subhead.all.color	= "cc6600";
+
+document.classes.slogan.all.fontSize	= (textSize - 2) + "pt";
+document.classes.slogan.all.fontStyle	= "italic";
+document.classes.slogan.all.fontWeight	= "700";
+document.classes.slogan.all.color	= "336699";
+
+@
+
+
+1.5
+log
+@Version ecology-1.5.4: trying to fix mac java bug; updated style sheers
+@
+text
+@d26 2
+d30 2
+d38 1
+a38 1
+document.classes.caption.all.fontFamily	= document.tags.body.fontFamily;
+@
+
+
+1.4
+log
+@Version ecology-0.8.0: CollageMachine overhaul and lots of site tweaks.
+@
+text
+@d47 7
+a53 2
+document.classes.head.all.fontSize = "11pt";
+document.classes.head.all.fontFamily = top.textStyle;
+@
+
+
+1.3
+log
+@Version ecology-0.7.22: fixed collage machine bug: refresh after iconify.Rewrite of Content+HTMLPage Media Element Management. Added Netscape Security stuff.
+@
+text
+@d33 1
+a33 1
+document.classes.caption.all.fontSize	= (textSize - 1) + "pt";;
+@
+
+
+1.2
+log
+@Version ecology-0.7.15: minor fixes towards beta 1 release
+@
+text
+@d9 1
+a10 1
+document.tags.body.fontSize	= (textSize - 1) + "pt";
+d12 2
+a14 1
+document.tags.td.fontSize	= document.tags.body.fontSize;
+d16 2
+a18 1
+document.classes.normal.all.fontSize	= document.tags.body.fontSize;
+d21 1
+a22 1
+document.classes.nav.all.fontSize	= (textSize - 1) + "pt";
+d28 2
+d31 1
+a31 2
+document.classes.copyright.all.fontSize =  (textSize - 3) + "pt";
+document.classes.copyright.all.fontWeight	 = 100;
+d33 7
+a39 1
+document.classes.caption.all.fontSize = (textSize - 1) + "pt";;
+d41 2
+a42 2
+document.classes.tiny.all.fontSize =  (textSize - 4) + "pt";
+document.classes.tiny.all.fontWeight =  100;
+d44 1
+a44 3
+document.tags.input.fontFamily	= "";
+document.tags.input.fontSize	= (textSize - 1) + "pt";
+// document.tags.input.fontSize	= 7 + "pt";
+a45 2
+document.tags.select.fontSize	= (textSize - 1) + "pt";
+// tags.textarea.color = "red";
+d47 1
+a48 1
+document.classes.head.all.fontSize = "11pt";
+d51 1
+a51 1
+document.classes.subhead.all.fontSize = textSize + "pt";
+d53 1
+a53 2
+//document.classes.subhead.all.color = "0033aa";
+document.classes.subhead.all.color = "cc6600";
+d55 1
+a55 1
+// document.classes.hack.all.fontSize = "33pt";
+a56 1
+document.classes.slogan.all.fontSize	= (textSize - 2) + "pt";
+d58 1
+a58 9
+document.classes.slogan.all.color		= "336699";
+
+document.classes.tm.all.verticalAlign	= "super";
+document.classes.tm.all.lineHeight	= .3;
+document.classes.tm.all.fontSize	= "5pt";
+
+document.classes.ibm.all.fontSize	= "9pt";
+document.classes.ibm.all.fontWeight	= 700;
+document.classes.ibm.all.color		= "330099";
+a59 1
+document.classes.spread.all.lineHeight	= 1.15;
+@
+
+
+1.1
+log
+@Version ecology-0.7.0: 1st major ecology release
+@
+text
+@d6 1
+a6 1
+if (top.mac)
+@

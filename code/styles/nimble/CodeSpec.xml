@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE code_spec
+ SYSTEM "http://intranet.creatingmedia.com/code/xml/stem/CodeSpec.dtd">
+
+<code_spec>
+
+<code file="nimble.css"/>
+<code file="nimbleie3.css"/>
+<code file="nimble.js"/>
+
+</code_spec>

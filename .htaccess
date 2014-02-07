@@ -1,0 +1,25 @@
+Redirect 301 /zerotouch /research/zerotouch
+
+Redirect 301 /combinFormation /infocomposer
+Redirect 301 /combinformation /infocomposer
+Redirect 301 /infoComposer /infocomposer
+Redirect 301 /InfoComposer /infocomposer
+Redirect 301 /cf /infocomposer
+Redirect 301 /cF /infocomposer
+
+Redirect 301 /research/simplGuide /research/simpl
+#Redirect 301 /simpl /research/simplGuide
+Redirect 301 /simpl /research/simpl
+Redirect 301 /metametadata /research/simplGuide/metaMetadata
+Redirect 301 /MICE /research/bigsemantics/MICE
+Redirect 301 /ICE /research/bigsemantics/MICE
+Redirect 301 /MDC /research/bigsemantics/MICE
+Redirect 301 /mdc /research/bigsemantics/MICE
+Redirect 301 /mice /research/bigsemantics/MICE
+Redirect 301 /ice /research/bigsemantics/MICE
+Redirect 301 /research/bigsemantics/ICE/index.html /research/bigsemantics/MICE
+Redirect 301 /research/bigsemantics/ICE /research/bigsemantics/MICE
+
+
+Redirect 301 /tec /research/tec.html
+Redirect 301 /tteclog /research/tec.html

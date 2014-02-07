@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<title cftoolsversion="0.1.2">principals [meta-metadata]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl meta-metadata:<br/></div>
+<div class="title4a">principles</div>
+</div>
+
+<div class="tall_nav">
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../serialization/index.html">serialization</a>
+	<a class="subnavlink" href="../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="index.html">meta-metadata</a>
+</div>
+		
+<div class="block">
+  <a class="navselected_bold" href="index.html">meta-metadata</a>
+  <a class="navlink" href="prereqs.html">prereqs</a>
+  <a class="navselected" href="generalPrincipals.html">principles</a>
+  <a class="navlink" href="environmentSetup.html">development<br/>environment</a>
+  <a class="navlink" href="ice.html">in-context expander</a>
+  <a class="navlink" href="libtutorials.html">tutorials</a>
+</div>
+
+<div class="block">
+  <a class="navlink" target="_blank" href="http://spreadsheets.google.com/pub?key=0AqoHBMh8I98IdFNtM0ZkT240VzJTXy1UcjNDcU9WdWc&hl=en&single=true&gid=3&output=html">reference</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/ecologylabSemantics/">API</a>
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+</div>
+
+
+<div class="content">
+<br/>
+<h2>Meta? Meta? Data?</h2>
+<p class="main" style="line-height: 150%;">
+Metadata is defined as data about data...<br/>
+so meta-metadata is data about metadata.
+ <br/><br/>
+Suppose you had a library of music as a data set. The songs themselves would be considered <i>data</i>.
+Things such as genre and artist would be considered <i>metadata</i> because they are information about the <i>data</i>.
+Information that describes the <i>metadata</i> fields, what their datatypes are, and how to
+extract values of these fields from, say, an Amazon page or an MTV page, these descriptions about <i>metadata</i> we define as
+<i>meta-metadata</i>. Note that artist, itself, could be a multi-field object, including first name, last name, home town, biography, influences, and MySpace page.
+<br/><br/>
+In this sense we use the <i>meta-metadata</i> language to define data structures and specify retrieval methods for collecting
+information off the web.
+</p>
+
+<div class="bluebar">
+</div>
+
+<h3><i>Meta-Metadata</i> addresses 4 stages: data structure definition, information extraction, semantic actions, and presentation.</h3>
+<h5>1. Metadata Definition</h5>
+<p class="main" style="line-height: 150%;">
+<i>Meta-Metadata</i> authoring begins with specifying the data structures that internally represent a particular type of metadata object.
+This structure consists of a set of meta-metadata fields which will hold the processed information.
+The structures are strongly typed, and may be nested, as per the needs of use. Structure re-use, as in object-oriented programming, is also possible,
+so that the artist description above could be used both for musicians and, say, also for actors.
+</p>
+<h5>2. Information Extraction</h5>
+<p class="main" style="line-height: 150%;">
+Information extraction describes how to populate instances of metadata from information sources. Thus, we can specify patterns, using
+XPath and regular expressions, for saying just how to extract the musician info from an MTV artist page.
+</p>
+<h5>3. Semantic Actions</h5>
+<p class="main" style="line-height: 150%;">
+Semantic actions are the tasks to perform with the now processed information.
+Using these actions you can perform "bridge functions," which connect to the collection representation applications, such as to gather and crawl  links, and 
+present information to the user. You can also specify control structures, as in a typical programming language.
+</p>
+<h5>4. Presentation</h5>
+<p class="main" style="line-height: 150%;">
+Presentation rules enable specifying CSS styles for particular fields, the order they are displayed in, whether some fields are hidden, and whether some serve as navigation links.
+</p>
+<br/>
+<p class="main" style="line-height: 150%;">
+This image describes the lifecycle of meta-metadata and metadata.
+</p>
+<img src="images/meta-metadataPipeline5-1.png"  alt="pipeline" align="middle" "/>
+
+</div>
+
+</div>
+</body></html>

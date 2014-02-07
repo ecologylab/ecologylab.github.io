@@ -1,0 +1,67 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	99.02.07.05.35.49;	author StemSiteCirculation;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Version stem-0.1.0: 1st version which works extensively. still tuning output. propogate,mosh,versioning,SourceControl, and tags all seem to work. documentation function has not been started yet. site tree building is untested. site tree Template elements have not been updated yet to use setArg(...) functionality
+@
+text
+@<!- -*-Java-*- ->
+<html>
+<style type="text/css">
+<!--
+body
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif";
+   font-size: 12pt;
+   font-weight: 600;
+}
+td
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+ul
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif"; 
+   font-size: 11pt;
+   font-weight: 600;
+}
+blockquote
+{
+   font-family: "Verdana, Century Gothic, Tahoma, Geneva, Arial, Helvetica, Sans-Serif"; 
+   font-size: 12pt;
+   font-weight: 600;
+}
+.small
+{
+   font-size: 9pt
+}
+.history
+{
+   font-size: 8pt
+   background-color: "cccc99"
+}
+.tiny
+{
+   font-size: 7pt
+}
+-->
+</style>
+</html>
+@

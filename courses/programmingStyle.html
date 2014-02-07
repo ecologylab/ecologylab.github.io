@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>programming style requirements [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../code/styles/ecologylab/internal.css" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">
+programming style
+</div>
+<br clear="all">
+</div>
+
+<div class="nav" style="height: 500px;">
+<a class="navlink" href="../index.html">home</a>
+<a class="navlink" href="../define.html">define</a>
+<a class="navlink" href="../research/index.html">research</a>
+<a class="navlink" href="../people/index.html">people</a>
+
+<a class="navselected" href="index.html">courses</a>
+<a class="subnavlink" href="capstone/index.html">capstone</a>
+<a class="subnavlink" href="hcsi/index.html">human centered</a>
+<a class="subnavlink" href="sii/index.html">interactive information</a>
+<a class="subnavlink" href="location/index.html">location, location</a>
+<a class="subnavlink" href="creativeAndExpressive/index.html">creative
+and expressive</a>
+<a class="subnavlink" href="physicalInterfaces/index.html">physical interfaces</a>
+<a class="subnavlink" href="recombinant/index.html">recombinant media</a>
+<a class="navselected" href="programmingStyle.html">programming style</a>
+</div>
+<div class="main_content">
+<p>
+Project teams work together to develop a code base. 
+It is expected that the code bases will live for a long time.  
+The code base grows extremely large.
+Software development techniques, such as good programming style, are
+all that is between us and complete chaos.
+
+<p>
+When you work on the code base, you are not just creating
+functionality. You are conributing to the API. Make your code as
+nicely structured, clear, and well documented as you <i>want</i> to
+see when you look at functionality that you didn't write!
+<p>
+You may leave the project at some point; your code lives on (sort of
+like being in two places at once, or being immortal :-). People will still
+depend on your code! Clarity is essential. It's not so hard to write
+code that works initially. Writing maintainable code is a greater challenge.
+
+
+To increase each developer's ability to easily read someone else's
+code -- both as it's being written, and later, when it's being maintained --
+it is valuable for all of us to use a common style. This involves
+naming conventions and white space. I am making this explicit.
+
+<p>
+	
+This style
+guide has evolved through years of use. The specifics are open for
+discussion, anytime. I expect everyone involved in the lab to either follow
+ these conventions, or work to develop a consensus to amend them.
+<p>
+Although this guide has been developed primarily for Java, the same conventions
+are applicable for other imperitive languages such as C#, C++ and objective-C.
+<p>
+
+<ol>
+<li>Use meaningful names for variables, not short unreadable ones.
+   You can use i, j, k for index variables, though.
+</li>
+
+<li>HTML and Image filenames.
+    <ol>
+      <li>All letters are in lower case, except for 
+   <li>word breaks which are delimited by upper case.
+   <li>Suffixes are lowercase.
+       </ol>
+   Examples:   <code>whatIsIt.html, topLogo.gif</code>
+</li>
+
+  <li>Variables in SQL and HTML forms. 
+      <ol>
+	<li>All letters are lower case.
+   <li>Word breaks are delmited by underscore.
+   Examples:  <code>last_name, name_id.</code>
+       </ol>
+</li>
+
+    <li>Variables in Java and JavaScript.  
+   <ol>
+      <li>All letters are in lower case, except for 
+      <li>word breaks which are delimited by upper case.
+	  </ol>
+   Examples:   <code>nameId, printName</code>
+</li>
+
+<li> 
+Variables and subvariables in Cookies.
+   <ol>
+      <li>All letters are UPPER CASE.
+   (This is an exception, because Microsoft IIS forces them to be named
+   this way, in most cases.)
+      <li>Word breaks are separated by underscore.
+   </ol>
+   Examples:  <code>USER, FIRST_NAME</code>
+</li>
+
+<li>Constants in Java (final variables).
+   <ol>
+	<li> All letters are UPPER CASE.
+   <li> Word breaks are separated by underscore.
+   </ol>
+</li>
+
+  <li>Method names in Java and function names in JavaScript.
+   <ol>
+	<li> All letters are in lower case, except for 
+   <li> word breaks which are delimited by upper case.
+   </ol>
+   Examples:  <code>doDispatch(), printValue(...)</code>
+</li>
+
+    <li>Class names in Java.
+   <ol>
+	<li> Capitalized.  First letter in upper case, then lower case, until
+   <li> word breaks which are delimited by upper case.
+   </ol>
+   Examples:  <code>HotButton, HttpServlet</code>
+</li>
+<li>Package names in Java.
+   <ol>
+	<li> lower case. No word breaks.
+   </ol>
+   Example: <code>cm.generic</code>
+</li>
+
+  <li>Tags and attributes in HTML.
+   <ol>
+	<li> All letters are lower case.</li>
+    <li>URL String arguments in HTTP/HTML
+     <ol>
+	   <li> All letters are in lower case, except for 
+       <li> word breaks which are delimited by upper case.
+     </ol>
+    Examples:  <code>relId, relType</code>
+	</ol>
+</li>
+<li>Whitespace will be used judiciously to enhance the readability of code.
+This includes horizontal whitespace, such as (tabs to line up columns), 
+and vertical whitespace (such as a blank line between important
+    functional sections). Some specifics:
+    <ul>
+      <li>Open and close brace on a line by themselves.
+      <li>Spaces after all reserved words.
+      <li>1 space after the equals sign; at least 1 before it (lining
+	  up the = in assigments is nice), except on rare occassions
+	  to get vertical matching with a bunch of other declarations.
+      <li>1 space before and after arithmetic and logical operators.
+      <li>Space before open paren in expressions (but not in method
+	  declarations), and after close paren.
+	  But NO SPACE after open paren or before close paren.
+
+      <li>Line up declarations and assignements with horizontal tab.
+
+    </ul>
+   Dont be excessive: having lots of extra, meaningless blank vertical
+    lines just makes it harder to see a block on the display while
+    programming. Likewise, too much horizontal space causes wraps in
+    smaller windows and with smaller monitors. Please strive to make it
+    readable by all developers.
+   Example:
+    <blockquote>
+<code>
+<pre>
+public class Foo
+extends Debug
+{
+   int			sumOfAngles;
+   public static final	RIGHT_ANGLE	= 90;
+   public static final	BAD_FILE	= -37;
+   public static final	GOOD_FILE	= 0;
+   
+   public int contributeAngle(int newAngle)
+   {
+      if (a == b)
+      {
+	 int x		= 33;
+	 sumOfAngles   += x + newAngle;
+      }
+      try
+      {
+	 InputStream inStream	= new FileInputStream(inFile);
+	 inStream.open();
+      } catch (Exception e)
+      {
+	 println("Couldnt open file " + inFile);
+	 return BAD_FILE;
+      }
+      return GOOD_FILE;
+   }
+}
+</pre></code></blockquote>
+
+Note, for example:
+     <code> if(a==b) </code>
+is just plain anti-social.</li>
+
+
+<li>
+Clear JavaDoc comments for all packages, classes, methods, and
+important instance variables. For methods should explain the purpose
+of the method, the arguments, and the return value. 
+</li>
+
+<li>Comments in the midst of your code, to explain anything tricky or
+    subtle. 
+</li>
+
+<li>For Java Developers who use eclipse (why wouldn't you ?), the code
+ formatter is a great utility. Set the code formatter to use the 
+ ecologylab recommended settings (available 
+ <a href="https://svn.ecologylab.net/ecologylabFundamental/trunk/eclipse/ecologylabTabsFormat.xml">here</a> 
+ with anonymous access) by navigating to <i>Window (Eclipse on Mac) > Preferences > 
+ Java > Code Style > Formatter</i> and clicking on import. Any Java code 
+ can be formatted by using the keyboard shortcut <i>control 
+ (command on a Mac) + shift + F</i>.
+</li>
+</ol>
+
+<div class="subbox">
+</div>
+
+<div class="subbox">
+
+</div>
+</div>
+
+</div>
+</body> </html>
+

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collage version="1.1">
+  <preferences>
+    <screen height="1024.0" width="1280.0" size="1"/>
+  </preferences>
+  <site_set>
+    <site domain="www.sics.se" strokeHue="0.25" fontIndex="1"/>
+  </site_set>
+  <traversable_set>
+    <traversable urlString="http://www.sics.se/humle"/>
+    <traversable urlString="http://citeseer.nj.nec.com"/>
+    <traversable urlString="http://citeseer.nj.nec.com/context/1265638/452237/"/>
+    <traversable urlString="http://portal.acm.org"/>
+    <traversable urlString="http://arsenal.media.mit.edu/notebook/archives"/>
+    <traversable urlString="http://www.sics.se/humle/projects"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah/"/>
+    <traversable urlString="http://gunther.smeal.psu.edu/context/168727/0/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah2003/"/>
+    <traversable urlString="http://www.sics.se/~kia"/>
+    <traversable urlString="http://www.edfac.usyd.edu.au/projects/ah/"/>
+    <traversable urlString="http://www.naturalbeauty.no/naturalbeauty"/>
+    <traversable urlString="http://www.acm.org/sigchi/chi95/proceedings/shortppr"/>
+    <traversable urlString="http://www.uni-paderborn.de/fachbereich/AG/agdomik/arbeitsschwerpunkte/ucmm/idias"/>
+    <traversable urlString="http://www.sics.se/~kia/papers"/>
+    <traversable urlString="http://ah2000.itc.it/"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah"/>
+    <traversable urlString="http://iat.ubalt.edu/courses/old"/>
+    <traversable urlString="http://www.esi.umontreal.ca/~dufresne/COM6535"/>
+    <traversable urlString="http://iat.ubalt.edu/courses/old/pbds664_F98/hidframe/"/>
+    <traversable urlString="http://www.stemnet.nf.ca/~elmurphy/emurphy"/>
+    <traversable urlString="http://www.ida.liu.se/~nilda/"/>
+    <traversable urlString="http://www.stretchtext.com/"/>
+    <traversable urlString="http://sirius.lcc.uma.es/AH2002/"/>
+    <traversable urlString="http://www.dsv.su.se/~calle"/>
+    <traversable urlString="http://www.bokai.com/BarcodeJSP"/>
+    <traversable urlString="http://www.bokai.com/BarCodeASP"/>
+    <traversable urlString="http://128.205.122.10/~trebor/dms419/txt"/>
+    <traversable urlString="http://www.zeiberg.com"/>
+    <traversable urlString="http://computing.unn.ac.uk/staff/cgpb4/ijaied/members01/archive/vol_12/brusilovsky"/>
+    <traversable urlString="http://www.sentex.net/~ajy"/>
+    <traversable urlString="http://www.sics.se/humle/gallery/2001"/>
+    <traversable urlString="http://www.amazon.com/exec/obidos/tg/detail/-/1852330902"/>
+    <traversable urlString="http://www.usefilm.com/image"/>
+    <traversable urlString="http://osdn.pricegrabber.com/search_attrib_books.php/bkcat2=66820/page=2/"/>
+    <traversable urlString="http://books.mysic.com"/>
+    <traversable urlString="http://www.metal-sludge.com"/>
+    <traversable urlString="http://www.racinecats.com/html"/>
+    <traversable urlString="http://hpsearch.uni-trier.de/hp/a-tree/w"/>
+    <traversable urlString="http://www.spiritone.com/~paulg"/>
+    <traversable urlString="http://www.sics.se/humle/"/>
+    <traversable urlString="http://www.sics.se/humle/projects/persona/web/"/>
+    <traversable urlString="http://www.sics.se/~espinoza/documents/master"/>
+    <traversable urlString="http://www.darkhorse.dk/"/>
+    <traversable urlString="http://www.informationweek.com/story/IWK20020329S0004/"/>
+    <traversable urlString="http://harry_humle.tripod.com/"/>
+    <traversable urlString="http://www.informationweek.com/story/IWK20020329S0003/"/>
+    <traversable urlString="http://fp.worldonline.dk/fpehumlemc/"/>
+    <traversable urlString="http://www.widemag.com"/>
+    <traversable urlString="http://hampshire.edu/lspector"/>
+    <traversable urlString="http://www.dsv.su.se/~klas/Research_projects/PUSH"/>
+    <traversable urlString="http://linnaeus.nrm.se/flora/di/cannaba/humul"/>
+    <traversable urlString="http://www.humlebio.dk/"/>
+    <traversable urlString="http://www.hepper.dk"/>
+    <traversable urlString="http://www.odla.nu/krydd"/>
+    <traversable urlString="http://wwwis.win.tue.nl/ah98/"/>
+    <traversable urlString="http://pespmc1.vub.ac.be"/>
+    <traversable urlString="http://pespmc1.vub.ac.be/Papers"/>
+    <traversable urlString="http://www.wkap.nl/prod/b/0-7923-4843-5/"/>
+    <traversable urlString="http://www.ted.cmis.csiro.au/sigir99/watters/"/>
+    <traversable urlString="http://www.contrib.andrew.cmu.edu/~plb/HT98_workshop"/>
+    <traversable urlString="http://elfwood.lysator.liu.se/loth/m/u/mushu"/>
+    <traversable urlString="http://elfwood.lysator.liu.se/loth/k/r/kristina"/>
+    <traversable urlString="http://www.sics.se/humle/gallery/2002/sitidagen020207"/>
+    <traversable urlString="http://www.sics.se/humle/gallery/1999"/>
+    <traversable urlString="http://list.informationdesign.org/pipermail/infodesign/2000-March"/>
+    <traversable urlString="http://www.lghs.net/teachers/english/dgarrett/other"/>
+    <traversable urlString="http://www.kristinasherylwong.com"/>
+    <traversable urlString="http://www.ratemypicture.com/profiles"/>
+    <traversable urlString="http://www.cs.um.edu.mt/~cstaff"/>
+    <traversable urlString="http://hpsearch.uni-trier.de/hp/a-tree/j"/>
+    <traversable urlString="http://www.ercim.org/publication/Ercim_News/enw46"/>
+  </traversable_set>
+  <term_set>
+    <term stemmed="push" intensity="9"/>
+    <term stemmed="stopword" intensity="3"/>
+    <term stemmed="util" intensity="3"/>
+    <term stemmed="system" intensity="6"/>
+    <term stemmed="evalu" intensity="3"/>
+    <term stemmed="hypertext" intensity="3"/>
+    <term stemmed="pictur" intensity="3"/>
+    <term stemmed="hook" intensity="10"/>
+    <term stemmed="hypermedia" intensity="6"/>
+    <term stemmed="adapt" intensity="10"/>
+    <term stemmed="photo" intensity="9"/>
+  </term_set>
+  <container_set>
+    <container url="http://www.sics.se/humle/gallery/2002/humlekonferens02/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/humle/gallery/2001/SalongenInvigning/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/humle/gallery/1997/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/humle/gallery/2002/sitidagen020207/" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/humle/photos.php?from=0" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+    <container url="http://www.sics.se/humle/seminars/boman031016.html" generation="1">
+      <content_element>
+        <participant/>
+      </content_element>
+    </container>
+  </container_set>
+  <collage_element_set>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/1997/" historyNum="9">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Picutre"/>
+            <text_token string="of"/>
+            <text_token string="the"/>
+            <text_token string="HUMLE"/>
+            <text_token string="Members"/>
+            <text_token string="taken"/>
+            <text_token string="outside"/>
+            <text_token string="Electrum"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="676" y="231" width="127" height="74"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/seminars/boman031016.html" historyNum="6">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" nonStopIndex="0.0">
+            <text_token string="Professor,"/>
+            <text_token string="HUMLE"/>
+            <text_token string="SICS"/>
+            <text_token string="and"/>
+            <text_token string="KTH"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="241" y="107" width="130" height="66"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/photos.php?from=0" historyNum="3">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" commonHref="http://www.sics.se/humle/gallery/2001/Humledagen26mars/" nonStopIndex="0.0">
+            <text_token string="March,"/>
+            <text_token string="26"/>
+            <text_token string="HUMLE"/>
+            <text_token string="Open"/>
+            <text_token string="House."/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="75" y="313" width="170" height="93"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/photos.php?from=0" historyNum="4">
+      <media_element negativeClicks="5">
+        <content_element>
+          <participant/>
+        </content_element>
+        <text_element faceIndex="1">
+          <text_chunk sameHref="true" commonHref="http://www.sics.se/humle/gallery/2001/" nonStopIndex="0.0">
+            <text_token string="The"/>
+            <text_token string="HUMLE"/>
+            <text_token string="lab"/>
+            <text_token string="2001"/>
+            <text_token string="2000"/>
+          </text_chunk>
+        </text_element>
+      </media_element>
+      <visual>
+        <extent x="222" y="309" width="134" height="81"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2001/SalongenInvigning/" historyNum="1">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2001/SalongenInvigning/DSCF0017.JPG"/>
+      </media_element>
+      <visual>
+        <extent x="68" y="89" width="156" height="208"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/humlekonferens02/" historyNum="10">
+      <media_element negativeClicks="9">
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/humlekonferens02/humlekonferens02%20013.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="252" y="412" width="312" height="234"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="5">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20015.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="45" y="430" width="312" height="416"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/humlekonferens02/" historyNum="7">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/humlekonferens02/humlekonferens02%20011.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="468" y="1155" width="260" height="195"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/sitidagen020207/" historyNum="2">
+      <media_element>
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/sitidagen020207/Picture%20005.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="253" y="604" width="312" height="241"/>
+      </visual>
+    </collage_element>
+    <collage_element containerURL="http://www.sics.se/humle/gallery/2002/humlekonferens02/" historyNum="8">
+      <media_element positiveClicks="1">
+        <content_element>
+          <participant/>
+        </content_element>
+        <image_element url="http://www.sics.se/humle/gallery/2002/humlekonferens02/humlekonferens02%20004.jpg"/>
+      </media_element>
+      <visual>
+        <extent x="251" y="84" width="312" height="416"/>
+      </visual>
+    </collage_element>
+  </collage_element_set>
+</collage>

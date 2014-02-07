@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<link rel="stylesheet" href="../../code/styles/combinformation/combinformation.css"
+ type="text/css">
+
+<link rel="stylesheet" href="../../code/styles/combinformation/launch.css"
+ type="text/css">
+
+<link rel="shortcut icon" href="../images/ecologylab16Black.ico" type="image/ico">
+<link rel="icon" href="../images/ecologylab16Black.png" type="image/png">
+
+<script language="JavaScript">
+rootDir	= "../../";
+thisPage	= "mi ";
+thisParent	= "launch";
+thisAlt	= "re:mix"; 
+strongBrowser	= 0;
+</script>
+
+<script language="JavaScript"
+ src="../../code/javascript/common/BrowserSense.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/GeneralPurpose.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/cookie.js"></script>
+ <script language="JavaScript"
+ src="../../code/javascript/common/launch.js"></script>
+
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/prefs.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/seeding.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/cfLaunch.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/combinformation/combinformation.js"></script>
+<script language="JavaScript"
+ src="../../code/javascript/common/dialog.js"></script> 
+
+<script language="JavaScript">
+
+function getXMLParser()
+{
+   return (document.implementation && document.implementation.createDocument) ?
+      document.implementation.createDocument("", "", null) :
+      new ActiveXObject("Microsoft.XMLDOM");
+}
+function loadXML(xmlURL)
+{
+   var xmlDoc;
+   
+   if (document.implementation && document.implementation.createDocument)
+   {
+      xmlDoc = document.implementation.createDocument("", "", null);
+   }
+   else
+   {
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+   }
+   xmlDoc.async = false;
+   xmlDoc.load(xmlURL);
+
+   return xmlDoc;
+}   
+
+function buildDOM(xmlString)
+{
+   var dom;
+   
+   if (document.implementation && document.implementation.createDocument)
+   {
+	  var parser = new DOMParser();
+	  dom = parser.parseFromString(xmlString, "text/xml");
+   }
+   else
+   {
+      dom = new ActiveXObject("Microsoft.XMLDOM");
+	  dom.async = false;
+	  dom.loadXML(xmlString);
+   }
+   return dom;
+}
+
+var xmlDoc = self.XMLSerializer ? buildDOM("<root></root>") : new ActiveXObject("Msxml2.DOMDocument.3.0");
+
+function xmlToString(xml)
+{
+   if (self.XMLSerializer)
+   {
+	  return (new XMLSerializer()).serializeToString(xml);
+   }
+   else
+   {
+//	  var axDoc = new ActiveXObject("Msxml2.DOMDocument.3.0");
+	  var frag  = xmlDoc.createDocumentFragment();
+	  frag.appendChild(xml);
+	  return frag.xml;
+   }
+}
+function xmlString()
+{
+   return xmlToString(this);
+}
+
+// querystring handling
+function getArgs()
+{
+   var args = new Object();
+   var query = location.search.substring(1);
+   var pairs = query.split(",");
+   for(var i=0; i<pairs.length; i++) {
+      var pos = pairs[i].indexOf('=');
+      if(pos == -1) continue;
+      var argname = pairs[i].substring(0,pos);
+      var value = pairs[i].substring(pos+1);
+      args[argname] = unescape(value);
+   }
+   return args;
+}
+// parse the querystring
+var args = getArgs();
+
+function error(message)
+{
+	launchForm.elements['launch_button'].disabled = "disabled";
+	document.write("<p class='error'>An error occurred!</p>");
+	document.write("<p class='error'>Error message: " + message + "</p>");
+}
+
+var xmlDoc;
+var errorFound = false;
+var exceptionText;
+try
+{
+  xmlDoc = loadXML(args['file']);
+}
+catch(exception)
+{
+  exceptionText = exception;
+  errorFound = true;
+}
+
+
+document.write('<title>launch::' + args['title'] + ' :: combinFormation</title>');
+
+</script>
+
+</head>
+
+<body onLoad="preloadNav();">
+
+<table class="menu">
+  <tr> 
+    <td valign="top"><nobr><a href="../index.html" target="_parent"><img
+ width="259" height="77"
+ src="../images/combinFormationMenuLogo.gif"></a><a href="index.html"><img src="images/launchMenu.png"></a></nobr></td>
+
+    <td valign="middle" align="right"><div class="menucell" align="right"><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('launch','','../images/buttons/launchButton_anim.gif',1)" target="_parent"><img name="launch" src="../images/buttons/launchButton_active.gif"></a>
+
+		<a href="../support.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('support','','../images/buttons/supportButton_anim.gif',1)" target="_parent"><img name="support" src="../images/buttons/supportButton.gif"></a>
+		<a href="../about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('read','','../images/buttons/aboutButton_anim.gif',1)" target="_parent"><img name="read" src="../images/buttons/aboutButton.gif"></a>
+
+		<a href="../developers.html" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('developers','','../images/buttons/developersButton_anim.gif',1);" target="_parent"><img name="developers" src="../images/buttons/developersButton.gif" style="margin-right: 7px;"></a></div></td>
+  </tr>
+</table>
+
+<form name="launchForm" target="cf_jnlp" action="../../code/java/cf/launch.jsp" method="post">
+<input type="hidden" name="pref_set"></input>
+
+<div class="content">
+
+<div class="blue_line"></div>
+
+<script language="javascript">
+	
+	var title;
+	if (args['title'])
+		title = args['title'];
+	else
+		title = "specified xml file";
+		
+	document.write('<h4>Launch combinFormation with seeds from ' + title + '.</h4><br/>');
+
+</script>
+
+<h5 id="oollage_size_h5">2)&nbsp;Select size on screen:&nbsp;
+<script>
+      collageSize();
+</script>
+</h5>
+
+<script>
+if (autoPrefs['pdf_parsing'] != "multivalent_and_pdfbox")
+{
+	document.write('<h5>3)&nbsp;Select PDF&nbsp;parser&nbsp;<br>');
+	document.write(pdfRadios());
+	document.write('</h5>');
+}
+
+</script>
+
+<div class="buttons_area">
+
+<div id="launch_controls">
+<input class="launch_button" type="submit" value="  Launch combinFormation  "
+ name="launch_button"> 
+</div>
+</form>
+
+<script language="JavaScript">
+	if(!args['file'])
+	{
+		error("'file=' not found in URL query string");
+	}
+
+	if (!errorFound)
+	{
+		var prefXml = xmlDoc.getElementsByTagName("pref_set");
+		try
+		{
+			launchForm.elements['pref_set'].value = xmlToString(prefXml[0]);
+		}
+		catch(err)
+		{
+			error("XML file not found. Verify location specified by 'file' in query string.");
+		}
+	}
+	else
+	{
+		error(exceptionText);
+		document.write("<p class='error'>This error is a security issue and is caused when the xml file resides on a different host than the html file.</p>");
+	}
+	
+</script>
+
+<div style="padding-top: 24px; text-align: center;">
+
+</div>
+
+</div>
+</div>
+
+<div class="tight_line"></div>
+
+<div onclick="clearStatus()" id="progress_console">&nbsp;</div>
+
+<div class="iframe_holder">
+<iframe
+ name="ping"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="seeding"
+ src="white.html"
+ frameborder="0" scrolling="no"></iframe><iframe
+ name="cf_jnlp"
+ class="jnlp"
+ src="nearBlack.html"
+ frameborder="0" scrolling="no"></iframe>
+</div>
+
+
+<h6>
+Get 
+<a href="javascript:openSupport()">help</a> | 
+Give 
+<a href="javascript:openSupport('feedback')">Feedback</a>
+to the developers!
+</h6>
+
+<h6>An instance of <a class="instance" href="../../../index.html" target="_blank"">interface ecology</a>.</h6>
+
+</div>
+
+<div class="nav">
+  <a class="support_link" href="mix.html">re:mix</a>
+  <a class="support_link" href="curated.html">re:collections</a>
+  <a class="support_link" href="buzz.html">re:buzz</a>
+  <a class="support_link" href="open.html">re:open</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<andrew_site>
+
+  <content>
+    <contentPage name="about">
+      <!--
+        <h1>all about me</h1>
+	<p>Within these pages exists information about me and my work (and some of my play).</p>
+	<p>I am currently working on a Ph.D. in Computer Science at the <a target="_blank" href="../../">Interface
+	   Ecology Lab</a> at Texas A&amp;M University. As part of my M.S. degree, I completed a thesis. I developed a new user
+	   interface component, the In-Context Slider, designed to activate in the context of a situation 
+	   allowing a user to complete a task without having to switch focus from the task at hand to
+	   locate the necessary interface component.</p>
+	<p>As you can see, I have an interest in computing. I tend to align myself on the visual
+	   side of computing specifically the design of human-centered interfaces, but I have been known to 
+	   sway towards the more theoretic and internal (but not less
+	   beautiful) side of computing as well. I enjoy all facets of computing (except reboots and animated
+	   assistants), but I suppose I lean to the aesthetic side due to the artist within me.</p>
+	 <p>I'm an artist. In my free moments, I 
+	   occasionally draw, paint, or photograph.  You can see a few of my photographs on this page.
+	   On top of art, I also have a great love for music - listening and playing. In high school, I
+	   picked up the bass guitar and played in a band. I still play...some. As for my musical taste, I
+	   enjoy a wide variety of music. I mostly enjoy music with lots of syncopations and polyrhythms 
+	   (i.e. jazz and all the new forms and hybrids resulting - particularly some of the more modern ones).</p>
+     <p>Well, I think that explains me well enough. Now, go explore my website.
+	 </p>      
+       -->
+    </contentPage>
+    <contentPage name="portfolio">
+      <!--
+        <h1>portfolio</h1>
+	<p>Within my portfolio, you will find examples of my design work and art work.</p>
+	<p><a target="_blank" href="portfolio/index.html">Enter the portfolio</a></p>
+      -->
+    </contentPage>
+    <contentPage name="resume">
+      <!--
+        <h1>r&#233;sum&#233;</h1>
+		<p>This page contains my resume and all things related to it.</p>
+		<p>View my resume: <a target="_blank" href="resume.pdf">pdf</a></p>
+		
+	<p></p>
+      -->
+    </contentPage>
+    <contentPage name="projects">
+      <!--
+        <h1>projects</h1>
+	<p>I'm currently involved in several different projects (one of which was my master's thesis).  Most of
+	   these projects are currently part of or started as a result of assignments for school.</p>
+	<h2>In-Context Slider</h2>
+	<p><i>Thesis</i> - The In-Context Slider is a new transitory interface component for visualizing and adjusting
+	a value at the user's current point of focus. The In-Context Slider was implemented inside 
+	<a target="_blank" href="../../combinFormation/index.html">combinFormation</a> (described below) as a mechanism for interest expression for directing an agent within combinFormation. The prior method for interest expression in combinFormation involved a modal toolbar interface that required users to continually
+	shift focus from one part of the screen to another. The In-Context Slider eliminated this problem.</p>
+	<h2>choreographic buttons</h2>	
+	<p style=" padding-right: 8px;">
+		<img src="images/cb.jpg" style="float: left; padding-right: 10px;">
+	    Choreographic Buttons is an interactive art installation / design environment
+		that uses gestures of the body as an interface for creating a collage.
+	    project developed by a team including myself as part of a course titled 
+	    <a target="_blank" href="../../courses/recombinant/index.html">Recominant
+	    Media</a>. Choreographic Buttons has received publications in ACM Multimedia and the Leonardo Electronic
+	    Almanac.
+	</p>
+	<h2>combinFormation</h2>
+	<p style="padding-right: 8px;">
+		<img src="images/cF.jpg" style="float: right; padding: 0px 10px 0px 10px;">
+	    <a target="_blank" href="../../combinFormation/index.html">combinFormation</a> 
+	    is a mixed-initiative system that uses composition for browsing, collecting, and arranging 
+	    information samples from web pages. The samples act as visual, semiotic, and navigational 
+	    surrogates for the documents from which they are extracted. I am currently involved in 
+	    development on this application primarily with regards to my thesis but also in many other ways.
+	</p>
+      -->
+    </contentPage>
+  </content>
+
+  <current>
+    <media type="listen" title="Transfiguration of Vicent" artist="M Ward" src="http://images.amazon.com/images/P/B000AADYYO.01.THUMBZZZ.jpg" href="#"/>
+    <media type="read" title="Information Visualization: Perception for Design" artist="Colin Ware" src="http://images.amazon.com/images/P/B000AADYYO.01.THUMBZZZ.jpg" href="#"/>
+    <media type="watch" title="Season One" artist="Lost" src="http://images.amazon.com/images/P/B000AADYYO.01.THUMBZZZ.jpg" href="#"/>
+  </current>
+ 
+  <foreigns>
+    <foreign for="about" x="-30" y="-275" color="#f7ca5e">
+      <text>&#252;ber mich</text>
+      <text>au sujet de moi</text>
+      <text>&#31169;&#12395;&#12388;&#12356;&#12390;</text>
+      <text>sobre m&#237;</text>
+      <text>&#960;&#949;&#961;&#943;&#960;&#959;&#965; &#949;&#947;&#974;</text>
+    </foreign>
+    <foreign for="portfolio" x="220" y="-640" color="#65bcf7">
+      <text>mappe</text>
+      <text>brochure</text>
+      <text>&#26377;&#20385;&#35388;&#21048;</text>
+      <text>lista</text>
+      <text>&#967;&#945;&#961;&#964;&#959;&#966;&#965;&#955;&#940;&#954;&#953;&#959;</text>
+    </foreign>
+    <foreign for="resume" x="205" y="-358" color="#f05a5a">
+      <text>zusammenfassung</text>
+      <text>r&#233;sum&#233;</text>
+      <text>&#27010;&#35201;</text>
+      <text>resumen</text>
+      <text>&#949;&#960;&#945;&#957;&#945;&#955;&#940;&#946;&#949;&#964;&#949;</text>
+    </foreign>
+    <foreign for="projects" x="-225" y="-605" color="#a3f765">
+      <text>projekte</text>
+      <text>projets</text>
+      <text>&#12503;&#12525;&#12472;&#12455;&#12463;&#12488;</text>
+      <text>proyectos</text>
+      <text>&#960;&#961;&#959;&#947;&#961;&#940;&#956;&#945;&#964;&#945;</text>
+    </foreign>
+  </foreigns>
+
+</andrew_site>

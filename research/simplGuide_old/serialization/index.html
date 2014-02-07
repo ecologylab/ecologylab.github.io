@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>serialization [s.im.pl]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../../code/styles/ecologylab/guide.css" rel="stylesheet">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head><body >
+
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl:<br/></div>
+<div class="title4a">serialization guide</div>
+</div>
+
+<div class="nav">
+
+<div class="block">
+ 	<a class="navselected_bold_red" href="../index.html">s.im.pl</a>
+	<a class="navlink" href="index.html">serialization</a>
+	<a class="navlink" href="../oodss/index.html">oodss</a>
+	<a class="navlink" href="../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="index.html">serialization</a>
+ 	<a class="navlink" href="tutorials/index.html">tutorials</a>
+	<a class="navlink" href="DBALSpecs.html">DBAL guide</a>
+	<a class="navlink" target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navlink"  href="../repository.html">repository</a>
+  <a class="navlink" href="../community.html">community</a>
+  <a class="navlink"  href="../practices.html">programming practices</a>
+</div>
+
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+
+</div>
+
+
+<div class="content">
+
+<p class="main" style="line-height: 150%;">
+If you need to develop applications that make use of existing data (e.g. RSS), communicate over the network (e.g. a multiplayer game), and capture data structured data from the web 
+(e.g. Wikipedia, the ACM Portal, or IMDB), S.IM.PL is the place to start. 
+</p>
+<p>
+The Support for Information-Mapping in Programming Languages project develops inter-platform support for writing software that manipulates complex information in applications by 
+enhancing imperative programming languages, and developing complementary declarative mark-up languages.
+
+<i>S.IM.PL serialization</i> provides fine-grained control of object&harr;serialization binding through the <a class="checkthis" href="./DBALSpecs.html">Data Binding Annotation Language</a> (DBAL) that is embedded directly in source code. DBAL enables the straightforward definition of strongly-typed objects that match serialized structures, for example existing XML formats.
+Inheritable <i>translation scopes</i> group sets of object&harr;serialization binding definitions, and enable inheritance. The present system supports (compressed) <a target="_blank" href="http://en.wikipedia.org/wiki/Xml">XML</a> for serialization, while future work
+will develop alternate translation schemes, such as <a target="_blank" href="http://en.wikipedia.org/wiki/Type-length-value">type-length-value</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/Json">JSON</a>.
+</p> 
+<p>
+	In the present implementation, developers define the semantics of object marshalling by embedding DBAL annotations in Java source code. We refer to languages that support DBAL annotations 
+	as <i>source languages</i>. We currently only support Java as a source language; C# is planned.
+	From source languages, one can generate equivalent object definitions, and XML that drives translation, for <i>target languages</i>. 
+	Target languages do not support DBAL annotations and require transferring object-serialization bindings defined from a source language (or specifying it by hand). Currently, we support 
+	Objective-C as a target language, enabling development of iPhone and Macintosh client applications,
+	which use <a href="../oodss/index.html" class="destination">OODSS</a> to talk to a Java server. We plan to also support other target languages, such as C++. 
+</p>
+<p>
+We recommend that new S.IM.PL Serialization developers begin with  <a class="checkthis" href="tutorials/index.html">tutorials</a>, 
+and peruse <a class="checkthis" href="iiBAMSpecs.html">DBAL guide</a> and <a class="checkthis"
+href="http://ecologylab.net/javadocs/serialization/">API</a>.
+</p>
+</div>
+
+<h5>performance</h5>
+
+<p>S.IM.PL Serialization performance was measured with the <a target="_blank"
+	class="checkthis" href="https://bindmark.dev.java.net/">bindmark
+XML binding benchmarks</a>. S.IM.PL Serialization is the best!
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="{padding:2px;}">
+
+ <tr >
+  <td  class="rightBorderBlue">framework /</td>
+  <td  colspan=2>marshalling time (nanoseconds)</td>
+  <td  class="rightBorderBlue" ></td>
+
+  <td colspan=2 >unmarshalling time (nanoseconds)</td>
+  <td class="rightBorderBlue" ></td>
+  <td class="darkenedBlueTableCell">runtime</td>
+ </tr>
+ <tr class="rightBorderBlue" >
+  <td class="rightBorderBlue" align="right">(# runs)</td>
+  <td class="rightBorderBlue" >small (1000 runs)</td>
+
+  <td class="rightBorderBlue" >medium (100)</td>
+  <td class="rightBorderBlue" >large (10)</td>
+  <td class="rightBorderBlue" >small (1000)</td>
+  <td class="rightBorderBlue" >medium (100)</td>
+  <td class="rightBorderBlue" >large (10)</td>
+  <td  class="darkenedBlueTableCell">size (KB)</td>
+
+ </tr>
+ <tr class="rightBorderBlue" >
+  <td  class="rightBorderBlue" >s.im.pl serialization</td>
+  <td  class="rightBorderBlue" align=right>39,004</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>1,528,674</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>7,151,383</td>
+  <td  class="rightBorderBlue" align=right>289,966</td>
+
+  <td  class="rightBorderBlue" align=right>5,815,660</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>35,446,572</td>
+  <td   class="darkenedBlueTableCell" align=right>176</td>
+ </tr>
+ <tr >
+  <td  class="rightBorderBlue" >JiBX*</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>35,943</td>
+
+  <td  class="rightBorderBlue" align=right>1,719,212</td>
+  <td  class="rightBorderBlue" align=right>15,627,181</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>70,420</td>
+  <td  class="darkenedBlueTableCellRightBorder" align=right>5,683,769</td>
+  <td  class="rightBorderBlue" align=right>39,249,876</td>
+  <td  class="darkenedBlueTableCell" align=right>141</td>
+
+ </tr>
+ <tr >
+  <td  class="rightBorderBlue" >JAXB 2.0</td>
+  <td class="rightBorderBlue"  align=right>65,749</td>
+  <td class="rightBorderBlue"  align=right>2,223,438</td>
+  <td class="rightBorderBlue"  align=right>10,567,599</td>
+  <td class="rightBorderBlue"  align=right>362,868</td>
+
+  <td class="rightBorderBlue"  align=right>14,889,646</td>
+  <td class="rightBorderBlue"  align=right>87,146,075</td>
+  <td  class="darkenedBlueTableCell" align=right>3,800</td>
+ </tr>
+ <tr >
+  <td  class="rightBorderBlue" >XStream</td>
+  <td class="rightBorderBlue"  align=right>413,465</td>
+
+  <td class="rightBorderBlue"  align=right>18,373,301</td>
+  <td class="rightBorderBlue"  align=right>173,198,604</td>
+  <td class="rightBorderBlue"  align=right>719,290</td>
+  <td class="rightBorderBlue"  align=right>28,818,238</td>
+  <td class="rightBorderBlue"  align=right>211,358,650</td>
+  <td  class="darkenedBlueTableCell" align=right>368</td>
+
+ </tr>
+ <tr >
+  <td  class="rightBorderBlue" >Castor</td>
+  <td class="rightBorderBlue"  align=right>1,183,407</td>
+  <td class="rightBorderBlue"  align=right>11,831,280</td>
+  <td class="rightBorderBlue"  align=right>55,922,610</td>
+  <td class="rightBorderBlue"  align=right>1,813,563</td>
+
+  <td class="rightBorderBlue"  align=right>22,926,830</td>
+  <td class="rightBorderBlue"  align=right>162,330,464</td>
+  <td  class="darkenedBlueTableCell" align=right>3,000</td>
+ </tr>
+ <tr  class="darkenedBlueTableCell" >
+  <td  class="rightBorderBlue">XML file size (KB)</td>
+  <td >&nbsp;</td>
+
+	<td>&nbsp;</td>
+  <td class="rightBorderBlue" >&nbsp;</td>
+  <td class="rightBorderBlue"  align=right>1.42</td>
+  <td class="rightBorderBlue"  align=right>123</td>
+  <td class="rightBorderBlue"  align=right>1,003</td>
+  <td >&nbsp;</td>
+ </tr>
+
+ <tr  class="darkenedBlueTableCell" >
+  <td class="rightBorderBlue" class="rightBorderBlue"  >XML file lines</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td class="rightBorderBlue"  >&nbsp;</td>
+  <td class="rightBorderBlue"  align=right>55</td>
+  <td class="rightBorderBlue"  align=right>1,817</td>
+
+  <td class="rightBorderBlue"  align=right>8,567</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  class="darkenedBlueTableCell" >
+  <td  class="rightBorderBlue" >XML file depth</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td class="rightBorderBlue" >&nbsp;</td>
+
+  <td class="rightBorderBlue"  align=right>2</td>
+  <td class="rightBorderBlue"  align=right>20</td>
+  <td class="rightBorderBlue"  align=right>45</td>
+  <td >&nbsp;</td>
+ </tr>
+</table>
+</p>
+<p>
+*JiBX uses a binding compile step to optimize Java byte code for performance; this step is excluded from the benchmark.
+
+</p>
+
+<h5>publications</h5>
+
+<div class="feature">
+<a href="shahzadThesisCrossPlatformMultiFormat.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../../images/shahzadThesisIcon.png"/>
+</a>
+Shahzad, N.,
+<a href="shahzadThesisCrossPlatformMultiFormat.pdf" target="_blank">
+<i>S.IM.PL Serialization: Type System Scopes Encapsulate Cross-Language, Multi-Format Information Binding</i></a>, 
+Texas A&M University Masters Thesis, 2011.
+</div>
+
+<div class="feature">
+<a href="../../publications/sp44245-kerne.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../../images/doceng08Icon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, M.
+<a href="../../publications/sp44245-kerne.pdf" target="_blank">
+A Concise XML Binding Framework Facilitates Practical Object-Oriented Document Engineering
+</a>, 
+<i>Proceedings of ACM Symposium on Document Engineering</i>, 
+Sao Paulo, Brazil, 16-19 September 2008.
+</div>
+
+<div class="feature">
+<a target="_blank" href="../../../technicalReports/ecolabXML_TR_08_06.pdf">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../../images/xmlTRIcon.png"/>
+</a>
+Kerne, A., Toups, Z.O., Dworaczyk, B., Khandelwal, K.,
+<a target="_blank" href="../../../technicalReports/ecolabXML_TR_08_06.pdf">Expressive, Efficient, Embedded, and Component-based 
+XML-Java Data Binding Framework</a>,
+<i> Interface Ecology Lab Technical Report 08-06</i> </div>
+
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+
+
+</div>
+</body></html>

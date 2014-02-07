@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>tutorial [s.im.pl serialization]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../../code/styles/ecologylab/guide.css"
+	rel="stylesheet"> 
+<link href="../../../../code/styles/ecologylab/javasyntax.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../../../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+<div class="rootcontainer">
+
+<div class="header">
+<div class="title4">s.im.pl serialization tutorial</div>
+<div class="title4a">java &gt; objective-c</div>
+</div>
+
+<br clear="all" />
+
+
+<div class="tall_nav">
+
+<div class="block">
+ 	<a class="navselected_bold" href="../../index.html">s.im.pl</a>
+	<a class="navlink" href="../index.html">serialization</a>
+	<a class="navlink" href="../../oodss/index.html">oodss</a>
+	<a class="navlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../DBALSpecs.html">DBAL guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink"  href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="navselected" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  <a style="margin-top: 12px;" class="subnavlink" href="polyMorphicJavascript.html">- javascript polymorphic</a>
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+  <a class="navlink_logo" href="../../../research/index.html"><img class="navicon" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+</div>
+
+</div>
+<!--
+<div class="tall_nav">
+<div class="block">
+  <a class="navlink" href="../../index.html">s.im.pl</a>
+	<a class="subnavlink" href="../../oodss/index.html">oodss</a>
+	<a class="subnavlink" href="../../metaMetadata/index.html">meta-metadata</a>
+</div>
+	
+<div class="block">
+   <a class="navselected_bold" href="../index.html">serialization</a>
+	<a class="navlink" href="../iiBAMSpecs.html">iiBAM guide</a>
+	<a class="navlink"  target="_blank" href="http://ecologylab.net/javadocs/serialization/">API</a>
+</div>
+	
+<div class="block">
+  <a class="navselected_bold" href="index.html">tutorials</a>
+  <a class="subnavlink2" href="monoMorphicJava.html">- java mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicJava.html">- java polymorphic</a>
+  <a style="margin-top: 12px;" class="navselected" href="javaToObjC.html">- obj c getting started</a>
+  <a class="subnavlink2" href="monoMorphicObjC.html">- obj c mono-morphic</a>
+  <a class="subnavlink2" href="polyMorphicObjC.html">- obj c polymorphic</a>
+  <a style="margin-top: 12px;" class="subnavlink2" href="monoMorphicCSharp.html">- c# mono-morphic</a>
+  
+</div>
+
+<div class="block">
+  <a class="navlink"  href="../../repository.html">repository</a>
+  <a class="navlink" href="../../community.html">community</a>
+  <a class="navlink"  href="../../practices.html">programming practices</a>
+</div>
+	
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../../../research/index.html">research</a>
+</div>
+</div>
+-->
+
+<h5>Getting Started:</h5>
+<ul>
+<li><a href="#intro" >Introduction</a></li>
+<li><a href="#annotated" >Java Annotated Classes</li>
+<li><a href="#translation" >Creating Translation Scope</li>
+<li><a href="#generate" >Generating Objective-C Header Files</li>
+<li><a href="#xmlfile" >Translation Scope XML File</li>
+<li><a href="#end" >End notes</li>
+</ul>
+
+<a name="intro"> </a>
+<h5> Introduction</h5>
+<hr/>
+<p>
+Here we give an example on how to generate objective-c header files from java source code. Before continuing, please make sure that you have gone through the "getting started" tutorial in java".
+In this example we have an annotated class definition in java that we want to move to objective-c. This tutorial will make use of the internaltranslator.cocoa in the java version of s.im.pl serialization to generate code for  objective-c header files.
+It is not necessary that you use this translator from java, developers can write their own source code files and still use the objective-c version of s.im.pl serialization. Since java supports "annotations" (and objective-c doesn't) over class and field definitions it becomes easier to work with java
+and generate code for header files in objective-c. Since objective-c does not support "annotations" we will also show how you can serialize s.im.pl serialization's internal data structures which will be consumed by your objective-c code.
+</p>
+
+<p>
+To view this tutorial you will need to download the entire <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk">simplTutorials</a>, 
+<a class="checkthis" href="https://svn.ecologylab.net/simplTranslators/trunk">simplTranslators</a> and 
+<a class="checkthis" href="https://svn.ecologylab.net/ecologylabFundamental/trunk">ecologylabFundamental </a> projects.
+Access to the ecologylab fundamental project source is available 
+through anonymous SVN access (user: anonymous, password: anonymous).<br/><br/>The source for this tutorial is
+located under <a class="checkthis" href="https://svn.ecologylab.net/simplTutorials/trunk/src/tutorials/">
+/trunk/simplTutorials/src/tutorials/</a></p>
+
+
+<a name="annotated"> </a>
+<h5>Java Annotated Classes</h5>
+<hr/>
+<p>
+Below is a set of annotated Java classes similar to the one presented in the Java "getting started" tutorial. We are again using Rss feeds as the case study for this tutorial.
+Below are three classes decorated with Java annotations. "Rss" is the composite class which holds the version number and channel object. The channel object holds some attributes but more importantly
+it contains a list of items. The Item object again holds a list of the categorySets. Annotations on each object defines the semantics of how the attribute is going to be translated. 
+</p>
+
+<p>If you are having trouble understanding the annotations please refer to the technical report and the getting started tutorial in java</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Rss.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">s.im.pl serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Rss&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar&nbsp;&nbsp;</font><font color="#7f0055"><b>float&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font color="#000000">version;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#646464">@simpl_composite&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">Channel&nbsp;&nbsp;&nbsp;&nbsp;channel;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Rss</font><font color="#000000">()&nbsp;{}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<br></br>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Channel.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.ArrayList;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.net.ParsedURL;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">s.im.pl serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Channel&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;title;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;description;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;link;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_nowrap</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;item&#34;</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">ArrayList&lt;Item&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;items;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Channel</font><font color="#000000">()&nbsp;{&nbsp;}</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">ArrayList&lt;Item&gt;&nbsp;getItems</font><font color="#000000">()&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">items;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+
+<br></br>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//Item.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">java.util.ArrayList;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.net.ParsedURL;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">s.im.pl serialization.ElementState;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Item&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">ElementState</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;&nbsp;&nbsp;link;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">ParsedURL&nbsp;&nbsp;&nbsp;&nbsp;guid;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_scalar @simpl_hints<font color="#000000">(Hint.</font><font color="#2a00ff"><i>XML_LEAF</i></font><font color="#000000">)</font>&nbsp;</font><font color="#000000">String&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;author;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_nowrap</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#646464">@simpl_collection</font><font color="#000000">(</font><font color="#2a00ff">&#34;category&#34;</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">ArrayList&lt;String&gt;&nbsp;&nbsp;&nbsp;&nbsp;categorySet;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Item</font><font color="#000000">()&nbsp;{}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="translation"> </a>
+<h5>Creating Translation Scope</h5>
+<hr/>
+<p>We create the translation scope similar to what was done in the java getting started tutorial. We wrap the three annotated Java classes into a translation scope object and return it to the calling program. Easy! </p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#3f7f5f">//RssTranslations.java</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">ecologylab.tutorials.rss;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">ecologylab.generic.Debug;</font><br />
+<font color="#7f0055"><b>import&nbsp;</b></font><font color="#000000">s.im.pl serialization.TranslationScope;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">RssTranslations&nbsp;</font><font color="#7f0055"><b>extends&nbsp;</b></font><font color="#000000">Debug</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#000000">TranslationScope&nbsp;get</font><font color="#000000">()</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">TranslationScope.get</font><font color="#000000">(</font><font color="#2a00ff">&#34;rss&#34;</font><font color="#000000">,&nbsp;Rss.class,&nbsp;Channel.class,&nbsp;Item.</font><font color="#7f0055"><b>class</b></font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="generate"> </a>
+<h5>Generating Objective-C Header Files</h5>
+<hr/>
+<p>
+	Now we come to the fun part of this tutorial. We will generate objective-c code right from our Java program which we can then move to our objective-c project and start serializing and deserializing 
+	XML files with very few lines of code. 
+</p>
+<p>
+	We create a CocoaTranlator object and a TranslationScope object, which is fairly straight forward. We then call the translateToObjC function on our CocoaTranslator object by supplying the destination folder and the list of classes for which we want
+	to generate objective-c header files. In the second part, we also serialize our translation scope object which will be used by our objective-c version of ecoloyglab.xml. 
+</p>
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    <code>
+<font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">TranslatorTutorial&nbsp;</font><br />
+<font color="#000000">{</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;static&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">main</font><font color="#000000">(</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">args</font><font color="#000000">)&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;We&nbsp;create&nbsp;an&nbsp;instance&nbsp;of&nbsp;CocaTranslator&nbsp;which&nbsp;will&nbsp;translate</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;our&nbsp;annotated&nbsp;java&nbsp;source&nbsp;code&nbsp;to&nbsp;Objective-C&nbsp;header&nbsp;file.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">CocoaTranslator&nbsp;c&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">CocoaTranslator</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;We&nbsp;create&nbsp;an&nbsp;object&nbsp;of&nbsp;Translation&nbsp;scope&nbsp;of&nbsp;all&nbsp;the&nbsp;java&nbsp;files&nbsp;for&nbsp;which,</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;We&nbsp;need&nbsp;to&nbsp;create&nbsp;the&nbsp;Translation&nbsp;Scope&nbsp;XML&nbsp;file.</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TranslationScope&nbsp;tScope&nbsp;&nbsp;=&nbsp;RssTranslations.get</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Call&nbsp;translateToObjC&nbsp;supplied&nbsp;with&nbsp;the&nbsp;path&nbsp;where&nbsp;we&nbsp;want&nbsp;our&nbsp;header&nbsp;files&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;to&nbsp;be&nbsp;generated</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">c.translateToObjC</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File&nbsp;</font><font color="#000000">(</font><font color="#2a00ff">&#34;/output&#34;</font><font color="#000000">), tScope)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">/*</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;Call&nbsp;serialize&nbsp;will&nbsp;serialize&nbsp;the&nbsp;internal&nbsp;data&nbsp;structures&nbsp;of&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*&nbsp;s.im.pl serialization&nbsp;which&nbsp;should&nbsp;be&nbsp;used&nbsp;by&nbsp;objective-c&nbsp;version&nbsp;s.im.pl serialization</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">*/</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">tScope.serialize</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#2a00ff">&#34;/output/rss_translationScope.xml&#34;</font><font color="#000000">))</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;e</font><font color="#000000">)</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">e.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#000000">}</font></code>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+</body></html>
+
+
+
+
+
+<a name="xmlfile"> </a>
+<h5>Translation Scope XML File</h5>
+<hr/>
+<p>The following XML file shows the serialized translationScope which is the heart of the many data structures that s.im.pl serialization uses to serialize and deserialize run-time objects. It is important that we produce
+	this data structure from our Java source code as this XML file will drive the translation processes in the objective-c version of s.im.pl serialization
+</p>
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+
+<pre><span style="color: #008000; font-weight: bold">&lt;translation_scope</span> <span style="color: #7D9029">name=</span><span style="color: #BA2121">&quot;rss&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;ecologylab.tutorials.rss.Item&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;item&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;title&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;title&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;description&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;description&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;guid&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;guid&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;author&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;author&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;categorySet&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;category_set&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;5&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span>
+			<span style="color: #7D9029">collection_or_map_tag_name=</span><span style="color: #BA2121">&quot;category&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;ecologylab.tutorials.rss.Rss&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;rss&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;version&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;version&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;1&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;FloatType&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;channel&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;channel&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;3&quot;</span> <span style="color: #7D9029">element_class=</span><span style="color: #BA2121">&quot;ecologylab.tutorials.rss.Channel&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;class_descriptor</span> <span style="color: #7D9029">described_class=</span><span style="color: #BA2121">&quot;ecologylab.tutorials.rss.Channel&quot;</span>
+		<span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;channel&quot;</span><span style="color: #008000; font-weight: bold">&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;title&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;title&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;description&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;description&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span> <span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;StringType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;link&quot;</span> <span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;2&quot;</span>
+			<span style="color: #7D9029">scalar_type=</span><span style="color: #BA2121">&quot;ParsedURLType&quot;</span> <span style="color: #7D9029">needs_escaping=</span><span style="color: #BA2121">&quot;true&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+		<span style="color: #008000; font-weight: bold">&lt;field_descriptor</span> <span style="color: #7D9029">field=</span><span style="color: #BA2121">&quot;items&quot;</span> <span style="color: #7D9029">tag_name=</span><span style="color: #BA2121">&quot;items&quot;</span>
+			<span style="color: #7D9029">type=</span><span style="color: #BA2121">&quot;4&quot;</span> <span style="color: #7D9029">collection_or_map_tag_name=</span><span style="color: #BA2121">&quot;item&quot;</span> <span style="color: #7D9029">wrapped=</span><span style="color: #BA2121">&quot;true&quot;</span>
+			<span style="color: #7D9029">element_class=</span><span style="color: #BA2121">&quot;ecologylab.tutorials.rss.Item&quot;</span><span style="color: #008000; font-weight: bold">&gt;&lt;/field_descriptor&gt;</span>
+	<span style="color: #008000; font-weight: bold">&lt;/class_descriptor&gt;</span>
+<span style="color: #008000; font-weight: bold">&lt;/translation_scope&gt;</span>
+</pre>
+
+   </td>
+   
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+
+<a name="end"> </a>
+<h5>End notes</h5>
+<hr/>
+So that's it! We have generated objective-c header files and serialized translation scope of s.im.pl serialization. Now we are ready to open up our XCode projects and simply include these files that we generated in this tutorial.
+With a few additional lines of code we will be able to serialize and deserialize same XML files in objective-c!
+
+<br></br>
+<br></br>
+<br></br>
+
+<div class="credits">
+an <a href="http://ecologylab.net">interface ecology lab</a> production
+</div>
+	
+</div>
+</body>
+</html>
