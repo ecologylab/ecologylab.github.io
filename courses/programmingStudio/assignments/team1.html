@@ -555,10 +555,14 @@ you will be able to use the DML for most of the required operations.
 </li><li> DBMS engine code: This will be the core DB function library, without the parser.
 	<ul> <li>Upload your DBMS engine library code.  
 	</li><li>
-	You should include a test application that tests all functionality (function calls relating to all queries, all commands).
-	</li><li> Also submit the input and output (text file) from your test 
-		application.
-	</li><li> <b>You may omit the file I/O code since it requires the parser.</b>
+	You should include a unit test project or a test application that tests all functionality required in this deliverable, through function calls. Required functionalities include:
+  <ul>
+    <li>Creating and dropping tables.</li>
+    <li>Inserting, updating, and deleting rows.</li>
+    <li>The 6 core operations of relational algebra, plus natural join.</li>
+  </ul>
+	</li>
+	<li> <b>You may omit the file I/O code since it requires the parser.</b>
 	</li><li> Theoretically, you should be able to build a DB app just using this
 		library. (However, we will not do this -- you will use the
 		DML command-line for the most part and not directly call the
@@ -571,7 +575,7 @@ commands or queries. Reject anything that violates the syntax.
 	<ul> 
 	<li> Upload your parser code.
 	</li>
-	<li>Submit the input and output (text file) of your parser.
+	<li>Include a unit test project that tests your parser using both valid and invalid commands and queries. If you store test data in a file, make sure to attach the test data file.
 	</li>
 	<li> Keep in mind how you will later integrate your parser code with the
 	DB engine as you write the parser code.
