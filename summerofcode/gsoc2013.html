@@ -92,6 +92,7 @@ h1 {
 					<a class="navselected" href="index.html">summer of code</a> 
 					<a class="subnavselected" href="../softwareDevelopment/index.html">programming
 					practices</a>
+					<a class="subnavselected" href="index.html">summer of code 2013</a>
 					<a class="subnavlink" href="gsoc2012.html">summer of code 2012</a>
 					<a class="subnavlink" href="gsoc2011.html">summer of code 2011</a>
 			</div>
@@ -114,10 +115,10 @@ h1 {
             dedicated to human-centered computing, object-oriented design, and
             open source software. We are engaged in cutting-edge research that 
             <a target="_blank" class="destination"
-            href="../research/informationComposition.html">visualizes and embodies social and
+            href="../infocomposer/index.html">visualizes and embodies social and
             semantic information</a>, with multi-touch interaction, for use in
             games, creativity support tools, interactive art, and other digital
-						media. <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014" target="_blank" class="destination">Google Summer of Code (GSoC)</a> Internships enable students located anywhere
+						media. <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013" target="_blank" class="destination">Google Summer of Code (GSoC)</a> Internships enable students located anywhere
             to collaborate with us in developing open source software.
 			</p>
 				
@@ -140,15 +141,15 @@ h1 {
 			Checkout <a class="destination" target="_blank"
 			href="https://github.com/ecologylab/BigSemantics/wiki">the BigSemantics Wiki</a>
             for more explanations, scenarios, and tutorials. Also
-			checkout our example web application, the <a class="destination" target="_blank"
-        href="http://ecologylab.net/mice">Metadata In-Context Expander (MICE)</a> that uses BigSemantics that presents expandable semantic
+			checkout our <a class="destination" target="_blank" href="http://ecologylab.net/research/bigsemantics/MDC/">example
+			web application</a> that uses BigSemantics that presents expandable semantic
 			data.
 			</p>
 
 			<p>
             The foundation of our software is <a target="_blank"
             class="destination"
-            href="https://github.com/ecologylab/simpl/wiki">S.IM.PL</a> (Support for
+            href="../research/simpl">S.IM.PL</a> (Support for
             Information Mapping in Programming Languages), the best-in-class
             open source framework for developing distributed programs across
             programming languages that share and store complex data structures.
@@ -156,11 +157,15 @@ h1 {
             Java servers.
 			</p>
 				
-			<p>This summer's projects are centered on BigSemantics, but you may want
-      to use S.IM.PL when you are working on some of them. Our proposed
-      projects include:
+			<p>This summer's projects involve BigSemantics and S.IM.PL:
 			<ul>
- 				<li><a href="#M1"><b>M1: BigSemantics Enhancements</b></a>
+ 				<li><a href="#S1"><b>S1: simpl.JS</b></a>
+				</li>
+        
+ 				<li><a href="#S2"><b>S2: S.IM.PL Python</b></a>
+				</li>
+
+ 				<li><a href="#M1"><b>M1: BigSemantics.JS</b></a>
 				</li>
         
  				<li><a href="#M2"><b>M2: BigSemantics: Curation of Popular Culture</b></a>
@@ -169,29 +174,28 @@ h1 {
  				<li><a href="#M3"><b>M3: Rich Placemarks</b></a>
 				</li>
 				
- 				<li><a href="#M4"><b>M4: Building Dynamic Exploratory Browsing Interfaces</b></a>
+ 				<li><a href="#M4"><b>M4: Scaling BigSemantics Service with CouchDB</b></a>
 				</li>
         
-				<li><a href="#M5"><b>M5: BigSemantics C# Generics Compiler</b></a>
+				<li><a href="#M5"><b>M5: BigSemantics Service Admin Tools</b></a>
 				</li>
 			</ul>
 			</p>
       
-      <!-- This should be recovered when we accept student applications.
 			<p>
 			Find our <a href="#apptemplate" class="destination">application template</a>
-			at the bottom of this page. Applications are strictly due on March 21 19:00 UTC
+			at the bottom of this page. Applications are strictly due on May 3 19:00 UTC
 			(4 pm Central Daylight Time), and must be submitted through <a
-			href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"
+			href="http://www.google-melange.com/gsoc/homepage/google/gsoc2013"
 			target="_blank" class="destination">Google GSoC site</a>; specify <a
-			href="http://www.google-melange.com/gsoc/org/google/gsoc2014/ecologylab" target="_blank" class="destination">Interface Ecology
+			href="http://www.google-melange.com/gsoc/org/google/gsoc2013/ecologylab" target="_blank" class="destination">Interface Ecology
 			Lab @ Texas A&M University</a> as the organization. Google will pay each
 			participating student $5000 for the summer.
 			</p>
-      -->
       
 			<p>
-			Applications should author a <b>meta-metadata wrapper</b>.
+			Applications for <b><u>Projects M1-M5</u></b> require you to author a <b>meta-metadata
+			wrapper</b>.
             Fork the <a class="destination" target="_blank"
             href="https://github.com/ecologylab/BigSemanticsWrapperRepository">BigSemanticsWrapperRepository</a> to author your new
             wrappers, and submit your products through <a class="destination" target="_blank"
@@ -203,7 +207,6 @@ h1 {
 			development environment and tutorials on authoring wrappers.
 			</p>
 
-      <!--
 			<p>
 			Subscribe to  <a class="destination" target="_blank"
 			href="http://groups.google.com/group/bigsemantics/subscribe">BigSemantics
@@ -211,7 +214,6 @@ h1 {
 			href="http://groups.google.com/group/ecologylabAPI/subscribe">s.im.pl api
 			developers group</a> to see our history and ask questions.
 			</p>
-      -->
       
 			<p>
 				IRC channel: <a class="destination" target="_blank"
@@ -225,93 +227,385 @@ h1 {
     <div class="intro" style="padding-right: 10px">
 
       <div class="projectDesc">
+        <a name="S1">
+          <h3>S1: simpl.JS</h3>
+        </a>
+        <p>Mentor: <a href="mailto:Tom.White@Outlook.com">Tom White</a></p>
+        
+        <p>
+        Working across multiple programming languages is often a painful
+        experience. De/Serialization of data across languages often requires
+        lengthy boilerplate code prone to failures. Serialization of graphs and
+        cycles is often impossible or hard to accomplish. Additionally, it is
+        radically hard to port software and validate that those ports work
+        correctly.
+        </p>
+        
+        <p>
+        <i>Fortunately, it doesn't have stay this way.</i> <a href="../simpl"
+        class="destination">S.IM.PL</a> (Support for Information Mapping between
+        Programming Languages) is an architecture that promises to fix these
+        problems; we'd love to hire a developer to help us implement it in
+        JavaScript. Our lab uses S.IM.PL as the foundation for some of our
+        research projects; when you're done implementing it, you'll be able to
+        use it as a foundation for your own projects!
+        </p>
+        
+        <!--
+        <p>
+        S.IM.PL is an architecture that aims to let developers simply transfer
+        information between programming languages. (Ideally with no muss, no
+        fuss, and little boilerplate!)
+        </p>
+        
+        <p>
+        Implementing S.IM.PL in JavaScript also moves us closer to realizing
+        some of the potential of S.IM.PL. Consider this: web services
+        implemented in dynamic languages (Python, Ruby, JavaScript on Node, etc)
+        can often be less performant than versions written in less dynamic
+        languages (C++, Go, etc.) <a
+        href="http://blog.iron.io/2013/03/how-we-went-from-30-servers-to-2-go.html"
+        class="destination">A recent blog post</a> mentioned how one organiation
+        went from 30 servers running rails to 2 running Go to service their API.
+        A cross language type system can help make these sorts of transitions
+        painless! Plus, you can leverage all of the investments made in testing
+        and validation across all language-implementations of a tool or service!
+        </p>
+
+        <p>
+        Similar projects exist in this space, such as <a
+        href="http://thrift.apache.org/" class="destination">Apache Thrift</a>
+        and <a href="https://code.google.com/p/protobuf/"
+        class="destination">Google Protobuf</a>. What makes us different is a
+        strong dedication to ease-of-reimplementation, a focus on human-readable
+        formats (even though binary formats will be supported in the future),
+        and desire to reduce developer work as much as possible. Leveraging
+        Thrift and Protobuf requires writing boilerplate to conform to Message
+        or Service specs; Why rewrite data structures when they can be
+        translated with S.IM.PL?
+        </p>
+
+        <p>
+        At the end of this project, you could presumably take any web/server
+        application designed in JavaScript and port it to another language of
+        your choosing. (Do you have a Node server that isn't performant enough?
+        If only there was some way you could offload the logic to another
+        language... With S.IM.PL, That can be a reality.)
+        </p>
+
+        <p>
+        We are looking for developers that can see the promise of S.IM.PL (as a
+        tool for making software development across languages s.im.pl.y
+        awesome), are dedicated to good coding practices (Testing, refactoring,
+        clarity, etc), and ideally could find a use for S.IM.PL in their own
+        personal projects. Experience with Java isn't a nescessity, although it
+        will help you understand the reference implementation of S.IM.PL better.
+        </p>
+
+        <p>
+        For more information, log onto our irc channel (#ecologylab,
+        irc.freenode.net), or send us an email!
+        </p>
+        -->
+        
+        <h4 class="goals">Goals:</h4>
+        
+        <ul>
+          <li>
+          Support de/serialization of S.IM.PL enhanced JSON object graphs across
+          web services and/or applications, such as the <a
+          href="https://github.com/ecologylab/BigSemantics/wiki/Use-BigSemantics-Service"
+          class="destination" target="_blank">BigSemantics service</a> and the
+          <a href="http://ecologylab.net/ice" class="destination"
+          target="_blank"> In-Context Expander (ICE)</a>
+          </li>
+          <li>
+          Facilitate S.IM.PLer service development and portability on JavaScript-based platforms like Node.js
+          </li>
+        </ul>
+        
+        <h4 id="deliverables:">Deliverables:</h4>
+        
+        <p>
+        Through the course of this project, you will develop a JavaScript-based
+        implementation of S.IM.PL.  You'll be able to follow many of the
+        patterns from the reference implementation of S.IM.PL. Your
+        implementation, of course, will also include a robust suite of tests to
+        validate its correctness! Additionally, you'll work on combining S.IM.PL
+        with some of our other tools, such as BigSemantics, to help validate and
+        improve the value of your implementation.
+        </p>
+        
+        <p>
+        Some of these use S.IM.PL-specific terminology, feel free to read our
+        documentation or contact us for more details.
+        </p>
+        
+        <ul>
+          <li>S.IM.PL JavaScript Translator (Written in Java)</li>
+          <ul>
+            <li>Provides facilities to translate classes in languages like Java into JavaScript representations</li>
+            <li>Will be leveraged to produce a "skeleton" implementation of S.IM.PL you build upon</li>
+          </ul>
+          <li>"Proto"-S.IM.PL JavaScript (First phase in implementation)</li>
+          <ul>
+            <li>Implementations of core functionality in simpl ("Descriptoin" of types)</li>
+            <li>Implementations of core mappings between JavaScript types and S.IM.PL's core type system (Scalar types, List types, Map types, and Generics)</li>
+          </ul>
+          <li>Completing the core of S.IM.PL JavaScript</li>
+          <ul>
+            <li>Implement JSON serialization (of object graphs)</li>
+            <li>Leverage JSON Serialization to boostrap service-driven testing of S.IM.PL</li>
+            <li>Implement JSON deserialization</li>
+            <li>Write roundtrip test bench, leveraging service testing to validate JSON de/serialization</li>
+          </ul>
+          <li>Finishing touches, integration with BigSemanticsJavaScript</li>
+          <ul>
+            <li>Write additional type mappings to help make your implementaiton more complete</li>
+            <li>Integrate with BigSemanticsJavaScript</li>
+            <li>Validate additional tricky de/serialization cases</li>
+            <li>Write additional formats (XML for sure, maybe YAML if you have time?)</li> 
+          </ul>
+        </ul>
+        
+        <p>
+        The architecture has a decent number of small pieces that, once all
+        implemented, give you a complete, robust cross-language type system.
+        We'll help you through the entire process! All you need to provide are
+        your skills (an understanding of type systems, Javascript, and a bit of
+        Java knowledge to understand the reference implementation), and your
+        desire to develop! For more questions, contact us on IRC (#ecologylab on
+        irc.freenode.net) or send us an email.
+        </p>
+      </div>
+
+      <div class="projectDesc">
+        <a name="S2">
+          <h3>S2: S.IM.PL Python</h3>
+        </a>
+        <p>Mentor: <a href="../people/rhema.html">Rhema Linder</a></p>
+        
+        <p>
+        Working across multiple programming languages is often a painful
+        experience. De/Serialization of data across languages often requires
+        lengthy boilerplate code prone to failures. Serialization of graphs and
+        cycles is often impossible or hard to accomplish. Additionally, it is
+        radically hard to port software and validate that those ports work
+        correctly.
+        </p>
+        
+        <p>
+        <i>Fortunately, it doesn't have stay this way.</i> <a href="../simpl"
+        class="destination">S.IM.PL</a> (Support for Information Mapping between
+        Programming Languages) is an architecture that promises to fix these
+        problems; we'd love to hire a developer to help us implement it in
+        Python. Our lab uses S.IM.PL as the foundation for some of our
+        research projects; when you're done implementing it, you'll be able to
+        use it as a foundation for your own projects!
+        </p>
+        
+        <!--
+        <p>
+        S.IM.PL is an architecture that aims to let developers simply transfer
+        information between programming languages. (Ideally with no muss, no
+        fuss, and little boilerplate!)
+        </p>
+        
+        <p>
+        Implementing S.IM.PL in Python also moves us closer to realizing
+        some of the potential of S.IM.PL. Consider this: web services
+        implemented in dynamic languages (Ruby, JavaScript on Node, etc)
+        can often be less performant than versions written in less dynamic
+        languages (C++, Go, etc.) <a
+        href="http://blog.iron.io/2013/03/how-we-went-from-30-servers-to-2-go.html"
+        class="destination">A recent blog post</a> mentioned how one organiation
+        went from 30 servers running rails to 2 running Go to service their API.
+        A cross language type system can help make these sorts of transitions
+        painless! Plus, you can leverage all of the investments made in testing
+        and validation across all language-implementations of a tool or service!
+        </p>
+
+        <p>
+        Similar projects exist in this space, such as <a
+        href="http://thrift.apache.org/" class="destination">Apache Thrift</a>
+        and <a href="https://code.google.com/p/protobuf/"
+        class="destination">Google Protobuf</a>. What makes us different is a
+        strong dedication to ease-of-reimplementation, a focus on human-readable
+        formats (even though binary formats will be supported in the future),
+        and desire to reduce developer work as much as possible. Leveraging
+        Thrift and Protobuf requires writing boilerplate to conform to Message
+        or Service specs; Why rewrite data structures when they can be
+        translated with S.IM.PL?
+        </p>
+
+        <p>
+        At the end of this project, you could presumably take any web/server
+        application designed in Python and port it to another language of
+        your choosing. (Do you have a Node server that isn't performant enough?
+        If only there was some way you could offload the logic to another
+        language... With S.IM.PL, That can be a reality.)
+        </p>
+
+        <p>
+        We are looking for developers that can see the promise of S.IM.PL (as a
+        tool for making software development across languages s.im.pl.y
+        awesome), are dedicated to good coding practices (Testing, refactoring,
+        clarity, etc), and ideally could find a use for S.IM.PL in their own
+        personal projects. Experience with Java isn't a nescessity, although it
+        will help you understand the reference implementation of S.IM.PL better.
+        </p>
+
+        <p>
+        For more information, log onto our irc channel (#ecologylab,
+        irc.freenode.net), or send us an email!
+        </p>
+        -->
+        
+        <h4 class="goals">Goals:</h4>
+        
+        <ul>
+          <li>
+          Support de/serialization of S.IM.PL enhanced JSON object graphs across
+          Python and non-Python web services and/or applications
+          </li>
+          <li>
+          Facilitate S.IM.PLer service development and portability on Python-based platforms like Django
+          </li>
+        </ul>
+        
+        <h4 id="deliverables:">Deliverables:</h4>
+        
+        <p>
+        Through the course of this project, you will develop a JavaScript-based
+        implementation of S.IM.PL.  You'll be able to follow many of the
+        patterns from the reference implementation of S.IM.PL. Your
+        implementation, of course, will also include a robust suite of tests to
+        validate its correctness! Additionally, you'll work on combining S.IM.PL
+        with some of our other tools, such as BigSemantics, to help validate and
+        improve the value of your implementation.
+        </p>
+        
+        <p>
+        Some of these use S.IM.PL-specific terminology, feel free to read our
+        documentation or contact us for more details.
+        </p>
+        
+        <ul>
+          <li>S.IM.PL Python Translator (Written in Java)</li>
+          <ul>
+            <li>Provides facilities to translate classes in languages like Java into Python representations</li>
+            <li>Will be leveraged to produce a "skeleton" implementation of S.IM.PL you build upon</li>
+          </ul>
+          <li>"Proto"-S.IM.PL Python (First phase in implementation)</li>
+          <ul>
+            <li>Implementations of core functionality in simpl ("Descriptoin" of types)</li>
+            <li>Implementations of core mappings between Python types and S.IM.PL's core type system (Scalar types, List types, Map types, and Generics)</li>
+          </ul>
+          <li>Completing the core of S.IM.PL Python</li>
+          <ul>
+            <li>Implement JSON serialization (of object graphs)</li>
+            <li>Leverage JSON Serialization to boostrap service-driven testing of S.IM.PL</li>
+            <li>Implement JSON deserialization</li>
+            <li>Write roundtrip test bench, leveraging service testing to validate JSON de/serialization</li>
+          </ul>
+          <li>Finishing touches, integration with BigSemantics</li>
+          <ul>
+            <li>Write additional type mappings to help make your implementaiton more complete</li>
+            <li>Validate additional tricky de/serialization cases</li>
+            <li>Write additional formats (XML for sure, maybe YAML if you have time?)</li> 
+          </ul>
+        </ul>
+        
+        <p>
+        The architecture has a decent number of small pieces that, once all
+        implemented, give you a complete, robust cross-language type system.
+        We'll help you through the entire process! All you need to provide are
+        your skills (an understanding of type systems, Python, and a bit of
+        Java knowledge to understand the reference implementation), and your
+        desire to develop! For more questions, contact us on IRC (#ecologylab on
+        irc.freenode.net) or send us an email.
+        </p>
+      </div>
+
+      <div class="projectDesc">
         <a name="M1">
-          <h3>M1: BigSemantics Enhancements</h3>
+          <h3>M1: Managing Web Semantics in JavaScript</h3>
         </a>
 
-        <p>Mentor: <a href="../people/quyin.html">Yin Qu</a></p>
+        <p>Mentor: <a href="../people/nic.html">Nic Lupfer</a></p>
 
         <p>
-          This project will enhance BigSemantics with functionalities to deal
-          with complex semantics that involve multiple, variate types. To
-          support extraction and presentation of such semantics, multiple
-          enhancements are needed to BigSemantics core features:
+          The Managing Web Semantics in JavaScript project focuses on
+          extracting, understanding, and visualizing web semantics(metadata)
+          within a web applications or browser plugins. The deliverables of this
+          project are centered around increasing the stability, functionality,
+          and interoperability of the <a class="destination" target="_blank"
+          href="https://github.com/ecologylab/BigSemanticsJavaScript/tree/master/metadataExtractor">Metadata
+          Extractor</a> browser plugin and the <a class="destination" target="_blank"
+          href="http://ecologylab.net/ice">In-Context
+          Expander (ICE)</a> dynamic interface in HTML5.
         </p>
 
         <p>
-          <b>I. Wrapper selection based on page elements.</b> BigSemantics uses
-          wrappers to specify how semantics should be extracted and presented.
-          Each wrapper corresponds to not only one, but a family of web pages
-          that contain semantics of a certain category, or type, such as a book,
-          a movie, or a technology product. Currently, for an input web page,
-          BigSemantics will automatically select the most appropriate wrapper in
-          order to extract and present semantics of that type. This selection is
-          based on URL pattern, suffix, and MIME types.
+          The Metadata Extractor is a browser plugin which parses the DOM of web
+          pages as your browse to extract metadata using the BigSemantics <a class="destination" target="_blank"
+          href="https://github.com/ecologylab/BigSemantics/wiki">meta-metadata
+          language</a>. Currently available for Chrome and Firefox the plugin
+          exposes the extracted metadata to other web or desktop applications
+          through HTML5 data injection on <a class="destination" target="_blank"
+          href="http://www.w3.org/TR/2011/WD-html5-20110113/dnd.html">DataTransfer
+          events</a>.
         </p>
+
+        <p>ICE is a dynamic interface which renders web semantics in HTML5. The interface allows
+          for users to browse and navigate to linked web semantics. The student will design and
+          create new dynamic interfaces. Different dynamic interfaces will share significant
+          implementation with ICE but should be novel in how they visualize the data and how the
+          user navigates to connected web semantics.</p>
 
         <p>
-          However, from experiences we found that in many cases, determining the
-          real type of a web page requires inspecting its content, such as
-          looking for a specific element with certain values. In this subaim,
-          you will enhance BigSemantics’ selection mechanism, to be able to
-          determine or refine the type of a web page by inspecting specific
-          elements and their values.
+          This project is part of the Interface Ecology Lab's open source <a class="destination" target="_blank"
+            href="https://github.com/ecologylab/BigSemantics/wiki">BigSemantics toolkit</a> ,
+          specifically <a class="destination" target="_blank" href="https://github.com/ecologylab/BigSemanticsJavaScript">BigSemantics
+            JavaScript</a>.
         </p>
 
-        <p>
-          II. Extraction of mixins. In some other cases, we need to combine
-          semantics of different type in one metadata object dynamically based
-          on the content of the page, such as a book for selling (which will
-          involve product semantics), or an image with EXIF information. This
-          can be done through mixins. BigSemantics supports mixins in metadata
-          objects, however, we need to enhance the extraction module to be able
-          to extract mixin objects. The type of the object will be determined
-          again by inspecting the page content.
-        </p>
-
-        <p>
-          The two enhancements need to work together to address complex
-          semantics. For example, for a Wikipedia page describing a movie star,
-          we want to extract movie star semantics based on the page content, and
-          mix in Wikipedia specific semantics, such as links to related
-          Wikipedia articles.
-        </p>
-
-        <h4>Prerequisites</h4>
-        <ul>
-          <li>Experiences with Java.</li>
-          <li>Familiar with HTML, DOM, and XPath.</li>
-        </ul>
-
-        <h4>Deliverables:</h4>
+        <h4 id="deliverables:">Deliverables:</h4>
 
         <ul>
-          <li>
-            Test cases for the 2 enhancements. They need to be specific. Use them to drive development.
-          </li>
-          <li>
-            Design document of how wrapper selection and mixin extraction should work, with help from the mentor.
-          </li>
-          <li>
-            Enhanced wrapper selection mechanism that inspects page elements.
+          <li>Metadata Extractor Pt. 1
+
             <ul>
-              <li>
-                Logics that selects page elements by XPath and optionally matches its content with some predefined value.
-              </li>
-              <li>
-                Logics that changes the meta-metadata type for a page when necessary.
-              </li>
+              <li>Test cases and testing framework</li>
+              <li>Validate XPath parsing</li>
+              <li>Direct path parsing</li>
             </ul>
           </li>
-          <li>
-            Enhanced extraction module that handles mixin.
+          <li>S.IM.PL
+
             <ul>
-              <li>
-                Logics for dynamic types can be reused from the previous deliverable.
-              </li>
-              <li>
-                Logics for adding newly extracted metadata objects as mixins.
-              </li>
+              <li>De/serializing metadata Documents</li>
+            </ul>
+          </li>
+          <li>BigSemantics
+
+            <ul>
+              <li>Implement / port URL selector</li>
+              <li>URL to MetaMetadata resolution</li>
+              <li>Document comparison &amp; concatenator</li>
+            </ul>
+          </li>
+          <li>Metadata Extractor Pt. 2
+
+            <ul>
+              <li>Incorporate SIMPL de/serialization</li>
+              <li>Incorporate URL to MetaMetadata resolution using the MMD repository JSON file</li>
+            </ul>
+          </li>
+          <li>Dynamic Interfaces for Web Semantics (stretch deliverable)
+
+            <ul>
+              <li>Design and create novel dynamic interfaces</li>
             </ul>
           </li>
         </ul>
@@ -321,7 +615,7 @@ h1 {
         <a name="M2">
           <h3>M2: BigSemantics: Curation of Popular Culture</h3>
         </a>
-        <p>Mentor: <a href="../people/nic.html">Nic Lupfer</a></p>
+        <p>Mentor: <a href="../people/andruid.html">Andruid Kerne</a></p>
 
         <p>This project develops popular perspectives in web semantics in order to involve the
           general public, especially young people, in new experiences of collecting, presenting, and
@@ -344,7 +638,7 @@ h1 {
           class="destination" target="_blank"
           href="https://github.com/ecologylab/BigSemantics/wiki">BigSemantics
           toolkit</a> and <a class="destination" target="_blank"
-          href="http://ecologylab.net/mice">MICE</a>.
+          href="http://ecologylab.net/ice">ICE presentation tool</a>.
         </p>
 
         <p>The project involves using social media to coalesce user communities around new
@@ -354,16 +648,15 @@ h1 {
           different area of popular culture. These areas and their associated students can
           fruitfully intersect.</p>
 
-        <h4>Deliverables:</h4>
+        <h4 id="deliverables:">Deliverables:</h4>
 
         <ul>
           <li>Develop reusable semantic data models for areas of popular culture, using
             Meta-Metadata.</li>
           <li>Develop selectors and wrappers for specific web sites.</li>
-          <li>Build fun tutorial applicationsl / demo in DHTML incorporating MICE and popular
+          <li>Build fun tutorial applicationsl / demo in DHTML incorporating ICE and popular
             culture.</li>
-          <li>Alternative dynamic metadata visualizations using <a
-            class="destination" target="_blank" href="http://d3js.org">D3</a>.</li>
+          <li>Alternative dynamic metadata visualizations using D3.</li>
           <li>Produce clear documentation in the BigSemantics Wiki.</li>
         </ul>
       </div>
@@ -385,26 +678,26 @@ h1 {
           web sites and other sources, and hints for presentation. A repository of wrappers covers
           many popular web sites. BigSemantics also already includes components for presenting this
           rich metadata in JavaScript, Java, and C# / WinRT. The <a class="destination" target="_blank"
-            href="http://ecologylab.net/mice">MICE</a> is an example.
+            href="http://ecologylab.net/ice">ICE presentation tool</a> is an example.
         </p>
 
         <p>This project will develop tools and examples for representing rich metadata
           instances, each associated with a GPS location, on maps, to be known as rich placemarks.
           The instances of metadata for places that go on the map could be curated in advance, or
           collected ad hoc by drag and drop. This will be accomplished by integrating BigSemantics,
-          MICE, and OpenStreetMaps (and perhaps Google Maps).</p>
+          ICE, and OpenStreetMaps (and perhaps Google Maps).</p>
 
-        <h4>Deliverables:</h4>
+        <h4 id="deliverables:">Deliverables:</h4>
 
         <ul>
           <li>Extend and develop reusable semantic data models for places, using Meta-Metadata.</li>
           <li>Develop selectors and wrappers for specific web sites that present mappable
             locations.</li>
-          <li>Develop an integration of OpenStreetMaps and MICE, which enables interaction with
+          <li>Develop an integration of OpenStreetMaps and ICE, which enables interaction with
             rich place-oriented metadata on a map.</li>
-          <li>Build fun tutorial / demo applications in DHTML incorporating MICE with popular
+          <li>Build fun tutorial / demo applications in DHTML incorporating ICE with popular
             culture, such as mashups involving TripAdvisor, Expedia, and WIkipedia.</li>
-          <li>Produce clear documentation in the BigSemantics and MICE Wikis.</li>
+          <li>Produce clear documentation in the BigSemantics and ICE Wikis.</li>
         </ul>
 
         <p>The developer needs experience with HTML5, JSON, and interaction design. Source code
@@ -413,113 +706,70 @@ h1 {
 
       <div class="projectDesc">
         <a name="M4">
-          <h3>M4: Building Dynamic Exploratory Browsing Interfaces</h3>
+          <h3>M4: Scaling BigSemantics Service with CouchDB</h3>
         </a>
         <p>Mentor: <a href="../people/quyin.html">Yin Qu</a></p>
 
         <p>
-          In this project, you will design and implement new interfaces for
-          visualizing and interacting with web semantics within web applications
-          and web pages, which we call dynamic exploratory browsing interfaces
-          (DEBIs). The goal of DEBIs is to change how people interact with and
-          interpret the vast amount of information accessible in today’s
-          Internet age. An initial example is MICE, which supports browsing in
-          one context and reduces switching windows or tabs.
+        This project develops a scalable data storage and indexing backend for
+        the BigSemantics service. The Interface Ecology Lab developed the
+        BigSemantics service as open source software to support extracting,
+        representing and presenting semantic data on the web in desktop, mobile,
+        and cloud applications (<a target="_blank"
+        href="https://github.com/ecologylab/BigSemanticsService/wiki"
+        class="destination">BigSemantics Wiki</a>). The developed system will
+        provide the service with a scalable backend to store accessed web pages
+        and extracted semantic data, to improve performance. It will also
+        automatically construct indexes and aggregations on relevant fields. The
+        storage and indexing backend will support critical interactions with
+        semantic data needed for planning and doing disaster response, such as
+        filtering, searching, ranking, and faceted browsing.
         </p>
         
         <p>
-          The deliverables of this project are centered around creating new
-          DEBIs according to the paradigm of MICE. New DEBIs will use the same
-          underlying open-source frameworks BigSemantics and
-          BigSemanticsJavaScript. BigSemantics provides rich metadata for web
-          pages. BigSemanticsJavaScript provides functions for retrieving,
-          deserializing, iterating across, displaying, and interacting with
-          metadata. In addition, new DEBIs will build upon the open source
-          visualization framework, <a class="destination" target="_blank"
-            href="http://d3js.org">D3</a>, and will be incorporated as a part of
-          BigSemanticsJavaScript. Along with designing and building new DEBIs,
-          this projects involves iterating on the architecture of the
-          BigSemanticsJavaScript framework, including developing a DEBI testing
-          platform.
+        The student assigned to this project will need to build on existing
+        techniques to develop the system and connect it to the BigSemantics
+        service, under guidance. This involves learning the code structures and
+        APIs of BigSemantics and the service project developed by the Interface
+        Ecology Lab, designing proper interfaces and APIs to abstract the new
+        module, and invoking the backend data store like CouchDB when needed by
+        the service. By the end of the summer, the student should develop a demo
+        web application that uses the storage and indexing functionalities, as a
+        validation.
         </p>
         
         <p>
-          By the end of the summer, the developer working on this project will
-          have created 2 new, innovative HTML5 exploratory browsing interfaces
-          and a testing platform for the BigSemanticsJavaScript framework.
+        The Interface Ecology Lab will provide a virtual Linux environment for
+        the student to develop this server-side system. The resulting software
+        will be included in the BigSemantics service release, available to the
+        public as open source software.
         </p>
         
-        <h4>Deliverables:</h4>
+        <p>
+        The student will learn the architecture and implementation of modern
+        web-based services, and the use of services in advanced interaction
+        technologies. S/he will work in a team of active developers and
+        researchers, participate in conversations, and involve in the process of
+        producing open source software.
+        </p>
+
+        <h4 id="deliverables:">Deliverables:</h4>
 
         <ul>
-          <li>DEBI 1</li>
-          <ul>
-            <li>Implement a new DEBI from a provided design</li>
-            <li>Validate interface with different types of metadata</li>
-          </ul>
-          <li>Code Consolidation</li>
-          <ul>
-            <li>Reconcile the code between the existing DEBI, MICE, and the newly created interface</li>
-            <li>Maximize the amount of shared code</li>
-            <li>Test</li>
-          </ul>
-          <li>Testing Platform</li>
-          <ul>
-            <li>Build a testing platform to test all DEBIs for errors when the shared code base changes</li>
-          </ul>
-          <li>DEBI 2</li>
-          <ul>
-            <li>Design, implement, and validate a new DEBI</li>
-          </ul>
+          <li>Test cases for storing HTML pages, extracted semantics, and file metadata.</li>
+          <li>Implementing classes for existing interfaces, to move to CouchDB as the backend storage system.</li>
+          <li>Supporting specifying index and facet on wrappers written in meta-metadata.</li>
+          <li>Automatically building and updating indexes for fields with index or facets.</li>
+          <li>Demo application that uses indexes and facets for viewing metadata.</li>
         </ul>
       </div>
 
       <div class="projectDesc">
         <a name="M5">
-          <h3>M5: BigSemantics C# Generics Compiler</h3>
+          <h3>M5: BigSemantics Service Admin Tools (TBD)</h3>
         </a>
-        <p>Mentor: <a href="../people/andrew.html">Andrew Webb</a></p>
-
-        <p>
-          BigSemantics provides a compiler that translates wrappers, written in
-          the meta-metadata language, into classes in programming languages such
-          as Java and C#, so that applications can conveniently access and use
-          semantic information as native objects.
-        </p>
-
-        <p>
-          The meta-metadata language supports generics. For example, the type
-          search has a generic type parameter for its search results. Subtypes
-          can specialize that generic type parameter to specify a search for a
-          particular type (Search&lt;ResultType&gt;), such as a search for Google
-          Books or Wikipedia articles.
-        </p>
-
-        <p>
-          Currently, the meta-metadata compiler that generates C# code doesn’t
-          handle generics correctly. Specifically, it doesn’t handle covariance,
-          which means recognizing that Search&lt;GoogleBook&gt; is a subtype of
-          Search&lt;Book&gt;. In C#, covariance is handled through interfaces instead
-          of concrete classes. Therefore, to deal with covariance, the compiler
-          needs to generate not only the concrete class, but also the interface
-          containing covariance information.
-        </p>
-
-        <p>
-          In this project, you will develop this feature of generating C#
-          generics and covariance interfaces from meta-metadata wrappers. You
-          will learn about how type systems work in Java and C#, and how we can
-          manipulate it in program. You will play with types and code
-          generation, which will be useful in many large scale projects.
-        </p>
-
-        <h4>Deliverables:</h4>
-        <ul>
-          <li>Design document on what the compiler should generate, and how.</li>
-          <li>Develop the testing basis for the required feature.</li>
-          <li>Implement the required feature.</li>
-          <li>Integrate the developed feature with the current meta-metadata compiler, and refactor its structure.</li>
-        </ul>
+        <p>Mentor: TBD</p>
+        <h4 id="deliverables:">Deliverables:</h4>
       </div>
       
 <!--
@@ -570,6 +820,8 @@ h1 {
         </ul>
       </div>
 -->
+
+    </div>
 
     <!-- 		<div class="intro" style="padding-right: 10px;">
 			<a name="M3"></a>
@@ -788,9 +1040,6 @@ h1 {
 			Java TUIO-based simulator will in any case be utilized.</p>
 
  -->
-
-    </div>
-
         <div class="intro">
           <a name="apptemplate"></a>
           <h1>Application Template</h1>
