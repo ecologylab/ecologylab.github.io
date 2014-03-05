@@ -19,7 +19,9 @@ Redirect 301 /mice /research/bigsemantics/MICE
 Redirect 301 /ice /research/bigsemantics/MICE
 Redirect 301 /research/bigsemantics/ICE/index.html /research/bigsemantics/MICE
 Redirect 301 /research/bigsemantics/ICE /research/bigsemantics/MICE
-
+Redirect 301 /TweetBubble /research/bigsemantics/TweetBubble/index.html
+Redirect 301 /tweetbubble /research/bigsemantics/TweetBubble/index.html
+Redirect 301 /tweetbuble /research/bigsemantics/TweetBubble/index.html
 
 Redirect 301 /tec /research/tec.html
 Redirect 301 /tteclog /research/tec.html
