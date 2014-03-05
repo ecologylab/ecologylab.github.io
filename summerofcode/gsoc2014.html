@@ -1,0 +1,882 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>summer of code 2014 [interface ecology lab]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="../images/ecologylab-16.ico"
+	type="image/ico">
+<link rel="icon" href="../images/ecologylab-16.png" type="image/png">
+
+<style type="text/css">
+.course {
+	font-size: 18px;
+	color: #000000;
+}
+
+h3 {
+	color: #444;
+  font-weight: bold;
+  margin-left: 0px;
+  padding-left: 0px;
+	font-size: 18px;
+}
+
+h4 {
+	color: #777;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+h1 {
+	margin-top: 12px;
+	margin-bottom: 3px;
+	padding-top: 12px;
+	padding-bottom: 3px;
+}
+
+.course:hover {
+	color: #0004DC;
+	text-decoration: none
+}
+
+.projectDesc {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: #FFFFAA;
+  border-radius: 8px;
+}
+
+.projectDesc li {
+  padding-bottom: 0px;
+}
+</style>
+
+<script type="text/JavaScript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/JavaScript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+	<div class="rootcontainer">
+
+		<div class="header">
+			<img class="logo"
+				src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+			<div class="title">summer of code internships 2014</div>
+
+			<div class="slogan">Connecting sensation, media, computing,
+				networks, ontology, methodologies, cultures.</div>
+		</div>
+
+		<br clear="all" />
+
+		<div class="nav" style="height: 300px;">
+			<div class="block">
+				<a class="navlink" href="../index.html">home</a>
+					<a class="navlink"href="../define.html">define</a>
+					<a class="navlink"href="../research/index.html">research</a>
+					<a class="navlink"href="../people/index.html">people</a> 
+					<a class="navlink"href="../courses/index.html">courses</a>
+					<a class="navlink"href="../workshops/index.html">workshops</a>
+					<a class="navselected" href="index.html">summer of code</a> 
+					<a class="subnavselected" href="../softwareDevelopment/index.html">programming
+					practices</a>
+					<a class="subnavselected" href="gsoc2014.html">summer of code 2014</a>
+					<a class="subnavlink" href="gsoc2012.html">summer of code 2012</a>
+					<a class="subnavlink" href="gsoc2011.html">summer of code 2011</a>
+			</div>
+			<div class="subblock">
+		<a class="nav_nowrap" target="_blank" href="http://ecologylab.tumblr.com/">blog</a>
+</div>
+			<div class="block">
+			<a class="nav_nowrap" target="_blank"
+			 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+			</div>
+
+
+		</div>
+
+		<div class="intro" style="padding-right: 10px;">
+			<h1>Summer of Code at the Interface Ecology Lab!</h1>
+
+			<p>
+            The Interface Ecology Lab is a supportive community of developers
+            dedicated to human-centered computing, object-oriented design, and
+            open source software. We are engaged in cutting-edge research that 
+            <a target="_blank" class="destination"
+            href="../research/informationComposition.html">visualizes and embodies social and
+            semantic information</a>, with multi-touch interaction, for use in
+            games, creativity support tools, interactive art, and other digital
+						media. <a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014" target="_blank" class="destination">Google Summer of Code (GSoC)</a> Internships enable students located anywhere
+            to collaborate with us in developing open source software.
+			</p>
+				
+			<p>
+			BigSemantics is a language and architecture for defining, extracting,
+			manipulating, exchanging, and presenting semantic data (<i>metadata</i>) in
+			desktop, mobile, and cloud applications.
+			With BigSemantics, developers author application-independent, reusable code
+			blocks in the <i>meta-metadata</i> language, which are called
+			<i>wrappers</i>, to specify data models, extraction rules, presentation
+			rules, and semantic actions for metadata.
+		    The architecture allows you to easily obtain structural semantic data from
+		    many template-based web sites, and conveniently operate on semantic data
+		    through native classes and objects.
+		    It comes with a large, yet growing repository of wrappers, supporting a
+		    wide range of commonly used web sites and services, such as weather
+		    forecasts, Google Books, Amazon Products, games, movies, blog posts, RSS,
+		    tweets, and pinboards.
+			We are working on supporting more and more web sites and information types.
+			Checkout <a class="destination" target="_blank"
+			href="https://github.com/ecologylab/BigSemantics/wiki">the BigSemantics Wiki</a>
+            for more explanations, scenarios, and tutorials. Also
+			checkout our example web application, the <a class="destination" target="_blank"
+        href="http://ecologylab.net/mice">Metadata In-Context Expander (MICE)</a> that uses BigSemantics that presents expandable semantic
+			data.
+			</p>
+
+			<p>
+            The foundation of our software is <a target="_blank"
+            class="destination"
+            href="https://github.com/ecologylab/simpl/wiki">S.IM.PL</a> (Support for
+            Information Mapping in Programming Languages), the best-in-class
+            open source framework for developing distributed programs across
+            programming languages that share and store complex data structures.
+            Its great for writing programs that connect iOS and WPF clients to
+            Java servers.
+			</p>
+				
+			<p>This summer's projects are centered on BigSemantics, but you may want
+      to use S.IM.PL when you are working on some of them. Our proposed
+      projects include:
+			<ul>
+ 				<li><a href="#M1"><b>M1: Content-based Extraction for BigSemantics</b></a>
+				</li>
+        
+ 				<li><a href="#M2"><b>M2: BigSemantics: Curation of Popular Culture</b></a>
+				</li>
+        
+ 				<li><a href="#M3"><b>M3: Rich Placemarks</b></a>
+				</li>
+				
+ 				<li><a href="#M4"><b>M4: Building Dynamic Exploratory Browsing Interfaces</b></a>
+				</li>
+        
+				<li><a href="#M5"><b>M5: BigSemantics C# Generics Compiler</b></a>
+				</li>
+			</ul>
+			</p>
+      
+      <!-- This should be recovered when we accept student applications.
+			<p>
+			Find our <a href="#apptemplate" class="destination">application template</a>
+			at the bottom of this page. Applications are strictly due on March 21 19:00 UTC
+			(4 pm Central Daylight Time), and must be submitted through <a
+			href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"
+			target="_blank" class="destination">Google GSoC site</a>; specify <a
+			href="http://www.google-melange.com/gsoc/org/google/gsoc2014/ecologylab" target="_blank" class="destination">Interface Ecology
+			Lab @ Texas A&M University</a> as the organization. Google will pay each
+			participating student $5000 for the summer.
+			</p>
+      -->
+      
+			<p>
+			Applications should author a <b>meta-metadata wrapper</b>.
+            Fork the <a class="destination" target="_blank"
+            href="https://github.com/ecologylab/BigSemanticsWrapperRepository">BigSemanticsWrapperRepository</a> to author your new
+            wrappers, and submit your products through <a class="destination" target="_blank"
+            href="https://help.github.com/articles/using-pull-requests">github
+            pull request</a>.
+            See the <a class="destination"
+			href="https://github.com/ecologylab/BigSemantics/wiki"
+			target="_blank">BigSemantics Wiki</a> for instructions on setting up a
+			development environment and tutorials on authoring wrappers.
+			</p>
+
+      <!--
+			<p>
+			Subscribe to  <a class="destination" target="_blank"
+			href="http://groups.google.com/group/bigsemantics/subscribe">BigSemantics
+			developers group</a>, and <a class="destination" target="_blank"
+			href="http://groups.google.com/group/ecologylabAPI/subscribe">s.im.pl api
+			developers group</a> to see our history and ask questions.
+			</p>
+      -->
+      
+			<p>
+				IRC channel: <a class="destination" target="_blank"
+				href="irc://irc.freenode.net/ecologylab">irc://irc.freenode.net/ecologylab</a>.<br/>
+			</p>
+
+		</div>
+
+
+
+    <div class="intro" style="padding-right: 10px">
+
+      <div class="projectDesc">
+        <a name="M1">
+          <h3>M1: Content-based Extraction for BigSemantics</h3>
+        </a>
+
+        <p>Mentor: <a target="_blank" href="../people/quyin.html">Yin Qu</a></p>
+
+        <p>
+          This project will enhance BigSemantics with functionalities to deal
+          with complex semantics that involve multiple, variate types, based on
+          the page content. To
+          support extraction and presentation of such semantics, multiple
+          enhancements are needed to BigSemantics core features:
+        </p>
+
+        <p>
+          <b>I. Wrapper selection based on page elements.</b> BigSemantics uses
+          wrappers to specify how semantics should be extracted and presented.
+          Each wrapper corresponds to not only one, but a family of web pages
+          that contain semantics of a certain category, or type, such as a book,
+          a movie, or a technology product. Currently, for an input web page,
+          BigSemantics will automatically select the most appropriate wrapper in
+          order to extract and present semantics of that type. This selection is
+          based on URL pattern, suffix, and MIME types.
+        </p>
+
+        <p>
+          However, from experiences we found that in many cases, determining the
+          real type of a web page requires inspecting its content, such as
+          looking for a specific element with certain values. In this subaim,
+          you will enhance BigSemantics’ selection mechanism, to be able to
+          determine or refine the type of a web page by inspecting specific
+          elements and their values.
+        </p>
+
+        <p>
+          II. Extraction of mixins. In some other cases, we need to combine
+          semantics of different type in one metadata object dynamically based
+          on the content of the page, such as a book for selling (which will
+          involve product semantics), or an image with EXIF information. This
+          can be done through mixins. BigSemantics supports mixins in metadata
+          objects, however, we need to enhance the extraction module to be able
+          to extract mixin objects. The type of the object will be determined
+          again by inspecting the page content.
+        </p>
+
+        <p>
+          The two enhancements need to work together to address complex
+          semantics. For example, for a Wikipedia page describing a movie star,
+          we want to extract movie star semantics based on the page content, and
+          mix in Wikipedia specific semantics, such as links to related
+          Wikipedia articles.
+        </p>
+
+        <h4>Prerequisites</h4>
+        <ul>
+          <li>Experiences with Java.</li>
+          <li>Familiar with HTML, DOM, and XPath.</li>
+        </ul>
+
+        <h4>Deliverables:</h4>
+
+        <ul>
+          <li>
+            Test cases for the 2 enhancements. They need to be specific. Use them to drive development.
+          </li>
+          <li>
+            Design document of how wrapper selection and mixin extraction should work, with help from the mentor.
+          </li>
+          <li>
+            Enhanced wrapper selection mechanism that inspects page elements.
+            <ul>
+              <li>
+                Logics that selects page elements by XPath and optionally matches its content with some predefined value.
+              </li>
+              <li>
+                Logics that changes the meta-metadata type for a page when necessary.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Enhanced extraction module that handles mixin.
+            <ul>
+              <li>
+                Logics for dynamic types can be reused from the previous deliverable.
+              </li>
+              <li>
+                Logics for adding newly extracted metadata objects as mixins.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="projectDesc">
+        <a name="M2">
+          <h3>M2: BigSemantics: Curation of Popular Culture</h3>
+        </a>
+        <p>Mentor: <a target="_blank" href="../people/nic.html">Nic Lupfer</a></p>
+
+        <p>This project develops popular perspectives in web semantics in order to involve the
+          general public, especially young people, in new experiences of collecting, presenting, and
+          sharing information. Curation is the process of developing a conceptual focus, and
+          selecting and connecting significant information that expresses the chosen concepts. Each
+          REU student assigned to this project will identify a cultural area significant to her /
+          him, and work on the curation of semantic information in this area. Examples of potential
+          popular culture areas include fashion, sports, music, entertainment, skateboarding, DIY,
+          crafts, design, and dance.</p>
+
+        <p>
+          The goal of this semantics curation is to make information in these popular culture areas
+          available to people in new ways, to catalyze new expressions, uses, and communities
+          involving the information. Curating semantics involves identifying cultural areas of
+          information on the web that matter to particular groups of people, defining data
+          structures to best represent this information, identifying template-driven web sites that
+          publish data that can be used to instantiate the data structures, and defining XPath and
+          regular expressions that extract information from the web sites. This
+          involves using the Interface Ecology Lab's open source <a
+          class="destination" target="_blank"
+          href="https://github.com/ecologylab/BigSemantics/wiki">BigSemantics
+          toolkit</a> and <a class="destination" target="_blank"
+          href="http://ecologylab.net/mice">MICE</a>.
+        </p>
+
+        <p>The project involves using social media to coalesce user communities around new
+          visual semantic presentations in the area of popular culture that the student curates.</p>
+
+        <p>More than one student can work on this project, assuming that each works on a
+          different area of popular culture. These areas and their associated students can
+          fruitfully intersect.</p>
+
+        <h4>Deliverables:</h4>
+
+        <ul>
+          <li>Develop reusable semantic data models for areas of popular culture, using
+            Meta-Metadata.</li>
+          <li>Develop selectors and wrappers for specific web sites.</li>
+          <li>Build fun tutorial applicationsl / demo in DHTML incorporating MICE and popular
+            culture.</li>
+          <li>Alternative dynamic metadata visualizations using <a
+            class="destination" target="_blank" href="http://d3js.org">D3</a>.</li>
+          <li>Produce clear documentation in the BigSemantics Wiki.</li>
+        </ul>
+      </div>
+
+      <div class="projectDesc">
+        <a name="M3">
+          <h3>M3: Rich Placemarks</h3>
+        </a>
+        <p>Mentor: <a target="_blank" href="../people/andruid.html">Andruid Kerne</a></p>
+
+        <p>We need methods to facilitate presenting rich heterogeneous metadata on maps. Rich
+          metadata consists of descriptions and relational associative links, derived from web
+          pages, such as a movie, its actors and their movies, and a historical site, its
+          significant events and artifacts, and other related events, sites, and artifacts.</p>
+
+        <p>
+          The Interface Ecology Lab's open source BigSemantics project has developed tools for
+          wrappers that represent the data models for rich metadata, extraction rules for particular
+          web sites and other sources, and hints for presentation. A repository of wrappers covers
+          many popular web sites. BigSemantics also already includes components for presenting this
+          rich metadata in JavaScript, Java, and C# / WinRT. The <a class="destination" target="_blank"
+            href="http://ecologylab.net/mice">MICE</a> is an example.
+        </p>
+
+        <p>This project will develop tools and examples for representing rich metadata
+          instances, each associated with a GPS location, on maps, to be known as rich placemarks.
+          The instances of metadata for places that go on the map could be curated in advance, or
+          collected ad hoc by drag and drop. This will be accomplished by integrating BigSemantics,
+          MICE, and OpenStreetMaps (and perhaps Google Maps).</p>
+
+        <h4>Deliverables:</h4>
+
+        <ul>
+          <li>Extend and develop reusable semantic data models for places, using Meta-Metadata.</li>
+          <li>Develop selectors and wrappers for specific web sites that present mappable
+            locations.</li>
+          <li>Develop an integration of OpenStreetMaps and MICE, which enables interaction with
+            rich place-oriented metadata on a map.</li>
+          <li>Build fun tutorial / demo applications in DHTML incorporating MICE with popular
+            culture, such as mashups involving TripAdvisor, Expedia, and WIkipedia.</li>
+          <li>Produce clear documentation in the BigSemantics and MICE Wikis.</li>
+        </ul>
+
+        <p>The developer needs experience with HTML5, JSON, and interaction design. Source code
+          is organized with Git.</p>
+      </div>
+
+      <div class="projectDesc">
+        <a name="M4">
+          <h3>M4: Building Dynamic Exploratory Browsing Interfaces</h3>
+        </a>
+        <p>Mentor: <a target="_blank" href="../people/quyin.html">Yin Qu</a></p>
+
+        <p>
+          In this project, you will design and implement new interfaces for
+          visualizing and interacting with web semantics within web applications
+          and web pages, which we call dynamic exploratory browsing interfaces
+          (DEBIs). The goal of DEBIs is to change how people interact with and
+          interpret the vast amount of information accessible in today’s
+          Internet age. An initial example is MICE, which supports browsing in
+          one context and reduces switching windows or tabs.
+        </p>
+        
+        <p>
+          The deliverables of this project are centered around creating new
+          DEBIs according to the paradigm of MICE. New DEBIs will use the same
+          underlying open-source frameworks BigSemantics and
+          BigSemanticsJavaScript. BigSemantics provides rich metadata for web
+          pages. BigSemanticsJavaScript provides functions for retrieving,
+          deserializing, iterating across, displaying, and interacting with
+          metadata. In addition, new DEBIs will build upon the open source
+          visualization framework, <a class="destination" target="_blank"
+            href="http://d3js.org">D3</a>, and will be incorporated as a part of
+          BigSemanticsJavaScript. Along with designing and building new DEBIs,
+          this projects involves iterating on the architecture of the
+          BigSemanticsJavaScript framework, including developing a DEBI testing
+          platform.
+        </p>
+        
+        <p>
+          By the end of the summer, the developer working on this project will
+          have created 2 new, innovative HTML5 exploratory browsing interfaces
+          and a testing platform for the BigSemanticsJavaScript framework.
+        </p>
+        
+        <h4>Deliverables:</h4>
+
+        <ul>
+          <li>DEBI 1</li>
+          <ul>
+            <li>Implement a new DEBI from a provided design</li>
+            <li>Validate interface with different types of metadata</li>
+          </ul>
+          <li>Code Consolidation</li>
+          <ul>
+            <li>Reconcile the code between the existing DEBI, MICE, and the newly created interface</li>
+            <li>Maximize the amount of shared code</li>
+            <li>Test</li>
+          </ul>
+          <li>Testing Platform</li>
+          <ul>
+            <li>Build a testing platform to test all DEBIs for errors when the shared code base changes</li>
+          </ul>
+          <li>DEBI 2</li>
+          <ul>
+            <li>Design, implement, and validate a new DEBI</li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="projectDesc">
+        <a name="M5">
+          <h3>M5: BigSemantics C# Generics Compiler</h3>
+        </a>
+        <p>Mentor: <a target="_blank" href="../people/andrew.html">Andrew Webb</a></p>
+
+        <p>
+          BigSemantics provides a compiler that translates wrappers, written in
+          the meta-metadata language, into classes in programming languages such
+          as Java and C#, so that applications can conveniently access and use
+          semantic information as native objects.
+        </p>
+
+        <p>
+          The meta-metadata language supports generics. For example, the type
+          search has a generic type parameter for its search results. Subtypes
+          can specialize that generic type parameter to specify a search for a
+          particular type (Search&lt;ResultType&gt;), such as a search for Google
+          Books or Wikipedia articles.
+        </p>
+
+        <p>
+          Currently, the meta-metadata compiler that generates C# code doesn’t
+          handle generics correctly. Specifically, it doesn’t handle covariance,
+          which means recognizing that Search&lt;GoogleBook&gt; is a subtype of
+          Search&lt;Book&gt;. In C#, covariance is handled through interfaces instead
+          of concrete classes. Therefore, to deal with covariance, the compiler
+          needs to generate not only the concrete class, but also the interface
+          containing covariance information.
+        </p>
+
+        <p>
+          In this project, you will develop this feature of generating C#
+          generics and covariance interfaces from meta-metadata wrappers. You
+          will learn about how type systems work in Java and C#, and how we can
+          manipulate it in program. You will play with types and code
+          generation, which will be useful in many large scale projects.
+        </p>
+
+        <h4>Deliverables:</h4>
+        <ul>
+          <li>Design document on what the compiler should generate, and how.</li>
+          <li>Develop the testing basis for the required feature.</li>
+          <li>Implement the required feature.</li>
+          <li>Integrate the developed feature with the current meta-metadata compiler, and refactor its structure.</li>
+        </ul>
+      </div>
+      
+<!--
+      <div class="projectDesc">
+        <a name="M3">
+          <h3>Meta-Metadata Site Change Detection</h3>
+        </a>
+        <p>Mentor: TBD</p>
+
+        <p>This project provides a service which regularly checks for changes in meta-metadata
+          curated web sites that affect meta-metadata extraction, and notifies the community for
+          actions on these meta-metadata.</p>
+
+        <h4 id="deliverables:">Deliverables:</h4>
+
+        <ul>
+          <li>A mechanism that scans &lt;example_url&gt;s, downloads corresponding pages,
+            extracts metadata, and stores both the page and the metadata in a versioned data store.
+            The products are '��snapshots'�� of information resources and corresponding metadata,
+            that we can compare to later. It should also warn if an &lt;example_url&gt; becomes
+            non-accessible.</li>
+          <li>A tool that compares two metadata objects for differences.</li>
+          <li>A module that takes snapshots, extracts metadata objects again, and compares with
+            metadata objects in those snapshots.</li>
+          <li>Dynamic web pages that summarize and list changes that need to be made.</li>
+          <li>Deployment of the service, cron job, and emailing notifications.</li>
+        </ul>
+      </div>
+
+      <div class="projectDesc">
+        <a name="M4">
+          <h3>BigSemantics Information Chaining Service Client Libraries</h3>
+        </a>
+        <p>Mentor: Andrew Webb</p>
+
+        <p>This project develops a client side library for the BigSemantics service in C#. The
+          library will provide an easy way to asynchronously extracts a web of metadata and caches
+          them on the local machine for best performance, persistently. The library allows for even
+          simpler invocation of the service, without the need for process HTTP requests and
+          responses. Code structure and modularization of BigSemantics need to be considered.</p>
+
+        <h4 id="deliverables:">Deliverables:</h4>
+
+        <ul>
+          <li>Encapsulating BigSemantics service invocation and callback.</li>
+          <li>Implementing asynchronous expansion of a web of metadata on the client side.</li>
+          <li>Add a persistent cache on the local machine.</li>
+        </ul>
+      </div>
+-->
+
+    <!-- 		<div class="intro" style="padding-right: 10px;">
+			<a name="M3"></a>
+						
+						<div class="illustrate" style="border:0px;"><img class="illustrate" src="images/harryPotterRichBookmark.png" alt="rich bookmark example"/><br/>
+						<center>Rich Bookmark</center></div>
+			<h5>Project M3 - Semantic Service</h5>
+			
+            <span>contact: <a class="destination" href="../people/quyin.html" target="_blank">Yin Qu</a></span>
+						<p>The semantic service will transform the wild web into well
+						structured rich semantics, in the form of XML or JSON, with a
+						RESTful interface, using <a target="_blank" class="destination"
+							href="../research/simplGuide/metaMetadata/index.html">meta-metadata</a>.
+						Rich semantics will be directly mapped to classes and instances in
+						programming languages including Java and C# for convenient use. The
+						semantic service is critical for building thin clients (web-based,
+						Android or desktop) working with rich semantics from multiple
+						sources, such as a web site mixing all your social network
+						activities; an application allowing you to collect rich bookmarks
+						(see the figure; check out <a target="_blank" class="destination"
+							href="../infocomposer/">InfoComposer</a>); a mobile app that you
+						can share rich bookmarks with annotations to your family or
+						friends, or even social networks.</p>
+
+			<p>The semantic service will store complex <i>metadata semantics</i> in a
+			distributed database back-end, and communicate with clients through HTTP.
+			SIMPL <a class="destination"
+				href="../research/simplGuide/oodss/index.html"
+				target="blank">OODSS</a> over HTTP, an easy-to-use web service
+			framework, will simplify the implementation, by using <a
+				class="destination"
+				href="../research/simplGuide/serialization/index.html"
+				target="blank">S.IM.PL Serialization</a> on information and message
+			data structures.  However, rich semantics also brings unusual challenges:
+			storing complex metadata semantics into a database back-end (we are
+			primarily focusing on PostgreSQL for now) results in large number of
+			tables and performance issues; the messy nature of semantics in the real
+			world requires dealing with cross references both in memory and in
+			database; we must survive schema evolution along with changes in the
+			wrapper repository, and maintain high performance through distributed,
+			fault-tolerant data stores and caches.</p>
+
+			<p>In GSoC 2011, an Object-Relational Mapping module has been
+			implemented, connecting metadata semantics with databases. This year,
+			building on previous work, the student will put components together and
+			finally kick off the service! The student will work with the mentor to
+			design the service interface, create testings, deploy the service, code
+			simple maintenance tools, and deal with aforementioned challenges. The
+			student will learn about and experience web semantics, RESTful web
+			services, distributed storage and processing, among other exciting
+			techniques that are related to complex big data, and participate in
+			cutting edge research. We will provide access to a virtualized
+			environment on a many-core server that we have.</p>
+
+			<h4>Prerequisites</h4>
+			<p>Java, XML/JSON, SQL (ideally PostgreSQL), HTTP. Experiences with web
+				sites, services, Ehcache/memcached, and distributed systems will be a plus.</p>
+
+			<h4>Deliverables</h4>
+			<p>The specific scope of work may be adjusted according to the student's
+			experiences. A minimum set of deliverables includes:</p>
+			<ul>
+				<li>Service API design.</li>
+				<li>Semantics extraction as a service.</li>
+				<li>Middle layer between semantics extraction service and current ORM layer.</li>
+				<li>Basic scripts for testing and deployment.</li>
+				<li>Basic administration / log viewing portal.</li>
+				<li>Basic schema evolution tool.</li>
+			</ul>
+			<p>Optional deliverables:</p>
+			<ul>
+				<li>Caches.</li>
+				<li>Replications.</li>
+				<li>Search service.</li>
+			</ul>
+		</div>
+ -->
+<!--       <div class="intro" style="padding-right: 10px;"> -->
+        <!-- 			<a name="M5"></a> -->
+        <!-- 			<h5>Project M5: Meta-Metadata SDK</h5> -->
+        <!--             <span>contact: <a class="destination" href="../people/sashikanth.html" target="_blank">Sashikanth Damaraju</a></span> -->
+        <!-- 			<p>The expected result of this project includes source code and -->
+        <!-- 				pre-compiled binaries (e.g. JAR files), utilities such as -->
+        <!-- 				meta-metadata authoring tool, compiler, documentation, and code -->
+        <!-- 				samples with reusable patterns for the meta-metadata formal language -->
+        <!-- 				and architecture.</p> -->
+
+        <!-- 			<p>The student will work on the implementation of various -->
+        <!-- 				components of a meta-metadata SDK, and deploy it in the open source -->
+        <!-- 				community to help wrapper authors and developers easily use the -->
+        <!-- 				software, including but not limited to building scripts for software -->
+        <!-- 				components, meta-metadata compiler automation tools and scripts, -->
+        <!-- 				metadata extraction and representation samples, and reusable patterns.</p> -->
+
+        <!-- 			<p>The core of the SDK will consist of tools that make writing wrappers either, -->
+        <!-- 			and a small set of extremely well-documented example applications that utilize meta-metadata to create cool web mashups. -->
+        <!-- 				The mash-up application areas can include meta-search, feed aggregator, -->
+        <!-- 				bibliography manager, vacation planner, ...  -->
+        <!-- 				Mash-up sources can include Open Street Maps / Google Maps, Facebook, Google+, Tumblr, ... -->
+        <!-- 				They can involve integrating and re-presenting information involving shopping, travel, entertainment, gaming, scholarly research, and social media.</p> -->
+
+        <!-- 			<p>The student will work with the mentor to determine specific -->
+        <!-- 				components s/he will focus on, and define deliverables. Ideally, -->
+        <!-- 				work will be performed both in Java and in C#.</p> -->
+
+        <!-- 			<h4>Prerequisites</h4> -->
+
+        <!-- 			<p>Java, XML, XPath, Ant, C#</p> -->
+
+        <!-- 			<a name="M6"></a> -->
+        <!-- 			<h5>Project M6: Facebook and Other Social Media Wrappers</h5> -->
+        <!--             <span>contact: <a class="destination" href="../people/andruid.html" target="_blank">Andruid Kerne</a></span> -->
+        <!-- 			<p>The student will author meta-metadata definitions that -->
+        <!-- 				describe structure, presentation, and extraction rules for social -->
+        <!-- 				media sites will enable developers to create engaging experiences -->
+        <!-- 				and analytical processes that help people manage social information.</p> -->
+
+        <!-- 			<p>Because Facebook is the most widely used social network, the -->
+        <!-- 				student should prioritize it as the most important wrapper to write. -->
+        <!-- 				Facebook has many kinds of pages that should have wrappers built -->
+        <!-- 				including: -->
+        <!-- 			<ul> -->
+        <!-- 				<li>Newsfeed</li> -->
+        <!-- 				<li>Profiles</li> -->
+        <!-- 				<li>Photos</li> -->
+        <!-- 				<li>Groups</li> -->
+        <!-- 				<li>Events</li> -->
+        <!-- 				<li>Notes</li> -->
+        <!-- 			</ul> -->
+        <!-- 			</p> -->
+
+        <!-- 			<p>Other social networks that you can build wrappers and -->
+        <!-- 				interactive demo tutorials for include Google+, Twitter, Pinterest, -->
+        <!-- 				LinkedIn, Reddit, YouTube, StumbleUpon, Blogspot/Blogger, -->
+        <!-- 				Foursquare, Wordpress, Tumblr, Squidoo, Photobucket, Dailymotions, -->
+        <!-- 				and Vimeo.</p> -->
+        <!-- 			<p>The student should be familiar with JavaScript, XPaths, Java, -->
+        <!-- 				and meta-metadata. The student will also design and implement -->
+        <!-- 				authentication for use with meta-metadata when extracting metadata -->
+        <!-- 				from user access specific (non-public) content from web pages. As -->
+        <!-- 				part of the deliverable sequence, student will create sample -->
+        <!-- 				applications that use and mashup social media wrappers to engage -->
+        <!-- 				users.</p> -->
+
+        <!-- 			<h4>Deliverables</h4> -->
+        <!-- 			<ul> -->
+        <!-- 				<li>Facebook Meta-Metadata Wrappers</li> -->
+        <!-- 				<li>Design and Implementation of Non Public Site Extraction</li> -->
+        <!-- 				<li>Example Application that Uses Student Authored Social Media -->
+        <!-- 					Wrappers</li> -->
+        <!-- 				<li>Additional Wrappers for ~10 Social Media Sites</li> -->
+        <!-- 			</ul> -->
+
+
+        <!-- 		<a name="S2"></a> -->
+        <!-- 		<h5>Project S2: Make C++ S.IM.PL</h5> -->
+        <!--         <span>contact: <a class="destination" href="../people/nabeel.html" target="_blank">Nabeel Shahzad</a></span> -->
+        <!-- 		<p>C++ is an important ANSI/ISO standard object-oriented programming language.  -->
+        <!-- 		Making C++ <a href="../research/simplGuide/index.html" target="blank" class="destination">S.IM.PL</a> will facilitate developing distributed programs,  -->
+        <!-- 		for example connecting Java and C++ server components that need to exchange complex data, but live in separate processes. -->
+        <!-- 		C++'s STL supports complex de/serialization of object graphs, but without the fine-grained control S.IM.PL provides, or -->
+        <!-- 		the ability to automatically generate equivalent object definitions and exchange object-oriented data with programs in Java, C#, and Objective C. -->
+        <!-- 		</p> -->
+        <!-- 		<p> -->
+        <!-- 		The C++ S.IM.PL port presents some interesting challenges to the programmer, because C++ will be the first S.IM.PL language that lacks reflection. -->
+        <!-- 		This means instead of using optimized reflection at runtime for serialization, code must be generated for serializing each class. -->
+        <!-- 		The structure of the generated code will be similar to that currently employed during runtime. -->
+        <!-- 		The new abstraction layer will likely employ <a href="http://www.antlr.org/wiki/display/ST4/Introduction" target="_blank">ANTLR StringTemplate</a>. -->
+        <!-- 		</p> -->
+        <!-- 		<p> -->
+        <!-- 			<h4>Deliverables</h4> -->
+        <!-- 			<li>A Java program, part of the simplTranslators project, which will generate C++ class representations from S.IM.PL <code>ClassDescriptor</code>s. Generated code will include  -->
+        <!-- 			<a href="../research/simplGuide/serialization/index.html" target="_blank" class="destination">serialization and deserialization</a> methods.  -->
+        <!-- 			</li> -->
+        <!-- 			<li>Serialization methods in generated C++ classes. Output formats for objects will include XML and JSON. Serialized objects will be compatible with S.IM.PL serialization in Java, C#, and Objective C.</li> -->
+        <!-- 			<li>Compatible deserialization methods in generated C++ classes.</li> -->
+        <!-- 			<li>C++ runtime libraries that support serialization and deserilation.</li> -->
+        <!-- 			<li>S.IM.PL compatible object graph serialization, using <code>simpl:id</code> and <code>simpl:ref</code>.</li> -->
+        <!-- 			<li>Bonus: a C++ S.IM.PL <a href="../research/simplGuide/oodss/index.html" target="blank" class="destination">OODSS</a> client.</li> -->
+        <!-- 		</p> -->
+
+
+        <!-- 		<a name="T1"></a>
+		<h5>T1: TUIO Windows Touch Driver</h5>
+        <span>contact: <a class="destination" href="../people/bill.html" target="_blank">Bill Hamilton</a></span>
+		<p>Design and implement a Windows 7 and 8 application which
+			converts incoming TUIO (http://www.tuio.org/) events into Windows
+			touch events.</p>
+
+		<p>Currently the only available TUIO to Windows touch bridge
+			application is Multi-Touch Vista
+			(http://multitouchvista.codeplex.com/). This application is difficult
+			to use, does not support multiple monitor setups, and contains bugs
+			and memory leaks. The goal of this project is to create an
+			application similar to the (only partially open source) Multi-Touch
+			Vista, but better designed, more robust, and feature complete.</p>
+
+		<p>Required features of the application: able to listen for TUIO
+			events and convert them to driver level Windows touch events, stable,
+			and easy to install and run. The application should be free of memory
+			leaks and should not output ghost touch events.</p>
+		<p>Other desired features include: having the application in the
+			Windows system-tray so configuration options can be viewed and
+			modified, supporting multiple monitors and multiple incoming TUIO
+			ports, and options to disable and emulate stylus events. Future work,
+			as these platforms enable support for multiple monitors and touch
+			events, will build compatible functionality for Android and Apple.</p>
+		<p>The student should begin by learning about Multi-Touch Vista,
+			Windows 7/8 touch events, and TUIO messages. Then, formulate a design
+			and implementation plan. The final application should include
+			adequate documentation, so that it can be easily utilized and
+			distributed.</p>
+		<p>The desired student should have experience creating Windows
+			drivers. The student should also be familiar with TUIO and OSC.
+			Ideally, the student will have a touch-enabled Windows device. The
+			Java TUIO-based simulator will in any case be utilized.</p>
+
+ -->
+
+    </div>
+
+        <div class="intro">
+          <a name="apptemplate"></a>
+          <h1>Application Template</h1>
+          <p>Please use the following format and guidelines when preparing your application</p>
+          <h4>General Information and Resume</h4>
+          Submit your latest resume.
+          In addition, list the following information in your application:
+          <ul>
+            <li>Name</li>
+            <li>Email</li>
+            <li>School Affiliation</li>
+            <li>Project Title (title of the project you wish to work on)</li>
+          </ul>
+          <h4>Logistical Information</h4>
+          <ul>
+            <li>Timezone</li>
+            <li>Typical working hours (in your local timezone)</li>
+            <li>Skype, IRC, GChat, and other Instant Messanging Handles</li>
+          </ul>
+          <h4>Short Bio</h4>
+          <p>Describe your previous experience in software or hardware development, and what
+            skills you bring to the table. Tell us what brings you to the open-source development
+            community. Explain how open source fits with your other pursuits in life, academic or
+            otherwise.</p>
+          <h4>Motivation</h4>
+          <p>2 to 3 paragraphs describing your motivation for working on the project you have
+            chosen. What you expect to gain from working on the project, why you are interested, and
+            what you believe to be the expected benefits to the open-source community.</p>
+          <h4>Deliverables and Timeline</h4>
+          <p>In roughly a page of text, breakdown your selected project into a set of milestones
+            or deliverables and set realistic timetables for accomplishing these deliverables.
+            Include a GANTT chart showing your planned progress over the summer. Explain the
+            deliverables that are "must-haves", as well as expanding on future work that you may or
+            may not accomplish, time permitting. Keep in mind that some things may take longer than
+            you originally anticipated, so be sure and include contingency plans for such
+            circumstances. This is the heart of your proposal.</p>
+          <h4>Communication</h4>
+          <p>Write a short paragraph detailing how you plan on keeping in communication with
+            your project mentor and ensuring that your deliverables are on time. Will you have
+            weekly Skype meetings? Is email your preferred method of communication? How do you plan
+            to keep us informed of both progress as well as problems?</p>
+            
+          <h4>Code Sample</h4>
+          <p>
+          For each project, please share us a programming project or pieces of programming work
+          that you have done before.
+          For example, a GitHub or Google Code project that you have done for
+          your class, or links to patches you submitted to open source project(s).
+          The project or code sample will be used solely for us to evaluate your
+          programming skills.
+          </p>
+          <p>
+          For projects M1-M5, you should also submit a meta-metadata wrapper
+          that you have authored, along with an exmaple URL that extracts
+          metadata from it.
+          You should author the wrapper by forking the <a
+          href="https://github.com/ecologylab/BigSemanticsWrapperRepository"
+          target="_blank" class="destination"> BigSemanticsWrapperRepository</a>
+          project, and submit your wrapper through GitHub Pull Requests.
+          If you need help, contact us at IRC or via email.
+          </p>
+          <!--
+          <p>For projects S1 and S2, write a small test program in Java or C# that uses S.IM.PL
+            Serialization's Data Binding Annotation Language to serialize and deserialize some
+            complex data structure. In order to show that you understand S.IM.PL's power, ideally,
+            this will be a graph-like structure, with cycles. It will also use composite objects,
+            collections, and polymorphism. Again, present a web page with links to the source file,
+            and its output in one or more test cases.</p>
+          -->
+          
+          <h4>Background</h4>
+          <p>Anything else that you want to let us know about yourself, about the project, or
+            any other information you think would help your application should be included as well.
+            This includes other projects you may have worked on, code samples you are particularly
+            proud of, academic publications, your personal blog, software development experience,
+            education, etc. Remember, you are trying to sell yourself as the right person for the
+            job! Anything that would help convice us of that should be in your application,
+            including its associated web pages.</p>
+          <!-- <h4>Meta-metadata Wrapper (M Projects only)</h4>
+			<p>Author a meta-metadata wrapper for a new information source. Please see the 
+				<a href="../research/simplGuide/metaMetadata/index.html" target="_blank">meta-metadata guide</a>
+				for instruction on setting up a development environment and tutorials on authoring wrappers. 
+				Submit<p> -->
+        </div>
+      </div>
+  </body>
+</html>
