@@ -25,3 +25,6 @@ Redirect 301 /tweetbuble /research/bigsemantics/TweetBubble/index.html
 
 Redirect 301 /tec /research/tec.html
 Redirect 301 /tteclog /research/tec.html
+
+Redirect 301 /research/informationCognition.html /research/informationBasedIdeation.html
+Redirect 301 /research/informationDiscovery.html /research/informationBasedIdeation.html
