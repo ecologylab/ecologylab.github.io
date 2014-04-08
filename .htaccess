@@ -28,3 +28,8 @@ Redirect 301 /tteclog /research/tec.html
 
 Redirect 301 /research/informationCognition.html /research/informationBasedIdeation.html
 Redirect 301 /research/informationDiscovery.html /research/informationBasedIdeation.html
+
+Redirect 301 /research/publications/cF-TOIS7-0.pdf /research/publications/combinFormationTOIS2008.pdf
+Redirect 301 /research/publications/cF-TOIS7-2.pdf /research/publications/combinFormationTOIS2008.pdf
+Redirect 301 /research/publications/tochi-cf-2011.pdf /research/publications/ecologyLab-IBI-tochi2014R5-1.pdf
+
