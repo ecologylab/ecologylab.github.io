@@ -966,3 +966,9 @@ H2.criteria
 {
 	padding: 2px 28px 2px 0px
 }
+
+.googleDocIframe {
+	width: 578px;
+	height: 1000px;
+	border: none;
+}

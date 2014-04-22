@@ -90,6 +90,35 @@ ul
 
 <div class="content">
 
+<base target="_blank">
+
+<script>
+
+var f = {};
+	document.onload = function() {
+	
+		var frames =  document.getElementsByTagName('iframe');
+		
+		for(var j = 0; j < frames.length; j++)
+		{
+			
+			var frame = frames[j];
+			f = frame;
+			console.log(frame);
+		    var links = frame.getElementsByTagName('a');
+
+		    for (var i = 0; i < links.length ; i++)
+		    {
+		    	console.log(links[i]);
+		 	   links[i].setAttribute('target', '_blank');
+		    }
+		}
+	};
+</script>
+
+<iframe class="googleDocIframe" target="_blank" style="height: 2782px;" src="https://docs.google.com/document/d/1jrLiB86MevcleyJs5nt4Q-9zrQN8wwrgXE7XD1frG44/pub?embedded=true"></iframe>
+
+<!--
 <div class="subsection">
 A scientific research paper is a tightly constructed logical argument in favor of the
 intellectual merit and broad impact of your work. Go back to how you stated these in your research proposal.
@@ -246,6 +275,7 @@ to speak.
 	Fill in entries for yourself and all members of your team. Email to me or put hardcopy on my desk.
 	</div>
 </div>
+-->
 
 </div>
 
