@@ -48,6 +48,18 @@ li
 	color: #546376;
 	font-weight: bold;
 }
+.pub_destination
+{
+	font-size: 12px; 
+	color: #546376;
+	font-weight: bold;
+}
+.doi
+{
+	font-size: 11px;
+	color: #546376;
+	font-weight: light;
+}
 A.destination
 {
 	color: #0C0A66;
