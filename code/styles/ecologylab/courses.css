@@ -166,6 +166,31 @@ SPAN.banner2
 /*font-weight: bold;*/
 	color: #666666;
 }
+.banner_social_media
+{
+	position: relative;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 30px;
+	margin-top: -13px;
+	padding-top: -28px;
+/*font-weight: bold;*/
+	color: #666666;
+}
+.banner_curation
+{
+	font-size: 45px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: -3px;
+	color: #999999;
+}
+.banner_curation_and
+{
+	font-size: 25px;
+/* 	vertical-align: middle; */
+/* /* 	baseline-shift: -30%; */ */
+}
 SPAN.creative
 {
 	position: absolute;
@@ -556,8 +581,10 @@ A.navlink:hover
 
 .navicon
 {
+	padding-top:9px;
 	padding-bottom:3px;
 	padding-left: 4px;
+	padding-right: 12px;
 	vertical-align: middle;
 	border: 0px;
 }
