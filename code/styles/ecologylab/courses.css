@@ -34,6 +34,7 @@ DIV.rootcontainer
 	width: 800px;
 /*ie5win fudge begins*/
 	height: 100%;
+	padding-top: 8px;
 	padding-bottom: 10px;
 /*voice-family: "\"}\"";
 voice-family:inherit;
@@ -987,6 +988,13 @@ H2.criteria
 	width: 72px;
 	height: 72px;
 	padding: 4px;
+}
+.navlink_logo
+{
+	display: block;
+	margin-right:7px;
+	margin-top: auto;
+	text-align: center;
 }
 
 .sectionNavTable td
