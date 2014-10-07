@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title cftoolsversion="0.1.2">Web Semantics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body>
+
+<div style="" class="rootcontainer">
+
+<div class="header">
+<img class="logo" src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png">
+<div class="title2">Web Semantics</div>
+</div>
+
+<br clear="all">
+
+<div class="nav">
+<a class="navlink" href="../../index.html">home</a>
+<a class="navlink" href="../../define.html">define</a>
+
+<div class="block">
+	<div class="subblock">
+		<a class="navselected" href="../index.html">research</a>
+		<a class="subnavlink" href="../sensoryInterfaces.html">embodied interfaces</a>
+		<a class="subnavlink" href="../informationComposition.html">information composition</a>
+		<a class="subnavlink" href="../informationBasedIdeation.html">information based ideation</a>
+		<a class="subnavlink" href="../transSurfaceInteraction.html">trans surface interaction</a>
+		<a class="subnavlink" href="../bigsemantics/index.html">big semantics</a>
+		<a class="subnavlink" href="../bigsemantics/TweetBubble/index.html">tweet bubble</a>
+		<a class="subnavlink" href="../zerotouch/index.html">zero touch</a>
+    <!--
+		<a class="subnavlink" href="../ecosystemsApproach.html">interface ecology</a>
+    -->
+	</div>
+</div>
+
+<a class="navlink" href="../../people/index.html">people</a>
+<a class="navlink" href="../../courses/index.html">courses</a>
+<a class="navlink" href="../../workshops/index.html">workshops</a> 
+<a class="navlink" href="../../summerofcode/index.html">summer of code</a>
+
+<div class="block">
+		<a class="nav_nowrap" target="_blank" href="http://ecologylab.tumblr.com/">blog</a>
+</div>
+
+<div class="subblock">
+			<a class="nav_nowrap" target="_blank"
+			 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+</div>
+</div>
+
+
+<div class="content">
+
+<p class="main" style="line-height: 150%;">
+By <b>web semantics</b>, we refer to descriptive information, including
+significant attributes, features, representations, and relationships, of
+entities on the web, for people to use in their tasks. Examples of web semantics
+include the gist of a news report, price of a product, reviews of a book, and
+portrait of a friend.
+</p>
+  
+<p class="main" style="line-height: 150%;">
+Web semantics provide essential and valuable contextual information, allowing
+users to make sense of, assess, act on, and make decisions about underlying
+entities. For example, semantics for a scholarly article, including the author
+list, publication venue, references, and citations, are all essential for its
+readers to assess how important the work is and understand how it connects to
+the field. In another example, a user shopping online looks at semantics of a
+product, which can include not only its price, brand, specs, and pictures, but
+also reviews, related products, and feeds from the user's social networks, to
+make the purchasing decision.
+
+Web semantics are especially important when users need to relate, compare, and
+synthesize across multiple entities, for example, in <a href="#"
+class="destination">curation</a>. Without contextual web semantics, users will
+have to view information from different sources in separate browser windows, and
+keep track of linked information with limited working memory, which results in
+problems of getting lost and distracted.
+</p>
+  
+<p class="main" style="line-height: 150%;">
+Web semantics can take various structures, formally defined by <b>data
+models</b>, and countless <b>presentations</b>, such as lists, tables, maps,
+and templated web pages. This makes it difficult for computer applications to
+obtain and use valuable web semantics. Prior approaches, such as the Semantic
+Web and microdata, rely on websites to actively provide and maintain semantics,
+and have not been widely used. Facebook's Open Graph and Twitter's Cards are
+supported by many websites, but only address limited categories of web
+semantics.
+</p>
+
+<p class="main" style="line-height: 150%;">
+The Interface Ecology Lab conducts research in various areas involving web
+semantics. We developed practical method for deriving image-text clippings as
+surrogates of web pages, to provide contextual semantics more than the page
+title.
+
+We built <a href="../bigsemantics/index.html" class="destination">BigSemantics</a>,
+an open source architecture, language, and software library, for representing,
+extracting, and presenting web semantics.  With BigSemantics, developers can
+author wrappers, using the meta-metadata language, to define and reuse data
+models for different types of web semantics, and specify presentation semantics
+to display web semantics in usable forms.
+
+BigSemantics comes with a non-trivial <a
+href="https://github.com/ecologylab/BigSemanticsWrapperRepository/wiki"
+class="destination" target="_blank">repository of wrappers</a>, addressing <a
+href="http://ecology-service.cse.tamu.edu/domain_type_examples.html"
+class="destination" target="_blank">popular websites and common use cases</a>
+involving searches, products, digital libraries, creative work, and social
+media.
+
+The <a href="https://github.com/ecologylab/BigSemanticsService/wiki"
+class="destination" target="_blank">BigSemantics Service</a> supports
+acquisition and storage of web semantics in web scale with a distributed
+processing architecture.
+
+An example web application, the <a href="http://ecologylab.net/mice"
+class="destination" target="_blank">Metadata In-Context Explorer (MICE)</a>,
+shows how BigSemantics supports <b>exploratory browsing</b>, a paradigm that
+allows users to serendipitously encounter diverse and novel information in the
+same context.
+
+BigSemantics has been used by <a href="http://ideamache.ecologylab.net"
+class="destination" target="_blank">IdeaM&Acirc;CH&Eacute;</a>,
+embodiedM&Acirc;CH&Eacute;, and <a href="../bigsemantics/TweetBubble/index.html"
+class="destination">TweetBubble</a> to provide valuable contextual web semantics.
+</p>
+
+
+
+<h5>publications</h5>
+
+<div class="feature">
+<a href="../publications/eics2014debi.pdf" target="_blank">
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../../research/images/eics-debi.png" />
+</a>
+Qu, Y., Kerne, A., Lupfer, N., Linder, R., Jain, A.,
+<a href="../publications/eics2014debi.pdf" target="_blank" class="pub_destination">
+Metadata Type System: Integrate Presentation, Data Models and Extraction to Enable Exploratory Browsing Interfaces,
+</a>
+<i>Proc. ACM Engineering Interactive Computing Systems (EICS) 2014</i>, 107-116 [18%].
+<a class="doi" href="http://dx.doi.org/10.1145/2607023.2607030" target="_blank">http://dx.doi.org/10.1145/2607023.2607030</a>
+<a class="pub_destination" href="https://www.youtube.com/watch?v=CbtCZSHsenA" target="_blank">[video]</a>
+</div>
+
+<div class="feature">
+<a href="../publications/doceng77-qu.pdf" target="_blank">
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/integratingSearches.png" />
+</a>
+Qu, Y., Kerne, A., Webb, A.M., Herstein, A.
+<a href="../publications/doceng77-qu.pdf" target="_blank" class="pub_destination">
+	Interoperable Metadata Semantics with Meta-Metadata: A Use Case Integrating
+  Search Engines</a>. <i>Proc ACM DocEng 2011</i>, 171-174 [53%].
+<a class="doi" href="http://dx.doi.org/10.1145/2034691.2034729" target="_blank">http://dx.doi.org/10.1145/2034691.2034729</a>
+</div>
+
+<div class="feature">
+<a href="../publications/metaMetadataCIKM.pdf" target="_blank"> 
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/metaMetadataCIKM.jpg" />
+</a>
+Kerne, A., Qu, Y., Webb, A.M., Damaraju, S., Lupfer, N., Mathur, A.
+<a href="../publications/metaMetadataCIKM.pdf" target="_blank" class="pub_destination">
+Meta-Metadata: A Metadata Semantics Language for Collection Representation Applications</a>, 
+<i>Proc ACM Conference on Information and Knowledge Management</i>, 
+1129-1138. [12.7%]
+	<a class="doi" href="http://dx.doi.org/10.1145/1871437.1871580" target="_blank">http://dx.doi.org/10.1145/1871437.1871580</a>
+</div>
+
+<div class="feature">
+<a href="../publications/metadata_samt08Short2-1.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/metaMetadataSAMT2008.png"/>
+</a>
+Kerne, A., Damaraju, S., Kumar, B., and Webb, A. 
+<a href="../publications/metadata_samt08Short2-1.pdf" target="_blank" class="pub_destination">
+Meta-Metadata: A Semantic Architecture for Multimedia Metadata Definition, Extraction, and Presentation</a>,  
+<i>Poster and Demo Proceedings of the 3rd International Conference on Semantic
+and Digital Media Technologies</i>.
+</div>
+	
+<div class="feature">
+<a href="../publications/eng078-koh.pdf" target="_blank"> 
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/doceng078_icon.jpg" />
+</a>
+Koh, E., Kerne, A.,
+<a class="pub_destination" href="../publications/eng078-koh.pdf" target="_blank">
+Deriving Image-Text Document Surrogates to Optimize Cognition</a>, 
+<i>Proc ACM DocEng 2009</i>, 84-93 [29.6%].
+<a class="doi" href="http://dx.doi.org/10.1145/1600193.1600212" target="_blank">http://dx.doi.org/10.1145/1600193.1600212</a>
+</div>
+
+<div class="feature">
+<a href="../publications/eng077s-koh.pdf" target="_blank"> 
+<img
+  class="illustrate_left"
+  width="144"
+  height="100"
+  src="../images/testCollection.png" />
+</a>
+Koh, E., Kerne, A., Berry, S.,
+<a class="pub_destination" href="../publications/eng077s-koh.pdf" target="_blank">
+Test Collection Management and Labeling System</a>, 
+<i>Proc ACM DocEng 2009</i>, 39-42 [29.6%].
+<a class="doi" href="http://dx.doi.org/10.1145/1600193.1600203" target="_blank">http://dx.doi.org/10.1145/1600193.1600203</a>
+</div>
+
+<div class="feature">
+<a href="../publications/kohKerneDocEng07.pdf" target="_blank">
+<img
+	class="illustrate_left"
+	width="144"
+	height="100"
+	src="../images/doceng07_icon.jpg"/>
+</a>
+Koh, E., Caruso, D., Kerne, A., Gutierrez-Osuna, R.,
+<a class="pub_destination" href="../publications/kohKerneDocEng07.pdf" target="_blank">
+Elimination of Junk Document Surrogate Candidates through Pattern Recognition</a>, 
+<i>Proc ACM Symposium on Document Engineering (DocEng) 2007</i>, 187-195 [39%].
+<a class="doi" href="http://dx.doi.org/10.1145/1284420.1284466" target="_blank">http://dx.doi.org/110.1145/1284420.1284466</a>
+</div>
+
+</div>
+
+
+</div>
+</body></html>
