@@ -17,11 +17,68 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
+var phases = new Object();
+phases.overview		= "https://docs.google.com/document/d/1Dum1NxoEEe2M-wEqldDquQYaPvAgFXwccgdJM8AjR5M/pub?embedded=true";
+phases.proposal		= "https://docs.google.com/document/d/1aLXjQIml8G5jDZXqkae8sRhbkx1XyH4XE_Io2ML9UZo/pub?embedded=true";
+phases.revision		= "https://docs.google.com/document/d/1Gsf-CtvSMcQPBpuAdwSIUsmzax3dniTXbwtwuNxOXjk/pub?embedded=true";
+phases.prototype1	= "https://docs.google.com/document/d/1yGMFHATAHZZ2-KnBxQLHX-4Nq7LAGmz2Q5a3S0h-9ug/pub?embedded=true";
+phases.study1		= "https://docs.google.com/document/d/10smfJE5-T5SS-vWoY--SsvvIKw8ln1xXnJFnOoXp7jk/pub?embedded=true";
+phases.prototype2	= "https://docs.google.com/document/d/1if8IAZI9HssT7wXe3LEEMyVNLKwSWQFj58s2WGv7Smk/pub?embedded=true";
+phases.study2		= "https://docs.google.com/document/d/1pFH2irqEtaxvCaFBE_zKs3QbYWa5LsfzL-6JNiqr6u0/pub?embedded=true";
+phases.presentation	= "https://docs.google.com/document/d/1PfjSkbZBHRRdte_QAIqWBK1lrdqhBGlKVLkCDIuaXcI/pub?embedded=true";
+phases.paper		= "https://docs.google.com/document/d/1jrLiB86MevcleyJs5nt4Q-9zrQN8wwrgXE7XD1frG44/pub?embedded=true";
+
+var currentPhase	= "overview";
+
+function changePhase(name)
+{
+	var docURL	= phases[name];
+	if (docURL)
+	{
+		var navElement	= document.getElementById(name);
+		if (navElement)
+		{
+			navElement.className	= "subnavselected";
+			oldNavElement			= document.getElementById(currentPhase);
+			oldNavElement.className	= "subnavlink";
+			currentPhase			= name;
+		}
+		var docFrame	= document.getElementById("project_phase");
+		if (docFrame)
+		{
+			docFrame.src	= docURL;
+		}
+	}
+	else
+	{
+		alert("No phase: " + name);
+	}
+}
+
+var PHASE_ARG	= "phase=";
+function initializePhase()
+{
+	var args	= location.search;
+	if (args)
+	{
+		var phaseIndex	= args.indexOf(PHASE_ARG);
+		if (phaseIndex >= 0)
+		{
+			var phase	= args.substring(phaseIndex+PHASE_ARG.length);
+			if (phase && phase.length > 0)
+			{
+				changePhase(phase);
+			}
+				
+		}
+	}	
+}
 </script>
 
 </head>
 
-<body>
+<body onload="initializePhase();">
 
 <div class="rootcontainer">
 
@@ -30,7 +87,7 @@
   <div class=banner_social_media>meet social media</div>
 </div>
 
-<div class="tall_navigation">
+<div class="taller_navigation">
 <div class="block">
   <a class="navlink" href="../index.html">welcome</a>
   <a class="navlink" href="../policies.html">policies</a>
@@ -48,14 +105,16 @@
   <a class="subnavlink" href="courseCuration.html">course curation site</a>
   <a class="subnavlink" href="researchLitPresentation.html">research literature <br/>presentation</a>
   <a class="subnavlink" href="curation.html">curation analysis <br/>&amp; synthesis</a>
-  <a class="sectiontitle" href="finalProject.html">final project</a>
-  <!-- <a class="subnavlink" href="proposal.html">proposal</a>
-  <a class="subnavlink" href="refinement.html">refinement</a>
-  <a class="subnavlink" href="story.html">story&nbsp;+&nbsp;lo-fi</a>
-  <a class="subnavlink" href="study1.html">user study 1</a>
-  <a class="subnavlink" href="functionalPrototype.html">functional prototype</a>
-  <a class="subnavlink" href="study2.html">user study 2</a>
-  <a class="subnavlink" href="finalFinal.html">final paper</a>-->
+  <a class="subnavtitle" href="finalProject.html">final project</a>
+  <a class="subnavselected" id="overview" href="javascript:changePhase('overview')">overview</a>
+  <a class="subnavlink" id="proposal" href="javascript:changePhase('proposal')">proposal</a>
+  <a class="subnavlink" id="revision" href="javascript:changePhase('revision')">revision</a>
+  <a class="subnavlink" id="prototype1" href="javascript:changePhase('prototype1')">prototype 1</a>
+  <a class="subnavlink" id="study1" href="javascript:changePhase('study1')">user study 1</a>
+  <a class="subnavlink" id="prototype2" href="javascript:changePhase('prototype2')">functional prototype</a>
+  <a class="subnavlink" id="study2" href="javascript:changePhase('study2')">user study 2</a>
+  <a class="subnavlink" id="presentation" href="javascript:changePhase('presentation')">research presentation</a>
+  <a class="subnavlink" id="paper" href="javascript:changePhase('paper')">research paper</a>
 </div>
 
 
@@ -75,7 +134,7 @@
 
 <div class="content_title">final project</div>
 
-<iframe class="googleDocIframe" target="_blank" style="height: 2782px;" src="https://docs.google.com/document/d/1Dum1NxoEEe2M-wEqldDquQYaPvAgFXwccgdJM8AjR5M/pub?embedded=true"></iframe>
+<iframe class="googleDocIframe" id="project_phase" target="_blank" style="height: 2782px;" src="https://docs.google.com/document/d/1Dum1NxoEEe2M-wEqldDquQYaPvAgFXwccgdJM8AjR5M/pub?embedded=true"></iframe>
 
 
 </div>

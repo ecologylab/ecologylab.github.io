@@ -454,6 +454,19 @@ left: 0px;*/
 	padding: 6px 10px 10px;
 	margin-bottom: 10px;
 }
+.taller_navigation
+{
+	position: static;
+	text-align: right;
+	float: right;
+	border-left: 5px solid #999999;
+	margin-left: 10px;
+	top: 10px;
+	right: 10px;
+	height: 675px;
+	padding: 6px 10px 10px;
+	margin-bottom: 10px;
+}
 a.nav_nowrap
 {
 	display: block;
@@ -824,6 +837,13 @@ H5
 	color: #546376;
 	font-weight: bold;
 }
+.sub_destination
+{
+	font-size: 13px; 
+	color: #647386;
+	font-weight: bold;
+}
+
 .source
 {
 	font-size: 13px;
@@ -1006,4 +1026,6 @@ H2.criteria
 	width: 578px;
 	height: 1000px;
 	border: none;
+	margin: 0px;
+	padding: 0px;
 }
