@@ -1,16 +1,25 @@
 Redirect 301 /zerotouch /research/zerotouch
 
-Redirect 301 /combinFormation /infocomposer
-Redirect 301 /combinformation /infocomposer
-Redirect 301 /infoComposer /infocomposer
-Redirect 301 /InfoComposer /infocomposer
-Redirect 301 /cf /infocomposer
-Redirect 301 /cF /infocomposer
+Redirect 301 /combinFormation http://ideamache.ecologylab.net
+Redirect 301 /combinformation http://ideamache.ecologylab.net
+Redirect 301 /infoComposer http://ideamache.ecologylab.net
+Redirect 301 /infoComposer http://ideamache.ecologylab.net
+Redirect 301 /infocomposer http://ideamache.ecologylab.net
+Redirect 301 /cf http://ideamache.ecologylab.net
+Redirect 301 /cF http://ideamache.ecologylab.net
+
+Redirect 301 /infocomposerArchive /infoComposer-5.1.19c
+
 
 Redirect 301 /research/simplGuide /research/simpl
-#Redirect 301 /simpl /research/simplGuide
 Redirect 301 /simpl /research/simpl
-Redirect 301 /metametadata /research/simplGuide/metaMetadata
+Redirect 301 /oodss /research/simpl
+Redirect 301 /mmd /research/bigsemantics
+Redirect 301 /metametadata /research/bigsemantics
+Redirect 301 /metaMetadata /research/bigsemantics
+Redirect 301 /MetaMetadata /research/bigsemantics
+Redirect 301 /bigsemantics /research/bigsemantics
+Redirect 301 /BigSemantics /research/bigsemantics
 Redirect 301 /MICE /research/bigsemantics/MICE
 Redirect 301 /ICE /research/bigsemantics/MICE
 Redirect 301 /MDC /research/bigsemantics/MICE
@@ -22,6 +31,7 @@ Redirect 301 /research/bigsemantics/ICE /research/bigsemantics/MICE
 Redirect 301 /TweetBubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbuble /research/bigsemantics/TweetBubble/index.html
+Redirect 301 /techReports /technicalReports
 
 Redirect 301 /tec /research/tec.html
 Redirect 301 /tteclog /research/tec.html
@@ -34,3 +44,15 @@ Redirect 301 /research/publications/cF-TOIS7-2.pdf /research/publications/combin
 Redirect 301 /research/publications/tochi-cf-2011.pdf /research/publications/a14-kerneInfoBasedIdeationToCHI.pdf
 Redirect 301 /research/publications/ecologyLab-IBI-tochi2014R5-1.pdf /research/publications/a14-kerneInfoBasedIdeationToCHI.pdf
 
+Redirect 301 /soc /summerofcode
+Redirect 301 /join /apply
+Redirect 301 /mmart /mmart2010
+Redirect 301 /sgve /workshops/sgve
+Redirect 301 /tgve /workshops/tgve
+Redirect 301 /ecology /
+Redirect 301 /simpl/serialization/shahzadThesisCrossPlatformMultiFormat.pdf /technicalReports/shahzadThesisCrossPlatformMultiFormat.pdf
+
+Redirect 301 /andruid /people/andruid
+Redirect 301 /andruidprev /people/andruid
+Redirect 301 /barbarakerne /mom
+Redirect 301 /ends101 /courses/ends101
