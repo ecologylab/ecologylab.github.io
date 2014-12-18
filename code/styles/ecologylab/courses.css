@@ -1029,3 +1029,15 @@ H2.criteria
 	margin: 0px;
 	padding: 0px;
 }
+.centered_image
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.course_icon2 {
+	float: right;
+	width: 72px;
+	margin-top: -41px;
+	padding-top: -48px;
+}

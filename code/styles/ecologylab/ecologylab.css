@@ -468,6 +468,32 @@ a.subnavselected
 	margin-bottom: 10px;
 	border: 1px solid #555555;
 }
+.course_icon {
+	float: left;
+	width: 72px;
+	margin-right: 10px; 
+	margin-top: 4px; 
+	margin-bottom: 12px;
+	clear: left;
+}
+.course_years 
+{
+	font-weight: bold;
+	color: #555555;
+	margin-bottom: 5px; 
+	padding-bottom: 2px; 
+	font-size: 18px;
+}
+.centered_image
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.course_entry
+{
+	clear: left;
+}
 .caption_left {
 	float: left;
 	margin-right: 30px; 
