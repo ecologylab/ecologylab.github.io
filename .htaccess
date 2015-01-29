@@ -7,6 +7,7 @@ Redirect 301 /infoComposer http://ideamache.ecologylab.net
 Redirect 301 /infocomposer http://ideamache.ecologylab.net
 Redirect 301 /cf http://ideamache.ecologylab.net
 Redirect 301 /cF http://ideamache.ecologylab.net
+Redirect 301 /ideamache http://ideamache.ecologylab.net
 
 Redirect 301 /infocomposerArchive /infoComposer-5.1.19c
 
