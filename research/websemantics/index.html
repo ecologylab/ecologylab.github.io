@@ -40,13 +40,13 @@
 	<div class="subblock">
 		<a class="navselected" href="../index.html">research</a>
 		<a class="subnavlink" href="../sensoryInterfaces.html">embodied interfaces</a>
+		<a class="subnavlink" href="../informationBasedIdeation.html">information-based ideation</a>
 		<a class="subnavlink" href="../informationComposition.html">information composition</a>
-		<a class="subnavlink" href="../informationBasedIdeation.html">information based ideation</a>
 		<a class="subnavlink" href="../transSurfaceInteraction.html">trans surface interaction</a>
 		<a class="subnavlink" href="../bigsemantics/index.html">big semantics</a>
 		<a class="subnavlink" href="../bigsemantics/TweetBubble/index.html">tweet bubble</a>
-		<a class="subnavlink" href="../zerotouch/index.html">zero touch</a>
     <!--
+		<a class="subnavlink" href="../zerotouch/index.html">zero touch</a>
 		<a class="subnavlink" href="../ecosystemsApproach.html">interface ecology</a>
     -->
 	</div>
@@ -55,11 +55,13 @@
 <a class="navlink" href="../../people/index.html">people</a>
 <a class="navlink" href="../../courses/index.html">courses</a>
 <a class="navlink" href="../../workshops/index.html">workshops</a> 
+<!--
 <a class="navlink" href="../../summerofcode/index.html">summer of code</a>
 
 <div class="block">
 		<a class="nav_nowrap" target="_blank" href="http://ecologylab.tumblr.com/">blog</a>
 </div>
+-->
 
 <div class="subblock">
 			<a class="nav_nowrap" target="_blank"
@@ -71,24 +73,21 @@
 <div class="content">
 
 <p class="main" style="line-height: 150%;">
-By <b>web semantics</b>, we refer to 
+We define <b>web semantics</b> as
 significant attributes, descriptions, representations, and relationships, of
-found object people encounter and use on the web. Examples of web semantics
-include the gist of a news report, price of a product, reviews of a book, and
-portrait of a friend.
+digital found objects people encounter and use on the web.
+These semantics provide valuable contextual information, allowing
+users to make sense of and act on digital found objects on the web.
+For example, scholars often rely on semantics for a scholarly article, such as its author
+list, publication venue, references, and citations, to
+assess how important it is and whether to read the full text.
+For another example, semantics for e-business products can involve not only
+product price, brand, specs, and pictures, but also reviews, previous buyers,
+and related products, to help shoppers make purchasing decisions.
 </p>
-  
-<p class="main" style="line-height: 150%;">
-Web semantics provide essential and valuable contextual information, allowing
-users to make sense of, assess, act on, and make decisions about underlying
-entities. For example, semantics for a scholarly article, including the author
-list, publication venue, references, and citations, are all essential for its
-readers to assess how important the work is and understand how it connects to
-the field. In another example, a user shopping online looks at semantics of a
-product, which can include not only its price, brand, specs, and pictures, but
-also reviews, related products, and feeds from the user's social networks, to
-make the purchasing decision.
 
+<!--
+<p class="main" style="line-height: 150%;">
 Web semantics are especially important when users need to relate, compare, and
 synthesize across multiple objects from different sources, for example, in <a href="#"
 class="destination">curation</a>. Without contextual web semantics, users will
@@ -96,54 +95,68 @@ have to view information from different sources in separate browser windows, and
 keep track of linked information with limited working memory, which results in
 problems of getting lost and distracted.
 </p>
+-->
   
 <p class="main" style="line-height: 150%;">
-Web semantics can take various structures, formally defined by <b>data
-models</b>, and countless <b>presentations</b>, such as lists, tables, maps,
-and templated web pages. This makes it difficult for computer applications to
-obtain and use valuable web semantics. Prior approaches, such as the Semantic
-Web and microdata, rely on websites to actively provide and maintain semantics,
-and have not been widely used. Facebook's Open Graph and Twitter's Cards are
-supported by many websites, but only address limited categories of web
-semantics.
+Web semantics can take various <b>data models</b> and <b>presentation</b> forms.
+This makes it difficult for computer applications to obtain and use valuable web semantics.
+Prior approaches, such as the Semantic Web and microdata,
+rely on websites to actively provide and maintain semantics,
+and have not been widely used.
+Facebook's Open Graph and Twitter's Cards use meta-tags to embed semantics in
+HTML web pages, and are used by many websites.
+However, they only address a limited set of semantic categories.
 </p>
 
 <p class="main" style="line-height: 150%;">
-The Interface Ecology Lab conducts research in various areas involving web
-semantics. We developed practical method for deriving image-text clippings as
+At the Interface Ecology Lab,
+we develop technologies for and conduct research on web semantics:
+
+<ul>
+<li>
+We developed practical method for deriving image-text clippings as
 surrogates of web pages, to provide contextual semantics more than the page
 title.
-
+</li>
+<li>
 We built <a href="../bigsemantics/index.html" class="destination">BigSemantics</a>,
 an open source architecture, language, and software library, for representing,
-extracting, and presenting web semantics.  With BigSemantics, developers can
-author wrappers, using the meta-metadata language, to define and reuse data
-models for different types of web semantics, and specify presentation semantics
-to display web semantics in usable forms.
-
+extracting, and presenting web semantics.
+With BigSemantics, developers can author wrappers, using the <i>meta-metadata
+language</i>, to define and reuse data models for different types of web semantics,
+and specify presentation semantics to display web semantics in usable forms.
 BigSemantics comes with a non-trivial <a
 href="https://github.com/ecologylab/BigSemanticsWrapperRepository/wiki"
 class="destination" target="_blank">repository of wrappers</a>, addressing <a
-href="http://ecology-service.cse.tamu.edu/domain_type_examples.html"
+href="http://api.ecologylab.net/domain_type_examples.html"
 class="destination" target="_blank">popular websites and common use cases</a>
 involving searches, products, digital libraries, creative work, and social
 media.
-
+</li>
+<li>
 The <a href="https://github.com/ecologylab/BigSemanticsService/wiki"
-class="destination" target="_blank">BigSemantics Service</a> supports
-acquisition and storage of web semantics in web scale with a distributed
-processing architecture.
-
+class="destination" target="_blank">BigSemantics Service</a> makes accessing web
+semantics from cloud, mobile, and desktop applications as easy as making a HTTP
+request.
+Its distributed architecture significantly scales web semantics extraction and storage up.
+</li>
+<li>
+We use web semantics to transform our experiences with the web, by gathering
+information from different sources and objects into one context.
 An example web application, the <a href="http://ecologylab.net/mice"
 class="destination" target="_blank">Metadata In-Context Explorer (MICE)</a>,
-shows how BigSemantics supports <b>exploratory browsing</b>, a paradigm that
-allows users to serendipitously encounter diverse and novel information in the
-same context.
+shows the paradigm of <b>exploratory browsing</b>, which allows users to
+serendipitously encounter diverse and novel information while maintaining the
+sense of goals and whereabouts.
+</li>
+</ul>
 
-BigSemantics has been used by <a href="http://ideamache.ecologylab.net"
+<p class="main" style="line-height: 150%;">
+Our technologies, including BigSemantics, has been used by <a href="http://ideamache.ecologylab.net"
 class="destination" target="_blank">IdeaM&Acirc;CH&Eacute;</a>,
 embodiedM&Acirc;CH&Eacute;, and <a href="../bigsemantics/TweetBubble/index.html"
-class="destination">TweetBubble</a> to provide valuable contextual web semantics.
+class="destination">TweetBubble</a> to provide valuable contextual web semantics
+for curation and browsing.
 </p>
 
 
