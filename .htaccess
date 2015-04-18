@@ -11,6 +11,12 @@ Redirect 301 /ideamache http://ideamache.ecologylab.net
 
 Redirect 301 /infocomposerArchive /infoComposer-5.1.19c
 
+Redirect 301 /artchi /research/artchi
+Redirect 301 /Artchi /research/Artchi
+Redirect 301 /artCHI /research/artCHI
+Redirect 301 /ArtCHI /research/ArtCHI
+Redirect 301 /art.chi /research/art.chi
+Redirect 301 /Art.CHI /research/Art.CHI
 
 Redirect 301 /research/simplGuide /research/simpl
 Redirect 301 /simpl /research/simpl
