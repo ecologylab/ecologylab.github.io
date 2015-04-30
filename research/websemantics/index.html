@@ -75,42 +75,32 @@
 <p class="main" style="line-height: 150%;">
 We define <b>web semantics</b> as
 significant attributes, descriptions, representations, and relationships, of
-digital found objects people encounter and use on the web.
-These semantics provide valuable contextual information, allowing
-users to make sense of and act on digital found objects on the web.
-For example, scholars often rely on semantics for a scholarly article, such as its author
-list, publication venue, references, and citations, to
-assess how important it is and whether to read the full text.
-For another example, semantics for e-business products can involve not only
-product price, brand, specs, and pictures, but also reviews, previous buyers,
-and related products, to help shoppers make purchasing decisions.
+digital objects people find on the web.
+Web semantics provide valuable <b>contextual information</b>,
+allowing people to make sense of and act on found objects.
+A common example is product semantics, including
+price, brand, seller, specs, pictures, reviews, and related products,
+describing items for sale on many e-commerce websites.
+These semantics are essential for shoppers to assess if a product meets their
+needs, compare choices, and make purchasing decisions.
 </p>
 
-<!--
 <p class="main" style="line-height: 150%;">
-Web semantics are especially important when users need to relate, compare, and
-synthesize across multiple objects from different sources, for example, in <a href="#"
-class="destination">curation</a>. Without contextual web semantics, users will
-have to view information from different sources in separate browser windows, and
-keep track of linked information with limited working memory, which results in
-problems of getting lost and distracted.
+<b>Explorable web semantics</b> contain links to related information, which
+enables serendipitous discoveries.
+This is critical in many important human activities.
+For instance, in scholarly research, semantics for an article, such as
+its authorship, publication year, venue, references, and citations,
+help researchers assess its relevance, trace back to its origin, find follow-up
+and other related work which can be previously unknown,
+sustaining knowledge creation and accumulation across time and space.
 </p>
--->
   
 <p class="main" style="line-height: 150%;">
-Web semantics can take various <b>data models</b> and <b>presentation</b> forms.
-This makes it difficult for computer applications to obtain and use valuable web semantics.
-Prior approaches, such as the Semantic Web and microdata,
-rely on websites to actively provide and maintain semantics,
-and have not been widely used.
-Facebook's Open Graph and Twitter's Cards use meta-tags to embed semantics in
-HTML web pages, and are used by many websites.
-However, they only address a limited set of semantic categories.
+At the Interface Ecology Lab, we develop technologies for working with
+explorable web semantics, and conduct research on how to use web semantics to
+support interesting and important human activities:
 </p>
-
-<p class="main" style="line-height: 150%;">
-At the Interface Ecology Lab,
-we develop technologies for and conduct research on web semantics:
 
 <ul>
 <li>
@@ -118,45 +108,53 @@ We developed practical method for deriving image-text clippings as
 surrogates of web pages, to provide contextual semantics more than the page
 title.
 </li>
+
 <li>
-We built <a href="../bigsemantics/index.html" class="destination">BigSemantics</a>,
-an open source architecture, language, and software library, for representing,
-extracting, and presenting web semantics.
-With BigSemantics, developers can author wrappers, using the <i>meta-metadata
-language</i>, to define and reuse data models for different types of web semantics,
-and specify presentation semantics to display web semantics in usable forms.
+We built <a href="../bigsemantics/index.html" class="destination"
+target="_blank">BigSemantics</a>,
+an open source architecture, language, and library, for representing,
+extracting, and presenting web semantics of various forms.
+
+With BigSemantics, developers can author wrappers,
+using the <i>meta-metadata language</i>,
+to define reusable <b>semantic data models</b>,
+specify <b>rules for extracting semantics</b> from regular webpages,
+and use <b>presentation semantics</b> to guide how information will be
+visualized to end users.
+
 BigSemantics comes with a non-trivial <a
 href="https://github.com/ecologylab/BigSemanticsWrapperRepository/wiki"
 class="destination" target="_blank">repository of wrappers</a>, addressing <a
-href="http://api.ecologylab.net/domain_type_examples.html"
+href="http://api.ecologylab.net/static/bsjs/mmdOntoVis/domain_type_examples.html"
 class="destination" target="_blank">popular websites and common use cases</a>
 involving searches, products, digital libraries, creative work, and social
 media.
 </li>
+
 <li>
-The <a href="https://github.com/ecologylab/BigSemanticsService/wiki"
-class="destination" target="_blank">BigSemantics Service</a> makes accessing web
-semantics from cloud, mobile, and desktop applications as easy as making a HTTP
-request.
-Its distributed architecture significantly scales web semantics extraction and storage up.
+We host the <a href="https://github.com/ecologylab/BigSemanticsService/wiki"
+class="destination" target="_blank">BigSemantics Service</a>,
+which makes accessing web semantics from cloud, mobile, and desktop applications
+as easy as making a HTTP request.
 </li>
+
 <li>
-We use web semantics to transform our experiences with the web, by gathering
-information from different sources and objects into one context.
+We are working on <b>dynamic exploratory browsing interfaces</b> which transform
+web experience through explorable web semantics.
 An example web application, the <a href="http://ecologylab.net/mice"
 class="destination" target="_blank">Metadata In-Context Explorer (MICE)</a>,
-shows the paradigm of <b>exploratory browsing</b>, which allows users to
-serendipitously encounter diverse and novel information while maintaining the
-sense of goals and whereabouts.
+allows users to serendipitously encounter new information in the same context,
+while maintaining the sense of goals and whereabouts in the navigation process.
 </li>
 </ul>
 
 <p class="main" style="line-height: 150%;">
-Our technologies, including BigSemantics, has been used by <a href="http://ideamache.ecologylab.net"
-class="destination" target="_blank">IdeaM&Acirc;CH&Eacute;</a>,
-embodiedM&Acirc;CH&Eacute;, and <a href="../bigsemantics/TweetBubble/index.html"
-class="destination">TweetBubble</a> to provide valuable contextual web semantics
-for curation and browsing.
+Our technologies, including BigSemantics, has been used by <a
+href="https://ideamache.ecologylab.net" class="destination"
+target="_blank">IdeaM&Acirc;CH&Eacute;</a>, embodiedM&Acirc;CH&Eacute;, and <a
+href="../bigsemantics/TweetBubble/index.html"
+class="destination">TweetBubble</a> to provide valuable contextual web
+semantics for curation and browsing.
 </p>
 
 
