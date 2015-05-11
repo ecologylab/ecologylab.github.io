@@ -203,7 +203,7 @@ h3
 	color: #555555;
 	color: #227358;
 	color: #18513e;
-	color: #1D4E3C;
+	color: #1D4E3C;	
 }
 .title2
 {
@@ -259,6 +259,11 @@ h3
 	font-weight: bold;
 	color: #526178;
 }
+.title, .title2, .title2a, .title3, .title4, .title5
+{
+	margin-right: 274px;
+}
+
 .logo
 {
 	float: right;
