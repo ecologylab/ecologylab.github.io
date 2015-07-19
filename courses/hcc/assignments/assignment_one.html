@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>assignment one [human centered systems]</title>
+<title> experience breakdown [human-centered systems]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!--
 <link href="../../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
 </script>
 
 </head>
@@ -69,137 +70,26 @@
 </div>
 
 <div class="content_title">assignment one:<br/>
- interaction design breakdown</div>
+ experience breakdown</div>
 
 <div class="content">
 
-<iframe class="googleDocIframe" target="_blank" style="height: 2000px;" src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe>
+<iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"
+ src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe>
 
-<!--
-<blockquote style="margin-top: 8px;">
-<tt>
-<i>breakdown</i> - The interrupted moment of our habitual, standard, comfortable 'being-in-the-world.' 
-Breakdowns serve an extremely important cognitive function, revealing to us the nature of our practices and equipment...
-New design can be created and implemented ... in the space that emerges in the recurrent structure of breakdown.
-A design constitute an interpretation of breakdown and a committed attempt to anticipate future breakdowns.
-<div style="text-align:right">
--- Winograd &amp; Flores, <i>Understanding Computers and Cognition</i>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $.get("https://docs.google.com/document/d/1Kpb8AQr-VAhVfzLGO7vlC_oOMlA6fZEBcyeTwlHnZHs/pub?embedded=true", function(html) {
+            $("#google-doc-iframe").attr("srcdoc", html);
+            setTimeout(function() {
+                $("#google-doc-iframe").contents().find('a[href^="http://"]').attr("target", "_blank");
+                $("#google-doc-iframe").contents().find('a[href^="https://"]').attr("target", "_blank");
+            }, 1000);
+        });
+    });
+    </script>
 </div>
-</tt>
-</blockquote>
-
-<p>
-This assignment addresses design problems in an interactive environment,
-such as a system, device, or service. 
-You will present your results as 3 slides +
-a quick 3 minute talk in class.
-</p>
-
-<h2 style="padding-top: 14px;">turning in slides</h2>
-<p>
-You must export and submit your slides as a <b>.PDF</b> to <a href="https://csnet.cs.tamu.edu" class="destination" target="_blank">CSNET</a> by 1/20 at 11:59pm.
-You will be presenting with a 1024x768 projector.
-Be sure to show your full name on the first and last slide. 
-</p>
-
-
-<h2 style="padding-top: 14px;">identify breakdowns</h2>
-<p style="margin-bottom: 10px;">
-Identify an interactive environment in which you have experienced breakdowns. 
-Explain how the design
-that was implemented is disconnected to your experience of functioning in the world. 
-Be extremely clear in the language you use to describe the shortcoming(s).
-Articulate design problems in terms of principles from the readings, such as
-
-<ul style="margin-top: 0px; margin-bottom: 2px;">
-  <li>making visible</li>
-  <li>affordances</li>
-  <li>constraints</li>
-  <li>conceptual models</li>
-  <li>usability</li>
-  <li>mappings</li>
-  <li>feedback</li>
-  <li>consistency</li>
-</ul>
-You can also address other criteria, such as "delightful," "fun," "enjoyable,"
-if you wish,
-but don't let these be the prinicpal criteria of your critique on
-this occassion.
-</p>
-<p>
-</p>
-<p>
-The interactive environment that you identify interaction design breakdowns in can be constituted by an information appliance,  
-a software application (like a game or a word processor), a web site, a service
-or anything else that fits (If you have a question about what fits,
-ask me.). Do not use Norman's examples (doors, office phones, stove, ...).
-Also avoid super-commonplace examples, such as ceiling fans and showers.
-If (and only if) your problem device is not familiar to everyone,
-include a brief description of what it does in your presentation.
-</p>
-
-<p>
-The shortcoming(s) that you identify need to be aspects of interaction
-design. Examples include unclear state, unclear indication of what is possible
-to do or what the effects of particular controls are (affordance design), 
-and unclear mappings. You need to translate these to real world tasks and
-activities, such as being unable to accomplish specific goals.
-Problems like system crashes, or hardware malfunctions are not
-interaction design shortcomings.
-</p>
-
-<p>
-Use the last slide to suggest alternative designs. 
-The alternatives may be other products that already exist, or ideas.
-</p>
-
-<p>
-Consider the design of your slides and your presentation.
-Communicate clearly. Design the slides and your oral presentation to
-complement each other, rather than 
-to simply repeat the same information.
-Develop slides that visually support what you will be saying.
-Be thoughtful about how you make and use your slides. Don't just read them!
-</p>
-
-<p>
-If it is portable, you may choose to bring the device, but realize that
-you probably won't have time for much of a demo.
-</p>
-
-<p>
-Your presentation will be strictly limited to 3 minutes.
-You must spend exactly one minute per slide. The timing of the slides will be automatically enforced.
-</p>
-
-<p>
-<h2 style="padding-top: 14px;">grading rubric</h2>
-You will be graded based on the following criteria:
-<ul>
-
-
-	<li>Is it an Interaction Design Breakdown? Engagement-factor</li>
-	<li>Clear Description of What Makes it a Breakdown</li>
-	<li>Use of Principles from the Readings in Articulation of Breakdown</li>
-	<li>Alternative Design Ideas</li>
-	<li>Visual Presentation of Slides</li>
-	<li>Oral Presentation</li>
-</ul> 
-</p>
-
-<br/>
-<br/>
-<p style="font-size 10px;">
-References<br/>
-Winograd, T., Usability Breakdown, http://www.stanford.edu/class/cs147/2003/hw/hw1.html.
-
-</div>
-<div class="credits">
-an <a href="../../../">interface ecology lab</a> production
-</div>
--->
-
-
 </div>
 </body> </html>
 
