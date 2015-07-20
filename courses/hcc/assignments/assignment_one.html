@@ -22,6 +22,15 @@
   })();
   
 </script>
+ <script>
+ function fixTargets(f)
+{
+	alert("hi " + f);
+	//var ifr	= document.getElementById("google-doc-iframe");
+	alert(f.evaluate("//body"))
+}
+
+ </script>
 
 </head>
 
@@ -44,8 +53,8 @@
 
 <div class="block">
   <a class="subnavtitle" href="index.html">assignments</a>
-  <a class="navselected" href="assignment_one.html">assignment one</a>
-  <a class="subnavlink" href="assignment_two.html">assignment two</a>
+  <a class="navselected" href="assignment_one.html">experience breakdown</a>
+  <a class="subnavlink" href="assignment_two.html">shopping support</a>
   <a class="subnavlink" href="finalProject.html">final project</a>
 </div>
 
@@ -74,23 +83,41 @@
 
 <div class="content">
 
-<iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"
- src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe>
+<!-- <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"
+ src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe> -->
+ 
+ <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"  aonload="this.fixTargets(this)"
+ src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true">
+ <script>
+ function fixTargets(f)
+{
+	alert("hi " + f);
+	var ifr	= document.getElementById("google-doc-iframe");
+}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ </script>
+ </iframe>
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
     $(function() {
-        $.get("https://docs.google.com/document/d/1Kpb8AQr-VAhVfzLGO7vlC_oOMlA6fZEBcyeTwlHnZHs/pub?embedded=true", function(html) {
+        $.get(document.getElementById("google-doc-iframe").src, function(html) {
             $("#google-doc-iframe").attr("srcdoc", html);
             setTimeout(function() {
-                $("#google-doc-iframe").contents().find('a[href^="http://"]').attr("target", "_blank");
-                $("#google-doc-iframe").contents().find('a[href^="https://"]').attr("target", "_blank");
+                $("#google-doc-iframe").contents().find('a[href^="http"]').attr("target", "_blank");
             }, 1000);
         });
     });
+->
+<script> 
+	
+</script>
     </script>
+
 </div>
+
 </div>
-</body> </html>
+</body>
+</html>
 
 
