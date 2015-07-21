@@ -1,9 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>user study 1 [human-centered computing]</title>
+<title> experience breakdown [human-centered systems]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--
 <link href="../../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+-->
 <link href="../../../code/styles/ecologylab/courses.css" rel="stylesheet">
 <link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
@@ -18,10 +20,18 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
 </script>
+ <script>
+ function fixTargets(f)
+{
+	alert("hi " + f);
+	//var ifr	= document.getElementById("google-doc-iframe");
+	alert(f.document.evaluate("//body"))
+}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="../../../code/js/fixGDocTargets.js"></script>
+ </script>
+
 </head>
 
 <body>
@@ -34,7 +44,7 @@
   <img class="courseLogo" src="../../../images/hcc_logo.png" />
 </div>
 
-<div class="taller_navigation2">
+<div class="navigation">
 <div class="block">
   <a class="navlink" href="../index.html">welcome</a>
   <a class="navlink" href="../policies.html">policies</a>
@@ -42,18 +52,10 @@
 </div>
 
 <div class="block">
-  <a class="sectionlink" href="index.html">assignments</a>
-  <a class="subnavlink" href="assignment_one.html">experience breakdown</a>
-  <a class="subnavlink" href="assignment_two.html">shopping support</a>
- <a class="subnavtitle" href="finalProject.html">final project</a>
-  <a class="subnavlink" href="proposal.html">proposal</a>
-  <a class="subnavlink" href="refinement.html">refinement</a>
-  <a class="subnavlink" href="story.html">lightweight prototype</a>
-  <a class="navselected" href="study1.html">user study 1</a>
-  <a class="subnavlink" href="functionalPrototype.html">functional prototype</a>
-  <a class="subnavlink" href="study2.html">user study 2</a>
-  <a class="subnavlink" href="presentation.html">presentation</a>
-  <a class="subnavlink" href="paper.html">paper</a>
+  <a class="subnavtitle" href="index.html">assignments</a>
+  <a class="navselected" href="assignment_one.html">assignment one</a>
+  <a class="subnavlink" href="assignment_two.html">assignment two</a>
+  <a class="subnavlink" href="finalProject.html">final project</a>
 </div>
 
 <div class="block">
@@ -69,20 +71,53 @@
 </div>
 
 <div class="block">	
-	<a class="navlink_logo_footer" target="_blank" href="../../../research/index.html"><img class="navicon_footer" width="70" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
-	<a class="navlink_logo_footer" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon_footer" width="66" src="../../../images/ideamache_logo+name_black.png"/></a>
+	<a class="navlink_logo" target="_blank" href="../../../research/index.html"><img class="navicon" width="70" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+	<a class="navlink_logo" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon" width="66" src="../../../images/ideamache_logo+name_black.png"/></a>
 	<a class="nav_nowrap" target="_blank"   href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
 </div>
+
 </div>
 
-<div class="content_title">user study 1:<br/> lightweight prototype evaluation</div>
+<div class="content_title">assignment one:<br/>
+ experience breakdown</div>
 
 <div class="content">
 
-<iframe class="googleDocIframe" target="_blank" style="height: 2800px;" src="https://docs.google.com/document/d/10smfJE5-T5SS-vWoY--SsvvIKw8ln1xXnJFnOoXp7jk/pub?embedded=true"></iframe>
+<!-- <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"
+ src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe> -->
+ 
+ <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"  onload="document.getElementById('google-doc-iframe').contentWindow.fixTargets(this)"
+ src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true">
+ <script>
+ function fixTargets(f)
+{
+	alert("hi " + f);
+	var ifr	= document.getElementById("google-doc-iframe");
+}
 
+ </script>
+ </iframe>
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $.get(document.getElementById("google-doc-iframe").src, function(html) {
+            $("#google-doc-iframe").attr("srcdoc", html);
+            setTimeout(function() {
+                $("#google-doc-iframe").contents().find('a[href^="http"]').attr("target", "_blank");
+            }, 1000);
+        });
+    });
+->
+<script> 
+	
+</script>
+    </script>
 
 </div>
 
+</div>
 </body>
 </html>
+
+
