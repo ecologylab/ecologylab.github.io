@@ -154,15 +154,15 @@ span.banner1
 /*"structures of"*/
 	position: absolute;
 	right: 520px;
-	top: -5px;
+	top: -3px;
 	font-size: 20px;
 }
 span.banner2
 {
 /*"interactive"*/
 	position: absolute;
-	top: 0px;
-	left: 300px;
+	top: -11px;
+	left: 223px;
 	font-size: 53px;
 /*font-weight: bold;*/
 	color: #666666;
@@ -171,7 +171,7 @@ span.banner3
 {
 /*"information"*/
 	position: absolute;
-	bottom: -25px;
+	bottom: -23px;
 	left: 105px;
 	font-size: 80px;
 	font-weight: bold;
