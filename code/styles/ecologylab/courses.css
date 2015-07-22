@@ -507,7 +507,7 @@ a.nav_nowrap
 }
 
 
-A.top_navlink
+a.top_navlink
 {
 	display: block;
 	margin-right: 10px;
@@ -545,15 +545,16 @@ A.top_navlink
 	width: 100%;
 }
 
-A.navlink
+a.navlink
 {
 	display: block;
 	margin-right: 10px;
 	margin-top: 5px;
 	text-align: right;
 	color: #C40000;
+	font-weight: normal;
 }
-A.spaced_navlink
+a.spaced_navlink
 {
 	display: block;
 	margin-right: 10px;
@@ -561,7 +562,7 @@ A.spaced_navlink
 	text-align: right;
 	color: #C40000;
 }
-A.sectionlink
+a.sectionlink
 {
 	display: block;
 	margin-right: 10px;
@@ -570,7 +571,7 @@ A.sectionlink
 	font-weight: bold;
 	color: #C40000;
 }
-A.sectionselected
+a.sectionselected
 {
 	display: block;
 	margin-right: 10px;
@@ -579,7 +580,7 @@ A.sectionselected
 	font-weight: bold;
 	color: #999999;
 }
-A.navselected
+a.navselected
 {
 	display: block;
 	margin-right: 10px;
@@ -587,7 +588,7 @@ A.navselected
 	text-align: right;
 	color: #999999;
 }
-A.navlink:hover
+a.navlink:hover
 {
 	font-weight: bold;
 	color: #C40000;
@@ -611,12 +612,12 @@ A.navlink:hover
 	border: 0px;
 }
 
-A.top_navlink:hover
+a.top_navlink:hover
 {
 	font-weight: bold;
 	color: #C40000;
 }
-A.subnavlink
+a.subnavlink
 {
 	display: block;
 	margin-right: 10px;
@@ -624,7 +625,7 @@ A.subnavlink
 	text-align: right;
 	color: #CC7777;
 }
-A.subnavselected
+a.subnavselected
 {
 	display: block;
 	margin-right: 10px;
@@ -661,7 +662,7 @@ A.subnavselected
 	font-weight: bold;
 	color: #C40000;
 }
-A.subnavlink:hover
+a.subnavlink:hover
 {
 	font-weight: bold;
 	color: #C40000;
@@ -939,7 +940,7 @@ SELECT
 {
 	font-size: 11px;
 }
-A.reserve
+a.reserve
 {
 	font-size: 11px;
 	color: #0F2399;
@@ -947,16 +948,16 @@ A.reserve
 	color: #0C0A66;
 	color: #0A1E66;
 }
-A.destination
+a.destination
 {
 	color: #0C0A66;
 	color: #0A1E66;
 }
-A.destination:hover
+a.destination:hover
 {
 	color: #C40000;
 }
-A.ecologylab
+a.ecologylab
 {
 	display: block;
 	margin-right: 10px;
@@ -965,7 +966,7 @@ A.ecologylab
 	font-weight: bold;
 	color: #01477e;
 }
-A.ecologylab:hover
+a.ecologylab:hover
 {
 	color: #C40000;
 }
