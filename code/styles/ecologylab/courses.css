@@ -1029,6 +1029,7 @@ H2.criteria
 	border: none;
 	margin: 0px;
 	padding: 0px;
+	border-width: 0px;
 }
 .centered_image
 {
