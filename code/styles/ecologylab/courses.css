@@ -149,23 +149,38 @@ UL
 	padding-bottom: 4px;
 /*background-color: #00ff00;*/
 }
-SPAN.banner1
+span.banner1
 {
 /*"structures of"*/
 	position: absolute;
-	right: 250px;
-	top: 10px;
+	right: 520px;
+	top: -5px;
 	font-size: 20px;
 }
-SPAN.banner2
+span.banner2
 {
 /*"interactive"*/
 	position: absolute;
 	top: 0px;
-	right: -3px;
+	left: 300px;
 	font-size: 53px;
 /*font-weight: bold;*/
 	color: #666666;
+}
+span.banner3
+{
+/*"information"*/
+	position: absolute;
+	bottom: -25px;
+	left: 105px;
+	font-size: 80px;
+	font-weight: bold;
+	color: #999999;
+}
+.sii_logo
+{
+	padding: 0px;
+	margin-top:3px;
 }
 .banner_social_media
 {
@@ -224,17 +239,7 @@ SPAN.systems
 	font-size: 19px;
 	color: #333333;
 }
-SPAN.banner3
-{
-/*"information"*/
-	position: absolute;
-	bottom: -25px;
-	right: -6px;
-	font-size: 80px;
-	font-weight: bold;
-	color: #999999;
-}
-SPAN.banner4
+span.banner4
 {
 /*"human"*/
 	position: absolute;
@@ -264,13 +269,6 @@ SPAN.banner_sensory
 	font-weight: bold;
 	font-size: 66px;
 	color: #888888;
-}
-.studio_logo
-{
-	width: 72px;
-	height: 72px;
-	padding: 4px;
-	margin-top:4px;
 }
 SPAN.banner_sensory_interfaces
 {
