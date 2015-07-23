@@ -535,6 +535,12 @@ a.top_navlink
 	padding: 0px;
 	width: 100%;
 }
+.el
+{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	clear: left;
+}
 .section
 {
 	float: left;
