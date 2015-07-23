@@ -27,7 +27,6 @@ h3
 </style>
 
 <script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
  function CodeHighlightOn(elem, id)
  {
    var target = document.getElementById(id);
@@ -46,7 +45,6 @@ h3
    if(elem.cacheClassTarget)
      target.className = elem.cacheClassTarget;
  }
-/*]]>*///-->
 </script>
 <body>
 <div  class="widecontainer">
@@ -56,7 +54,7 @@ h3
   <img class="studio_logo" src="../images/palette72.png" />
 </div>
 
-<div class="navigation">
+<div class="navigation" style="height:440px;">
 <div class="block">
   <a class="navlink" href="../index.html">welcome</a>
   <a class="navlink" href="../policies.html">policies</a>
@@ -69,6 +67,7 @@ h3
 <a class="subnavtitle" href="index.html">assignments</a>
 <a class="subnavlink" href="individual1.html">individual</a>
 <a class="navselected" target="_blank" href="team1.html">team 1: rdbms</a>
+<a class="subnavlink" target="_blank" href="https://docs.google.com/document/d/187NokR-hFrJIfcoUGKmY0hIjT9iMJpOtQUEcyDtSB7k/edit?usp=sharing">team 2:<br/>multiplayer game</a>
 </div>
 
 <div class="block_ecologylab">
@@ -78,8 +77,8 @@ h3
 </div>
 
 <div class="block">	
-	<a class="navlink_logo_footer" target="_blank" href="../../../research/index.html"><img class="navicon_footer" width="70" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
-	<a class="navlink_logo_footer" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon_footer" width="66" src="../../../images/ideamache_logo+name_black.png"/></a>
+	<a class="navlink_logo" target="_blank" href="../../../research/index.html"><img class="navicon" width="70" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+	<a class="navlink_logo" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon" width="66" src="../../../images/ideamache_logo+name_black.png"/></a>
 	<a class="nav_nowrap" target="_blank"   href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
 </div>
 
@@ -93,9 +92,6 @@ h3
 
 <div id="outline-container-0.0" class="outline-3"> 
 <h3>Overview of Deliverables</h3>
-<p>
-See below for details of
-what you need to submit for each.
 </p>
 <ol>
 <li> Design documents for Phases I and II (2/4)
@@ -133,9 +129,9 @@ what you need to submit for each.
 	</li><li> DB app code: will be a mixture of C++ code (menu output, user input, etc.) + DML/query language code (called within the C++ code). <br/>
 	Users of the DB app will not have direct access to the DML/query language.
 	</li>
-	<li> <a class="destination" target="_blank" href="http://students.cse.tamu.edu/aalap/CSCE315_s12/sample_inputs/parser_milestone_good_inputs.txt">Test inputs for DBMS.</a> 
+	<li> <a class="destination" target="_blank" href="parser_milestone_good_inputs.txt">Test inputs for DBMS.</a> 
 	</li>
-	<li> You should <b>not</b> assume that blank space is inserted between all tokens.
+	<li> Do <b>not</b> assume that blank space is inserted between all tokens.
 	Example:
 	<div style="font-family:monospace; margin-top:5px;">
 	kind=="dog"&&name=="hobbes" (instead of kind == "dog" && name == "hobbes")
@@ -143,7 +139,7 @@ what you need to submit for each.
 	</li>
 	<li> Coding style and commenting will be taken into account.
 	</li>
-	<li> Read the "Deliverables" section carefully. For example, example output is required.</li>
+	<li> Read the "Requirements for Deliverables" section carefully. For example, example output is required.</li>
 	<li><b>Team configuration:</b>
 	This project is a team project.
 Ideal team size is four. 
@@ -418,21 +414,37 @@ EXIT;
 <p>
 Note that we made a distinction between queries and commands in the grammar of the DML.
 The result of a query is a <i>view</i>. A view is
-not stored in the database. Rather, it is a temporary relation whose lifetime
-ends when a DML program finishes. So only the updates caused by the
+not stored in the database. Rather, it is a temporary relation, whose lifetime
+ends when a DML program finishes. Only  updates caused by 
 commands persist from one DML program execution to another.
 </p>
 <p>
-The relations themselves should be saved in a file in plain ASCII text (<b>DO NOT use binary</b>), using the
-same DML described above (e.g., CREATE ... INSERT ... INSERT .... ). To make it simple, let us assume that each database file can only store one relation and the filename is the same as the relation name with the suffix ".db". To load a relation from a database file, use the OPEN command. Opening a nonexisting file will result in nothing. To create a new relation file, use the WRITE command (the filename will be by default "relationname.db"). To save all changes to the relation in a database file and close, use the CLOSE command. 
-</p>
-<p>
-To exit from the DML interpreter, use the EXIT command.
-</p>
-<p>
-To print a certain relation or a view, use the SHOW command.
-</p>
-
+The relations, themselves, should be saved in a file in plain ASCII text (<b>DO NOT use binary</b>), using the
+same DML described above (e.g., CREATE ... INSERT ... INSERT .... ). 
+To make it simple, let us assume that each database file can only store one relation, and the filename is the same as the relation name with the suffix ".db". 
+Commands:
+<table>
+	<tr>
+		<td>OPEN</td>
+		<td>Load a relation from a database file. Opening a nonexistent file will result in nothing.</td>
+	</tr>
+	<tr>
+		<td>WRITE</td>
+		<td>Create a new relation file. The filename will be by default "relationname.db".</td>
+	</tr>
+	<tr>
+		<td>CLOSE</td>
+		<td>Save all changes to the relation in a database file and close it.</td>
+	</tr>
+	<tr>
+		<td>SHOW</td>
+		<td>Print a certain relation or view.</td>
+	</tr>
+	<tr>
+		<td>EXIT</td>
+		<td>Quit the DML interpeter.</td>
+	</tr>
+</table>
 </div>
 </div>
 
@@ -480,9 +492,9 @@ dbms.execute(animal_database, query, std::back_inserter(result));
 
 The DB application itself will be of your own design, with the following requirements: 
 <ol>
-	<li> The application domain is open-ended: bank, web forum, 
-		warehouse app, point-of-sale, auto maintenance shop,
-		etc., but it CANNOT BE one of the following: DVD or any kind of rental app, Library app, or PDA app. 
+	<li> The application domain is open-ended: store, digital library, bank, web forum, 
+		warehouse app, auto maintenance shop,
+		etc., but it CANNOT BE one of the following: DVD or any kind of rental app or PDA app. 
 	</li>
 	<li> The domain needs to be sufficiently complex. 
 	It should include at 
@@ -519,7 +531,7 @@ As an example, here's a spec from a previous semester. This was for a DVD rental
 		menu and takes user input from the keyboard.
 </li></ol>
 Note that most of the code in the host language will be user interface, as
-you will be able to use the DML for most of the required operations.
+you must use the DML for most of the required operations.
 
 <!--
 -->
@@ -529,7 +541,7 @@ you will be able to use the DML for most of the required operations.
 </div>
 
 <div style="margin-top:25px;">
-<h3>Requirements and Deliverables</h3>
+<h3>Requirements for Deliverables</h3>
 <div>
 <ul>
 </li><li> Each team should maintain a development log (Google doc or similar) 
@@ -538,7 +550,7 @@ you will be able to use the DML for most of the required operations.
 	This log will be graded. There is no designated format. We will
 	check your daily progress. Update your log daily.
 	</li>
-	<li> Perform unit testing for major routines using a test driven development framework, such as Visual Studio test system, NUnit, Boost Test, and Googletest.
+	<li> Perform unit testing for major routines using a test driven development framework, such as Visual Studio test system, NUnit, Boost Test, or Googletest.
 	Since you need to do this, engagement in test driven development is strongly encouraged!
 	</li>
 	<li> Expect to be called on to demo in the lab for deliverables 3 and 4.
@@ -555,7 +567,7 @@ you will be able to use the DML for most of the required operations.
 </li><li> DBMS engine code: This will be the core DB function library, without the parser.
 	<ul> <li>Upload your DBMS engine library code.  
 	</li><li>
-	You should include a unit test project or a test application that tests all functionality required in this deliverable, through function calls. Required functionalities include:
+	Include a unit test project or a test application that tests all functionality required in this deliverable, through function calls. Required functionalities include:
   <ul>
     <li>Creating and dropping tables.</li>
     <li>Inserting, updating, and deleting rows.</li>

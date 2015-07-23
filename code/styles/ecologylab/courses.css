@@ -1041,3 +1041,8 @@ H2.criteria
 	margin-top: -41px;
 	padding-top: -48px;
 }
+.grade
+{
+	text-align: right;
+	padding-right: 10px;
+}
