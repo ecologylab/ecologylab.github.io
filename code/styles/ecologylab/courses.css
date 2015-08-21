@@ -147,6 +147,7 @@ UL
 	margin-left: 8px;
 	margin-bottom: 10px;
 	padding-bottom: 4px;
+	margin-top: 4px;
 /*background-color: #00ff00;*/
 }
 span.banner1
@@ -891,17 +892,17 @@ H6
 {
 	line-height: 145%;
 }
-P
+p
 {
 	margin-top: 0px;
 	margin-bottom: 13px;
 }
-P.main
+p.main
 {
-	line-height: 130%;
+	line-height: 150%;
 	font-size: 14px;
 }
-P.usual
+p.usual
 {
 	line-height: 145%;
 }
