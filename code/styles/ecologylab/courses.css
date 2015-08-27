@@ -24,6 +24,8 @@ DIV.rootcontainer
 {
 	background-color: #00FFFF;
 	background-color: #ECECEE;
+
+	padding: 25px 10px 10px 35px;
 	margin-top: 25px;
 	margin-bottom: 20px;
 	margin-right: auto;
@@ -31,9 +33,10 @@ DIV.rootcontainer
 /*opera does not like 'margin:20px auto'*/
 	text-align: left;
 /*part 2 of 2 centering hack*/
-	width: 800px;
+	width: 818px;
 /*ie5win fudge begins*/
 	height: 100%;
+
 	padding-top: 8px;
 	padding-bottom: 10px;
 /*voice-family: "\"}\"";
