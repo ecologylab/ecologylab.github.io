@@ -819,6 +819,15 @@ H3
 	margin-bottom: 10px;
 	border: 1px solid #000000;
 }
+.illustrate_center
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	border: 1px solid #000000;
+}
 .illustrate_no_border
 {
 	float: right;
