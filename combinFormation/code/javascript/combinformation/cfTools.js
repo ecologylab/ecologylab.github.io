@@ -12,5 +12,3 @@ function install (aEvent)
   //InstallTrigger.install("cftools.xpi");
   return false;
 }
-
-<
