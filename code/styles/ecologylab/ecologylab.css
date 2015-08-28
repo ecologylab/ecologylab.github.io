@@ -465,7 +465,7 @@ a.subnavselected
 	color: #6588a7;
 	clear: left;
 	margin-left: 0px;
-	padding-bottom: 10px; 
+	padding-bottom: 4px; 
 }
 
 .illustrate
@@ -636,4 +636,16 @@ a.checkthis:hover
 {
 	margin-left: 12px;
 	padding-left: 2px;
+}
+.twitter
+{
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 5px; 
+	color: #66757f;"
+}
+.social_icon
+{
+	vertical-align: bottom;
 }
