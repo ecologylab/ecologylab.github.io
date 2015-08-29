@@ -1,4 +1,4 @@
-BODY
+	BODY
 {
 /*#CBC6BF*/
 	background-color: #CBC6BF;
@@ -121,6 +121,10 @@ DIV.main_intro
 	width: 750px;
 	font-size: 11px;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+DIV.reading
+{
+	margin-top:-6px;
 }
 A
 {
