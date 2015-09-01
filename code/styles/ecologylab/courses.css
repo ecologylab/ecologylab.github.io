@@ -782,6 +782,12 @@ H2.subsection
 	margin-bottom: 2px;
 	color: #546376;
 }
+H3.subsection
+{
+	padding-top: 10px;
+	margin-bottom: 1px;
+	color: #546376;
+}
 H2.section
 {
 	padding-top: 30px;
