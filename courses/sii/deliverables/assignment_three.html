@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>final project</title>
+<title>assignment three: dom interaction | structures of interactive information</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link href="../../../code/styles/ecologylab/courses.css" rel="stylesheet">
 <link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
@@ -22,12 +22,11 @@
   <img class="sii_logo" src="../../icons/sii-icon72.png" />
 </div>
 
-<div class="navigation" style="height:670px">
-
+<div class="navigation" style="height:630px">
 <div class="block">
   <a class="navlink" href="../index.html">welcome</a>
   <a class="navlink" href="../policies.html">policies</a>
-  <a class="navlink" href="../procedures.html">procedures</a>
+  <a class="navlink" href="../process.html">process</a>
   <a class="navlink" href="../participants.html">participants</a>
   <a class="navlink" href="../contact.html">contact info</a>
 </div>
@@ -46,10 +45,8 @@
   <a class="subnavlink" href="assignment_one.html">one:&nbsp;css&nbsp;layout</a>
   <a class="subnavlink" href="assignment_two.html">two:&nbsp;home&nbsp;page</a>
   <a class="sectiontitle" href="essaySketch.html">essaysketch</a>
-  <a class="subnavlink" href="assignment_three.html">three:&nbsp;dynamic dom</a>
-  <a class="subnavtitle" href="finalProject.html">final project</a>
-  <a class="navselected" href="finalProjectOntology.html">ontology</a>
-  <a class="subnavlink" href="finalProjectPrototypes.html">prototypes</a>
+  <a class="navselected" href="assignment_three.html">3:&nbsp;dynamic dom</a>
+  <a class="sectiontitle" href="finalProject.html">final&nbsp;project</a>
 </div>
 
 <div class="block">
@@ -71,77 +68,71 @@
 </div>
 
 <div class="content_title">
-concept | ontology | map sketches
+assignment three:
+<br/>
+dom interaction
 </div>
 
 <div class="content">
 
 <p>
-<h2>concept</h2>
-What collection are you working with?
-What is important about it?
-What does it mean?
-What needs to be conveyed?
-Why?
-How?
-How will you solve the large collections problem?
-What are you trying to say?
-Who are the target users?
-What experience do you want them to have?<br/>
-Write a 2-3 page statement of concept that describes the underlying
-motivations and methods of your final project.
+The purpose of this assignment is to familiarize you with dynamically
+manipulating the Document Object Model (DOM), in response to user
+interaction. We know that through the DOM, our HTML documents are
+structured as trees. Algorithmically, we can traverse these structures
+using typical tree walking algorithms (e.g., Depth First Search).
+We can also move chunks of DOM around, via operations such as
+<code>removeChild(), appendChild(), insertBefore(), and
+replaceChild()</code>. 
 </p>
 
 <p>
-<h2>ontology</h2>
-What, very specifically, is the underlying knowledge structure that
-what you want to convey? 
-What significant attributes, values, and relationships describe the ontology?
-Is it more graph-like, or more tree-like? Is
-it a combination of both? How does the ontology connect with your concept?!
-How does it relate to your collection?
-How will the ontology support your dynamic map(s)?
-<br/><br/>
-Create an ontology for your collection. 
-Write a DTD to describe your ontology .
-Create a sample XML example that instantiaties your ontology.
-As part of your statement of concept, explain what this ontology
-entails, and why it is appropriate for your project.
+Dynamic interaction can help simplify the presentation of
+large collections of information. It can also serve to make
+information engaging and fun. 
+Create an <i>interesting</i> interactive experience that manipulates
+DOM structure in 
+response to a user's interactive gestures. Your code should dynamicaly
+change the tree structure of the DOM.
+Human gestures you may wish to respond to include mouseover, click,
+drag, and entering data in a form field.
+</p>
+
+<h2 class="criteria">
+criteria of evaluation
+</h2>
+<ul class="comfy">
+  <li>concept -- what are you modifying? why?
+      how will this be interesting and/or useful to the user?</li>
+  <li>sophistication -- how are you modifying the dom structure?
+  what information is dynamic?</li>
+  <li>visual -- how does the presentation look initially? how does the
+      look change? how do you use principles of visual design to
+      accomplish this?</li>
+  <li>mappings -- what changes visually? what does this mean? how does
+      it relate to the user's gestures? how does
+      it contribute to concept and experience?</li>
+  <li>affordances -- how does the user know how to interact?</li>
+  <li>interactivity -- how does the user interact? how does
+      the display change in response to the user?</li>
+  <li>functionality -- how well does it work?</li>
+  <li>experience -- is the experience informative? engaging? fun?</li>
+</ul>
+<p>
+You may notice that the criteria are not mutually exclusive. They are
+neither orthogononal dimensions, nor branches of a tree. Once again,
+in the structure of knowledge, we see the rhizomatic meshwork of an
+ecosystem. 
 </p>
 
 <p>
-<h2>dynamic map</h2>
-How will you use space and color, visual design to present the
-information visually? How will you use proportion, and length?
-What will be dynamic? How will the user trigger it? How will your
-program respond? Again, how will this method embody the principles of
-your concept? How will the map serve as navigation?!
-<br/><br/>
-Make still sketches (lightweight prototypes) of different states of
-the dynamic map that will be the heart of your final project.
-Explain how the interaction will work. In your oral presentation, plan
-to do a "Wizard of Oz" demo with these sketches.
+Notes: (1) no sharing code or using found code on this assignment;
+(2) must work in Chrome and Mozilla.
 </p>
 
-<p>
-<h2>evaluation criteria</h2>
-<li>originality and thoughtfulness of concept</li>
-<li>connection of ontology and maps with the innate characteristics of
-    the collection.    
-<li>visual design criteria</li>
-<li>interaction design criteria</li>
-<li>overall experience</li>
-<li>fun</li>
-    
-</p>
-    
-<p>
-&nbsp;
-</p>
 <div class="source">
-due thursday, 11/18
-</div>
-
+concept discussions recommended thursday, 11/4<br/>
+artifact: due tuesday, 11/8
 </div>
 
 
