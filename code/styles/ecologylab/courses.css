@@ -873,6 +873,11 @@ H5
 	color: #546376;
 	font-weight: bold;
 }
+.subheading
+{
+	font-style: italic;
+	font-size: 14px;
+}
 .sub_destination
 {
 	font-size: 13px; 
