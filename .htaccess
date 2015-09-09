@@ -1,4 +1,5 @@
-Redirect 301 /zerotouch /research/bodyBasedInterfaces.html
+Redirect 301 /zerotouch /research/bodyBased
+Redirect 301 /research/zerotouch /research/bodyBased
 
 Redirect 301 /combinFormation http://ideamache.ecologylab.net
 Redirect 301 /combinformation http://ideamache.ecologylab.net
