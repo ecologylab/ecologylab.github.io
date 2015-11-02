@@ -124,7 +124,7 @@ DIV.main_intro
 }
 DIV.reading
 {
-	margin-top:-6px;
+	padding-top:12px;
 }
 A
 {
@@ -791,6 +791,10 @@ H3.subsection
 {
 	padding-top: 10px;
 	margin-bottom: 1px;
+	color: #546376;
+}
+a.subsectiontag:hover
+{
 	color: #546376;
 }
 H2.section
