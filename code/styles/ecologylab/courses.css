@@ -789,7 +789,10 @@ H2.subsection
 }
 H3.subsection
 {
+	font-size: 12px;
+	font-weight: bold;
 	padding-top: 10px;
+	padding-bottom: 0px;
 	margin-bottom: 1px;
 	color: #546376;
 }
