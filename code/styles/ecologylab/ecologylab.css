@@ -666,3 +666,13 @@ a.checkthis:hover
 {
 	vertical-align: bottom;
 }
+.credits
+{
+	float: right;
+	font-size: 10px;
+	color: #222222;
+	text-align: right;
+	padding-top: 20px;
+	margin-right: 7px;
+	clear: both;
+}
