@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>assignments [human-centered computing]</title>
+<title> blog [human-centered systems]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <!--
 <link href="../../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
@@ -20,8 +20,20 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  
 </script>
+ <script>
+ function fixTargets(f)
+{
+	alert("hi " + f);
+	//var ifr	= document.getElementById("google-doc-iframe");
+	alert(f.evaluate("//body"))
+}
 
+ </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../../code/js/fixGDocTargets.js"></script>
 </head>
 
 <body>
@@ -34,7 +46,7 @@
   <img class="courseLogo" src="../../../images/hcc_logo.png" />
 </div>
 
-<div class="navigation" style="height:525px;">
+<div class="navigation" style="height:515px;">
 <div class="block">
   <a class="navlink" href="../index.html">welcome</a>
   <a class="navlink" href="../policies.html">policies</a>
@@ -44,11 +56,11 @@
 <div class="block">
   <a class="navlink" target="_blank" href="http://goo.gl/B8bQyB">schedule</a>
   <a class="subnavtitle" href="index.html">assignments</a>
-  <a class="subnavlink" href="blog.html">blog</a>
+  <a class="navselected" href="blog.html">blog</a>
   <a class="subnavlink" href="breakdown.html">breakdown</a>
   <a class="subnavlink" href="irb.html">irb certification</a>
   <a class="subnavlink" href="shopping.html">shopping support</a>
-  <a class="sectiontitle" href="finalProject.html">final project</a>
+  <a class="subnavlink" href="finalProject.html">final project</a>
 </div>
 
 <div class="block">
@@ -71,45 +83,19 @@
 
 </div>
 
-<div class="content_title">assignments</div>
+<div class="content_title">weekly blog</div>
 
 <div class="content">
-<ul>
-  <li><p>assignment zero: 
-      <br/>&nbsp;&nbsp;&nbsp;
-Make yourself a big, easy-to-read name tag. An example is <a class="destination" target="_blank" href="assignment_zero.pdf">here</a>. 
-<br/>
-&nbsp;&nbsp;&nbsp;
-due immediately. always bring to class.</li>
-  <li><a class="destination" href="breakdown.html">experience breakdown</a></li>
 
-<li>
-<a class="destination" href="blog.html">blog posts</a></li>
-
-<li>
-<a class="destination" href="irb.html">irb certification (human subjects training)</a></li>
-
-<li><a class="destination" href="shopping.html">technology shopping support environment</a>
-<ul>
-<li>needs and requirements</li>
-<li>design briefing</li>
-<li>functional prototype</li>
-</ul>
-<!-- due  2/3, 2/17, 3/17 -->
-</li>
-  
-  <li><p><b>midterm exam</li>
-
-  <li><a class="destination" href="finalProject.html">final project sequence</a></li>
-
-
-      
-</ul>
+ 
+ <iframe class="googleDocIframe" scrolling="no" style="height: 1200px;"  onload="fixGDocTargets2(this)"
+ src="https://docs.google.com/a/ecologylab.net/document/d/1j-bbBNw-4Dx-YoibMeBOkCrabf-szDwbO51Bg0mmhzE/pub?embedded=true">
 
 
 </div>
 
-
 </div>
-</body> </html>
+</body>
+</html>
+
 
