@@ -78,142 +78,15 @@
 </div>
 
 </div>
-<div class="content_title">individual assignment:<br/>game achievement tracker</div>
 
 <div class="content">
-<div class="subsection">
-You will create an application for keeping track of video game players, what games they play, their achievements in those games,
-and friendships between players. The application will also compile some of these data sources to output informative reports.
-This application will be similar in nature to <a target="_blank" class="destination" href="http://store.steampowered.com/">Valve's Steam service</a>
- or the website <a target="_blank" class="destination" href="http://trueachievements.com/">trueachievements.com</a>.
-</div>
-
-<div class="subsection">
-The application will be implemented as a command-line-interface application. All input will be taken from standard input.  
-Each line of input will begin with a command string that identifies the type of operation that line describes.  The possible line formats are:
-</div>
-
-<div class="subsection">
-<div class="command">AddPlayer &lt;Player ID&gt; &lt;Player Name&gt; </div>
-	<div class="command_desc">
-		Add player to the database. &lt;Player ID&gt; is a positive integer identifier for the player. &lt;Player Name&gt; is a string enclosed by double quotes ("Andruid Kerne").
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">AddGame &lt;Game ID&gt; &lt;Game Name&gt; </div>
-	<div class="command_desc">
-		Add game to the database. &lt;Game ID&gt; is a positive integer identifier for the game. &lt;Game Name&gt; is a string enclosed by double quotes (i.e. "Mirror's Edge").
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">AddAchievement &lt;Game ID&gt; &lt;Achievement ID&gt; &lt;Achievement Name&gt; &lt;Achievement Points&gt; </div>
-	<div class="command_desc">
-		Add achievement to the game denoted by &lt;Game ID&gt;. &lt;Achievement ID&gt; is an integer identifier for the achievement. &lt;Achievement Name&gt; is a string enclosed by double quotes (i.e. "Head over heels"). &lt;Achievement Points&gt; is an integer indicating how many gamer points the achievement is worth.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">Plays &lt;Player ID&gt; &lt;Game ID&gt; &lt;Player IGN&gt;
- </div>
-	<div class="command_desc">
-		Add entry for player playing a specific game. &lt;Player IGN&gt; is a string identifier for that that player's particular in game name for the specified game.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">AddFriends &lt;Player ID1&gt; &lt;Player ID2&gt;</div>
-	<div class="command_desc">
-		Make players 1 & 2 friends. Friendships are mutual.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">Achieve &lt;Player ID&gt; &lt;Game ID&gt; &lt;Achievement ID&gt;</div>
-	<div class="command_desc">
-		Add achievement indicated to &lt;Player ID&gt;'s record.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">FriendsWhoPlay &lt;Player ID&gt; &lt;Game ID&gt;</div>
-	<div class="command_desc">
-		Report which of player's friends play the specified game.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">ComparePlayers &lt;Player ID1&gt; &lt;Player ID2&gt; &lt;Game ID&gt;</div>
-	<div class="command_desc">
-		Print report comparing player 1 and player 2's achievement records.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">SummarizePlayer &lt;Player ID&gt;</div>
-	<div class="command_desc">
-		Print record of all of the player's friends, games, and gamer point totals.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">SummarizeGame &lt;Game ID&gt;</div>
-	<div class="command_desc">
-		Print a record of all players who play the specified game and the number of times each of its achievements have been accomplished.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">SummarizeAchievement &lt;Game ID&gt; &lt;Achievement ID&gt;</div>
-	<div class="command_desc">
-		Print a list of all players who have achieved an achievement, and the percentage of players who play that game who have the achievement.
-	</div>
-</div>
-
-<div class="subsection">
-<div class="command">AchievementRanking</div>
-	<div class="command_desc">
-		Print a summary ranking all players by their total number of gamer points.
-	</div>
-</div>
-
-<div class="subsection">
-Players, games, achievements, and data relationships are guaranteed to exist before being operated on. IDs are guaranteed to to be unique within their space (i.e. a game's achievements will all have mutually exclusive identifiers).
-</div>
-
-<h2 class="subsection">Example Output</h2>
-<div class="subsection">
-The reports should be formatted to facilitate making sense of the output data. For example, this could be the output for the SummarizePlayer command. 
-</div>
-
-<br/>
-
-<div class="code">
-Player:&nbsp;Bill&nbsp;Hamilton&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;Gamerscore:&nbsp;1136&nbsp;pts<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Achievements&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gamerscore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IGN<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------------------------------------------------------------------------<br/>
-Games:&nbsp;&nbsp;1.&nbsp;Mirror's&nbsp;Edge&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25/25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;320&nbsp;pts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1337FaithRunner1337<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;Dark&nbsp;Souls&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11/12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;450&nbsp;pts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AmazingAchievosAhead<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;Dishonored&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12/25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;246&nbsp;pts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splinez<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.&nbsp;Deadlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5/40&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;120&nbsp;pts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ApocalypticJumper666<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.&nbsp;League&nbsp;of&nbsp;Legends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N/A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Splinez<br/>
-<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gamerscore<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------------------------------------------------<br/>
-Friends:&nbsp;&nbsp;&nbsp;&nbsp;Lennart&nbsp;Nacke&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10,456&nbsp;pts<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nic&nbsp;Lupfer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;620&nbsp;pts<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Andrew&nbsp;Webb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;420&nbsp;pts<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Andruid&nbsp;Kerne&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;380&nbsp;pts&nbsp;&nbsp;&nbsp;&nbsp;<br/>
-<br/>
-</div>
-
-<div class="subsection">
-As for grading, 45% of the grade will depend on how well the code works, the formatting of your output, and the implementation of the functionality described.  
-The remaining 55% will be based on how well you have done at communicating through naming, style, and commenting in your code.
-</div>
-
+  <iframe
+    id="google-doc-iframe"
+    class="googleDocIframe"
+    frameborder="0"
+    scrolling="no"
+    style="height: 2000px"
+    src="https://docs.google.com/document/d/1vcQt0U-sZITZGHbW4gXmI3F6Vay3ma8CGoGaHETJ8Ow/pub?embedded=true"></iframe>
 </div>
 
 </body> </html>
