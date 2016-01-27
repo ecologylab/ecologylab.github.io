@@ -1,0 +1,298 @@
+/* Layout */
+body {
+	min-width: 630px;
+	font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+	color: rgb(42,7,62);
+	background-image: url('http://people.tamu.edu/~robby_grathwohl/EssaySketch/images/dark-forest-main.jpg');
+	background-repeat: no-repeat;
+	background-color: #000307;
+	background-attachment: fixed;
+
+}
+
+#container {
+	padding-left: 200px;
+	padding-right: 190px;
+}
+
+#container .column {
+	position: relative;
+	float: left;
+}
+
+#center {
+	padding: 10px 20px;
+	width: 100%;
+}
+
+#left {
+
+	width: 130px;
+	padding-left: 100px;
+	padding: 0 10px;
+	right: 240px;
+	margin-left: -100%;
+	height: 1080px;
+}
+
+#right {
+	width: 130px;
+	padding: 0 10px;
+	margin-right: -100%;
+	height: 1080px;
+}
+
+#footer {
+	clear: both;
+}
+
+/* IE hack */
+* html #left {
+	left: 150px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+	overflow: hidden;
+}
+
+#container .column {
+	padding-bottom: 1001em;
+	margin-bottom: -1000em;
+}
+
+/* Fix for the footer */
+* html body {
+	overflow: hidden;
+}
+
+* html #footer-wrapper {
+	float: left;
+	position: relative;
+	width: 100%;
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	background: #fff;
+}
+
+/* Aesthetics */
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+h1{
+	font-size: 48px;
+	color: rgb(42,7,62);
+	text-align: center;
+}
+
+p {
+	color: #E0D7C1;
+}
+
+#center p{
+	background-color: rgba(36, 82, 77, 0.6);
+	padding: 30px 80px 30px 80px;
+	text-align: justify;
+	margin: 30px 200px 30px 200px;
+	line-height: 200%;
+	font-size: 22px;
+	letter-spacing: -.25px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	color: #E0D7C1;
+	text-decoration: none;
+}
+
+#header, #footer {
+	font-size: large;
+	padding: 0.3em;
+	background: #3F2740;
+}
+
+#left {
+	background: rgba(36, 82, 77, .4);
+}
+
+#right {
+	background: rgba(36, 82, 77, .4);
+}
+
+#center {
+	
+}
+
+#container .column {
+	padding-top: 1em;
+}
+
+/* Added for buttons*/
+/*form {
+	margin: 40px 0;
+}/*
+
+/* hide input */
+input.radio:empty {
+	margin-left: -1999px;
+}
+
+input{
+	clear: both;
+	margin: 0 50px;
+	padding-right: 50px;
+	display:inline-block;
+
+}
+
+label {
+	margin-right: 50px;
+	/*display:inline-block;*/
+	font-size: 20px;
+	padding-right: 20px;
+  	border-radius: 10px;
+  	color: #FFF;
+  	border: 2px solid #D1D3D4;
+  	/*background-color: rgba(22, 7, 32,  0.6);*/
+  	background-color:rgba(36, 82, 77, .6);
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: rgb(42,7,62);
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #E0D7C1;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: rgb(42,7,62);
+	background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+	color: #FFF;
+	background-color: rgba(46, 122, 107, .9)
+}
+
+
+
+.text {
+	display: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*padding: 20px 40px 20px 40px;*/
+}
+
+.radio {
+	display:inline-block;
+}
+
+
+
+
+#button1{
+	display:inline-block;
+}
+#button2{
+	display:inline-block;
+}
+#button3{
+	display: none;
+}
+#button4{
+	display: none;
+}
+#button5{
+	display: none;
+}
+#button6{
+	display: none;
+}
+#button7{
+	display: none;
+}
+#button8{
+	display: none;
+}
+#finalbtn{
+	
+}
+
+.divradio {
+	width: 50%; 
+	height: 50%; 
+	float:left;
+	margin-left: 200px;
+	margin-right: -300px;
+	/*margin: 0 auto;*/
+	
+}
+
+.btn {
+  background: #34625D;
+  background-image: -webkit-linear-gradient(top, #34625D, #04322D);
+  background-image: -moz-linear-gradient(top, #34625D, #04322D);
+  background-image: -ms-linear-gradient(top, #34625D, #04322D);
+  background-image: -o-linear-gradient(top, #34625D, #04322D);
+  background-image: linear-gradient(to bottom, #34625D, #04322D);
+  -webkit-border-radius: 17;
+  -moz-border-radius: 17;
+  border-radius: 17px;
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #e0d7c1;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background: #3A9981;
+  background-image: -webkit-linear-gradient(top, #3A9981, #245c4d);
+  background-image: -moz-linear-gradient(top, #3A9981, #245c4d);
+  background-image: -ms-linear-gradient(top, #3A9981, #245c4d);
+  background-image: -o-linear-gradient(top, #3A9981, #245c4d);
+  background-image: linear-gradient(to bottom, #3A9981, #245c4d);
+  text-decoration: none;
+}

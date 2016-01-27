@@ -1,0 +1,45 @@
+.title-container {
+    top: 80%;
+    left: 50%;
+    margin-right : -50%;
+    transform: translate(-50%, 0);
+}
+
+.title-text {
+    font-size: 15vmin;
+}
+
+#kolko {
+    position: absolute;
+    top: 12%;
+    width: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image {
+    position: absolute;
+    top: 45%;
+    width: 120vmin;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.horizontal-line {
+    position: absolute;
+    height: 0.1vmin !important;
+    top: 80%;
+    left: -1%;
+    width: 101% !important;
+}
+
+#hb {
+    position: absolute;
+}
+
+#syntax {
+    position: absolute;
+}

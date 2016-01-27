@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meme's as Found Objects</title>
+        <meta name="description" content="How Memes use Grid Space and Font">
+        <link rel="stylesheet" href="slideshow.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    
+</head>
+  
+<body>
+
+<!--HEADER & NAVIGATION-->  
+<div class="jumbotron">
+        <h2>Memes and Design</h2>   
+        <a href="index.html" class="btn btn-default btn-lg"  role="button">Home</a>
+        
+</div>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        
+     <ul class="nav nav-pills">
+         <li role="presentation"> <a href="found-obj.html">Found Object</a></li>
+         <li role="presentation"><a href="remix.html">Remix</a></li>
+         <li role="presentation" class="active"><a href="grid.html">Grid Space</a></li>
+         <li role="presentation"><a href="iterative.html">Iterative Design</a></li>
+         <li role="presentation"><a href="labryinth.html">Labyrinths</a></li>
+         <li role="presentation"><a href="hypertext-art.html">Hypertext Art</a></li>
+    </ul>
+    </div>  
+</nav>
+    
+<div class="container-fluid">
+   
+     <h1>Grid Space and Typography</h1>
+    
+    
+    
+
+<script>
+function showGrids(){
+    document.getElementById("grid-lines1").style.borderColor = "aqua";
+    document.getElementById("grid-lines2").style.borderColor = "aqua";
+    document.getElementById("grid-lines3").style.borderColor = "aqua";
+    document.getElementById("grid-lines4").style.borderColor = "aqua";
+
+}
+function changeFontColor(){
+    document.getElementById('top-text').style.color = 'red';
+    document.getElementById('bottom-text').style.color = 'red';
+}
+    
+function changeFontFamily(){
+    document.getElementById('top-text').style.fontFamily = "Times New Roman, Georgia, Serif";
+     document.getElementById('bottom-text').style.fontFamily = "Times New Roman, Georgia, Serif";
+}
+    
+    
+function reset(){
+    document.getElementById('top-text').style.color = 'white';
+    document.getElementById('bottom-text').style.color = 'white';
+    document.getElementById('top-text').style.fontFamily = "Impact, Charcoal, sans-serif";
+    document.getElementById('bottom-text').style.fontFamily = "Impact, Charcoal, sans-serif";
+        document.getElementById("grid-lines1").style.borderColor = "transparent";
+    document.getElementById("grid-lines2").style.borderColor = "transparent";
+    document.getElementById("grid-lines3").style.borderColor = "transparent";
+    document.getElementById("grid-lines4").style.borderColor = "transparent";
+}
+    
+</script>
+ 
+    
+<div class="row grid-contain">  
+    <div class="col-sm-6 grid"> 
+    
+        <div class="grid-image">
+            <img src="imgs/grid-cat.jpg">
+            <h3 id="top-text">Set Up</h3>
+            <h3 id="bottom-text">Punchline</h3>
+            <div id="grid-lines1"></div>
+            <div id="grid-lines2"></div>
+            <div id="grid-lines3"></div>
+            <div id="grid-lines4"></div>
+        </div>
+    
+    </div>
+    <div class="col-sm-6 grid-choice">
+        <ul> 
+            <li><button type="button" onclick="showGrids();">Show Grid Lines</button></li>
+            <li> <button type="button" onclick="changeFontColor();"> Change Font Color</button>
+            <li> <button type="button" onclick="changeFontFamily();">Change Font Family</button>
+        <li> <button type="button" onclick="reset();">Reset</button></li>
+        </ul>   
+        <p >Traditional Memes like the one shown above encorporate grid structures to their design space. Because their designs are usually similar and mathematic in structure, traditional memes generally follow Max Bill's concept of grid space rather than Lissitzky's. Text must also be simple and easy to read. Usually the characters are all capitalized with white font and a black stroke. This makes the text easy to read on any background.</p>
+        
+    </div>
+ </div>
+        
+    <h2 class="hidden-text">Screen is too small to display properly :(</h2>
+
+    </div> 
+
+</body>       
+    
+</html>    

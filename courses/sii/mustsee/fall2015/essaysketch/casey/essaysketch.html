@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSCE 444</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <script src="page_data.js"></script>
+  <script src="javascript.js"></script>
+</head>
+<body>
+  <div class="page_layout">
+    <img
+        class="bg"
+        src="placemat.png"
+        style="
+            width: 1280;
+            height: 720;"></img>
+    <img
+        class="bg"
+        src="moleskine.png"
+        style="
+            width: 1280;
+            height: 720;"></img>
+
+    <!-- Show arrows only if that navigation is available -->
+    <img
+        id="pageBackward"
+        class="highlight"
+        src="arrow_backward.png"
+        onclick="pageBackwardClick();"
+        style="
+            left: 200px;
+            top: 615px;
+            z-index: 5;"></img>
+    <img
+        id="pageForward"
+        class="highlight"
+        src="arrow_forward.png"
+        onclick="pageForwardClick();"
+        style="
+            left: 525px;
+            top: 600px;
+            z-index: 5;"></img>
+
+    <div
+        class="magnify"
+        style="
+              position: absolute;
+              top: 65px;
+              left: 150px;
+              z-index: 20;">
+      <div
+          id="iSpyPageMagnified"
+          class="large"></div>
+      <img
+          id="iSpyPage"
+          class="small"></img>
+    </div>
+
+    <img
+        class="bg_decor"
+        src="pen.png"
+        style="
+            left: 830px;
+            top: 150px;"></img>
+    <img
+        class="bg_decor"
+        src="coffee.png"
+        style="
+            left: 815px;
+            top: 0px;"></img>
+    <img
+        id="looking_glass"
+        class="highlight-lg"
+        src="looking_glass.png"
+        onclick="setLookingGlassSelected(true, true)"
+        style="
+            position: absolute
+            left: 0px;
+            top: 425px;
+            z-index: 5000;"></img>
+
+    <div class="journal_title"></div>
+    <div class="journal_content"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.title-container {
+    top: 25%;
+    left: 45%;
+}
+
+.title-text {
+    font-size: 15vmin;
+}
+
+#duchamp {
+    position: absolute;
+    width: 100%;
+}
+
+#avant {
+    position: absolute;
+    height: auto;
+    width: 65vmin;
+    top: 5%;
+    left: 5%;
+}
+
+#gopher {
+    position: absolute;
+    height: auto;
+    width: 75vmin;
+    top: 55%;
+    left: 35%;
+}

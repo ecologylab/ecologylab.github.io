@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles\style.css" />
+		<!--Import Google Icon Font-->
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="styles\materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    	<body>
+        <script src="http://code.jquery.com/jquery-1.10.2.js" defer></script>
+    		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+        <nav>
+        <div class="nav-wrapper aboutHead">
+			<div class="inside">
+			  <a href="#" class="brand-logo left">
+				<span class="name">SICKBAY ANALYTICS <em class="healthDescription">: Top 100 Most Popular Health Services Cost Visualization</em></span>
+			  </a>
+			  <ul id="nav-mobile" class="right">
+				<li><a href="index.html">Go Back</a></li>
+			  </ul>
+		  </div>
+        </div>
+      </nav>
+
+			<div id="about-container" class="main">
+
+				<h4>About</h4>
+	      <p>Our motivation was to solve a real world visual problem. We were interested in the health domain, because this is an area receiving
+		  heavy media attention for its need to receive design work. One area needing immediate work is health care services costs, and the transparency
+		  of the issues involved with that information. Costs are currently increasing, and patients are expressing difficulties accessing the cost for a
+		  particular health service prior to their visit. Thus, we are designing a visualization tool with a goal to allow prospective patients to inquire
+		  average health care costs, and for specific services. Our target audience is approximately ages 18-100+.</p>
+	        </br>
+	      <p>Using government provided data from <a href="https://data.cms.gov/Medicare/Inpatient-Prospective-Payment-System-IPPS-Provider/97k6-zzx3">data.gov</a>, we
+		  have extrapolated useful information regarding health care services costs and average costs for specific services. This data has information from numerous
+		  hospitals around the country for the <b>top 100 most popular(common) medical services</b> from over 3000 hospitals that receive Medicare aid by the government.
+		  We allow the user to acquire details on demand by state or by service category. The user can filter data to specific search queries, (i.e. As a patient
+		  in Texan needing asthma treatment, I want to know the average costs for asthma healthcare service in Texas).</p>
+	        </br>
+	      <p> <ul>Major current day (2015) healthcare concerns we explore in some fashion with our design:
+		        	<li><a href="http://www.forbes.com/sites/leahbinder/2013/02/21/the-five-biggest-problems-in-health-care-today/">1. Lack of transparency </a></li>
+		        	<li><a href="http://www.beckershospitalreview.com/hospital-management-administration/the-8-biggest-healthcare-issues-in-2015-so-far.html">2. Health care costs for the average family are increasing</a></li>
+		        </ul>
+				</p>
+				</br>
+		  <p>
+		  You may also notice that some of the datapoints within a drg have things like W/ MCC or W/O MCC or CC. This is what's called major complications and co-morbidities.
+		  Major complications means that the patient had something negative and out of the norm happen during the medical procedure. Co-morbidities means that the
+		  patient had multiple things going on besides the single service that the drg mentioned. For more information on this visit
+		  this <a href="https://www.bostonscientific.com/content/dam/bostonscientific/Reimbursement/RhythmManagement/WATCHMAN%E2%84%A2/236119-AB%20WM_Documentation_MCC%20Guide_FINAL.pdf/">
+		  website on MCC and CC</a>.
+		  </p>
+					</br>
+			</div>
+    </body>
+
+	<footer class="page-footer aboutFooter">
+		<div class="container">
+			<div class="footerTable">
+				<div class="footerRow1">
+					<h5 class="white-text">Web Semantics Visualization</h5>
+					<p class="grey-text text-lighten-4">Structures of Interactive Information Fall 2015</p>
+					<p class="grey-text text-lighten-4">2015 Joanne Bruno and Bradley Abbott</p>
+					<p class="grey-text text-lighten-4">Tutorial on the site in IdeaMache Deliverable 3</p>
+					<p class="grey-text text-lighten-4"><a class="grey-text text-lighten-3" href="https://data.cms.gov/Medicare/Inpatient-Prospective-Payment-System-IPPS-Provider/97k6-zzx3">Government Provided Dataset</a></p>
+				</div>
+				<div class="footerRow2">
+					<h5 class="white-text">Previous Iterative Design</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="http://ideamache.ecologylab.net/e/BgCn8KPT7k/">IdeaMache Deliverable 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="http://ideamache.ecologylab.net/e/8VRImbptrn/">IdeaMache Deliverable 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="http://ideamache.ecologylab.net/e/THTAOwNFbH">IdeaMache Deliverable 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="http://ecologylab.cs.tamu.edu/courses/sii/deliverables/semanticsVisualization.html">Assignment Instructions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</html>

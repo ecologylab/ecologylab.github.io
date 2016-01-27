@@ -1,0 +1,151 @@
+body {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    min-width: 1400px;
+}
+
+h3 {
+    margin-bottom: -10px;
+    margin-top: -5px;
+}
+
+#InformationSideBar {
+    width: 25%;
+    height: 100%;
+    min-width: 400px;
+    background-color: #84C8CC;
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+    padding: 20px;
+    -webkit-box-shadow: 7px 1px 70px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 1px 70px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 1px 70px -3px rgba(0, 0, 0, 0.75);
+}
+
+#LoadingIndicator {
+    display: none;
+    margin: 300px auto auto auto;
+    width: 75%;
+    font-size: 2em;
+    font-family: geneva, arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+}
+
+#Legend {
+    margin-left: 17%;
+}
+
+/*This will most likely get removed because I don't like how these links will look in my final product. I made these purely to complete the second deliverable's requirements.*/
+.linkButton {
+    background: #a1d54f;
+    background: -moz-linear-gradient(top, #a1d54f 50%, #80c217 51%, #7cbc0a 100%);
+    background: -webkit-linear-gradient(top, #a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+    background: linear-gradient(to bottom, #a1d54f 50%,#80c217 51%,#7cbc0a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d54f', endColorstr='#7cbc0a',GradientType=0 );
+
+    border-radius: 10px;
+    padding: 5px;
+    width: 80%;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Arial Narrow';
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.linkButton:hover {
+    background: #deefff;
+    background: -moz-linear-gradient(top, #a1e55f 50%, #80c217 51%, #7cbc0a 100%);
+    background: -webkit-linear-gradient(top, #a1e55f 50%,#80c217 51%,#7cbc0a 100%);
+    background: linear-gradient(to bottom, #a1e55f 50%,#80c217 51%,#7cbc0a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d54f', endColorstr='#7cbc0a',GradientType=0 );
+}
+
+.linkButton:active {
+    background: -moz-linear-gradient(top, #7cbc0a 50%, #80c217 51%, #a1d54f 100%);
+    background: -webkit-linear-gradient(top, #7cbc0a 50%,#80c217 51%,#a1d54f 100%);
+    background: linear-gradient(to bottom, #7cbc0a 50%,#80c217 51%,#a1d54f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d54f', endColorstr='#7cbc0a',GradientType=0 );
+}
+
+#LinksAndVideos{
+    align-content: center;
+    text-align: center;
+}
+
+/* MAP Styling */
+
+.county-boundary {
+     fill: none;
+     stroke: #aaddee;
+     stroke-width: .5px;
+ }
+
+.state-boundary {
+    fill: none;
+}
+
+.county-boundary:hover {
+    fill: none !important;
+    stroke: #aaddee;
+    stroke-width: .5px;
+}
+
+.state-boundary:hover {
+    fill: none !important;
+}
+
+/*path:hover {*/
+    /*fill: red;*/
+/*}*/
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 160px;
+    height: 48px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+path {
+    color: rgb(204, 204, 204);
+}
+
+#ToOverview{
+    width: 80px;
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 50%;
+}
+
+.hasDatepicker
+{
+    width: 73px;
+}
+
+.slide-out-div {
+    padding: 20px;
+    height: 220px;
+    width: 250px;
+    background: #ccc;
+    border: 1px solid #29216d;
+    -webkit-box-shadow: 10px 10px 29px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 29px -1px rgba(0,0,0,1);
+    box-shadow: 10px 10px 29px -1px rgba(0,0,0,1)
+}

@@ -1,0 +1,163 @@
+﻿body{
+	background-color: #000000;
+	margin: 0px; 
+    text-align: center;
+    color: white;
+			font-family: 'Merriweather', serif;
+			font-size:14px;
+}
+
+.main a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+.hand{
+    background-image: url("palms.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	display: block;
+    height: 762px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.object{
+width: 686px;
+    height: 394px;
+    background-image: url("knife_07.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100%  { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100%  { opacity: 1; }
+} 
+
+.main{
+
+}
+
+.mainTitle{
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.mainBody{
+	display: inline-block;
+	margin-bottom: 15px;
+    height: 765px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+	-webkit-animation: fadein 3s ease-in;
+    animation: fadein 3s ease-in;
+}
+
+.module{
+    width: 574px;
+    height: 526px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+	height: 532px;
+}
+
+.moduleLayout{
+    display: inline-block;
+	height: 40px;
+	width: 200px;
+	position: absolute;
+	padding: 13px 13px 13px 13px;
+		background: rgba(0, 0, 0, 0.8);
+}
+
+.moduleTopLeft{
+    top: 130px;
+    left: -37px;
+    height: 54px;
+    width: 200px;
+}
+
+.moduleTopRight{
+    top: 134px;
+    right: -61px;
+    height: 50px;
+    width: 195px;
+}
+
+.moduleBottomLeft{
+    top: 333px;
+    left: -36px;
+    height: 57px;
+    width: 200px;
+}
+
+.moduleBottomRight{
+    top: 333px;
+    right: -66px;
+    height: 51px;
+    width: 200px;
+}
+
+.moduleCenter{
+    top: 209px;
+    left: 189px;
+    height: 99px;
+    width: 200px;
+}
+
+.moduleText{
+    display: inline-block;
+	height: 57px;
+	width: 200px;
+	margin-left: -113px;
+	margin-top: 50px;
+	padding: 13px 13px 13px 13px;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.dropText{
+    font-size: 20px;
+	position: absolute;
+    top: 56px;
+    right: 2px;
+}
+
+.drop:hover{
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        cursor: pointer;
+}
+
+.drop{
+    position: absolute;
+    top: 14px;
+    transition:transform 0.3s ease;
+    background-image: url("img/dropicon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 47px;
+    height: 99px;
+    position: relative;
+    display: inline-block;
+}

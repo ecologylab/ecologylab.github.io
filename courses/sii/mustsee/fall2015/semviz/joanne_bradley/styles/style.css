@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+position: relative;
+min-width: 1120px;
+}
+
+.mainContainer{
+	height: 685px !important;
+}
+
+.brand-logo .name{
+	color: white;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.brand-logo .description{
+	color: white;
+	font-style: italic;
+}
+
+#nav-mobile{
+	margin-right: 10px;
+}
+
+.nav-wrapper{
+	min-width: 1255px;
+}
+
+.aboutHead{
+	min-width: 1265px !important;
+}
+
+/@media (max-width: 1255px) {
+ / .healthDescription{
+ /   display:none;
+ / }
+/}
+
+.healthDescription{
+	font-weight: normal;
+}
+
+.inside{
+	margin: 0px auto;
+	max-width: 1400px;
+}
+
+#about-container{
+	padding-top: 30px;
+	margin: 10px auto;
+	max-width: 1500px;
+	min-width: 728px;
+	height: 715px;
+}
+
+
+
+.main{
+	padding-top: 30px;
+	margin: 10px auto;
+	max-width: 1500px;
+	min-width: 1120px;
+}
+
+/.filter{
+/	overflow: auto;
+/	width: -moz-calc(100% - 30px);
+/    width: -webkit-calc(100% - 30px);
+/    width: calc(100% - 30px);
+/	max-width: 1600px;
+/	min-width: 660px;
+/	margin-bottom: 10px;
+/}
+
+.filter{
+	clear:both;
+    float:none;
+    display:block;  
+    position: relative;
+}
+
+.nvtooltip{
+position:absolute !important;
+display:block !important;
+z-index:10000 !important;
+border:2px solid black !important;
+background-color:rgba(0,0,0,0.8) !important;
+margin:auto !important;
+padding:3px 5px 3px 5px !important;
+color:white !important;
+font-size:12px !important;
+font-family:arial !important;
+border-radius: 5px !important;
+vertical-align: middle !important;
+text-align: center !important;
+min-width:50px !important;
+overflow:auto !important; 
+}
+
+.state{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 1px;
+	margin-left: 30px;
+}
+
+.cost{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 1px;
+}
+
+.service{
+	float: left;
+	margin-left: 74px;
+	margin-bottom: 1px;
+}
+
+.visuals {
+	clear:both;
+    float:none;
+    display:block;  
+    position: relative;
+}
+
+.maps{
+	position:relative;
+	width: 500px;
+	float: left;
+}
+
+
+#bubbleGraph{
+	height:600px;
+	width:100%;
+}
+
+@media (max-height: 833px) {
+  #bubbleGraph{
+    height: 500px;
+  }
+}
+
+#chart{
+	height: 100%
+}
+
+.nv-axislabel{
+	font: bold 14px Arial !important;
+}
+
+.graph{
+	float:left;
+	width: -moz-calc(100% - 520px);
+    width: -webkit-calc(100% - 520px);
+    width: calc(100% - 520px);
+	min-width: 618px;
+	max-width: 1000px
+}
+
+/*US Map D3 Style*/
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.feature {
+  fill: #ccc;
+  cursor: pointer;
+}
+
+.feature.active {
+  fill: orange;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#about-container {
+	padding: 10px 10px 10px 10px;
+}
+
+/*Sticky Footer*/
+.page-footer{
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	position: fixed;
+}
+footer.page-footer{
+	padding-top:10px !important;
+}
+
+#mainFooter.page-footer{
+	padding-top:14px !important;
+}
+
+.aboutFooter .container{
+	width: 700px;
+}
+
+.footerContent{
+	padding-left: 15px;
+}
+
+body, html{
+margin: 0;
+padding: 0;
+}
+
+#footer{
+	margin: 0px auto;
+	max-width: 1500px;
+	min-width: 1120px;
+}
+
+#footer span{
+	margin-left: 10px;
+	color: white;
+}
+
+.aboutFooter{
+	height: 165px;
+	color: white;
+}
+
+.footerRow1{
+	float: left;
+}
+
+.footerRow2{
+	float: right;
+}
+
+.footerTable{
+	clear:both;
+	padding-left: 30px;
+}

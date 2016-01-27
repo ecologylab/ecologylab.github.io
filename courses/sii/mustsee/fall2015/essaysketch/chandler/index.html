@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Essay Sketch</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style/css.css">
+</head>
+<body>
+    <div id="header" style="display:none;">
+        Score: <span id="current_score"></span>
+    </div>
+    <div class="panel" id="intro">
+        <div class="intro_container">
+            <div class="intro_title">Essay Sketch</div>
+            <br />
+            <hr />
+            <br />
+            <div class="intro_text">
+                In order to express the concepts learned in class, I will be using a genre of terminal games
+                 known as <span class="important">roguelikes</span> as a metaphor. The game first game to define the genre, <span class="important">
+                Rogue</span>, and its successors
+                have been very influential in my life. I’ve  played them for years and I use them as inspiration for my own creative works.
+                <br />
+                <br />
+                In the Garden of Forking Paths, Dr. Tsun learns that for every action, all possible alternatives occur.
+                Not only do roguelikes take place in a literal labyrinths, they also  focus on the same concept of choice.
+                The objective of Rogue is to traverse a labyrinth full of dangers in order to reach the bottom
+                floor. Time in the labyrinth stays still until the player does an action.
+                Once the player makes takes a turn, so do the other units in the world. On the chance that the player dies,
+                the player starts again from the beginning in a different labyrinth.
+                <br />
+                <br />
+                For this essay sketch, each node is represented by a room in the style of a roguelike. In the room you can
+                navigate with the arrow keys and interact with objects with enter. The objects are my links to lexia and it's up to the player
+                to determine what they want to see and when. Like <span class="important">hypertext</span>, one can freely move from page to page, stepping on an arrow.
+            </div>
+            <div class="intro_controls_container">
+                <div class="intro_controls_title">Controls</div>
+                <br />
+                <div class="intro_controls_arrow_keys_container">
+                    <img src="./style/arrow_keys.png" />
+                    <br />
+                    Move
+                </div>
+                <div class="intro_controls_enter_key_container">
+                    <img src="./style/enter.png" />
+                    <br />
+                    Interact
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="press_enter">Press <b>Enter</b> to Start</div>
+        </div>
+    </div>
+    <div class="panel" id="outro">
+        <div class="intro_container">
+            <div class="intro_title">You Escaped!</div>
+            <br />
+            <hr />
+            <br />
+            <div class="intro_text">
+            </div>
+            <div style="text-align:center;font-weight:bold;font-size:30px;">
+                Final Score: <span id="final_score"></span>
+            </div>
+            <br />
+            <br />
+            
+        </div>
+    </div>
+    <div class="panel" id="room0">
+        <div class="container">
+            <div id="room0_tab0" style="display:none">
+                <div class="title">Context</div>
+                <br />
+                Rogue is a game that is void of graphics outside of the set of basic <span class="important">ASCII symbols</span>. 
+                For instance, instead of a sprite or 3d visualization, the player is represented by 
+                a mere <span class="important">@ sign</span>.
+    <br />
+    <br />
+    Rogue was one of the first games to represent the player on screen.
+    The @ sign, and other ASCII symbols were transformed into objects representing
+    everything from weapons to monsters.
+    <hr />
+</div>
+            <br />
+            <div id="room0_game"></div>
+            <div id="room0_tab1" style="display:none">
+                @
+            </div>
+            <br />
+            <br />
+            <div id="room0_info">
+            </div>
+        </div>
+    </div>    
+    <div class="panel" id="room1">
+        <div class="container">
+            <div class="title">Symbolism</div>
+            <div id="room1_game"></div>
+        </div>
+    </div>
+    <div class="panel" id="room2">
+        <div class="container">
+            <div id="room2_tab0" style="display:none">
+                <div class="title">Remix Culture</div>
+                <br />
+                Paul Miller explained how groups of individuals, share and remix media. This is also
+                seen in the roguelike development community. Most roguelikes can be traced to a common
+                ancestor. Now we see events such as <a href="http://7drl.org/" target="_blank">7drl (7 day roguelike)</a> which promotes the creation
+                and remixing of roguelikes in the community.
+                <br />
+                <br />
+                </div>
+                <div id="room2_tab1" style="display:none">
+                <img style="width:100%;" src="./style/timeline.png" />
+                <br />
+                <br />
+                </div>
+                <div id="room2_game"></div>
+                <div id="room2_info">
+                </div>
+            </div>
+    </div>
+    <div class="panel" id="room3" style="background-color:#000; color:#999999;">
+        <div class="container">
+            <div id="room3_tab0" style="display:none">
+                <div class="title">Art</div>
+                <br />
+                    Mark R. Johson discuesses the use of ASCII art in his journal "The use of ASCII Graphics in Roguelikes".
+                    He explores concepts like, why is ASCII still used in games dispite there being more appealing alternatives?
+                    We see that the <span class="important">encoding and decoding</span> of the symbols creates a deep experience similar to that of reading a book.
+    <hr />
+</div>
+            <div id="room3_game"></div>
+            <div id="room3_tab1" style="display:none">
+                <img style="width:100%;" src="./style/art.png" />
+            </div>
+            <div id="room3_info">
+            </div>
+         </div>
+    </div>
+    <div class="panel" id="room4">
+        <div class="container">
+            <div id="room4_tab0" style="display:none">
+                <div class="title">Story Telling</div>
+                <br />
+                <div style="display:inline-block;width:50%;margin-right:20px;">
+                    Rogue and its successors also have been used as a medium for expression. One example is the game Dwarf Fortress,
+                    which is considered a Roguelike. In <a href="http://www.bay12games.com/dwarves/" target="_blank">Tarn Adam's Dwarf fortress</a>, instead
+                    of controlling a single character, you play as an overseer of a fortress. In online communities, players share a save file and take turns controlls a single fortress.
+                    When their turn is over they write a journal or story about what happened during their turn.
+                </div>
+                <div id="room4_tab1" style="display:inline-block;width:40%;vertical-align:top;">
+                    <img style="width:100%;" src="./style/dwarf.png" />
+                </div>
+                <hr />
+            </div>
+            <div id="room4_game"></div>
+            <div id="room4_info">
+            </div>
+        </div>
+    </div>
+    <div class="panel" id="room5">
+        <div class="container">
+            <div id="room5_tab0" style="display:none">
+                <div class="title">Random Generation &amp; The Grid</div>
+                <br />
+                <div style="width:100%;">
+                    <span class="important">Random generation</span> is one of the most important characteristics of roguelikes. 
+                    The random generation is what makes every playthrough unique. Without this, the stories
+                     written by players of Dwarf Fortress wouldn't be possible. The randomness allows for every
+                     Labyrinth to be unique and allows for a different experience everytime. The amount of randomness 
+                    depends on the roguelike. Some randomize just the laybrinth, but others randomly generative everything
+                     from races, weapons or even entire languages.
+                    <hr />
+                </div>
+            </div>
+            <div style="display:inline-block;width:55%" id="room5_game"></div>
+            <div id="room5_tab1" style="float:right; display:none;width:40%;vertical-align:top;">
+                <img style="width:100%" src="/style/grid.png" />
+            </div>
+            <div id="room5_info">
+                
+            </div>
+        </div>
+    </div>
+    <div class="panel" id="room6">
+        <div class="container">
+            <div id="room6_tab0" style="display:none">
+                <div class="title">The Labyrinth</div>
+            </div>
+            <br />
+            <div id="room6_tab1" style="width:44%; display:none; float:left; vertical-align:top; margin-right:20px;">
+            Rogue and it's successors all take place in Dungeons, or <span class="important">Labyrinths</span>. These labyrinths
+            are built upon a 2D grid. Game time is frozen unless
+            the user makes an action. This focus on action, and choice, draws parallels to <span class="important">
+    The Garden of
+    forking paths</span>.
+</div>
+            <div style="display:inline-block;width:49%" id="room6_game"></div>
+            <div id="room6_info">
+            </div>
+        </div>
+    </div>
+    <div class="panel" id="room7">
+        <div class="container">
+            <div id="room7_tab2" class="title">Hypertextlike</div>
+            <div style="vertical-align:top;width:50%;display:inline-block;">
+                 <div id="room7_tab0" style="display:none">
+                    <br />
+                    <div>
+                    Navigation within a dungeon is similar to how hypertext is described in <span class="important">Ted Nelson's literary Machines</span>.
+                    In Rogue, there are many floors that interlink with eachother, with every floor being a unique labyrinth with unique features.
+                    <br /><br />
+                    This method breaks up the larger labyrinth into many smaller chunks. So this allows the user to explore to ground themselves in something much larger than what is visible.<br /><br />
+                        A good example is Dungeon Crawl Stone Soup's layout, depending on the user's path, the game drastically changes.
+                    </div>
+                </div>
+                <div id="room7_game"></div>
+            </div>
+                <div id="room7_tab1" style="float:right; display:none; width:49%;margin:0 auto;" >
+                    <img style="width:100%" src="style/map.png" />
+                </div>
+                <div id="room7_info"></div>
+            </div>
+    </div>
+    <div class="panel" id="room8">
+        <div class="container">
+            <div class="title">Hypertext</div>
+            <br />
+            <div style="width:44%;display:inline-block;">
+            Navigation within a dungeon is similar to how hypertext is described in Ted Nelson's literary Machines. 
+            In Rogue, there are many floors that interlink with eachother, with every floor being a unique labyrinth with unique features.
+            <br /><br />
+            This method breaks up the larger labyrinth into many smaller chunks. So this allows the user to explore to ground themselves in something much larger than what is visible. 
+            </div>
+            <div style="display:inline-block;vertical-align:top;width:55%" id="room8_game"></div>
+            <div>
+                <img style="display:block;width:75%;margin:0 auto;" src="style/map.png" />
+            </div>
+        </div>
+    </div>
+
+
+  <!--<div style="margin:0 auto; width:200px;" id="roguelike_window"></div>-->
+
+    <script src="assets/jquery-2.1.4.min.js"></script>
+    <script src="assets/jquery.transit.min.js"></script>
+    <script src="assets/rot.js"></script>
+    <script src="assets/game.js"></script>
+</body>
+</html>

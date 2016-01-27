@@ -1,0 +1,251 @@
+﻿body{
+	background-color: #000000;
+	margin: 0px; 
+    text-align: center;
+    color: white;
+	font-family: 'Merriweather', serif;
+}
+
+.main a{
+    color: white;
+    text-decoration: none;
+}
+
+.hand{
+    background-image: url("palms.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+	display: block;
+    height: 762px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.object{
+	width: 550px;
+	height: 550px;
+    background-image: url("framed pic flat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100%  { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100%  { opacity: 1; }
+} 
+
+.main{
+
+}
+
+.mainTitle{
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.mainBody{
+	display: inline-block;
+	margin-bottom: 15px;
+    height: 765px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+	-webkit-animation: fadein 3s ease-in;
+    animation: fadein 3s ease-in;
+}
+
+.pictures{
+	height: 520px;
+}
+
+    #slides,
+    #slides2,
+    #slides3,
+    #slides4    {
+      display: none;
+    }
+
+    .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides2  a:link,
+    #slides3  a:link,
+    #slides4  a:link,
+    #slides a:visited,
+    #slides2 a:visited,
+    #slides3 a:visited,
+    #slides4  a:visited {
+      color: #333
+    }
+
+    #slides  a:hover,
+    #slides2  a:hover,
+    #slides3  a:hover,
+    #slides4  a:hover,
+    #slides  a:active,
+    #slides2  a:active,
+    #slides3  a:active,
+    #slides4  a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+        /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    } 
+    
+.module{
+    width: 852px;
+    height: 525px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.moduleLayout{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    float: left;
+}
+
+.moduleTopLeft{
+    background: rgba(20, 20, 20, 0.8);
+    padding: 13px 13px 0px 13px;
+}
+.moduleTopRight{
+	background: rgba(255, 255, 255, 0.7);
+    padding: 13px 13px 0px 13px;
+}
+
+.moduleBottomLeft{
+    background: rgba(20, 20, 20, 0.8);
+    padding: 0px 13px 0px 13px;
+}
+
+.moduleBottomRight{
+	background: rgba(255, 255, 255, 0.7);
+    padding: 0px 13px 0px 13px;
+}
+
+.moduleText{
+	text-align: center;
+	margin-top: 18px;
+}
+
+.bottomLink{
+	text-decoration: underline;
+}
+
+.dropText{
+    font-size: 20px;
+	position: absolute;
+    top: 56px;
+    right: 2px;
+}
+
+.drop:hover{
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        cursor: pointer;
+}
+
+.drop{
+    position: absolute;
+    top: 14px;
+    transition:transform 0.3s ease;
+    background-image: url("img/dropicon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 47px;
+    height: 99px;
+    position: relative;
+    display: inline-block;
+}

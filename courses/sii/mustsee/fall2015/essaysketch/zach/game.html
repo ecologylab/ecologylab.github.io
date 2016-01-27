@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The Straight and Narrow Path
+        </title>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <script type="text/javascript" src="scripts/TextBlock.js"></script>
+        <script type="text/javascript" src="scripts/Util.js"></script>
+        <script type="text/javascript" src="scripts/KeyHandler.js"></script>
+        <script type="text/javascript" src="scripts/ResourceManager.js"></script>
+        <script type="text/javascript" src="scripts/Camera.js"></script>
+        <script type="text/javascript" src="scripts/Tree.js"></script>
+        <script type="text/javascript" src="scripts/World.js"></script>
+        <script type="text/javascript" src="scripts/player/Player.js"></script>
+        <script type="text/javascript" src="scripts/TileMapLoader.js"></script>
+        <script type="text/javascript" src="scripts/Main.js"></script>
+        <script type="text/javascript" src="scripts/MonsterManager.js"></script>
+        <script type="text/javascript" src="scripts/IronRod.js"></script>
+        <script type="text/javascript" src="scripts/AttackArea.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <div id = 'theTextBlock' class="textBlock hidden">
+            <span id="words"></span>
+        </div>
+        <div id ='scoreDiv'>
+            <span id="score"></span>
+        </div>
+        <!-- This is some example text. I want to see what it looks like as it gets much longer. I hope it looks nice.-->
+        <canvas id='gameCanvas'>
+
+        </canvas>
+        <canvas id='blendCanvas'>
+        </canvas>
+        <script>
+            loadGame();
+        </script>
+    </body>
+</html>

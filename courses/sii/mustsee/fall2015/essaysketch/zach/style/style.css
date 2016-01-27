@@ -1,0 +1,90 @@
+
+* {
+    font-family: "Georgia";
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+}
+
+#title {
+    height: 100%;
+    width: 60%;
+    display: inline-block;
+    float:left;
+}
+
+.rightMargin {
+    margin : 50px;
+    float:left;
+    display: inline-block;
+    max-width: 30%;
+}
+.rightMargin a {
+    float:left;
+    display: inline-block;
+}
+
+#.rightMargin span {
+    float:left;
+    dispaly: inline-block;
+}
+
+#gameMockup {
+    float:left;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+
+#gameCanvas {
+
+}
+
+.textBlock {
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    bottom : 1%;
+    left: 10%;
+
+    transition: opacity, 3s;
+    color: black;
+    opacity: 255;
+}
+
+.textBlock.hidden {
+    opacity: 0;
+}
+
+.textBlock span {
+    position: absolute;
+    font-size: 35px;
+    width: 80%;
+    left: 10%;
+    top : 15%;
+    color :white;
+}
+
+#blendCanvas {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    bottom: -1000px;
+}
+
+#scoreDiv {
+    background-color: white;
+}
+
+

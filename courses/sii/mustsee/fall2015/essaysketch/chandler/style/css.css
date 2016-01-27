@@ -1,0 +1,185 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+    color:#666;
+    font-family: 'Open Sans', sans-serif;
+    font-size:13px;
+}
+
+div.panel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    min-height:100%;
+    overflow: scroll;
+}
+
+a {
+    font-weight:bold;
+    color:mediumpurple;
+}
+
+a:hover{
+        color:lightblue;
+}
+
+hr{
+    border: none;
+    border-top: 3px dotted #c7c7c7;
+    color: #fff;
+    background-color: #fff;
+    width:25%;
+}
+
+#room3_tab0 hr{
+    border: none;
+    border-top: 3px dotted #999999;
+    color: #000;
+    background-color: #000;
+    width:25%;
+}
+
+/*Intro Page*/
+
+#header{
+    top:15px;
+    left:15px;
+    width:600px;
+    margin:0 auto;
+    position:absolute;
+    z-index:99;
+    font-weight:bold;
+}
+
+#current_score{
+    color:red;
+}
+
+.intro_container{
+    width:600px;
+    margin:0 auto;
+    padding:25px;
+    padding-top:50px;
+}
+
+.intro_title{
+    text-align:center;
+    font-size:50px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.intro_text{
+    text-align: justify;
+}
+
+.intro_controls_title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.intro_controls_container{
+    margin-top:15px;
+}
+
+.intro_controls_arrow_keys_container{
+    display: inline-block;
+    text-align:center;
+    width: 50%;
+    font-weight:bold;
+}
+.intro_controls_enter_key_container {
+    display: inline-block;
+    text-align: center;
+    width: 48%;
+    font-weight: bold;
+}
+
+.press_enter {
+    font-size: 25px;
+    animation: blinker 1s linear infinite;
+    text-align: center;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+/*containers*/
+.container{
+    width:600px;
+    margin:0 auto;
+    padding:25px;
+    padding-top:50px;
+    text-align:justify;
+}
+
+.title{
+    font-size:50px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+#room0_game{
+    width:360px;
+    display:inline-block;
+}
+
+#room0_tab1{
+    width:230px;
+    display:inline-block;
+    vertical-align:top;
+    font-size:168px;
+    text-align:center;
+}
+
+#room3_game{
+    width:360px;
+    display:inline-block;
+}
+#room3_tab1{
+    width:230px;
+    display:inline-block;
+    vertical-align:top;
+    font-size:168px;
+    text-align:center;
+}
+
+#final_score{
+    color:red;
+
+}
+
+.red{
+    color:red;
+}
+
+.white{
+    color:white;
+}
+
+.brown{
+    color:brown;
+}
+
+.red2{
+    color:#8B0000
+}
+
+.orange{
+    color:orange;
+}
+
+.purple{
+    color:purple;
+}
+
+.important{
+    font-weight:bold;
+    color:green;
+}

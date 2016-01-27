@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meme's as Found Objects</title>
+        <meta name="description" content="How Memes act as a Labyrinth">
+        <link rel="stylesheet" href="">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+
+    
+</head>
+  
+<body>  
+     
+<body>  
+    <!--HEADER & NAVIGATION-->  
+    <div class="jumbotron">
+        <h2>Memes and Design</h2>   
+        <a href="index.html" class="btn btn-default btn-lg"  role="button">Home</a>
+     
+    </div>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        
+     <ul class="nav nav-pills">
+         <li role="presentation"><a href="found-obj.html">Found Object</a></li>
+         <li role="presentation"><a href="remix.html">Remix</a></li>
+         <li role="presentation"><a href="grid.html">Grid Space</a></li>
+         <li role="presentation"><a href="iterative.html">Iterative Design</a></li>
+         <li role="presentation"  class="active" ><a href="labryinth.html">Labyrinths</a></li>
+         <li role="presentation"><a href="hypertext-art.html">Hypertext Art</a></li>
+    </ul>
+    </div>
+</nav>
+    
+    <div class="container-fluid">
+
+    
+        <h1>Labyrinths</h1>
+   
+<script>
+    
+NUMBER_OF_IMAGES = 1; 
+function multiply(){
+    
+    for (i = 1; i <= NUMBER_OF_IMAGES; i++) {
+        var src = document.getElementById("multi-imgs");
+        var img = document.createElement("img");
+        img.src = "imgs/labyrinth-brain.jpg";
+
+        src.appendChild(img);
+    }
+    
+     NUMBER_OF_IMAGES = NUMBER_OF_IMAGES*2;
+
+}
+        
+</script>
+        
+    <div id="multi-imgs"></div>
+    
+    <button type="button" id="brain-button" onclick="multiply();">More Brains</button>
+    <p id="lab-p">It's hard to pinpoint not just why, but how meme's spread through out popular internet culture. What is an individual's meme's narrative through out time? What the path that an idea or image takes from it's conception that enables it to navigate so effectively across different platforms and audiences? Like the “Garden of Forking Paths”, there are many directions and paths that a meme or idea can take as it navigates through popular culture. This is exhimplified through it’s <a href="iterative.html">iterative design</a> and how they can serve has <a href="hypertext-art.html">hypertext art</a> or <a href="found-obj.html">found objects</a></p>
+    
+
+    </div>
+</body>    
+    
+</html>    
