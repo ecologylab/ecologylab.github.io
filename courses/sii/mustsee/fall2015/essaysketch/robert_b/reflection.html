@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explorative Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="toggle.js"></script>
+<script src="reflection.js"></script>
+
+<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="reflection.css">
+<meta charset="UTF-8"> 
+</head>
+
+<body>
+<div id="navArea">
+<div id="logoContainer"><img id="siteLogo" src="website_logo.png" /></div>
+<div id="filler"></div>
+
+<div id="navBar">
+<ul id="navList">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="free_explore.html">Free Explore</a></li>
+	<li><span>Variations</span>
+		<ul>
+			<li><a href="image_exploration.html">Image Exploration</a></li>
+			<li><a href="multi-exploration.html">Multi-Exploration</a></li>
+			<li><a href="layout_exploration.html">Layout Exploration</a></li>
+		</ul>
+	</li>
+	<li>
+		<span class="spanItem" id="soundContainer"><img id="soundIcon" onclick="toggleSound()" src="sound.png" height="15px"/></span>
+	</li>
+	<li>
+		<span class="spanItem"><div id="settingsContainer"><img id="settingsIcon" src="settings.png" height="20px"/></div></span>
+		<ul>
+			<li><span class="bolded">Transition Speed:</span></li>
+			<li><input id="speedInput" type="range" min="25" max="100" onchange="toggleTransitionSpeed()"/></li>
+			<li><span class="bolded">Audio Option:</span></li>
+			<li><span class="clickable" onclick="changeAudio(1)">Track 1</a></li>
+			<li><span class="clickable" onclick="changeAudio(2)">Track 2</a></li>
+			<li><span class="clickable" onclick="changeAudio(3)">Track 3</a></li>
+		</ul>
+	</li>
+</ul>
+</div> <!-- navBar -->
+
+<div id="navBarToggleDiv">
+<input id="navBarToggleIcon" type="image" onclick="toggleNavBar()" src="toggleImage.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- navArea -->
+
+<div id="contextArea"> 
+<div id="contextBar">
+<div id="context">
+<h2 style="text-align: center;">Exploration Reflection</h2><br>
+<p>
+Welcome to the Reflection page. Here you are presented with the contents of your previous exploration, free to save the information for later
+viewing if you wish.
+</p><br>
+<p>
+American engineer and designer Vannevar Bush wrote a forward-thinking article in 1945 about hypertext and ideas of information traversal and storage
+in a pioneering article published in Atlantic Monthly. His thinking was inspired by what he perceived as an insurmountable growth in human knowledge
+and the resulting difficulties of making use of the information. His pre-internet ideas of information traversal included what he called the memex. In his descriptions,
+a memex was a device that would allow users to save all of their books, records, and communications and traverse them at great speed. During these traversals, the user might
+enter new notes to add to the collection for later traversal. He emphasized the importance of the associations between stored information, what we now simply call "links." This 
+website borrows these ideas with its explorations and reflections. After completing an exploration through a vast collection of knowledge, the user is encouraged to reflect and make further notes about
+the information presented.
+</p><br>
+<p>
+American designer Jon Kolko writes extensively on the structure of information and design strategies. He puts forth that much of design involves 
+drawing connections between seemingly disparate ideas. His model of the design process focuses on two steps: synthesis and ideation. In his article,
+"Information Architecture and Design Strategy: The Importance of Synthesis during the Process of Design," Kolko outlines what he calls the three chasms
+from data to wisdom: making meaning out of data, framing the data and meaning in the context of experience, and empathizing
+with a targeted audience to improve the conveying of the information at hand. As you browse the previous exploration, perhaps you will find the remarks 
+of these designers to be helpful in your creative process.
+</p>
+</div>
+</div>
+
+<div id="contextToggleDiv">
+<input id="contextBarToggleIcon" type="image" onclick="toggleContextBar()" src="contextToggle.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- contextArea -->
+<div id="explorationResults">
+</div>
+</div>
+
+</div> <!-- explorationArea -->
+
+</body>
+</html>

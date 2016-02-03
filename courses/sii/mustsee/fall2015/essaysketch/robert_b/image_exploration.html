@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explorative Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="toggle.js"></script>
+<script src="controls.js"></script>
+<script src="image_exploration.js"></script>
+
+<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="image_exploration.css">
+<meta charset="UTF-8"> 
+
+<audio id="audioplayer" src="comma.mp3" loop="true"></audio>
+</head>
+
+<body>
+<div id="navArea">
+<div id="logoContainer"><img id="siteLogo" src="website_logo.png" /></div>
+<div id="filler"></div>
+
+<div id="navBar">
+<ul id="navList">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="free_explore.html">Free Explore</a></li>
+	<li><span>Variations</span>
+		<ul>
+			<li><a href="image_exploration.html">Image Exploration</a></li>
+			<li><a href="multi-exploration.html">Multi-Exploration</a></li>
+			<li><a href="layout_exploration.html">Layout Exploration</a></li>
+		</ul>
+	</li>
+	<li>
+		<span class="spanItem" id="soundContainer"><img id="soundIcon" onclick="toggleSound()" src="sound.png" height="15px"/></span>
+	</li>
+	<li>
+		<span class="spanItem"><div id="settingsContainer"><img id="settingsIcon" src="settings.png" height="20px"/></div></span>
+		<ul>
+			<li><span class="bolded">Transition Speed:</span></li>
+			<li><input id="speedInput" type="range" min="25" max="100" onchange="toggleTransitionSpeed()"/></li>
+			<li><span class="bolded">Audio Option:</span></li>
+			<li><span class="clickable" onclick="changeAudio(1)">Track 1</a></li>
+			<li><span class="clickable" onclick="changeAudio(2)">Track 2</a></li>
+			<li><span class="clickable" onclick="changeAudio(3)">Track 3</a></li>
+		</ul>
+	</li>
+</ul>
+</div> <!-- navBar -->
+
+<div id="navBarToggleDiv">
+<input id="navBarToggleIcon" type="image" onclick="toggleNavBar()" src="toggleImage.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- navArea -->
+
+<div id="contextArea"> 
+<div id="contextBar">
+<div id="context">
+<h2 style="text-align: center;">Image Exploration</h2><br>
+<p>
+Welcome to the Image Exploration page. Here, you will be presented simply with images curated from Wikipedia. Each image is related to the next through a Wikipedia link. 
+</p><br>
+<p>
+Combining these images may result in a Rauschenburg-esqe collection of items, whose combinations of images and artifacts inspired viewers to create their own conclusions 
+and connections. As you view the images presented, ponder the connections between the items. You may be surprised to find that they are different than the concrete connections
+found in Wikipedia. 
+</p><br>
+<p>
+The Dada art movement and well-renowned artist Marcel Duchamp championed the idea of context as it relates to art. Duchamp's "Fountain" is a great example of this, as its ordinary
+presentation as a urinal is unassuming. However, when presented in the context of an art exhibit and a carefully chosen name, the art piece takes on new meaning among its viewers.
+Similarly, the images provided here take on new meaning in the context of the other images and the connections you create.
+</p>
+<p>
+Upon finishing your exploration, your images will be presented with their associated Wikipedia pages, allowing you to reflect on their connections further. 
+</p><br>
+</div>
+</div>
+
+<div id="contextToggleDiv">
+<input id="contextBarToggleIcon" type="image" onclick="toggleContextBar()" src="contextToggle.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- contextArea -->
+
+<div id="explorationArea" onmouseenter="showControls()" onmouseleave="hideControls()">
+<br><br>
+<div id="explorationContent">
+<img id="explorationImage" />
+</div>
+
+<!-- filler div -->
+<div style="height: 40%"></div>
+
+<div id="explorationControls">
+<div class="explorationControl"><input id="playPauseButton" type="image" onclick="onPlayPause()" src="pause_button.png" alt="Play/Pause" height="30px" style="outline: none;" /></div>
+<div class="explorationControl"><a href="reflection.html" onclick="onStop()"><img id="stopButton" src="stop_button.png" alt="Stop" height="30px" style="outline: none;" /></a></div>
+</div>
+
+<div id="titleInput">
+<h2 style="color:white;">Input a Wikipedia Title</h2>
+<br>
+<input id="titleInputBox" type="text" />
+<button id="titleSubmitButton">Submit</button>
+</div>
+
+<div id="loading">
+<h2 style="color:white">Loading...</h2>
+</div>
+
+<div id="results" style="color:red; text-align: center">
+</div>
+
+</div> <!-- explorationArea -->
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explorative Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="toggle.js"></script>
+<script src="controls.js"></script>
+<script src="layout_exploration.js"></script>
+
+<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="layout_exploration.css">
+<meta charset="UTF-8"> 
+
+<audio id="audioplayer" src="comma.mp3" loop="true"></audio>
+</head>
+
+<body>
+<div id="navArea">
+<div id="logoContainer"><img id="siteLogo" src="website_logo.png" /></div>
+<div id="filler"></div>
+
+<div id="navBar">
+<ul id="navList">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="free_explore.html">Free Explore</a></li>
+	<li><span>Variations</span>
+		<ul>
+			<li><a href="image_exploration.html">Image Exploration</a></li>
+			<li><a href="multi-exploration.html">Multi-Exploration</a></li>
+			<li><a href="layout_exploration.html">Layout Exploration</a></li>
+		</ul>
+	</li>
+	<li>
+		<span class="spanItem" id="soundContainer"><img id="soundIcon" onclick="toggleSound()" src="sound.png" height="15px"/></span>
+	</li>
+	<li>
+		<span class="spanItem"><div id="settingsContainer"><img id="settingsIcon" src="settings.png" height="20px"/></div></span>
+		<ul>
+			<li><span class="bolded">Transition Speed:</span></li>
+			<li><input id="speedInput" type="range" min="25" max="100" onchange="toggleTransitionSpeed()"/></li>
+			<li><span class="bolded">Audio Option:</span></li>
+			<li><span class="clickable" onclick="changeAudio(1)">Track 1</a></li>
+			<li><span class="clickable" onclick="changeAudio(2)">Track 2</a></li>
+			<li><span class="clickable" onclick="changeAudio(3)">Track 3</a></li>
+		</ul>
+	</li>
+</ul>
+</div> <!-- navBar -->
+
+<div id="navBarToggleDiv">
+<input id="navBarToggleIcon" type="image" onclick="toggleNavBar()" src="toggleImage.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- navArea -->
+
+<div id="contextArea"> 
+<div id="contextBar">
+<div id="context">
+<h2 style="text-align: center;">Layout Exploration</h2><br>
+<p>
+Welcome to the Layout Exploration page! There exist many proponents of grid-based design and its basic ideas go back thousands of years. Among its advocates are French designer and architect Le Corbusier and 
+American designer Paul Rand.
+</p><br>
+<p>
+Paul Rand, a renowned American art director and graphic designer, was a large proponent of grid-based design. His style emphasized cleanliness and readability.
+The layout exploration page, in one of its variations, presents sentences in a Rand-esque, modular grid. This same basic grid was utilized in his designs for an
+IBM manual. The design lends itself well to the Exploration Engine.
+</p><br>
+<p>
+Le Corbusier, another proponent of grid-based design, emphasized proportions in his grids. His work often utilized the so-called golden ratio, which is found in the 
+Fibonacci sequence. The Layout Exploration, too, makes use of this concept, presenting information in a Le Corbusier-inspired grid.
+</p>
+</div>
+</div>
+
+<div id="contextToggleDiv">
+<input id="contextBarToggleIcon" type="image" onclick="toggleContextBar()" src="contextToggle.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- contextArea -->
+
+<div id="explorationArea" onmouseenter="showControls()" onmouseleave="hideControls()">
+<br><br>
+<div id="explorationContent">
+
+<!-- Paul Rand IBM layout-->
+<div id="layout0">
+<div class="randBox"><div id="00" class="boxContents"></div></div>
+<div class="randBox"><div id="01" class="boxContents"></div></div>
+<div class="randBox"><div id="02" class="boxContents"></div></div>
+<div class="randBox"><div id="10" class="boxContents"></div></div>
+<div class="randBox"><div id="11" class="boxContents"></div></div>
+<div class="randBox"><div id="12" class="boxContents"></div></div>
+<div class="randBox"><div id="20" class="boxContents"></div></div>
+<div class="randBox"><div id="21" class="boxContents"></div></div>
+<div class="randBox"><div id="22" class="boxContents"></div></div>
+</div>
+
+<!-- Le Corbusier layout -->
+<div id="layout1">
+<div id="corbusier0" class="corbusierBox"></div>
+<div id="corbusier1" class="corbusierBox"></div>
+<div id="corbusier2" class="corbusierBox"></div>
+<div id="corbusier3" class="corbusierBox"></div>
+
+<div id="corbusier0_tester" class="corbusierBox"></div>
+<div id="corbusier1_tester" class="corbusierBox"></div>
+<div id="corbusier2_tester" class="corbusierBox"></div>
+<div id="corbusier3_tester" class="corbusierBox"></div>
+</div>
+</div>
+
+<!-- filler div -->
+<div style="height: 40%"></div>
+
+<div id="explorationControls">
+<div class="explorationControl"><input id="playPauseButton" type="image" onclick="onPlayPause()" src="pause_button.png" alt="Play/Pause" height="30px" style="outline: none;" /></div>
+<div class="explorationControl"><a href="reflection.html" onclick="onStop()"><img id="stopButton" src="stop_button.png" alt="Stop" height="30px" style="outline: none;" /></a></div>
+</div>
+
+<div id="titleInput">
+<h2 style="color:white;">Input a Wikipedia Title</h2>
+<br>
+<input id="titleInputBox" type="text" />
+<button id="titleSubmitButton">Submit</button>
+</div>
+
+<div id="loading">
+<h2 style="color:white">Loading...</h2>
+</div>
+
+<div id="results" style="color:red; text-align: center">
+</div>
+
+</div> <!-- explorationArea -->
+
+</body>
+</html>

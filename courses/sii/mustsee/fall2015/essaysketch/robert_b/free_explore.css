@@ -1,0 +1,49 @@
+#explorationArea {
+	margin: 10px auto;
+	padding: 10px;
+
+	width: 75%;
+	height:auto;
+}
+
+#explorationContent {
+	width: 780px;
+	height: 300px;
+	margin: 0px auto;
+
+	opacity: 1;
+	transition: opacity 1s;
+
+	color: #F0F080;
+	font-size: 25px;
+	
+	font-family: cambria, serif;
+	text-align: center;
+	text-shadow: 1px 1px #222222;
+
+	display: none;
+}
+
+#explorationControls {
+	text-align: center;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s;
+
+	display: none;
+}
+
+#titleInput {
+	text-align: center;
+}
+
+#loading {
+	text-align: center;
+	display: none;
+}
+
+.explorationControl {
+	display: inline-block;
+	margin: 0 20px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explorative Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="toggle.js"></script>
+<script>
+function onReady() {
+	toggleSound();
+}
+
+$(document).ready(onReady);
+</script>
+
+<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta charset="UTF-8"> 
+
+
+</head>
+
+<body>
+<div id="navArea">
+<div id="logoContainer"><img id="siteLogo" src="website_logo.png" /></div>
+<div id="filler"></div>
+
+<div id="navBar">
+<ul id="navList">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="free_explore.html">Free Explore</a></li>
+	<li><span>Variations</span>
+		<ul>
+			<li><a href="image_exploration.html">Image Exploration</a></li>
+			<li><a href="multi-exploration.html">Multi-Exploration</a></li>
+			<li><a href="layout_exploration.html">Layout Exploration</a></li>
+		</ul>
+	</li>
+	<li>
+		<span class="spanItem" id="soundContainer"><img id="soundIcon" onclick="toggleSound()" src="sound.png" height="15px"/></span>
+	</li>
+	<li>
+		<span class="spanItem"><div id="settingsContainer"><img id="settingsIcon" src="settings.png" height="20px"/></div></span>
+		<ul>
+			<li><span class="bolded">Transition Speed:</span></li>
+			<li><input id="speedInput" type="range" min="25" max="100" onchange="toggleTransitionSpeed()"/></li>
+			<li><span class="bolded">Audio Option:</span></li>
+			<li><span class="clickable" onclick="changeAudio(1)">Track 1</a></li>
+			<li><span class="clickable" onclick="changeAudio(2)">Track 2</a></li>
+			<li><span class="clickable" onclick="changeAudio(3)">Track 3</a></li>
+		</ul>
+	</li>
+</ul>
+</div> <!-- navBar -->
+
+<div id="navBarToggleDiv">
+<input id="navBarToggleIcon" type="image" onclick="toggleNavBar()" src="toggleImage.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- navArea -->
+
+<div id="contentArea">
+<h1 style="text-align: center;">About the Exploration Engine</h1>
+<br>
+<p> Welcome to the Exploration Engine. </p><br>
+<p>The Exploration Engine is a websurfing tool that allows the user to explore the information stored in Wikipedia in a novel way.
+The experience is akin to falling down a rabbit hole, knowledge passing by the user as he observes. You will be presented with a single sentence
+of Wikipedia information at a time. As the tool presents new information, it will transition between Wikipedia pages, taking the user on a journey.</p><br>
+<p>
+The benefits of the tool are numerous. The tool may be a way to unlock creativity at times when the user is struggling against a creativity block; 
+it's presentation of new information can force the users thoughts out of its current, narrow scope. The tool may also induce a state of daydreaming,
+inspiring the user's mind to veer off into unknown territory. <a href="http://pss.sagepub.com/content/23/10/1117">Studies</a> indicate that this type 
+of experience can improve creative problem solving skills as well. With the addition of audio, the website may even provide a meditative experience. 
+I encourage you to explore the website yourself and discover these properties. The audio presented on this website is provided by user "talk midway"
+from Soundcloud.com and you can find more of his work <a href="https://soundcloud.com/talkmidway">here</a> if you're interested in hearing more.
+</p><br>
+<p>
+The website's inspiration falls partially from youtube channel <a href="https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA">Vsauce</a> whose charismatic
+narrator, Micheal, presents brief lectures of profound, synthesized information from far-reaching sources. Check out the channel if you enjoy using the Exploration Engine.
+</p><br>
+<p>
+The different pages found in the navigation bar at the top of the website provide differing experiences traversing Wikipedia. The free exploration tool allows 
+you to choose a Wikipedia page of your liking to start at and presents the most basic of the exploration types. The guided explorations provide varied experiences
+and discuss overarching design and structural concepts regarding the Internet. 
+</p><br>
+<p>
+Upon finishing your exploration and pressing the end button, you will be presented with a page with all of the information presented during the exploration where you
+may further investigate the connections and information.
+</p><br>
+<p>
+You may alter the transition speed and sound settings in the settings menu at the top of the website if you find the experience requires adjustment. The menus are 
+collapsible to remove distractions. Should your browser offer a fullscreen mode, it also improves upon the experience dramatically by further removing distractions.
+Enjoy the website.
+</p><br>
+<p>--Robert Bagott</p>
+</div>
+
+</body>
+</html>
