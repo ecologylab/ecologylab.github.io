@@ -1,0 +1,50 @@
+#explorationResults{
+	margin: 10px auto;
+	padding: 10px;
+
+	width: 75%;
+	height:auto;
+
+}
+
+.resultsItem {
+	margin: 0px auto;
+	width: 100%;
+	height: auto;
+
+	color: #F0F080;
+	font-size: 12px;
+	
+	font-family: cambria, serif;
+	text-shadow: 1px 1px #222222;
+}
+
+.itemTitle {
+	width: 20%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+
+	word-wrap: break-word;
+}
+
+.itemText {
+	width: 70%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itemImage {
+	width: 70%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.filler {
+	width: 100%;
+	height: 15px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explorative Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="toggle.js"></script>
+<script src="controls.js"></script>
+<script src="multi-exploration.js"></script>
+
+<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="multi-exploration.css">
+<meta charset="UTF-8"> 
+
+<audio id="audioplayer" src="comma.mp3" loop="true"></audio>
+</head>
+
+<body>
+<div id="navArea">
+<div id="logoContainer"><img id="siteLogo" src="website_logo.png" /></div>
+<div id="filler"></div>
+
+<div id="navBar">
+<ul id="navList">
+	<li><a href="index.html">Home</a></li>
+	<li><a href="free_explore.html">Free Explore</a></li>
+	<li><span>Variations</span>
+		<ul>
+			<li><a href="image_exploration.html">Image Exploration</a></li>
+			<li><a href="multi-exploration.html">Multi-Exploration</a></li>
+			<li><a href="layout_exploration.html">Layout Exploration</a></li>
+		</ul>
+	</li>
+	<li>
+		<span class="spanItem" id="soundContainer"><img id="soundIcon" onclick="toggleSound()" src="sound.png" height="15px"/></span>
+	</li>
+	<li>
+		<span class="spanItem"><div id="settingsContainer"><img id="settingsIcon" src="settings.png" height="20px"/></div></span>
+		<ul>
+			<li><span class="bolded">Transition Speed:</span></li>
+			<li><input id="speedInput" type="range" min="25" max="100" onchange="toggleTransitionSpeed()"/></li>
+			<li><span class="bolded">Audio Option:</span></li>
+			<li><span class="clickable" onclick="changeAudio(1)">Track 1</a></li>
+			<li><span class="clickable" onclick="changeAudio(2)">Track 2</a></li>
+			<li><span class="clickable" onclick="changeAudio(3)">Track 3</a></li>
+		</ul>
+	</li>
+</ul>
+</div> <!-- navBar -->
+
+<div id="navBarToggleDiv">
+<input id="navBarToggleIcon" type="image" onclick="toggleNavBar()" src="toggleImage.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- navArea -->
+
+<div id="contextArea"> 
+<div id="contextBar">
+<div id="context">
+<h2 style="text-align: center;">Multi-Exploration</h2><br>
+<p>
+Welcome to the Multi-Exploration page! Here, you will be presented with two concurrent explorations starting from the same Wikipedia page.
+The explorations will slowly diverge as link-following decisions are made in each exploration. This results in a wide breadth of 
+information presented and connections between disparate subjects begin to emerge.
+</p><br>
+<p>
+Spanish short-story writer and essayist Jorge Luis-Borges presents a tale of contradictions and multiple realities in his work
+"The Garden of Forking Paths." The story's themes emphasize decisions and their diverging outcomes and he explores the idea of the "labyrinth,"
+where subsequent decisions lead to a great number of possibilities. His ideas are displayed in the page's explorations.
+</p><br>
+<p>
+Mike Figgis's experimental film "Timecode" explores a similar concept. The film follows individuals throughout a day in their lives by displaying 
+four continuous clips simultaneously. While the viewer is confounded, struggling to make sense of the four stories occuring at once, he or she begins to see
+where the stories converge and interact. The user of the Multi-Exploration page is presented with information in a similar fashion and is encouraged to 
+find these information convergences and connections as he is whisked through perhaps wildly different subjects.
+</p>
+</div>
+</div>
+
+<div id="contextToggleDiv">
+<input id="contextBarToggleIcon" type="image" onclick="toggleContextBar()" src="contextToggle.png" alt="Toggle" style="outline: none;" />
+</div>
+</div> <!-- contextArea -->
+
+<div id="explorationArea" onmouseenter="showControls()" onmouseleave="hideControls()">
+<br><br>
+<div id="explorationContent0">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
+<div id="explorationContent1">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
+<!-- filler div -->
+<div style="height: 40%"></div>
+
+<div id="explorationControls">
+<div class="explorationControl"><input id="playPauseButton" type="image" onclick="onPlayPause()" src="pause_button.png" alt="Play/Pause" height="30px" style="outline: none;" /></div>
+<div class="explorationControl"><a href="reflection.html" onclick="onStop()"><img id="stopButton" src="stop_button.png" alt="Stop" height="30px" style="outline: none;" /></a></div>
+</div>
+
+<div id="titleInput">
+<h2 style="color:white;">Input a Wikipedia Title</h2>
+<br>
+<input id="titleInputBox" type="text" />
+<button id="titleSubmitButton">Submit</button>
+</div>
+
+<div id="loading">
+<h2 style="color:white">Loading...</h2>
+</div>
+
+<div id="results" style="color:red; text-align: center">
+</div>
+
+</div> <!-- explorationArea -->
+
+</body>
+</html>
