@@ -1,0 +1,268 @@
+<!DOCTYPE HTML>
+ 
+<head> 
+	
+<title>CSS Quizzes</title> 
+
+<link rel="stylesheet" href="steeze/steeze.css" type="text/css" media="screen" charset="utf-8"/> 
+
+<script>
+	function showResultBelow(event)
+	{
+		var target = event.target;
+		var result = target.parentElement.childNodes[3];
+		
+		// change the stuff yo		
+		if(result.style.height == "200px")// if open, close
+		{
+			result.style.height = "0px";
+		}
+		else // if closed, open
+		{
+			result.style.height = "200px";
+		}
+					
+	}
+	
+</script>
+
+<style>
+
+	body{
+		font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
+	}
+	
+	h1 {
+		font-weight: bold;
+	}
+	
+	#center {
+		margin-left: auto;
+		margin-right: auto;
+		width: 442px;
+		display: block;
+		padding-top: 7%;
+	}
+	
+	#center ul {
+		list-style: none;
+		text-align: center;
+		font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+		font-weight: normal;
+		font-size: 32px;
+	}
+	
+	#center li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 18px;
+	}
+	
+	a {
+		text-decoration: none;
+		color: black;
+		border-bottom: 2px solid seagreen;
+	}
+	
+	a:hover {
+		color: gray;
+		border-bottom: 2px solid pink;
+	}
+	
+	
+	.quiz {
+	}
+	
+	.code {
+		background: blue;
+	}
+	
+	.button {
+		border: 1px solid gray;
+		box-shadow: 2px 2px 8px -4px black;
+		padding: 6px;
+		border-radius: 2px;
+		text-align: center;
+		width: 100px;
+		margin: 16px;
+		user-select: none;
+	}
+	
+	.button:hover {
+		box-shadow: 2px 2px 8px -2px black;
+		cursor: pointer;
+		
+	}
+	
+	.result {
+		height: 0px;
+		border: 1px solid black;
+		overflow: hidden;
+		transition: height 0.3s ease;
+	}
+	
+	/** CSS FOR EXAMPLES **/
+	
+	article {
+		color: green;
+		font-size: 18px;
+		padding-left: 12px;
+		line-height:26px;
+	}
+	
+	.blue_text {
+		color: blue;
+	}
+	
+	#monkey {
+		color: purple;
+	}
+	
+	h3, span{
+		color: orange;
+	}
+		
+	article h3{
+		color: cyan;
+	}
+	
+</style>
+
+</head> 
+ 
+<body>
+	
+	<div id="leftCol" style="float:left; width: 400px; border: none; padding-left: 32px;">
+
+		<pre style="font-size:18px;">
+article {
+	color: green;
+	font-size: 18px;
+	padding-left: 12px;
+	line-height:26px;
+}
+
+.blue_text {
+	color: blue;
+}
+
+#monkey {
+	color: purple;
+}
+
+h3, span{
+	color: orange;
+}
+	
+article h3{
+	color: cyan;
+}
+
+&lt;article>dog&lt;/article>
+
+&lt;article class="blue_text">cat&lt;/article>
+
+&lt;article class="blue_text" style="color: red;">mouse&lt;/article>
+
+&lt;article id="monkey" class="blue_text">monkey&lt;/article>
+
+&lt;article class="blue_text">
+	&lt;h3>horse&lt;/h3>
+	&lt;span>hawk&lt;/span>
+	&lt;div>
+		&lt;article>dolphin&lt;/article>
+	&lt;/div>
+&lt;/article>
+	
+			</pre>
+</div>
+	<div id="rightCol" style="float:right; width: 400px; border: none">
+		
+		<div class="quiz">
+		
+			<div class="button" onclick="showResultBelow(event);">
+				dog?
+			</div>
+			
+			<div class="result">
+								
+				<div class="content">
+					
+					<article>dog</article>
+					
+				</div>
+			</div>
+		</div>	
+		
+		<div class="quiz">
+		
+			<div class="button" onclick="showResultBelow(event);">
+				cat?
+			</div>
+			
+			<div class="result">
+								
+				<div class="content">
+				
+					<article class="blue_text">cat</article>
+					
+				</div>
+			</div>
+		</div>	
+		
+		<div class="quiz">
+		
+			<div class="button" onclick="showResultBelow(event);">
+				mouse?
+			</div>
+			
+			<div class="result">
+								
+				<div class="content">
+					
+					<article class="blue_text" style="color: red;">mouse</article>
+					
+				</div>
+			</div>
+		</div>	
+		
+		<div class="quiz">
+		
+			<div class="button" onclick="showResultBelow(event);">
+				monkey?
+			</div>
+			
+			<div class="result">
+								
+				<div class="content">
+		
+					<article id="monkey" class="blue_text">monkey</article>
+					
+				</div>
+			</div>
+		</div>	
+		
+		<div class="quiz">
+		
+			<div class="button" style="width: 200px;" onclick="showResultBelow(event);">
+				horse, hawk, dolphin?
+			</div>
+			
+			<div class="result">
+								
+				<div class="content">
+					
+					<article class="blue_text">
+						<h3>horse</h3>
+						<span>hawk</span>
+						<div>
+							<article>dolphin</article>
+						</div>
+					</article>
+					
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+</body>

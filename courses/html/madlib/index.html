@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+ 
+<head> 
+	
+<title>MadLib - SII Example</title> 
+
+<script type="text/javascript" src="madlib.js"></script>	
+<script type="text/javascript" src="MadLibData.js"></script>	
+
+<style>
+
+	body{
+		font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
+		background: lightgray;
+	}
+	
+	h1 {
+		font-weight: bold;
+	}
+	
+	#center {
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+		display: block;
+		padding-top: 30%;
+	}
+	
+	#center img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 442px;
+		display: block;
+	}
+	
+	
+	#center h1, h3 {
+		text-align: center;
+	}
+	
+	
+	
+	ul {
+		list-style: none;
+	}
+	
+	li {
+		margin: 12px 0px;
+	}
+	
+	.screen {
+		background: white;
+		color: black;
+		box-shadow: 2px 2px 18px -5px black;
+		border-radius: 3px;
+		
+		position: absolute;
+		width: 600px;		
+		height: 720px;
+		
+		-webkit-transition: all 0.666s;
+		transition: all 0.666s;
+	}
+	
+	input {
+		font-size: 16px;
+	}
+	.word-label {
+		line-height: 32px;
+		margin-left: 42px;
+	}
+	
+	.madlib {
+		font-size: 24px;
+		font-family: Times New Roman, serif;
+		font-weight: lighter;
+		margin: 24px;
+		line-height: 32px;
+		text-align: justify;
+	}
+	
+	.mad-word {
+		font-weight: bold;
+	}
+	
+	
+</style>
+
+</head> 
+ 
+<body>
+	
+	<div id="header">
+		<h1 style="font-size: 58px; text-align: center;">MadLib</h1>
+		
+		<div class="button" onclick="clickNext();"> Next -></div>		
+	</div>
+	
+	<div id="input-screen" class="screen" >
+		<h3>Please input <i>silly</i> words.</h3>
+		
+		<span class="word-label">Verb 1 - present tense</span>
+		<input id="VERB_1" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 2 - present tense</span>
+		<input id="VERB_2" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 3 - present tense, end in 's'</span>
+		<input id="VERB_3" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 4 - present tense, end in 'ing'</span>
+		<input id="VERB_4" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 5 - present tense, end in 'ing'</span>
+		<input id="VERB_5" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 6 - present tense</span>
+		<input id="VERB_6" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Verb 7 - past tense</span>
+		<input id="VERB_7" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		
+		<span class="word-label">Noun 1</span>
+		<input id="NOUN_1" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Noun 2</span>
+		<input id="NOUN_2" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Noun 3</span>
+		<input id="NOUN_3" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Noun 4</span>
+		<input id="NOUN_4" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		
+		<span class="word-label">Plural Noun 1</span>
+		<input id="PLURAL_NOUN_1" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Plural Noun 2</span>
+		<input id="PLURAL_NOUN_2" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Plural Noun 3</span>
+		<input id="PLURAL_NOUN_3" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Plural Noun 4</span>
+		<input id="PLURAL_NOUN_4" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		
+		<span class="word-label">Thing to say</span>
+		<input id="THING_TO_SAY" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		
+		<span class="word-label">Adjective 1</span>
+		<input id="ADJECTIVE_1" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Adjective 2</span>
+		<input id="ADJECTIVE_2" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Adjective 3</span>
+		<input id="ADJECTIVE_3" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		<span class="word-label">Adjective 4</span>
+		<input id="ADJECTIVE_4" value="?" type="text" class="word-input" onkeyup="assignWordsAndSaveThem();"/>
+		<br/>
+		
+		
+	</div>
+	
+	<div id="madlibJaws-screen" class="screen" style="opacity:0.33; -webkit-transform: scale(0.8);">
+		<h3>MadLib 1</h3>
+		
+		<div id="madlibJaws" class="madlib">
+			
+		</div>
+		
+		
+	</div>
+	
+	<div id="madlibFightClub-screen" class="screen" style="opacity:0.33; -webkit-transform: scale(0.8);">
+		<h3>MadLib 2</h3>
+		
+		<div id="madlibFightClub" class="madlib">
+			
+		</div>
+		
+		
+	</div>
+	
+	<div id="madlibPulp-screen" class="screen" style="opacity:0.33; -webkit-transform: scale(0.8);">
+		<h3>MadLib 3</h3>
+		
+		<div id="madlibPulp" class="madlib">
+			
+		</div>
+		
+		
+	</div>
+	
+	
+		
+	<script>
+		initMadLib();
+	</script>
+	
+	
+</body>
