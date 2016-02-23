@@ -96,9 +96,12 @@ h1 {
   padding-top: .32em;
   padding-bottom: 2em;
   width: fit-content;
+
   opacity: 0;
+/*  visibility: hidden;*/
+    
   transition:opacity 0.5s linear;
-/*    visibility: hidden;*/
+/*  transition:visibility 0s linear 0.5s,opacity 0.5s linear;*/
 }
 #materials h2 {
   font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
@@ -154,16 +157,17 @@ div.reading {
             materialsStyle.opacity  = 1;            
         }
             
-/*
-        if (materialsStyle.visibility == 'visible')
+/*        if (materialsStyle.visibility == 'visible')
         {
             materialsStyle.visibility   = 'hidden';
+            materialsStyle.opacity  = 0;            
         }
         else
         {
             materialsStyle.visibility   = 'visible';
-        }
-*/
+            materialsStyle.opacity  = 1;       
+            materialsStyle.transitionDelay = "1s";
+        }*/
     }
 </script>
 
@@ -180,7 +184,7 @@ div.reading {
 <!--<h2>33</h2>-->
 		<ul>
 			<li>
-				<a href="cssQuizzes/index.html">css assignment quiz</a>
+				<a href="cssQuizzes/index.html">css quiz</a>
 			</li>
 
 			<li>
