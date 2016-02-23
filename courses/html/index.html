@@ -2,64 +2,170 @@
 
 <head>
 
-<title>html5 exemplars [interface ecology lab]</title> 
+<title>learning html5 [interface ecology lab]</title>
 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<link rel="shortcut icon" href="../../images/ecologylab-16.ico" type="image/ico"/>
+<link rel="icon" href="../../images/ecologylab-16.png" type="image/png"/>
+
+<link rel="stylesheet" href="../../code/styles/ecologylab/courses.css"/>
 <link rel="stylesheet" href="steeze/steeze.css" type="text/css" media="screen" charset="utf-8"/>
 
 <style>
 
-	body{
-		font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
-	}
+body{
+  font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
+  background-color: white;
+}
 
-	h1 {
-		font-weight: bold;
-	}
+h1 {
+  font-weight: bold;
+}
 
-	#center {
-		margin-left: auto;
-		margin-right: auto;
-		width: 600px;
-		display: block;
-		padding-top: 7%;
-	}
+#center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  display: block;
+  padding-top: 4%;
+  text-align: center;
+}
 
-	#center img {
-		width: 260px;
-		display: inline-block;
-	}
+#center img {
+  width: 260px;
+  display: inline-block;
+}
 
 
-	#center h1 {
-		text-align: center;
-	}
+#center ul {
+  list-style: none;
+  text-align: center;
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-weight: normal;
+  font-size: 32px;
+  margin-top: 7px;
+}
 
-	#center ul {
-		list-style: none;
-		text-align: center;
-		font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
-		font-weight: normal;
-		font-size: 32px;
-	}
+#center li {
+  display: block;
+  list-style-type: none;
+  padding: 18px;
+}
 
-	#center li {
-		display: block;
-		list-style-type: none;
-		padding: 18px;
-	}
+#center h1 {
+  font-size: 58px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
-	a {
-		text-decoration: none;
-		color: black;
-		border-bottom: 2px solid seagreen;
-	}
+#center h2 {
+  font-size: 38px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
 
-	a:hover {
-		color: gray;
-		border-bottom: 2px solid pink;
-	}
+#center a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid seagreen;
+}
+
+#center a:hover {
+  color: gray;
+  border-bottom: 2px solid pink;
+}
+
+#materials {
+  font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: .32em;
+  padding-bottom: 2em;
+  width: fit-content;
+  opacity: 0;
+  transition:opacity 0.5s linear;
+/*    visibility: hidden;*/
+}
+#materials h2 {
+  font-family: "Helvetica", Arial, FreeSerif, OpenSymbol, "DejaVu Sans", sans-serif;
+}
+.content_set {
+  display: flex;
+
+}
+.content_set div {
+  line-height: 130%;
+
+}
+.reading_set {
+
+
+}
+.subheading {
+  margin-bottom: 0px;
+  padding-bottom: 4px;
+}
+div.reading {
+  padding-top: 0px;
+  margin-top: 0px;
+  background-color: cornflowerblue;
+}
+
+.reading_set a {
+  text-decoration: none;
+  color: hsla(0, 0%, 20%);
+  font-weight: bold;
+  font-size: 16px;
+  border-bottom: .5px solid hsla(0, 0%, 50%, .25);
+}
+
+.reading_set div {
+  white-space: nowrap;
+  padding-bottom: 3px;
+}
 
 </style>
+
+<script type="text/javascript">
+    function showHideMaterials()
+    {
+        var materialsStyle    = document.getElementById("materials").style;
+ //       alert(materialsStyle.visibility + " " (materialsStyle.visibility == true))
+        if (materialsStyle.opacity == 1) 
+        {
+            materialsStyle.opacity  = 0;
+        }
+        else 
+        {
+            materialsStyle.opacity  = 1;            
+        }
+            
+/*
+        if (materialsStyle.visibility == 'visible')
+        {
+            materialsStyle.visibility   = 'hidden';
+        }
+        else
+        {
+            materialsStyle.visibility   = 'visible';
+        }
+*/
+    }
+</script>
 
 </head>
 
@@ -67,11 +173,11 @@
 
 	<div id="center">
 
-		<img src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/>
-		<img src="HTML5_Logo_256.png"/>
+	<div>	<a style="border-bottom: 0px;" href="../../index.html"><img src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/></a>
+		<img src="HTML5_Logo_256.png"/></div>
 
-		<h1 style="font-size: 58px;">ecology lab HTML examples</h1>
-
+        <h1><a style="border-bottom: 2px solid white;" href="../index.html">examples</a></h1>
+<!--<h2>33</h2>-->
 		<ul>
 			<li>
 				<a href="cssQuizzes/index.html">css assignment quiz</a>
@@ -90,6 +196,408 @@
 			</li>
 
 		</ul>
+           <h2 style="padding-top: .4em;"><a href="javascript:showHideMaterials()">materials</a></h2>
+
 	</div>
+
+    <div id="materials">
+
+        <h2 class="subsection">
+            <a id="htmlcss" >
+            html
+            </a>
+        </h2>
+        <div class="content_set">
+            <a target="_blank"
+             href="http://www.w3schools.com/">
+            <img src="../sii/modules/code/images/html_css_js.jpg" class="illustrate_left" width="144" height="100"/>
+            </a>
+
+            <div  class="reading_set">
+                <div>
+                W3Schools,
+                <a class="destination"
+                 target="_blank"
+                 href="http://www.w3schools.com/html/default.asp">HTML Tutorial</a>.
+                </div>
+                <div>
+                Codecademy,
+                <a class="destination"
+                 target="_blank"
+                 href="https://www.codecademy.com/tracks/web">HTML &amp; CSS</a>.
+                </div>
+            </div>
+        </div>
+
+        <div class="content_set">
+            <a target="_blank"
+             href="https://www.youtube.com/watch?v=1SLB-vCqR0g">
+            <img src="../sii/modules/code/images/tags.png" class="illustrate_left" width="144" height="100"/>
+            </a>
+
+            <div  class="reading_set">
+              <div>
+                DevTips,
+                <a class="destination"
+                target="_blank"
+                href="https://www.youtube.com/watch?v=1SLB-vCqR0g">HTML5 Basics - Tags [video]</a>
+              </div>
+            </div>
+          </div>
+
+            <h2 class="subsection">
+              <a id="htmlcss" >
+                css
+              </a>
+            </h2>
+            <div class="content_set">
+              <a target="_blank"
+              href="http://learnlayout.com/">
+              <img src="../sii/modules/code/images/css.png" class="illustrate_left" width="144" height="100">
+            </a>
+
+            <div  class="reading_set">
+              <div>
+              W3Schools,
+              <a class="destination"
+               target="_blank"
+               href="http://www.w3schools.com/css/default.asp">CSS Tutorial</a>.
+              </div>
+              <div>
+                LearnLayout, <a class="destination"
+                target="_blank"
+                href="http://learnlayout.com/">Learn CSS Layout</a>.
+              </div>
+
+            </div>
+          </div>
+
+
+          <h2 class="subsection">
+            <a id="htmlcss" >
+              dom
+            </a>
+          </h2>
+          <div class="content_set">
+            <a target="_blank"
+            href="http://www.w3.org/TR/REC-DOM-Level-1/introduction.html">
+            <img src="../sii/modules/code/images/dom.jpg" class="illustrate_left" width="144" height="100">
+          </a>
+
+          <div  class="reading_set">
+            <!-- <div class="subheading">
+              Introduction to Document Object Model (DOM)
+            </div> -->
+            <div>
+              Jonathan Robie,
+              <a class="destination"
+              target="_blank"
+              href="http://www.w3.org/TR/REC-DOM-Level-1/introduction.html">
+              What is the Document Object Model?</a>, W3C REC-DOM-Level-1.
+            </div>
+            <div>
+              DevTips,
+              <a class="destination"
+              target="_blank"
+              href="https://www.youtube.com/watch?v=vpqm2fPEzbI">HTML5 Basics - The DOM [video]</a>.
+            </div>
+            <div>
+              Marijn Haverbeke, <i>Eloquent JavaScript</i>,
+              <a
+              class="destination"
+              href="http://eloquentjavascript.net/13_dom.html" target="_blank">Chapter 13, The Document-Object Model</a>.
+            </div>
+          </div>
+        </div>
+
+
+        <h2 class="subsection">
+          <a id="htmlcss" >
+            javascript
+          </a>
+        </h2>
+        <div class="content_set">
+          <a target="_blank"
+          href="https://www.codecademy.com/skills/make-an-interactive-website">
+          <img src="../sii/modules/code/images/javascript.png" class="illustrate_left" width="144" height="100"/>
+          </a>
+          <div  class="reading_set">
+            <div>
+              W3Schools,
+              <a class="destination"
+               target="_blank"
+               href="http://www.w3schools.com/js/default.asp">Javascript Tutorial</a>.
+            </div>
+            <div>
+              Marijn Haverbeke,
+              <a
+              class="destination"
+              href="http://eloquentjavascript.net/" target="_blank">Eloquent JavaScript</a> Chapters 1, 2, 3, 4, 5, 6, 8.
+            </div>
+            <div>
+                David Flanagan,
+                <a class="destination"
+                 target="_blank"
+                 href="http://proquest.safaribooksonline.com/9781449393854">
+                JavaScript: The Definitive Guide</a>.
+            </div>
+            <div>
+                Codecademy,
+                <a class="destination"
+                 target="_blank"
+                 href="https://www.codecademy.com/skills/make-an-interactive-website">
+                Make an Interactive Website</a>.
+            </div>
+          </div>
+        </div>
+        <div class="content_set">
+          <a target="_blank"
+          href="http://javascriptissexy.com/javascript-objects-in-detail/">
+          <img src="../sii/modules/code/images/jsobjects.png" class="illustrate_left" width="144" height="100"/>
+          </a>
+          <div  class="reading_set">
+            <div>
+            Richard Bovell,
+            <a class="destination"
+             target="_blank"
+             href="http://javascriptissexy.com/javascript-objects-in-detail/">
+            Javascript Objects in Detail</a>.
+            </div>
+          </div>
+        </div>
+        <div class="content_set">
+          <a target="_blank"
+          href="http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/">
+          <img src="../sii/modules/code/images/jsvariables.png" class="illustrate_left" width="144" height="100"/>
+          </a>
+          <div  class="reading_set">
+            <div>
+            Richard Bovell,
+            <a class="destination"
+             target="_blank"
+             href="http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/">
+            JavaScript Variable Scope and Hoisting Explained</a>.
+            </div>
+          </div>
+        </div>
+        <div class="content_set">
+          <a target="_blank"
+          href="http://www.w3schools.com/json/">
+          <img src="../sii/modules/code/images/json.png" class="illustrate_left" width="144" height="100"/>
+          </a>
+          <div>
+            W3Schools,
+            <a class="destination"
+             target="_blank"
+             href="http://www.w3schools.com/json/">JSON Tutorial</a>.
+            </div>
+        </div>
+
+
+      <h2 class="subsection">
+        <a id="htmlcss" >
+          event handling
+        </a>
+      </h2>
+      <div class="content_set">
+        <a target="_blank"
+        href="http://eloquentjavascript.net/14_event.html">
+        <img src="../sii/modules/code/images/evthandling.jpg" class="illustrate_left" width="144" height="100"/>
+        </a>
+        <div  class="reading_set">
+          <div>
+            Marijn Haverbeke, <i>Eloquent JavaScript</i>,
+            <a
+            class="destination"
+            href="http://eloquentjavascript.net/14_event.html" target="_blank">Chapter 14, Handling Events</a>.
+          </div>
+            <div>
+                David Flanagan, <i>JavaScript: The Definitive Guide</i>,
+                <a class="destination"
+                 target="_blank"
+                 href="http://proquest.safaribooksonline.com/book/programming/javascript/9781449393854/iidot-client-side-javascript/ch17_html">
+                Chapter 17, Handling Events</a>.
+            </div>
+          <div>
+            QuirksMode,
+            <a class="destination"
+             target="_blank"
+             href="http://www.quirksmode.org/js/introevents.html">Introduction to Events</a>.
+          </div>
+          <div>
+            Javascript Kit,
+            <a class="destination"
+             target="_blank"
+             href="http://www.javascriptkit.com/javatutors/event1.shtml">
+            Understanding "event handlers" in JavaScript</a>.
+          </div>
+          <div>
+            Marijn Haverbeke, <i>Eloquent JavaScript</i>,<br/>
+            <a
+            class="destination"
+            href="http://eloquentjavascript.net/17_http.html" target="_blank">Chapter 17, HTTP</a>,
+            <a
+            class="destination"
+            href="http://eloquentjavascript.net/18_forms.html" target="_blank">Chapter 18, Forms and Form Fields</a>.
+          </div>
+        </div>
+      </div>
+
+
+      <h2 class="subsection">
+        <a id="htmlcss" >
+          storage
+        </a>
+      </h2>
+      <div class="content_set">
+        <a target="_blank"
+        href="http://www.w3schools.com/html/html5_webstorage.asp">
+        <img src="../sii/modules/code/images/html5storage.jpg" class="illustrate_left" width="144" height="100"/>
+        </a>
+        <div  class="reading_set">
+          <div>
+            W3Schools,
+            <a class="destination"
+             target="_blank"
+             href="http://www.w3schools.com/html/html5_webstorage.asp">HTML5 Local Storage</a>.
+          </div>
+          <div>
+            HTML5 Rocks,
+            <a class="destination"
+             target="_blank"
+             href="http://www.html5rocks.com/en/features/storage">HTML5 Features - Storage</a>.
+          </div>
+        </div>
+      </div>
+
+
+      <h2 class="subsection">
+        <a id="htmlcss" >
+          animation &amp; graphics
+        </a>
+      </h2>
+      <div class="content_set">
+        <a target="_blank"
+        href="http://www.w3schools.com/css/css3_animations.asp">
+        <img src="../sii/modules/code/images/css3_1.jpg" class="illustrate_left" width="144" height="100"/>
+        </a>
+        <div  class="reading_set">
+          <div>
+            W3Schools,
+            <a class="destination"
+            target="_blank"
+            href="http://www.w3schools.com/css/css3_animations.asp">CSS3 Animations</a>.
+          </div>
+          <div>
+            John Galantini, Aaron Kitney, et al,
+            <a class="destination"
+            target="_blank"
+            href="http://www.creativebloq.com/css3/animation-with-css3-712437">
+            22 stunning examples of CSS3 animation</a>.
+          </div>
+        </div>
+      </div>
+        <div class="content_set">
+          <a target="_blank"
+          href="http://www.w3schools.com/html/html5_canvas.asp">
+          <img src="../sii/modules/code/images/html5canvas.png" class="illustrate_left" width="144" height="100"/>
+          </a>
+        <div  class="reading_set">
+          <div>
+            W3Schools,
+            <a class="destination"
+             target="_blank"
+             href="http://www.w3schools.com/html/html5_canvas.asp">HTML5 Canvas</a>.
+          </div>
+        </div>
+      </div>
+
+          <h2 class="subsection">
+            <a id="htmlcss" >
+              XPath
+            </a>
+          </h2>
+          <div class="content_set">
+            <a target="_blank"
+            href="https://www.w3.org/TR/xpath/">
+            <img src="images/htmlDom.png" class="illustrate_left" width="144" height="100"/>
+            </a>
+            <div  class="reading_set">
+              <div>
+                W3C,
+                <a class="destination"
+                 target="_blank"
+                 href="https://www.w3.org/TR/xpath/">XML Path Language (XPath) Version 1.0</a>.
+              </div>
+              <div>
+                W3Schools,
+                <a class="destination"
+                 target="_blank"
+                 href="http://www.w3schools.com/xsl/xpath_syntax.asp">XPath Syntax</a>.
+              </div>
+            </div>
+          </div>
+
+
+<!--
+          <h2 class="subsection">
+            <a id="htmlcss" >
+              Node.js
+            </a>
+          </h2>
+          <div class="content_set">
+            <a target="_blank"
+            href="https://www.codecademy.com/skills/make-an-interactive-website">
+            <img src="images/javascript.png" class="illustrate_left" width="144" height="100"/>
+            </a>
+            <div  class="reading_set">
+            
+            </div>
+          </div>
+
+
+          <h2 class="subsection">
+            <a id="htmlcss" >
+              xxx
+            </a>
+          </h2>
+          <div class="content_set">
+            <a target="_blank"
+            href="https://www.codecademy.com/skills/make-an-interactive-website">
+            <img src="images/javascript.png" class="illustrate_left" width="144" height="100"/>
+            </a>
+            <div  class="reading_set">
+              
+            </div>
+            </div>
+          </div>
+
+
+          <h2 class="subsection">
+            <a id="htmlcss" >
+              xxx
+            </a>
+          </h2>
+          <div class="content_set">
+            <a target="_blank"
+            href="https://www.codecademy.com/skills/make-an-interactive-website">
+            <img src="images/javascript.png" class="illustrate_left" width="144" height="100"/>
+            </a>
+            <div  class="reading_set">
+              
+            </div>
+          </div>
+-->
+
+
+
+
+</div>
+
+
+
+</div>
+
+
 
 </body>
