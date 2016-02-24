@@ -772,9 +772,11 @@ H2
 	color: #333333;
 	margin-top: 0px;
 	margin-left: 0px;
+    margin-right: 0px;
 /*	margin-bottom: 1.2em;*/
 	padding-bottom: 5px;
 	padding-left: 0px;
+    padding-right: 0px;
 }
 .subsection H2
 {
