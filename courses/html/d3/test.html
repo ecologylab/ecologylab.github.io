@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+    
+    
+<head> 
+<title>d3 example</title> 
+
+<style>
+    circle
+    {
+        fill: rgb(230, 213, 216);
+        stroke: #4c69e0;
+        stroke-width: 2;
+    }
+</style>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    var r   = 100;
+    var width = 8*r,
+        height = 4*r;
+
+    var data = [{"x": r, "y": r}, {"x": r, "y": 3*r}];
+    
+    var circles;
+    
+    function init()
+    {
+        var svg = d3.select("body").append("svg")
+            .attr("width", "100%")
+            .attr("height", height);
+        
+        circles = svg.selectAll("circle")
+            .data(data);
+        
+        circles.enter().append("circle")
+                .attr("r", 0)
+                .attr("cx",4*r)
+            .transition()           
+                .attr("r", r)
+                .attr("cx", function(d) { return d.x; });
+        
+        circles
+            .attr("cy", function(d) { return d.y; })
+    }
+    
+    function moveToClick(event)
+    {
+        var mouse = {
+            x: event.pageX,
+            y: event.pageY
+        };
+
+        var w = document.body.clientWidth;
+        var h = document.documentElement.clientHeight;
+
+        var positionOnImage = {
+            x: image.x - mouse.x,
+            y: image.y - mouse.y
+        };
+
+        target.x = (w/2) + positionOnImage.x;
+        target.y = (h/2) + positionOnImage.y;
+
+        image.x = target.x;
+        image.y = target.y;
+
+        document.getElementById("mapImage").style.left = image.x + 'px';
+        document.getElementById("mapImage").style.top = image.y + 'px';
+
+    }
+
+</script>
+</head>
+
+<body onload="init();">
+
+    
+</body>
+</html>

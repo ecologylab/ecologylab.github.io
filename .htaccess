@@ -39,6 +39,9 @@ Redirect 301 /research/bigsemantics/ICE /research/bigsemantics/MICE
 Redirect 301 /TweetBubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbuble /research/bigsemantics/TweetBubble/index.html
+Redirect 301 /webcuration /research/informationComposition.html
+Redirect 301 /webCuration /research/informationComposition.html
+Redirect 301 /curation /research/informationComposition.html
 Redirect 301 /techReports /technicalReports
 
 Redirect 301 /tec /research/tec.html
@@ -54,7 +57,7 @@ Redirect 301 /research/publications/ecologyLab-IBI-tochi2014R5-1.pdf /research/p
 
 Redirect 301 /soc /summerofcode
 Redirect 301 /courses/studio /courses/programmingStudio
-Redirect 301 /join /apply
+Redirect 301 /join https://script.google.com/macros/s/AKfycbxJC4GxXd4GPGnkUYpHWnpUw3QDrNB6ym7kLjqIDYdfygwqnIfw/exec
 Redirect 301 /mmart /mmart2010
 Redirect 301 /sgve /workshops/sgve
 Redirect 301 /tgve /workshops/tgve
