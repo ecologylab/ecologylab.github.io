@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="144px" height="100px" viewBox="-9.958 -7.025 144 100"
+	 overflow="visible" enable-background="new -9.958 -7.025 144 100" xml:space="preserve">
+<defs>
+</defs>
+<text transform="matrix(1.0321 0 0 1 0 23.7798)" font-family="'Helvetica'" font-size="14.3156">interface ecology</text>
+<text transform="matrix(1.0321 0 0 1 32.4385 85.6816)" font-family="'Helvetica'" font-size="14.3156">collage</text>
+<text transform="matrix(1.0321 0 0 1 2.707 55.2305)" font-family="'Helvetica-Oblique'" font-size="14.3156">CollageMachine</text>
+<g>
+	<g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="58.052" y1="28.615" x2="58.052" y2="37.971"/>
+		<g>
+			<polygon fill="#666666" points="53.962,34.657 54.695,33.975 58.051,37.587 61.409,33.975 62.141,34.657 58.051,39.055 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="58.052" y1="0.287" x2="58.052" y2="9.643"/>
+		<g>
+			<polygon fill="#666666" points="53.962,6.33 54.695,5.647 58.051,9.259 61.409,5.647 62.141,6.33 58.051,10.728 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#666666" stroke-miterlimit="10" x1="58.052" y1="61.61" x2="58.052" y2="70.967"/>
+		<g>
+			<polygon fill="#666666" points="53.962,67.652 54.695,66.971 58.051,70.582 61.409,66.971 62.141,67.652 58.051,72.051 			"/>
+		</g>
+	</g>
+</g>
+<polyline fill="none" stroke="#666666" stroke-miterlimit="10" points="83.788,81.778 122.777,81.778 122.777,0.5 57.557,0.5 "/>
+</svg>
