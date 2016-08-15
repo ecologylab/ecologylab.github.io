@@ -56,7 +56,6 @@ Redirect 301 /research/publications/tochi-cf-2011.pdf /research/publications/a14
 Redirect 301 /research/publications/ecologyLab-IBI-tochi2014R5-1.pdf /research/publications/a14-kerneInfoBasedIdeationToCHI.pdf
 
 Redirect 301 /soc /summerofcode
-Redirect 301 /courses/studio /courses/programmingStudio
 Redirect 301 /join https://script.google.com/macros/s/AKfycbxJC4GxXd4GPGnkUYpHWnpUw3QDrNB6ym7kLjqIDYdfygwqnIfw/exec
 Redirect 301 /mmart /mmart2010
 Redirect 301 /sgve /workshops/sgve
@@ -70,3 +69,12 @@ Redirect 301 /people/andruid.html /people/andruid/index.html
 Redirect 301 /andruidprev /people/andruid
 Redirect 301 /barbarakerne /mom
 Redirect 301 /ends101 /courses/ends101
+
+Redirect 301 /315 /courses/studio
+Redirect 301 /studio /courses/studio
+Redirect 301 /courses/programmingStudio /courses/studio
+
+Redirect 301 /655 /courses/hcc
+Redirect 301 /hcc /courses/hcc
+Redirect 301 /444  /courses/sii
+Redirect 301 /sii  /courses/sii
