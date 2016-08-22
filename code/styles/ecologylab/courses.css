@@ -307,7 +307,7 @@ SPAN.banner_sensory_interfaces
 {
 	position: absolute;
 	top: 23px;
-	right: 15px;	
+	right: 15px;
 }
 
 SPAN.banner5
@@ -444,7 +444,7 @@ DIV.redbar
 	font-size: 12px;
 	padding: 1px 10px 8px;
 	margin: 0px 165px 8px 25px;
-	
+
 /*
 float: left;
 border: 0px;
@@ -514,7 +514,7 @@ a.nav_nowrap
 }
 .navigation .block_ecologylab a
 {
-	color: #546376;	
+	color: #546376;
 }
 
 .tall_navigation .block
@@ -528,7 +528,7 @@ a.nav_nowrap
 }
 .tall_navigation .block_ecologylab a
 {
-	color: #546376;	
+	color: #546376;
 }
 
 
@@ -811,7 +811,7 @@ a.subsectiontag:hover
 }
 .sub_destination
 {
-	font-size: 13px; 
+	font-size: 13px;
 	color: #647386;
 	font-weight: bold;
 }
@@ -869,6 +869,14 @@ H3
 	margin-top: 4px;
 	margin-bottom: 10px;
 	border: 1px solid #000000;
+}
+.illustrate_left_no_border
+{
+	float: left;
+	margin-right: 20px;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	border: 0;
 }
 .illustrate_center
 {
@@ -1130,4 +1138,11 @@ H2.criteria
 {
 	text-align: right;
 	padding-right: 10px;
+}
+
+.example_project_entry {
+  clear: left;
+  overflow:visible;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
