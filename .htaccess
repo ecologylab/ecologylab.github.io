@@ -71,10 +71,13 @@ Redirect 301 /barbarakerne /mom
 Redirect 301 /ends101 /courses/ends101
 
 Redirect 301 /315 /courses/studio
+Redirect 301 /courses/315 /courses/studio
 Redirect 301 /studio /courses/studio
 Redirect 301 /courses/programmingStudio /courses/studio
 
 Redirect 301 /655 /courses/hcc
+Redirect 301 /courses/655 /courses/hcc
 Redirect 301 /hcc /courses/hcc
 Redirect 301 /444  /courses/sii
+Redirect 301 /courses/444  /courses/sii
 Redirect 301 /sii  /courses/sii
