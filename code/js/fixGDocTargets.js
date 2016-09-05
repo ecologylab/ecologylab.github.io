@@ -5,6 +5,7 @@ function fixGDocTargets(thatFrame)
             thatFrame.attr("srcdoc", html);
             setTimeout(function() {
                thatFrame.contents().find('a[href^="http"]').attr("target", "_blank");
+               thatFrame.contents().find('a[href^="https"]').attr("target", "_blank");
             }, 1000);
         });
     });
@@ -20,6 +21,7 @@ function fixGDocTargets2(thatFrame)
 		        jFrame.attr("srcdoc", html);
 		        setTimeout(function() {
 		            jFrame.contents().find('a[href^="http"]').attr("target", "_blank");
+		            jFrame.contents().find('a[href^="https"]').attr("target", "_blank");
 		        }, 1000);
 		    });
 		});

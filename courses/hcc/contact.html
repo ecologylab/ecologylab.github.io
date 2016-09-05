@@ -18,7 +18,8 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../code/js/fixGDocTargets.js"></script>
 </head>
 
 <body>
@@ -67,17 +68,8 @@
 
 <div class="content">
 
-<iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 1500px;"  onload="document.getElementById('google-doc-iframe').contentWindow.fixTargets(this)"
+<iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 1500px;"  onload="fixGDocTargets2(this)"
 src="https://docs.google.com/document/d/1DwXimWzkgrNe2T2jHqS6yjJIIe_n_qdqTWjKO5stXEY/pub?embedded=true"></iframe>
- <script>
- function fixTargets(f)
-{
-	alert("hi " + f);
-	var ifr	= document.getElementById("google-doc-iframe");
-}
-
- </script>
-
 
 </div>
 
