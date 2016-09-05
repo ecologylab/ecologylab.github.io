@@ -71,7 +71,14 @@
     class="googleDocIframe"
     scrolling="no"
     style="height: 3500px; border:0 none;"
+    onload="document.getElementById('google-doc-iframe').contentWindow.fixTargets(this)"
     src="https://goo.gl/vCEsA1"></iframe>
+  <script>
+	 function fixTargets(f)
+	{
+		alert("hi " + f);
+		var ifr	= document.getElementById("google-doc-iframe");
+	}</script>  
 </div>
 
 

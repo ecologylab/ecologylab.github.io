@@ -73,7 +73,14 @@
     frameborder="0"
     scrolling="no"
     style="height: 3500px"
+    onload="document.getElementById('google-doc-iframe').contentWindow.fixTargets(this)"
     src="https://docs.google.com/document/d/1QdBDmx0X-5140xscy6iM4uCjJ4zBCbrWZopHal9SpnY/pub?embedded=true"></iframe>
+  <script>
+	 function fixTargets(f)
+	{
+		alert("hi " + f);
+		var ifr	= document.getElementById("google-doc-iframe");
+	}</script>
 </div>
 
 
