@@ -27,3 +27,9 @@ function fixGDocTargets2(thatFrame)
 		});
 	}
 }
+
+function popOutIFrame() 
+{
+	 var gDocIFrame = document.getElementById("google-doc-iframe");
+	 window.open(gDocIFrame.src, '_blank');
+}
