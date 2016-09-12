@@ -32,6 +32,9 @@
 
  </script>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="../../../code/js/fixGDocTargets.js"></script>
+
 </head>
 
 <body>
@@ -83,10 +86,10 @@
 
 <div class="content">
 
-<!-- <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"
+<!-- <iframe id="google-doc-iframe" target="_blank" style="height: 2000px;"
  src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true"></iframe> -->
  
- <iframe id="google-doc-iframe" class="googleDocIframe" target="_blank" style="height: 2000px;"  onload="document.getElementById('google-doc-iframe').contentWindow.fixTargets(this)"
+ <iframe id="google-doc-iframe" target="_blank" style="height: 2000px;"  onload="fixGDocTargets2(this)"
  src="https://docs.google.com/document/d/1d4UCs4c0z7qpwC0lcNaNbCKyljlnru3Irhs6FYLRx9Y/pub?embedded=true">
  <script>
  function fixTargets(f)
