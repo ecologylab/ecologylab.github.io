@@ -612,9 +612,14 @@ ul
 /*  background-color: #EEEE00; */
 	font-weight: bold;
 	color: #555555;
-	margin-bottom: 5px; 
-	padding-bottom: 20px; 
+	padding-bottom: 3px; 
+    padding-top: 3px;
 	font-size: 18px;
+}
+.titled_para
+{
+    line-height: 150%;
+    font-size: 14px;
 }
 .section
 {
