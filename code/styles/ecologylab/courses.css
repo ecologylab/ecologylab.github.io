@@ -1053,7 +1053,7 @@ BUTTON
 }
 SELECT
 {
-	border: 4px solid #000000;
+	border: 4px solid #000000; 
 }
 .content_element
 {
@@ -1080,11 +1080,6 @@ a.reserve
 	font-size: 11px;
 	color: #0F2399;
 	color: #0F0D80;
-	color: #0C0A66;
-	color: #0A1E66;
-}
-a.destination
-{
 	color: #0C0A66;
 	color: #0A1E66;
 }
