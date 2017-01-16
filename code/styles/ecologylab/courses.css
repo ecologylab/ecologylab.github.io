@@ -1169,6 +1169,15 @@ H2.criteria
 	padding: 0px;
 	border-width: 0px;
 }
+
+#google-doc-iframe-wide {
+	width: 670px;
+	height: 1000px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+}
 .centered_image
 {
 	display: block;

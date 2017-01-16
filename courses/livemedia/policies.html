@@ -9,7 +9,7 @@
 <script language="JavaScript" src="../../code/javascript/common/BrowserSense.js"></script>
 <script language="JavaScript" src="../../code/javascript/common/GeneralPurpose.js"></script>
 <script language="JavaScript" src="../../code/javascript/ecologylab/ecologylab.js"></script>
-
+<script src="../../code/js/fixGDocTargets.js"></script>
 </head>
 
 <body>
@@ -27,13 +27,10 @@
   <a class="navlink" href="contact.html">contact info</a>
 </div>
 
-<!--
 <div class="block">
-  <a class="navlink" href="materials/index.html">readings</a>
-  <a class="navlink" href="composition/index.html">composition</a>
-  <a class="navlink" href="deliverables/index.html">deliverables</a>
+    <a class="navlink" target="_blank" href="https://docs.google.com/spreadsheets/d/1Be853kZAOwCcBrq0J77i8cP-6e-nTIet5HX5LCCzfxk/edit?usp=sharing">schedule</a>
+    <a class="navlink" href="materials/index.html">readings</a>
 </div>
--->
 
 <div class="block">
   <a class="navlink" href="../">other courses</a>
@@ -42,60 +39,18 @@
 </div>
 
 
-<div class="content_title">policies</div>
+<div class="content_title">
+	policies <img src="../icons/popout-solid.png" class="popout_icon" onclick="popOutIFrame()">
+</div>
 
 <div class="content">
-
-<div class="element">
-
-<div class="element">
-<h4 class="destination">grading</h4>
-<table>
-<tr><td>20%</td><td>Research Literature Presentations</td></tr>
-<tr><td>15%</td><td>Project 1</td></tr>
-<tr><td>55%</td><td>Final Project Cycle</td></tr>
-<tr><td>10%</td><td>Class Preparation and Participation</td></tr>
-</table>
-</div>
-
-<div class="element">
-<h4 class="destination">communication skills: writing and video</h4>
-<p class="main">
-As with practitioners in every field, the performance of computer scientists is evaluated based on our ability to communicate what we do, and why.
-Thus, this course is presentation and writing intensive. 
-Oral and written communication will be a key to your success in the course and throughout your career.
-</p>
-<p class="main">
-We live in the age of YouTube. 
-The medium of video enables quick communication of complex ideas and functions.
-Consequently, this course also values communication through video. 
-</p>
-</div>
-
-<div class="element">
-<h4 class="destination">source code & programming style</h4>
-<p class="main">
-Some work will involve substantial coding; in these cases, both the
-interactive product, and the source code count. These programs need to
-work. User experience 
-is important. So is the structure of your code. (Good structure will
-turn out to be reusable across assignments.)
-We may not grade the source code for every assignment, but
-we also may, at any time. 
-We will always check out your interactive work.  
-</p>
-
-<p class="main">
-Good object oriented design is a matter of creating structure which
-makes code easy to understand and maintain. Writing easy-to-read,
-well-structured code counts in this class. Create reusable components
-for yourself, and your peers. Whitespace, naming, modularity and
-documentation are keys.
-</p>
-</div>
-
-</div>
-
+  <iframe
+    id="google-doc-iframe"
+    frameborder="0"
+    scrolling="no"
+    style="height: 3500px"
+    onload="fixGDocTargets2(this)"
+    src="https://docs.google.com/document/d/17znJHvul2xXQ1WZNKrITyTTkW3fNeOnYuoMefmAfvJo/pub?embedded=true"></iframe>
 </div>
 
 <div class="credits">
