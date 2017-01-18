@@ -11,9 +11,21 @@
 <script src="../../../code/javascript/ecologylab/ecologylab.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="../../../code/js/fixGDocTargets.js"></script>
+<script type="text/javascript">
+    function setIframeSrc()
+    {
+        var idiv    = document.getElementById("google-doc-iframe");
+        var hash    = document.location.hash;
+        var dest    = "https://docs.google.com/document/d/1HSdqyWfLCoXzYoRb74t7QArMLQ_q7Mdwv7v7So9i1s8/pub?embedded=true";
+        if (hash)
+            dest    += hash;
+//        alert(dest);
+        idiv.src    = dest;
+    }
+</script>
 </head>
 
-<body>
+<body onload="setIframeSrc()">
 
 <div class="rootcontainer liverootcontainer">
 
@@ -59,7 +71,7 @@
     scrolling="no"
     style="height: 4200px;"
     onload="fixGDocTargets2(this)"
-    src="https://docs.google.com/document/d/1HSdqyWfLCoXzYoRb74t7QArMLQ_q7Mdwv7v7So9i1s8/pub?embedded=true"></iframe>
+    src="about:blank"></iframe>
 </div>
 
 
