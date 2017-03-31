@@ -81,3 +81,5 @@ Redirect 301 /hcc /courses/hcc
 Redirect 301 /444  /courses/sii
 Redirect 301 /courses/444  /courses/sii
 Redirect 301 /sii  /courses/sii
+
+Redirect 301 /ajitProposal https://goo.gl/Y9fXw4
