@@ -67,7 +67,6 @@ Redirect 301 /andruid /people/andruid
 Redirect 301 /people/andruid/cv /people/andruid/andruidCV.pdf
 Redirect 301 /people/andruid.html /people/andruid/index.html
 Redirect 301 /andruidprev /people/andruid
-Redirect 301 /barbarakerne /mom
 Redirect 301 /ends101 /courses/ends101
 
 Redirect 301 /315 /courses/studio
