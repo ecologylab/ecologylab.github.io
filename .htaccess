@@ -39,16 +39,19 @@ Redirect 301 /research/bigsemantics/ICE /research/bigsemantics/MICE
 Redirect 301 /TweetBubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbubble /research/bigsemantics/TweetBubble/index.html
 Redirect 301 /tweetbuble /research/bigsemantics/TweetBubble/index.html
-Redirect 301 /webcuration /research/informationComposition.html
-Redirect 301 /webCuration /research/informationComposition.html
-Redirect 301 /curation /research/informationComposition.html
+Redirect 301 /webcuration /research/curation.html
+Redirect 301 /webCuration /research/curation.html
+Redirect 301 /curation /research/curation.html
 Redirect 301 /techReports /technicalReports
 
 Redirect 301 /tec /research/tec.html
 Redirect 301 /tteclog /research/tec.html
 
-Redirect 301 /research/informationCognition.html /research/informationBasedIdeation.html
-Redirect 301 /research/informationDiscovery.html /research/informationBasedIdeation.html
+Redirect 301 /research/informationCognition.html /research/ideation.html
+Redirect 301 /research/informationDiscovery.html /research/ideation.html
+Redirect 301 /research/informationBasedIdeation.html /research/ideation.html
+
+Redirect 301 /research/informationComposition.html /research/curation.html
 
 Redirect 301 /research/publications/cF-TOIS7-0.pdf /research/publications/combinFormationTOIS2008.pdf
 Redirect 301 /research/publications/cF-TOIS7-2.pdf /research/publications/combinFormationTOIS2008.pdf
