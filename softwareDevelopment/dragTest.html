@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Nic's Drag Test</title>
+
+    <script>
+        function manualDrag_Text(e)
+        {
+            e.dataTransfer.setData("text/plain", "hello");
+        }
+
+        function manualDrag_HTML(e)
+        {
+            e.dataTransfer.setData("text/html", "<a>link</a>");
+        }
+        
+        function manualDrag_URI(e)
+        {
+            e.dataTransfer.setData("text/uri-list", "www.google.com");
+        }
+
+        function manualDrag_AppJSON(e)
+        {
+            e.dataTransfer.setData("application/json", "{message: 'hi', type: 400, child: { name: 'Bob', age: 19}}" );
+        }
+
+        function manualDrag_NotText(e)
+        {
+            e.dataTransfer.setData("text/html", "<a>link</a>");
+            e.dataTransfer.setData("text/uri-list", "www.google.com");
+            e.dataTransfer.setData("application/json", "{message: 'hi', type: 400, child: { name: 'Bob', age: 19}}" );
+        }
+
+        function manualDrag_All(e)
+        {
+            e.dataTransfer.setData("text/plain", "hello");
+            e.dataTransfer.setData("text/html", "<a>link</a>");
+            e.dataTransfer.setData("text/uri-list", "www.google.com");
+            e.dataTransfer.setData("application/json", "{message: 'hi', type: 400, child: { name: 'Bob', age: 19}}" );
+        }
+
+
+    </script>
+    
+    <style> 
+    h3 {
+        pointer-events: none;
+    }
+    div{
+         display: inline-block;
+    }
+    .object-to-be-dragged{
+        width: 300px;
+        height:140px;
+        background-color: salmon;
+        margin: 36px;
+        padding:36px;
+        box-shadow:0px 1px 4px #333;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="text" class="object-to-be-dragged" draggable="true" style="background-color: seagreen;">
+        <h3>text/plain</h3>   
+    </div>
+
+    <div id="html" class="object-to-be-dragged" draggable="true">
+        <h3>text/html</h3>   
+    </div>
+
+    <div id="uri" class="object-to-be-dragged" draggable="true">
+        <h3>text/uri-list</h3>   
+    </div>
+
+    <div id="json" class="object-to-be-dragged" draggable="true">
+        <h3>application/json</h3>   
+    </div>
+
+    <div id="notText" class="object-to-be-dragged" draggable="true">
+        <h3>text/html, text/uri-list, application/json (all execept text/plain)</h3>   
+    </div>
+    
+    <div id="all" class="object-to-be-dragged" draggable="true" style="background-color: seagreen;">
+        <h3>All four data flavors</h3>   
+    </div>
+
+
+</div>
+
+<script>
+    document.getElementById("text").addEventListener("dragstart", manualDrag_Text);
+    document.getElementById("html").addEventListener("dragstart", manualDrag_HTML);
+    document.getElementById("uri").addEventListener("dragstart", manualDrag_URI);
+    document.getElementById("json").addEventListener("dragstart", manualDrag_AppJSON);
+
+    document.getElementById("notText").addEventListener("dragstart", manualDrag_NotText);
+    document.getElementById("all").addEventListener("dragstart", manualDrag_All);
+</script>
+
+</body>
+
+</html>
