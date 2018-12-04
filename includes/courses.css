@@ -1,0 +1,88 @@
+:root 
+{
+  --big-title-size: 45pt;
+  --title-size: var(--big-title-size);
+  --margin-right: 3em;
+}
+#navigation_container
+{
+  top: calc(1.26 * var(--title-size));
+}
+div.banner
+{
+    position: relative;
+	border-bottom: 1px solid #000000;
+	background-color: inherit;
+	margin: 0 0 20px 0;
+  
+    line-height: normal;
+
+    white-space: nowrap;
+    vertical-align: baseline;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.banner_studio
+{
+    position: relative; /* needed to position the text relative to the bottom border rule */
+    margin-left: .003em;
+	font-size: var(--title-size);
+    top: 6pt;
+	color: #666666; 
+  color: var(--lab-dark-green);
+    vertical-align: baseline;
+    z-index: 1;
+    padding-right: 0;
+}
+#triple
+{
+    position: relative;
+    font-size: 30pt;
+    vertical-align: bottom;
+    float: right;
+    color: #666666;
+	background-color: inherit;
+    margin-bottom: 0;
+    margin-top: 20pt;
+    padding-bottom: 0;
+    padding-left: .3em;
+    z-index: 2;
+}
+
+.iframe_container
+{
+    position: relative;
+    overflow: hidden;
+
+    padding-top: 10%;
+    width: 100%;
+
+}
+#google-doc-iframe {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+    clear: none;
+}
+#google-doc-iframe2 {
+	width: 578px;
+	height: 1000px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+}
+
+#google-doc-iframe-wide {
+	width: 625px;
+	height: 1000px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+}
