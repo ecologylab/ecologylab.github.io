@@ -48,7 +48,11 @@ div.banner
     padding-left: .3em;
     z-index: 2;
 }
-
+img.course_img
+{
+  float: left; 
+  margin-right: 20px;
+}
 .iframe_container
 {
     position: relative;
@@ -56,7 +60,6 @@ div.banner
 
     padding-top: 10%;
     width: 100%;
-
 }
 #google-doc-iframe {
 	position: absolute;

@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>games [interface ecology lab | research]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../includes/ecologylab.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../images/ecologylab-16.png" type="image/png">
 <script type="text/javascript">
@@ -17,84 +17,75 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="../includes/ecologylab.js"></script>
 </head>
 
 <body>
 <div class="rootcontainer">
 
 <div class="header">
-<a href="http://ecologylab.net/index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
-<div class="title2">
+<a href="../index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
+<div class="title">
 games &rarr; play
 </div>
-
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<br clear="all"/>
+<div id="navigation_container">
+  <a class="navlink" href="../index.html">home</a>
+  <a class="navlink" href="../define.html">define</a>
 
-<div class="nav" style="height:230px;">
-	<a class="navlink" href="../index.html">home</a>
-	<a class="navlink" href="../define.html">define</a>
+  <a class="navselected" href="index.html">research</a>
+  <div class="sub_block">
+    <a class="subnavlink" href="bodyBased/index.html">body-based</a>
+    <a class="subnavlink" href="ideation.html">ideation</a>
+    <a class="subnavlink" href="livemedia/index.html">live media</a>
+    <a class="subnavlink" href="curation.html">curation</a>
+    <a class="subnavlink" href="websemantics/index.html">web semantics</a>
+    <a class="subnavselected" href="games.html">games</a>
+  </div>
 
-
-<div class="block">
-	<div class="subblock">
-		<a class="navselected" href="index.html">research</a>
-	    <a class="subnavlink" href="bodyBased/index.html">body-based</a>
-	    <a class="subnavlink" href="ideation.html">ideation</a>
-	    <a class="subnavlink" href="livemedia/index.html">live media</a>
-	    <a class="subnavlink" href="curation.html">curation</a>
-	    <a class="subnavlink" href="websemantics/index.html">web semantics</a>
-	    <a class="subnavselected" href="games.html">games</a>
-	</div>
+  <a class="navlink" href="../people/index.html">people</a>
+  <a class="navlink" href="../courses/index.html">teaching</a>
+  <div class="subblock">
+        <a class="nav_nowrap" target="_blank"
+         href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow</a>
+  </div>
 </div>
 
-	<a class="navlink" href="../people/index.html">people</a>
-	<a class="navlink" href="../courses/index.html">courses</a>
 
-	<div class="subblock">
-		<a class="nav_nowrap" target="_blank"
-		 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;</a>
-	</div>
-</div>
-
+<p>
 <img src="images/pihc.png" width="34%"
  style="float: right; margin-left: 10px; margin-top: 4px; margin-bottom: 5px;">
-<div class="text">
+
 Play is essential human experience. 
 Play brings us together and enables emotional connect.
 Games in provide a valuable context in which we take creative action, explore our emotions, learn, interact, and live. 
 The Interface Ecology Lab identifies digital games as a compelling domain in which to investiage human-computer and human-human interaction.
-</div>
-
+</p>
+<p>
 <img src="images/pcbang.png" width="25%"
  style="float: left; margin-right: 10px; margin-top: 4px; margin-bottom: 4px;" title="A South Korean PC Bang.">
-<div class="text">
 Through play, gamers develop unique skills, experiences, and relationships. 
 This makes gamers an interesting demographic for study. 
 Drawing from their unique context, gamers  provide new perspectives and insights on problems traditionally studied in other domains.
-</div>
-
-<div class="text">
+</p>
+<p>
 A complex culture has emerged around games. 
 New social media forms, such as live-streaming, enable gamers to share play experiences and form new communities. 
 We are working to understand these new media forms and play communities.
-</div>
-
-<div class="text" style="margin-bottom:0px;">
+</p>
+<p>
 We aim to leverage our understanding of play and games culture to not only create new meaningful play experiences, but to inform our understanding and design in other contexts.
-</div>
+</p>
 
-<div class="h4">projects</div>
-
-<a href="tec.html">
-<img
-	class="illustrate_left"
-	width="144"	
-	height="100" style="margin-bottom: 40px;"
-	src="images/firePlusPrototypeIcon.jpg">
-</a>
-<div class="text">
+  <h2>projects</h2>
+<p>
+<a href="tec.html"><img
+  class="illustrate_left"
+  width="144"	
+  height="100" style="margin-bottom: 40px;"
+  src="images/firePlusPrototypeIcon.jpg"></a>
 We developed a series of digital games for <a href="tec.html" class="checkthis">Teaching Team Coordination (TeC)</a>. 
 We began with ethnography of fire emergency response work practice, developing understanding of situated contexts, 
 and design principles for simulations of team coordination in crisis response. 
@@ -102,9 +93,9 @@ We mapped real-world actions map to game mechanics: players work together to ach
 We invented <i>Zero-Fidelity Simulation</i>, 
 a method that focuses on reproducing communication and information distribution components of target environments,
 to produce engaging, low-cost, and effective educational experiences.
-</div>
+</p>
 
-<h4>publications and exhibitions</h4>
+<h2>publications and exhibitions</h2>
 
 <div class="feature">
 <a href="../research/publications/chiplay2016photoNav.pdf" target="_blank">

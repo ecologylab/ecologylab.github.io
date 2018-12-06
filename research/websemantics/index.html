@@ -1,10 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-
-
-<title cftoolsversion="0.1.2">Web Semantics</title>
+<!DOCTYPE html>
+<html>
+<head>
+<title>web semantics</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../includes/ecologylab.css" rel="stylesheet">
 <link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
 <link rel="shortcut icon" href="../../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
@@ -18,8 +17,9 @@
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  })();z
 </script>
+<script type="text/javascript" src="../../includes/ecologylab.js"></script>
 </head>
 <body>
 
@@ -27,35 +27,32 @@
 
 <div class="header">
 <a href="../../index.html" ><img class="logo" src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
-<div class="title2">web semantics</div>
+<div class="title">
+web semantics
+</div>
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<br clear="all">
+<div id="navigation_container">
+  <a class="navlink" href="../../index.html">home</a>
+  <a class="navlink" href="../../define.html">define</a>
 
-<div class="nav" style="height:230px;">
-	<a class="navlink" href="../../index.html">home</a>
-	<a class="navlink" href="../../define.html">define</a>
+  <a class="navselected" href="../index.html">research</a>
+  <div class="sub_block">
+    <a class="subnavlink" href="../bodyBased/index.html">body-based</a>
+    <a class="subnavlink" href="../ideation.html">ideation</a>
+    <a class="subnavlink" href="../livemedia/index.html">live media</a>
+    <a class="subnavlink" href="../curation.html">curation</a>
+    <a class="subnavselected" href="websemantics/index.html">web semantics</a>
+    <a class="subnavlink" href="../games.html">games</a>
+  </div>
 
-
-<div class="block">
-	<div class="subblock">
-		<a class="navselected" href="../index.html">research</a>
-	    <a class="subnavlink" href="../bodyBased/index.html">body-based</a>
-	    <a class="subnavlink" href="../ideation.html">ideation</a>
-	    <a class="subnavlink" href="../livemedia/index.html">live media</a>
-	    <a class="subnavlink" href="../curation.html">curation</a>
-	    <a class="subnavselected" href="index.html">web semantics</a>
-	    <a class="subnavlink" href="../games.html">games</a>
-	</div>
-</div>
-
-	<a class="navlink" href="../../people/index.html">people</a>
-	<a class="navlink" href="../../courses/index.html">courses</a>
-
-	<div class="subblock">
-		<a class="nav_nowrap" target="_blank"
-		 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;</a>
-	</div>
+  <a class="navlink" href="../../people/index.html">people</a>
+  <a class="navlink" href="../../courses/index.html">teaching</a>
+  <div class="subblock">
+        <a class="nav_nowrap" target="_blank"
+         href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow</a>
+  </div>
 </div>
 
 
@@ -64,11 +61,11 @@
 <img src="../images/websemantics_n_large.png" width="300"
  style="float: right; margin-left: 10px; margin-top: 4px; margin-bottom: 4px;"/>
 
-<div class="text">
-We define <b><i>web semantics</i></b> as
+<p>
+We define <i>web semantics</i> as
 significant attributes, descriptions, representations, and relationships, of
 digital objects people find on the web.
-Web semantics provide valuable <b>contextual information</b>,
+Web semantics provide valuable contextual information,
 allowing people to make sense of and act on found objects.
 A common example is product semantics, including
 price, brand, seller, specs, pictures, reviews, and related products,
@@ -78,15 +75,14 @@ needs, compare choices, and make purchasing decisions.
 Likewise, on social media websites, @usernames, #hashtags, and other linked
 associations allow people to compare and synthesize diverse perspectives,
 helping them develop mutual understanding of a topic.
-</div>
-
-<div class="text">
-We define <b><i>exploratory browsing</i></b> as a creative process
+</p>
+<p>
+We define <i>exploratory browsing</i> as a creative process
 through which users seek and traverse diverse and novel information
 as they use the web to investigate a topic or conceptual space.
 Web semantics facilitate developing exploratory browsing interfaces
 that visually present links to related information.
-The goal is to promote <b>serendipitous discovery</b>,
+The goal is to promote serendipitous discovery,
 which is critical in diverse human activities.
 For instance, in scholarly research, exploratory browsing using semantics,
 e.g, authors, year / venue, references, and citations
@@ -94,24 +90,15 @@ for an article supports contextualizing with originating
 and subsequent connected research;
 it helps researchers in gaining diverse and novel ideas existing within
 the conceptual space.
-</div>
-
-<!--
-<p class="main" style="line-height: 150%;">
-At the Interface Ecology Lab, we develop technologies for working with
-explorable web semantics, and conduct research on how to use web semantics to
-support interesting and important human activities:
 </p>
--->
-
-<div class="text">
+<p>
 <a href="../bigsemantics/index.html" class="destination"
 target="_blank">BigSemantics</a> is
 an open source architecture, language, and library, for representing,
 extracting, and consistently presenting <i>explorable web semantics</i> of diverse types.
 
-Developers author <b>types</b> (wrappers),
-using the <b>meta-metadata language</b>,
+Developers author types (wrappers),
+using the meta-metadata language,
 to define reusable <em>semantic data models</em>,
 <em>rules for extracting semantics</em> from regular webpages,
 and <em>presentation semantics</em> that guide how information will be
@@ -124,59 +111,61 @@ href="http://api.ecologylab.net/static/bsjs/mmdOntoVis/domain_type_examples.html
 class="destination" target="_blank">popular websites and common use cases</a>
 involving searches, products, digital libraries, creative work, and social
 media.
-
-<!--
-The <a href="https://github.com/ecologylab/BigSemanticsService/wiki"
-class="destination" target="_blank">BigSemantics Service</a>,
-makes accessing web semantics from cloud, mobile, and desktop applications
-as easy as making a HTTP request.
--->
-</div>
-
-<div class="text">
-Building upon BigSemantics, we are developing <b>dynamic exploratory browsing interfaces</b> that enrich
+</p>
+<p>
+Building upon BigSemantics, we are developing dynamic exploratory browsing interfaces that enrich
 web experience through explorable web semantics.
 An example web application, the <a href="http://ecologylab.net/mice"
 class="destination" target="_blank">Metadata In-Context Explorer (MICE)</a>,
 allows users to serendipitously encounter new information in the same context,
 while maintaining the sense of goals and whereabouts in the navigation process.
+</p>
+
+<h2>projects</h2>
+
+  
+<div class="feature">
+<a target="_blank" href="https://livemache.ecologylab.net">
+<img
+  class="illustrate_left"
+  src="../images/mustard_mache_logo2_site.png"></a>
+<a target="_blank" href="https://livemache.ecologylab.net">LiveM&acirc;ch&eacute;</a> is our current  
+  <a href="../curation.html">design curation</a> probe.
+  This art-inspired web app provides live, collaborative capabilities for collecting and organizing content, along with writing, sketching, chat, and live streaming video.
 </div>
 
-<h5>projects</h5>
-
 <div class="feature">
+  <a href="http://ideamache.ecologylab.net" target="_blank"><img width="144" src="../images/ideamache_project.png" class="illustrate_left"/></a>
+
+  <a target="_blank" class="destination" href="http://ideamache.ecologylab.net">IdeaM&acirc;ch&eacute;</a> 
+  is our previous web app that uses
+  <a href="../curation.html">free-form web curation</a> as a medium of expression.
+  <i>Curation</i> is the process of creating and assembling information in meaningful exhibits, for people to think about.
+</div>
+
+<div class="feature wide">
 <a href="../bigsemantics/TweetBubble/index.html">
 <img
   class="illustrate_left"
   width="164"
   src="../bigsemantics/images/tbl.png"></a>
 <a href="../bigsemantics/TweetBubble/index.html" class="checkthis">TweetBubble</a>
-is a <a class="destination" href="https://chrome.google.com/webstore/detail/tweetbubble/hibcjiciicbghknhlepnfeghnjnbgicm" target="_blank" >Chrome browser extension</a> that helps Twitter users follow associational chains of
-tweets through #hashtags and @users.
-By visually presenting linkages of people (@usernames), trends (#hashtags), external links, and
-other diverse information, TweetBubble helps users fluidly explore associations,
-understand diverse perspectives, and build a mutual understanding of a topic.
-Our study shows that TweetBubble promotes users' creative engagement with Twitter.
-We define new presentation semantics for social media wrappers, to mimic their native
-look and feels: Twitter, Facebook, Pinterest, Google+, Reddit.
-
-<div class="feature"style="padding-bottom:6px">
-
-	<a href="http://ideamache.ecologylab.net" target="_blank">
-		<img width="164" src="../../images/ideamache_thumb.png" class="illustrate_left"/>
-	</a>
-
-	<a target="_blank" class="destination" href="http://ideamache.ecologylab.net">IdeaM&acirc;ch&eacute;</a> is
-	a browser-based expressive web curation system that uses
-	<a target="_blank" href="../curation.html">information composition</a> as the medium of curation.
-	<i>Curation</i> is the process of assembling information in meaningful exhibits, for people to think about.
-	<a target="_blank" class="destination" href="http://ideamache.ecologylab.net">IdeaM&acirc;ch&eacute;</a> allows users to
-	collect, arrange, annotate and synthesize digital content to express relationships and develop ideas.
+is a 
+  <!--<a class="destination" href="https://chrome.google.com/webstore/detail/tweetbubble/hibcjiciicbghknhlepnfeghnjnbgicm" target="_blank">-->
+  Chrome  extension 
+  that helps Twitter users 
+engage in exploratory browsing, by following associational chains of
+tweets through #hashtags and @users. 
+Our study show this increases the variety
+of content people explore,which helps you develop multiple perspectives on a topic.
+TweetBubble makes browsing a more fun and fluid experience.
+<div style="margin-top:5px;">
+TweetBubble is built with <a href="bigsemantics/index.html">BigSemantics</a> and the <a href="http://ecologylab.net/mice" target="_blank"
+>Metadata In-Context Expander</a>.
 </div>
-
-<br/>
-
-<h5>publications</h5>
+</div>
+  
+<h2>publications</h2>
 
 <div class="feature">
 <a href="../publications/coling-weakly-supervised.pdf" target="_blank">
@@ -342,8 +331,6 @@ Koh, E., Caruso, D., Kerne, A., Gutierrez-Osuna, R.,
 Elimination of Junk Document Surrogate Candidates through Pattern Recognition</a>,
 <i>Proc ACM Symposium on Document Engineering (DocEng) 2007</i>, 187-195 [39%].
 <a class="doi" href="http://dx.doi.org/10.1145/1284420.1284466" target="_blank">http://dx.doi.org/110.1145/1284420.1284466</a>
-</div>
-
 </div>
 
 

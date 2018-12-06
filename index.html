@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>home [interface ecology lab]</title>
@@ -6,7 +6,7 @@
 	http-equiv="Content-Type"
 	content="text/html; charset=utf-8"/>
 <link
-	href="code/styles/ecologylab/ecologylab.css"
+	href="includes/ecologylab.css"
 	rel="stylesheet"/>
 <link
 	rel="shortcut icon"
@@ -28,6 +28,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="includes/ecologylab.js"></script>
 
 <meta itemprop="description" name="description" content="The Interface Ecology Lab investigates the future of human expression, focusing on creativity, play, participation, and education." />
 <meta name="twitter:description" content="The Interface Ecology Lab investigates the future of human expression, focusing on creativity, play, participation, and education." />
@@ -35,67 +36,57 @@
 
 <meta name="keywords" content="hci,creativity support environments,hcir,exploratory search,exploratory browsing,ideation,social media,cscw,research,games,design,semantics,semantic web,curation,information-based ideation,embodied interfaces," />
 
-<meta property="twitter:image" content="http://ecologylab.net/images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/>
-<meta property="og:image" content="http://ecologylab.net/images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/>
+<meta property="twitter:image" content="https://ecologylab.net/images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/>
+<meta property="og:image" content="https://ecologylab.net/images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/>
 </head>
 
 <body>
 <div class="rootcontainer">
 
-<div class="header"><a href="http://ecologylab.net/index.html" ><img
-	class="logo"
-	src="images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"/> </a>
-<div class="title">home</div>
-
+<div class="header">
+<a href="./index.html"><img class="logo" src="images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
+<div class="title">
+home
+</div>
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<br clear="all" />
+<div id="navigation_container">
+  <div class="block">
+    <a class="navselected" href="index.html">home</a>
+    <a class="navlink" href="define.html">define</a>
+    <a class="navlink" href="research/index.html">research</a>
+    <a class="navlink" href="people/index.html">people</a>
+    <a class="navlink" href="courses/index.html">teaching</a>
+    <!-- <a class="navlink" href="workshops/index.html">workshops</a> -->
+    <!-- <a class="navlink" href="summerofcode/index.html">summer of code</a> -->
+  </div>
 
-<div class="nav" style="height: 140px; width:96px;">
-<div class="block">
-<a class="navselected" href="index.html">home</a>
-<a class="navlink" href="define.html">define</a>
-<a class="navlink" href="research/index.html">research</a>
-<a class="navlink" href="people/index.html">people</a>
-<a class="navlink" href="courses/index.html">courses</a>
-<!-- <a class="navlink" href="workshops/index.html">workshops</a> -->
-<!-- <a class="navlink" href="summerofcode/index.html">summer of code</a> -->
+  <div class="block">
+    <a class="subnavlink" style="line-height: 1.7em;" target="_blank" href="http://g.co/maps/47d92">225 Teague,
+    Texas A&amp;M<br/>[lot&nbsp;15]</a>
+
+    <div class="block">
+      <a class="subnavlink" target="_blank"
+       href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+    </div>
+  </div>
 </div>
-
-<!-- <div class="block"> -->
-<!-- 		<a class="nav_nowrap" target="_blank" href="http://ecologylab.tumblr.com/">blog</a> -->
-<!-- </div> -->
-
-<div class="block">
-<a class="navlink" target="_blank" href="http://g.co/maps/47d92">225 Teague<br/>
-Texas A&amp;M [lot&nbsp;15]</a>
-
-<div class="block">
-			<a class="nav_nowrap" target="_blank"
-			 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom;  margin-top:4px;" src="http://facebook.com/favicon.ico"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-</div>
-
-
-</div>
-</div>
-
-&nbsp;
 
 <div class="intro">
 
-<a href="research/index.html" class="illustrate_left" style="display: flex;">
-	<img src="research/bodyBased/zerotouch/images/austinChiZtGirlCropScale2.jpg" style="width:170px; height: 107px;"/>
-</a>
+<img src="research/bodyBased/zerotouch/images/austinChiZtGirlCropScale2.jpg" class="illustrate_left" style="width:170px;"/>
 
 The Interface Ecology Lab investigates <em>the future of human expression</em>, focusing on creativity, play, participation, and learning.
-We develop interdisciplinary research and education from our home in the
-<a target="_blank" href="http://www.cse.tamu.edu">Texas A&amp;M Department of Computer Science and Engineering</a>.
+  We develop interdisciplinary <a href="research/index.html">research</a> and 
+  <a href="courses/index.html">teaching</a> from our home in the
+<a target="_blank" class="plain" href="http://www.cse.tamu.edu">Texas A&amp;M Department of Computer Science and Engineering</a>.
 The lab is directed by <a class="destination" href="people/andruid/index.html">PI&nbsp;Andruid Kerne</a>.
 </div>
 
 <div class="intro">
 
-	<div class="h4">news</div>
+	<h2>news</h2>
 
 	<table cellpadding="0" border="0">
         <tr valign="top">
@@ -143,10 +134,10 @@ The lab is directed by <a class="destination" href="people/andruid/index.html">P
 </div>-->
 
 
-<div class="h4">publications + exhibits</div>
+<h2>publications + exhibits</h2>
 
-<div class="feature">
-	<a
+<div class="feature" >
+	<a class="a_illustrate"
 	   href="https://dl.acm.org/authorize?N652022"
 	   title="Multiscale Design Strategies from a Landscape Architecture Classroom"
 	   target="_blank">
@@ -156,15 +147,16 @@ The lab is directed by <a class="destination" href="people/andruid/index.html">P
 	  height="100"
 	  src="research/images/multiscaleDesignIcon.jpg" />
 	</a>
+  <div class="text_paper">
 	Lupfer, N., Fowler, H., Valdez, A., Webb, A., Merrill, J., Newman, G., Kerne, A.
 	<a href="https://dl.acm.org/authorize?N652022" class="pub_destination" target="_blank">
 		Multiscale Design Strategies from a Landscape Architecture Classroom</a>,
 	<i>Proc. ACM DIS 2018</i>, 1081-1093 [25%].
 	<a class="doi" href="https://doi.org/10.1145/3196709.3196812" target="_blank">https://doi.org/10.1145/3196709.3196812</a>
 	</div>
-
+  </div>
 <div class="feature">
-	<a
+	<a class="a_illustrate"
 	   href="research/publications/Lupfer_DIS_DC.pdf"
 	   title=""
 	   target="_blank">
@@ -174,13 +166,14 @@ The lab is directed by <a class="destination" href="people/andruid/index.html">P
 	  height="100"
 	  src="research/images/liveMacheNAIcon.png" />
 	</a>
+  <div class="text_paper">
 	Lupfer, N.
 	<a href="research/publications/Lupfer_DIS_DC.pdf" class="pub_destination" target="_blank">
-		Multiscale Curation: Supporting Collaborative Design and Ideation</a>,<br/>
+		Multiscale Curation: Supporting Collaborative Design and Ideation</a>,
 	<i>Proc. ACM DIS 2018 Companion</i>.
 	<a class="doi" href="https://doi.org/10.1145/3197391.3205380" target="_blank">https://doi.org/10.1145/3197391.3205380</a>
 	</div>
-
+  </div>
 <div class="feature">
 <a
    href="https://dl.acm.org/authorize?N652021"
@@ -200,7 +193,7 @@ Carrasco, M., Kerne, A.
 
 
 <div class="feature">
-<a
+<a class="a_illustrate"
    href="https://dl.acm.org/authorize?N652020"
    title="Collaborative Live Media Curation: Shared Context for Participation in Online Learning"
    target="_blank">
@@ -208,14 +201,15 @@ Carrasco, M., Kerne, A.
   class="illustrate_left"
   width="144"
   height="100"
-  src="research/images/liveMacheIcon.png" />
-</a>
-Hamilton, W. A., Lupfer, N., Botello, N., Tesch, T., Stacy, A., Merrill, J., Williford, B., Bentley, F. R., Kerne, A.
-<a href="https://dl.acm.org/authorize?N652020" class="pub_destination" target="_blank">
-	Collaborative Live Media Curation: Shared Context for Participation in Online Learning</a>,
-<i>Proc. ACM CHI 2018</i>, paper 555 : 14 pages [26%].
-<a class="doi" href="https://doi.org/10.1145/3173574.3174129" target="_blank">https://doi.org/10.1145/3173574.3174129</a>
-<a class="pub_video" href="https://youtu.be/OIuFK0RedzY" target="_blank">[video]</a>
+  src="research/images/liveMacheIcon.png" /></a>
+  <div class="text_paper">
+    Hamilton, W. A., Lupfer, N., Botello, N., Tesch, T., Stacy, A., Merrill, J., Williford, B., Bentley, F. R., Kerne, A.
+  <a href="https://dl.acm.org/authorize?N652020" class="pub_destination" target="_blank">
+      Collaborative Live Media Curation: Shared Context for Participation in Online Learning</a>,
+  <i>Proc. ACM CHI 2018</i>, paper 555 : 14 pages [26%].
+  <a class="doi_inline" href="https://doi.org/10.1145/3173574.3174129" target="_blank">https://doi.org/10.1145/3173574.3174129</a>
+  <a class="pub_video" href="https://youtu.be/OIuFK0RedzY" target="_blank">[video]</a>
+  </div>
 </div>
 
 <div class="feature">
@@ -283,14 +277,16 @@ Hamilton, W. A., Lupfer, N., Kerne, A.
   height="100"
   src="research/images/freeFormStrategiesIcon.png" />
 </a>
-Kerne, A., Lupfer, N., Linder R., Qu, Y., Valdez, A., Jain, A., Keith, K., Carrasco, M., Vanegas, J., Billingsley, A.,
-<a href="http://dl.acm.org/authorize?N31022" class="pub_destination" target="_blank">
-	Strategies of Free-form Web Curation: Processes of Creative Engagement with Prior Work</a>,
-<i>Proc. ACM Creativity &amp; Cognition 2017</i>, 380-392  [29%].
-<a class="doi" href="http://dx.doi.org/10.1145/3059454.3059471" target="_blank">http://dx.doi.org/10.1145/3059454.3059471</a>
-<div class="pub_destination">
-<a href="https://ideamache.ecologylab.net/e/6Eor5zygyw/" target="_blank">
-    presentation m&acirc;ch&eacute;</a></div>
+<div class="text_paper">
+  Kerne, A., Lupfer, N., Linder R., Qu, Y., Valdez, A., Jain, A., Keith, K., Carrasco, M., Vanegas, J., Billingsley, A.,
+  <a href="http://dl.acm.org/authorize?N31022" class="pub_destination" target="_blank">
+      Strategies of Free-form Web Curation: Processes of Creative Engagement with Prior Work</a>,
+  <i>Proc. ACM Creativity &amp; Cognition 2017</i>, 380-392  [29%].
+  <a class="doi_inline" href="http://dx.doi.org/10.1145/3059454.3059471" target="_blank">http://dx.doi.org/10.1145/3059454.3059471</a>
+  <div class="pub_destination">
+  <a href="https://ideamache.ecologylab.net/e/6Eor5zygyw/" target="_blank">
+      presentation m&acirc;ch&eacute;</a></div>
+</div>
 </div>
 
 <div class="feature">
@@ -305,7 +301,7 @@ Jain, A.,
 <a href="http://dl.acm.org/authorize?N31459" class="pub_destination" target="_blank">
 	Measuring Creativity: Multi-Scale Visual and Conceptual Design Analysis</a>,
 <i>Proc. ACM Creativity &amp; Cognition 2017</i>, Graduate Student Symposium, Singapore, 490-495.
-<a class="doi" href="http://dx.doi.org/10.1145/3059454.3078697" target="_blank">http://dx.doi.org/10.1145/3059454.3078697</a>
+<a class="doi_inline" href="http://dx.doi.org/10.1145/3059454.3078697" target="_blank">http://dx.doi.org/10.1145/3059454.3078697</a>
 <div class="pub_destination">
 <a href="https://ideamache.ecologylab.net/e/FjaOtpE01Q/" target="_blank">
     presentation m&acirc;ch&eacute;</a></div>
@@ -325,8 +321,8 @@ Lupfer, N., Kerne, A., Webb, A.M., Linder R.,
 <a href="http://dl.acm.org/authorize?N31457" class="pub_destination" target="_blank">
 	Patterns of Free-form Curation: Visual Thinking with Web Content</a>,
 <i>Proc. ACM Multimedia 2016</i>, Amsterdam, Netherlands, 12-21 [20%].
-    <div class="pub_best">Best Paper Nominee (top 2%).</div>
-<a class="doi" href="http://dx.doi.org/10.1145/2964284.2964303" target="_blank">http://dx.doi.org/10.1145/2964284.2964303</a>
+    <span class="pub_best">Best Paper Nominee (top 2%).</span>
+<a class="doi" style="display: inline" href="http://dx.doi.org/10.1145/2964284.2964303" target="_blank">http://dx.doi.org/10.1145/2964284.2964303</a>
 <div class="pub_destination">
 <a href="https://ideamache.ecologylab.net/v/loPiQiD3WY/" target="_blank">
     presentation m&acirc;ch&eacute;</a></div>
@@ -368,7 +364,7 @@ Webb, A.M., Kerne, A., Brown, Z., Kim, J.H., Kellogg, E.,
   src="research/images/curatingTheDigital.png" />
 Webb, A.M., Kerne, A., Linder, R., Lupfer, N, Qu, Y., Keith, K., Carrasco, M., Chen, Y.,
 <a href="research/publications/webb%20kerne%202016%20free-form%20medium%20curating%20the%20digital.pdf" class="pub_destination" target="_blank">A Free-form Medium for Curating the Digital</a>,in England, D., Schiphorst, T., Bryan-Kinns, N. eds. <i>Curating the Digital Space for Art and Interaction</i>, Springer, 2016, 73-87.
-<a class="doi" href="http://dx.doi.org/10.1007/978-3-319-28722-5" target="_blank">http://dx.doi.org/10.1007/978-3-319-28722-5</a>
+<a class="doi_inline" href="http://dx.doi.org/10.1007/978-3-319-28722-5" target="_blank">http://dx.doi.org/10.1007/978-3-319-28722-5</a>
 </div>
 
 <div class="feature">
@@ -439,7 +435,7 @@ Toups, Z.O., Hamilton, W.A., Alharthi, S.A.,
 Hamilton, W.A., Tang, J.C., Venolia, G., Inkpen, K., Zillner, J., Huang, D.,
 <a href="http://dl.acm.org/authorize?N32141" target="_blank" class="pub_destination" >Rivulet: Exploring Participation in Live Events through Multi-Stream Experiences</a>,
 <i>Proc. ACM International Conference on Interactive Experiences for Television and Online (TVX) Video 2016</i>, 31-42.
-<div class="pub_best">Best Paper Award.</div>
+<span class="pub_best">Best Paper Award.</span>
 <a class="doi" target="blank" href="http://dx.doi.org/10.1145/2932206.2932211">http://dx.doi.org/10.1145/2932206.2932211</a>
 </div>
 
@@ -652,7 +648,7 @@ Qu, Y., Kerne, A., Lupfer, N., Linder, R., Jain, A.,
 <a href="http://dl.acm.org/authorize?N31240" target="_blank" class="pub_destination">
 Metadata Type System: Integrate Presentation, Data Models and Extraction to Enable Exploratory Browsing Interfaces</a>,
 <i>Proc. ACM Engineering Interactive Computing Systems (EICS) 2014</i>, 107-116 [18%].
-<a class="doi" href="http://dx.doi.org/10.1145/2607023.2607030" target="_blank">http://dx.doi.org/10.1145/2607023.2607030</a>
+<a class="doi_inline" href="http://dx.doi.org/10.1145/2607023.2607030" target="_blank">http://dx.doi.org/10.1145/2607023.2607030</a>
 <a class="pub_video" href="https://www.youtube.com/watch?v=CbtCZSHsenA" target="_blank">[video]</a>
 </div>
 
@@ -667,7 +663,7 @@ Metadata Type System: Integrate Presentation, Data Models and Extraction to Enab
 Hamilton, W., Garretson, O., and Kerne, A.
 <a href="http://dl.acm.org/authorize?N32255" target="_blank" class="pub_destination">Streaming on Twitch: Fostering Participatory Communities of Play within Live Mixed Media</a>,
 <i>Proc. CHI 2014</i>, 1315-1324 [23%].
-<a class="doi" href="http://dx.doi.org/10.1145/2556288.2557048" target="_blank">http://dx.doi.org/10.1145/2556288.2557048</a>
+<a class="doi_inline" href="http://dx.doi.org/10.1145/2556288.2557048" target="_blank">http://dx.doi.org/10.1145/2556288.2557048</a>
 <a target="_blank" class="pub_video" href="https://www.youtube.com/watch?v=WXxptc_Ctt0">[video]</a>
 </div>
 

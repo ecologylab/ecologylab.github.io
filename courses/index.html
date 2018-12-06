@@ -3,7 +3,7 @@
 <head>
 <title>courses [interface ecology lab]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../includes/ecologylab.css" rel="stylesheet">
 
 <link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../images/ecologylab-16.png" type="image/png">
@@ -11,8 +11,7 @@
 <style type="text/css">
 .course
 {
-	font-size: 18px;
-	color: #000000;
+	font-size: 14pt;
 }
 h4
 {
@@ -20,12 +19,11 @@ h4
 	margin-top: 15px;
 	font-size: 15px;
 }
-.course:hover
+h2
 {
-	color: #0004DC;
-	text-decoration: none
+  font-size: 22pt;
+  line-height: 110%;
 }
-
 </style>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -38,162 +36,150 @@ h4
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+<script type="text/javascript" src="../includes/ecologylab.js"></script>
 </head>
 
 <body>
-<div class="rootcontainer" style="height: auto;">
+<div class="rootcontainer">
 
 <div class="header">
-<a href="http://ecologylab.net/index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
+<a href="..//index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
 <div class="title">
-courses
+teaching
 </div>
-</div>
-
-<br clear="all"/>
-
-<div class="nav" style="height: 360px;">
-<div class="block">
-<a class="navlink" href="../index.html">home</a>
-<a class="navlink" href="../define.html">define</a>
-<a class="navlink" href="../research/index.html">research</a>
-<a class="navlink" href="../people/index.html">people</a>
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<div class="block">  <!--    current courses -->
-<a class="navselected" href="index.html">courses</a>
-<a class="subnavlink" href="studio/index.html">programming studio</a>
-</div>
+<div id="navigation_container">
+  <div class="block">
+    <a class="navlink" href="../index.html">home</a>
+    <a class="navlink" href="../define.html">define</a>
+    <a class="navlink" href="../research/index.html">research</a>
+    <a class="navlink" href="../people/index.html">people</a>
 
-<div class="block">  <!--    other typical courses courses -->
-<a class="subnavlink" href="hcc/index.html">human-centered</a>
-<a class="subnavlink" href="sii/index.html">interactive information</a>
-<a class="subnavlink" href="capstone/index.html">capstone</a>
-</div>
-<div class="block">
-<a class="subnavlink" href="491-691research.html">491/691 research</a>
-</div>
+    <div class="sub_block">  <!--    current courses -->
+      <a class="navselected" href="index.html">teaching</a>
+      <a class="subnavlink" href="studio/index.html">programming studio</a>
 
-<div class="block">
-<a class="navlink" href="jobs.html">a job doing<br/> what you want</a>
-<a class="subnavlink" target="_blank" href="../softwareDevelopment/index.html">programming practices</a>
-</div>
+      <a class="subnavlink" href="hcc/index.html">human-centered</a>
 
+      <a class="subnavlink" href="491-691research.html">491/691 research</a>
+    </div>
 
-<div class="block">
-			<a class="nav_nowrap" target="_blank"
-			 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
-</div>
+<!--  <a class="navlink" href="jobs.html">get a job doing what you want</a>-->
+  <a class="subnavlink" target="_blank" href="../softwareDevelopment/index.html">programming practices</a>
 
-</div>
+  <div class="block">
+              <a class="nav_nowrap" target="_blank"
+               href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+  </div>
+
+</div></div>
 
 
 &nbsp;
 <div class="content">
 
-<div class="intro">
-
-<div class="course_entry">
-<a class="course" href="studio/index.html"><img class="course_icon" src="icons/programmingStudio.jpg"/></a>
-<div>
+<div class="feature">
+<a href="studio/index.html"><img class="illustrate_left" src="icons/programmingStudio.jpg"/></a>
 <h4>fall 2018, fall 2016. spring 2016, 2014.</h4>
 <a class="course" href="studio/index.html">CSCE 315: Programming Studio</a>
 </div>
-</div>
 
-<div class="course_entry">
-<a class="course" href="hcc/index.html"><img class="course_icon" src="icons/hcc.png"/></a>
+<div class="feature">
+<a class="course" href="hcc/index.html"><img class="illustrate_left" style="width:79px; border: 1px transparent;" src="icons/hcc.png"/></a>
 <div>
-<h4 style="margin-bottom:4px;">fall 2016. spring 2016, 2015, 2014. <br/>fall 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004.</h4>
+<h4 style="margin-bottom:4px;">spring 2019, 2016, 2015, 2014. <br/>
+  fall 2016, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004.</h4>
 <a class="course" href="hcc/index.html">CSCE 655 Human-Centered Computing</a>
 </div>
 </div>
 
-    <div class="course_entry">
-<a class="course" href="sii/index.html"><img class="course_icon" src="icons/sii-icon79.png"/></a>
+<div class="feature">
+<a class="course" href="sii/index.html"><img class="illustrate_left" width="79" src="icons/sii-icon79.png"/></a>
 <div>
 <h4>fall 2015, 2007, 2006, 2005, 2004. spring 2004, 2003.</h4>
 <a class="course" href="sii/index.html">CSCE 444 Structures of Interactive Information</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="capstone/index.html"><img class="course_icon" src="icons/capstone.jpg"/></a>
+<div class="feature">
+<a class="course" href="capstone/index.html"><img class="illustrate_left" width="79" src="icons/capstone.jpg"/></a>
 <div>
 <h4>fall 2011, 2010. spring 2010.</h4>
 <a class="course" href="capstone/index.html">CSCE 482 Senior Capstone Design</a>
 </div>
 </div>
     
-    <div style="align:right">
-        <a href="https://www.nytimes.com/2018/08/17/opinion/college-students.html"
-           target="_blank" ><img style="float:right;height:110px;margin-top:30px;" src="getMost.png"/></a>
-    </div>
-
-<div class="course_entry">
-<a class="course" href="html/index.html"><img class="course_icon" src="icons/html5-79.png"/></a>
+<div class="feature">
+<a class="course" 
+   href="html/index.html"><img class="illustrate_left" width="79" src="icons/html5-79.png"
+                               style="width:79px; border: 1px transparent; margin-top: 5px;"/></a>
 <div>
 <h4>anytime</h4>
 <a class="course" href="html/index.html">HTML5</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="491-691research.html"><img class="course_icon" src="icons/researchIcon79.jpg"/></a>
+<div class="feature">
+<a class="course" href="491-691research.html"><img class="illustrate_left" width="79" src="icons/researchIcon79.jpg"/></a>
 <div>
 <h4>always</h4>
 <a class="course" href="491-691research.html">CSCE 491/691 Research</a>
 </div>
 </div>
 
+<div class="feature">
 
-<div class="course_entry" style="padding-top:5px;">
-<h1>CSCE 667 Seminar:<br/>Human-Centered Computing and Information</h1>
-</div>
+    <div style="align:right">
+        <a href="https://www.nytimes.com/2018/08/17/opinion/college-students.html"
+           target="_blank" ><img class="illustrate_left" style="height: 79px;" src="getMost.png"/></a>
+    </div>
 
-<div class="course_entry">
-<a class="course" href="livemedia/index.html"><img class="course_icon" src="icons/live.png"/></a>
-<div>
+<h2>CSCE 667 Seminar:<br/>Human-Centered Computing and Information</h2>
+
+<div class="feature">
+<div><a class="course" href="livemedia/index.html"><img class="illustrate_left" style="width:79px;" src="icons/live.png"/></a>
+
 <h4>spring 2017</h4>
 <a class="course" href="livemedia/index.html">Live Media Places</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="curation/index.html"><img class="course_icon" src="icons/curationIdeation.png"/></a>
+<div class="feature">
+<a class="course" href="curation/index.html"><img class="illustrate_left" width="79" src="icons/curationIdeation.png"/></a>
 <div>
 <h4>fall 2014</h4>
 <a class="course" href="curation/index.html">Curation and Ideation meet Social Media</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="sensoryInterfaces/index.html"><img class="course_icon" src="icons/sensory.png"/></a>
+<div class="feature">
+<a class="course" href="sensoryInterfaces/index.html"><img class="illustrate_left" width="79" src="icons/sensory.png"/></a>
 <div>
 <h4>spring 2012</h4>
 <a class="course" href="sensoryInterfaces/index.html">Sensory Interfaces</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="fluidInformation/index.html"><img class="course_icon" src="icons/fluidInterfaces.png"/></a>
+<div class="feature">
+<a class="course" href="fluidInformation/index.html"><img class="illustrate_left" width="79" src="icons/fluidInterfaces.png"/></a>
 <div>
 <h4>spring 2011</h4>
 <a class="course" href="fluidInformation/index.html">Fluid Information</a>
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="location/index.html"><img class="course_icon" src="icons/locationIcon.png"/></a>
+<div class="feature">
+<a class="course" href="location/index.html"><img class="illustrate_left" width="79" src="icons/locationIcon.png"/></a>
 <div>
 <h4>spring 2008</h4>
 <a class="course" href="location/index.html">CSCE 489/689 Location, Location, Location</a>
 </div>
 </div>
 
-<div class="course_entry">
-<img class="course_icon" src="icons/blank.png"/>
+<div class="feature">
+<img class="illustrate_left" width="79" src="icons/blank.png"/>
 <div>
 <h4>spring 2007</h4>
 <a class="course" href="creativeAndExpressive/index.html">CSCE 489/689 Creative
@@ -201,16 +187,16 @@ courses
 </div>
 </div>
 
-<div class="course_entry">
-<a class="course" href="physicalInterfaces/index.html"><img class="course_icon" src="icons/physicalInterfaces.png"/></a>
+<div class="feature">
+<a class="course" href="physicalInterfaces/index.html"><img class="illustrate_left" width="79" src="icons/physicalInterfaces.png"/></a>
 <div>
 <h4>spring 2006</h4>
 <a class="course" href="physicalInterfaces/index.html">CSCE 489/689 Physical Interfaces</a>
 </div>
 </div>
 
-<div class="course_entry">
-<img class="course_icon" src="icons/blank.png"/>
+<div class="feature">
+<img class="illustrate_left" width="79" src="icons/blank.png"/>
 <div>
 <h4>spring 2005, fall 2002</h4>
 <a class="course" href="recombinant/index.html">CSCE 689 Recombinant Media Ecosystems</a>

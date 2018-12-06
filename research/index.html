@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html> 
+<html>
 <head>
 <title>research [interface ecology lab]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../includes/ecologylab.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../images/ecologylab-16.png" type="image/png">
 
@@ -18,44 +18,39 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="../includes/ecologylab.js"></script>
 </head>
 
 <body>
 <div class="rootcontainer">
 
 <div class="header">
-<a href="http://ecologylab.net/index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
+<a href="../index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
 <div class="title">
 research
 </div>
-
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<br clear="all"/>
-
-<div class="nav" style="height: 270px;">
+<div id="navigation_container">
   <a class="navlink" href="../index.html">home</a>
   <a class="navlink" href="../define.html">define</a>
 
-  <div class="block">
-    <div class="subblock">
-      <a class="navselected" href="index.html">research</a>
-      <a class="subnavlink" href="bodyBased/index.html">body-based</a>
-      <a class="subnavlink" href="ideation.html">ideation</a>
-      <a class="subnavlink" href="livemedia/index.html">live media</a>
-      <a class="subnavlink" href="curation.html">curation</a>
-      <a class="subnavlink" href="websemantics/index.html">web semantics</a>
-      <a class="subnavlink" href="games.html">games</a>
-    </div>
+  <a class="navselected" href="index.html">research</a>
+  <div class="sub_block">
+    <a class="subnavlink" href="bodyBased/index.html">body-based</a>
+    <a class="subnavlink" href="ideation.html">ideation</a>
+    <a class="subnavlink" href="livemedia/index.html">live media</a>
+    <a class="subnavlink" href="curation.html">curation</a>
+    <a class="subnavlink" href="websemantics/index.html">web semantics</a>
+    <a class="subnavlink" href="games.html">games</a>
   </div>
 
   <a class="navlink" href="../people/index.html">people</a>
-  <a class="navlink" href="../courses/index.html">courses</a>
-  <a class="navlink" href="../workshops/index.html">workshops</a> 
-  <a class="navlink" href="technicalReports/index.html">technical reports</a>
+  <a class="navlink" href="../courses/index.html">teaching</a>
   <div class="subblock">
         <a class="nav_nowrap" target="_blank"
-         href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow</a>
+         href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow</a>
   </div>
 </div>
 
@@ -64,7 +59,7 @@ The Interface Ecology Lab fosters integrative research projects spanning hardwar
 interaction techniques, visualization algorithms, semantics, programming languages, interactive installations, and evaluation methodologies.</div>
 
 
-<h4 style="margin-top:15px;">research areas</h4>
+<h2>research areas</h2>
 
 <div class="feature">
 <a href="bodyBased/index.html"><img
@@ -72,7 +67,7 @@ interaction techniques, visualization algorithms, semantics, programming languag
   width="144"
   height="100" style="margin-bottom: 40px;"
   src="images/bodyBasedThumb.png"></a>
-<a class="checkthis" href="bodyBased/index.html">Body-based interfaces</a>
+<a href="bodyBased/index.html">Body-based interfaces</a>
 integrate multi-modal sensing with interaction design and gesture recognition.
 We investigate body-based interfaces for human expression in computing, addressing ideation and play. 
 <!-- Body-based  IdeaM&Acirc;CH&Eacute; brings pen+touch interaction to information composition, building an embodied curation environment to support information-based ideation. -->
@@ -86,7 +81,7 @@ We investigate body-based interfaces for human expression in computing, addressi
 	width="144"	
 	src="images/pihcvid.png">
 </a>
-<a href="games.html" class="checkthis">Games and Play</a> are fun and creative forms of human experience.
+<a href="games.html">Games and Play</a> are fun and creative forms of human experience.
 <!-- Traditional and digital games are unique forms of interactive human systems. -->
 We study emerging culture and media surrounding game play.
 We investigate game design through play, culture, interface, and media perspectives. 
@@ -100,7 +95,7 @@ We investigate game design through play, culture, interface, and media perspecti
   width="144"
   height="100"
   src="images/ibiIcon144.png"></a>
-<a href="ideation.html" class="checkthis">
+<a href="ideation.html">
 Information-Based Ideation</a> (IBI) is a  a theory and methodology for investigating tasks and activities in which people develop new ideas, while digital content serves as support and stimulus.<br/>
 People engaged in information-based ideation tasks <i>curate</i>&mdash; they collect, assemble, annotate, and exhibit.
  </div>
@@ -112,10 +107,9 @@ People engaged in information-based ideation tasks <i>curate</i>&mdash; they col
 	width="144"	
 	src="images/scoliosis_mache_thumb.png">
 </a>
-<a href="curation.html" class="checkthis">Free-form web curation</a> is a spontaneous, improvisational,
+<a href="curation.html">Free-form web curation</a> is a spontaneous, improvisational,
 and divergent creative process that involves choosing elements, sketching, and writing, and assembling them spatially.
 Free-form web curation is non-linear and unrestricted, breaking out of lists and grids to support the synthesis and emergence of diverse ideas.
-It integrates rich media curation with web semantics and expressive annotation through text and sketching.
 </div>
 
 <div class="feature">
@@ -125,9 +119,9 @@ It integrates rich media curation with web semantics and expressive annotation t
   width="144"
   height="100"
   src="images/websemantics_n.png"></a>
-<a href="websemantics/index.html" class="checkthis">Web
+<a href="websemantics/index.html">Web
  semantics</a> describe and derive significant attributes and relationships of digital content.
-We develop and build on an innovative type system for deriving and presenting web semantics for diverse content &mdash;e.g., digital libraries, e-commerce, social media&mdash; to provide valuable context to users engaged in 
+We design an innovative type system for deriving and presenting web semantics for diverse content &mdash;e.g., digital libraries, e-commerce, social media&mdash; to provide context to users engaged in 
 information-based ideation and curation.
 </div>
  
@@ -139,12 +133,24 @@ information-based ideation and curation.
   height="100"
   style="margin-bottom: 40px;"
   src="images/livemediaThumb.png"></a>
-<a href="livemedia/index.html" class="checkthis">Live media places</a> bring together various media forms to support participatory shared
-experiences in online communities. We are designing tools to help people create more expressive and engaging live experiences in contexts such 
+<a href="livemedia/index.html">Live media places</a> bring together various media forms to support participatory shared
+experiences in online communities. We designing tools to help people create more expressive and engaging live experiences in contexts such 
 as online learning and games. 
 </div>
 
-<h4 style="clear:left;">current projects</h4>
+  <h2>current projects</h2>
+<div class="feature">
+<a target="_blank" href="https://livemache.ecologylab.net">
+<img
+  class="illustrate_left"
+  src="images/mustard_mache_logo2_site.png"></a>
+<a target="_blank" href="https://livemache.ecologylab.net">LiveM&acirc;ch&eacute;</a> is our current  
+  <a href="./curation.html">design curation</a> probe.
+  This art-inspired web app provides live, collaborative capabilities for collecting and organizing content, along with writing, sketching, chat, and live streaming video.
+</div>
+
+
+<h2>prior projects</h2>
 
 <div class="feature">
 <a href="artchi/index.html">
@@ -153,7 +159,34 @@ as online learning and games.
   width="144"
   height="100"
   src="images/artchi_thumb.jpg"></a>
-The <a href="artchi/index.html" class="checkthis">Art.CHI</a> installation provides a movement-based, spatial and visual interface for navigating a multi-scale information composition, which holistically represents an online art gallery.
+The <a href="artchi/index.html">Art.CHI</a> installation provides a movement-based, spatial and visual interface for navigating a multi-scale information composition, which holistically represents an online art gallery.
+</div>
+
+<div class="feature">
+  <a href="http://ideamache.ecologylab.net" target="_blank"><img width="144" src="images/ideamache_project.png" class="illustrate_left"/></a>
+
+  <a target="_blank" class="destination" href="http://ideamache.ecologylab.net">IdeaM&acirc;ch&eacute;</a> 
+  is our previous web app that uses
+  <a href="./curation.html">free-form web curation</a> as a medium of expression.
+  <i>Curation</i> is the process of creating and assembling information in meaningful exhibits, for people to think about.
+</div>
+
+<div class="feature">
+<a href="bigsemantics/TweetBubble/index.html">
+<img
+  class="illustrate_left"
+  width="144"
+  src="bigsemantics/images/tbl.png"></a>
+<a href="bigsemantics/TweetBubble/index.html" class="checkthis">TweetBubble</a>
+is a 
+  <!--<a class="destination" href="https://chrome.google.com/webstore/detail/tweetbubble/hibcjiciicbghknhlepnfeghnjnbgicm" target="_blank">-->
+  Chrome  extension 
+  that helps Twitter users 
+engage in exploratory browsing, by following associational chains of
+tweets through #hashtags and @users. 
+Our study show this increases the variety
+of content people explore,which helps you develop multiple perspectives on a topic.
+TweetBubble makes browsing a more fun and fluid experience.
 </div>
 
 <div class="feature">
@@ -163,33 +196,12 @@ The <a href="artchi/index.html" class="checkthis">Art.CHI</a> installation provi
   width="144"
   height="100"
   src="images/websemantics.png"></a>
-<a href="bigsemantics/index.html" class="checkthis">BigSemantics</a> is an open
+<a href="bigsemantics/index.html">BigSemantics</a> is an open
 source software architecture and language for developing applications that present
 interactive web semantics. Developers author wrappers to create semantic types, while inheriting from existing types. 
 The wrapper repository provides types for common web resources.
 BigSemantics includes the <a href="http://ecologylab.net/mice" target="_blank"
- class="checkthis">Metadata In-Context Expander</a> (MICE), an example HTML5 component  for exploring linked web semantics in one context.
-</div>
-
-<div class="feature">
-<a href="bigsemantics/TweetBubble/index.html">
-<img
-  class="illustrate_left"
-  width="144"
-  height="100"
-  src="bigsemantics/images/tbl.png"></a>
-<a href="bigsemantics/TweetBubble/index.html" class="checkthis">TweetBubble</a>
-is a <a href="https://chrome.google.com/webstore/detail/tweetbubble/hibcjiciicbghknhlepnfeghnjnbgicm" target="_blank" class="checkthis">chrome extension</a> that helps Twitter users 
-engage in exploratory browsing, by following associational chains of
-tweets through #hashtags and @users. 
-Our study show this increases the variety
-
-of content people explore,which helps you develop multiple perspectives on a topic.
-TweetBubble makes browsing a more fun and fluid experience.
-<div style="margin-top:5px;">
-TweetBubble is built with <a href="bigsemantics/index.html" class="checkthis">BigSemantics</a> and the <a href="http://ecologylab.net/mice" target="_blank"
- class="checkthis">Metadata In-Context Expander</a>.
-</div>
+>Metadata In-Context Expander</a> (MICE), an example HTML5 component  for exploring linked web semantics in one context.
 </div>
 
 <div class="feature">
@@ -200,13 +212,10 @@ TweetBubble is built with <a href="bigsemantics/index.html" class="checkthis">Bi
   height="100"
   src="images/trans-surface.png"></a>
 
-<a href="crossSurfaceInteraction.html" class="checkthis">Cross-surface interaction</a>
+<a href="crossSurfaceInteraction.html">Cross-surface interaction</a>
 addresses moving information objects across multi-display environments that support sensory interaction modalities such as touch, pen, and free-air.
 It is characterized by user experiences of continuously manipulating information across interactive surfaces, providing a sense of connection.
 </div>
-
-
-<h4 style="margin-top:55px;">prior projects</h4>
 
 <div class="feature">
 <a href="bodyBased/zerotouch/index.html">
@@ -215,7 +224,7 @@ It is characterized by user experiences of continuously manipulating information
   width="144"
   height="100"
   src="bodyBased/zerotouch/images/zerotouchMeshIcon2.png"></a>
-<a href="bodyBased/zerotouch/index.html" class="checkthis">ZeroTouch</a> is a high performance multi-point sensor that detects visual hulls, within a plane. Applications include free-air interaction, person tracking in rooms, automobile windshields, hover sensing (e.g., over capacitive multi-touch), and multi-touch.
+<a href="bodyBased/zerotouch/index.html">ZeroTouch</a> is a high performance multi-point sensor that detects visual hulls, within a plane. Applications include free-air interaction, person tracking in rooms, automobile windshields, hover sensing (e.g., over capacitive multi-touch), and multi-touch.
 </div>
 
 <div class="feature">
@@ -226,7 +235,7 @@ It is characterized by user experiences of continuously manipulating information
 	height="100" style="margin-bottom: 40px;"
 	src="images/firePlusPrototypeIcon.jpg">
 </a>
-We designed digital games for <a href="tec.html" class="checkthis">Teaching Team Coordination (TeC)</a>. 
+We designed digital games for <a href="tec.html">Teaching Team Coordination (TeC)</a>. 
 Through ethnography, we developed new understanding of and design principles for fire emergency response work practice. 
 We invented <i>Zero-Fidelity Simulation</i>, 
 a method that reproduces communication and information distribution from target environments,
@@ -241,14 +250,14 @@ Our simulations map real-world actions to game mechanics: players work together 
   height="100"
   style="margin-bottom: 40px;"
   src="images/simplIcon.png"></a>
-<a class="checkthis" target="blank" href="simplGuide/index.html">S.IM.PL</a> is
+<a target="blank" href="simplGuide/index.html">S.IM.PL</a> is
 our open source initiative to augment popular programming languages for
 inter-operation.  
-<a class="checkthis" target="blank"
+<a target="blank"
 href="simplGuide/serialization/index.html">S.IM.PL Serialization</a>, the foundation, provides a cross-language type system. 
 This enables cross-language code generation, as well as
 de/serialization to XML and JSON.
-<a class="checkthis" target="blank"
+<a target="blank"
   href="simplGuide/oodss/index.html">Object-Oriented Distributed Semantic
 Services (OODSS)</a> simplifies building distributed applications and services,
 Message passing is encoded using S.IM.PL types, connecting
@@ -263,7 +272,7 @@ BigSemantics uses S.IM.PL.
   width="144"
   height="100"
   src="images/zmicssRuinedChurch.jpg"></a>
-<a href="hurricaneRecovery.html" class="checkthis">Hurricane Recovery: Collecting Locative Media to Rebuild Local Knowledge</a> 
+<a href="hurricaneRecovery.html">Hurricane Recovery: Collecting Locative Media to Rebuild Local Knowledge</a> 
 We engaged in iterative, participatory design, reaching out to evacuee communities subsequent to Hurricane Katrina.
 We gathering information about needs and desires, building situated semantics and a locative media collection sensemaking system.
  Digital photographs were connected with GPS sensor data, semantics, a zoomable map interface, and an image clustering algorithm.
@@ -276,7 +285,7 @@ We gathering information about needs and desires, building situated semantics an
   width="144"
   height="100"
   src="images/testCollection.png"></a>
-<a href="testCollection.html" class="checkthis">Test Collection</a> 
+<a href="testCollection.html">Test Collection</a> 
 aggregated a set of documents, a clearly formed problem that an algorithm is supposed to provide solutions to, and the answers that the algorithm should produce when executed on the documents. 
 The Test Collection Digital Library System enables collecting and labeling documents, and publishing. 
 </div>
