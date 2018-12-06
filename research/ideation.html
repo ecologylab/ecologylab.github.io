@@ -1,9 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>ideation [interface ecology lab | research]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../includes/ecologylab.css" rel="stylesheet">
 <link rel="shortcut icon" href="../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../images/ecologylab-16.png" type="image/png">
 
@@ -18,7 +18,8 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
+<script type="text/javascript" src="../includes/ecologylab.js"></script>
+  
 <meta itemprop="description" name="description" content="Information-based ideation (IBI) is a paradigm for investigating and evaluating creativity support tools that involve people in generating and developing new ideas through
 interaction with and reflection on personal, social, and popular media." />
 <meta name="twitter:description"  content="Information-based ideation (IBI) is a paradigm for investigating and evaluating creativity support tools that involve people in generating and developing new ideas through
@@ -36,68 +37,65 @@ interaction with and reflection on personal, social, and popular media." />
 <div class="rootcontainer">
 
 <div class="header">
-<a href="http://ecologylab.net/index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
-<div class="title2">ideation</div>
+<a href="../index.html" ><img class="logo" src="../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
+<div class="title">
+ideation
+</div>
+<span onclick="toggleNav(this);" id="triple">&equiv;</span></div>
 
+<div id="navigation_container">
+  <a class="navlink" href="../index.html">home</a>
+  <a class="navlink" href="../define.html">define</a>
+
+  <a class="navselected" href="index.html">research</a>
+  <div class="sub_block">
+    <a class="subnavlink" href="bodyBased/index.html">body-based</a>
+    <a class="subnavselected" href="ideation.html">ideation</a>
+    <a class="subnavlink" href="livemedia/index.html">live media</a>
+    <a class="subnavlink" href="curation.html">curation</a>
+    <a class="subnavlink" href="websemantics/index.html">web semantics</a>
+    <a class="subnavlink" href="games.html">games</a>
+  </div>
+
+  <a class="navlink" href="../people/index.html">people</a>
+  <a class="navlink" href="../courses/index.html">teaching</a>
+  <div class="subblock">
+        <a class="nav_nowrap" target="_blank"
+         href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow</a>
+  </div>
 </div>
 
-<div class="nav" style="height:230px;">
-	<a class="navlink" href="../index.html">home</a>
-	<a class="navlink" href="../define.html">define</a>
-
-
-<div class="block">
-	<div class="subblock">
-		<a class="navselected" href="index.html">research</a>
-	    <a class="subnavlink" href="bodyBased/index.html">body-based</a>
-	    <a class="subnavselected" href="ideation.html">ideation</a>
-	    <a class="subnavlink" href="livemedia/index.html">live media</a>
-	    <a class="subnavlink" href="curation.html">curation</a>
-	    <a class="subnavlink" href="websemantics/index.html">web semantics</a>
-	    <a class="subnavlink" href="games.html">games</a>
-	</div>
-</div>
-
-	<a class="navlink" href="../people/index.html">people</a>
-	<a class="navlink" href="../courses/index.html">courses</a>
-
-	<div class="subblock">
-		<a class="nav_nowrap" target="_blank"
-		 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;</a>
-	</div>
-</div>
-
-	<img src="images/ibiImage.png" width="280"
- style="float: right; margin-left: 10px; margin-top: 4px; margin-bottom: 4px;"/>
-<div class="text">
+	<img src="images/ibiImage.png" width="280" class="illustrate" style="border: 0;"/>
+<p>
 <i>Information-based ideation</i> (IBI) is a theory and paradigm for investigating tasks and activities in which people develop new ideas; digital content serves as support and stimulus.
-</div>
-<div class="text">
+</p>
+<p>
 People <i>curate</i>&mdash;gather, assemble, annotate, reflect on, and exhibit&mdash;content to perform IBI activities.
 <!-- From everyday boards on Pinterest to collections of academic prior work, people gather, reflect on, and assemble information to synthesize new ideas.  -->
 Each stage of curation involves creativity.
 Information-based ideation involves conceptualization and synthesis, beyond information seeking, sensemaking, and finding facts.
 <!-- The Interface Ecology Lab researches IBI in popular media and develops methods for quantifying creativity. -->
-</div>
-<div class="text">
-Curation platforms, such as Facebook, Twitter, Pinterest and <a target="_blank" class="destination" href="http://ideamache.ecologylab.net">IdeaM&Acirc;CH&Eacute;</a>,
+</p>
+<p>
+Curation platforms, such as Facebook, Twitter, Pinterest and 
+<a target="_blank" class="destination"
+ href="https://livemache.ecologylab.net">LiveM&acirc;ch&eacute;</a>
 function as creativity support environments for information-based ideation.
 	  We investigate Pinterest, discovering how people find, assemble, and generate ideas while performing everyday activities to address both practical and emotional needs.
 	  We design IdeaM&Acirc;CH&Eacute to support a range of everyday personal, academic, and professional creative activities.
-</div>
-
-<div class="text">
+</p>
+<p>
 How to evaluate creativity support environments is a hard problem.
     We take a mixed-methods approach, combining qualitative and quantitative data analysis.
     We analyze qualitative data using grounded theory methods.
-</div>
-
-<div class="text">
+</p>
+<p>
 We derive analytics for quantifying creativity in the context of an IBI task or activity.
 	 We build on prior creative cognition research in engineering design to derive a battery of <i>ideation metrics of curation</i>.
 	  These are used to measure aspects of creativity in curation products (e.g. Pinterest board and <a target="_blank" class="destination" href="curation.html">information composition</a>).
 	   In laboratory and crowdsourced studies, we use these metrics to compare the effectiveness of different creativity support environments.
-    </div>
+</p>
+
 <ul class="no_indent">
 
 <li><i>Elemental metrics</i>, which can be computed, assess and aggregate the creativity of individual curate elements.
@@ -109,26 +107,31 @@ These include Emergence (new ideas through combinations of prior ones),
 	 Visual Presentation, and Exposition (Written Presentation).</li>
 </ul>
 
-<h4>publications</h4>
+<h2>publications</h2>
 
 <div class="feature">
-<a href="publications/kerne%20lupfer%20linder%202017%20strategies%20free-form%20web%20curation.pdf" target="_blank">
+<a
+   href="http://dl.acm.org/authorize?N31022"
+   title="Strategies of Free-Form Web Curation: Processes of Creative Engagement with Prior Work"
+   target="_blank">
 <img
   class="illustrate_left"
   width="144"
   height="100"
   src="images/freeFormStrategiesIcon.png" />
 </a>
-Kerne, A., Lupfer, N., Linder R., Qu, Y., Valdez, A., Jain, A., Keith, K., Carrasco, M., Vanegas, J., Billingsley, A.,
-<a href="publications/kerne%20lupfer%20linder%202017%20strategies%20free-form%20web%20curation.pdf" class="pub_destination" target="_blank">
-	Strategies of Free-form Web Curation: Processes of Creative Engagement with Prior Work</a>, 
-<i>Proc. ACM Creativity &amp; Cognition 2017</i>, 380-392 [29%].
-<a class="doi" href="http://dx.doi.org/10.1145/3059454.3059471" target="_blank">http://dx.doi.org/10.1145/3059454.3059471</a>
-<div class="pub_destination">
-<a href="https://ideamache.ecologylab.net/e/6Eor5zygyw/" target="_blank">
-    presentation m&acirc;ch&eacute;</a></div>
+<div class="text_paper">
+  Kerne, A., Lupfer, N., Linder R., Qu, Y., Valdez, A., Jain, A., Keith, K., Carrasco, M., Vanegas, J., Billingsley, A.,
+  <a href="http://dl.acm.org/authorize?N31022" class="pub_destination" target="_blank">
+      Strategies of Free-form Web Curation: Processes of Creative Engagement with Prior Work</a>,
+  <i>Proc. ACM Creativity &amp; Cognition 2017</i>, 380-392  [29%].
+  <a class="doi_inline" href="http://dx.doi.org/10.1145/3059454.3059471" target="_blank">http://dx.doi.org/10.1145/3059454.3059471</a>
+  <div class="pub_destination">
+  <a href="https://ideamache.ecologylab.net/e/6Eor5zygyw/" target="_blank">
+      presentation m&acirc;ch&eacute;</a></div>
 </div>
-
+</div>
+  
 <div class="feature">
 <a href="http://dl.acm.org/authorize?N31459" target="_blank">
 <img
