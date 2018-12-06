@@ -60,6 +60,10 @@ div.rootcontainer
   max-width: 800px;
   border-top: 1px solid #dddddd;
 }
+.spacey
+{
+  margin-bottom: 1.33em;
+}
 .wide
 {
   max-width: inherit;
@@ -144,6 +148,7 @@ div.rootcontainer
   width: inherit;
   padding-left: 1em;
   font-weight: bold;
+  line-height: normal;
 }
 
 h1 {
@@ -319,60 +324,6 @@ h5
 	font-size: 15px;
 }
 
-.title2
-{
-/*	background-color: #00EEEE;  */
-	text-align: right;
-	position: relative;
-	font-size: 45px;
-	padding-top: 58px;
-	font-weight: bold;
-	color: #555555;
-	color: #227358;
-	color: #18513e;
-}
-.title2a
-{
-/*	background-color: #00EEEE;  */
-	text-align: right;
-	position: relative;
-	font-size: 41px;
-
-	padding-top: 18px;
-	font-weight: bold;
-	color: #555555;
-	color: #227358;
-	color: #18513e;
-}
-.title3
-{
-/*	background-color: #00EEEE;  */
-	text-align: right;
-	position: relative;
-	font-size: 30px;
-	padding-top: 58px;
-	font-weight: bold;
-	color: #555555;
-	color: #227358;
-	color: #18513e;
-}
-.title4
-{
-/*	background-color: #00EEEE;  */
-	text-align: right;
-	position: relative;
-	font-size: 30px;
-	font-weight: bold;
-	color: #527198;
-}
-.title5
-{
-/*	background-color: #00EEEE;  */
-	position: relative;
-	font-size: 30px;
-	font-weight: bold;
-	color: #526178;
-}
 .title, .title2, .title2a, .title3, .title4, .title5
 {
 	margin-right: 274px;
@@ -522,14 +473,14 @@ a.subnavselected
 {
 	clear: left;
 }
-.caption_left {
-	float: left;
-	margin-right: 30px; 
-	margin-top: 4px; 
+.caption {
+	margin-right: 1.3em; 
+	margin-top:.2em; 
 	margin-bottom: 10px;
 	font-family: Times;
 	font-weight: bold;
 	text-align: center;
+  line-height: 110%;
 }
 .illustrate_no_border {
 	float: right;

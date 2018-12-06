@@ -1,10 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-
-
-<title cftoolsversion="0.1.2">Art.CHI</title>
+<!DOCTYPE html>
+<html>
+<head>
+<title>body-based [interface ecology lab]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="../../code/styles/ecologylab/ecologylab.css" rel="stylesheet">
+<link href="../../includes/ecologylab.css" rel="stylesheet">
 <link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
 <link rel="shortcut icon" href="../../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
@@ -20,6 +19,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="../../includes/ecologylab.js"></script>
 </head>
 <body>
 
@@ -27,51 +27,42 @@
 
 <div class="header">
 <a href="../../index.html" ><img class="logo" src="../../images/interfaceEcologyLabLogos7-2004-2WhiteMatte.png"> </a>
-<div class="title2">Art.CHI</div>
+<div class="title smaller">
+art.chi
+</div>
+<span onclick="toggleNav(this);" id="triple">&equiv;</span>
 </div>
 
-<br clear="all">
+<div id="navigation_container">
+  <a class="navlink" href="../../index.html">home</a>
+  <a class="navlink" href="../../define.html">define</a>
 
-<div class="nav" style="height:217px;">
-	<a class="navlink" href="../../index.html">home</a>
-	<a class="navlink" href="../../define.html">define</a>
+  <a class="navselected" href="../index.html">research</a>
+  <div class="sub_block">
+    <a class="subnavselected" href="./index.html">body-based</a>
+    <a class="subnavlink" href="../ideation.html">ideation</a>
+    <a class="subnavlink" href="../livemedia/index.html">live media</a>
+    <a class="subnavlink" href="../curation.html">curation</a>
+    <a class="subnavlink" href="../websemantics/index.html">web semantics</a>
+    <a class="subnavlink" href="../games.html">games</a>
+  </div>
 
-
-<div class="block">
-	<div class="subblock">
-		<a class="navselected" href="../index.html">research</a>
-	    <a class="subnavselected" href="../bodyBased/index.html">body-based</a>
-	    <a class="subnavlink" href="../games.html">games</a>
-	    <a class="subnavlink" href="../ideation.html">ideation</a>
-	    <a class="subnavlink" href="../curation.html">composition</a>
-	    <a class="subnavlink" href="index.html">web semantics</a>
-	</div>
-</div>
-
-	<a class="navlink" href="../../people/index.html">people</a>
-	<a class="navlink" href="../../courses/index.html">teaching</a>
-
-	<div class="subblock">
-		<a class="nav_nowrap" target="_blank"
-		 href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;</a>
-	</div>
+  <a class="navlink" href="../../people/index.html">people</a>
+  <a class="navlink" href="../../courses/index.html">teaching</a>
+  <div class="subblock">
+        <a class="nav_nowrap" target="_blank"
+         href="https://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="https://facebook.com/favicon.ico"/>ollow</a>
+  </div>
 </div>
 
 
-<div class="content">
-	
-<a href="http://ideamache.ecologylab.net/artchi" class="destination" target="_blank">
-  
-<img src="images/ae1.jpg" width="600"
- style="margin-right: 10px; margin-top: 4px; margin-bottom: 5px;">
+
+<p>
+  <a href="http://ideamache.ecologylab.net/artchi"  target="_blank">
+<img src="images/ae1.jpg" width="600" class="illustrate_left">
 </a>
-
-</div>
-<div class="content">
-
-<p class="main" style="line-height: 150%;">
-  The Interface Ecology Lab at Texas A&M University is exhibiting the Art.CHI 2015
-  gallery with innovative forms of curation in the ACM CHI 2015 Conference in Seoul,
+  The Interface Ecology Lab at Texas A&M University exhibited Art.CHI,
+  with innovative forms of curation, in the ACM CHI 2015 Conference in Seoul,
   S. Korea. Art.CHI 2015 is an exhibition of leading interactive art. Our exhibit is
   based in a digital composition, which holistically connects and interprets the works
   that comprise the Art.CHI 2015 catalog. We are exhibiting this composition, titled
@@ -81,7 +72,7 @@
   one in browsers on the web, and one, body-based, in ACM CHI 2015 Interactivity in Seoul.
 </p>
   
-<p class="main" style="line-height: 150%;">
+<p>
  In the web form of our exhibit, curated by Andrew Webb subsequent to the curation by the
  Art.CHI committee, clippings are spatially arranged in labeled conceptual clusters,
  such as light, body, and sonorous. Each clipping represents a work in the Art.CHI 2015 catalog.
@@ -91,7 +82,8 @@
  the larger space of Webb's Art.CHI 2015 catalog curation.
 </p>
   
-<p class="main" style="line-height: 150%;">
+<p>
+  <img src="images/as1.jpg" width="800" class="illustrate">
  We are presenting the body-based exhibition form, Embodied Iterative Curation,
  in ACM CHI Interactivity #i164, in Seoul. Here, participants take turns navigating
  the Light Bounces: Space and Body composition with a novel form of zoomable spatial
@@ -109,15 +101,14 @@
  <a href="../../people/nic.html" class="destination" target="_blank">Nic Lupfer</a>, and
  <a href="../../people/rhema.html" class="destination" target="_blank">Rhema Linder</a>,
  undergrad Cameron Hill, and Principal Investigator,
- <a href="../../people/andruid.html" class="destination" target="_blank">Andruid Kerne</a>, Ph.D.
+ <a href="../../people/andruid/index.html" class="destination" target="_blank">Andruid Kerne</a>, Ph.D.
 </p>
-<img src="images/as1.jpg" width="800"
- style="margin-right: 10px; margin-top: 4px; margin-bottom: 5px;">
+
 
   
 
 
-<h5>publications</h5>
+<h2>publications</h2>
 
 <div class="feature">
 	<a href="../../research/publications/Lupfer_Hamiliton_ArtCHI_Exhibition.pdf" target="_blank"><img
