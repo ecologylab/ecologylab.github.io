@@ -1,4 +1,4 @@
-function toggleNav()
+function toggleNav(event)
 {
   var nav     =document.getElementById("navigation_container");
   var navStyle=nav.style;
@@ -6,6 +6,8 @@ function toggleNav()
       navStyle.visibility = "hidden";
   else
       navStyle.visibility = "visible";
+  
+  event.stopPropagation;
 }
 function handleKey(e)
 {
@@ -13,22 +15,37 @@ function handleKey(e)
 }
 function offNav()
 {
-  var thatStyleName = that.style.className;
-  alert(thatStyleName);
-  if (thatStyleName) {
       var nav     =document.getElementById("navigation_container");
       var navStyle=nav.style;
       navStyle.visibility = "hidden";      
-    }
-
 }
+function handleClick(event)
+{
+  alert(event.target)
+}
+function popOutIFrame() 
+{
+	 var gDocIFrame = document.getElementById("google-doc-iframe");
+	 window.open(gDocIFrame.src, '_blank');
+}
+
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
   if (keyName == "Escape")
     {
-      var nav     =document.getElementById("navigation_container");
-      var navStyle=nav.style;
-      navStyle.visibility = "hidden";      
+      offNav();   
     }
  // alert('keydown event\n\n' + 'key: ' + keyName);
+});
+
+window.addEventListener('mouseup', function(event){
+	var box = document.getElementById('navigation_container');
+  var triple  = document.getElementById('triple');
+	if (event.target != box && event.target.parentNode != box
+        && event.target != triple && event.target.parentNode != triple
+       )
+    {
+        box.style.visibility = "hidden";
+      event.stopPropagation;
+    }
 });
