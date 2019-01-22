@@ -38,14 +38,19 @@ document.addEventListener('keydown', (event) => {
  // alert('keydown event\n\n' + 'key: ' + keyName);
 });
 
-window.addEventListener('click', function(event){
-	var box = document.getElementById('navigation_container');
-  var triple  = document.getElementById('triple');
-	if (event.target != box && event.target.parentNode != box
+function offNonTriple(event) {
+  return function(event){
+    var nav     = document.getElementById('navigation_container');
+    var triple  = document.getElementById('triple');
+    if (event.target != nav && event.target.parentNode != nav
         && event.target != triple && event.target.parentNode != triple
        )
     {
-        box.style.visibility = "hidden";
+      nav.style.visibility = "hidden";
       event.stopPropagation;
     }
-});
+  };
+}
+
+window.addEventListener('click', offNonTriple(event));
+window.addEventListener('touchstart', offNonTriple(event));
