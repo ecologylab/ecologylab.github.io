@@ -54,3 +54,27 @@ function offNonTriple(event) {
 
 window.addEventListener('click', offNonTriple(event));
 window.addEventListener('touchstart', offNonTriple(event));
+
+/////////////////////////////////////////////
+// wishful thinking
+//
+// include in iframe tag:   onload="fixGDocTargets2(this)"
+function fixGDocTargets2(thatFrame)
+{
+	if (!thatFrame.foo)
+	{
+		thatFrame.foo	= true;
+		var jFrame		= $(thatFrame);
+/*
+		$(function() {
+		    $.get(thatFrame.src, function(html) {
+		        jFrame.attr("srcdoc", html);
+		        setTimeout(function() {
+		            jFrame.contents().find('a[href^="http"]').attr("target", "_blank");
+		            jFrame.contents().find('a[href^="https"]').attr("target", "_blank");
+		        }, 1000);
+		    });
+		});
+*/
+	}
+}
