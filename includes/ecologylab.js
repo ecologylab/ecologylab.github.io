@@ -42,8 +42,10 @@ function offNonTriple(event) {
   return function(event){
     var nav     = document.getElementById('navigation_container');
     var triple  = document.getElementById('triple');
-    if (event.target != nav && event.target.parentNode != nav
-        && event.target != triple && event.target.parentNode != triple
+    var parent  = event.target.parentNode;
+    if (event.target != nav && parent != nav
+        && (parent != null && parent.parentNode != nav)
+        && event.target != triple && parent != triple
        )
     {
       nav.style.visibility = "hidden";
