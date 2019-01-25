@@ -38,45 +38,14 @@ document.addEventListener('keydown', (event) => {
  // alert('keydown event\n\n' + 'key: ' + keyName);
 });
 
-function offNonTriple(event) {
-  return function(event){
-    var nav     = document.getElementById('navigation_container');
-    var triple  = document.getElementById('triple');
-    var parent  = event.target.parentNode;
-    if (event.target != nav && parent != nav
-        && (parent != null && parent.parentNode != nav)
-        && event.target != triple && parent != triple
+window.addEventListener('click', function(event){
+	var box = document.getElementById('navigation_container');
+  var triple  = document.getElementById('triple');
+	if (event.target != box && event.target.parentNode != box
+        && event.target != triple && event.target.parentNode != triple
        )
     {
-      nav.style.visibility = "hidden";
+        box.style.visibility = "hidden";
       event.stopPropagation;
     }
-  };
-}
-
-window.addEventListener('click', offNonTriple(event));
-window.addEventListener('touchstart', offNonTriple(event));
-
-/////////////////////////////////////////////
-// wishful thinking
-//
-// include in iframe tag:   onload="fixGDocTargets2(this)"
-function fixGDocTargets2(thatFrame)
-{
-	if (!thatFrame.foo)
-	{
-		thatFrame.foo	= true;
-		var jFrame		= $(thatFrame);
-/*
-		$(function() {
-		    $.get(thatFrame.src, function(html) {
-		        jFrame.attr("srcdoc", html);
-		        setTimeout(function() {
-		            jFrame.contents().find('a[href^="http"]').attr("target", "_blank");
-		            jFrame.contents().find('a[href^="https"]').attr("target", "_blank");
-		        }, 1000);
-		    });
-		});
-*/
-	}
-}
+});
