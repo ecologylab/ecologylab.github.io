@@ -53,13 +53,6 @@ div.rootcontainer
 
 }
 
-.feature
-{
-/*  margin-bottom: 1.4em;*/
-  clear:left;
-  max-width: 800px;
-  border-top: 1px solid #dddddd;
-}
 .spacey
 {
   margin-bottom: 1.33em;
@@ -433,9 +426,26 @@ a.subnavselected
 .illustrate_left {
   float: left;
   margin-right: 1.3em; 
-  margin-bottom: 1.4em;
+  margin-bottom: .1em;
   border: 1px solid #555555;
 }
+.illustrate_pub {
+  margin-right: 1.3em; 
+  margin-bottom: .1em;
+  border: 1px solid #555555;
+}
+.pub_cell {
+  display: table-cell;
+  vertical-align: top;
+}
+.feature
+{
+  margin-top: 1.2em;
+  clear:left;
+  max-width: 800px;
+  border-top: 1px solid #dddddd;
+}
+
 .a_illustrate
 {
   display: table-cell;
