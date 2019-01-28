@@ -3,7 +3,8 @@
 <head>
 <title>programming studio [home]</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="../../code/styles/ecologylab/courses.css" rel="stylesheet">
+<link href="../../includes/ecologylab.css" rel="stylesheet">
+<link href="../../includes/courses.css" rel="stylesheet">
 <link rel="shortcut icon" href="../../images/ecologylab-16.ico" type="image/ico">
 <link rel="icon" href="../../images/ecologylab-16.png" type="image/png">
 
@@ -18,6 +19,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<script type="text/javascript" src="../../includes/ecologylab.js"></script>
 </head>
 
 <body>
@@ -25,60 +27,57 @@
 <div class="rootcontainer">
 
 <div class="banner">
-  <span class="banner_studio" >programming&nbsp;studio</span>
-  <img class="studio_logo" src="images/programmingStudio72.jpg" />
+  <img class="course_img" src="images/programmingStudio72.jpg" />
+  <span onclick="toggleNav(this);" id="triple">&equiv;</span>
+  <span class="banner_courses" >programming&nbsp;studio</span>
 </div>
 
-<div class="navigation">
+<div id="navigation_container">
 <div class="block">
   <a class="navselected" href="index.html">welcome</a>
-  <a class="navlink" href="policies.html">policies</a>
-  <a class="navlink" href="teamwork.html">teamwork</a>
-  <a class="navlink" href="contact.html">contact info</a>
-<a class="navlink" href="resources.html">resources</a>
+  <a class="subnavlink" href="policies.html">policies</a>
+  <a class="subnavlink" href="teamwork.html">teamwork</a>
+  <a class="subnavlink" href="contact.html">contact info</a>
 </div>
 
 <div class="block">
-<a class="navlink" target="_blank" href="https://goo.gl/f2qPbJ">schedule</a>
-<a class="navlink" href="assignments/index.html">assignments</a>
-<a class="navlink" href="mustsee/index.html">must see</a>
-</div>
-
-<div class="block_ecologylab">
-  <a class="top_navlink" href="../../index.html">interface ecology lab</a>
-  <a class="navlink" href="../index.html">courses</a>
-  <a class="navlink" href="../../research/index.html">research</a>
+  <a class="subnavlink" target="_blank" href="https://goo.gl/f2qPbJ">schedule</a>
 </div>
 
 <div class="block">
-	<a class="navlink_logo" target="_blank" href="../../research/index.html"><img class="navicon" width="70" src="../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
-	<a class="navlink_logo" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon" width="66" src="../../images/ideamache_logo+name_black.png"/></a>
+  <a class="navlink" href="assignments/index.html">deliverables</a>
+  <a class="navlink" href="resources.html">resources</a>
+  <a class="subnavlink" href="mustsee/index.html">must see</a>
+</div>
+
+<div class="block">
+	<a class="navlink_logo" target="_blank" href="../../index.html"><img class="navicon" width="70" src="../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+	<a class="navlink_logo" target="_blank" href="https://livemache.ecologylab.net"><img class="navicon" width="66" style="margin-bottom: 10px;" src="https://livemache.ecologylab.net/img/mustard_mache_logo2.svg"/></a>
 	<a class="nav_nowrap" target="_blank"   href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
 </div>
 
 </div>
 
+<img class="illustrate" src="images/jackson_pollock_crop.png"/>
 
-<img class="illustrate_right" style="margin-right:8px;" src="images/jackson_pollock_crop.png"/>
-
-<div class="content_title">welcome [csce&nbsp;315]</div>
+<h1>welcome [csce&nbsp;315]</h1>
 
 <div class="content">
 
-<p class="main" style="line-height: 150%">
+<div class="text">
 
 This project-based course is our <i>half-capstone</i>. It is intensive in all ways. Teamwork is a major focus and challenge.
 Students will primarily work in small teams on extended project <i>iterative design cycles</i>, involving diverse aspects of computer science, design, and engineering.
-</p>
-<p class="main" style="line-height: 150%">
+</div>
+<div class="text">
 In project-based learning, students are given opportunities to create new knowledge, beyond ingesting prior knowledge.
-</p>
-<p class="main" style="line-height: 150%">
+</div>
+<div class="text">
 A fundamental goal of this class is for students to develop strong, creative capabilites for applying programming in practical, real world, situated contexts.
 Another goal, since all of you are likely to build programs that people use, is for students to learn the fundamentals of human-computer interaction, including design and data gathering.
 The course addresses good programming techniques to ease code integration, reuse, and clarity.
 It also addresses group process and team dynamics, which can be as challenging as design and programming.
-</p>
+</div>
 
 
 
@@ -108,9 +107,10 @@ Andruid Kerne</a>
 <h2 class="subsection">Objectives</h2>
 Expected accomplishments of students:
 <ol>
-<li> Become a confident software and interaction developer, experienced in iterative design process.</li>
-<li> Become a capable and effective teammate in a small design team.</li>
-<li> Become an effective communicator.</li>
+<li> Gain confidence as a software and interaction designer / developer.</li>
+<li> Gain experience in iterative design processes.</li>
+<li> Learn to serve as an effective member of a small design team.</li>
+<li> Grow to become an effective communicator.</li>
 </ol>
 </p>
 
