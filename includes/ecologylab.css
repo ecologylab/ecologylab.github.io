@@ -73,7 +73,8 @@ div.rootcontainer
   min-width: 9em;
   
   /* position relative to triple */
-  margin-right: var(--margin-right);
+  margin-right: 0; // var(--margin-right);
+ //margin-right: var(--margin-right);
   margin-top: .33em;
   margin-bottom: .66em;
   
