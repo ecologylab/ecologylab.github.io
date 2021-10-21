@@ -1,0 +1,27 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.17.21;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@All Rights reserved.
+
+@

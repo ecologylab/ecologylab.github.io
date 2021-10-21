@@ -1,0 +1,96 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.24.54;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>CHAINS LINKS</title>
+</head>
+
+<body BACKGROUND="CHAINSImages/revChain3dark.jpeg" TEXT="#FFFFFF"
+LINK="#10FF60" VLINK="#20D0FF">
+<table width=90%>
+<TR ALIGN=center>
+<td><h1 ALIGN=center>CHAINS Links</h1></td>
+<TD COLSPAN=2><A HREF="greet.html"><IMG  HEIGHT=43 WIDTH=72 SRC="CHAINSImages/greetIcon.jpeg"></A></TD>
+<TD COLSPAN=2><A HREF="vuGbe.html"><IMG  HEIGHT=85 WIDTH=72 SRC="CHAINSImages/drumIcon.jpeg"></A></TD>
+<TD COLSPAN=2><A HREF="performCenter.html"><IMG SRC="CHAINSImages/performCenterIcon.jpeg"</A></TD>
+<TD COLSPAN=1><A HREF="i.html"><IMG  WIDTH=54 HEIGHT=54 SRC="CHAINSImages/i.gif"></A></TD>
+</TR>
+</table>
+<TABLE CELLSPACING=9>
+<TR>
+<TD ALIGN=center><A HREF="http://cnmat.cnmat.berkeley.edu/~ladzekpo/"><IMG
+    WIDTH=183 HEIGHT=101
+    SRC="http://cnmat.cnmat.berkeley.EDU/~ladzekpo/AgbekoEnsemble1T.jpg"></TD>
+
+<TD><A HREF="http://www.usc.edu/lacmnh/webmuseums"> <FONT SIZE=4>
+CK Ladzekpo's African Music and Dance
+</FONT></A></TD>
+</TR>
+
+<TR>
+<TD ALIGN=center><A HREF="http://www.usc.edu/lacmnh/webmuseums"><IMG  WIDTH=195 HEIGHT=65 SRC="http://www.usc.edu/lacmnh/picts/logo.GIF"></TD>
+
+<TD><A HREF="http://www.usc.edu/lacmnh/webmuseums"> <FONT SIZE=4> The
+Natural History Museum of Los Angeles </FONT></A></TD></TR>
+
+<TR>
+<TD ALIGN=center><A
+HREF="http://www.sas.upenn.edu/African_Studies/Country_Specific/Ghana.html"><IMG  WIDTH=41 HEIGHT=49 SRC="http://www.sas.upenn.edu/African_Studies/Logo_GIFS/Af_button_19452.gif">
+</TD>
+<TD>
+<A HREF="http://www.sas.upenn.edu/African_Studies/Country_Specific/Ghana.html">
+<FONT SIZE=4> University of Pennsylvania African Studies Ghana Page</FONT></A></TD></TR>
+
+<TR>
+<TD ALIGN=center>
+<a href="http://www.gatech.edu/bgsa/blackpages.html">
+<IMG  WIDTH=73 HEIGHT=28 SRC="http://www.gatech.edu/bgsa/gif/logo.gif"></a></TD>
+<TD><a href="http://www.gatech.edu/bgsa/blackpages.html"><FONT SIZE=4>
+Universal Black Pages</FONT></A></TD></TR>
+
+<TR>
+<TD>&nbsp</TD>
+<TD><br><A HREF="http://gopher.nypl.org/research/sc/sc.html"><FONT SIZE=4>Schomburg
+Center for Research in Black Culture</FONT></A><br></TD></TR>
+
+<TR>
+<TD ALIGN=center><A HREF="http://research.umbc.edu/efhm/">
+       <IMG  WIDTH=157 HEIGHT=68 SRC="http://research.umbc.edu/efhm/efhm_sm.gif"></TD>
+<TD><A HREF="http://research.umbc.edu/efhm/">
+       <FONT SIZE=4>EthnoFORUM/hypermedia</FONT></A></TD></TR>
+</TABLE>
+
+
+
+<hr>
+&copy; Copyright 1995 by <IMG SRC="CHAINSImages/revFriend.gif" WIDTH=22 
+   HEIGHT=20 align=absmiddle>
+<B>creating media</B>.  All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>.
+</BODY>
+</HTML>
+@

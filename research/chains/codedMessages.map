@@ -1,0 +1,9 @@
+default	/cgi-bin/andruid/chains/randomWalk 	229,67  350,182
+circle /chains/vuGbe.html    95,295  30,295
+poly /chains/nante.html#isLimitless 226,212 243,212 246,224 295,225 305,249 320,273 303,270 305,295 292,303 390,35 277,347 277,304 236,317 233,346 221,343 222,310 196,301 200,253 212,253 214,235 227,231
+poly /chains/nante.html      259,174 279,153 295,151 297,170 344,187 374,162 374,117 402,115 406,160 467,188 452,295 419,344 371,344 324,267 286,203 265,202
+rect /chains/tele.html   167,110 327,209
+rect /chains/tele.html   0,215 166,313
+rect /chains/libation.html   0,144 164,214
+poly /chains/libation.html   164,144 266,60 393,68 465,153 404,262 164,262
+rect /chains/theCode.html    0,0 	467,86

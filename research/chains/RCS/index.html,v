@@ -1,0 +1,45 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.17.53;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+
+<HEAD>
+<!--META HTTP-EQUIV="Refresh" CONTENT="12;
+URL=http://found.cs.nyu.edu/andruid/chainsWeb/greet.html"-->
+<TITLE>The CHAINS Doorway (click to enter)</TITLE>
+</HEAD>
+
+<BODY>
+<BODY BGCOLOR=#000000">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<CENTER>
+<A HREF="greet.html">
+<IMG BORDER = 0  HEIGHT=132 WIDTH=216 SRC="CHAINSImages/leave.jpeg"
+      alt="Coded Messages: Chains Doorway"></A>
+</BODY></HTML>
+@

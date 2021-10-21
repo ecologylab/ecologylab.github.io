@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<TITLE>Tele</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#000000"
+  BACKGROUND="CHAINSImages/tele/tele.jpeg" TEXT="#FFFFFF"
+  LINK="#10FF60" VLINK="#20D0FF">
+<P align="center">
+<b><font size=7 face="HELVETICA,ARIAL">tele</font>
+</p>
+<table cellspacing=8><tr>
+<td align="center" width=400>
+<A HREF="sound/cyb.au"><IMG SRC="CHAINSImages/tele/francisFeliEtse.JPG"
+ BORDER=2 width=350 height=225></a></td>
+
+<td valign="top">
+<font size=+1>
+In Ghana, traditional music is often composed in call-and-response
+form.  The lead drummer plays one phrase and the supporting drums play
+an answer, creating a
+<A HREF = "vuGbe.html"><I>vu gbe</I> = drum language</A>
+conversation.
+Vocal songs in Ghana, and in the
+African-American  diaspora, are often composed in the same form.</td>
+</tr>
+<tr><td align="center">
+<A HREF="sound/cyb.au"><FONT SIZE=2>LO-FI sound 99KB.</A><P>
+<A HREF="sound/cyb.WAV">
+or HI-FI sound 547KB.</A></FONT></td>
+</tr></table>
+
+<br>
+
+<table cellspacing=8><tr>
+<td align=right valign="top">
+<font size=+1>In "Tele", the call-and-response form is combined with Andruid's
+percussive poetry technique.  Percussive poetry is performance in
+which spoken words are delivered with well-defined rhythms.  Voices
+interlock musically, perhaps with other instrumentation, to form a
+complete musical statement.</td>
+<td align="center" width=350>
+<A HREF="sound/cantReach.au">
+<IMG BORDER=2  SRC="CHAINSImages/tele/teleCute.JPG" width=300
+ height=211><br><FONT SIZE=2>LO-FI sound 128KB.</A><P>
+<A HREF="sound/cantReach.WAV">
+or HI-FI sound 705 KB.</A></FONT>
+</td>
+</tr></table>
+
+<!-- bottom icons nav --!>
+<br>
+<center>
+<A HREF="codedMessages.html"><IMG WIDTH=111 HEIGHT=83 border=0
+   SRC="CHAINSImages/codedIcon.JPG"></A><A
+   HREF="performCenter.html"><IMG WIDTH=43 HEIGHT=83 
+   ALT="Performance Center" hspace=0
+   SRC="CHAINSImages/performCenterIcon.JPG" border=0></A><A HREF="theCode.html"><img
+   border=0 src="CHAINSImages/theCode.GIF" width=111
+   height=83></A><A
+   HREF="vuGbe.html"><IMG SRC="CHAINSImages/vuGbeIcon.JPG" border=0 
+   WIDTH=108 HEIGHT=83 border=0></A>
+</CENTER>
+<br>
+
+<!-- footer--!>
+<HR>
+<A HREF="i.html"><IMG  WIDTH=54 HEIGHT=54 SRC="CHAINSImages/i.gif" border=0
+ align=right></A>
+<A HREF="help.html"><IMG SRC="CHAINSImages/question.gif" border=0
+ align=right WIDTH=54 HEIGHT=54></A>
+
+<A HREF="http://www.creatingmedia.com"><IMG WIDTH=50 height=45 align=left
+ SRC="CHAINSImages/cmLogoRev50.GIF" BORDER=0 hspace=4></a><font
+ face="HELVETICA,ARIAL">&copy; Copyright 1995-7 by<br>
+ <A HREF="http://www.creatingmedia.com"><b>creating media</b></A>.
+All rights reserved.
+<br clear="all"><br>
+<font size=-1>
+Email inquiries to 
+<a href="mailto:chains@cat.nyu.edu">chains@cat.nyu.edu</a>.
+</font>
+</BODY>
+</HTML>

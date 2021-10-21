@@ -1,0 +1,95 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.25.03;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>The Imagination of Man is Limitless</title>
+</head>
+
+<body BACKGROUND="CHAINSImages/slaveStatback.jpeg" TEXT="#FFFFFF"
+LINK="#FF2400" VLINK="#5080FF">
+<h1>Slave Trade Statistics</h1>
+<P>
+<FONT SIZE=3>
+The actual number of men, women and children who were snatched from
+their homes in Africa and transported in slave ships across the
+Atlantic, either to the Caribbean islands or to North and South
+America, will never be known.  Writers vary in their estimates, but
+there is no doubt that their number runs into millions.  The
+following figures are taken from Morel's calculations as reproduced by
+Professor Melville J. Herskovits and cover the period 1666-1800:
+<P>
+<TABLE>
+   <TR>
+     <TD>1666-1776:</TD><TD>Slaves imported only by the English for the
+English, French and Spanish colonies:<br> <FONT SIZE=5>3 million (250,000 died on the
+voyage)</FONT>.</TD></TR>
+   <TR>
+     <TD>1680-1786:</TD>
+     <TD>Slaves imported for the English colonies in America:
+<FONT SIZE=5>2,130,000</FONT> (Jamaica alone absorbed 610,000).</FONT></TD></TR>
+   <TR>
+     <TD>1716-1756:</TD>
+     <TD>Average annual number of slaves imported for the American
+colonies: 70,000, with a total of <FONT SIZE=5>3.5 million</FONT>.</TD></TR>
+   <TR>
+      <TD>1752-1762:</TD>
+      <TD>Jamaica alone imported 71,115 slaves.</TD></TR>
+   <TR>
+     <TD>1759-1762:</TD>
+     <TD>Guadeloupe alone imported 40,000 slaves.</TD></TR>
+   <TR>
+     <TD>1776-1800:</TD>
+     <TD>A yearly average of 74,000 slaves were imported for the
+American colonies, or a total of <FONT SIZE=5>1,850,000</FONT>; this yearly average was
+divided up as follows: by the English, 38,000; French, 20,000;
+Portuguese, 10,000; Dutch, 4,000; Danes, 2,000.</TD></TR></TABLE>
+<P>
+<HR>
+<A HREF="theCode.html">
+   <IMG ALIGN=center  HEIGHT=150 WIDTH=216 SRC="CHAINSImages/limitlessCollage3.jpeg"></A>
+
+
+
+<hr>
+<FONT SIZE=2>The above paragraph and statistics are excerpted from the
+following article by Jose Luciano Franco:
+<P>"The Slave Trade in the Caribbean and Latin America." in <EM>The
+African Slave Trade from the Fifteenth to the Nineteenth Century </EM>
+Reports and papers of the meeting of experts organized by Unesco at
+Port-au-Prince, Haiti, 31 January to 4 February 1978.</FONT>
+<P>
+Permission has been requested.
+<P>
+<P>
+Copyright 1995 by <IMG  WIDTH=22 HEIGHT=20 SRC="CHAINSImages/revFriend.gif">
+<B>creating media</B>.  All rights reserved.
+<P>
+<P>
+Email inquiries to 
+<A HREF = "mailto:andruid@@graphics.cs.nyu.edu">andruid@@graphics.cs.nyu.edu</A>
+ or 
+<A HREF = "mailto:mlang@@wesleyan.edu">mlang@@wesleyan.edu.</A>
+</body> </html>
+@

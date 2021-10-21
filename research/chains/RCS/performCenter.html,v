@@ -1,0 +1,173 @@
+head	1.2;
+access;
+symbols;
+locks
+	andruid:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	97.03.01.23.25.01;	author andruid;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	97.02.26.15.36.10;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before i get rid of excessive graphics
+@
+
+
+1.2
+log
+@before meli's changes
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>CHAINS Performance Center</TITLE>
+</HEAD>
+
+<BODY BACKGROUND
+ ="CHAINSImages/performCenter/perfCenterBkgnd.jpeg" TEXT="000000"
+LINK="#FF2400" VLINK="#5080FF">
+
+<CENTER>
+<b><font face="ARIAL,HELVETICA,TIMES ROMAN"><font size=7>CHAINS</font><br>
+<font size=+3>Performance Center</font></font></b>
+<P>
+
+<TABLE WIDTH="80%" CELLPADDING=10 CELLSPACING=10>
+
+<TR ALIGN=center>
+<TD>
+    <table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="libation.html"><IMG HEIGHT=65 WIDTH=72 vspace=0 
+     border=0 SRC="CHAINSImages/performCenter/topourIcon.jpeg"
+     alt="Libation" ></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">libation</td>
+     </table>
+
+<TD><table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="gadzo.html"><IMG HEIGHT=53 WIDTH=72 vspace=0
+     SRC="CHAINSImages/performCenter/gadzo1Icon.jpeg" border=0
+     alt="Gadzo: CHAINS of Iron"></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">gadzo</td>
+     </table>
+
+<TD><table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="nante.html"><IMG HEIGHT=53 WIDTH=72 vspace=0
+     SRC="CHAINSImages/performCenter/nanteIcon.jpeg" border=0
+     alt="Nante -- Walk"></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">nante</td>
+     </table>
+</TR>
+<TR ALIGN=center>
+
+<TD><table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="tele.html"><IMG WIDTH=72 HEIGHT=45 vspace=0
+     SRC="CHAINSImages/tele/teleIcon.jpeg"  alt="Tele" border=0></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">tele</td>
+     </table>
+
+<TD><table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="whip.html"><IMG WIDTH=72 HEIGHT=54 vspace=0
+     SRC="CHAINSImages/performCenter/enchainingwhip2Icon.jpeg"
+     alt="The Whip" border=0></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">the whip</td>
+     </table>
+
+<TD><table cellspacing=0 cellpadding=0><tr><td width=72 align=center
+     bgcolor="000000"><A HREF="adzogbo.html"><IMG WIDTH=72 HEIGHT=56 border=0
+     SRC="CHAINSImages/performCenter/linedanceIcon.jpeg" vspace=0
+     alt="Adzobgo"></A><br>
+     <b><font face="ARIAL,HELVETICA,TIMES ROMAN" color="ffffff">adzobgo</td>
+     </table>
+
+</TR> 
+
+</TABLE>
+<p>
+<A HREF="greet.html"><IMG WIDTH=127 HEIGHT=83 alt="CHAINS Greets You"
+	SRC="CHAINSImages/leaveIcon.JPG" border=0 hspace=0></A><A
+ HREF="codedMessages.html"><IMG WIDTH=111 HEIGHT=83 alt="Coded Messages"
+	SRC="CHAINSImages/codedIcon.JPG" border=0 hspace=0></A><A
+HREF="info.html"><IMG WIDTH=111 HEIGHT=83 alt="About CHAINS" border=0
+	SRC="CHAINSImages/CHAINSIcon.jpeg" hspace=0></A>
+
+</CENTER>
+<BR>
+<HR>
+<A HREF="i.html"><IMG WIDTH=54 HEIGHT=54 alt="Info" align=right
+	SRC="CHAINSImages/i.gif" HSPACE=10 vspace=4 border=0></a>
+&copy; Copyright 1995-7 by <A HREF="bios.html#CMC"><IMG
+	WIDTH=22 HEIGHT=20 BORDER=0 align=absmiddle
+	SRC="CHAINSImages/friend.gif">creating media</A>.
+All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>.
+</BODY></HTML>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d11 2
+a12 5
+<IMG WIDTH=288 HEIGHT=81 SRC="CHAINSImages/performCenter/CHAINS.gif"
+     ALT="CHAINS">
+<IMG WIDTH=470 HEIGHT=57 SRC="CHAINSImages/performCenter/perfCenter.gif"
+     ALT="Performance Center">
+</CENTER>
+d15 1
+a15 2
+<CENTER>
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+d18 21
+a38 7
+<TD><A HREF="libation.html"><IMG HEIGHT=65 WIDTH=72 alt="Libation"
+     SRC="CHAINSImages/performCenter/topourIcon.jpeg"></A></TD>
+<TD><A HREF="gadzo.html"><IMG HEIGHT=53 WIDTH=72 alt="Gadzo: CHAINS of Iron"
+     SRC="CHAINSImages/performCenter/gadzo1Icon.jpeg">
+    </A></TD> 
+<TD><A HREF="nante.html"><IMG HEIGHT=53 WIDTH=72 alt="Nante -- Walk"
+     SRC="CHAINSImages/performCenter/nanteIcon.jpeg"></A></TD>
+d40 21
+a61 7
+<TR ALIGN=center>
+<TD><A HREF="tele.html"><IMG WIDTH=72 HEIGHT=45 alt="Tele"
+     SRC="CHAINSImages/tele/teleIcon.jpeg"></A></TD>
+<TD><A HREF="whip.html"><IMG WIDTH=72 HEIGHT=54 alt="The Whip"
+     SRC="CHAINSImages/performCenter/enchainingwhip2Icon.jpeg"></A></TD>
+<TD><A HREF="adzogbo.html"><IMG WIDTH=72 HEIGHT=56 alt="Adzobgo"
+     SRC="CHAINSImages/performCenter/linedanceIcon.jpeg"</A></TD>
+d65 7
+a71 3
+</CENTER>
+
+<HR NOSHADE SIZE=6>
+a72 12
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+<TR ALIGN=center>
+<TD><A HREF="greet.html"><IMG HEIGHT=43 WIDTH=72 alt="CHAINS Greets You"
+	SRC="CHAINSImages/greetIcon.jpeg"></A></TD>
+<TD><A HREF="i.html"><IMG WIDTH=54 HEIGHT=54 alt="Info"
+	SRC="CHAINSImages/i.gif" HSPACE=10 vspace=4
+	align=center></a></TD>
+<TD><A HREF="info.html"><IMG HEIGHT=83 WIDTH=111 alt="About CHAINS"
+	SRC="CHAINSImages/CHAINSIcon.jpeg"></A></TD>
+<TD><A HREF="codedMessages.html"><IMG HEIGHT=108 WIDTH=144 alt="Coded Messages"
+	SRC="CHAINSImages/codedIcon.jpeg"></A></TD>
+</TABLE>
+d76 3
+a78 1
+&copy; Copyright 1995 by <A HREF="bios.html#CMC"><IMG
+@

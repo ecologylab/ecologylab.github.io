@@ -1,0 +1,2259 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.25.14;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<TR ALIGN=center>
+<TD>
+<A HREF="http://www.aitech.ac.jp/~iteslj/Techniques/Wilkinson-Connected.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+
+
+Live Online
+
+<BODY bgcolor=lightblue text=red link=blue alink=purple>
+<H2 align="center">Welcome to<font color=slategray><blink> Maximum</blink><font color=red> Connections</H2><font size=3><font color=red>
+<CENTER>Here's the place to get in touch with the world!</center><pre>
+	The first thing to do is get a free web-based e-mail address
+ at HotMail by filling out the following form. Please make sure to 
+ fill in all the required information or you will be asked for it again,
+ so if you don't have any State, write, "no" instead of writing nothing.
+</pre>
+<form method="POST" action="http://206.86.127.204/cgi-bin/adduser.cgi">
+Choose a Login Name:<input type="text" name="login" size="16" maxlength="16">@@hotmail.com<br>
+Choose a Password:<input type="password" name="passwd" size="16" maxlength="16"><br>
+Re-type that Password:<input type="password" name="passwd1" size="16" maxlength="16"><br>
+Last Name:<input type="text" name="lname" size="40" maxlength="40"><br>
+First Name:<input type="text" name="fname" size="40" maxlength="40"><br>
+Street:<input type="text" name="street" size="40" maxlength="80"><br>
+City:<input type="text" name="city" size="40" maxlength="40"><br>
+State:<input type="text" name="state" size="3" maxlength="20">
+Zip Code: <input type="text" name="zip" size="14" maxlength="15">
+Country: <input type="text" name="country" size="5" maxlength="40"><br>
+How did you hear about us?
+   <select name="us">
+    <option value="notset" selected>[select from list]
+    <option value="college/univ newspaper">College/univ. newspaper
+    <option value="college/univ bulletin board">College/univ. bulletin board
+    <option value="magazine article">Magazine article
+    <option value="newspaper article">Newspaper article
+    <option value="highway billboard">Highway billboard
+    <option value="cyber cafe">Cyber cafe
+    <option value="bookmark file">Bookmark file
+    <option value="HoTMaiL message trailer">HoTMaiL message trailer
+    <option value="HoTMaiL banner on another site">HoTMaiL banner on another site
+    <option value="word of mouth">Word of mouth
+    <option value="other">Other
+  </select><br>
+Where did you hear? : <input type="text" name="where" size="30" maxlength="40"><br>
+Sex:<input type=radio name="gender" value=male>M<input type=radio name="gender" value=female>F<br>
+What's your age group?
+  <select name="age">
+    <option value="notset" selected>[select from list]
+    <option value="12 and under">12 and under
+    <option value="13 - 17">13 - 17
+    <option value="18 - 20">18- 20
+    <option value="21 - 24">21- 24
+    <option value="25 - 34">25 - 34
+   <option value="35 - 44">35 - 44
+    <option value="45 - 49">45 - 49
+    <option value="50 - 54">50 - 54
+    <option value="55 and up">55 and up
+  </select><br>
+What's your occupation?
+  <select name="occupation">
+    <option value="notset" selected>[select from list]
+    <option value="profesional">Professional 
+    <option value="technical">Technical  
+    <option value="exec_mang">Executive/Managerial/Sales
+    <option value="gov_mil">Government/Military 
+    <option value="administrative">Administrative  
+    <option value="high school student">High School Student
+    <option value="college student">College Student
+    <option value="other">Other
+  </select><br>
+What's your income?
+  <select name="income">
+    <option value="notset" selected>[select from list]
+    <option value="lt30k">Less than 30K 
+    <option value="30k-50k">30K-50K 
+    <option value="50k-100k">50K-100K 
+    <option value="mt100k">Over 100K 
+  </select><br>
+<input type="submit" value=" Submit Registration ">
+</form>
+
+<HR size="3" width="95%" align="center">
+<font color=green>
+<H3 align="center">Sign Up here to chat in Paris right now:</H3>
+<font size=3>
+<form method=POST action="http://paris-anglo.com/cafe/chat.cgi">
+<B>Your Name:</B><input type=text name=realname size=30>
+<BR><BR>
+<B>Your E-mail:</B><input type=text name=username size=30>
+<BR><BR><BR>
+<B>Your message: </B><TEXTAREA NAME=comments ROWS=10 COLS=60></TEXTAREA>
+<BR><BR><BR>
+<center><input type=submit value="Submit"></center>
+</FORM>
+<hr>
+<font color=slategray>
+<P>
+<H1>Find Perfect Penpals!</H1>
+<B><blink>Good Luck!</blink></B><P>
+You must complete the <font color=blue>blue <font color=slategray>items.
+<FORM method=POST ACTION="http://alberti.crs4.it/pen-pal/pen-pal.cgi/confirm">
+BORDER>
+<font color='blue'>Name</font>      
+<TD colspan=3><INPUT TYPE="text" NAME="name" VALUE="" SIZE=42>
+
+<font color='#236B8'>Home-Page</font> 
+<TD colspan=3><INPUT TYPE="text" NAME="homepage" SIZE=42 VALUE="">
+
+<font color='blue'>E-Mail</font>
+<TD colspan=3><INPUT TYPE="text" NAME="email" SIZE=42 VALUE="">
+
+<font color='blue'>Country</font><INPUT TYPE="text" NAME="country" SIZE=14 VALUE="">
+<font color='#236B8'>State/Prov.</font><INPUT TYPE="text" NAME="state" SIZE=14 VALUE="">
+
+<font color='#236B8'>City</font><TD colspan=3><INPUT TYPE="text" NAME="city" SIZE=42 VALUE="">
+
+<font color='blue'>Age</font><INPUT TYPE="text" NAME="age" SIZE=2 MAXLENGTH=2 VALUE="">
+<font color='blue'>Sex</font><input checked type=radio name=sex value=M>Male<input type=radio name=sex value=F>Female
+
+<TD VALIGN=TOP><font color='#236B8'>Notes</font> 
+<TD colspan=3><TEXTAREA NAME="interests" COLS="40" ROWS="7"></TEXTAREA>
+
+<TD COLSPAN=2><font color='blue'>1st  language  
+<select name="language1">
+<option>Italian
+<option selected>English
+<option>French
+<option>Spanish
+<option>German
+</select></font>Other<INPUT TYPE="text" NAME="other1" SIZE=13 VALUE="">
+
+<TD COLSPAN=2><font color='#236B8'>2nd language
+<select name="language2">
+<option>Italian
+<option>English
+<option>French
+<option>Spanish
+<option>German
+<option selected>None
+</select></font>Other<INPUT TYPE="text" NAME="other2" SIZE=13 VALUE="">
+
+<font color='blue'>Key</font><INPUT TYPE="password" NAME="key1" VALUE="" SIZE=8>
+<font color='blue'><center>re-type<br> your key</font></center><INPUT TYPE="password" NAME="key2" VALUE="" SIZE=8>
+>
+<P>
+<INPUT type=submit value="Add my entry!">
+</CENTER>
+</FORM>
+<hr size=2>
+<H1 align="center">Time to build a Free Homepage!</H1>
+<font color=maroon>
+<form action="http://www.tripod.com/bin/signup/signup" method="post">
+<pre>
+  First Name: <input name="firstname" size="15" maxlength="20">  M.I.: <input name="middleinit" size="1" maxlength="1">  Last Name: <input name="lastname"  size="15" maxlength="20">
+     Address: <input name="address1"  size="54" maxlength="53">
+              <input name="address2"  size="54" maxlength="53">
+        City: <input name="city"      size="20" maxlength="20">
+       State: <input name="state" size="20" maxlength="20"> (In USA, please use two letter state abbr.) 
+ Postal Code: <input name="zip" size="20" maxlength="10">
+
+     Country: <SELECT NAME="country" SIZE="4">
+<OPTION SELECTED VALUE="United States">United States</OPTION>
+<OPTION  VALUE="Afghanistan">Afghanistan</OPTION>
+<OPTION  VALUE="Albania">Albania</OPTION>
+<OPTION  VALUE="Andorra">Andorra</OPTION>
+<OPTION  VALUE="Angola">Angola</OPTION>
+<OPTION  VALUE="Anguilla">Anguilla</OPTION>
+<OPTION  VALUE="Antarctica">Antarctica</OPTION>
+<OPTION  VALUE="Antigua and Barbuda">Antigua and Barbuda</OPTION>
+<OPTION  VALUE="Argentina">Argentina</OPTION>
+<OPTION  VALUE="Armenia">Armenia</OPTION>
+<OPTION  VALUE="Australia">Australia</OPTION>
+<OPTION  VALUE="Austria">Austria</OPTION>
+<OPTION  VALUE="Bahamas">Bahamas</OPTION>
+<OPTION  VALUE="Bahrain">Bahrain</OPTION>
+<OPTION  VALUE="Barbados">Barbados</OPTION>
+<OPTION  VALUE="Belgium">Belgium</OPTION>
+<OPTION  VALUE="Belize">Belize</OPTION>
+<OPTION  VALUE="Bermuda">Bermuda</OPTION>
+<OPTION  VALUE="Bolivia">Bolivia</OPTION>
+<OPTION  VALUE="Botswana">Botswana</OPTION>
+<OPTION  VALUE="Brazil">Brazil</OPTION>
+<OPTION  VALUE="Bulgaria">Bulgaria</OPTION>
+<OPTION  VALUE="Burkina Faso">Burkina Faso</OPTION>
+<OPTION  VALUE="Byelorussian SSR">Byelorussian SSR</OPTION>
+<OPTION  VALUE="Cameroon">Cameroon</OPTION>
+<OPTION  VALUE="Canada">Canada</OPTION>
+<OPTION  VALUE="Chile">Chile</OPTION>
+<OPTION  VALUE="People's Rep. of China">People's Rep. of China</OPTION>
+<OPTION  VALUE="Colombia">Colombia</OPTION>
+<OPTION  VALUE="Comoros">Comoros</OPTION>
+<OPTION  VALUE="Congo">Congo</OPTION>
+<OPTION  VALUE="Costa Rica">Costa Rica</OPTION>
+<OPTION  VALUE="Cote d'Ivoire">Cote d'Ivoire</OPTION>
+<OPTION  VALUE="Croatia">Croatia</OPTION>
+<OPTION  VALUE="Cuba">Cuba</OPTION>
+<OPTION  VALUE="Cyprus">Cyprus</OPTION>
+<OPTION  VALUE="Czech Republic">Czech Republic</OPTION>
+<OPTION  VALUE="Denmark">Denmark</OPTION>
+<OPTION  VALUE="Dominica">Dominica</OPTION>
+<OPTION  VALUE="Dominican Republic">Dominican Republic</OPTION>
+<OPTION  VALUE="Ecuador">Ecuador</OPTION>
+<OPTION  VALUE="Egypt">Egypt</OPTION>
+<OPTION  VALUE="Estonia">Estonia</OPTION>
+<OPTION  VALUE="Ethiopia">Ethiopia</OPTION>
+<OPTION  VALUE="Fiji">Fiji</OPTION>
+<OPTION  VALUE="Finland">Finland</OPTION>
+<OPTION  VALUE="France">France</OPTION>
+<OPTION  VALUE="French Guiana">French Guiana</OPTION>
+<OPTION  VALUE="French Polynesia">French Polynesia</OPTION>
+<OPTION  VALUE="Germany">Germany</OPTION>
+<OPTION  VALUE="Ghana">Ghana</OPTION>
+<OPTION  VALUE="Greece">Greece</OPTION>
+<OPTION  VALUE="Greenland">Greenland</OPTION>
+<OPTION  VALUE="Grenada">Grenada</OPTION>
+<OPTION  VALUE="Guadeloupe">Guadeloupe</OPTION>
+<OPTION  VALUE="Guatemala">Guatemala</OPTION>
+<OPTION  VALUE="Hong Kong">Hong Kong</OPTION>
+<OPTION  VALUE="Hungary">Hungary</OPTION>
+<OPTION  VALUE="Iceland">Iceland</OPTION>
+<OPTION  VALUE="India">India</OPTION>
+<OPTION  VALUE="Indonesia">Indonesia</OPTION>
+<OPTION  VALUE="Ireland">Ireland</OPTION>
+<OPTION  VALUE="Israel">Israel</OPTION>
+<OPTION  VALUE="Italy">Italy</OPTION>
+<OPTION  VALUE="Jamaica">Jamaica</OPTION>
+<OPTION  VALUE="Japan">Japan</OPTION>
+<OPTION  VALUE="Jordan">Jordan</OPTION>
+<OPTION  VALUE="Kenya">Kenya</OPTION>
+<OPTION  VALUE="Kitts and Nevis">Kitts and Nevis</OPTION>
+<OPTION  VALUE="Rep. of Korea">Rep. of Korea</OPTION>
+<OPTION  VALUE="Kuwait">Kuwait</OPTION>
+<OPTION  VALUE="Latvia">Latvia</OPTION>
+<OPTION  VALUE="Lebanon">Lebanon</OPTION>
+<OPTION  VALUE="Lesotho">Lesotho</OPTION>
+<OPTION  VALUE="Lithuania">Lithuania</OPTION>
+<OPTION  VALUE="Luxembourg">Luxembourg</OPTION>
+<OPTION  VALUE="Macao">Macao</OPTION>
+<OPTION  VALUE="Macedonia">Macedonia</OPTION>
+<OPTION  VALUE="Malaysia">Malaysia</OPTION>
+<OPTION  VALUE="Mali">Mali</OPTION>
+<OPTION  VALUE="Malta">Malta</OPTION>
+<OPTION  VALUE="Martinique">Martinique</OPTION>
+<OPTION  VALUE="Mexico">Mexico</OPTION>
+<OPTION  VALUE="Mozambique">Mozambique</OPTION>
+<OPTION  VALUE="Namibia">Namibia</OPTION>
+<OPTION  VALUE="Netherlands">Netherlands</OPTION>
+<OPTION  VALUE="Netherlands Antilles">Netherlands Antilles</OPTION>
+<OPTION  VALUE="New Caledonia">New Caledonia</OPTION>
+<OPTION  VALUE="New Zealand">New Zealand</OPTION>
+<OPTION  VALUE="Nicaragua">Nicaragua</OPTION>
+<OPTION  VALUE="Niger">Niger</OPTION>
+<OPTION  VALUE="Norway">Norway</OPTION>
+<OPTION  VALUE="Pakistan">Pakistan</OPTION>
+<OPTION  VALUE="Panama">Panama</OPTION>
+<OPTION  VALUE="Papua-New Guinea">Papua-New Guinea</OPTION>
+<OPTION  VALUE="Paraguay">Paraguay</OPTION>
+<OPTION  VALUE="Peru">Peru</OPTION>
+<OPTION  VALUE="Philippines">Philippines</OPTION>
+<OPTION  VALUE="Poland">Poland</OPTION>
+<OPTION  VALUE="Portugal">Portugal</OPTION>
+<OPTION  VALUE="Puerto Rico">Puerto Rico</OPTION>
+<OPTION  VALUE="Reunion">Reunion</OPTION>
+<OPTION  VALUE="Romania">Romania</OPTION>
+<OPTION  VALUE="Russia">Russia</OPTION>
+<OPTION  VALUE="Saint Lucia">Saint Lucia</OPTION>
+<OPTION  VALUE="Saint Vincent">Saint Vincent</OPTION>
+<OPTION  VALUE="Saudi Arabia">Saudi Arabia</OPTION>
+<OPTION  VALUE="Senegal">Senegal</OPTION>
+<OPTION  VALUE="Seychelles">Seychelles</OPTION>
+<OPTION  VALUE="Singapore">Singapore</OPTION>
+<OPTION  VALUE="Slovak Republic">Slovak Republic</OPTION>
+<OPTION  VALUE="Slovenia">Slovenia</OPTION>
+<OPTION  VALUE="South Africa">South Africa</OPTION>
+<OPTION  VALUE="Spain">Spain</OPTION>
+<OPTION  VALUE="Sri Lanka">Sri Lanka</OPTION>
+<OPTION  VALUE="Suriname">Suriname</OPTION>
+<OPTION  VALUE="Sweden">Sweden</OPTION>
+<OPTION  VALUE="Switzerland">Switzerland</OPTION>
+<OPTION  VALUE="Taiwan">Taiwan</OPTION>
+<OPTION  VALUE="Tanzania">Tanzania</OPTION>
+<OPTION  VALUE="Thailand">Thailand</OPTION>
+<OPTION  VALUE="Togo">Togo</OPTION>
+<OPTION  VALUE="Trinidad and Tobago">Trinidad and Tobago</OPTION>
+<OPTION  VALUE="Tunisia">Tunisia</OPTION>
+<OPTION  VALUE="Turkey">Turkey</OPTION>
+<OPTION  VALUE="United Arab Emirates">United Arab Emirates</OPTION>
+<OPTION  VALUE="United Kingdom">United Kingdom</OPTION>
+<OPTION  VALUE="Uruguay">Uruguay</OPTION>
+<OPTION  VALUE="Vanuatu">Vanuatu</OPTION>
+<OPTION  VALUE="Venezuela">Venezuela</OPTION>
+<OPTION  VALUE="Virgin Islands">Virgin Island</OPTION>
+<OPTION  VALUE="Yugoslavia">Yugoslavia</OPTION>
+<OPTION  VALUE="Zimbabwe">Zimbabwe</OPTION>
+</SELECT>
+    
+      E-mail: <input name="email" size="53" maxlength="80">
+
+      Gender: <input type="radio" name="gender" value="F">Female <input type="radio" name="gender" value="M">Male            
+
+    Birthday: <input type="text" name="month" size="2" maxlength="2">-<input type="text" name="day" size="2" maxlength="2">-<input type="text" name="year" size="2" maxlength="2"> (e.g. 01-02-70 for January 2, 1970.)
+    If you forget your password, this information will help us retrieve it. 
+
+How did you hear about Tripod?  <select name="found">
+<option>Please Select One Below</option>
+<option>________________________</option>
+<option>Friend</option>
+<option>Link</option>
+<option>Search Engine/Web Directory</option>
+<option>Web Advertisement</option>
+<option>Print Advertisement</option>
+<option>Newspaper/Magazine Article</option>
+<option>Campus Representative</option>
+<option>Other</option>
+</select>
+</pre>
+
+<h3> Your preferred member name and password</h3>
+
+Please note that Tripod member names and passwords are CASE sensitive.
+
+<pre>
+ Member Name: <input name="username" size="20" maxlength="20">
+    Password: <input type="password" name="password1" size="20" maxlength="20"> <b>and again:</b> <input type="password" name="password2" size="20" maxlength="20">
+</pre>
+
+<h3> News from Tripod</h3>
+
+Would you like to receive Tripod's e-mail newsletter? <input type="radio" name="newsletter" value="Y" checked>Yes <input type="radio" name="newsletter" value="N">No
+
+<p>
+<h3> Which one of these prizes would you like to win?</h3>
+
+<pre>
+     <input type="radio" name="prize" value="a Tripod Bottle Opener Keychain"> A Tripod Bottle Opener Keychain (1 in 25 chance of winning)  
+          -Arguably one of the most useful tools for life.
+           Please note that Tripod will not send Bottle Openers
+           outside the US.
+     <input type="radio" name="prize" value="a Tripod T-shirt"> A Tripod T-shirt (1 in 50 chance)
+          -So cool that people will want to buy it off your back.
+</pre>
+
+<p>
+<center><input type="submit" name="submit" value="--Register Me--"></center>
+
+<p>
+
+
+<input type="hidden" name="http_referer" value="http://www.tripod.com/">
+
+</form>
+<font color=orange>
+<HR size="3" width="90%" align="center">
+<H3 align="center">Join your Homepage to others around the world:</H3>
+<FORM METHOD=POST ACTION=http://www-leland.stanford.edu/cgi-bin/userdata.prl?dsedy+/line_across.data>
+<P>Your name: <BR> <INPUT SIZE = 40 NAME = "name">
+<BR>Homepage URL:<BR> <INPUT SIZE = 60 NAME = "address">
+<BR>Enter your e-mail address here:<BR>  <INPUT SIZE = 60 NAME = "e-mail">
+<br><INPUT TYPE = "submit" VALUE = "Add your URL to the Line Around the World.">
+</FORM>
+<pre>
+          After a few days go to the <A HREF= "http://www-leland.stanford.edu/~dsedy/Data/line_across.data">list of newcomers to our line.</A> 
+You'll find your name near the bottom. Be patient; it's a long list! 
+Link your page to the two above and two below yours by <A HREF= "http://www-leland.stanford.edu/~dsedy/line.text"> this code.</A>
+</pre>
+<HR>
+<font color=teal>
+<H2 align="center">Wanna join the Internet Link Exchange?<br>  FREE - naturally! - advertising</H2><P>
+<form method="POST" action="http://cgi.linkexchange.com/cgi-bin/join.exe">
+
+<b>Contact Information</b><br>
+<input name="fname" size="42"> First Name<br>
+<input name="lname" size="42"> Last Name<br>
+<input name="email" size="42"> Email Address<br>
+
+<p>
+<b>Site Information</b><br>
+<input name="url" size="42" value="http://"> URL<br>
+<input name="title" size="42"> Site Title<br>
+<input name="description" size="42"> Description<br>
+<input name="traffic" size="42"> Visitors/Month<br>
+<input name="audience" size="42"> Audience<br>
+
+<p>
+<b>Categories</b><br>
+Please limit your selections to <b>at most three</b> categories that best
+describe your site.
+
+<p>
+<!-- CATSTART -->
+cellpadding=3>
+
+<td valign=top><b>Arts</b><br>
+        <input type=checkbox name="Cat002Arts-Graphic Arts">Graphic Arts<br>
+        <input type=checkbox name="Cat003Arts-Performing Arts">Performing Arts<br>
+        <input type=checkbox name="Cat004Arts-Writing">Writing<br>
+        <input type=checkbox name="Cat005Arts-Other">Other<br>
+
+<td valign=top><b>Business</b><br>
+        <input type=checkbox name="Cat007Business-Companies">Companies<br>
+        <input type=checkbox name="Cat008Business-Entrepreneurs">Entrepreneurs<br>
+        <input type=checkbox name="Cat009Business-Products/Services">Products/Services<br>
+        <input type=checkbox name="Cat010Business-Other">Other<br>
+
+<td valign=top><b>Computers</b><br>
+        <input type=checkbox name="Cat012Computers-Macintosh">Macintosh<br>
+        <input type=checkbox name="Cat013Computers-Unix">Unix<br>
+        <input type=checkbox name="Cat014Computers-Windows/DOS">Windows/DOS<br>
+        <input type=checkbox name="Cat015Computers-Other">Other<br>
+
+
+
+<td valign=top><b>Culture & Society</b><br>
+        <input type=checkbox name="Cat017Culture & Society-Cultural">Cultural<br>
+        <input type=checkbox name="Cat018Culture & Society-Regional">Regional<br>
+        <input type=checkbox name="Cat019Culture & Society-Religion">Religion<br>
+        <input type=checkbox name="Cat020Culture & Society-Other">Other<br>
+
+<td valign=top><b>Education</b><br>
+        <input type=checkbox name="Cat022Education-Adult">Adult<br>
+        <input type=checkbox name="Cat023Education-Kids">Kids<br>
+        <input type=checkbox name="Cat024Education-Other">Other<br>
+
+<td valign=top><b>Entertainment</b><br>
+        <input type=checkbox name="Cat026Entertainment-Movies">Movies<br>
+        <input type=checkbox name="Cat027Entertainment-Music">Music<br>
+        <input type=checkbox name="Cat028Entertainment-Publications">Publications<br>
+        <input type=checkbox name="Cat029Entertainment-Television">Television<br>
+        <input type=checkbox name="Cat030Entertainment-Other">Other<br>
+
+
+
+<td valign=top><b>Health</b><br>
+        <input type=checkbox name="Cat032Health-Fitness">Fitness<br>
+        <input type=checkbox name="Cat033Health-Food">Food<br>
+        <input type=checkbox name="Cat034Health-Medicine">Medicine<br>
+        <input type=checkbox name="Cat035Health-Other">Other<br>
+
+<td valign=top><b>Hobbies</b><br>
+        <input type=checkbox name="Cat037Hobbies-Automotive">Automotive<br>
+        <input type=checkbox name="Cat038Hobbies-Aviation">Aviation<br>
+        <input type=checkbox name="Cat039Hobbies-Genealogy">Genealogy<br>
+        <input type=checkbox name="Cat040Hobbies-Other">Other<br>
+
+<td valign=top><b>Internet</b><br>
+        <input type=checkbox name="Cat042Internet-E-zines">E-zines<br>
+        <input type=checkbox name="Cat043Internet-Reference">Reference<br>
+        <input type=checkbox name="Cat044Internet-Search Tools">Search Tools<br>
+        <input type=checkbox name="Cat045Internet-Other">Other<br>
+
+
+
+<td valign=top><b>Miscellaneous</b><br>
+        <input type=checkbox name="Cat047Miscellaneous-Useful">Useful<br>
+        <input type=checkbox name="Cat048Miscellaneous-Useless">Useless<br>
+        <input type=checkbox name="Cat049Miscellaneous-Other">Other<br>
+
+<td valign=top><b>People</b><br>
+        <input type=checkbox name="Cat051People-Celebrities">Celebrities<br>
+        <input type=checkbox name="Cat052People-Personal">Personal<br>
+        <input type=checkbox name="Cat053People-Other">Other<br>
+
+<td valign=top><b>Politics</b><br>
+        <input type=checkbox name="Cat055Politics-Left">Left<br>
+        <input type=checkbox name="Cat056Politics-Middle">Middle<br>
+        <input type=checkbox name="Cat057Politics-Right">Right<br>
+        <input type=checkbox name="Cat058Politics-Other">Other<br>
+
+
+
+<td valign=top><b>Recreation</b><br>
+        <input type=checkbox name="Cat060Recreation-Games">Games<br>
+        <input type=checkbox name="Cat061Recreation-Sports">Sports<br>
+        <input type=checkbox name="Cat062Recreation-Video Games">Video Games<br>
+        <input type=checkbox name="Cat063Recreation-Other">Other<br>
+
+>
+<!-- CATEND -->
+
+<p>
+<b>Type of Your Site</b><br>
+<input type="radio" name="type" value="0">Non-Commercial
+<input type="radio" name="type" value="1">Commercial
+
+<p>
+<b>Type of Sites to Advertise For</b><br>
+<input type="radio" name="typefor" value="0">Non-Commercial<br>
+<input type="radio" name="typefor" value="1">Commercial<br>
+<input type="radio" name="typefor" value="2" checked>Commercial and Non-commercial
+
+<p>
+<b>Ratings System</b><br>
+
+The ratings system is meant to give you a degree of control over the types of sites
+you advertise for and advertise on. There are three ratings to choose from:<p>
+
+<dl>
+<dt>Level 1<br>
+<dd>
+These are sites <b>intended</b> for children. This rating roughly
+corresponds to the Motion Picture Association of America's 'G'
+rating.  We will examine all Level 1 sites thoroughly to make sure
+that they are appropriate for all audiences.  <i>Please do not 
+classify yourself as a Level 1 site unless your site is intended for
+children.</i>
+</dl>
+
+<p>
+<dl>
+<dt>Level 2<br>
+<dd>
+These are sites of general interest. Most Link Exchange
+sites come under this rating which roughly corresponds to 'PG'.
+</dl>
+
+<p>
+<dl>
+<dt>Level 3<br>
+<dd>
+This is the most inclusive rating and includes sites which contain
+language or subject matter which may be considered inappropriate or
+controversial to certain members. <b>This rating does NOT include
+pornographic sites, sites with links to pornographic sites,
+sites encouraging illegal activity, racism, or other sites the administrators
+deem to be inappropriate. 
+Such sites are NOT allowed to
+participate in the Internet Link Exchange.</b>  Level 3 sites are 
+merely sites whose appeal is not as general as those under the Level 2
+rating. This rating roughly corresponds to 'PG-13'.
+Examples of sites that would probably fall under the Level 3 rating:
+Sites with swimsuit pictures, Sites relating to alcohol, Humor sites using strong
+language, etc.
+</dl>
+
+<p>
+<b>How do you rate your site?</b><br>
+<input type="radio" name="rating" value="1">Level 1 (intended <i>specifically</i> for children)<br>
+<input type="radio" name="rating" value="2">Level 2 (general interest)<br>
+<input type="radio" name="rating" value="3">Level 3 (all inclusive)
+
+<p>
+<b>What sites do you want to advertise (display banners) FOR?</b><br>
+<input type="radio" name="adfor" value="1">Only Level 1 Sites<br>
+<input type="radio" name="adfor" value="2">Level 1 and 2 Sites<br>
+<input type="radio" name="adfor" value="3">All Sites (Levels 1, 2, and 3)
+
+<p>
+<b>What sites do you want to be advertised ON?</b><br>
+<input type="radio" name="adon" value="1">Only Level 1 Sites<br>
+<input type="radio" name="adon" value="2">Level 1 and 2 Sites<br>
+<input type="radio" name="adon" value="3">All Sites (Levels 1, 2, and 3)
+
+<p>
+<b>Password</b><br>
+<input type="password" name="pwd" size="42"> Password<br>
+<input type="password" name="pwd2" size="42"> Verify Password<br>
+
+<p>
+<b>How did you hear about the Link Exchange?</b><br>
+<input name="howheard" size="42"><br>
+
+<p>
+That's it! Please check the above information for accuracy and then
+click on Submit.  You will be given your unique Link Exchange 
+account number and the HTML code to insert into your site.  
+
+<p>
+<b>
+Please press the submit button below only ONCE.<br>
+It takes a few moments to process the form as we create your account, 
+so please be patient.
+</b>
+
+<p>
+<input type="submit" value="Submit (Press only ONCE)"></form><hr>
+
+<p><font color=yellow>
+To go to <a href="http://members.tripod.com/~DWilkinson">
+Penpal Game</a><font color=black> <--click here.<p>
+<hr>
+<p>Email me at <a href="mailto:genechan@@hotmail.com (Eugene Kenichi Wilkinson)"> 
+ genechan@@hotmail.com (Eugene Kenichi Wilkinson)</a> <--Click here.<p>
+<hr>
+<p>
+<font size=4>
+<font color=yellow>Wow, you are visitor number <img src=/cgi-bin/Count.cgi?frgb=0;255;0|pad=Y|df=jpOnlineindex.html>. Thanks for coming!
+</CENTER>
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Sorry,I haven't taken my medication for the last four days! I'm getting a little 'nutsy'!
+  I'll be 'GOOD' and 'eat' my cookies,so I can 'POST' on this page!!!! I promise to be a good boy!!!
+                  
+                                         Love,
+                                           'ROBOT'Fred
+                                           (good little robot fred) </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+<H1>
+<font color=blue>
+'COOKIE' information:  http://www.pcworld.com/forsale.html
+<H/1>
+<font/color=blue>  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+What is there to 'track'? I'll 'hit' your page as long as there are 'racists-morons' here to respond to!---DUH!!!(CONCENTRATE ON CONTENT!-YOU 'DIGIT-TWITS'!)---STOP COUNTING HOW MANY TIMES THE DOG WAGS HIS TAIL IN ORDER TO UNDERSTAND WHAT THE 'MUTT'IS SAYING!!! </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+<H1>
+NO 'COOKIES'---NO 'POST'!!!!
+'ROBOT'Fred
+<H/1> </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  Dear KAN and TWB,--Why do you continue to sexually molest my DOG???(He's been DEAD for three years!!!) And one other thing,why don't you pick-up GIRLS at CONCERTS like everyone else,instead of at your 'family-reunions'???---Love,'ROBOT'Fred </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  Thank you,but I don't want any 'COOKIES'today!
+                       
+                                 Love,
+                                   'ROBOT'Fred  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+kan online - i love niggers yes i do i love niggers me and
+you. Lets help make this a more niggerful country.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.imperium.net/~abby/
+">
+<IMG SRC="http://www.imperium.net/~abby/IMG/freesp.gif
+" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Greetings grafitti posters: I don't care what color my M&M's are, but I HATE Skittles. Anyway that's not the point, click the image and come to KAN's Grafitti Wall Network.  TWB   </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="mcfee@@pacbell.net">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  Representin' one time for San Diego, CA:
+
+USUK and ANOS   582Krew
+
+Shout out to DEFT1 and ESO RFCrew, BKNY!
+
+       -also, by the way, uh..., get the fuck off of the racism topic..it's about stale by now....graff is where it's at!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.imperium.net/~abby/">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Hey SABBATH 666, good to see you back.  Be sure
+to go to <A HREF="http://www.imperium.net/~abby/">The KAN Graffiti Wall Network</A>.
+Don't bother with the Wall of KAN though. I can't get it
+to work yet.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  FUCK YOU ALL! I HATE EVERYONE! DIE YOU WORTHLESS COCKSUCKERS. SABBATH 666</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+I can't understand why in the world people would hate
+each other for the color of their skin.  I mean, what's
+up with that??  Do you guys also dis certain color M&M's
+or Skittles?  how can you even touch a dollar bill,
+knowing that someone of another race has probably touched
+it?   Sheesh --  Grow up!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://tqd.advanced.org/3426/">
+<IMG SRC="http://www.monmouth.com/~wbleickardt/chernobyl.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Visit this page.  It is for a contest.  The more visitors, the more likely to win!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://members.gnn.com/bobbyj164/bjhome01.htm">
+<IMG SRC="http://members.gnn.com/bobbyj164/ihdet5.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ Fear, a formula to stop the hate.<br>
+(hate+fear)=(hate+fear)(hate+fear)<br>
+(hate+fear)/(understanding+forgiveness)=love+freedom<br>
+Bob Jenkins</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/IMG/wos-sm.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Check out theses Grafitti Walls:
+<FONT SIZE=+1><CENTER><A HREF="http://www.thetasys.com/wall.html"><IMG SRC="http://www.thetasys.com/IMG/wos.gif"><br>
+The Wall of SKANK</A><p>
+<A HREF="http://www.africa-imports.com/Grafitti.html">Africa Imports Grafitti Wall</A><p>
+<A HREF="http://www.users.nwark.com/~ak47/graffiti.html">The ANTI-CENSORSHIP Graffiti Wall</A><p>
+<A HREF="http://www.mbnet.mb.ca/~mcarroll/guestbook.html">The Massad Graffiti Wall</A></CENTER></FONT></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/IMG/wos-sm.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Check out theses Grafitti Walls:
+<FONT SIZE=+1><CENTER><A HREF="http://www.thetasys.com/wall.html"><IMG SRC="http://www.thetasys.com/IMG/wos.gif"><br>
+The Wall of SKANK</A><p>
+<A HREF="http://www.africa-imports.com/Grafitti.html">Africa Imports Grafitti Wall</A><p>
+<A HREF="http://www.users.nwark.com/~ak47/graffiti.html">The ANTI-CENSORSHIP Graffiti Wall</A><p>
+<A HREF="http://www.mbnet.mb.ca/~mcarroll/guestbook.html">The Massad Graffiti Wall</A></CENTER></FONT></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://WWW.ONLINEGALLERY.COM/Search/Artist.htm?View=on&ArtistIndexName=GERBSTADT">
+<IMG SRC="http://WWW.ONLINEGALLERY.COM/Search/Artist.htm?View=on&ArtistIndexName=GERBSTADT" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  ART FOR THE MASSES....</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="www.onlinegallery.com">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  GRAF IS ART FOR THE MASSES...
+  GOT TO LEAVE MY MARK...</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://WWW.ONLINEGALLERY.COM/Search/Artist.htm?View=on&ArtistIndexName=GERBSTADT">
+<IMG SRC="FOAM CUP copyright 1996" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ THIS IS NOT A BAD SITE... CORSE I am sitting on a 
+ 166 w/ 32 meg. 
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/IMG/wos.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  kan online- Hey webmaster of Chains Grafitti Wall.
+You need to start deleting the old entries. This page
+takes over 5 minutes to fucking load. Check out the
+<A HREF="http://www.thetasys.com/wall.html">WALL OF SKANK</A>.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  PRESIDENT UNABOMBER</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  UNABOMBER FOR PRESIDENT</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cyberpark-mall.com/jokes/">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+FUCK THIS STUPID ASS PAGE! COME TO <BLINK>"THE BASHING PAGE"</BLINK> TWB  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  praise the lord!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.sexride.com/bulging.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  CUM TO "THE WALL OF SKANK".</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online-<FONT SIZE=+7>Does anybody come on this wall anymore? Where
+are all those fucking niggers? Burn in hell <A HREF="http://www.africa-imports.com/Grafitti.html">Craig FUCKING Brown!</A>
+Fuck you niggers! ......KAN MAN</FONT></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/wOS.GIF" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+FRED!  WE MISS YA' MAN. WHERE ARE YOU?  TWB  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.geocities.com/Hollywood/4187/parisgrn.html">
+<IMG SRC="HTTP://WWW.XXX-RAWSEX-XXX.COM/LOCAL3/PICS/A1.JPG" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+SIGN MY GUESTBOOK YOU ASSHOLES!!!!!!!!!!  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.geocities.com/Hollywood/4187/parisgrn.html">
+<IMG SRC="HTTP://WWW.XXX-RAWSEX-XXX.COM/LOCAL3/PICS/A1.JPG" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+SIGN MY GUESTBOOK YOU ASSHOLES!!!!!!!!!!  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.xxx-rawsex-xxx.com/local13/pics/a1.jpg">
+<IMG SRC="http://www.avana.net/pages/personal/hypo666/m0osuqri.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+I HATE MEXICANS AND NIGGERS!!!!    TWB<BR><embed src="http://www.tst-medhat.com/~neburton/midi/metallica/enter.mid" width=200 height=55 autostart=true>  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.kidscom.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Hey MAFIA MAN, TWB, and our KAN FANS. I found
+a new wall <B>JUST FOR KIDS</B>. I know you are thinking what
+I am thinking. <A HREF="http://www.kidscom.com/wall.html">SO GO EDUCATE THOSE KIDDIES and teach them about niggers.</A></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.liveupdate.com/">
+<IMG SRC="http://www.liveupdate.com/graphics/cbanner2.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ TWB HERE: HEY KAN I FUCKED UP WALL (SORRY). IF YOUR USING NETSCAPE GET THE CRESCENDO PLUG IN. I EMBEDDED A METALLICA MIDI IN ALL THE PAGES.    </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- That fucking microphone icon fucked up the African Wall,
+The Wall of Skank, and this wall. Now every time I try to
+go on each of these walls, I get all these security hazard
+warnings from my browser. Hey webmaster, fix up this wall
+now! It's really fucked up.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://callie.csci.unt.edu/~donr/cat-pics/callie-main-ds.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Hello everybody, My name is Stinky, I am one of Fred's cats. I hate living in Tustin and I hate living with Fred. Sometimes he is mean to me and tortures me. One time he cut my whiskers off on one side. I was bumping into shit everywhere. Another time he tied my tail to another cat's tail and threw us over a clothes line. Luckily for me I clawed the other cat to death. Get me out of here PLEASE!  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Fred's my name. I live in Tustin,California. Is there anyone out there who's gone thru the same thing? That;'s all I'll say.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+It's a dumb thing to most people I suppose. But I was a piece of crap for so many years. And then I stuck that little metal thing on my chest. Funny thing. It meant I could no longer be a dumbshit. My life had rules. I sit here with a few beers down me,fifty years old and far from the Colorado Rockies---and think about how I went from shit to something I admired and then saw others who wore the metal and used it to wipe thier asses with. You'll pardon me if I sit here on a sunny Saturday afternoon drinking too much beer and wonder about why.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+AMY VULDEREZ OF JCPD IS A SPINNER! JUST ASK BOB GOWEY. BY THE WAY,BOB,ARE YOU STILL THROWING THOSE COCAINE PARTIES? DO YOU STILL RENT YOURSELF OUT AS MURDER-FOR-HIRE FOR SEXUAL FAVORS FROM DIANE! I REMEMBER YOUR THREAT OF HAVING MY BODY "THROWN INTO BEAR CREEK". YOU PISSED ON YOUR BADGE,ASSHOLE!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF=" it makes yo">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+You know I'm right,Yackle. He's pissed on the reputations of the rest of our community's gendarms. When the Chief of a police dept like ours'  pulls a fake bullshit
+"disability" claim like this it makes you all look like opportunistic little fuckfaces!!!! It's not we the community Franks is fucking. He's fucking YOU! Reminds me of when I weas a lieutenant in Colorado. I learned that shit too often rises to the top.
+
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Chief Franks is REALLY an embarrassment to my local P.D!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="ZIES. ">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+THE JOKE IS THAT HAD THOSE WHO WEAR THEIR OPPRESSION LIKE A BADGE OF OFFICE BEEN RUNNING THE SHOW,THEY WOULD'VE DONE THE SAME OR WORSE THAN WHITES SO POPULARLY GET BLAMED FOR DOING. IT IS HORRIBLY RACIST TO POSIT THAT ONE RACE IS BETTER THAN AN OTHER. 
+ONLY THE MOST UNEDUCATED UNSTREETWISE CHILDISH URCHINE WOULD SAY AS THOUGH IT WERE THE VOICE OF GOD THAT WHITES (OR WHATEVER OTHER RACE) ARE EITHER BETTER OR WORSE THAN OTHERS. PUT POWER INTO YOUR HANDS AND HISTORY HAS PROVEN YOU'LL BE A BASTARD. DON'T KID US ABOUT YOUR SKIN COLOR,RACE OR POLITICAL BELIEFS
+MAKING YOU A BETTER OR WORSE PREDATOR  IN THE FOOD CHAIN. EVERY PEON BITCHES ABOUT HIS CRUEL MASTERS. BUT GIVE HIM THE POWERS THAT HE LUSTS FOR AND HE WILL
+INEVITABLY USE IT IN THE SAME MANNOR AS THOSE WHO HE FORMERLY CASTIGATES AS "OPPRESSORS". PLAY WITH KAN,NOT ME. I HAVE A FUNCTIONING BRAIN!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.infinet.com/~leep/ara.html">
+<IMG SRC="http://www.serve.com/Antifasc/niwifaschpatt.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Fuck racism and white-supremicy!
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.serve.com/Antifasc/">
+<IMG SRC="http://www.serve.com/Antifasc/niwifasch.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Martin Luthor King opposed capitalism... near the end of
+his life he was supporting janitors in the "Justice for Janitors"
+campaing (they were on strike).  It's not hard to figure
+out that capitalism perpetuates race hatred, especialy
+in the United States where people should know better.
+What is interesting is to see how people are accused
+of being "Communists" by conservatives if they stand up
+to the kind of racism we see here on this wall, while
+of course the hate and abuse is considered "OK".  The
+real Nazis in the western world are not
+the outspoken idiots like KAN and his goons, but
+rather the quiet rightists who argue that Naziism
+and racial hate should exist in the name of some
+abstract "fairness".  Let's not forget that "minorities"
+make up the majority of people on the earth...
+yet those with most of the wealth happen to be white and
+male (I'm not saying this makes being white and male
+bad, just that something is clearly going on to
+play the cards in "the founding fathers"
+favor).</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="ory">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Can we be serious for once,okay? If there are any practicing skinheads,nazis or satanists reading this please tell me if you 
+torture,mutilate and kill house pets such as cats or kittens and why you do it. This is very important. Not a joke! I would appreciate your honest response.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+CHECKED IT OUT. NOT BAD BUT I GET MORE KICKS FROM 'BARELY LEGAL' MAGAZINE. YOUNG,TIGHT AND TASTE LIKE HONEY. YOUR 'VIRGIN' GIRLS LOOK LIKE THEY'VE GOT THINGIES BIG ENOUGH TO PUT BOTH HANDS IN AND CLAP.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.virginmodels.com">
+<IMG SRC="http://www.virginmodels.com/fishlogo.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Why don't you all relax, and take a look at some nice pussy!
+Butt-munch!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  WELL, TRUE OR NOT... I STILL HATE FAGS!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Yes. They make good bait. Fish love them. But you really don't want to go digging for them,considering their location.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  DO THOSE HOMO-WORMS MAKE GOOD FISHIN' BAIT? ARE THEY AS GOOD AS NIGHTCRAWLERS?</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="rdfer to becom">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+The act that allows the liver-eating giant homo buttworm to infest a host is called "homosexual analingis bestiality". It means that in 
+order to become infected with the parasite a male homosexual human must shove his tongue deep inside an animal's rectum,scoop out fecal matter and swallow it. The parasite's eggs move thusly from animal to human.
+Once infested,homosexuals may easily spread the man-eating
+giant worms thru casual physical contact,such as preparing food in a restaurant or using public toilets. May God help us all.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  Doin' the Wild Thing with Rin Tin Tin!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+DOUBLE GROSS!!! JUST HEARD ON THE RADIO THAT THE GIANT PARASITIC BUTTWORMS ENTER THE HUMAN BODY WHEN HOMOSEXUALS HAVE SEX WITH ANIMALS. IT FIGURES. THEY'RE HAVING ORAl/ANAL SEX WITH GERMAN SHEPARDS. YUCKO!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+OH GROSS!!! IN TODAY'S NEWSPAPER IS STORY ON NEWLY-DISCOVERED GIANT BUTTWORM PARASITE INFESTING SAN FRANCISCO HOMOSEXUALS. "IT'S NEVER BEEN SEEN BEFORE!"
+SAID DR. LUIS FAJARDO,PART OF THE FIVE-MEMBER RESEARCH TEAM AND A PROFESSOR OF PATHOLOGY AT STANFORD UNIVERSITY. THE GIANT BUTTWORM IS ALREADY KILLING HOMOSEXUALS IN THE SAN FRANCISCO AREAS. NO-ONE KNOWS HOW MANY ARE INFESTED WITH THESE GIANT BUTTWORMS. 
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.geocities.com/pictures/icons/flags/os.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  OSCAR THE GROUCH HERE: HEY KIDS, DO YOU KNOW WHY I'M SUCH A GROUCH? IT'S BECAUSE THERE ARE SO MANY NIGGERS AND SPICS ON SESAME STREET. ALTHOUGH ME AND TWB DID GANGBANG MARIA THOUGH.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- To answer your question SMART ASS, A wigger is
+a pure white person who respects, dresses like, and wants
+to be a nigger. The wiggers are clearly a disgrace to the
+white race. So they will be punished just like a nigg.
+Hey MAFIA MAN, Try going to the <A HREF="http://www.cyberenet.net/~africa/Grafitti.html">Africa Imports Grafitti Wall</A>
+and post a message. When I try to post one, I get this
+message from MR. CRAIG BROWN, that says some shit about
+following the rules. This really pisses me off</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  YOU GOT THAT RIGHT,WHITE BOY!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+It's probably a dumb question---but what's a "wigger"? I suspect it's a "white nigger". If so,then a "jigger" would be a Jewish nigger and
+and a "higger" would be a Hispanic nigger and a "quigger" would,of course,be a queer nigger. So if you're a "nazi" and I call you a "schnazi" that makes you a "shit nazi",right?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+LET'S KISS AND MAKE UP.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Hey you sick bastard. You must be a very fucked-up
+wigger. The KAN has not been defeated. What the fuck are
+you talking about Monday, June 24th for? You better be afraid
+asshole! I will personally knock down your door and crack
+your head open with a bat. Then I will tie you up onto a
+burning cross.    -The KAN MASTER</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  yackle of tustinbpd--ARE YOU READING THIS? Quite ignoring me (Fred Hermon,North Tustin)</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+BABS ON LINE (BLOW A BLACK,SUCKA')
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  EAT THE POOR!!!!!! </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+If "KAN" has been defeated in fair battle---all well and good. But if it was stinkin' commie bastards that did the job---they can kiss my Yankee capitalist butthole!!!! When a communists defeats a nazi it's like saying stale piss whipped warm shit. When they're BOTH DEFEATED----then and only then can we civilized capitalists breath a sigh of relief!!!!!! Until then it's just two cocksuckers blowin' each other----!!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://orci.com/personal/jim/gravepic.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+R.I.P. KAN:  Yes folks the inevitable has happened. On Monday June the 24th the organization known as KAN was defeated in a fierce battle with opposing groups OPDKAN and M.L.K. Terms of the surrender require KAN to cease all activities on the internet. Also members of KAN are required to do public service work in the inner city. KAN members could not be reached for comment.      </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Where are the white women at?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+AS MY GOOD FRIEND RODNEY SAYS------CAN'T WE ALL JUST GET ALONG? STOP THE HATING---START THE HEALING!!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Yo word up! This here is the MAN,
+I'm talking KKK, whitey, the Klan
+
+Now I know dat you wish we were all dead,
+but we gonna beat some sense into yo nigger head!
+
+We're gonna kill all you niggers and junkies,
+cuz ain't no room in society for talkin' monkeys!
+
+Fuckin' tired of seein' everywhere I go,
+God Damn niggers and their fuckin' Ho's.
+
+Pumpin' out little niggers like friggin' rabbits,
+robbin' the white man to pay for your drug habits.
+
+Sittin' on yo fat black ass, waitin' for the welfare check,
+Blamin' all your problems on some po redneck.
+
+Why don't you all go back to the motherland,
+see if anyone there gives you a helpin' hand.
+
+All you know how to do is bitch and moan,
+why don't you ask Oprah for a low interest loan?
+
+Destroyin' our social fabric, hey that's not cool,
+stealin' our white women cuz you got a big tool.
+
+Gonna come a time when the government's not here,
+Then you niggers gonna know the meaning of the word FEAR.
+
+We'll round you niggers up and ship yo asses back,
+if you dare resist us, your head's we will crack.
+
+A white American utopia, so our people can evolve,
+but only after this nigger problem we resolve.
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://asylum.cid.com/barney/head.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  HI KIDS,  MY NAME IS BARNEY AND I DON'T LIKE NIGGERS. THEY ARE ALL ON WELFARE AND IN PRISON.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="ER ST">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+WARREN HERE. I'M NEW TO THE INTERNET. I'M A WHITE GUY AND I'M CURIOUS ABOUT YOUR BELIEFS. ARE YOU JUST PLAYING MINDGAMES WITH US OR DO YOU REALLY BELIEVE THAT 
+RACIAL STUFF?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  I ne ce my brothers and sisters.  As you can see from this page, we still have a long way to  go to have this world as God intended.  Struggle, Struggle, Struggle....Ngosi</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+I'm the real Fred-----and yes,someone is playing games. Like writing "FOR A GOOD TIME CALL SUZY AT 619-997-5463" on a restroom wall.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<IMG SRC="<img src="d:/dwnloads/slkwilly.bmp" hspace=5>" WIDTH=100 HEIGHT=100>
+</TD>
+<TD COLSPAN=7>
+
+testing, testing 1..2..3</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.cs.hope.edu/~beckman/oj/ojicon.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  WHY IS OJ NOT IN JAIL? BTW, I DON'T BELIEVE THAT WAS FRED GIVING OUT ALL THAT PERSONAL INFO.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+FRED HERE. WHERE'S THAT COMMIE PINKO? I LOVE EXCHANGING THOUGHTS WITH KIDS WHO THINK COMMUNISM IS THE WAY TO GO. GOD HOLDS A SPECIAL PLACE IN HIS HEART FOR NUTCASES LIKE THIS! I'M HERE AND I'M 'FRED'.  NO NEED FOR GAMES. MY REAL NAME IS FREDERICK JAMES HERMON. SOCIAL SECURITY NUMBER 569-74-8944. I LIVE IN NORTH TUSTIN,CALIFORTNIA IN THE GOOD OL' U.S. OF A..  MYU FAQX NUMBER IS (714) 730-8117, I'D LOVE TO HEAR FROM ALL YOU YOUNGISH DORKBRAINS. MY EMAIL ADDRESS IS----lcsails@@webworldinc.com
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  Oh oh. Something happened to 'KAN' on this Monday,June 24th,1996. Could be the gendarms kicked his door in. Or he got fired from his job when his employer discovered what he was doing with his computer on company time. I almost feel sorry for him. It was too easy a victory. </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  Does this mean we can't be friends?</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Hey FUCK you Louis Farrakhan! You're nutin' but a dumb monkey with a big mother fuckin' mouth! You better shut it fast or the WHITE man is gonna shut it for you! Hey remember what happened to Martin Luther King Mother Fucker??? It could happen to you as well, NIGGER! God damn mother funkin' monkey bastards, the whole God damn lot of you! You Niggers belong in chains, cuz you act like a bunch of fukin' Animals! Can't even speak fucking ENGLISH. Those bastards in Washington and the media trying to tell me that there ain't no diference between a WHITE and a God Damn mother Fuckin', color of shit, monkey nigger??? Well FUCK you all! Your day will come, cock Suckers! NIGGER FREE SOCIETY! THAT'S FOR ME! 
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Open your heart to the Lord,my son. He will forgive the evil and hatred within your putred soul.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.webcom.com/writer/box/graphics/mike.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+HI FOLKS: I'M NAME AM MIKE TYSON AND I IS A MEMBER OF "KAW". DO YOU KNOW WHAT I AM GONNA DO? I BE GOIN' TO THE "WALL OF SKANK" AND KNOCKIN' OUT MY NEXT OPPONENT "KAN". SO PLEASE COME TO THE WALL AND SHOW YOUR SUPPORT OR CALL YOUR CABLE OPERATOR AND WATCH IT ON PAY PER VIEW.    </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+My husband is African American and what I see on this page sickens me. How can anyone be so cruel?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF=" Black is bitchin'.">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Tell it like it is,baby. No justice...no peace. Burn baby burn!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  I DON'T BE WHEREING ANY SHEETS CAUSE I'M NOT A COWERD
+LIKE KAN IS. I LIKE YO STYLE LOUIS FARAKHAN. I AGREE THAT
+WE HAVE TO KICK KAN'S ASS AND EVERYBODY WHOS AFFILIATED
+WITH HIM. I HATE ALL YOU RACIST WHITE PRICS.   KAW</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+If "KAN" (Kill All Niggers) wears white sheets,does "KAW" (Kill
+All Whites) wear black sheets?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+WHAT IF AFRICA DOES'NT WANT THEM?
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Listen up fellow ARYAN NATIONALISTS. Lets join
+forces and destroy Louis Farrakhan and his fucked-up
+NIGGERS OF ISLAM. From what I see on the news, niggers
+have no right to run free because they fucking murder each
+other and some whites, they steal, and they do drugs all the
+time. DEPORT THE COONS BACK TO AFRICA NOW!!!!!!!!!!!!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  AW,YOU DON'T REALLY MEAN THAT NOW,DO YOU?</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- So it looks like there's a nigger supporting
+the fucked-up KAW movement. Fuck off Farrakhan, you have
+stepped into KAN TERRITORY. Your punishment will be an
+immediate hanging for the crime of conspiring against
+the white race. THE ARYAN REVOLUTION IS COMMING KAW. BE
+VERY AFRAID BECAUSE I WILL PERSONALLY POKE YOUR EYES
+OUT SO THAT YOU WILL BE A BLIND NIGGER. THEN I WILL SAW
+OFF YOUR LIMBS ONE BY ONE WITH A HACK SAW. AFTER THAT
+YOU WILL BE DUMPED ON A FIELD AND SUFFER UNTIL YOU DIE
+A SLOW, PAINFUL DEATH!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- So it looks like there's a nigger supporting
+the fucked-up KAW movement. Fuck off Farrakhan, you have
+stepped into KAN TERRITORY. Your punishment will be an
+immediate hanging for the crime of conspiring against
+the white race. THE ARYAN REVOLUTION IS COMMING KAW. BE
+VERY AFRAID BECAUSE I WILL PERSONALLY POKE YOUR EYES
+OUT SO THAT YOU WILL BE A BLIND NIGGER. THEN I WILL SAW
+OFF YOUR LIMBS ONE BY ONE WITH A HACK SAW. AFTER THAT
+YOU WILL BE DUMPED ON A FIELD AND SUFFER UNTIL YOU DIE
+A SLOW, PAINFUL DEATH!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.noi.org/min2.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+GREETINGS BROTHERS, I AM MINISTER LOUIS FARRAKHAN LEADER OF THE "NATION OF ISLAM" AND HONORARY MEMBER OF "KAW" (KILL ALL WHITES). I HAVE A MISSION FOR ALL THE BROTHERS WHO ATTENDED THE MILLION MAN MARCH. GO TO "THE WALL OF SKANK" AND KILL THAT RACIST BASTARD KAN, MAFIA MAN, WEEZZLE, TWB, THE REAPER, AND ALL THOSE OTHER FILTHY WHITE FOLKS. GOD BE WITH YOU MY BROTHERS.  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+IN ALL FAIRNESS,YES IT DID OCCURE TO ME THAT BLACKS MIGHT BE BURNING THEIR OWN CHURCHES. 
+I GUESS WE'LL JUST HAVE TO WAIT UNTIL JANET RENO GETS OFF HER DUFF AND STARTS INVESTIGATING
+THESE INCIDENTS. GO FOR IT,JANET. FLEX THOSE LAW ENFORCEMENT MUSCLES. JANET IS A HUNK OF BURNIN' LOVE!!!!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.eff.org/rib_supp.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Those niggers are the ones that are burning
+their own churches, because they know that the won't get
+caught. They'll just blame it on the aryan organizations, and
+get the insurance money to build a brand new, nice church.
+They "kan" kiss my white ass along with the FBI fuckers.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+HEY KAN. HAVE YOU BEEN BURNING BLACK CHURCHS? IF I WERE AN F.B.I. MAN I'D TAKE A REAL CLOSE LOOK AT YOU,YOUR RECENT ACTIVITIES,
+YOUR ELECTRONIC AND POSTAL COMMUNICATIONS AND YOUR ASSOCIATIONS.  I'D WIRETAP YOUR PHONE AND BUG YOUR DWELLING. A GOOD F.B.I. MAN COULD PUT ENOUGH PRESSURE ON YOU
+THAT YOU'D BREAK DOWN,CRY LIKE A BABY AND RAT ON YOUR PALS. 
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.virginmodels.com/sp0596.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Fuck the FBI, fuck the US government, and fuck
+you asswipe! If my country is so racist, then how come my
+country's tyrannical government gives money to the nigger
+fuck-ups? Good question. Apparently, you must be a TAO
+refugee from Canada. Niggers are no good, join the anti-nigger
+movement to put those ANIMALS IN CHAINS.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+FOR THOSE ANTI-CAPITALISTS OUT THERE.....IF YOU SHOULD WIN THE LOTTERY I'M SURE YOU'LL SEND ALL YOUR MILLIONS OF DOLLARS TO SUPPORT THE STARVING CHILDREN OF SOME DUMBSHIT THIRD-WORLD NATION. 
+LET'S BE HONEST WITH OURSELVES FOR A FEW MOMENTS,PLEASE. SHOULD YOU SUDDENLY COME IN A FORTUNE YOU'D BUY YOURSELF A FERRARI AND A YOUNG AND FIRM BLOND GIRLFRIEND WHO WOULD SCREW YOU SILLY. 
+COME ON. WE'D BOTH LIKE TO BE RICH AND SCREW YOUNG WOMEN!!!!! IF YOU SAY NO YOU ARE MOST DEFINATLY A SPACE CASE!!!!!!
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="I ">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+WHOEVER YOU ARE (THE ANTI-CAPITALIST),HOW'S ABOUT A FIRST NAME? YOU KNOW MY NAME'S FRED AND IF YOU'RE AS INTELLIGENT AS I THINK YOU ARE BY NOW YOU KNOW MY LAST NAME,MY LOCALITY WITHIN TWO MILES,MY AGE,MY RACE,MY FAX NUMBER AND THE NAMES OF THE COMPANIES I OWN. YOU PROBABLY KNOW THE NATIONS I MARKET WITH TOO.
+ANYHOW,I CONSIDER YOU HIGHLY INTELLIGENT BUT NEEDFULL OF COMMON SENSE. FROM WHAT I'VE READ OF YOUR EXPRESSED CONCEPTUALIZATIONS I FIGURE YOUR DADDY IS REAL PROUD OF WHAT YOU LEARNED IN COLLEGE,PUN INTENDED. I GIVE YOU A LOT MORE RESPECT THAN YOU GIVE ME. BUT THAT'S NORMAL. IT COMES WITH AGE....AND ENHANCED WISDOM.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="ING'S ">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+.
+IT IS MY FIRM OPINION THAT MARTIN LUTHER KING WOULD GO BERSERK IF HE SAW THE FUTURE OF WHAT HE AND SO MANY OTHERS LIKE MYSELF HAD BEGUN. THERE'S FAR MORE RACIAL HATRED NOW THAN THERE WAS DURING 
+KING'S ERA. I BLAME OPPORTUNISTS WHO INSTIGATE CLASS WARFARE. I STRONGLY ADVISE THOSE WHO CONSIDER THEMSELVES "MINORITIES" TO DISTRUST THOSE WHO WOULD COME TO YOU IN THE GUISE OF
+ANGELS. THE DEVIL WEARS MANY DISGUISES.  AS A WHITE MAN,WHEN SOMEONE SAYS HE'S SPEAKING OUT FOR MY RACIAL INTERESTS I IMMEDIATLY REACH FOR MY WALLET TO SEE
+IF IT'S STILL THERE.
+
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  FRED- I think you missed the point about the Groucho Marx
+bit: the point was to state that not all "communists" are the evil statist
+types you keep ranting about.  As for a "sense of humor" for capitalists and Nazis..
+regaurdless of wheather capitalists and nazis have a sense of humour, they
+are still capitalists and nazis!  (and there's hardly anything "funny" about that)
+It's interesting how you immediatly accuse anyone who speaks out against nazism as being a "Communist".
+What the hell is your problem?  You claim not to be a Nazi but you would
+join the Nazis to fight anyone who is anti-nazi. Ina  sense you are a nazi because
+there will always be people fighting their shit.. and of course the way you react
+will strecnthen the nazis (since you seem to like to say "they are just the same as everyone else")
+Wake UP!  Nazis are out to FUCK OVER other human beings who they decided
+(for stupid reasons) are "inferior" to them.  Also, whats your problem
+with "minorities" (which happen to be the majority, taken as a whole) who protest mistreatment?
+Are you denying that there was hundreds of years of slavery in the USA?   Or segregation?  or economic
+ineqality?  Gove me a break.  I think youre just playing "Nazi spin doctor" and trying to convince people
+that is we didnt have Nazis around we would be worse off, somehow. Pretty stupid.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  NOpe.. Unfortunatly, the FBI doesnt give a shit about
+KAN, TWB, etc.  The USA is run by racists and they couldnt give a shit about
+stuff like that.  I do think people should voluntarily say NO to these people,
+and do what they can to make life harder for them, if they keep
+being assholes, without, of course, violating universal
+freedom of speech laws.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="Mouthing-off is no big deal">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Your "organization" appears to be something that local,national and perhaps international law-enforcement
+should be and no doubt is showing great interest in.  The F.B.I. probably has your phone lines bugged. By now they know who you are and who all your psycho associates are too. 
+There is an entire planet of people who would dearly love to see you thrown so far back into prison they'd have to pump air
+to you. It would give me deep pleasure to testify against you and your kind in a courtroom. 
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="file:///C|DOWNLOAD/RIB_SUPP.GIF" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- This is to the fucker that said he doesn't
+want his sister to marry me. I don't need to marry your
+sister, considering that I fucked her over 20 times. Don't
+fuck around on this wall pussy boy. If you got something to
+say, then say it. Otherwise, don't make fucking wise cracks
+about me and my organization.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="file:///C|DOWNLOAD/RIB_SUPP.GIF" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- This is to the fucker that said he doesn't
+want his sister to marry me. I don't need to marry your
+sister, considering that I fucked her over 20 times. Don't
+fuck around on this wall pussy boy. If you got something to
+say, then say it. Otherwise, don't make fucking wise cracks
+about me and my organization.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="..">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+
+  REGARDLESS OF WHO'S DOING IT......SHUTTING DOWN GRAFFITI WALLS AND THE LIKE HURTS EVERYONE. WHY DO SOME PEOPLE FEAR WORDS SO MUCH?
+IF KAN TELLS FOLKS TO GO KILL "NIGGERS" IS ANYONE REALLY STUPID ENOUGH TO DO IT? IF SOME GUY TELLS ME THAT COMMUNISM/SOCIALISM IS THE CAT'S MEOW
+I CAN ASSURE YOU I WILL NOT RAISE MY CLENCHED FIST AND START SPOUTING DORKBRAIN RHETORIC. WORDS CAN ONLY HURT IF YOU ALLOW THEM TO. BY THEMSELVES THEY ARE ONLY
+VIBRATIONS IN THE AIR OR LINES ON PAPER.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/IMG/wos.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+I THOUGHT THE TAO WALL WAS ABOUT ANARCHY. WHAT DID THEY MEAN,  POSITIVE ANARCHY? AS FOR THE SWEDISH WALL, THAT LITTLE PRICK PURPOSELY PUT KEYWORDS IN THE PAGE LEADING PEOPLE TO BELIEVE IT HAD PORNO PICS. SO LET'S ALL GO TO THE WOS AND HUG AND PRAY FOR FREE SPEECH ONLINE.  TWB</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  This is DEFINATLY not a guy I'd want my sister to marry!!!!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.thetasys.com/wall.html" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+<B><I>kan online- Listen up TAO fucks, It was not our fault
+that your fucked up web page got shut down. You blame us just
+because you have no one else to blame. You fucks were the
+reason, not just us, so take some responsibility for your
+own fucking actions god damnit. If you ever blame KAN for
+your problems again, we will track you down and beat the
+shit out of you because you are a disgrace to the white
+race. Hey KAW, you said that I "Buttfucked MAFIA MAN"?
+Well, We never saw MAFIA MAN once in our whole lives. So
+fuck you and the rest of you niggers!</I></B></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  DEAR KAN. PLEASE DO NOT SHUT DOWN THE WEB PAGE OF THE THEORETICAL ASTROPHYSICS LOS ALAMOS NATIONAL LABORATORY. 
+  IF YOU MESS WITH IT I'LL HAVE YOU THROWN INTO A......GOD FORBID........BLACK HOLE!!!!!!!!!
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  NOW THAT'S A MESSAGE WE CAN ALL AGREE WITH. DOES'NT MATTER WHETHER YOU'RE A CAPITALIST,COMMUNIST,SOCIALIST,ANARCHIST OR NAZI SKINHEAD. IF YOU CAN'T LAUGH AT YOURSELF THEN YOU'VE ACHIEVED DORKHEAD STATUS IN MY BOOK!!!!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.fut.es/~msanroma/groucho.html">
+<IMG SRC="http://www.fut.es/~msanroma/icons/grouchopetit.GIF" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ALL POWER TO GROUCHO-MARXISM! Fuck the Fascist State!
+No Revolution without a SeNsE oF HuMoUr allowed.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.valujet.com/">
+<IMG SRC="http://www.valujet.com/but.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  I'd say it's Capitalism that crushes human spirit and individualism.. because
+capitalism is all over the world, and vast numebrs of people are alienated and screwed up by it.
+When you say "individualism" I assume you mean the "individualism"
+of the privileged.    As for the "minority" stuff.. well, look, if you dont have any respect for people
+when they are down, and being treated like this, how can you simultainiously denounce
+them when they have uprisings and social movements (which always get called "communist"
+one way or another by the Defense Dept. and media bigwigs).  If you already
+have accepted this idea that poor blacks and latinos that live in the inner city have just as many oppertunities as anyone else,
+and that the crap they grow up with has NO EFFECT on their chances for success, then
+there's little point even trying to reason with someone like you.  Think about it:
+when a person doesnt have enough to eat, or has no respect from his fellow men (on a societal level) that he must depend on to get
+things from to survive.. how can he be expected to be the perfect
+model citizen?  What the fascists do is pretend that the circumstances behind poverty dont exist.  They just gloss everything over.
+I should add that like it or not, the only thing that ever saved the USA from some kind of total collapse
+(at least 2 times in this century) was some serious concessions to the people
+on the part of the capitalists. (and it was government mediated.. this is called "social democracy") ...
+if peopel are pushed too far they just dont listen anymore.  Now if you want to make these grandios, sweeping statements about whatever your
+notion of "communism" is, go right ahead... but I think we are talking
+about 2 different things.  Oh.. as for the wall.. yeah, the TAO wall
+is down.. and do is the one in Sweden, and the "Africa Imports"
+one was wiped, with a very angry message by a person who
+probabaly doesnt deserve the kind of grief these "boys" have given him..</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="S POO">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+IF IT'S TRUE THAT KAN SHUT DOWN THE WALL MY OPINION OF HIM WOULD BE GREATLY ALTERED.  AS FOR CAPITALISM,IT'S THE BEST SYSTEM CURRENTLY AVAILABLE TO 
+US HAPLESS EARTHLINGS. I FIND THAT COMMUNISM,SOCIALISM AND THE LIKE HAVE A PROVEN TENDENCY TO CRUSH HUMAN SPIRIT AND INDIVIDUALISM. AS FOR RACISM....WHEN I HEAR OR READ "MINORITY" I IMMEDIATLY THINK "HERE COMES MORE BULLSHIT".  WHITE PEOPLE AR'NT ALLOWED TO BE "VICTIMS"
+BUT APPARENTLY EVERYONE ELSE IS. THIS RACISM CRAP HAS BECOME A DUMB GAME DESIGNED AQND UTILIZED BY FOOLS AND OPPORTUNISTS.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.webcom.com/maxang/ANTI-WEB/welcome.html">
+<IMG SRC="http://www.webcom.com/maxang/ANTI-WEB/amber.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Hey "KAN" (Maybe that should mean "Kill All Nazis"?)..
+so you managed to get the TAO page shut down. Congradulations.
+You proved that by being a total pain in the ass, you
+can annoy people till you get your way.   That had little to do with being intelligent.
+If thats the basis of conservative capitalism, youre
+sure setting a great example.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.uc.pt/Timor/TimorNet.html">
+<IMG SRC="http://wwwdsp.ucd.ie/~daragh/pics/east_timor.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  Not true, Fred.. for those of us who word for "The Man", Capitalism is a false promise.  A load of crap.
+Also, you said you respected Martin Luthor King.. well guess what?
+Just before he died he was working to support Janitors who were trying to form a union.
+Picasso was a Communist, Einstien was a Socialist, the great (black) singer and
+actor Paul Robeson was sympathetic to the USSR (poor guy... I feel sorry for what the media did to him), George Orwell
+was a socialist, and so on.  Capitalism only seems "great" because when you win and crush other people under your foot,
+your head is too high up your ass to see all the pain and mysery around you.
+Now why dont you get a clue and figure it out: the "communists" here are not State-Communists.
+If youw ant to talk about the USSR, fine.. but just because I dont like
+racism and I believe that Nazis suck, that doesnt mean I'm a fucking Bolshevik.  Can your
+mind possibly comprehend that?  Or is it just impossible?</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.lglobal.com/TAO/taoguest.html">
+<IMG SRC="http://www.owa.com/beseen/free/aball5.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ANARCHISTS?   NO,  PUSSIES!  TWB  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF=" FEAR THE COLD REALITY OF REASON.  BUNCHA' CHICKEN">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+IT FIGURES. THE TAO WEBSITE IN CANADA HAS CALLED ME A NAZI AND SHUT OFF MY ACCESS TO THEIR "WALL". THIS IS HOW COMMUNISTS RESPOND TO BEING PUT ON THE SPOT BY A HIGHLY INTELLIGENT POLITICALLY/SOCIALLY CONSERVATIVE AMERICAN CAPITALIST. WHEN PUSH COMES TO SHOVE,THEY RUN LIKE THE WIND TO CRAWL BACK UNDER THEIR ROCKS. COMMIES
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  Yes. But would you want your sister to marry one?????</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF=" CRACKS ME UP HOW TH">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+I READ THE "LIFE AND CULTURE OF THE 1950s" PAGE. HAVING BEEN BORN IN 1946 I REMEMBER THE 50s AS A DAMN GOOD TIME. FUNNY THING. WHY PUT AMERICA UNDER THE 50s MICROSCOPE? HOW ABOUT DOING A PIECE ON THE SOVIET UNION DURING THE 1950s?  IT
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+ANY NUMBER OF SOCIAL/POLITICAL "SYSTEMS" CAN BE MADE TO WORK WITH VARYING DEGREES OF SUCCESS. WHAT SYSTEM HAS PRODUCED THE REMARKABLE ELECTRONIC EQUIPMENT AND VAST COMMUNICATION SYSTEMS THAT YOU ARE CURRENTLY USING TO POST THESE MESSAGES?  COMPARE THE AVERAGE COMMUNIST LIFESTYLE WITH THAT OF THE CAPITALISM LIFESTYLE. AS THEY SAY,THE PROOF IS IN THE PUDDING. COMMUNISM IS GRAY,OLD,DEAD AND LIFELESS. CAPITALISM IS ALIVE,WELL AND GROWING BY LEAPS AND BOUNDS. GET WITH IT,KID. YOUR KIND ARE DINOSAURS.....SOON TO GO EXTINCT.
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cjnetworks.com/~cubsfan/rush/antirush.html">
+<IMG SRC="http://www.cjnetworks.com/~cubsfan/rush/pigsmall.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Click <A HREF="http://www.cjnetworks.com/~cubsfan/rush/iwasdumb.WAV">HERE</A> to hear Rush Limbaugh tell the truth for a change.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.c2.org/~ccrj/">
+<IMG SRC="http://www.c2.org/~ccrj/pig.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+<A HREF="http://www.c2.org/~ccrj/pig.au">Squeeeaal</A> like
+a pig, boy! I say I wanna hear you squeeeEEEAAAAL!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://ourworld.compuserve.com:80/homepages/JoeEkaitis/">
+<IMG SRC="http://ourworld.compuserve.com:80/homepages/JoeEkaitis/trukfox2.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Oops.  Shit.. sorry to post that last message twice.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.english.upenn.edu/~afilreis/50s/home.html">
+<IMG SRC="http://www.english.upenn.edu/~afilreis/50s/shelter.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  You know, Fred- Youre sounding like one of those typical 50's-era members of the
+"John Birch Society" McCarthyists with all these really really old "anti-commie" cliche's.  Why
+dont you take a look at the web page to the left over here.
+The last thing I think most Americans with intelligent minds want to do is go back to
+the supressive, intellectualy stiffling 1950s.  (lots of racism back then too)</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.english.upenn.edu/~afilreis/50s/home.html">
+<IMG SRC="http://www.english.upenn.edu/~afilreis/50s/shelter.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  You know, Fred- Youre sounding like one of those typical 50's-era members of the
+"John Birch Society" McCarthyists with all these really really old "anti-commie" cliche's.  Why
+dont you take a look at the web page to the left over here.
+The last thing I think most Americans with intelligent minds want to do is go back to
+the supressive, intellectualy stiffling 1950s.  (lots of racism back then too)</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.sci.kun.nl/sigma/docs/other/anarchy.html">
+<IMG SRC="http://www.sci.kun.nl/sigma/gifs/michael.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ NOT QUITE, FRED- THINK ABOUT IT... MILLIONS OF PEOPLE ARE
+EXPECTED TO WORK LIKE TOILING ANTS FOR BOSSES WHO HAVE
+NOTHING BUT THE STATE TO PROTECT THEM- THE REST OF US HAVE NO LAND,
+NO SAY IN WHAT THEY DO WITH THEIR POLLUTION, NO MEANS OF
+TRASNPORTATION... WHY? BECAUSE THE CAPITALISTS OWN AND CONTROL IT ALL.
+YOU CAN BE A COMMUNIST AND STILL RESPECT INDIVIDUAL RIGHTS IF YOU
+ARE AN ANARCHIST.  UNDER CAPITALISM, "INDIVIDUALISM"
+BECOMES A PATHETIC JOKE- IT'S SOMETHING THAT ONLY PROPERTY
+OWNERS CAN ENJOY... HOW ABOUT INDIVIDUAL RIGHTS FOR *EVERYBODY*?
+WHAT I AM TALKING ABOUT IS A RADICALY DEMOCRATIC, LIBERTARIAN
+SOCIALIST TYPE OF SOCIETY... NOT THE STUPID STATE-CAPITALIST BUREACRACY
+THAT WAS IN RUSSIA AND CHINA 40 YEARS AGO.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+IF HUMANS WERE INSECTS,COMMUNISM WOULD WORK JUST FINE. ANTS AND HONEYBEES HAVE NO INDEPENDENCE OF THOUGHT OR ACTION. THE LIFE OF THE INDIVIDUAL IS GIVEN OVER TO THE FULLFILLMENT OF DUTY TO THE STATE. COMMUNISM APPEALS MOSTLY TO THE IGNORANT. A POOR STUPID MAN WILL VIEW COMMUNISM AS HIS SALVATION. A POOR BUT INTELLIGENT MAN SEES COMMUNISM FOR THE EMPTY PROMISE IT IS.  
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cs.utah.edu/~galt/kronstadt.html">
+<IMG SRC="http://www.cs.utah.edu/~galt/Images/utahcira2.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ ARE COMMUNISTS REALLY LIARS, FRED?  NOT REALLY.
+LENIN, STALIN AND MAO NEVER LIED ABOUT THE "NECCESITY"
+OF RED TERROR.  THE ORIGIOHNAL COMMUNISTS WHO SPOKE
+OF PEACE WERE KILLED BY THE STALINISTS AND MARXIST-LENINIST
+STATE EXTREMISTS.  GET YOUR FACTS STRAIGHT.  THE BEST WAY
+TO AVOID THAT MAOIST AND STALINIST SHIT IS TO LISTEN TO
+WHAT THEY HAVE TO SAY AND DISAGREE WITH IT.  NAZIS
+ON THE OTHER HAND JUST COME IN AND SMASH UP YOUR STORE OR BOOKSHOP.
+OR, THEY SPREAD THEIR UGLY SHIT ALL OVER PLACES LIKE THIS.
+ CLICK ON THE ANARCHY SYMBOL TO LEARN MORE.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://abacus.oxy.edu/qrd/www/culture/black/blackstripe.html">
+<IMG SRC="http://abacus.oxy.edu/qrd/www/culture/black/africainbow.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  Of course we know that "KAW" ("Kill All Whites")
+doesnt really exist.. it's just that KAN Online
+idiot creating fake "straw-men" so he can pretend he has a reason
+to hate black people.
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://comm.qc.ca/Centre/Reseau/rash.html">
+<IMG SRC="http://comm.qc.ca/Centre/Reseau/rash.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  Smash all Nazism!  HEY KAN Why dont you get a life.
+The Only reason you hate black people is because you
+really hate yourself and feel inferior.  It's
+likely you also have latant homosexual tendencies which
+makes you more hostile and aggressive, as you try to "prove"
+your manliness by being a violent shit.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+ IF YOU REALLY WANT TO KNWO WHAT NAZISM IS ABOUT, YOU SHOULD READ GEORGE ORWELLS
+ANIMAL FARM- DID YOU KNOW THAT GEORGE ORWELL WAS A
+SOCIALIST WHO FOUGHT IN THE SPANISH CIVIL WAR AGAINST THE FASCISTS
+AND THE STALINST COMMUNIST PARTY?  1984 WAS A BOOK ABOUT
+ELITE LEADERS LIKE THE STATE-COMMUNISTS AND THE NAZIS.
+THE GROUP ORWELL WAS IN WAS CALLED THE POUM AND WAS AN INDEPENDANT
+MARXIST GROUP... THE PIGS IN THE BOOK WHO SAID "SOME PEOPLE
+ARE MORE EQUAL THAN OTHERS" WERE THE STATE LEADERS,
+NOT THE REAL COMMUNISTS WHO WERE WORKING CLASS PEOPLE,
+WHO ALWAYS GOT SCREWED OVER BY THE FASCISTS IN THE END.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  SHINE MY SHOES,BOY. AND GET WITH IT. I HAV'NT GOT ALL DAY!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<IMG SRC="http://members.gnn.com/ChannelSix/stuff/eazy.gif" WIDTH=100 HEIGHT=100>
+</TD>
+<TD COLSPAN=7>
+So, it'd bee the cowardly KAN. So where yous been all this
+time? I bet you and MAFIA WAP get it up yours white assholes
+every day. Dont you bee fuckin wit KAW or else I will
+pop yo ass while yous bee walkin down in my hood.
+.....KAW</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  Pura CFSk SA´K, CIERTO FROM´S HERMES</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www3.stormfront.org/graphics/wplogo.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Lookie, lookie, I see a niggy. Just who the
+fuck do you think you are KAW? I just can't wait to skin
+your ass and sell your nice NIGGER SKIN. ......KAN MAN</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<IMG SRC="http://members.gnn.com/ChannelSix/stuff/eazy.gif" WIDTH=100 HEIGHT=100>
+</TD>
+<TD COLSPAN=7>
+Yous dare to bee tripin wit mee ya mothafuckin honkee?
+Yo ass bees dead as well cause mee and my brothas of harlem
+will pop yo ass wit a 45 mothafucka. Keep off my fuckin
+wall. ...................KAW (KILL ALL WHITES)</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  JUST COLLECT YOUR WELFARE CHECK AND SHUT YO' MOMMA LIPS!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cyberenet.net/~africa/Grafitti.html">
+<IMG SRC="http://members.gnn.com/ChannelSix/stuff/eazy.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Yo brothers of New York. It'd bee the KAW (KILL ALL WHITES).
+Lets kick thees white mothafuckas off of our wall. Robert, you beter
+bee afraid of me and my homies because wees bee popping yo
+ass with a GLOCK 9 and when wees bee down wee gonna get
+KAN and TWB and burn there asses until theys bee nigga
+color.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cyberenet.net/~africa/Grafiiti.html">
+<IMG SRC="http://members.gnn.com/ChannelSix/stuff/eazy.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Fuck all yo whites. I can speek for myself you honkee
+mothafucka. I dont need no white trash sticking up for
+me. Hey kan mothafucka, I'm starting a new nigga group
+kalled KAW (KILL ALL WHITES). Y'all dont bee fuckin wit
+me now!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="THE GULAG,A "RE-EDUCATION" CAMP OR">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+
+  ANYONE WANTING TO KNOW THE TRUE NATURE OF COMMUNISM SHOULD READ THE BOOK OR RENT THE VIDEO OF GEORGE ORWELL'S MASTERPIECE "THE ANIMAL FARM".  WITH ALL THEIR TALK OF "EQUALITY" THE TRUE COMMUNIST BELIEVES THAT "ALL MEN ARE EQUAL.....BUT SOME ARE MORE EQUAL THAN OTHERS".  KAN ONLINE IS AN ASSHOLE BUT AT LEAST HE TELLS US WHAT HE WOULD DO HAD HE THE POWER TO DO IT. COMMUNISTS,ON THE OTHER HAND,ARE CONSUMATE LIARS. THEY TALK PEACE,LOVE AND EQUALITY YET ARE BUTCHERS THE SAME OR WORSE AS NAZIS. WHETHER YOU'VE BEEN SENT OFF TO </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://tklab1.cs.uit.no/~paalde/NazismExposed/">
+<IMG SRC="http://tigerden.com/~berios/images/killnazi.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  HEY KAN ONLINE- Why dont you ask yourself this
+question: What color were the people on the slave ships
+that brought blacks from Africa to the USA against their will?
+What color were the capitalists who enslaved millions in their
+factories and prisons systems?  What color Are the police, teachers,
+politicians and military officers who perpetuate the conditions that
+keep millions poor- especialy blacks, leaving them no choice but
+to turn to crime?  If there's anyone here who wants to KEEP crime
+around, it's you.  It seems that you want to increase it with mass-murder.
+CRIME is not a function of skin color... it is a condition
+that arises from being oppressed and having one's oppertunities limited.
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+NOT TRUE, "FRED": A PERSON WHO OPPOSES THE IDIOCY OF
+NAZIISM AND WHITE SUPREMICY HAS LITTLE IN COMMON WITH
+THE NAZIS THEMSELVES.  WHY DONT YOU LOOK IN THE MIRROR
+AND ASK YOURSELF HONESTLY HOW YOU CAN TAKE SIDES WITH
+FASCISTS- PERHAPS YOU ARE ONE OF THEM.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+I FEEL SO SORRY FOR THAT POOR WOMAN/ I THINK SHES BEAUTIFUL
+
+I COULD LOVE HER BUT U ALL SUK</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  A FASCINATING DISCOURSE BETWEEN TWO MINDS OF LIKE CHARACTER. DIFFERENT SIDES OF THE MENTAL FENCE. LIKE TWO MIRRORS,EACH FACING THE OTHER. </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.fau.edu/student/chemclub/dave/images/devil.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Hey NIGGA LOVER. YOU SAY THAT NIGGERS WANT TO
+END CRIME. That's a bunch of bullshit like yourself. Why
+are more niggers in prison than whites? Why do niggers
+live in poverty? Why are there more niggers on welfare?
+You figure it out for yourself you dumb fuck.
+......The KAN MAN</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.lglobal.com/TAO/">
+<IMG SRC="http://www.ionet.net/~careinc/nonazis.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+  kan online is a big-time asshole Nazi idiot.
+If he stopped to think for a moment he would realize that
+every white person who loves a black person does so willingly,
+as compared to the enslavement of blacks, killing of indians,
+etc which was done against their will.   kan online is obviously
+afraid of black people... I bet he's too chicken-shit
+to walk down the street at night.  Sucka boy.  Too bad
+he doesnt know that they way to stop CRIME is to work
+to END POVERTY by BUILDING COMMUNITY... not by mass
+murder & prisons, which he he seems to want.
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://members.gnn.com/ChannelSix/stuff/wantd2.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Kill this nigger scum. Go to <A HREF="http://www.cyberenet.net/~africa/Grafitti.html">Afican Grafitti Wall</A>
+and bash those niggers there, or go to the <A HREF="http://www.lglobal.com/TAO/taoguest.html">Canadian Grafitti Wall</A>
+and talk to the Canadians. FUCK YOU ROBERT, YOU ARE NOTHING.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+
+  GOOD ONE,TWB. CAN YOU OPEN YOUR MOUTH WITHOUT SHOWING YOUR TEETH? YOU'RE HIRED!</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www3.stormfront.org/graphics/wplogo.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- <B><A HREF="http://gramercy.ios.com/~fireart/action05.jpg">Here's
+a picture of Robert and his "loved ones"</A> (courtesy of TWB). Sorry Robert,
+you have just fucked with the wrong people, you dumb coon-
+lover.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+EXPERIENCE? HOW'S ABOUT THIS. BACK IN 1961 I WAS A FRESHMAN AT TUSTIN UNION HIGH SCHOOL IN TUSTIN,CALIFORNIA. I EXPRESSED MY SUPPORT FOR MARTIN LUTHER KING TO MY FELLOW WHITE CLASSMATES. THEY CALLED ME A "NIGGER LOVER".  FRED   lcsails@@webworldinc.com
+  </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.localnet.com/~udroma/">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+Greetings, pro-situationists! NOT BORED here, NYC's longest-running situationist zine. Most recent issue: #25 (June 1996). Contents include reports on screenings of Guy Debord film Society of the Spectacle, and reviews of publications by Stewart Home, Raoul Vaneigem, Henri Lefebvre and the American section of the SI.</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+listen New York, the Kan is invading your wall and soon we 
+will take it over. For all you New York pussies out there,
+come to the Wall of Skank, unless your afraid, you cock sucking
+Queen's Queers.I dare you to fuck with me and the KAN!!!  
+                      "MAFIA MAN"</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  OK, let's estabish something here:<br>
+KAN and BTW are obvously very stupid and ignorant.<br>
+If you are not white, Christian, heterosexual, and racist, they hate you already. If you are (racist), piss off. <br>
+As for everyone else, <b>Don't tolerate stupid ignorance on <i>your</i> wall! Don't feed their hate! They need to be confined to their crappy wall!</b>
+<br>-A public service message from you friendly neighborhood anti-racist friend Robert</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.cyberenet.net./~micetrap/nigger.html">
+<IMG SRC="/andruid/chainsWeb/CHAINSImages/button.jpeg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+ HEY HOMEY'S, I GOT SOME JOKES FOR YOU AND WHEN YOU'RE DONE THERE CLICK <A HREF="http://www.thetasys.com/wall.html"> HERE TO BE SKANKED.   TWB </A></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+  It is now a dark and dismal time in the history fo our race. All about us lie the green graves of our
+sires, yet, in a land once ours, we have become a people dispossessed... 
+
+By the millions, those not of our blood violate our borders and mock our claim to sovereignty. Yet
+our people only react with lethargy. 
+
+A great sickness has overcome us. Why do our people do nothing? What madness is this? Has
+the cancer of racial masochism consumed our very will to exist? 
+
+While we allow Mexicans by the legions to invade our soil, we murder our babies in equal
+numbers. Were the men of the Alamo only a myth? Whether by the force of arms or force of the
+groin, the result of this invasion is the same. Yet our people do no t resist. 
+
+Our heroes and our culture have been insulted and degraded. The mongrel hordes clamor to sever
+us from our inheritance. Yet our people do not care. 
+
+Throughout this land our children are being coerced into accepting nonwhites for their idols, their
+companions, and worst of all their mates. A course which is taking us straight to oblivion. Yet our
+people do not see... 
+
+Not by accident but by design these terrible things have come to pass. It is self-evident to all who
+have eyes to see that an evil shadow has fallen across our once fair land. Evidence abounds that a
+certain vile, alien people have taken control of our country. 
+
+How is it that a parasite has gained dominion over its host? Instead of being vigilant, our fathers
+have slept. What are we to do? How bleak these aliens have made our children's future. 
+
+All about us the land is dying. Our cities swarm with dusky hordes. The water is rancid and the air
+is rank. Our farms are being seized by usurious leeches and our people are being forced off the
+land. The Capitalists and the Communists pick gleefully at our bones while the vile hook-nosed
+masters of usury orchestrate our destruction. What is to become of our children in a land such as
+this? Yet still our people sleep! 
+
+Everyday the rich tighten the chains that lay heavy upon our people. How pitiful the white working
+class has become. Where is the brave Aryan yeoman so quick to smite the tyrant's hand? 
+
+They close the factories, the mills, the mines, and ship our jobs overseas. Yet our people do not
+awaken. They send an army of agents intor our midst to steal from our pockets and enforce their
+rule. Our forefathers under King George knew freedom more than we. Yet still, still our people
+sleep! 
+
+To those who awaken, the reality is grim. John Singer awoke. Concerned over the rampant drugs,
+homosexuality, and miscegenation in public schools he tried to teach his children at home. He was
+a stout Aryan yeoman who loved his family dearly. Government agents shot him in the back. 
+
+Gordon Kahl awoke. After four decades of submission to the tyranny of the IRS he tried to resist.
+He was a stout Aryan yeoman who loved his family dearly. Government agents shot him in the
+back. 
+
+Arthur L. Kirk awoke. For three generations his family farmed the land the usurious banker was
+trying to steal. Kinsman Kirk tried to resist. He was a stout Aryan yeoman who loved his family
+dearly. Government agents shot him in the back. 
+
+To these three kinsmen, we say: "Rise, rise from you graves, white brothers! Rise and join us! We
+go to avenge your deaths. The Aryan yeomanry is awakening. A long forgotten wind is starting to
+blow. Do you hear the approaching thunder? It is that of the awakened Saxon. War is upon the
+land. The tyrant's blood will flow." 
+
+By ones and by twos, by scores and by legions we will drive the enemy into the sea. Through our
+blood and God's will, the land promised to our fathers of old will become the land of our children
+to be. 
+
+We will resign ourselves no more to be ruled by a government based on mobocracy. We, from
+this day forward declare that we no longer consider the regime in Washington to be a valid and
+lawful representative of all Aryans who refuse to submit to the coercion and subtle tyranny placed
+upon us by Tel Aviv and their lackeys in Washington. We recognize that the mass of our people
+have been put into a lobotomized, lethargic state of blind obedience and we will not take part
+anymore in collective racial suicide! 
+
+We hereby declare ourselves to be a free and sovereign people. We claim a territorial imperative
+which will consist of the entire North American continent north of Mexico. 
+
+As soldiers of the Aryan Resistance Movement (ARM) we will conduct ourselves in accordance
+with the Geneva Convention. 
+
+We now close this Declaration with an open letter to Congress and our signatures confirming our
+intent to do battle. Let friend and foe alike be made aware. This is war! -- We the following,
+being of sound mind and under no duress, do hereby sign this document of our own free will,
+stating forthrightly and without fear that we declare ourselves to be in full and unrelenting state of
+war with those forces seeking and consciously promoting the destruction of our faith and our race.
+
+Therefore, for Blood, Soil, and Honor, and for the future of our children, we commit ourselves to
+Battle. Amen. 
+
+"When the day comes, we will not ask whether you swung to the right or whether you
+swung to the left; we will simply swing you by you neck."--the Order 
+
+A message from WEEZZLE!!
+WHITE POWER!!!!!
+
+
+
+</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.wp.com/scd/vanal.html" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- Here's some nice <B>WHITE</B> pussy <IMG SRC="http://www.wp.com/scd/vanal.html"></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.virginmodels.com/sp0596.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+kan online- <A HREF="http://www.thetasys.com/wall.html">Here Niggers!</A></TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+</TD>
+<TD COLSPAN=7>
+Why must the source of our happiness must also be the foundtain of our misery.
+							The Sorrows of Young Werter 
+									Goethe   </TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.wp.com/scd/VSEX315.gif" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+KAN ON-Line- If any of you niggers have balls then come to
+The Wall of Skank and face the KAN (Kill All Niggers).</TD>
+</TR>
+<TR ALIGN=center>
+<TD>
+<A HREF="http://www.thetasys.com/wall.html">
+<IMG SRC="http://www.virginmodels.com/sp0596.jpg" WIDTH=100 HEIGHT=100>
+</A></TD>
+<TD COLSPAN=7>
+KAN ON-Line- Here's something for all those fucking niggers from
+t@

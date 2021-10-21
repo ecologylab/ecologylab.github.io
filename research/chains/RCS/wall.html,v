@@ -1,0 +1,60 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.25.12;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>CHAINS Grafitti Wall</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<IMG  HEIGHT=238 WIDTH=360 SRC="CHAINSImages/grafittiWallSmall.jpeg">
+<EM>Wall of Phun Phactory, Queens, New York..</EM>
+</CENTER>
+<HR>
+Are you struck by some particularly jarring coded message from your
+own experience?  Submit an idea text below and participate in
+the Coded Messages Grafitti Wall.  Web-savvy users may optionally
+include a URL for us to 
+jump to, and a URL for a small icon which will
+become part of this  page.  Of course the jump URL can be one of your
+own, or you can "find" a <i>ready-made</i> on the net!
+
+Users note:  we intend to implement URL verification in our spare time
+real soon now.  Meanwhile, please pardon URL's which lead nowhere. 
+<HR>
+<P>
+<FORM METHOD="POST" ACTION="/cgi-bin/testtbd">
+<b>Jump URL...</b> <INPUT TEXT NAME="uuuuuu" size = 70><BR>
+<b>Image URL </b><INPUT TEXT NAME="iiiiii" size = 70><BR>
+<P><P>
+<b>Idea ........... </b> 
+<TEXTAREA NAME="tttttt"	ROWS = 3	COLS = 70 ALIGN=middle>
+</TEXTAREA>
+<CENTER> 
+<INPUT TYPE="submit" VALUE="Mark the Wall"><BR>
+<INPUT TYPE="reset" VALUE="Clear">
+</Center>
+</FORM>
+</BODY></HTML>
+@

@@ -1,0 +1,43 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.17.39;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>CHAINS under construction</TITLE>
+</HEAD>
+<BODY LINK="#238E23" VLINK="#8C1717">
+<CENTER>
+<IMG  HEIGHT=250 WIDTH=288 SRC="CHAINSImages/dozer.jpeg"></CENTER>
+<P>
+This page under construction.  Stay tuned (that's a coded message) for updates.
+<P>
+<A HREF="news.html"><IMG  HEIGHT=55 WIDTH=72 SRC="CHAINSImages/newsIcon.jpeg"></A>
+<HR>
+Copyright 1995 by <B>creating media</B>.  All rights
+reserved. 
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>.
+</body></html>
+@

@@ -1,0 +1,68 @@
+<HTML>
+<HEAD>
+<TITLE>The Code</TITLE>
+</HEAD>
+<BODY BGCOLOR="#8E2323" TEXT="DBDB70" LINK="#10FF90" VLINK="#20D0FF">
+<CENTER>
+<H1><BLINK><FONT SIZE=7><EM>The Code</FONT></BLINK></H1>
+<P>
+</CENTER>
+
+<P>
+
+<TABLE BORDER WIDTH="100%" CELLPADDING=2 CELLSPACING=3>
+<TR ALIGN=center VALIGN=top>
+<TH><B><FONT SIZE=6>The Sign</FONT></B></TH>
+<TH><B><FONT SIZE=6>The Code</FONT></B></TH>
+<TH><B><FONT SIZE=6>The Meaning</FONT></B></TH>
+</TR>
+
+
+<TR ALIGN=center>
+<TD><IMG  HEIGHT=150 WIDTH=216 SRC="CHAINSImages/limitlessCollage3.jpeg"></TD>
+<TD><FONT FIXED SIZE=5>"The imagination of man is limitless."</FONT></TD>
+<TD><A HREF="slaveStats.html"><IMG  WIDTH=97 HEIGHT=144 SRC="CHAINSImages/slave.gif"></A></TD></TR>
+
+
+<TR ALIGN=center>
+<TD><IMG  HEIGHT=123 WIDTH=144 SRC="CHAINSImages/meNsuIcon.jpeg"></TD>
+<TD><FONT FIXED SIZE=5>Me nsu bio</FONT></TD>
+<TD><FONT FIXED SIZE=5>I will weep no more.</FONT></td></TR>
+
+<TR ALIGN=center>
+<TD><A HREF= "tele.html"><IMG  HEIGHT=134 WIDTH=216 SRC="CHAINSImages/tele/tele.jpeg"></A></TD>
+<TD><A HREF="http://www.att.com/youwill/youwillads.html" name="youWill">
+    <FONT FIXED SIZE=6>"Know the code."</FONT></A></TD>
+<TD>
+    <A HREF="sound/chainBring.au" name="bringItToYou"><FONT FIXED SIZE=7><tt>
+    <BR><I>YOU WILL</I></tt></FONT><FONT SIZE=2><BR>LO-FI Sound 39KB</A>
+<br><br><A HREF="sound/chainBring.WAV">HI-FI Sound 219KB</FONT></A></TD></TR>
+
+<TR ALIGN=center>
+<TD><A HREF ="http://www.vtourist.com/webmap/africa.htm" NAME="tourist">
+    <font fixed size=3>http://</font><FONT FIXED SIZE=7>www</font>...</A><font size=3><P>Careful!
+    You can fall off the edge of this exhibit!<br>
+    (Click "<EM>Back</EM>" to return.)</FONT></TD>
+<TD><FONT FIXED SIZE=5><EM>World Wide </EM> Web</FONT></TD>
+<TD><A HREF = "margin.html">
+    <IMG  HEIGHT=144 WIDTH=105
+     SRC="CHAINSImages/world/worldCode.jpeg"></A></TD>
+</TR>
+</TABLE>
+<BR></FONT>
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+<TR ALIGN=center>
+<TD><A HREF="codedMessages.html"> <IMG  HEIGHT=108 WIDTH=144 SRC="CHAINSImages/codedIcon.jpeg"></A></TD>
+<TD><A HREF="vuGbe.html"><IMG  HEIGHT=85 WIDTH=72 SRC="CHAINSImages/drumIcon.jpeg"></A></TD>
+<TD><A HREF="performCenter.html">
+    <IMG  HEIGHT=108 WIDTH=56 SRC="CHAINSImages/performCenterIcon.jpeg"></A></TD></TR>
+</TABLE>
+<BR><HR>
+&copy; Copyright 1995 by <A HREF="bios.html#CMC"><IMG
+	WIDTH=22 HEIGHT=20 BORDER=0 align=absmiddle
+	SRC="CHAINSImages/friend.gif">creating media</A>.
+All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@graphics.cs.nyu.edu">chains@graphics.cs.nyu.edu</a>.
+</BODY></HTML>

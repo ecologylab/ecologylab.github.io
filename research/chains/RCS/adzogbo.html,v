@@ -1,0 +1,122 @@
+head	1.2;
+access;
+symbols;
+locks
+	andruid:1.2; strict;
+comment	@# @;
+
+
+1.2
+date	97.03.01.23.17.08;	author andruid;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	97.02.26.18.12.20;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@old style, w new pictures
+@
+
+
+1.2
+log
+@before meli's changes
+before meli's changes
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>CHAINS: Adzogbo</TITLE>
+</HEAD>
+<BODY bgcolor="e6ebe5" LINK="#FF2400" VLINK="#5080FF">
+<CENTER><H1>Adzogbo - Dance of the War Spirit</H1></CENTER>
+<P>
+<table cellpadding=6><tr>
+<td><IMG HEIGHT=185 WIDTH=229 SRC="CHAINSImages/adzogbo/felitwist.JPG"></td>
+<td>Adzogbo is one of the oldest and most spiritually powerful dances in the
+traditional Eve repertoire. It originated in Benin a long, long time ago.
+<td><IMG HEIGHT=160 WIDTH=203 SRC="CHAINSImages/adzogbo/linedance.JPG"></table>
+
+<table cellpadding=6><tr><td>Adzogbo was very popular during the reign
+of Togbui Kundo, who was the last great king of ancient Dahomey (Benin).
+Togbui Kundo was a great war commander
+though he never entered the actual battlefield.
+Tobgui Kundo acted as the
+intermediary for the adepts of the Adzo (war) shrine. 
+<td>
+<IMG HEIGHT=185 WIDTH=213 SRC="CHAINSImages/adzogbo/shakehands.JPG" 
+ align=left</table>
+<td>
+When the adepts would become possessed with the spirit of Adzo, Togbui
+would interpret and relay their messages from the spirit, to the
+warriors.  Togbui was later kidnapped by the British who tricked him by
+agreeing to sign a treaty with him.
+</table>
+<P>
+
+<CENTER>
+<TABLE BORDER WIDTH="100%" CELLPADDING=4>
+<TR ALIGN=center>
+<TD><A HREF="performCenter.html">
+    <IMG  HEIGHT=108 WIDTH=56 SRC="CHAINSImages/performCenterIcon.jpeg"></A></TD>
+<TD><A HREF="vuGbe.html">
+    <IMG  HEIGHT=85 WIDTH=72 SRC="CHAINSImages/drumIcon.jpeg"></A></TD>
+</TR>
+<TR ALIGN=center>
+<TD ROWSPAN=2><A HREF="codedMessages.html">
+    <IMG  HEIGHT=108 WIDTH=144 SRC="CHAINSImages/codedIcon.jpeg"></A></TD>
+<TD><A HREF="theCode.html"><blink><em><FONT SIZE=6>the code </font></blink></a>
+</TD>
+</TR>
+</TABLE>
+</CENTER>
+<P>
+&copy; Copyright 1995 by <A HREF="bios.html#CMC"><IMG
+	WIDTH=22 HEIGHT=20 BORDER=0 align=absmiddle
+	SRC="CHAINSImages/friend.gif">creating media</A>.
+All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>.
+</BODY>
+</HTML>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d3 1
+a3 1
+<TITLE>Adzogbo</TITLE>
+d5 1
+a5 1
+<BODY LINK="#FF2400" VLINK="#5080FF">
+d8 11
+a18 14
+<CENTER>
+<IMG  HEIGHT=185 WIDTH=229 SRC="CHAINSImages/adzogbo/felitwist.JPG">
+<BR CLEAR=left>
+Adzogbo is one of the oldest and most spiritually powerful dances in the
+traditional Eve repertoire.<br></CENTER>
+<TABLE>
+<TR>
+<TD><IMG HEIGHT=160 WIDTH=203 SRC="CHAINSImages/adzogbo/linedance.jpeg"></TD>
+<TD><IMG HEIGHT=185 WIDTH=213 SRC="CHAINSImages/adzogbo/shakehands.jpeg"></TD></TR>
+<TR>
+<TD COLSPAN=2>It originated in Benin a long, long time ago.  Adzogbo was very popular
+during the reign of Togbui Kundo, who was the last great king of
+ancient Dahomey (Benin).  Togbui Kundo was a great war commander
+though he never entered the actual battlefield.  He acted as the
+d20 4
+d27 2
+a28 2
+agreeing to sign a treaty with him.</TD>
+</TR></TABLE>  
+@

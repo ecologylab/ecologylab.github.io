@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<TITLE>CHAINS Performance Center</TITLE>
+</HEAD>
+
+<BODY BACKGROUND
+ ="CHAINSImages/performCenter/perfCenterBkgnd.jpeg" TEXT="000000"
+LINK="#FF2400" VLINK="#5080FF">
+
+<CENTER>
+<IMG WIDTH=288 HEIGHT=81 SRC="CHAINSImages/performCenter/CHAINS.gif"
+     ALT="CHAINS">
+<IMG WIDTH=470 HEIGHT=57 SRC="CHAINSImages/performCenter/perfCenter.gif"
+     ALT="Performance Center">
+</CENTER>
+<P>
+
+<CENTER>
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+
+<TR ALIGN=center>
+<TD><A HREF="libation.html"><IMG HEIGHT=65 WIDTH=72 alt="Libation"
+     SRC="CHAINSImages/performCenter/topourIcon.jpeg"></A></TD>
+<TD><A HREF="gadzo.html"><IMG HEIGHT=53 WIDTH=72 alt="Gadzo: CHAINS of Iron"
+     SRC="CHAINSImages/performCenter/gadzo1Icon.jpeg">
+    </A></TD> 
+<TD><A HREF="nante.html"><IMG HEIGHT=53 WIDTH=72 alt="Nante -- Walk"
+     SRC="CHAINSImages/performCenter/nanteIcon.jpeg"></A></TD>
+</TR>
+
+<TR ALIGN=center>
+<TD><A HREF="tele.html"><IMG WIDTH=72 HEIGHT=45 alt="Tele"
+     SRC="CHAINSImages/tele/teleIcon.jpeg"></A></TD>
+<TD><A HREF="whip.html"><IMG WIDTH=72 HEIGHT=54 alt="The Whip"
+     SRC="CHAINSImages/performCenter/enchainingwhip2Icon.jpeg"></A></TD>
+<TD><A HREF="adzogbo.html"><IMG WIDTH=72 HEIGHT=56 alt="Adzobgo"
+     SRC="CHAINSImages/performCenter/linedanceIcon.jpeg"</A></TD>
+</TR> 
+
+</TABLE>
+</CENTER>
+
+<HR NOSHADE SIZE=6>
+
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+<TR ALIGN=center>
+<TD><A HREF="greet.html"><IMG HEIGHT=43 WIDTH=72 alt="CHAINS Greets You"
+	SRC="CHAINSImages/greetIcon.jpeg"></A></TD>
+<TD><A HREF="i.html"><IMG WIDTH=54 HEIGHT=54 alt="Info"
+	SRC="CHAINSImages/i.gif" HSPACE=10 vspace=4
+	align=center></a></TD>
+<TD><A HREF="info.html"><IMG HEIGHT=83 WIDTH=111 alt="About CHAINS"
+	SRC="CHAINSImages/CHAINSIcon.jpeg"></A></TD>
+<TD><A HREF="codedMessages.html"><IMG HEIGHT=108 WIDTH=144 alt="Coded Messages"
+	SRC="CHAINSImages/codedIcon.jpeg"></A></TD>
+</TABLE>
+</CENTER>
+<BR>
+<HR>
+&copy; Copyright 1995 by <A HREF="bios.html#CMC"><IMG
+	WIDTH=22 HEIGHT=20 BORDER=0 align=absmiddle
+	SRC="CHAINSImages/friend.gif">creating media</A>.
+All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@graphics.cs.nyu.edu">chains@graphics.cs.nyu.edu</a>.
+</BODY></HTML>

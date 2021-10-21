@@ -1,0 +1,111 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.17.44;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title>Francis Kofi - Resume</title>
+</head>
+
+<BODY LINK="#238E23" VLINK="#8C1717">
+<CENTER><B>Francis Kofi
+<BR>Master Drummer</B></CENTER>
+<TABLE>
+<TR>
+<TD VALIGN=top><B>
+Current mailing address:</B></TD>
+<TD>
+Francis Kofi
+<BR>
+c/o James Yao Foli
+<BR>
+P.O. Box 0715
+<BR>
+Osu-Accra
+<BR>
+GHANA</TD></TR>
+<TR>
+<TD>
+<B>Phone and fax:</B></TD>
+<TD>
+233-21-777-619</CENTER>
+</TD></TR>
+<TR>
+<TD><B>Age:</B></TD><TD> 30</TD></TR>
+<TR><TD><B>Nationality:</B></TD><TD> Ghanaian</TD></TR>
+<TD><B>Languages:</B></TD><TD> English, Ewe, Twi, Ga</TD></TR>
+<TR>
+<TD VALIGN=top><B>Seeking:</B></TD><TD>Opportunities to perform and
+teach outside of 
+Ghana: specifically to lead workshops and master classes either in the
+context of a university world music program or as resident artist with
+professional or community dance companies.</TD></TR>
+<TR><TD COLSPAN=2><B>Professional experience:</B></TD></TR>
+<TR>
+<TD VALIGN=top>1993-94
+<BR>1992-93
+<BR>1984-91<BR>
+<BR>1978-83<BR></TD>
+<TD>
+Master drummer, Ghana Dance Ensemble at the National Theatre,
+Accra
+<BR>Freelance performer in Ghana, Nigeria, Togo, Benin, Burkina Faso
+<BR>Member, Ghana Dance Ensemble at the Institute for African Studies,
+University of Ghana, Legon
+<BR>Member, People's Cultural Troupe (Accra Newtown) and other groups,
+festival performances within Ghana and in Burkina Faso</TD></TR>
+<TR>
+<TD VALIGN=top><B>Awards:</B></TD>
+<TD>Ghanaian Union (Canada) "Best Performer" (1989 Canada Tour)
+<BR>Bloomsbury Society's Randolph Dunbar Award (Tour of UK 1992)</TD.</TR>
+<TR>
+<TD COLSPAN=2><B>Teaching Experience</B></TD></TR>
+<TR>
+<TD VALIGN=top>1994-present
+<BR>1990, 1991
+<BR>1988-present</TD>
+<TD>American Club, Accra; Evening dance classes for adults and for
+children
+<BR>Choreographer, Dance instructor with Groupe Nationale du Togo
+<BR>Individual instruction to visitng Fulbright scholars,
+international exchange students, Ghanaian and expatriate children</TD></TR>
+<TR>
+<TD VALIGN=top><B>Repertory:</B></TD>
+<TD>Togo Atea, Bamaya, Nagla, Setyi, Gahun, Bawaa, Damba, Takai, Lobi,
+Kpanlogo, Sohun, Yeve, Komba, Fast Agbekor I, Slow Agbekor I, Slow
+Agbekor II, Ateabekor, Gadzo, Adzogbo, Kadodo, Fume fume,
+Kpatsa, Otofo, Kundum, Gobi, Sanga, Akom, Kete, Adowaa, Anlo Dance
+Middle, Anlo, Tovi, Nymdongo, Ahe glo, Adjohum, Penpresua, Asedua,
+Gota, Gakpa, Bukom, Atamgan
+</TABLE>
+<P>
+<A HREF="francis.html"><IMG SRC="CHAINSImages/francisIcon8.gif"></A>
+
+
+<hr>
+Copyright 1995 by <B>Francis Kofi</B>.  All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>.
+</body> </html>
+@

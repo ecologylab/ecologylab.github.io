@@ -1,0 +1,74 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.17.40;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>Francis Kofi</TITLE>
+</HEAD>
+<BODY BGCOLOR="FF4500" TEXT="191970" LINK="7CFC00" VLINK="FFD700">
+<CENTER>
+<IMG SRC="CHAINSImages/francis.jpeg">
+<H1>Francis Kofi
+<BR>
+Ghanaian Master Artist</H1></CENTER>
+<P>
+The multi-talented Francis Kofi is an Ewe Master Drummer, Dancer and
+Drum Carver.  He lives in Accra, the capital city of Ghana.  Francis
+currently works as a freelance performer and carves drums for sale
+around the world.  He has led individual and group workshops on
+traditional African drumming and dancing for international students.
+In 1994 he collaborated with Melissa Lang and Andruid Kerne on <A
+HREF="http://found.cs.nyu.edu/andruid/CHAINS.html">Coded Messages:
+CHAINS</A> in which he was co-director, choreographer and master
+drummer.  You can see a short video clip of <A
+HREF="http://found.cs.nyu.edu/andruid/chainsWeb/vuGbe.html">Francis
+performing</A> in CHAINS. 
+<P>
+Francis has maintained strong ties to the Ewe traditions.  He learned
+his art from his grandfather in Togo, and is committed to sharing his
+culture with others.  Francis has written a <A HREF="francisBio.html">short
+narrative</A> of his 
+life which describes how he has developed as an artist.
+Francis is eager to work and collaborate with international artists.
+He is also available to present workshops and performances in the
+United States and Europe.  You may read his <A
+HREF=francisResume.html>resume</A>.
+<P>
+To contact Francis:
+<BR>Write:
+<BR><CENTER>
+Francis Kofi
+<BR>
+c/o James Yao Foli
+<BR>
+P.O. Box 0715
+<BR>
+Osu-Accra
+<BR>
+GHANA
+<BR>phone and fax:233-21-777-619</B></CENTER>
+
+
+</BODY>
+</HTML>@

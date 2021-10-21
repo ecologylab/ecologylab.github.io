@@ -1,0 +1,59 @@
+head	1.1;
+access;
+symbols;
+locks
+	andruid:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	97.03.01.23.25.17;	author andruid;	state Exp;
+branches;
+next	;
+
+
+desc
+@before meli's changes
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<HTML>
+<HEAD>
+<TITLE>The Whip</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#FFFFFF" LINK="#FF2400" VLINK="#20D0FF">
+<P>
+<CENTER>
+<A HREF="video/whipBig.MOV">
+   <IMG  HEIGHT=323 WIDTH=432 SRC="CHAINSImages/whip.jpeg"></A>
+<BR CLEAR=left>
+Click the picture above to download quicktime video (1.5MB).
+<P>
+<BR CLEAR=left>
+<TABLE BORDER WIDTH="100%" CELLPADDING=10 CELLSPACING=10>
+<TR ALIGN=center>
+<TD><A HREF="performCenter.html">
+    <IMG  HEIGHT=108 WIDTH=56 SRC="CHAINSImages/performCenterIcon.jpeg"></A></TD>
+<TD><A HREF="vuGbe.html">
+    <IMG  HEIGHT=85 WIDTH=72 SRC="CHAINSImages/drumIcon.jpeg"></A></TD>
+<TD><A HREF="info.html">
+    <IMG  HEIGHT=83 WIDTH=111 SRC="CHAINSImages/CHAINSIcon.jpeg"></A></TD>
+</TR>
+</TABLE>
+</CENTER>
+<HR>
+&copy; Copyright 1995 by <A HREF="bios.html#CMC"><IMG
+	WIDTH=22 HEIGHT=20 BORDER=0 align=absmiddle
+	SRC="CHAINSImages/revFriend.gif">creating media</A>.
+All rights reserved.
+<br>
+Email inquiries to 
+<a href="mailto:chains@@graphics.cs.nyu.edu">chains@@graphics.cs.nyu.edu</a>
+</BODY>
+</HTML>
+@
