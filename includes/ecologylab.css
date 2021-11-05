@@ -8,6 +8,7 @@
   --lab-bright-yellow: #fdf8b0; /* saturation 31 */
   --big-title-size: 46pt;
   --smaller-title-size: 35pt;
+  --medium-title-size: 41pt;
   --title-size: var(--big-title-size);
   --text-max-width: 1100px;
   --margin-right: 3em;
@@ -112,6 +113,10 @@ div.rootcontainer
 .smaller
 {
   font-size: var(--smaller-title-size);
+}
+.medium
+{
+  font-size: var(--medium-title-size);
 }
 #triple
 {
