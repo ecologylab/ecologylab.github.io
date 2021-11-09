@@ -5,8 +5,8 @@
 ]>
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="239px" height="137px" viewBox="276 52.5 239 137"
-	 overflow="visible" enable-background="new 276 52.5 239 137" xml:space="preserve">
+	 x="0px" y="0px" width="290px" height="136px" viewBox="250.826 52.807 290 136"
+	 overflow="visible" enable-background="new 250.826 52.807 290 136" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
 ]]>
@@ -17,100 +17,75 @@
 	<defs>
 		<rect id="SVGID_1_" width="792" height="612"/>
 	</defs>
-	<clipPath id="SVGID_6_">
+	<clipPath id="SVGID_3_">
 		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
-	<g clip-path="url(#SVGID_6_)">
+	<g clip-path="url(#SVGID_3_)">
 		<defs>
-			<rect id="SVGID_5_" x="276" y="52.5" width="240" height="137.25"/>
+			<rect id="SVGID_2_" x="250.5" y="52.5" width="291" height="137.25"/>
 		</defs>
-		<clipPath id="SVGID_7_">
-			<use xlink:href="#SVGID_5_"  overflow="visible"/>
-		</clipPath>
-		<rect x="277.5" y="54" clip-path="url(#SVGID_7_)" fill="#FFFFFF" width="237.75" height="135"/>
-		<path opacity="0.149" clip-path="url(#SVGID_7_)" d="M276.75,188.25L276.75,188.25h238.5V189h-238.5V188.25z M276.75,165.75
-			L276.75,165.75h238.5v0.75h-238.5V165.75z M276.75,143.25L276.75,143.25h238.5V144h-238.5V143.25z M276.75,120.75L276.75,120.75
-			h238.5v0.75h-238.5V120.75z M276.75,98.25L276.75,98.25h238.5V99h-238.5V98.25z M276.75,75.75L276.75,75.75h238.5v0.75h-238.5
-			V75.75z M276.75,53.25L276.75,53.25h238.5V54h-238.5V53.25z M515.25,166.5L515.25,166.5v21.75h-0.75V166.5H515.25z M515.25,144
-			L515.25,144v21.75h-0.75V144H515.25z M515.25,121.5L515.25,121.5v21.75h-0.75V121.5H515.25z M515.25,99L515.25,99v21.75h-0.75V99
-			H515.25z M515.25,76.5L515.25,76.5v21.75h-0.75V76.5H515.25z M515.25,54L515.25,54v21.75h-0.75V54H515.25z M478.5,166.5
-			L478.5,166.5v21.75h-0.75V166.5H478.5z M478.5,144L478.5,144v21.75h-0.75V144H478.5z M478.5,99L478.5,99v21.75h-0.75V99H478.5z
-			 M478.5,76.5L478.5,76.5v21.75h-0.75V76.5H478.5z M478.5,54L478.5,54v21.75h-0.75V54H478.5z M390,166.5L390,166.5v21.75h-0.75
-			V166.5H390z M390,144L390,144v21.75h-0.75V144H390z M390,121.5L390,121.5v21.75h-0.75V121.5H390z M390,99L390,99v21.75h-0.75V99
-			H390z M390,76.5L390,76.5v21.75h-0.75V76.5H390z M390,54L390,54v21.75h-0.75V54H390z M316.5,166.5L316.5,166.5v21.75h-0.75V166.5
-			H316.5z M316.5,144L316.5,144v21.75h-0.75V144H316.5z M316.5,121.5L316.5,121.5v21.75h-0.75V121.5H316.5z M316.5,99L316.5,99
-			v21.75h-0.75V99H316.5z M316.5,76.5L316.5,76.5v21.75h-0.75V76.5H316.5z M316.5,54L316.5,54v21.75h-0.75V54H316.5z M277.5,166.5
-			L277.5,166.5v21.75h-0.75V166.5H277.5z M277.5,144L277.5,144v21.75h-0.75V144H277.5z M277.5,121.5L277.5,121.5v21.75h-0.75V121.5
-			H277.5z M277.5,99L277.5,99v21.75h-0.75V99H277.5z M277.5,76.5L277.5,76.5v21.75h-0.75V76.5H277.5z M277.5,54L277.5,54v21.75
-			h-0.75V54H277.5z"/>
-		<g clip-path="url(#SVGID_7_)">
-			<text transform="matrix(1 0 0 1 279.7495 72.9502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">data</text>
-		</g>
-		<g clip-path="url(#SVGID_7_)">
-			<text transform="matrix(1 0 0 1 318.7495 72.9502)" font-family="'HelveticaNeue'" font-size="9.75">qualitative</text>
-		</g>
-		<g clip-path="url(#SVGID_7_)">
-			<text transform="matrix(1 0 0 1 392.2495 72.9502)" font-family="'HelveticaNeue'" font-size="9.75">quantitative</text>
-		</g>
-	</g>
-	<g clip-path="url(#SVGID_6_)">
-		<defs>
-			<rect id="SVGID_3_" x="276" y="52.5" width="240" height="137.25"/>
-		</defs>
-		<clipPath id="SVGID_8_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
-		</clipPath>
-		<g clip-path="url(#SVGID_8_)">
-			<defs>
-				<rect id="SVGID_4_" x="316.5" y="76.5" width="72.75" height="21.75"/>
-			</defs>
-			<clipPath id="SVGID_9_">
-				<use xlink:href="#SVGID_4_"  overflow="visible"/>
-			</clipPath>
-			<g clip-path="url(#SVGID_9_)">
-				<text transform="matrix(1 0 0 1 318.7495 95.4502)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="9.75">g</tspan><tspan x="5.596" y="0" font-family="'HelveticaNeue'" font-size="9.75">r</tspan><tspan x="8.667" y="0" font-family="'HelveticaNeue'" font-size="9.75">ounded theo</tspan><tspan x="63.939" y="0" font-family="'HelveticaNeue'" font-size="9.75">r</tspan><tspan x="67.225" y="0" font-family="'HelveticaNeue'" font-size="9.75">y</tspan></text>
-			</g>
-		</g>
-	</g>
-	<g clip-path="url(#SVGID_6_)">
-		<defs>
-			<rect id="SVGID_2_" x="276" y="52.5" width="240" height="137.25"/>
-		</defs>
-		<clipPath id="SVGID_10_">
+		<clipPath id="SVGID_4_">
 			<use xlink:href="#SVGID_2_"  overflow="visible"/>
 		</clipPath>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 392.2495 95.4502)" font-family="'HelveticaNeue'" font-size="9.75">ideation metrics</text>
+		<rect x="252" y="54" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="288.75" height="135"/>
+		<path opacity="0.149" clip-path="url(#SVGID_4_)" d="M251.25,188.25L251.25,188.25h289.5V189h-289.5V188.25z M251.25,165.75
+			L251.25,165.75h289.5v0.75h-289.5V165.75z M251.25,143.25L251.25,143.25h289.5V144h-289.5V143.25z M251.25,120.75L251.25,120.75
+			h289.5v0.75h-289.5V120.75z M251.25,98.25L251.25,98.25h289.5V99h-289.5V98.25z M251.25,75.75L251.25,75.75h289.5v0.75h-289.5
+			V75.75z M251.25,53.25L251.25,53.25h289.5V54h-289.5V53.25z M540.75,166.5L540.75,166.5v21.75H540V166.5H540.75z M540.75,144
+			L540.75,144v21.75H540V144H540.75z M540.75,121.5L540.75,121.5v21.75H540V121.5H540.75z M540.75,99L540.75,99v21.75H540V99H540.75
+			z M540.75,76.5L540.75,76.5v21.75H540V76.5H540.75z M540.75,54L540.75,54v21.75H540V54H540.75z M504,166.5L504,166.5v21.75h-0.75
+			V166.5H504z M504,144L504,144v21.75h-0.75V144H504z M504,121.5L504,121.5v21.75h-0.75V121.5H504z M504,99L504,99v21.75h-0.75V99
+			H504z M504,76.5L504,76.5v21.75h-0.75V76.5H504z M504,54L504,54v21.75h-0.75V54H504z M387.75,166.5L387.75,166.5v21.75H387V166.5
+			H387.75z M387.75,144L387.75,144v21.75H387V144H387.75z M387.75,121.5L387.75,121.5v21.75H387V121.5H387.75z M387.75,99L387.75,99
+			v21.75H387V99H387.75z M387.75,76.5L387.75,76.5v21.75H387V76.5H387.75z M387.75,54L387.75,54v21.75H387V54H387.75z M291,166.5
+			L291,166.5v21.75h-0.75V166.5H291z M291,144L291,144v21.75h-0.75V144H291z M291,121.5L291,121.5v21.75h-0.75V121.5H291z M291,99
+			L291,99v21.75h-0.75V99H291z M291,76.5L291,76.5v21.75h-0.75V76.5H291z M291,54L291,54v21.75h-0.75V54H291z M252,166.5L252,166.5
+			v21.75h-0.75V166.5H252z M252,144L252,144v21.75h-0.75V144H252z M252,121.5L252,121.5v21.75h-0.75V121.5H252z M252,99L252,99
+			v21.75h-0.75V99H252z M252,76.5L252,76.5v21.75h-0.75V76.5H252z M252,54L252,54v21.75h-0.75V54H252z"/>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 254.2495 72.9502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">data</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 318.7495 117.9502)" font-family="'HelveticaNeue'" font-size="9.75">visual data</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 293.2495 72.9502)" font-family="'HelveticaNeue'" font-size="9.75">qualitative</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 392.2495 117.9502)" font-family="'HelveticaNeue'" font-size="9.75">AI design analytics</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 72.9502)" font-family="'HelveticaNeue'" font-size="9.75">quantitative</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 392.2495 140.4502)" font-family="'HelveticaNeue'" font-size="9.75">engagement analytics</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 293.2495 95.4502)"><tspan x="0" y="0" font-family="'HelveticaNeue'" font-size="9.75">g</tspan><tspan x="5.596" y="0" font-family="'HelveticaNeue'" font-size="9.75">r</tspan><tspan x="8.667" y="0" font-family="'HelveticaNeue'" font-size="9.75">ounded theo</tspan><tspan x="63.939" y="0" font-family="'HelveticaNeue'" font-size="9.75">r</tspan><tspan x="67.225" y="0" font-family="'HelveticaNeue'" font-size="9.75">y</tspan></text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 279.7495 162.9502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">setting</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 95.4502)" font-family="'HelveticaNeue'" font-size="9.75">ideation metrics</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 318.7495 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">field</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 293.2495 117.9502)" font-family="'HelveticaNeue'" font-size="9.75">visual data</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 392.2495 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">lab</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 117.9502)" font-family="'HelveticaNeue'" font-size="9.75">AI design analytics</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 480.75 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">crowd</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 140.4502)" font-family="'HelveticaNeue'" font-size="9.75">engagement analytics</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 279.7495 185.4502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">task</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 254.2495 162.9502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">setting</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 318.7495 185.4502)" font-family="'HelveticaNeue'" font-size="9.75">situated</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 293.2495 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">field</text>
 		</g>
-		<g clip-path="url(#SVGID_10_)">
-			<text transform="matrix(1 0 0 1 392.2495 185.4502)" font-family="'HelveticaNeue'" font-size="9.75">controlled</text>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">lab</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 506.25 162.9502)" font-family="'HelveticaNeue'" font-size="9.75">crowd</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 254.2495 185.4502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">task</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 293.2495 185.4502)" font-family="'HelveticaNeue'" font-size="9.75">situated</text>
+		</g>
+		<g clip-path="url(#SVGID_4_)">
+			<text transform="matrix(1 0 0 1 389.9995 185.4502)" font-family="'HelveticaNeue'" font-size="9.75">controlled</text>
 		</g>
 	</g>
 </g>
