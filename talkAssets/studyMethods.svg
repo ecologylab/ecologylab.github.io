@@ -1,79 +1,345 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="333.333px" height="120.667px" viewBox="0 0 333.333 120.667" enable-background="new 0 0 333.333 120.667"
-	 xml:space="preserve">
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="301px" height="186px" viewBox="-2.7 -4.7 301 186"
+	 overflow="visible" enable-background="new -2.7 -4.7 301 186" xml:space="preserve">
+<defs>
+</defs>
 <g>
 	<defs>
-		<rect id="SVGID_1_" x="-229" y="-49" width="792" height="612"/>
+		<rect id="SVGID_33_" x="2" y="2" width="291" height="176"/>
 	</defs>
-	<clipPath id="SVGID_2_">
+	<clipPath id="SVGID_34_">
+		<use xlink:href="#SVGID_33_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_34_)">
+		<text transform="matrix(1 0 0 1 4 21)"><tspan x="0" y="0" font-family="'Helvetica-Bold'" font-size="10">d</tspan><tspan x="6" y="0" font-family="'Helvetica-Bold'" font-size="10">a</tspan><tspan x="12" y="0" font-family="'Helvetica-Bold'" font-size="10">t</tspan><tspan x="15" y="0" font-family="'Helvetica-Bold'" font-size="10">a</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_32_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_35_">
+		<use xlink:href="#SVGID_32_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_35_)">
+		<text transform="matrix(1 0 0 1 49 21)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">qua</tspan><tspan x="18" y="0" font-family="'Helvetica'" font-size="10">li</tspan><tspan x="22" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="25" y="0" font-family="'Helvetica'" font-size="10">a</tspan><tspan x="31" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="34" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="36" y="0" font-family="'Helvetica'" font-size="10">ve</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_31_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_36_">
+		<use xlink:href="#SVGID_31_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_36_)">
+		<text transform="matrix(1 0 0 1 49 43)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">v</tspan><tspan x="14" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="16" y="0" font-family="'Helvetica'" font-size="10">s</tspan><tspan x="21" y="0" font-family="'Helvetica'" font-size="10">ua</tspan><tspan x="33" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="35" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="38" y="0" font-family="'Helvetica'" font-size="10">da</tspan><tspan x="50" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="53" y="0" font-family="'Helvetica'" font-size="10">a</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_30_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_37_">
+		<use xlink:href="#SVGID_30_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_37_)">
+		<text transform="matrix(1 0 0 1 49 65)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">g</tspan><tspan x="15" y="0" font-family="'Helvetica'" font-size="10">r</tspan><tspan x="18" y="0" font-family="'Helvetica'" font-size="10">ounded</tspan><tspan x="53.9" y="0" font-family="'Helvetica'" font-size="10"> t</tspan><tspan x="59.9" y="0" font-family="'Helvetica'" font-size="10">heo</tspan><tspan x="77.9" y="0" font-family="'Helvetica'" font-size="10">r</tspan><tspan x="80.9" y="0" font-family="'Helvetica'" font-size="10">y</tspan><tspan x="85.9" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="88.9" y="0" font-family="'Helvetica'" font-size="10">(</tspan><tspan x="91.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="94.9" y="0" font-family="'Helvetica'" font-size="10">e</tspan><tspan x="100.9" y="0" font-family="'Helvetica'" font-size="10">x</tspan><tspan x="105.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="108.9" y="0" font-family="'Helvetica'" font-size="10">ua</tspan><tspan x="120.9" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="122.9" y="0" font-family="'Helvetica'" font-size="10">)</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_29_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_38_">
+		<use xlink:href="#SVGID_29_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_38_)">
+		<text transform="matrix(1 0 0 1 4 109)"><tspan x="0" y="0" font-family="'Helvetica-Bold'" font-size="10">se</tspan><tspan x="12" y="0" font-family="'Helvetica-Bold'" font-size="10">tt</tspan><tspan x="18" y="0" font-family="'Helvetica-Bold'" font-size="10">i</tspan><tspan x="21" y="0" font-family="'Helvetica-Bold'" font-size="10">n</tspan><tspan x="27" y="0" font-family="'Helvetica-Bold'" font-size="10">g</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_28_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_39_">
+		<use xlink:href="#SVGID_28_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_39_)">
+		<text transform="matrix(1 0 0 1 49 109)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">f</tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="5" y="0" font-family="'Helvetica'" font-size="10">e</tspan><tspan x="11" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="13" y="0" font-family="'Helvetica'" font-size="10">d</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_27_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_40_">
+		<use xlink:href="#SVGID_27_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_40_)">
+		<text transform="matrix(1 0 0 1 180 109)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="2" y="0" font-family="'Helvetica'" font-size="10">a</tspan><tspan x="8" y="0" font-family="'Helvetica'" font-size="10">b</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_26_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_41_">
+		<use xlink:href="#SVGID_26_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_41_)">
+		<text transform="matrix(1 0 0 1 253 109)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">c</tspan><tspan x="5" y="0" font-family="'Helvetica'" font-size="10">r</tspan><tspan x="8" y="0" font-family="'Helvetica'" font-size="10">o</tspan><tspan x="14" y="0" font-family="'Helvetica'" font-size="10">w</tspan><tspan x="21" y="0" font-family="'Helvetica'" font-size="10">d</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_25_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_42_">
+		<use xlink:href="#SVGID_25_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_42_)">
+		<text transform="matrix(1 0 0 1 4 131)"><tspan x="0" y="0" font-family="'Helvetica-Bold'" font-size="10">t</tspan><tspan x="3" y="0" font-family="'Helvetica-Bold'" font-size="10">as</tspan><tspan x="15" y="0" font-family="'Helvetica-Bold'" font-size="10">k</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_24_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_43_">
+		<use xlink:href="#SVGID_24_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_43_)">
+		<text transform="matrix(1 0 0 1 49 131)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">s</tspan><tspan x="5" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="7" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="10" y="0" font-family="'Helvetica'" font-size="10">ua</tspan><tspan x="22" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="25" y="0" font-family="'Helvetica'" font-size="10">e</tspan><tspan x="31" y="0" font-family="'Helvetica'" font-size="10">d</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_23_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_44_">
+		<use xlink:href="#SVGID_23_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_44_)">
+		<text transform="matrix(1 0 0 1 180 131)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">c</tspan><tspan x="5" y="0" font-family="'Helvetica'" font-size="10">on</tspan><tspan x="17" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="20" y="0" font-family="'Helvetica'" font-size="10">r</tspan><tspan x="23" y="0" font-family="'Helvetica'" font-size="10">o</tspan><tspan x="29" y="0" font-family="'Helvetica'" font-size="10">ll</tspan><tspan x="33" y="0" font-family="'Helvetica'" font-size="10">e</tspan><tspan x="39" y="0" font-family="'Helvetica'" font-size="10">d</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_22_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_45_">
+		<use xlink:href="#SVGID_22_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_45_)">
+		<text transform="matrix(1 0 0 1 4 175)"><tspan x="0" y="0" font-family="'Helvetica-Bold'" font-size="10">ac</tspan><tspan x="12" y="0" font-family="'Helvetica-Bold'" font-size="10">t</tspan><tspan x="15" y="0" font-family="'Helvetica-Bold'" font-size="10">i</tspan><tspan x="18" y="0" font-family="'Helvetica-Bold'" font-size="10">v</tspan><tspan x="24" y="0" font-family="'Helvetica-Bold'" font-size="10">i</tspan><tspan x="27" y="0" font-family="'Helvetica-Bold'" font-size="10">t</tspan><tspan x="30" y="0" font-family="'Helvetica-Bold'" font-size="10">y</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_21_" x="2" y="2" width="291" height="176"/>
+	</defs>
+	<clipPath id="SVGID_46_">
+		<use xlink:href="#SVGID_21_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_46_)">
+		<text transform="matrix(1 0 0 1 49 175)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">open</tspan><tspan x="24" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="27" y="0" font-family="'Helvetica'" font-size="10">ende</tspan><tspan x="50.9" y="0" font-family="'Helvetica'" font-size="10">d</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_20_" x="178" y="2" width="114" height="21"/>
+	</defs>
+	<clipPath id="SVGID_47_">
+		<use xlink:href="#SVGID_20_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_47_)">
+		<text transform="matrix(1 0 0 1 180 21)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10">quan</tspan><tspan x="24" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="27" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="29" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="32" y="0" font-family="'Helvetica'" font-size="10">a</tspan><tspan x="38" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="41" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="43" y="0" font-family="'Helvetica'" font-size="10">ve</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_19_" x="178" y="24" width="114" height="21"/>
+	</defs>
+	<clipPath id="SVGID_48_">
+		<use xlink:href="#SVGID_19_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_48_)">
+		<text transform="matrix(1 0 0 1 180 43)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="11" y="0" font-family="'Helvetica'" font-size="10">dea</tspan><tspan x="29" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="32" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="34" y="0" font-family="'Helvetica'" font-size="10">on</tspan><tspan x="46" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="49" y="0" font-family="'Helvetica'" font-size="10">m</tspan><tspan x="57" y="0" font-family="'Helvetica'" font-size="10">e</tspan><tspan x="62.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="65.9" y="0" font-family="'Helvetica'" font-size="10">r</tspan><tspan x="68.9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="70.9" y="0" font-family="'Helvetica'" font-size="10">cs</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_18_" x="178" y="46" width="114" height="21"/>
+	</defs>
+	<clipPath id="SVGID_49_">
+		<use xlink:href="#SVGID_18_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_49_)">
+		<text transform="matrix(1 0 0 1 180 65)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">A</tspan><tspan x="16" y="0" font-family="'Helvetica'" font-size="10">I </tspan><tspan x="22" y="0" font-family="'Helvetica'" font-size="10">de</tspan><tspan x="34" y="0" font-family="'Helvetica'" font-size="10">s</tspan><tspan x="39" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="41" y="0" font-family="'Helvetica'" font-size="10">gn</tspan><tspan x="53" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="56" y="0" font-family="'Helvetica'" font-size="10">ana</tspan><tspan x="73.9" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="75.9" y="0" font-family="'Helvetica'" font-size="10">y</tspan><tspan x="80.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="83.9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="85.9" y="0" font-family="'Helvetica'" font-size="10">cs</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_17_" x="178" y="68" width="114" height="21"/>
+	</defs>
+	<clipPath id="SVGID_50_">
+		<use xlink:href="#SVGID_17_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_50_)">
+		<text transform="matrix(1 0 0 1 180 87)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">engage</tspan><tspan x="44.9" y="0" font-family="'Helvetica'" font-size="10">m</tspan><tspan x="52.9" y="0" font-family="'Helvetica'" font-size="10">en</tspan><tspan x="64.9" y="0" font-family="'Helvetica'" font-size="10">t </tspan><tspan x="70.9" y="0" font-family="'Helvetica'" font-size="10">ana</tspan><tspan x="88.9" y="0" font-family="'Helvetica'" font-size="10">l</tspan><tspan x="90.9" y="0" font-family="'Helvetica'" font-size="10">y</tspan><tspan x="95.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="98.9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="100.9" y="0" font-family="'Helvetica'" font-size="10">cs</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_16_" x="47" y="134" width="203" height="21"/>
+	</defs>
+	<clipPath id="SVGID_51_">
+		<use xlink:href="#SVGID_16_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_51_)">
+		<text transform="matrix(1 0 0 1 49 153)"><tspan x="0" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="3" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="6" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="11" y="0" font-family="'Helvetica'" font-size="10">n</tspan><tspan x="17" y="0" font-family="'Helvetica'" font-size="10">f</tspan><tspan x="20" y="0" font-family="'Helvetica'" font-size="10">o</tspan><tspan x="26" y="0" font-family="'Helvetica'" font-size="10">rm</tspan><tspan x="37" y="0" font-family="'Helvetica'" font-size="10">a</tspan><tspan x="43" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="46" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="48" y="0" font-family="'Helvetica'" font-size="10">on</tspan><tspan x="60" y="0" font-family="'Helvetica'" font-size="10">-</tspan><tspan x="63" y="0" font-family="'Helvetica'" font-size="10">ba</tspan><tspan x="74.9" y="0" font-family="'Helvetica'" font-size="10">s</tspan><tspan x="79.9" y="0" font-family="'Helvetica'" font-size="10">ed</tspan><tspan x="91.9" y="0" font-family="'Helvetica'" font-size="10"> </tspan><tspan x="94.9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="96.9" y="0" font-family="'Helvetica'" font-size="10">dea</tspan><tspan x="114.9" y="0" font-family="'Helvetica'" font-size="10">t</tspan><tspan x="117.9" y="0" font-family="'Helvetica'" font-size="10">i</tspan><tspan x="119.9" y="0" font-family="'Helvetica'" font-size="10">o</tspan><tspan x="125.9" y="0" font-family="'Helvetica'" font-size="10">n</tspan></text>
+	</g>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_15_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_52_">
+		<use xlink:href="#SVGID_15_"  overflow="visible"/>
+	</clipPath>
+	<rect x="177" y="2" clip-path="url(#SVGID_52_)" fill="#AEAAAA" width="1" height="132"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_14_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_53_">
+		<use xlink:href="#SVGID_14_"  overflow="visible"/>
+	</clipPath>
+	<rect x="1" y="1" clip-path="url(#SVGID_53_)" fill="#AEAAAA" width="1" height="177"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_13_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_54_">
+		<use xlink:href="#SVGID_13_"  overflow="visible"/>
+	</clipPath>
+	<rect x="46" y="2" clip-path="url(#SVGID_54_)" fill="#AEAAAA" width="1" height="176"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_12_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_55_">
+		<use xlink:href="#SVGID_12_"  overflow="visible"/>
+	</clipPath>
+	<rect x="177" y="156" clip-path="url(#SVGID_55_)" fill="#AEAAAA" width="1" height="22"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_11_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_56_">
+		<use xlink:href="#SVGID_11_"  overflow="visible"/>
+	</clipPath>
+	<rect x="292" y="2" clip-path="url(#SVGID_56_)" fill="#AEAAAA" width="1" height="132"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_10_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_57_">
+		<use xlink:href="#SVGID_10_"  overflow="visible"/>
+	</clipPath>
+	<rect x="250" y="90" clip-path="url(#SVGID_57_)" fill="#AEAAAA" width="1" height="88"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_9_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_58_">
+		<use xlink:href="#SVGID_9_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="1" clip-path="url(#SVGID_58_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_8_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_59_">
+		<use xlink:href="#SVGID_8_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="23" clip-path="url(#SVGID_59_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_7_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_60_">
+		<use xlink:href="#SVGID_7_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="45" clip-path="url(#SVGID_60_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_6_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_61_">
+		<use xlink:href="#SVGID_6_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="67" clip-path="url(#SVGID_61_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_5_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_62_">
+		<use xlink:href="#SVGID_5_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="89" clip-path="url(#SVGID_62_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_4_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_63_">
+		<use xlink:href="#SVGID_4_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="111" clip-path="url(#SVGID_63_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_3_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_64_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="133" clip-path="url(#SVGID_64_)" fill="#AEAAAA" width="291" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_2_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_65_">
+		<use xlink:href="#SVGID_2_"  overflow="visible"/>
+	</clipPath>
+	<rect x="2" y="155" clip-path="url(#SVGID_65_)" fill="#AEAAAA" width="249" height="1"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="296" height="181"/>
+	</defs>
+	<clipPath id="SVGID_66_">
 		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		<defs>
-			<rect id="SVGID_3_" x="3.125" y="3.5" width="327.75" height="114.75"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
-		</clipPath>
-		<rect x="4.625" y="5" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="325.5" height="112.5"/>
-		<path opacity="0.149" clip-path="url(#SVGID_4_)" d="M3.875,116.75L3.875,116.75h326.25v0.75H3.875V116.75z M3.875,94.25
-			L3.875,94.25h326.25V95H3.875V94.25z M3.875,71.75L3.875,71.75h326.25v0.75H3.875V71.75z M3.875,49.25L3.875,49.25h326.25V50
-			H3.875V49.25z M3.875,26.75L3.875,26.75h326.25v0.75H3.875V26.75z M3.875,4.25L3.875,4.25h326.25V5H3.875V4.25z M330.125,95
-			L330.125,95v21.75h-0.75V95H330.125z M330.125,72.5L330.125,72.5v21.75h-0.75V72.5H330.125z M330.125,50L330.125,50v21.75h-0.75
-			V50H330.125z M330.125,27.5L330.125,27.5v21.75h-0.75V27.5H330.125z M330.125,5L330.125,5v21.75h-0.75V5H330.125z M254.375,95
-			L254.375,95v21.75h-0.75V95H254.375z M254.375,72.5L254.375,72.5v21.75h-0.75V72.5H254.375z M254.375,50L254.375,50v21.75h-0.75
-			V50H254.375z M254.375,27.5L254.375,27.5v21.75h-0.75V27.5H254.375z M254.375,5L254.375,5v21.75h-0.75V5H254.375z M146.375,95
-			L146.375,95v21.75h-0.75V95H146.375z M146.375,72.5L146.375,72.5v21.75h-0.75V72.5H146.375z M146.375,50L146.375,50v21.75h-0.75
-			V50H146.375z M146.375,27.5L146.375,27.5v21.75h-0.75V27.5H146.375z M146.375,5L146.375,5v21.75h-0.75V5H146.375z M62.375,95
-			L62.375,95v21.75h-0.75V95H62.375z M62.375,72.5L62.375,72.5v21.75h-0.75V72.5H62.375z M62.375,50L62.375,50v21.75h-0.75V50
-			H62.375z M62.375,27.5L62.375,27.5v21.75h-0.75V27.5H62.375z M62.375,5L62.375,5v21.75h-0.75V5H62.375z M4.625,95L4.625,95v21.75
-			h-0.75V95H4.625z M4.625,72.5L4.625,72.5v21.75h-0.75V72.5H4.625z M4.625,50L4.625,50v21.75h-0.75V50H4.625z M4.625,27.5
-			L4.625,27.5v21.75h-0.75V27.5H4.625z M4.625,5L4.625,5v21.75h-0.75V5H4.625z"/>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 6.8745 22.4502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">data</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 64.6245 22.4502)" font-family="'HelveticaNeue'" font-size="9.75">qualitative</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 148.6245 22.4502)" font-family="'HelveticaNeue'" font-size="9.75">quantiative</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 64.6245 44.9502)" font-family="'HelveticaNeue'" font-size="9.75">grounded theory</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 148.6245 44.9502)" font-family="'HelveticaNeue'" font-size="9.75">ideation metrics</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 64.6245 67.4502)" font-family="'HelveticaNeue'" font-size="9.75">visual data</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 148.6245 67.4502)" font-family="'HelveticaNeue'" font-size="9.75">engagement analytics</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 6.8745 89.9502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">setting</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 64.6245 89.9502)" font-family="'HelveticaNeue'" font-size="9.75">field</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 148.6245 89.9502)" font-family="'HelveticaNeue'" font-size="9.75">lab</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 256.625 89.9502)" font-family="'HelveticaNeue'" font-size="9.75">crowd</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 6.8745 112.4502)" font-family="'HelveticaNeue-Bold'" font-size="9.75">task</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 64.6245 112.4502)" font-family="'HelveticaNeue'" font-size="9.75">situated</text>
-		</g>
-		<g clip-path="url(#SVGID_4_)">
-			<text transform="matrix(1 0 0 1 148.6245 112.4502)" font-family="'HelveticaNeue'" font-size="9.75">controlled</text>
-		</g>
-	</g>
+	<rect x="2" y="177" clip-path="url(#SVGID_66_)" fill="#AEAAAA" width="249" height="1"/>
 </g>
 </svg>
