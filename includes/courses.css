@@ -75,6 +75,13 @@ img.course_img
 
     width: 100%;
 }
+#iframe_container2
+{
+    position: relative;
+/*    overflow: hidden;*/
+
+    width: 100%;
+}
 #google-doc-iframe {
     top: 0;
     left: 0;

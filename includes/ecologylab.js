@@ -28,6 +28,11 @@ function popOutIFrame()
 	 var gDocIFrame = document.getElementById("google-doc-iframe");
 	 window.open(gDocIFrame.src, '_blank');
 }
+function popOutIFrame2() 
+{
+	 var gDocIFrame = document.getElementById("google-doc-iframe2");
+	 window.open(gDocIFrame.src, '_blank');
+}
 
 document.addEventListener('keydown', (event) => {
   const keyName = event.key;
