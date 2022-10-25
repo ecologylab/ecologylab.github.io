@@ -93,8 +93,8 @@ img.course_img
     clear: none;
 }
 #google-doc-iframe2 {
-	width: 578px;
-	height: 1000px;
+	width: 100%;
+	height: 3000px;
 	border: none;
 	margin: 0px;
 	padding: 0px;
@@ -103,7 +103,7 @@ img.course_img
 
 #google-doc-iframe-wide {
 	width: 625px;
-	height: 1000px;
+	height: 1200px;
 	border: none;
 	margin: 0px;
 	padding: 0px;
