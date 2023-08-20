@@ -39,6 +39,50 @@ div.banner
   font-weight: bold;
   color: #666666;
 }
+.banner_design
+{
+  font-weight: bold;
+  color: #666666;
+  font-family: sans-serif;
+}
+.banner_programming
+{
+  font-weight: bold;
+  color: #666666;
+  font-family: monospace;
+    top: 5px;
+}
+.banner_interface
+{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.ui_logo_slashes
+{
+    position: relative;
+    top: 2pt;
+    color: #222222;
+    filter: blur(2px);
+    font-family: monospace;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-size: calc(var(--title-size) * 5 / 4);
+}
+.ui_logo
+{
+    opacity: .6;
+    filter: blur(2px);
+}
+.ui_over
+{
+        position: absolute;
+    top: 16px;
+    left: 1px;
+    opacity: .33;
+    filter: blur(3px);
+    background: radial-gradient(ellipse at center, #ff33ac 0%, #5b2c15 100%);
+}
 .banner_centered
 {
   vertical-align: top;
