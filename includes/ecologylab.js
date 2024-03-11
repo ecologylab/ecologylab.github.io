@@ -7,22 +7,44 @@ function toggleNav(event)
   else
       navStyle.visibility = "visible";
   
-  event.stopPropagation;
+  event.stopPropagation();
 }
-function handleKey(e)
-{
-  
-}
+
 function offNav()
 {
       var nav     =document.getElementById("navigation_container");
       var navStyle=nav.style;
       navStyle.visibility = "hidden";      
 }
-function handleClick(event)
-{
-  alert(event.target)
+
+document.addEventListener('keydown', (event) => 
+  {
+    const keyName = event.key;
+    if (keyName == "Escape")
+    {
+      offNav();   
+    }
+  // alert('keydown event\n\n' + 'key: ' + keyName);
+  });
+
+function offNonTriple(event) {
+
+    var nav     = document.getElementById('navigation_container');
+    var triple  = document.getElementById('triple');
+    var parent  = event.target.parentNode;
+    if (event.target != nav && parent != nav
+        && (parent != null && parent.parentNode != nav)
+        && event.target != triple && parent != triple
+       )
+    {
+      nav.style.visibility = "hidden";
+      event.stopPropagation();
+    }
 }
+
+window.addEventListener('click', offNonTriple);
+window.addEventListener('touchstart', offNonTriple);
+
 function popOutIFrame() 
 {
 	 var gDocIFrame = document.getElementById("google-doc-iframe");
@@ -33,35 +55,6 @@ function popOutIFrame2()
 	 var gDocIFrame = document.getElementById("google-doc-iframe2");
 	 window.open(gDocIFrame.src, '_blank');
 }
-
-document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
-  if (keyName == "Escape")
-    {
-      offNav();   
-    }
- // alert('keydown event\n\n' + 'key: ' + keyName);
-});
-
-function offNonTriple(event) {
-  return function(event){
-    var nav     = document.getElementById('navigation_container');
-    var triple  = document.getElementById('triple');
-    var parent  = event.target.parentNode;
-    if (event.target != nav && parent != nav
-        && (parent != null && parent.parentNode != nav)
-        && event.target != triple && parent != triple
-       )
-    {
-      nav.style.visibility = "hidden";
-      event.stopPropagation;
-    }
-  };
-}
-
-window.addEventListener('click', offNonTriple(event));
-window.addEventListener('touchstart', offNonTriple(event));
-
 /////////////////////////////////////////////
 // wishful thinking
 //
@@ -84,4 +77,13 @@ function fixGDocTargets2(thatFrame)
 		});
 */
 	}
+}
+
+function handleKey(e)
+{
+  
+}
+function handleClick(event)
+{
+  alert(event.target)
 }
