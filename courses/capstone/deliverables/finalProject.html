@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>final project [curation + ideation]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="../../../code/styles/ecologylab/courses.css" rel="stylesheet">
+<link rel="shortcut icon" href="../../../images/ecologylab-16.ico" type="image/ico">
+<link rel="icon" href="../../../images/ecologylab-16.png" type="image/png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="../../../code/js/fixGDocTargets.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20550827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+var phases = new Object();
+phases.overview		= "https://docs.google.com/document/d/1Dum1NxoEEe2M-wEqldDquQYaPvAgFXwccgdJM8AjR5M/pub?embedded=true";
+phases.proposal		= "https://docs.google.com/document/d/1aLXjQIml8G5jDZXqkae8sRhbkx1XyH4XE_Io2ML9UZo/pub?embedded=true";
+phases.revision		= "https://docs.google.com/document/d/1Gsf-CtvSMcQPBpuAdwSIUsmzax3dniTXbwtwuNxOXjk/pub?embedded=true";
+phases.prototype1	= "https://docs.google.com/document/d/1yGMFHATAHZZ2-KnBxQLHX-4Nq7LAGmz2Q5a3S0h-9ug/pub?embedded=true";
+phases.study1		= "https://docs.google.com/document/d/10smfJE5-T5SS-vWoY--SsvvIKw8ln1xXnJFnOoXp7jk/pub?embedded=true";
+phases.prototype2	= "https://docs.google.com/document/d/1if8IAZI9HssT7wXe3LEEMyVNLKwSWQFj58s2WGv7Smk/pub?embedded=true";
+phases.study2		= "https://docs.google.com/document/d/1pFH2irqEtaxvCaFBE_zKs3QbYWa5LsfzL-6JNiqr6u0/pub?embedded=true";
+phases.presentation	= "https://docs.google.com/document/d/1PfjSkbZBHRRdte_QAIqWBK1lrdqhBGlKVLkCDIuaXcI/pub?embedded=true";
+phases.paper		= "https://docs.google.com/document/d/1jrLiB86MevcleyJs5nt4Q-9zrQN8wwrgXE7XD1frG44/pub?embedded=true";
+
+var currentPhase	= "overview";
+
+function changePhase(name)
+{
+	var docURL	= phases[name];
+	if (docURL)
+	{
+		var navElement	= document.getElementById(name);
+		if (navElement)
+		{
+			navElement.className	= "subnavselected";
+			oldNavElement			= document.getElementById(currentPhase);
+			oldNavElement.className	= "subnavlink";
+			currentPhase			= name;
+		}
+		var docFrame	= document.getElementById("project_phase");
+		if (docFrame)
+		{
+			docFrame.src	= docURL;
+		}
+	}
+	else
+	{
+		alert("No phase: " + name);
+	}
+}
+
+var PHASE_ARG	= "phase=";
+function initializePhase()
+{
+	var args	= location.search;
+	if (args)
+	{
+		var phaseIndex	= args.indexOf(PHASE_ARG);
+		if (phaseIndex >= 0)
+		{
+			var phase	= args.substring(phaseIndex+PHASE_ARG.length);
+			if (phase && phase.length > 0)
+			{
+				changePhase(phase);
+			}
+				
+		}
+	}	
+}
+</script>
+</head>
+
+<body onload="initializePhase();">
+
+<div class="rootcontainer">
+
+<div class="banner">
+  <div class="banner_curation">curation <span class="banner_curation_and">&amp;</span> ideation</div>
+  <div class=banner_social_media>meet social media  
+  <img class="course_icon2" src="../../icons/curationIdeation.png"/>
+  </div>
+</div>
+
+<div class="navigation" style="height:700px;">
+<div class="block">
+  <a class="navlink" href="../index.html">welcome</a>
+  <a class="navlink" href="../policies.html">policies</a>
+  <a class="navlink" href="../contact.html">contact info</a>
+</div>
+
+<div class="block">
+<a class="navlink" href="../materials/index.html">readings</a>
+<a class="navlink" href="../materials/webResources.html">web&nbsp;resources</a>
+</div>
+
+<div class="block">
+  <a class="subnavtitle" href="index.html">assignments</a>
+  <a class="subnavlink" href="prepareParticipate.html">prepare - participate</a>
+  <a class="subnavlink" href="courseCuration.html">course curation site</a>
+  <a class="subnavlink" href="researchLitPresentation.html">research literature <br/>presentation</a>
+  <a class="subnavlink" href="curation.html">curation analysis <br/>&amp; synthesis</a>
+  <a class="subnavtitle" href="finalProject.html">final project</a>
+  <a class="subnavselected" id="overview" href="javascript:changePhase('overview')">overview</a>
+  <a class="subnavlink" id="proposal" href="javascript:changePhase('proposal')">proposal</a>
+  <a class="subnavlink" id="revision" href="javascript:changePhase('revision')">revision</a>
+  <a class="subnavlink" id="prototype1" href="javascript:changePhase('prototype1')">prototype 1</a>
+  <a class="subnavlink" id="study1" href="javascript:changePhase('study1')">user study low-fidelity</a>
+  <a class="subnavlink" id="prototype2" href="javascript:changePhase('prototype2')">functional prototype</a>
+  <a class="subnavlink" id="study2" href="javascript:changePhase('study2')">user study functional</a>
+  <a class="subnavlink" id="presentation" href="javascript:changePhase('presentation')">research presentation</a>
+  <a class="subnavlink" id="paper" href="javascript:changePhase('paper')">research paper</a>
+</div>
+
+
+<div class="block_ecologylab">
+  <a class="top_navlink" href="../../../index.html">interface ecology lab</a>
+  <a class="navlink" href="../../index.html">courses</a>
+  <a class="navlink" href="../../../research/index.html">research</a>
+</div>
+
+<div class="block">	
+	<a class="navlink_logo" target="_blank" href="../../../research/index.html"><img class="navicon" width="70" src="../../../images/interfaceEcologyLabLogoNavGuide.png"/></a>
+	<a class="navlink_logo" target="_blank" href="http://ideamache.ecologylab.net"><img class="navicon" width="66" src="../../../images/ideamache_logo+name_black.png"/></a>
+	<a class="nav_nowrap" target="_blank"   href="http://facebook.com/ecologylab"><img style="vertical-align:text-bottom" src="http://facebook.com/favicon.ico"/>ollow&nbsp;ecologylab</a>
+</div>
+
+</div>
+
+<div class="content_title">final project</div>
+
+<iframe id="google-doc-iframe" scrolling="no" style="height: 7500px;"
+ id="project_phase" 
+ src="https://docs.google.com/document/d/1Dum1NxoEEe2M-wEqldDquQYaPvAgFXwccgdJM8AjR5M/pub?embedded=true"></iframe>
+
+
+</div>
+</body> </html>
+
