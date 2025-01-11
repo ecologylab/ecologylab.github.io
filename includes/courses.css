@@ -45,6 +45,21 @@ div.banner
   color: #666666;
   font-family: sans-serif;
 }
+.banner_ethical
+{
+  font-weight: bold;
+  color: #888888;
+  font-family: sans-serif;
+  font-size: calc(var(--title-size) * .8);
+}
+.banner_issues
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #888888;
+  /* left: 7em; */
+}
+
 .banner_programming
 {
   font-weight: bold;
