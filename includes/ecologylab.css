@@ -10,7 +10,7 @@
   --smaller-title-size: 35pt;
   --medium-title-size: 41pt;
   --title-size: var(--big-title-size);
-  --text-max-width: 1100px;
+  --text-max-width: 900pt; /* 800pt; banner width 999px */
   --margin-right: 3em;
   --feature-spacing: 1.4em;
 }
