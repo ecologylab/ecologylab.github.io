@@ -15,7 +15,7 @@ function moveToClick(event)
 	const h = document.documentElement.clientHeight;
     
 
-	var positionOnImage = {
+	let positionOnImage = {
 		x: image.x - mouse.x,
 		y: image.y - mouse.y
 	};
